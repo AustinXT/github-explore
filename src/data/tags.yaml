@@ -692,6 +692,10 @@ entries:
   - iot-hardware
   handsonllm_hands-on-large-language-models:
   - education
+  happier-dev_happier:
+  - ai-agent
+  - ai-coding
+  - devtools
   harry0703_moneyprinterturbo:
   - rag-search
   - web-framework
