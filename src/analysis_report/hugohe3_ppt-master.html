@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* ====== 微信公众号排版 CSS ====== */
+
+body {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #3e3e3e;
+    background: #fff;
+}
+
+/* 正文段落 */
+p {
+    font-size: 15px !important;
+    line-height: 2 !important;
+    margin: 0 !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+    padding-right: 1.2em !important;
+    padding-left: 1.2em !important;
+    text-align: justify !important;
+}
+p + p {
+    margin-top: 0 !important;
+}
+
+/* 标题 */
+h1 {
+    font-size: 20px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 16px 0 !important;
+    padding: 0 !important;
+}
+h2 {
+    font-size: 18px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 24px 0 !important;
+    padding: 0 !important;
+}
+h3 {
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+    text-align: left !important;
+    margin: 16px 0 16px 0 !important;
+    padding: 0 0 0 1.2em !important;
+}
+h4 {
+    font-size: 15px !important;
+    color: rgb(0, 122, 170) !important;
+    margin: 12px 0 8px 0 !important;
+    padding: 0 !important;
+}
+
+/* 列表 */
+ul,
+ol {
+    padding-left: 2em !important;
+    margin: 1em 0 !important;
+    font-size: 15px !important;
+}
+li {
+    margin: 0.5em 0 !important;
+    line-height: 1.8em !important;
+    font-size: 15px !important;
+    color: #3e3e3e !important;
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    margin: 0 !important;
+    padding-left: 1.2em !important;
+}
+
+/* 引用 */
+blockquote {
+    border-left: 4px solid #888 !important;
+    padding: 8px 16px !important;
+    margin: 1em 0 !important;
+    color: #666 !important;
+    background: #f9f9f9 !important;
+}
+blockquote > p {
+    margin: 0.5em 0 !important;
+    padding: 0 !important;
+}
+blockquote::before,
+blockquote::after {
+    content: none !important;
+}
+
+/* 代码块 */
+pre {
+    font-size: 14px !important;
+    line-height: 1.4em !important;
+    color: #3e3e3e !important;
+    background: #f8f8f8 !important;
+    padding: 12px 16px !important;
+    border-radius: 4px !important;
+    overflow: auto !important;
+    margin: 1em 0 !important;
+}
+
+/* 脚注（未使用） */
+/* 上标 */
+sup {
+    font-size: 0.75em !important;
+    vertical-align: super !important;
+    color: #e51f42 !important;
+    margin: 0 2px !important;
+}
+
+table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+    margin: 1em 0 !important;
+    font-size: 14px !important;
+}
+th, td {
+    border: 1px solid #ddd !important;
+    padding: 8px 12px !important;
+    text-align: left !important;
+    color: #3e3e3e !important;
+}
+th {
+    background: #f5f5f5 !important;
+    font-weight: bold !important;
+}
+img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 1em auto !important;
+}
+</style>
+</head>
+<body>
+<blockquote><p>GitHub: <a href="https://github.com/hugohe3/ppt-master">https://github.com/hugohe3/ppt-master</a></p></blockquote>
+<h2>一句话总结</h2>
+<p>把 AI 生成演示文稿从「一堆截图拼成的 PPTX」提升到「真可在 PowerPoint 里逐对象二次编辑、含 master/layout/native chart/动画/旁白的原生 PPTX」——用 SVG 作为 AI 友好的中间语言，一套<strong>严格合约的 Python 编译器</strong>负责把它翻译成 DrawingML。</p>
+<h2>值得关注的理由</h2>
+<ol><li><strong>首创 SVG↔DrawingML 中间表示</strong>：在「AI 直出 XML 太脆弱、AI 出图会丢失 native 编辑性」的两难中，<strong>选定 SVG 子集作为 IR</strong>，配 strict-contract + checker + 编译器，实现 master/layout/native chart 全栈可表达——竞品（Slidev/banana-slides/Presenton/PPTAgent）做不到 native depth 这个维度。</li>
+<li><strong>把 Agent Skill 当「作品类型」持续经营</strong>:HugoHe 一个人 10 个月写了 <strong>2132 commits / 41 个版本</strong>，GitHub 上 PPT 项目类型里罕见的工业级实践——所有产品边界都有对应 .md 文档，Non-goals/Capability Admission 显式划界，prompt 文件用 rule-owners.md 强制唯一归属。</li>
+<li><strong>「Draft you keep editing」产品哲学</strong>：让 AI 拿走 80% 的重复劳动，留 20% 给人在 PowerPoint 里收尾；通过 pptx_to_svg --roundtrip 实现 unchanged slides <strong>byte-for-byte 还原</strong>，解决了「AI 帮我改一两页」的最大恐惧。</li></ol>
+<h2>项目展示</h2>
+<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/main/docs/assets/screenshots/preview_attention_is_all_you_need.webp" alt="论文阅读型 PPT — Attention Is All You Need" />
+<p>*论文→结构化 PPT：多栏排版、章节锚点、引用块全部可二次编辑*</p>
+<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/main/docs/assets/screenshots/preview_china_telecom_2025.webp" alt="企业级品牌模板 — China Telecom 2025 results" />
+<p>*真实品牌 spec 落地：字体/色块/章节对象都继承自 brand template*</p>
+<img src="https://raw.githubusercontent.com/hugohe3/ppt-master/main/docs/assets/screenshots/preview_pixel_breakfast_atlas.webp" alt="视觉艺术风格 — Chinese breakfast atlas" />
+<p>*pixel art 等 18 种 visual style × 5 种 narrative mode 二维组合，允许 custom*</p>
+<blockquote><p>完整 70 个分类样例见 <a href="https://hugohe3.github.io/ppt-master-examples/">https://hugohe3.github.io/ppt-master-examples/</a></p></blockquote>
+<h2>项目画像</h2>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>数据</th>
+</tr></thead><tbody>
+<tr>
+<td>GitHub</td>
+<td><a href="https://github.com/hugohe3/ppt-master">https://github.com/hugohe3/ppt-master</a></td>
+</tr>
+<tr>
+<td>Star / Fork</td>
+<td>59,567 / 4,697</td>
+</tr>
+<tr>
+<td>关注者</td>
+<td>116</td>
+</tr>
+<tr>
+<td>代码行数</td>
+<td>344,536（其中 Python 51.6% / SVG 33.5% / JSON 7.0%)</td>
+</tr>
+<tr>
+<td>文件数量</td>
+<td>12,806</td>
+</tr>
+<tr>
+<td>项目年龄</td>
+<td>10 个月（2025-12-10 首次提交）</td>
+</tr>
+<tr>
+<td>总 commits</td>
+<td>2,132</td>
+</tr>
+<tr>
+<td>最近推送</td>
+<td>2026-10-08</td>
+</tr>
+<tr>
+<td>开发阶段</td>
+<td>密集开发（月均 ~213 commit，峰值月 621）</td>
+</tr>
+<tr>
+<td>贡献模式</td>
+<td>独立开发者单人全栈（主作者占比 97.1%,Top 1 占比 95.6%）</td>
+</tr>
+<tr>
+<td>当前版本</td>
+<td>v6.7.0（共 41 个 tag，语义化版本，8.4 天/tag)</td>
+</tr>
+<tr>
+<td>License</td>
+<td>MIT</td>
+</tr>
+<tr>
+<td>话题标签</td>
+<td>ai-agent, powerpoint, pptx, presentation, slides, ppt</td>
+</tr>
+<tr>
+<td>热度定位</td>
+<td>大众热门（中文 AI PPT 顶流，单作者独立项目头部）</td>
+</tr>
+<tr>
+<td>质量评级</td>
+<td>代码[优秀] 文档[优秀] 测试[基本到充分] CI/CD[基本]</td>
+</tr>
+</tbody></table>
+<h2>作者视角：为什么存在这个项目</h2>
+<h3>创始人/作者背景</h3>
+<p>HugoHe(Hugo He),1.9 年账号年龄，6 个公开仓库，粉丝 526。个人博客 hehugo.com。从「ppt-master / ppt-master-examples / hugo-skills / 70cityprice」等 6 个 repo 推断，作者是聚焦 <strong>AI Agent + 内容自动化</strong>的独立开发者——5 个次要 repo 平均几十颗星，而 ppt-master 一颗近 6 万，<strong>差距悬殊</strong>，这是他投入绝对重心的项目。自述「investment &amp; finance professional who builds presentations every day」（见 docs/why-ppt-master.md)——典型 dogfooding 路径：每天 8 小时做 deck，把自己逼成最挑剔的用户。</p>
+<h3>问题判断</h3>
+<p>作者识别到三个独立卡点：</p>
+<ol><li><strong>AI 工具都没把 argument reasoning 做到版式前面</strong>:Gamma/Slidespeak 等 SaaS 跳过论证与受众推理，直接出图——结果是「看起来不错但<strong>内容空</strong>」的 deck。</li>
+<li><strong>AI 工具都没把 PowerPoint 原生对象模型当成 depth 目标</strong>：主流方案要么出图、要么塞扁平模板，真正的 native depth（master/layout/preset shape/connector/freeform/animation/notes/narration/embedded font/equation）是个连续收敛的能力，需要长期投入。</li>
+<li><strong>SaaS 把内容+模型+编辑权全部锁死在平台</strong>：商务/咨询/政务用户的隐私诉求与平台利益冲突，没人有动力做"本地 AI 出原生 PPT"。</li></ol>
+<p>时机：2025 年底 Claude Code / Codex 等 agent 工具成熟，让 "AI 帮你跑完整工作流" 成为可能——<strong>不是"AI 给你一个静态网页"，而是"AI 拿着工具串起多步工序"</strong>。作者把这个洞察封装成一个可被任意 agent 加载的 Skill 包，而不是又一个 SaaS。</p>
+<h3>解法哲学</h3>
+<p>显式选了什么、显式没做什么，在 docs/project-positioning.md §8 Non-goals 与 §9 Capability Admission 里写得比 feature list 还清楚：</p>
+<ul><li><strong>做 "draft you keep editing"</strong>:AI 拿走 80% 重复劳动，留 20% 给人在 PowerPoint 里收尾。</li>
+<li><strong>Native depth 是 north star</strong>：不是 feature list，是 <strong>direction of travel</strong>——每个 release 都朝 PowerPoint 自己的对象模型多迈一步。</li>
+<li><strong>Logic-first → Visual-design</strong>:Strategist 阶段先核 5 种 narrative mode(pyramid/narrative/instructional/showcase/briefing)，再选 18 种 visual style;5×18=90 种可重用的设计基因组合。</li>
+<li><strong>Provider-agnostic</strong>：任何 agent-capable 工具（Claude Code/Codex/Cursor）都能跑，任何兼容模型都可用——把工具做成 Skill 反而换来最大兼容性与独立性。</li>
+<li><strong>不做的事</strong>：零配置 SaaS、通用 office agent、完整 PowerPoint clone、任意 SVG→PPTX 转换——主动划界，反而把产品定位钉得极准。</li></ul>
+<h3>战略意图</h3>
+<p>5 个商业赞助商带头部（Kimi / PackyCode / APIKEY.FAN / RunAPI / APIMart）,lead $1k+/月 + service $500+/月，<strong>成熟独立开源贡献者画像</strong>。但不直接商业化（无 SaaS、无付费层），通过推荐位+使用门槛下降为模型/服务合作伙伴导流。这是「个人 IP 把 Skill 当成 agent 时代的作品类型持续经营」的样本——一个独立开发者用 v6.7.x 把"内容自动化"做成<strong>可被一万种企业复用的引擎</strong>，而非另一个 to-C 工具。</p>
+<h2>核心价值提炼</h2>
+<h3>创新之处（按新颖度×实用性排序）</h3>
+<ol><li><strong>SVG 作为 AI 友好的 IR（新颖 5/5，实用 5/5，可迁移 5/5)</strong></li></ol>
+<ul><li>用"被自家合约收窄的 SVG 子集"同时承载 AI 生成、人预览、机器编译 DrawingML 三方诉求；拒绝"裸 DrawingML"，也拒绝"位图替代"。<strong>所有竞品都没同等深度的端到端 IR 设计</strong>。</li></ul>
+<ol><li><strong>「Draft you keep editing」产品哲学 + 字节保真 roundtrip（新颖 4/5，实用 5/5，可迁移 4/5)</strong></li></ol>
+<ul><li>pptx_to_svg --roundtrip 让 unchanged slides byte-for-byte 还原，changed slides 只重画被编辑的对象——解决了"AI 帮我改一两页，其他别动"的最大 user pain。LibreOffice 想做 1:1 还原，ppt-master 把 round-trip 限制为"用户做计划的一部分"，哲学更聚焦。</li></ul>
+<ol><li><strong>三 route + 多 profile 的可证明路由（新颖 4/5，实用 5/5，可迁移 4/5）</strong></li></ol>
+<ul><li>只承认 3 个真实 artifact lifecycle:Generate / Create Template / Edit Native PPTX。Beautify、Quick、Image-to-PPTX 都是 Generate 内部的 fidelity/generation profile。workflows/routing.md 是单一权威，hard rule 写"this file wins for route selection"——避免 LLM 在多入口间迷路。</li></ul>
+<ol><li><strong>Narrative mode × Visual style 二维解耦（新颖 4/5，实用 5/5，可迁移 5/5）</strong></li></ol>
+<ul><li><strong>5 种叙事骨架 + 18 种视觉风格 = 90 种组合</strong>，允许 custom。McKinsey-Pyramid Principle 与品牌设计的成熟理念，与 AI 编排一起呈现非常少见。</li></ul>
+<ol><li><strong>Brand / Style / Layout / Deck 四类模板 + segment-level ownership（新颖 4/5，实用 5/5，可迁移 4/5)</strong></li></ol>
+<ul><li>拒绝"全能 template"，把 reuse 切成 segment，组合而非合并；安装时"每 kind 至多一个，但多 kind 可并存"——一份 brand spec 就能跨 deck 复用，无需复制整个 ppt。</li></ul>
+<ol><li><strong>source_to_md 输入归一化层双通道（新颖 4/5，实用 5/5，可迁移 5/5）</strong></li></ol>
+<ul><li>把 PDF/DOCX/EPUB/HTML/LaTeX/XLSX/PPTX/URL 一律归一为 markdown（内容契约） + 抽取结构化 facts(.identity / .slide_library / source_profile.json)。下游 Strategist 只看一份"内容契约",PPTX 的几何/图表/SmartArt 不被 markdown 化糊掉。</li></ul>
+<ol><li><strong>Prompt 一等公民的工程化（新颖 5/5，实用 5/5，可迁移 5/5）</strong></li></ol>
+<ul><li>docs/rules/prompt-layers.md + ownership.md + rule-owners.md 三件套把规则所有权写死。每个跨文件规则只能有一个 owner；其余文件用 plans-core.md §6.2 引用。prompt 文件只写 craft + 模型写入的最小合约，enforced grammar 全部放到 scripts/docs/——6.7 版本下还能大规模不腐烂，是工程化的证据。</li></ul>
+<ol><li><strong>attribution_guard 完整性门控（新颖 5/5，实用 4/5，可迁移 3/5）</strong></li></ol>
+<ul><li>每个 CLI 入口第一行校验 LICENSE / SPONSORS / 必需 gate file;SHA 不匹配直接拒绝执行。Skill 包分发时抗裁剪，商业赞助模型必需。</li></ul>
+<ol><li><strong>Fail-closed 合约 + 三输入态（Authoring/Compat/Invalid）（新颖 3/5，实用 5/5，可迁移 5/5)</strong></li></ol>
+<ul><li>AI 写出"语法对但语义不在 DrawingML 里"的 SVG（masks/styles/foreignObject/animate）由 checker 直接 error 阻断；用户不会被静默伪造产物。canonical/compatible/invalid 三态分流，export 行为完全可预测。</li></ul>
+<ol><li><strong>Canvas 单位解耦:viewBox 用 px(1 SVG px = 9,525 EMU)（新颖 5/5，实用 5/5，可迁移 5/5)</strong></li></ol>
+<ul><li>AI 不擅长算 EMU，人也不擅长，浏览器不直接渲染 EMU。在中间语言里固定用 px，只在 export 时量化一次——任何 AI IR 都该把"内部空间单位"和"输出格式单位"解耦。</li></ul>
+<h3>可复用的模式与技巧</h3>
+<ol><li><strong>AI-friendly IR + 确定性编译器</strong>：用一个「AI 训练数据充足 + 与目标格式同维度」的 IR，配套严格合约 + checker + 编译器。适用:<strong>AI 输出 PPTX/DOCX/XLSX/PDF 流程</strong>。</li>
+<li><strong>单一权威路由文档 + 三顶层 route + N profile</strong>：多入口 Skill / 多 workflow 工具包不要让多个 entry 文件竞争决定权。</li>
+<li><strong>Roles-as-context 的统一串行 agent</strong>：全局决策上下文不要切 sub-agent；角色通过 markdown 上下文切换，而不是拆线程。适用：需要全局一致性的 AI 生成流水线（否则视觉一致性会崩）。</li>
+<li><strong>Two-tier runtime（default + quick）而非 flag-only</strong>：把"完整 SOP"与"快速通道"做成两个名字固定的 profile，中间用 hard rule 隔离。Quick 失去持久化 design history 但换真心适合一次性快速出片。</li>
+<li><strong>Source normalization 双通道（内容契约 + 结构化事实）</strong>：输入爆炸场景下不要让所有输入变成同一种东西；markdown 当 content contract,intake JSON 当结构化事实。</li>
+<li><strong>Source-preserving mutation(roundtrip)</strong>：不重画已有文件；只 patch 用户计划的一部分，其他 byte-for-byte。适用：任意"AI 修改既有文件"的工具。</li>
+<li><strong>4 类模板 + segment-level ownership</strong>：把 reuse 切成 segment，组合而非合并；每段独立 ownership。适用:design system / brand automation / i18n 模板。</li>
+<li><strong>Fail-closed contract</strong>:AI 输出涉及工业格式时，异常必须 error-block，不允许 silent drop / silent rewrite。</li>
+<li><strong>Integrity gate(SHA + 必需文件清单）</strong>:Skill 包/插件分发时，加入完整性 hash + 必需 file 名单，在 CLI 入口调用。适用：任何会分发、被裁剪的 Agent Skill / Plugin。</li>
+<li><strong>Prompt 一等公民 + rule-owners 文档</strong>：跨文件共享规则必须单 owner;prompt 文件只写 craft + 最小合约；enforced grammar 放脚本侧。</li></ol>
+<h3>关键设计决策</h3>
+<table>
+<thead><tr>
+<th>决策</th>
+<th>问题</th>
+<th>方案</th>
+<th>可迁移性</th>
+</tr></thead><tbody>
+<tr>
+<td>用 SVG 作 IR</td>
+<td>AI 不能可靠写 DrawingML，出图会丢 native</td>
+<td>SVG 子集 + 严格合约 + 编译</td>
+<td>高</td>
+</tr>
+<tr>
+<td>三 route + profile</td>
+<td>路由爆炸导致 LLM 选错</td>
+<td>routing.md 是唯一权威</td>
+<td>高</td>
+</tr>
+<tr>
+<td>单 agent 串行 page-by-page</td>
+<td>sub-agent 拿过期快照，视觉一致性崩</td>
+<td>角色 = markdown 上下文切换，不拆线程</td>
+<td>极高</td>
+</tr>
+<tr>
+<td>Quick 与 Default 双 runtime</td>
+<td>用户同时需要"10 分钟"和"1 分钟"</td>
+<td>hard rule 隔离，而非 flags</td>
+<td>高</td>
+</tr>
+<tr>
+<td>Canvas 用 px 而非 EMU</td>
+<td>AI/人/浏览器都不擅长 EMU</td>
+<td>viewBox 中间锁 px,1 SVG px=9,525 EMU</td>
+<td>极高</td>
+</tr>
+<tr>
+<td>4 类模板 + segment ownership</td>
+<td>"换品牌色"与"完全结构复用"是两种不同需求</td>
+<td>组合而非合并，每段独立 owner</td>
+<td>高</td>
+</tr>
+<tr>
+<td>attribution_guard 完整性</td>
+<td>Skill 包分发时易被裁剪</td>
+<td>SHA + 必需 gate file，失败 stop</td>
+<td>中</td>
+</tr>
+<tr>
+<td>pptx_to_svg --roundtrip 字节保真</td>
+<td>用户只改第 3 页，其他别动</td>
+<td>不变页 byte-for-byte，编辑页只重画被改对象</td>
+<td>中高</td>
+</tr>
+<tr>
+<td>Prompt 一等公民 + rule-owners</td>
+<td>多人改 prompt 文件最常见的腐烂</td>
+<td>单 owner + 链接 + section 编号引用</td>
+<td>极高</td>
+</tr>
+<tr>
+<td>Sidecar 分层（notes/audio/animations/native-payloads）</td>
+<td>SVG 是 2D 矢量页，把行为塞进去跨界又失真</td>
+<td>单独 sidecar,export 时并入 PPTX package</td>
+<td>极高</td>
+</tr>
+</tbody></table>
+<h2>竞品格局与定位</h2>
+<h3>竞品对比矩阵</h3>
+<table>
+<thead><tr>
+<th>维度</th>
+<th>ppt-master</th>
+<th>Presenton</th>
+<th>PPTAgent</th>
+<th>banana-slides</th>
+<th>python-pptx</th>
+<th>Slidev</th>
+</tr></thead><tbody>
+<tr>
+<td>Stars</td>
+<td>59.6K</td>
+<td>~4.8K</td>
+<td>~4.2K</td>
+<td>~12K</td>
+<td>n/a(lib)</td>
+<td>~43.8K</td>
+</tr>
+<tr>
+<td>输出形式</td>
+<td>真 PPTX native</td>
+<td>真 PPTX native</td>
+<td>真 PPTX</td>
+<td>截图型 PPTX</td>
+<td>真 PPTX 自写</td>
+<td>Web 演示</td>
+</tr>
+<tr>
+<td>可编辑深度</td>
+<td>高（master/layout/native chart/anim/narration）</td>
+<td>中</td>
+<td>中</td>
+<td>低</td>
+<td>极高（纯库）</td>
+<td>低（导出为图）</td>
+</tr>
+<tr>
+<td>AI 推理深度</td>
+<td>高（argument reasoning）</td>
+<td>中</td>
+<td>高（学术）</td>
+<td>中</td>
+<td>无（库）</td>
+<td>无</td>
+</tr>
+<tr>
+<td>自托管/隐私</td>
+<td>是（本地 + 任意 LLM）</td>
+<td>是</td>
+<td>是</td>
+<td>是</td>
+<td>是</td>
+<td>是</td>
+</tr>
+<tr>
+<td>多语种含 RTL</td>
+<td>是（13+）</td>
+<td>中</td>
+<td>中</td>
+<td>中</td>
+<td>任意</td>
+<td>中</td>
+</tr>
+<tr>
+<td>输入归一化</td>
+<td>PDF/DOCX/EPUB/XLSX/PPTX/URL 全部</td>
+<td>部分</td>
+<td>部分</td>
+<td>截图</td>
+<td>库</td>
+<td>Markdown</td>
+</tr>
+<tr>
+<td>进入门槛</td>
+<td>高（需 agent + Python）</td>
+<td>低（浏览器一键）</td>
+<td>中（需安装）</td>
+<td>低（口语）</td>
+<td>高（写代码）</td>
+<td>中（需 Vue 知识）</td>
+</tr>
+<tr>
+<td>模板生态</td>
+<td>70 templates + 70 examples + 987 pages</td>
+<td>弱</td>
+<td>学术</td>
+<td>中</td>
+<td>无</td>
+<td>多（主题）</td>
+</tr>
+</tbody></table>
+<h3>差异化护城河</h3>
+<ol><li><strong>Native depth 不可复制</strong>:v6.7 下 master / layout / native chart / native table / native equation / animation / notes→audio / 6 relationship atoms 全栈覆盖，接近 PowerPoint 全对象模型。</li>
+<li><strong>逻辑层（narrative mode × visual style）</strong>：主流 SaaS 几乎不做。</li>
+<li><strong>Skill-as-output 模型</strong>：让用户在已有 agent 工具中复用，反而是最强渠道。</li>
+<li><strong>强合约 + fail-closed + source-preserving</strong>：让 AI 输出变成"可信可预测的 draft"而非"惊喜或惊吓"。</li></ol>
+<h3>竞争风险</h3>
+<ul><li><strong>SaaS 化对手（Gamma / 2Slides）</strong> 以"浏览器一键 + 实时协作"占领普通用户心智。</li>
+<li><strong>Microsoft Copilot for PowerPoint</strong> 本身把"AI 出 PPT"塞进 PowerPoint 内，可能吃掉中端用户。</li>
+<li><strong>GPT-Image-2 等图像模型</strong> 变强后，"截图型 PPTX"门槛继续下降。</li>
+<li><strong>锁定 Codex 的 Image-to-PPTX profile</strong> 是 host 风险。</li></ul>
+<h3>生态定位</h3>
+<p><strong>不是 SaaS、不是 IDE Plugin、不是 LLM、不是 PPT 替代品</strong>——是"在 agent 里跑、可被 vendor、可被分发"的工作流；占住"AI 时代的 native depth + Skill distribution"这一差异化象限。</p>
+<h2>套利机会分析</h2>
+<ul><li><strong>信息差</strong>:6 万星的项目在中文圈已是顶流，但其<strong>架构与工程方法论</strong>（SVG-as-IR、prompt 一等公民、4 类模板 segment ownership、attribution_guard）对绝大多数 AI 工具开发者是陌生领域——<strong>这是"明星项目的设计资产"被低估的一面</strong>。</li>
+<li><strong>技术借鉴</strong>:SVG-as-IR 模式可以套到海报印刷品、Keynote 转换、Excel→图表自动生成等场景；Roles-as-context 串行 agent 模式可以套到任何需要全局一致性的 AI 流水线；Source-preserving mutation 可以套到任意"AI 编辑既有文件"的工具。</li>
+<li><strong>生态位</strong>:Agent Skills 这个新品类（Claude Code / Codex / Cursor 都支持）在 2025 年底才成熟，ppt-master 是其中第一个把"复杂长流程"做到工业级的样本——意味着"AI Skill 化的内容自动化"是个全新生态位，ppt-master 是定义者之一。</li>
+<li><strong>趋势判断</strong>:Agent Skills 生态会持续扩张，但「PPT 这个特定垂直」已被 ppt-master 钉住；真正的机会在"将同一架构泛化到其他文档自动化场景"(Word/Excel/Notion/Confluence/邮件）。</li></ul>
+<h2>风险与不足</h2>
+<ol><li><strong>单作者风险</strong>:Top 占比 97.1%,<strong>bus factor = 1</strong>；若作者停更，整个维护节奏立即崩。</li>
+<li><strong>测试与重构几近为零</strong>:Refactor 0.5% / Test 0.5%（按 commit 类型计）；虽然算法层有 699 个 unittest 方法，但 prompt 驱动层几乎没有自动化 E2E，作者用 dogfood + issue 反馈补足，这是可扩展性风险点。</li>
+<li><strong>CI/CD 缺失</strong>：仓库无 .github/workflows/,release 没有自动化测试触发；版本号手写在 SKILL.md metadata。</li>
+<li><strong>进入门槛高</strong>：需要 Claude Code/Codex/Cursor + Python + 一段学习曲线；普通用户会用，但商务非技术用户用不了。</li>
+<li><strong>Image-to-PPTX 锁定 Codex</strong>：把"截图→可编辑 PPTX"这条路径绑死在 Codex 一个 host，是潜在风险。</li>
+<li><strong>平台风险</strong>:Microsoft Copilot 持续强化，如果它做到 native depth,ppt-master 的"自托管 native 优势"会被压缩。</li></ol>
+<h2>行动建议</h2>
+<h3>如果你要用它</h3>
+<ul><li><strong>你是每天做 deck 的咨询/金融/教育/政务从业者</strong>：直接用 Default 流程，接受 10-20 分钟/10 页的速度，把 AI 输出当 draft 在 PowerPoint 里收尾。</li>
+<li><strong>你是品牌/模板厂商</strong>：用 Create Template 路径把 brand spec / style / layout 蒸馏成 4 类模板资产，跨 deck 复用。</li>
+<li><strong>你要批量把旧 PPT 改 1-2 页</strong>：用 Edit Native PPTX 路径，byte-for-byte 不变是核心承诺。</li>
+<li><strong>不要用它做"截图型 PPTX"</strong>：那是 banana-slides / Gamma 的战场，ppt-master 的存在意义是 native depth。</li></ul>
+<h3>如果你要学它</h3>
+<p>按这个顺序读，不要从 Python 代码开始：</p>
+<ol><li>docs/what-is-ppt.md（认知框架前置）</li>
+<li>docs/why-ppt-master.md（价值主张与诚实自陈）</li>
+<li>docs/project-positioning.md(Non-goals 与 Capability Admission)</li>
+<li>skills/ppt-master/SKILL.md（入口 + 路由）</li>
+<li>skills/ppt-master/workflows/routing.md（单一权威路由）</li>
+<li>skills/ppt-master/references/shared-standards-core.md(SVG 合约）</li>
+<li>skills/ppt-master/scripts/svg_to_pptx/drawingml/converter.py（编译器）</li>
+<li>docs/rules/{prompt-layers,ownership,rule-owners}.md(prompt 工程化三件套）</li></ol>
+<h3>如果你要 fork 它</h3>
+<p>最有价值的三个改造方向：</p>
+<ol><li><strong>SVG-as-IR 泛化</strong>：把同一架构应用到 Excel chart 生成、Word doc 生成、Keynote 转换——核心是<strong>"找 AI 训练数据足够的、与目标格式同维度的中间语言"</strong>。</li>
+<li><strong>多 host 适配</strong>：把 Image-to-PPTX 的 Codex 锁定解开，扩展到 Claude Code / Cursor / 任何 agent。</li>
+<li><strong>加 CI/CD + 自动 E2E</strong>：把 dogfood 流程纳入 unittest，补齐 prompt 驱动层的盲区。</li></ol>
+<h3>知识入口</h3>
+<table>
+<thead><tr>
+<th>资源</th>
+<th>链接</th>
+</tr></thead><tbody>
+<tr>
+<td>DeepWiki</td>
+<td><a href="https://deepwiki.com/hugohe3/ppt-master">已收录</a></td>
+</tr>
+<tr>
+<td>Zread.ai</td>
+<td><a href="https://zread.ai/hugohe3/ppt-master">已收录</a></td>
+</tr>
+<tr>
+<td>关联论文</td>
+<td>无（项目本身不是学术研究，但内部引用 Mayer/Kosslyn/Yates-Orlikowski 等认知科学原文）</td>
+</tr>
+<tr>
+<td>在线 Demo</td>
+<td><a href="https://hugohe3.github.io/ppt-master-examples/">70 个分类样例</a></td>
+</tr>
+<tr>
+<td>作者博客</td>
+<td><a href="https://www.hehugo.com/">hehugo.com</a></td>
+</tr>
+</tbody></table>
+</body>
+</html>
