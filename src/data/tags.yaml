@@ -1201,6 +1201,8 @@ entries:
   - llm-inference
   - llm-training
   - trading-finance
+  hugohe3_ppt-master:
+  - ai-agent
   humanlayer_humanlayer:
   - ai-agent
   - ai-coding
@@ -2381,6 +2383,9 @@ entries:
   stirling-tools_stirling-pdf:
   - ai-agent
   - workflow-automation
+  storytold_artcraft:
+  - video-audio
+  - media-generation
   strands-agents_harness-sdk:
   - ai-agent
   - devtools

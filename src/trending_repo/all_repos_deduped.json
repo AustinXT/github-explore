@@ -430,6 +430,16 @@
     "trending_days": 16
   },
   {
+    "name": "cathrynlavery/diagram-design",
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "language": "HTML",
+    "stars": 49896,
+    "forks": 3165,
+    "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+    "last_seen": "2026-10-11",
+    "trending_days": 16
+  },
+  {
     "name": "davila7/claude-code-templates",
     "url": "https://github.com/davila7/claude-code-templates",
     "language": "Python",
@@ -467,16 +477,6 @@
     "forks": 449,
     "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more",
     "last_seen": "2026-06-06",
-    "trending_days": 15
-  },
-  {
-    "name": "cathrynlavery/diagram-design",
-    "url": "https://github.com/cathrynlavery/diagram-design",
-    "language": "HTML",
-    "stars": 48633,
-    "forks": 3072,
-    "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-    "last_seen": "2026-10-10",
     "trending_days": 15
   },
   {
@@ -1410,6 +1410,16 @@
     "trending_days": 8
   },
   {
+    "name": "bilawalsidhu/gods-eye-view",
+    "url": "https://github.com/bilawalsidhu/gods-eye-view",
+    "language": "JavaScript",
+    "stars": 51089,
+    "forks": 10288,
+    "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+    "last_seen": "2026-10-11",
+    "trending_days": 8
+  },
+  {
     "name": "chopratejas/headroom",
     "url": "https://github.com/chopratejas/headroom",
     "language": "Python",
@@ -1580,6 +1590,16 @@
     "trending_days": 8
   },
   {
+    "name": "lyogavin/airllm",
+    "url": "https://github.com/lyogavin/airllm",
+    "language": "JupyterNotebook",
+    "stars": 36248,
+    "forks": 3800,
+    "description": "AirLLM 70B inference with single 4GB GPU",
+    "last_seen": "2026-10-11",
+    "trending_days": 8
+  },
+  {
     "name": "meshery/meshery",
     "url": "https://github.com/meshery/meshery",
     "language": "TypeScript",
@@ -1700,13 +1720,23 @@
     "trending_days": 8
   },
   {
-    "name": "bilawalsidhu/gods-eye-view",
-    "url": "https://github.com/bilawalsidhu/gods-eye-view",
-    "language": "JavaScript",
-    "stars": 31177,
-    "forks": 6255,
-    "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
-    "last_seen": "2026-09-13",
+    "name": "boykopovar/AnyPS5",
+    "url": "https://github.com/boykopovar/anyps5",
+    "language": "C++",
+    "stars": 28986,
+    "forks": 2484,
+    "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+    "last_seen": "2026-10-11",
+    "trending_days": 7
+  },
+  {
+    "name": "chrislgarry/Apollo-11",
+    "url": "https://github.com/chrislgarry/apollo-11",
+    "language": "Assembly",
+    "stars": 74006,
+    "forks": 8089,
+    "description": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.",
+    "last_seen": "2026-10-11",
     "trending_days": 7
   },
   {
@@ -1837,16 +1867,6 @@
     "forks": 4633,
     "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
     "last_seen": "2026-06-27",
-    "trending_days": 7
-  },
-  {
-    "name": "lyogavin/airllm",
-    "url": "https://github.com/lyogavin/airllm",
-    "language": "JupyterNotebook",
-    "stars": 28805,
-    "forks": 3100,
-    "description": "AirLLM 70B inference with single 4GB GPU",
-    "last_seen": "2026-08-05",
     "trending_days": 7
   },
   {
@@ -2160,16 +2180,6 @@
     "trending_days": 6
   },
   {
-    "name": "boykopovar/AnyPS5",
-    "url": "https://github.com/boykopovar/anyps5",
-    "language": "C++",
-    "stars": 25371,
-    "forks": 2111,
-    "description": "Tool for automatic PS5 executables porting to Linux and Windows",
-    "last_seen": "2026-10-10",
-    "trending_days": 6
-  },
-  {
     "name": "bradautomates/claude-video",
     "url": "https://github.com/bradautomates/claude-video",
     "language": "Python",
@@ -2217,16 +2227,6 @@
     "forks": 8424,
     "description": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
     "last_seen": "2026-07-31",
-    "trending_days": 6
-  },
-  {
-    "name": "chrislgarry/Apollo-11",
-    "url": "https://github.com/chrislgarry/apollo-11",
-    "language": "Assembly",
-    "stars": 71274,
-    "forks": 7929,
-    "description": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.",
-    "last_seen": "2026-07-24",
     "trending_days": 6
   },
   {
@@ -2547,6 +2547,16 @@
     "forks": 61517,
     "description": "21 Lessons, Get Started Building with Generative AI",
     "last_seen": "2026-08-04",
+    "trending_days": 6
+  },
+  {
+    "name": "morluto/rea",
+    "url": "https://github.com/morluto/rea",
+    "language": "TypeScript",
+    "stars": 93998,
+    "forks": 21006,
+    "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+    "last_seen": "2026-10-11",
     "trending_days": 6
   },
   {
@@ -3120,16 +3130,6 @@
     "trending_days": 5
   },
   {
-    "name": "morluto/rea",
-    "url": "https://github.com/morluto/rea",
-    "language": "TypeScript",
-    "stars": 65280,
-    "forks": 13556,
-    "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-    "last_seen": "2026-10-10",
-    "trending_days": 5
-  },
-  {
     "name": "muratcankoylan/Agent-Skills-for-Context-Engineering",
     "url": "https://github.com/muratcankoylan/agent-skills-for-context-engineering",
     "language": "Python",
@@ -3247,6 +3247,16 @@
     "forks": 666,
     "description": "Empowering everyone to host fast and efficient Minecraft servers.",
     "last_seen": "2026-07-26",
+    "trending_days": 5
+  },
+  {
+    "name": "pytorch/pytorch",
+    "url": "https://github.com/pytorch/pytorch",
+    "language": "Python",
+    "stars": 104359,
+    "forks": 32070,
+    "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+    "last_seen": "2026-10-11",
     "trending_days": 5
   },
   {
@@ -4370,16 +4380,6 @@
     "trending_days": 4
   },
   {
-    "name": "pytorch/pytorch",
-    "url": "https://github.com/pytorch/pytorch",
-    "language": "Python",
-    "stars": 104065,
-    "forks": 31909,
-    "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
-    "last_seen": "2026-10-10",
-    "trending_days": 4
-  },
-  {
     "name": "reconurge/flowsint",
     "url": "https://github.com/reconurge/flowsint",
     "language": "TypeScript",
@@ -4477,6 +4477,16 @@
     "forks": 723,
     "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.",
     "last_seen": "2026-09-16",
+    "trending_days": 4
+  },
+  {
+    "name": "storytold/artcraft",
+    "url": "https://github.com/storytold/artcraft",
+    "language": "Rust",
+    "stars": 16709,
+    "forks": 2717,
+    "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+    "last_seen": "2026-10-11",
     "trending_days": 4
   },
   {
@@ -6077,16 +6087,6 @@
     "forks": 313,
     "description": "Google Suite CLI: Gmail, GCal, GDrive, GContacts.",
     "last_seen": "2026-02-17",
-    "trending_days": 3
-  },
-  {
-    "name": "storytold/artcraft",
-    "url": "https://github.com/storytold/artcraft",
-    "language": "Rust",
-    "stars": 13464,
-    "forks": 2087,
-    "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
-    "last_seen": "2026-10-10",
     "trending_days": 3
   },
   {
