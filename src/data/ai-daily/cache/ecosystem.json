@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_run": "2026-10-11",
+    "last_run": "2026-10-12",
     "window_days": 30
   },
   "entries": [
@@ -855,6 +855,18 @@
       "canonical_url": "https://github.com/mksglu/context-mode",
       "event_date": "2026-10-10",
       "date_seen": "2026-10-11"
+    },
+    {
+      "key": "github.com/lyogavin/airllm",
+      "canonical_url": "https://github.com/lyogavin/airllm",
+      "event_date": "2026-10-12",
+      "date_seen": "2026-10-12"
+    },
+    {
+      "key": "github.com/pytorch/pytorch",
+      "canonical_url": "https://github.com/pytorch/pytorch",
+      "event_date": "2026-10-12",
+      "date_seen": "2026-10-12"
     }
   ]
 }
