@@ -1,111 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-10-12",
+    "last_run": "2026-10-13",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/melgarafael/deskcommcrm",
-      "canonical_url": "https://github.com/melgarafael/DeskcommCRM",
-      "event_date": "2026-09-12",
-      "date_seen": "2026-09-12"
-    },
-    {
-      "key": "github.com/jihe520/mathmodelagent",
-      "canonical_url": "https://github.com/jihe520/MathModelAgent",
-      "event_date": "2026-09-12",
-      "date_seen": "2026-09-12"
-    },
-    {
-      "key": "github.com/jordan-gibbs/hyperresearch",
-      "canonical_url": "https://github.com/jordan-gibbs/hyperresearch",
-      "event_date": "2026-09-12",
-      "date_seen": "2026-09-12"
-    },
-    {
-      "key": "github.com/alphaxiv/openresearch",
-      "canonical_url": "https://github.com/alphaXiv/OpenResearch",
-      "event_date": "2026-09-12",
-      "date_seen": "2026-09-12"
-    },
-    {
-      "key": "github.com/pascalorg/editor",
-      "canonical_url": "https://github.com/pascalorg/editor",
-      "event_date": "2026-09-12",
-      "date_seen": "2026-09-12"
-    },
-    {
-      "key": "github.com/deepseek-ai/deepseek-v3",
-      "canonical_url": "https://github.com/deepseek-ai/DeepSeek-V3",
-      "event_date": "2026-09-12",
-      "date_seen": "2026-09-12"
-    },
-    {
-      "key": "github.com/tencent-hunyuan/gander",
-      "canonical_url": "https://github.com/Tencent-Hunyuan/Gander",
-      "event_date": "2026-09-12",
-      "date_seen": "2026-09-12"
-    },
-    {
-      "key": "github.com/modelcontextprotocol/python-sdk",
-      "canonical_url": "https://github.com/modelcontextprotocol/python-sdk",
-      "event_date": "2026-09-12",
-      "date_seen": "2026-09-12"
-    },
-    {
-      "key": "github.com/hkuds/lightrag",
-      "canonical_url": "https://github.com/HKUDS/LightRAG",
-      "event_date": "2026-09-12",
-      "date_seen": "2026-09-12"
-    },
-    {
-      "key": "github.com/snailsploit/claude-red",
-      "canonical_url": "https://github.com/SnailSploit/Claude-Red",
-      "event_date": "2026-09-12",
-      "date_seen": "2026-09-12"
-    },
-    {
-      "key": "github.com/addyosmani/agent-skills",
-      "canonical_url": "https://github.com/addyosmani/agent-skills",
-      "event_date": "2026-09-12",
-      "date_seen": "2026-09-12"
-    },
-    {
-      "key": "github.com/asgeirtj/system_prompts_leaks",
-      "canonical_url": "https://github.com/asgeirtj/system_prompts_leaks",
-      "event_date": "2026-09-12",
-      "date_seen": "2026-09-12"
-    },
-    {
-      "key": "github.com/max-sixty/worktrunk",
-      "canonical_url": "https://github.com/max-sixty/worktrunk",
-      "event_date": "2026-09-12",
-      "date_seen": "2026-09-12"
-    },
-    {
-      "key": "github.com/multimodal-art-projection/yue",
-      "canonical_url": "https://github.com/multimodal-art-projection/YuE",
-      "event_date": "2026-09-12",
-      "date_seen": "2026-09-12"
-    },
-    {
-      "key": "github.com/obra/superpowers",
-      "canonical_url": "https://github.com/obra/superpowers",
-      "event_date": "2026-09-12",
-      "date_seen": "2026-09-12"
-    },
-    {
-      "key": "github.com/significant-gravitas/autogpt",
-      "canonical_url": "https://github.com/significant-gravitas/autogpt",
-      "event_date": "2026-09-12",
-      "date_seen": "2026-09-12"
-    },
-    {
-      "key": "github.com/vxcontrol/pentagi",
-      "canonical_url": "https://github.com/vxcontrol/pentagi",
-      "event_date": "2026-09-12",
-      "date_seen": "2026-09-12"
-    },
     {
       "key": "github.com/alibaba/open-code-review",
       "canonical_url": "https://github.com/alibaba/open-code-review",
@@ -867,6 +765,42 @@
       "canonical_url": "https://github.com/pytorch/pytorch",
       "event_date": "2026-10-12",
       "date_seen": "2026-10-12"
+    },
+    {
+      "key": "github.com/open-webui/open-webui",
+      "canonical_url": "https://github.com/open-webui/open-webui",
+      "event_date": "2026-10-13",
+      "date_seen": "2026-10-13"
+    },
+    {
+      "key": "github.com/microsoft/bitnet",
+      "canonical_url": "https://github.com/microsoft/BitNet",
+      "event_date": "2026-10-13",
+      "date_seen": "2026-10-13"
+    },
+    {
+      "key": "github.com/alishahryar1/free-claude-code",
+      "canonical_url": "https://github.com/Alishahryar1/free-claude-code",
+      "event_date": "2026-10-13",
+      "date_seen": "2026-10-13"
+    },
+    {
+      "key": "github.com/obra/superpowers",
+      "canonical_url": "https://github.com/obra/superpowers",
+      "event_date": "2026-10-13",
+      "date_seen": "2026-10-13"
+    },
+    {
+      "key": "github.com/addyosmani/agent-skills",
+      "canonical_url": "https://github.com/addyosmani/agent-skills",
+      "event_date": "2026-10-13",
+      "date_seen": "2026-10-13"
+    },
+    {
+      "key": "github.com/significant-gravitas/autogpt",
+      "canonical_url": "https://github.com/significant-gravitas/autogpt",
+      "event_date": "2026-10-13",
+      "date_seen": "2026-10-13"
     }
   ]
 }
