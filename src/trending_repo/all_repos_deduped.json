@@ -400,6 +400,16 @@
     "trending_days": 17
   },
   {
+    "name": "cathrynlavery/diagram-design",
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "language": "HTML",
+    "stars": 52343,
+    "forks": 3303,
+    "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+    "last_seen": "2026-10-12",
+    "trending_days": 17
+  },
+  {
     "name": "TauricResearch/TradingAgents",
     "url": "https://github.com/tauricresearch/tradingagents",
     "language": "Python",
@@ -427,16 +437,6 @@
     "forks": 8117,
     "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
     "last_seen": "2026-10-05",
-    "trending_days": 16
-  },
-  {
-    "name": "cathrynlavery/diagram-design",
-    "url": "https://github.com/cathrynlavery/diagram-design",
-    "language": "HTML",
-    "stars": 49896,
-    "forks": 3165,
-    "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-    "last_seen": "2026-10-11",
     "trending_days": 16
   },
   {
@@ -670,6 +670,16 @@
     "trending_days": 12
   },
   {
+    "name": "Alishahryar1/free-claude-code",
+    "url": "https://github.com/alishahryar1/free-claude-code",
+    "language": "Python",
+    "stars": 58875,
+    "forks": 9292,
+    "description": "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
+    "last_seen": "2026-10-12",
+    "trending_days": 12
+  },
+  {
     "name": "Flowseal/zapret-discord-youtube",
     "url": "https://github.com/flowseal/zapret-discord-youtube",
     "language": "Batchfile",
@@ -788,16 +798,6 @@
     "description": "An autonomous agent for deep financial research",
     "last_seen": "2026-05-06",
     "trending_days": 12
-  },
-  {
-    "name": "Alishahryar1/free-claude-code",
-    "url": "https://github.com/alishahryar1/free-claude-code",
-    "language": "Python",
-    "stars": 48407,
-    "forks": 7926,
-    "description": "Use Claude Code, Codex, Pi, and OpenCode for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)",
-    "last_seen": "2026-08-24",
-    "trending_days": 11
   },
   {
     "name": "anthropics/knowledge-work-plugins",
@@ -1050,6 +1050,16 @@
     "trending_days": 10
   },
   {
+    "name": "mksglu/context-mode",
+    "url": "https://github.com/mksglu/context-mode",
+    "language": "TypeScript",
+    "stars": 27160,
+    "forks": 1939,
+    "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+    "last_seen": "2026-10-12",
+    "trending_days": 10
+  },
+  {
     "name": "NevaMind-AI/memU",
     "url": "https://github.com/nevamind-ai/memu",
     "language": "Python",
@@ -1117,6 +1127,16 @@
     "forks": 3150,
     "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
     "last_seen": "2026-10-07",
+    "trending_days": 9
+  },
+  {
+    "name": "bilawalsidhu/gods-eye-view",
+    "url": "https://github.com/bilawalsidhu/gods-eye-view",
+    "language": "JavaScript",
+    "stars": 53344,
+    "forks": 10579,
+    "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+    "last_seen": "2026-10-12",
     "trending_days": 9
   },
   {
@@ -1270,6 +1290,16 @@
     "trending_days": 9
   },
   {
+    "name": "lyogavin/airllm",
+    "url": "https://github.com/lyogavin/airllm",
+    "language": "JupyterNotebook",
+    "stars": 37385,
+    "forks": 3860,
+    "description": "AirLLM 70B inference with single 4GB GPU",
+    "last_seen": "2026-10-12",
+    "trending_days": 9
+  },
+  {
     "name": "makeplane/plane",
     "url": "https://github.com/makeplane/plane",
     "language": "TypeScript",
@@ -1277,16 +1307,6 @@
     "forks": 5472,
     "description": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
     "last_seen": "2026-08-24",
-    "trending_days": 9
-  },
-  {
-    "name": "mksglu/context-mode",
-    "url": "https://github.com/mksglu/context-mode",
-    "language": "TypeScript",
-    "stars": 26129,
-    "forks": 1881,
-    "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
-    "last_seen": "2026-10-10",
     "trending_days": 9
   },
   {
@@ -1407,16 +1427,6 @@
     "forks": 3455,
     "description": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods",
     "last_seen": "2026-04-05",
-    "trending_days": 8
-  },
-  {
-    "name": "bilawalsidhu/gods-eye-view",
-    "url": "https://github.com/bilawalsidhu/gods-eye-view",
-    "language": "JavaScript",
-    "stars": 51089,
-    "forks": 10288,
-    "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
-    "last_seen": "2026-10-11",
     "trending_days": 8
   },
   {
@@ -1587,16 +1597,6 @@
     "forks": 3355,
     "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
     "last_seen": "2026-05-28",
-    "trending_days": 8
-  },
-  {
-    "name": "lyogavin/airllm",
-    "url": "https://github.com/lyogavin/airllm",
-    "language": "JupyterNotebook",
-    "stars": 36248,
-    "forks": 3800,
-    "description": "AirLLM 70B inference with single 4GB GPU",
-    "last_seen": "2026-10-11",
     "trending_days": 8
   },
   {
@@ -1880,6 +1880,16 @@
     "trending_days": 7
   },
   {
+    "name": "microsoft/BitNet",
+    "url": "https://github.com/microsoft/bitnet",
+    "language": "C++",
+    "stars": 40849,
+    "forks": 3804,
+    "description": "Official inference framework for 1-bit LLMs",
+    "last_seen": "2026-10-12",
+    "trending_days": 7
+  },
+  {
     "name": "MoonshotAI/kimi-cli",
     "url": "https://github.com/moonshotai/kimi-cli",
     "language": "Python",
@@ -1887,6 +1897,16 @@
     "forks": 1212,
     "description": "Kimi Code CLI is your next CLI agent.",
     "last_seen": "2026-07-20",
+    "trending_days": 7
+  },
+  {
+    "name": "morluto/rea",
+    "url": "https://github.com/morluto/rea",
+    "language": "TypeScript",
+    "stars": 149583,
+    "forks": 34585,
+    "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+    "last_seen": "2026-10-12",
     "trending_days": 7
   },
   {
@@ -2530,16 +2550,6 @@
     "trending_days": 6
   },
   {
-    "name": "microsoft/BitNet",
-    "url": "https://github.com/microsoft/bitnet",
-    "language": "Python",
-    "stars": 33222,
-    "forks": 2795,
-    "description": "Official inference framework for 1-bit LLMs",
-    "last_seen": "2026-03-13",
-    "trending_days": 6
-  },
-  {
     "name": "microsoft/generative-ai-for-beginners",
     "url": "https://github.com/microsoft/generative-ai-for-beginners",
     "language": "JupyterNotebook",
@@ -2547,16 +2557,6 @@
     "forks": 61517,
     "description": "21 Lessons, Get Started Building with Generative AI",
     "last_seen": "2026-08-04",
-    "trending_days": 6
-  },
-  {
-    "name": "morluto/rea",
-    "url": "https://github.com/morluto/rea",
-    "language": "TypeScript",
-    "stars": 93998,
-    "forks": 21006,
-    "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-    "last_seen": "2026-10-11",
     "trending_days": 6
   },
   {
@@ -3337,6 +3337,16 @@
     "forks": 1384,
     "description": "Show usage stats for OpenAI Codex and Claude Code, without having to login.",
     "last_seen": "2026-07-07",
+    "trending_days": 5
+  },
+  {
+    "name": "storytold/artcraft",
+    "url": "https://github.com/storytold/artcraft",
+    "language": "Rust",
+    "stars": 21333,
+    "forks": 3464,
+    "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+    "last_seen": "2026-10-12",
     "trending_days": 5
   },
   {
@@ -4477,16 +4487,6 @@
     "forks": 723,
     "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.",
     "last_seen": "2026-09-16",
-    "trending_days": 4
-  },
-  {
-    "name": "storytold/artcraft",
-    "url": "https://github.com/storytold/artcraft",
-    "language": "Rust",
-    "stars": 16709,
-    "forks": 2717,
-    "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
-    "last_seen": "2026-10-11",
     "trending_days": 4
   },
   {
@@ -8380,6 +8380,16 @@
     "trending_days": 2
   },
   {
+    "name": "open-webui/open-webui",
+    "url": "https://github.com/open-webui/open-webui",
+    "language": "Python",
+    "stars": 154829,
+    "forks": 22630,
+    "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
+    "last_seen": "2026-10-12",
+    "trending_days": 2
+  },
+  {
     "name": "openbao/openbao",
     "url": "https://github.com/openbao/openbao",
     "language": "Go",
@@ -12197,16 +12207,6 @@
     "forks": 97,
     "description": "AI‑supportive CRM / ERP foundation framework — built to power R&D, new processes, operations, and growth. It’s modular, extensible, and designed for teams that want strong defaults with room to customize everything. Better than Django, Retool and other alternatives - and Enterprise Grade!",
     "last_seen": "2026-02-19",
-    "trending_days": 1
-  },
-  {
-    "name": "open-webui/open-webui",
-    "url": "https://github.com/open-webui/open-webui",
-    "language": "Svelte",
-    "stars": 118510,
-    "forks": 16706,
-    "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
-    "last_seen": "2025-12-23",
     "trending_days": 1
   },
   {
