@@ -380,6 +380,16 @@
     "trending_days": 18
   },
   {
+    "name": "cathrynlavery/diagram-design",
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "language": "HTML",
+    "stars": 53814,
+    "forks": 3417,
+    "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+    "last_seen": "2026-10-13",
+    "trending_days": 18
+  },
+  {
     "name": "public-apis/public-apis",
     "url": "https://github.com/public-apis/public-apis",
     "language": "Python",
@@ -397,16 +407,6 @@
     "forks": 11286,
     "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
     "last_seen": "2026-09-07",
-    "trending_days": 17
-  },
-  {
-    "name": "cathrynlavery/diagram-design",
-    "url": "https://github.com/cathrynlavery/diagram-design",
-    "language": "HTML",
-    "stars": 52343,
-    "forks": 3303,
-    "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-    "last_seen": "2026-10-12",
     "trending_days": 17
   },
   {
@@ -680,6 +680,16 @@
     "trending_days": 12
   },
   {
+    "name": "debpalash/VoiceStudio",
+    "url": "https://github.com/debpalash/voicestudio",
+    "language": "Python",
+    "stars": 62472,
+    "forks": 6967,
+    "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+    "last_seen": "2026-10-13",
+    "trending_days": 12
+  },
+  {
     "name": "Flowseal/zapret-discord-youtube",
     "url": "https://github.com/flowseal/zapret-discord-youtube",
     "language": "Batchfile",
@@ -850,16 +860,6 @@
     "trending_days": 11
   },
   {
-    "name": "debpalash/VoiceStudio",
-    "url": "https://github.com/debpalash/voicestudio",
-    "language": "Python",
-    "stars": 50030,
-    "forks": 5561,
-    "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-    "last_seen": "2026-09-30",
-    "trending_days": 11
-  },
-  {
     "name": "forrestchang/andrej-karpathy-skills",
     "url": "https://github.com/forrestchang/andrej-karpathy-skills",
     "language": "Unknown",
@@ -917,6 +917,16 @@
     "forks": 8361,
     "description": "Microsoft PowerToys is a collection of utilities that supercharge productivity and customization on Windows",
     "last_seen": "2026-07-30",
+    "trending_days": 11
+  },
+  {
+    "name": "mksglu/context-mode",
+    "url": "https://github.com/mksglu/context-mode",
+    "language": "TypeScript",
+    "stars": 28018,
+    "forks": 1985,
+    "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+    "last_seen": "2026-10-13",
     "trending_days": 11
   },
   {
@@ -1010,6 +1020,16 @@
     "trending_days": 10
   },
   {
+    "name": "bilawalsidhu/gods-eye-view",
+    "url": "https://github.com/bilawalsidhu/gods-eye-view",
+    "language": "JavaScript",
+    "stars": 54992,
+    "forks": 10779,
+    "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+    "last_seen": "2026-10-13",
+    "trending_days": 10
+  },
+  {
     "name": "dyad-sh/dyad",
     "url": "https://github.com/dyad-sh/dyad",
     "language": "TypeScript",
@@ -1040,6 +1060,16 @@
     "trending_days": 10
   },
   {
+    "name": "lyogavin/airllm",
+    "url": "https://github.com/lyogavin/airllm",
+    "language": "JupyterNotebook",
+    "stars": 38163,
+    "forks": 3906,
+    "description": "AirLLM 2.8T LLM inference with single 4GB GPU",
+    "last_seen": "2026-10-13",
+    "trending_days": 10
+  },
+  {
     "name": "microsoft/ai-agents-for-beginners",
     "url": "https://github.com/microsoft/ai-agents-for-beginners",
     "language": "JupyterNotebook",
@@ -1047,16 +1077,6 @@
     "forks": 21241,
     "description": "12 Lessons to Get Started Building AI Agents",
     "last_seen": "2026-05-19",
-    "trending_days": 10
-  },
-  {
-    "name": "mksglu/context-mode",
-    "url": "https://github.com/mksglu/context-mode",
-    "language": "TypeScript",
-    "stars": 27160,
-    "forks": 1939,
-    "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
-    "last_seen": "2026-10-12",
     "trending_days": 10
   },
   {
@@ -1127,16 +1147,6 @@
     "forks": 3150,
     "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
     "last_seen": "2026-10-07",
-    "trending_days": 9
-  },
-  {
-    "name": "bilawalsidhu/gods-eye-view",
-    "url": "https://github.com/bilawalsidhu/gods-eye-view",
-    "language": "JavaScript",
-    "stars": 53344,
-    "forks": 10579,
-    "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
-    "last_seen": "2026-10-12",
     "trending_days": 9
   },
   {
@@ -1287,16 +1297,6 @@
     "forks": 3987,
     "description": "Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop",
     "last_seen": "2026-07-06",
-    "trending_days": 9
-  },
-  {
-    "name": "lyogavin/airllm",
-    "url": "https://github.com/lyogavin/airllm",
-    "language": "JupyterNotebook",
-    "stars": 37385,
-    "forks": 3860,
-    "description": "AirLLM 70B inference with single 4GB GPU",
-    "last_seen": "2026-10-12",
     "trending_days": 9
   },
   {
@@ -1610,6 +1610,16 @@
     "trending_days": 8
   },
   {
+    "name": "morluto/rea",
+    "url": "https://github.com/morluto/rea",
+    "language": "TypeScript",
+    "stars": 199641,
+    "forks": 48829,
+    "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+    "last_seen": "2026-10-13",
+    "trending_days": 8
+  },
+  {
     "name": "openai/plugins",
     "url": "https://github.com/openai/plugins",
     "language": "JavaScript",
@@ -1897,16 +1907,6 @@
     "forks": 1212,
     "description": "Kimi Code CLI is your next CLI agent.",
     "last_seen": "2026-07-20",
-    "trending_days": 7
-  },
-  {
-    "name": "morluto/rea",
-    "url": "https://github.com/morluto/rea",
-    "language": "TypeScript",
-    "stars": 149583,
-    "forks": 34585,
-    "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-    "last_seen": "2026-10-12",
     "trending_days": 7
   },
   {
@@ -2690,6 +2690,16 @@
     "trending_days": 6
   },
   {
+    "name": "storytold/artcraft",
+    "url": "https://github.com/storytold/artcraft",
+    "language": "Rust",
+    "stars": 24938,
+    "forks": 3927,
+    "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+    "last_seen": "2026-10-13",
+    "trending_days": 6
+  },
+  {
     "name": "tursodatabase/turso",
     "url": "https://github.com/tursodatabase/turso",
     "language": "Rust",
@@ -3337,16 +3347,6 @@
     "forks": 1384,
     "description": "Show usage stats for OpenAI Codex and Claude Code, without having to login.",
     "last_seen": "2026-07-07",
-    "trending_days": 5
-  },
-  {
-    "name": "storytold/artcraft",
-    "url": "https://github.com/storytold/artcraft",
-    "language": "Rust",
-    "stars": 21333,
-    "forks": 3464,
-    "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
-    "last_seen": "2026-10-12",
     "trending_days": 5
   },
   {
@@ -6270,6 +6270,16 @@
     "trending_days": 3
   },
   {
+    "name": "vercel-labs/skills",
+    "url": "https://github.com/vercel-labs/skills",
+    "language": "TypeScript",
+    "stars": 34322,
+    "forks": 2937,
+    "description": "The open agent skills tool - npx skills",
+    "last_seen": "2026-10-13",
+    "trending_days": 3
+  },
+  {
     "name": "viarotel-org/escrcpy",
     "url": "https://github.com/viarotel-org/escrcpy",
     "language": "JavaScript",
@@ -9107,16 +9117,6 @@
     "forks": 563,
     "description": "Self-hosted AI accounting app. LLM analyzer for receipts, invoices, transactions with custom prompts and categories",
     "last_seen": "2026-03-31",
-    "trending_days": 2
-  },
-  {
-    "name": "vercel-labs/skills",
-    "url": "https://github.com/vercel-labs/skills",
-    "language": "TypeScript",
-    "stars": 30959,
-    "forks": 2647,
-    "description": "The open agent skills tool - npx skills",
-    "last_seen": "2026-09-10",
     "trending_days": 2
   },
   {
@@ -13397,6 +13397,16 @@
     "forks": 5200,
     "description": "Xray, Penetrates Everything. Also the best v2ray-core. Where the magic happens. An open platform for various uses.",
     "last_seen": "2026-04-20",
+    "trending_days": 1
+  },
+  {
+    "name": "xtool-org/xtool",
+    "url": "https://github.com/xtool-org/xtool",
+    "language": "Swift",
+    "stars": 9004,
+    "forks": 375,
+    "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
+    "last_seen": "2026-10-13",
     "trending_days": 1
   },
   {
