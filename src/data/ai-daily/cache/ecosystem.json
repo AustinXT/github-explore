@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_run": "2026-10-13",
+    "last_run": "2026-10-14",
     "window_days": 30
   },
   "entries": [
@@ -801,6 +801,54 @@
       "canonical_url": "https://github.com/significant-gravitas/autogpt",
       "event_date": "2026-10-13",
       "date_seen": "2026-10-13"
+    },
+    {
+      "key": "github.com/vercel-labs/skills",
+      "canonical_url": "https://github.com/vercel-labs/skills",
+      "event_date": "2026-10-14",
+      "date_seen": "2026-10-14"
+    },
+    {
+      "key": "https://huggingface.co/blog/huggingface/llama-windows",
+      "canonical_url": "https://huggingface.co/blog/huggingface/llama-windows",
+      "event_date": "2026-10-14",
+      "date_seen": "2026-10-14"
+    },
+    {
+      "key": "https://huggingface.co/blog/lightonai/colgrep-agent",
+      "canonical_url": "https://huggingface.co/blog/lightonai/colgrep-agent",
+      "event_date": "2026-10-14",
+      "date_seen": "2026-10-14"
+    },
+    {
+      "key": "https://huggingface.co/blog/abdoelsayed/uibk-embedding-v1",
+      "canonical_url": "https://huggingface.co/blog/abdoelsayed/uibk-embedding-v1",
+      "event_date": "2026-10-14",
+      "date_seen": "2026-10-14"
+    },
+    {
+      "key": "https://huggingface.co/blog/nvidia/fine-tune-asr-with-nvidia-nemotron-speech-skills",
+      "canonical_url": "https://huggingface.co/blog/nvidia/fine-tune-asr-with-nvidia-nemotron-speech-skills",
+      "event_date": "2026-10-14",
+      "date_seen": "2026-10-14"
+    },
+    {
+      "key": "https://huggingface.co/blog/alphaedge-ai/french-sparseup",
+      "canonical_url": "https://huggingface.co/blog/alphaedge-ai/french-sparseup",
+      "event_date": "2026-10-14",
+      "date_seen": "2026-10-14"
+    },
+    {
+      "key": "github.com/hkuds/lightrag",
+      "canonical_url": "https://github.com/hkuds/lightrag",
+      "event_date": "2026-10-14",
+      "date_seen": "2026-10-14"
+    },
+    {
+      "key": "github.com/comfy-org/comfyui",
+      "canonical_url": "https://github.com/comfy-org/comfyui",
+      "event_date": "2026-10-14",
+      "date_seen": "2026-10-14"
     }
   ]
 }
