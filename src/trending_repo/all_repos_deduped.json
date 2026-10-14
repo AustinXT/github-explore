@@ -33,11 +33,11 @@
     "name": "nvm-sh/nvm",
     "url": "https://github.com/nvm-sh/nvm",
     "language": "Shell",
-    "stars": 94856,
-    "forks": 10421,
-    "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions. $nvm: 3ArcxqLtXMmBnWbbtfwQgVL3MNnDsggzgGDtXMnjpump",
-    "last_seen": "2026-09-05",
-    "trending_days": 36
+    "stars": 95398,
+    "forks": 10509,
+    "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
+    "last_seen": "2026-10-14",
+    "trending_days": 37
   },
   {
     "name": "affaan-m/ECC",
@@ -610,6 +610,26 @@
     "trending_days": 14
   },
   {
+    "name": "debpalash/VoiceStudio",
+    "url": "https://github.com/debpalash/voicestudio",
+    "language": "Python",
+    "stars": 65381,
+    "forks": 7232,
+    "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+    "last_seen": "2026-10-14",
+    "trending_days": 13
+  },
+  {
+    "name": "K-Dense-AI/scientific-agent-skills",
+    "url": "https://github.com/k-dense-ai/scientific-agent-skills",
+    "language": "Python",
+    "stars": 49054,
+    "forks": 4401,
+    "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+    "last_seen": "2026-10-14",
+    "trending_days": 13
+  },
+  {
     "name": "lfnovo/open-notebook",
     "url": "https://github.com/lfnovo/open-notebook",
     "language": "TypeScript",
@@ -680,16 +700,6 @@
     "trending_days": 12
   },
   {
-    "name": "debpalash/VoiceStudio",
-    "url": "https://github.com/debpalash/voicestudio",
-    "language": "Python",
-    "stars": 62472,
-    "forks": 6967,
-    "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-    "last_seen": "2026-10-13",
-    "trending_days": 12
-  },
-  {
     "name": "Flowseal/zapret-discord-youtube",
     "url": "https://github.com/flowseal/zapret-discord-youtube",
     "language": "Batchfile",
@@ -700,13 +710,13 @@
     "trending_days": 12
   },
   {
-    "name": "K-Dense-AI/scientific-agent-skills",
-    "url": "https://github.com/k-dense-ai/scientific-agent-skills",
-    "language": "Python",
-    "stars": 41341,
-    "forks": 3811,
-    "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
-    "last_seen": "2026-09-01",
+    "name": "mksglu/context-mode",
+    "url": "https://github.com/mksglu/context-mode",
+    "language": "TypeScript",
+    "stars": 28852,
+    "forks": 2025,
+    "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+    "last_seen": "2026-10-14",
     "trending_days": 12
   },
   {
@@ -917,16 +927,6 @@
     "forks": 8361,
     "description": "Microsoft PowerToys is a collection of utilities that supercharge productivity and customization on Windows",
     "last_seen": "2026-07-30",
-    "trending_days": 11
-  },
-  {
-    "name": "mksglu/context-mode",
-    "url": "https://github.com/mksglu/context-mode",
-    "language": "TypeScript",
-    "stars": 28018,
-    "forks": 1985,
-    "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
-    "last_seen": "2026-10-13",
     "trending_days": 11
   },
   {
@@ -1250,6 +1250,16 @@
     "trending_days": 9
   },
   {
+    "name": "HKUDS/CLI-Anything",
+    "url": "https://github.com/hkuds/cli-anything",
+    "language": "Python",
+    "stars": 52289,
+    "forks": 4761,
+    "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+    "last_seen": "2026-10-14",
+    "trending_days": 9
+  },
+  {
     "name": "jwasham/coding-interview-university",
     "url": "https://github.com/jwasham/coding-interview-university",
     "language": "Unknown",
@@ -1307,6 +1317,16 @@
     "forks": 5472,
     "description": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
     "last_seen": "2026-08-24",
+    "trending_days": 9
+  },
+  {
+    "name": "morluto/rea",
+    "url": "https://github.com/morluto/rea",
+    "language": "TypeScript",
+    "stars": 232611,
+    "forks": 58003,
+    "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+    "last_seen": "2026-10-14",
     "trending_days": 9
   },
   {
@@ -1407,6 +1427,16 @@
     "forks": 49780,
     "description": "All Algorithms implemented in Python",
     "last_seen": "2025-12-29",
+    "trending_days": 9
+  },
+  {
+    "name": "vxcontrol/pentagi",
+    "url": "https://github.com/vxcontrol/pentagi",
+    "language": "Go",
+    "stars": 28975,
+    "forks": 4349,
+    "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+    "last_seen": "2026-10-14",
     "trending_days": 9
   },
   {
@@ -1540,16 +1570,6 @@
     "trending_days": 8
   },
   {
-    "name": "HKUDS/CLI-Anything",
-    "url": "https://github.com/hkuds/cli-anything",
-    "language": "Python",
-    "stars": 50205,
-    "forks": 4610,
-    "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-    "last_seen": "2026-09-24",
-    "trending_days": 8
-  },
-  {
     "name": "HKUDS/DeepTutor",
     "url": "https://github.com/hkuds/deeptutor",
     "language": "Python",
@@ -1607,16 +1627,6 @@
     "forks": 3454,
     "description": "Meshery, the cloud native manager",
     "last_seen": "2026-06-17",
-    "trending_days": 8
-  },
-  {
-    "name": "morluto/rea",
-    "url": "https://github.com/morluto/rea",
-    "language": "TypeScript",
-    "stars": 199641,
-    "forks": 48829,
-    "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-    "last_seen": "2026-10-13",
     "trending_days": 8
   },
   {
@@ -1697,16 +1707,6 @@
     "forks": 5713,
     "description": "Hindsight: Agent Memory That Learns",
     "last_seen": "2026-09-29",
-    "trending_days": 8
-  },
-  {
-    "name": "vxcontrol/pentagi",
-    "url": "https://github.com/vxcontrol/pentagi",
-    "language": "Go",
-    "stars": 23750,
-    "forks": 3086,
-    "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
-    "last_seen": "2026-09-13",
     "trending_days": 8
   },
   {
@@ -1927,6 +1927,16 @@
     "forks": 3881,
     "description": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.",
     "last_seen": "2026-05-24",
+    "trending_days": 7
+  },
+  {
+    "name": "NationalSecurityAgency/ghidra",
+    "url": "https://github.com/nationalsecurityagency/ghidra",
+    "language": "Java",
+    "stars": 87044,
+    "forks": 9724,
+    "description": "Ghidra is a software reverse engineering (SRE) framework",
+    "last_seen": "2026-10-14",
     "trending_days": 7
   },
   {
@@ -2577,16 +2587,6 @@
     "forks": 279,
     "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
     "last_seen": "2026-10-02",
-    "trending_days": 6
-  },
-  {
-    "name": "NationalSecurityAgency/ghidra",
-    "url": "https://github.com/nationalsecurityagency/ghidra",
-    "language": "Java",
-    "stars": 78289,
-    "forks": 8667,
-    "description": "Ghidra is a software reverse engineering (SRE) framework",
-    "last_seen": "2026-09-17",
     "trending_days": 6
   },
   {
@@ -8290,6 +8290,16 @@
     "trending_days": 2
   },
   {
+    "name": "ntdevlabs/tiny11builder",
+    "url": "https://github.com/ntdevlabs/tiny11builder",
+    "language": "C#",
+    "stars": 20097,
+    "forks": 1544,
+    "description": "WinUI app for building smaller, customized Windows 11 images.",
+    "last_seen": "2026-10-14",
+    "trending_days": 2
+  },
+  {
     "name": "NVIDIA-AI-Blueprints/video-search-and-summarization",
     "url": "https://github.com/nvidia-ai-blueprints/video-search-and-summarization",
     "language": "Python",
@@ -9197,6 +9207,16 @@
     "forks": 8471,
     "description": "Grok open release",
     "last_seen": "2026-01-23",
+    "trending_days": 2
+  },
+  {
+    "name": "xtool-org/xtool",
+    "url": "https://github.com/xtool-org/xtool",
+    "language": "Swift",
+    "stars": 10293,
+    "forks": 446,
+    "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
+    "last_seen": "2026-10-14",
     "trending_days": 2
   },
   {
@@ -11060,6 +11080,16 @@
     "trending_days": 1
   },
   {
+    "name": "ifixai-ai/iFixAi",
+    "url": "https://github.com/ifixai-ai/ifixai",
+    "language": "Python",
+    "stars": 26858,
+    "forks": 1486,
+    "description": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
+    "last_seen": "2026-10-14",
+    "trending_days": 1
+  },
+  {
     "name": "iii-hq/iii",
     "url": "https://github.com/iii-hq/iii",
     "language": "Rust",
@@ -12090,16 +12120,6 @@
     "trending_days": 1
   },
   {
-    "name": "ntdevlabs/tiny11builder",
-    "url": "https://github.com/ntdevlabs/tiny11builder",
-    "language": "PowerShell",
-    "stars": 14886,
-    "forks": 1177,
-    "description": "Scripts to build a trimmed-down Windows 11 image.",
-    "last_seen": "2025-10-16",
-    "trending_days": 1
-  },
-  {
     "name": "nukeop/nuclear",
     "url": "https://github.com/nukeop/nuclear",
     "language": "TypeScript",
@@ -12657,6 +12677,16 @@
     "forks": 5562,
     "description": "The Ruby Programming Language",
     "last_seen": "2026-02-14",
+    "trending_days": 1
+  },
+  {
+    "name": "rust-lang/rust",
+    "url": "https://github.com/rust-lang/rust",
+    "language": "Rust",
+    "stars": 119842,
+    "forks": 18673,
+    "description": "Empowering everyone to build reliable and efficient software.",
+    "last_seen": "2026-10-14",
     "trending_days": 1
   },
   {
@@ -13397,16 +13427,6 @@
     "forks": 5200,
     "description": "Xray, Penetrates Everything. Also the best v2ray-core. Where the magic happens. An open platform for various uses.",
     "last_seen": "2026-04-20",
-    "trending_days": 1
-  },
-  {
-    "name": "xtool-org/xtool",
-    "url": "https://github.com/xtool-org/xtool",
-    "language": "Swift",
-    "stars": 9004,
-    "forks": 375,
-    "description": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
-    "last_seen": "2026-10-13",
     "trending_days": 1
   },
   {
