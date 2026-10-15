@@ -8,15 +8,14 @@
 |---|---|---|
 | `repo-miner/` | `opc/starlight/repo-miner` v1.0.1（42plugin） | MIT |
 | `md2wechat/` | `zhiping/creator/md2wechat` v1.0.1（42plugin） | MIT |
-| `ai-daily-ecosystem/` | 本仓库自建（开源 AI 日报） | MIT |
-| `ai-daily-frontier/` | 本仓库自建（AI 前沿日报，对标 MorningAI） | MIT |
+| `opensource-weekly/` | 本仓库自建（开源周刊） | MIT |
 | `resource-miner/` | 本仓库自建（资源类仓库分析：awesome / 学习资料 / 非典型非代码） | MIT |
 
 每个子目录都保留了 `LICENSE` 文件，符合 MIT 协议要求。
 
-两个 `ai-daily-*` 是本项目自建 skill（非 42plugin 上游），直接维护在本目录；它们调用共享
-脚本 `src/scripts/{collect_daily_facts,dedup_daily,record_daily}.py` 与共享配置
-`src/data/ai-daily/*`（采集源 / 评分 rubric / 去重 / 核验规则）。
+`opensource-weekly` 是本项目自建 skill（非 42plugin 上游），直接维护在本目录；它调用
+脚本 `src/scripts/{collect_weekly_facts,dedup_weekly,record_weekly}.py` 与配置
+`src/data/opensource-weekly/*`（AI 判定 / 评分 rubric / 去重 / 核验规则）。
 
 `resource-miner` 也是本项目自建 skill，与 repo-miner 并列用于「没有代码架构」的资源类仓库
 （套 repo-miner 会得「近零代码行=已放弃」的错误结论）。它**自包含打包**了采集脚本
@@ -35,18 +34,19 @@ cp -RL .claude/skills/md2wechat ci/skills/
 git add ci/skills && git commit -m "chore: 同步 vendored skills"
 ```
 
-**本仓库自建 skill**（ai-daily-ecosystem / ai-daily-frontier）：直接在本目录编辑即可；
-若想本地用 `/ai-daily-*` 调用，可反向 symlink 到 `.claude/skills/`：
+**本仓库自建 skill**（opensource-weekly）：直接在本目录编辑即可；
+若想本地用 `/opensource-weekly-*` 调用，可反向 symlink 到 `.claude/skills/`：
 
 ```bash
-ln -s "$PWD/ci/skills/ai-daily-ecosystem" .claude/skills/ai-daily-ecosystem
-ln -s "$PWD/ci/skills/ai-daily-frontier"  .claude/skills/ai-daily-frontier
+ln -s "$PWD/ci/skills/opensource-weekly" .claude/skills/opensource-weekly
 ```
 
-若想本地用 `/resource-miner` 调用，可反向 symlink 到 `.claude/skills/`（与 ai-daily 同理）：
+若想本地用 `/resource-miner` 调用，可反向 symlink 到 `.claude/skills/`（与 opensource-weekly 同理）：
 
 ```bash
 ln -s "$PWD/ci/skills/resource-miner" .claude/skills/resource-miner
 ```
 
-CI 启动时由 `src/scripts/setup_ci_env.sh` 把全部 5 个 skill 拷贝到 runner 的 `~/.claude/skills/`。
+CI 启动时由 `src/scripts/setup_ci_env.sh` 把全部 4 个 skill 拷贝到 runner 的 `~/.claude/skills/`。
+
+AI 周刊已迁往 `~/proj.xt.com/ai-info`，不再由本项目安装或生成。

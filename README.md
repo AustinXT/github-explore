@@ -121,3 +121,20 @@ git add ci/skills && git commit -m "chore: 同步 vendored skills"
 - `scripts/` — 一次性辅助脚本（公众号同步、DB 查询、历史迁移）
 - `ci/skills/` — vendored skill 文件，CI 启动时拷到 runner 的 `~/.claude/skills/`
 - `.github/workflows/auto-analyze.yml` — 主自动化 workflow
+
+
+## 开源周刊与 AI 周刊
+
+开源周刊入口为 `/opensource-weekly [YYYY-MM-DD]`，站点栏目为 `/weekly`（兼容旧 `/daily` 链接及 RSS）。
+每周五北京时间 06:00 自动生成，聚合截至前一日 UTC 的最近七天 Trending 与大牛 Star 动态，
+按 ISO 周防重复；数据刷新仍每日进行。文章在 `src/weekly_report/`，
+索引为 `src/data/weekly_digests.jsonl`，原日报保留原始标题及日期作为存档。
+工作流 `.github/workflows/weekly-digest.yml` 沿用开源篇的公众号草稿发布设置，手动可选 `skip_publish`。
+
+AI 周刊已独立迁移到 `~/proj.xt.com/ai-info`，在那里使用 `/ai-weekly [YYYY-MM-DD]`。
+新项目有独立采集配置、七天窗口、去重索引和 Actions 流程，不依赖本仓库。
+
+```sh
+python3 src/scripts/collect_weekly_facts.py 2026-10-18 --type ecosystem
+python3 -m unittest discover -s tests -p 'test_weekly.py'
+```
