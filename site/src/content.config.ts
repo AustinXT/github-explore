@@ -13,12 +13,11 @@ const reports = defineCollection({
   schema: z.object({}).passthrough(),
 });
 
-// AI 日报 · 开源生态篇：从 src/daily_report 加载（带 YAML frontmatter）。
-// 篇B（frontier）落在 src/ai_news，不进站点，故此处只 glob daily_report。
-const daily = defineCollection({
+// 开源周刊 · 开源生态篇：从 src/weekly_report 加载（带 YAML frontmatter）。
+const weekly = defineCollection({
   loader: glob({
     pattern: ["**/*.md", "!README.md"],
-    base: "../src/daily_report",
+    base: "../src/weekly_report",
   }),
   schema: z
     .object({
@@ -32,4 +31,4 @@ const daily = defineCollection({
     .passthrough(),
 });
 
-export const collections = { reports, daily };
+export const collections = { reports, weekly };

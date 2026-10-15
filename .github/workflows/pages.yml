@@ -7,12 +7,14 @@ on:
       - "src/analysis_report/**"
       - "src/trending_repo/**"
       - "src/data/**"
-      # AI 日报篇A（ecosystem）落 src/daily_report/，新日报需触发站点重建；
-      # 篇B（frontier）落 src/ai_news/，不上站，故不列入 paths。
-      - "src/daily_report/**"
+      # 开源周刊篇A（ecosystem）落 src/weekly_report/，新周刊需触发站点重建；
+      - "src/weekly_report/**"
       - "site/**"
       - "scripts/**"
       - ".github/workflows/pages.yml"
+  workflow_run:
+    workflows: ["Open Source Weekly (开源周刊)"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -26,6 +28,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     env:
       SITE_URL: ${{ vars.SITE_URL || 'https://nightvoyager.top' }}

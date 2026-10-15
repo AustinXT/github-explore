@@ -1,0 +1,313 @@
+name: Open Source Weekly (开源周刊)
+
+# 每周四 UTC 22:00（台北/北京周五 06:00），统计截至周四的最近七天。
+on:
+  schedule:
+    - cron: '0 22 * * 4'
+  workflow_dispatch:
+    inputs:
+      force_backend:
+        description: 推理后端
+        type: choice
+        default: minimax
+        options: [minimax, anthropic]
+      date:
+        description: '周刊日期 YYYY-MM-DD（留空=今天 UTC）'
+        required: false
+        default: ''
+      skip_publish:
+        description: '跳过公众号发布（默认 false=定时自动推篇A 入草稿箱）'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      # 推理后端：Minimax 的 Anthropic 兼容端点，BASE_URL 写死在 run_skill.sh 里
+      FORCE_BACKEND: ${{ github.event.inputs.force_backend || 'minimax' }}
+      MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+      # 应急降级：仅当本地/手动设了 FORCE_BACKEND=anthropic 才会用到
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      # 微信草稿箱凭证：实际发布在 ali-demo 上跑（见下方 SSH 跳板 step），runner 不直连微信/反代。
+      # 这里保留 APPID/APPSECRET 仅供 setup_ci_env.sh 的 REQUIRE_PUBLISH fail-fast 校验。
+      # ali-demo 的 SSH 凭证只在发布 step 的 step-env 注入（缩小密钥暴露面），不放 job-env。
+      WECHAT_APPID: ${{ secrets.WECHAT_APPID }}
+      WECHAT_APPSECRET: ${{ secrets.WECHAT_APPSECRET }}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: requirements-ci.txt
+
+      # 缓存用户级 tokei 二进制（与 auto-analyze.yml 同款 key 策略）
+      - name: Cache tokei binary
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/bin/tokei
+          key: tokei-${{ runner.os }}-${{ hashFiles('src/scripts/setup_ci_env.sh') }}
+
+      # 缓存用户级 npm 全局目录（含 @anthropic-ai/claude-code）
+      - name: Cache npm global (claude-code CLI)
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm-global
+          key: npm-global-${{ runner.os }}-${{ hashFiles('src/scripts/setup_ci_env.sh') }}
+
+      - name: Bootstrap CI environment
+        env:
+          # 除非手动 dispatch 显式 skip_publish=true，否则都硬性校验发布凭证；
+          # 定时（输入为空）/ dispatch 默认 false 都要求凭证（篇A 自动推草稿箱）。
+          REQUIRE_PUBLISH: ${{ github.event.inputs.skip_publish == 'true' && '0' || '1' }}
+        run: bash src/scripts/setup_ci_env.sh
+
+      - name: 计算周刊日期（dispatch 输入或今天 UTC）
+        env:
+          DATE_INPUT: ${{ github.event.inputs.date }}
+        run: |
+          set -euo pipefail
+          DATE_IN="${DATE_INPUT:-}"
+          if [[ -n "$DATE_IN" ]]; then
+            DATE="$DATE_IN"
+          else
+            DATE="$(date -u +%F)"
+          fi
+          DATE="$(python3 -c 'import sys; from datetime import datetime; print(datetime.strptime(sys.argv[1], "%Y-%m-%d").strftime("%Y-%m-%d"))' "$DATE")"
+          echo "DATE=$DATE" >> "$GITHUB_ENV"
+          echo "::notice::周刊日期 = $DATE"
+
+      - name: 跳过本周已生成的期刊
+        id: issue
+        run: |
+          set -euo pipefail
+          exists=$(python3 src/scripts/record_weekly.py --type ecosystem --date "$DATE" --check)
+          echo "exists=$exists" >> "$GITHUB_OUTPUT"
+
+      # fail-fast：先预跑确定性采集，确认数据源齐备（也顺带把 facts JSON 落到 tmp/）
+      - name: 校验确定性数据齐备（collect_weekly_facts 预跑）
+        if: steps.issue.outputs.exists != 'true'
+        run: |
+          set -euo pipefail
+          mkdir -p tmp/logs
+          python3 src/scripts/collect_weekly_facts.py "$DATE" --type "ecosystem"
+
+      - name: 生成周刊 (/opensource-weekly)
+        if: steps.issue.outputs.exists != 'true'
+        run: |
+          set -euo pipefail
+          prompt="/opensource-weekly $DATE，确定性数据用 src/scripts/collect_weekly_facts.py，按 skill 产出 md 与同名 .meta.json"
+          bash src/scripts/run_skill.sh "$prompt" \
+            --timeout 1800 \
+            --log "tmp/logs/opensource-weekly.log"
+
+      - name: 定位产出 MD（不存在则优雅跳过该 type）
+        id: locate
+        if: steps.issue.outputs.exists != 'true'
+        run: |
+          set -euo pipefail
+          md="src/weekly_report/$DATE.md"
+          if [[ -f "$md" ]]; then
+            echo "md=$md" >> "$GITHUB_OUTPUT"
+            echo "produced=true" >> "$GITHUB_OUTPUT"
+            echo "::notice::产出 $md"
+          else
+            echo "produced=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::未产出 $md（ecosystem 可能无增量/外部采集为空），优雅跳过，不 fail workflow"
+          fi
+
+      - name: 提取标题/提要（frontmatter → H1 → meta.json 兜底）
+        if: steps.locate.outputs.produced == 'true'
+        env:
+          MD: ${{ steps.locate.outputs.md }}
+        run: |
+          set -euo pipefail
+          python3 - "$MD" >> "$GITHUB_ENV" <<'PY'
+          import sys, json, re
+          from pathlib import Path
+          md = Path(sys.argv[1])
+          text = md.read_text(encoding="utf-8")
+          title = summary = ""
+          # 1) YAML frontmatter
+          m = re.match(r"^---\n(.*?)\n---\n", text, re.S)
+          if m:
+              try:
+                  import yaml
+                  fm = yaml.safe_load(m.group(1)) or {}
+                  title = (fm.get("title") or "").strip()
+                  summary = (fm.get("summary") or fm.get("digest") or fm.get("description") or "").strip()
+              except Exception:
+                  pass
+          # 2) H1 兜底标题
+          if not title:
+              h = re.search(r"^#\s+(.+)$", text, re.M)
+              if h:
+                  title = h.group(1).strip()
+          # 3) 同名 .meta.json 兜底
+          meta = md.with_suffix(".meta.json")
+          if (not title or not summary) and meta.exists():
+              try:
+                  j = json.loads(meta.read_text(encoding="utf-8"))
+                  title = title or (j.get("title") or "").strip()
+                  summary = summary or (j.get("digest") or j.get("summary") or "").strip()
+              except Exception:
+                  pass
+          one = lambda s: " ".join((s or "").split())  # 折成单行，安全写入 GITHUB_ENV
+          print(f"DIGEST_TITLE={one(title) or md.stem}")
+          print(f"DIGEST_SUMMARY={one(summary)}")
+          PY
+
+      - name: 记录周刊索引 (weekly_digests.jsonl)
+        if: steps.locate.outputs.produced == 'true'
+        run: |
+          set -euo pipefail
+          # record_weekly.py 幂等：同 (type, ISO week) 重复调用会跳过
+          python3 src/scripts/record_weekly.py \
+            --type "ecosystem" \
+            --date "$DATE" \
+            --slug "$DATE" \
+            --title "$DIGEST_TITLE" \
+            --summary "$DIGEST_SUMMARY" \
+            --ci-run-id "$GITHUB_RUN_ID"
+
+      - name: Commit & Push（仅当有产出）
+        if: steps.locate.outputs.produced == 'true'
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/weekly_digests.jsonl src/data/opensource-weekly/cache/ 2>/dev/null || true
+          git add src/weekly_report/
+          if git diff --cached --quiet; then
+            echo "::notice::无变更可提交"
+            exit 0
+          fi
+          msg=$(cat <<MSG
+          feat(weekly): 开源周刊 ecosystem $DATE
+
+          Run-URL ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          MSG
+          )
+          git commit -m "$msg"
+
+          # 3 次重试 + rebase 自愈临时冲突 / 网络抖动（沿用 auto-analyze.yml）。
+          # rebase 失败（如 jsonl 追加冲突）则 abort，避免卡在半完成的 rebase 状态。
+          pushed=0
+          for i in 1 2 3; do
+            if git push; then
+              pushed=1
+              break
+            fi
+            echo "::warning::push 第 $i/3 次失败，尝试 rebase 后重试"
+            git pull --rebase --autostash origin main \
+              || { echo "::warning::rebase 失败（第 $i 次），abort 后重试"; git rebase --abort 2>/dev/null || true; }
+            sleep $((i * 5))
+          done
+          if [[ $pushed -eq 0 ]]; then
+            echo "::error::3 次 push 均失败；产物保留在 artifact。"
+            exit 1
+          fi
+
+      - name: 发布篇A 到公众号草稿箱（SSH 跳板到 ali-demo）
+        id: publish
+        # 仅篇A（ecosystem）：周刊 md + skill 同产的 .meta.json 打 tar 经 SSH stdin 送到 ali-demo
+        # 白名单机跑 wechat_publish.py 入草稿箱（不群发）。runner 直连微信会被阿里云网络层 RESET，
+        # 故沿用 auto-analyze.yml 的 SSH 跳板方案；周刊已自带 .meta.json，省掉 /md2wechat 渲染。
+        if: |
+          steps.locate.outputs.produced == 'true' &&
+          github.event.inputs.skip_publish != 'true'
+        env:
+          REPORT_MD: ${{ steps.locate.outputs.md }}
+          SSH_KEY: ${{ secrets.ALI_DEMO_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.ALI_DEMO_KNOWN_HOSTS }}
+        # 故意不开 -e：SSH 失败走 artifact 留种，不让整 job fail（md 已 commit，发布可异步重试）。
+        run: |
+          set -uo pipefail
+          meta="${REPORT_MD%.md}.meta.json"
+          if [[ ! -f "$meta" ]]; then
+            echo "::warning::缺 $meta（skill 未产出元数据），跳过发布，不 fail"
+            echo "publish_status=skipped" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          mkdir -p ~/.ssh tmp/logs tmp/publish-pending
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/ali_demo
+          chmod 600 ~/.ssh/ali_demo
+          printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+          # 打包 md + meta.json（同 auto-analyze.yml 契约：stdin=tar.gz）
+          md_dir=$(dirname "$REPORT_MD")
+          md_name=$(basename "$REPORT_MD")
+          meta_name=$(basename "$meta")
+          tar czf /tmp/payload.tgz -C "$md_dir" "$md_name" "$meta_name"
+
+          publish_ok=0
+          for i in 1 2 3; do
+            # SSH 走 forced-command 自动跑 publish-from-runner.sh
+            # stdin: tar.gz，stdout: last_publish.json，stderr: 日志（落 wechat-publish.log）
+            if ssh -i ~/.ssh/ali_demo \
+                -o UserKnownHostsFile=~/.ssh/known_hosts \
+                -o StrictHostKeyChecking=yes \
+                -o ConnectTimeout=30 \
+                root@47.113.202.7 \
+                < /tmp/payload.tgz \
+                > tmp/last_publish.json \
+                2> tmp/logs/wechat-publish.log; then
+              publish_ok=1
+              break
+            fi
+            echo "::warning::SSH 发布第 $i/3 次失败"
+            cat tmp/logs/wechat-publish.log >&2 || true
+            if [[ $i -lt 3 ]]; then
+              backoff=$((i * 15))
+              echo "  退避 ${backoff}s 后重试"
+              sleep "$backoff"
+            fi
+          done
+
+          if [[ $publish_ok -eq 1 ]]; then
+            echo "publish_status=success" >> "$GITHUB_OUTPUT"
+            echo "=== 远端日志 ==="; cat tmp/logs/wechat-publish.log
+            echo ""; echo "=== last_publish.json ==="; cat tmp/last_publish.json
+          else
+            # 留种到 tmp/publish-pending/，artifact 会带上；md 已 commit，可异步重发
+            cp /tmp/payload.tgz "tmp/publish-pending/$(date -u +%Y%m%d-%H%M%S)-${md_name%.md}.tgz"
+            echo "publish_status=deferred" >> "$GITHUB_OUTPUT"
+            echo "::warning::SSH 发布 3 次失败，已留种到 tmp/publish-pending/，artifact 可下载手动重发"
+          fi
+
+      - name: Upload logs (always)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-digest-logs-ecosystem-${{ github.run_id }}
+          path: |
+            tmp/logs/
+            tmp/weekly-facts-*.json
+            tmp/publish-pending/
+            src/weekly_report/
+            src/data/weekly_digests.jsonl
+            src/data/opensource-weekly/cache/
+          retention-days: 14
+          if-no-files-found: ignore

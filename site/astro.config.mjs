@@ -37,7 +37,7 @@ export default defineConfig({
   integrations: [
     preact(),
     sitemap({
-      filter: (url) => !SITEMAP_EXCLUDE.some((p) => url.endsWith(p) || url.endsWith(`${p}/`)),
+      filter: (url) => !/\/daily(?:\/|$)/.test(new URL(url).pathname) && !SITEMAP_EXCLUDE.some((p) => url.endsWith(p) || url.endsWith(`${p}/`)),
       changefreq: "weekly",
       priority: 0.7,
       serialize(item) {
@@ -61,15 +61,15 @@ export default defineConfig({
           item.priority = 0.9;
           return item;
         }
-        // AI 日报详情：/{base}/daily/{date}
-        const dailyMatch = p.match(/\/daily\/([^/]+)$/);
-        if (dailyMatch && dailyMatch[1] !== "daily") {
+        // 开源周刊详情：/{base}/weekly/{date}
+        const weeklyMatch = p.match(/\/weekly\/([^/]+)$/);
+        if (weeklyMatch && weeklyMatch[1] !== "weekly") {
           item.changefreq = "monthly";
           item.priority = 0.7;
           return item;
         }
-        if (p.endsWith("/daily")) {
-          item.changefreq = "daily";
+        if (p.endsWith("/weekly")) {
+          item.changefreq = "weekly";
           item.priority = 0.8;
           return item;
         }

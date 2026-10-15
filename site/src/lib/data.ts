@@ -204,8 +204,8 @@ export function getTrendingByPeriod(period: "daily" | "weekly" | "monthly"): Tre
   return loadTrendingByPeriod()[period] ?? [];
 }
 
-// AI 日报 · 开源生态篇（篇A）索引：读 daily_digests.jsonl，只取 type=ecosystem（篇B 不上站）
-export interface DailyDigest {
+// 开源周刊 · 开源生态篇索引：读 weekly_digests.jsonl，只取 type=ecosystem
+export interface WeeklyDigest {
   date: string;
   slug: string;
   title: string;
@@ -214,11 +214,11 @@ export interface DailyDigest {
   featuredUrls: string[];
 }
 
-let _daily: DailyDigest[] | null = null;
-export function getDailyDigests(): DailyDigest[] {
-  if (_daily) return _daily;
-  const file = path.join(DATA_DIR, "daily_digests.jsonl");
-  const out: DailyDigest[] = [];
+let _weekly: WeeklyDigest[] | null = null;
+export function getWeeklyDigests(): WeeklyDigest[] {
+  if (_weekly) return _weekly;
+  const file = path.join(DATA_DIR, "weekly_digests.jsonl");
+  const out: WeeklyDigest[] = [];
   if (fs.existsSync(file)) {
     for (const line of fs.readFileSync(file, "utf-8").split("\n")) {
       const s = line.trim();
@@ -248,7 +248,7 @@ export function getDailyDigests(): DailyDigest[] {
     }
   }
   out.sort((a, b) => (a.date > b.date ? -1 : a.date < b.date ? 1 : 0));
-  _daily = out;
+  _weekly = out;
   return out;
 }
 
