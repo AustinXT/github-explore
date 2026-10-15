@@ -5,6 +5,7 @@
 #   - ANTHROPIC_BASE_URL 写死指向 Minimax（公开常量，非 secret）
 #   - 用 MINIMAX_API_KEY 作为 ANTHROPIC_AUTH_TOKEN（Minimax 官方要求的变量名）
 #   - 主动清空 ANTHROPIC_API_KEY，避免 Claude CLI 错误地走官方接口
+#   - 主模型与 Sonnet / Opus / Haiku 别名统一固定为 MiniMax-M3
 #   - 失败时同后端指数退避重试（BACKOFFS 控制；处理临时网络抖动 / 限流）
 #
 # 应急降级（不建议常用，需手动设 FORCE_BACKEND）：
@@ -25,6 +26,7 @@ set -uo pipefail
 # Minimax Anthropic 兼容端点（公开常量）
 # 国内版默认；国际版用 https://api.minimax.io/anthropic
 MINIMAX_ENDPOINT="${MINIMAX_BASE_URL_OVERRIDE:-https://api.minimaxi.com/anthropic}"
+readonly MINIMAX_MODEL="MiniMax-M3"
 
 PROMPT="${1:?用法: run_skill.sh <prompt> [--timeout N] [--log path]}"
 shift
@@ -74,8 +76,13 @@ run_once() {
                 "ANTHROPIC_AUTH_TOKEN=$MINIMAX_API_KEY"
                 # 显式清空官方 key 防止冲突（Minimax 文档建议）
                 "ANTHROPIC_API_KEY="
+                "ANTHROPIC_MODEL=$MINIMAX_MODEL"
+                "ANTHROPIC_DEFAULT_SONNET_MODEL=$MINIMAX_MODEL"
+                "ANTHROPIC_DEFAULT_OPUS_MODEL=$MINIMAX_MODEL"
+                "ANTHROPIC_DEFAULT_HAIKU_MODEL=$MINIMAX_MODEL"
+                "ANTHROPIC_SMALL_FAST_MODEL=$MINIMAX_MODEL"
             )
-            log "后端: minimax ($MINIMAX_ENDPOINT)"
+            log "后端: minimax ($MINIMAX_ENDPOINT)，模型: $MINIMAX_MODEL"
             ;;
         anthropic)
             if [[ -z "${ANTHROPIC_API_KEY:-}" ]]; then
