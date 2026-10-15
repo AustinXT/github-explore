@@ -40,14 +40,17 @@
 
 ### 推理后端策略
 
-默认只走 **Minimax 的 Anthropic 兼容端点**，无 fallback：
+默认只走 **Minimax 的 Anthropic 兼容端点**，模型固定为 **MiniMax-M3**，无 fallback：
 
 ```
 claude -p "/repo-miner …" --dangerously-skip-permissions
    ANTHROPIC_BASE_URL   = https://api.minimaxi.com/anthropic   ← 国内版，写死在 run_skill.sh
    ANTHROPIC_AUTH_TOKEN = $MINIMAX_API_KEY                     ← Minimax 用 AUTH_TOKEN 而非 API_KEY
    ANTHROPIC_API_KEY    = (清空，避免冲突)
+   ANTHROPIC_MODEL      = MiniMax-M3
 ```
+
+Sonnet / Opus / Haiku 别名和小型快速模型也统一映射到 `MiniMax-M3`；运行日志会打印实际配置的模型名称。所有调用 `run_skill.sh` 的 Workflow 共用此设置。
 
 同后端失败时自动重试 1 次（默认值，`--retries N` 可调）。**用国际版** `api.minimax.io/anthropic` 时把 `src/scripts/run_skill.sh` 顶部 `MINIMAX_ENDPOINT` 改掉，或临时设环境变量 `MINIMAX_BASE_URL_OVERRIDE`。
 
