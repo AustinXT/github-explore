@@ -23,8 +23,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 
 # 站点 URL 约定，与 src/scripts/ping_search_engines.py / site/astro.config.mjs 一致
-SITE_URL = os.environ.get("SITE_URL", "https://seeyeetech.com").rstrip("/")
-BASE_PATH = os.environ.get("PUBLIC_BASE_PATH", "/github-explorer").rstrip("/")
+SITE_URL = os.environ.get("SITE_URL", "https://nightvoyager.top").rstrip("/")
+BASE_PATH = os.environ.get("PUBLIC_BASE_PATH", "/github-explore").rstrip("/")
 
 
 # ── .env.local 加载（可选便利；不覆盖已存在的环境变量）────────────────────

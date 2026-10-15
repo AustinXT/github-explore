@@ -15,6 +15,21 @@
 /md2wechat src/analysis_report/{username}_{repo}.md
 ```
 
+## 站点域名与 HTTPS
+
+目标地址：<https://nightvoyager.top/github-explore/>，由 GitHub Pages 托管。
+仓库为 `AustinXT/github-explore`，项目路径与仓库名一致；Actions 直接上传 `site/dist`。
+站点导航、全文搜索、canonical、RSS、索引推送和公众号回链均使用新地址。
+
+根域名 `nightvoyager.top` 配置在 `AustinXT/AustinXT.github.io` 的 Pages 设置中，
+本项目继承该域名，项目的 Custom domain 留空。不要把路径 `/github-explore` 填进域名或 DNS。
+在 DNS 中为 `@` 添加四条 A 记录：`185.199.108.153`、`185.199.109.153`、
+`185.199.110.153`、`185.199.111.153`。DNS 校验通过、GitHub 签发证书后，
+启用 Enforce HTTPS；保留 GitHub 域名所有权验证的 TXT 记录。
+
+Actions Variables 如已设置 `SITE_URL` / `PUBLIC_BASE_PATH`，应分别更新为
+`https://nightvoyager.top` / `/github-explore`；未设置时使用上述默认值。
+
 ## GitHub Actions 自动化（无人值守）
 
 整套流水线 `.github/workflows/auto-analyze.yml`，三种触发方式：

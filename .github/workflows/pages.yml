@@ -27,6 +27,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      SITE_URL: ${{ vars.SITE_URL || 'https://nightvoyager.top' }}
+      PUBLIC_BASE_PATH: ${{ vars.PUBLIC_BASE_PATH || '/github-explore' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -69,9 +72,6 @@ jobs:
 
       - name: Build site
         working-directory: site
-        env:
-          SITE_URL: ${{ vars.SITE_URL || 'https://seeyeetech.com' }}
-          PUBLIC_BASE_PATH: ${{ vars.PUBLIC_BASE_PATH || '/github-explorer' }}
         run: npm run build
 
       - name: Upload pages artifact
@@ -106,8 +106,8 @@ jobs:
           cache-dependency-path: requirements-ci.txt
       - name: Push URLs
         env:
-          SITE_URL: ${{ vars.SITE_URL || 'https://seeyeetech.com' }}
-          PUBLIC_BASE_PATH: ${{ vars.PUBLIC_BASE_PATH || '/github-explorer' }}
+          SITE_URL: ${{ vars.SITE_URL || 'https://nightvoyager.top' }}
+          PUBLIC_BASE_PATH: ${{ vars.PUBLIC_BASE_PATH || '/github-explore' }}
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
           BAIDU_PUSH_TOKEN: ${{ secrets.BAIDU_PUSH_TOKEN }}
         run: python3 src/scripts/ping_search_engines.py

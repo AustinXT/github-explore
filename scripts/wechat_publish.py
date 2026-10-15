@@ -18,7 +18,7 @@
   必需：WECHAT_PROXY_TOKEN   反代鉴权 header
   可选：DEFAULT_COVER_URL    封面拉取失败时用这个兜底，默认 picsum
   可选：BLOG_BASE_URL        阅读原文指向的博客 base，
-                             默认 https://blog.nightvoyager.top/github-explorer/reports
+                             默认 https://nightvoyager.top/github-explore/reports
 
 产出：
   tmp/last_publish.json  {media_id, thumb_media_id, title, ...}
@@ -582,7 +582,7 @@ def publish_report(md_path: Path, *, dry_run: bool = False) -> dict:
     )
     blog_base = env(
         "BLOG_BASE_URL", required=False,
-        default="https://blog.nightvoyager.top/github-explorer/reports",
+        default="https://nightvoyager.top/github-explore/reports",
     ).rstrip("/")
     # 博客 slug = 文件名 stem 小写（与 build_reports_index.py 的 normalization 对齐）
     slug = md_path.stem.lower()

@@ -3,6 +3,7 @@ import Base from "~/layouts/Base.astro";
 
 const base = import.meta.env.BASE_URL;
 const bundlePath = `${base}/pagefind/`;
+const baseUrl = `${base}/`;
 const pagefindCss = `${base}/pagefind/pagefind-ui.css`;
 const pagefindJs = `${base}/pagefind/pagefind-ui.js`;
 ---
@@ -62,7 +63,7 @@ const pagefindJs = `${base}/pagefind/pagefind-ui.js`;
     }
   </style>
 
-  <script is:inline define:vars={{ bundlePath, pagefindJs }}>
+  <script is:inline define:vars={{ bundlePath, baseUrl, pagefindJs }}>
     function syncUrl(q) {
       const url = new URL(window.location.href);
       if (q) url.searchParams.set("q", q);
@@ -78,6 +79,7 @@ const pagefindJs = `${base}/pagefind/pagefind-ui.js`;
       const ui = new PagefindUI({
         element: "#search",
         bundlePath,
+        baseUrl,
         showImages: false,
         showSubResults: true,
         resetStyles: false,
