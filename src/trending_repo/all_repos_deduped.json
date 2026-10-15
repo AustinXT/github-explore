@@ -3,11 +3,11 @@
     "name": "obra/superpowers",
     "url": "https://github.com/obra/superpowers",
     "language": "Shell",
-    "stars": 294762,
-    "forks": 26341,
+    "stars": 299610,
+    "forks": 26761,
     "description": "An agentic skills framework & software development methodology that works.",
-    "last_seen": "2026-10-03",
-    "trending_days": 92
+    "last_seen": "2026-10-15",
+    "trending_days": 93
   },
   {
     "name": "mattpocock/skills",
@@ -43,11 +43,11 @@
     "name": "affaan-m/ECC",
     "url": "https://github.com/affaan-m/ecc",
     "language": "JavaScript",
-    "stars": 271898,
-    "forks": 40607,
+    "stars": 280008,
+    "forks": 41653,
     "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-    "last_seen": "2026-10-03",
-    "trending_days": 34
+    "last_seen": "2026-10-15",
+    "trending_days": 35
   },
   {
     "name": "anthropics/claude-code",
@@ -330,6 +330,16 @@
     "trending_days": 20
   },
   {
+    "name": "anthropics/claude-plugins-official",
+    "url": "https://github.com/anthropics/claude-plugins-official",
+    "language": "Python",
+    "stars": 38566,
+    "forks": 4295,
+    "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+    "last_seen": "2026-10-15",
+    "trending_days": 19
+  },
+  {
     "name": "codecrafters-io/build-your-own-x",
     "url": "https://github.com/codecrafters-io/build-your-own-x",
     "language": "Markdown",
@@ -367,16 +377,6 @@
     "forks": 5121,
     "description": "GitNexus: The Zero-Server Code Intelligence Engine - GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a git repository (Github, Gitlab, Azure, Local) or ZIP file, and get an interactive knowledge graph with a built in Graph RAG Agent. Perfect for code exploration",
     "last_seen": "2026-08-30",
-    "trending_days": 18
-  },
-  {
-    "name": "anthropics/claude-plugins-official",
-    "url": "https://github.com/anthropics/claude-plugins-official",
-    "language": "Python",
-    "stars": 36798,
-    "forks": 4149,
-    "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-    "last_seen": "2026-09-25",
     "trending_days": 18
   },
   {
@@ -470,6 +470,16 @@
     "trending_days": 16
   },
   {
+    "name": "ruvnet/ruflo",
+    "url": "https://github.com/ruvnet/ruflo",
+    "language": "TypeScript",
+    "stars": 74875,
+    "forks": 8907,
+    "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+    "last_seen": "2026-10-15",
+    "trending_days": 16
+  },
+  {
     "name": "aquasecurity/trivy",
     "url": "https://github.com/aquasecurity/trivy",
     "language": "Go",
@@ -487,16 +497,6 @@
     "forks": 8306,
     "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
     "last_seen": "2026-10-04",
-    "trending_days": 15
-  },
-  {
-    "name": "ruvnet/ruflo",
-    "url": "https://github.com/ruvnet/ruflo",
-    "language": "TypeScript",
-    "stars": 71271,
-    "forks": 8452,
-    "description": "🌊 The original agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
-    "last_seen": "2026-09-07",
     "trending_days": 15
   },
   {
@@ -550,6 +550,16 @@
     "trending_days": 14
   },
   {
+    "name": "debpalash/VoiceStudio",
+    "url": "https://github.com/debpalash/voicestudio",
+    "language": "Python",
+    "stars": 68278,
+    "forks": 7470,
+    "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+    "last_seen": "2026-10-15",
+    "trending_days": 14
+  },
+  {
     "name": "harvard-edge/cs249r_book",
     "url": "https://github.com/harvard-edge/cs249r_book",
     "language": "Python",
@@ -567,6 +577,16 @@
     "forks": 6808,
     "description": "The open-source AI voice studio. Clone, dictate, create.",
     "last_seen": "2026-09-17",
+    "trending_days": 14
+  },
+  {
+    "name": "K-Dense-AI/scientific-agent-skills",
+    "url": "https://github.com/k-dense-ai/scientific-agent-skills",
+    "language": "Python",
+    "stars": 50147,
+    "forks": 4466,
+    "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+    "last_seen": "2026-10-15",
     "trending_days": 14
   },
   {
@@ -610,26 +630,6 @@
     "trending_days": 14
   },
   {
-    "name": "debpalash/VoiceStudio",
-    "url": "https://github.com/debpalash/voicestudio",
-    "language": "Python",
-    "stars": 65381,
-    "forks": 7232,
-    "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-    "last_seen": "2026-10-14",
-    "trending_days": 13
-  },
-  {
-    "name": "K-Dense-AI/scientific-agent-skills",
-    "url": "https://github.com/k-dense-ai/scientific-agent-skills",
-    "language": "Python",
-    "stars": 49054,
-    "forks": 4401,
-    "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
-    "last_seen": "2026-10-14",
-    "trending_days": 13
-  },
-  {
     "name": "lfnovo/open-notebook",
     "url": "https://github.com/lfnovo/open-notebook",
     "language": "TypeScript",
@@ -647,6 +647,16 @@
     "forks": 1388,
     "description": "The absolute trainer to light up AI agents.",
     "last_seen": "2026-03-31",
+    "trending_days": 13
+  },
+  {
+    "name": "mksglu/context-mode",
+    "url": "https://github.com/mksglu/context-mode",
+    "language": "TypeScript",
+    "stars": 29653,
+    "forks": 2067,
+    "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+    "last_seen": "2026-10-15",
     "trending_days": 13
   },
   {
@@ -710,13 +720,13 @@
     "trending_days": 12
   },
   {
-    "name": "mksglu/context-mode",
-    "url": "https://github.com/mksglu/context-mode",
-    "language": "TypeScript",
-    "stars": 28852,
-    "forks": 2025,
-    "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
-    "last_seen": "2026-10-14",
+    "name": "JuliusBrussee/caveman",
+    "url": "https://github.com/juliusbrussee/caveman",
+    "language": "Go",
+    "stars": 112241,
+    "forks": 6509,
+    "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+    "last_seen": "2026-10-15",
     "trending_days": 12
   },
   {
@@ -910,16 +920,6 @@
     "trending_days": 11
   },
   {
-    "name": "JuliusBrussee/caveman",
-    "url": "https://github.com/juliusbrussee/caveman",
-    "language": "Go",
-    "stars": 109373,
-    "forks": 6327,
-    "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
-    "last_seen": "2026-10-03",
-    "trending_days": 11
-  },
-  {
     "name": "microsoft/PowerToys",
     "url": "https://github.com/microsoft/powertoys",
     "language": "C",
@@ -1077,6 +1077,16 @@
     "forks": 21241,
     "description": "12 Lessons to Get Started Building AI Agents",
     "last_seen": "2026-05-19",
+    "trending_days": 10
+  },
+  {
+    "name": "morluto/rea",
+    "url": "https://github.com/morluto/rea",
+    "language": "TypeScript",
+    "stars": 262676,
+    "forks": 66067,
+    "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+    "last_seen": "2026-10-15",
     "trending_days": 10
   },
   {
@@ -1317,16 +1327,6 @@
     "forks": 5472,
     "description": "🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management platform to manage tasks, sprints, docs, and triage.",
     "last_seen": "2026-08-24",
-    "trending_days": 9
-  },
-  {
-    "name": "morluto/rea",
-    "url": "https://github.com/morluto/rea",
-    "language": "TypeScript",
-    "stars": 232611,
-    "forks": 58003,
-    "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-    "last_seen": "2026-10-14",
     "trending_days": 9
   },
   {
@@ -1630,6 +1630,16 @@
     "trending_days": 8
   },
   {
+    "name": "NationalSecurityAgency/ghidra",
+    "url": "https://github.com/nationalsecurityagency/ghidra",
+    "language": "Java",
+    "stars": 88334,
+    "forks": 9851,
+    "description": "Ghidra is a software reverse engineering (SRE) framework",
+    "last_seen": "2026-10-15",
+    "trending_days": 8
+  },
+  {
     "name": "openai/plugins",
     "url": "https://github.com/openai/plugins",
     "language": "JavaScript",
@@ -1927,16 +1937,6 @@
     "forks": 3881,
     "description": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.",
     "last_seen": "2026-05-24",
-    "trending_days": 7
-  },
-  {
-    "name": "NationalSecurityAgency/ghidra",
-    "url": "https://github.com/nationalsecurityagency/ghidra",
-    "language": "Java",
-    "stars": 87044,
-    "forks": 9724,
-    "description": "Ghidra is a software reverse engineering (SRE) framework",
-    "last_seen": "2026-10-14",
     "trending_days": 7
   },
   {
@@ -11480,6 +11480,16 @@
     "trending_days": 1
   },
   {
+    "name": "lightseekorg/tokenspeed",
+    "url": "https://github.com/lightseekorg/tokenspeed",
+    "language": "Python",
+    "stars": 2358,
+    "forks": 331,
+    "description": "TokenSpeed is a speed-of-light LLM inference engine.",
+    "last_seen": "2026-10-15",
+    "trending_days": 1
+  },
+  {
     "name": "lingfengQAQ/webnovel-writer",
     "url": "https://github.com/lingfengqaq/webnovel-writer",
     "language": "Python",
@@ -13407,6 +13417,16 @@
     "forks": 353,
     "description": "Claude Code toolkit - agents, commands, skills, rules, and hooks for productive AI-assisted development",
     "last_seen": "2026-09-05",
+    "trending_days": 1
+  },
+  {
+    "name": "xerj-org/xerj",
+    "url": "https://github.com/xerj-org/xerj",
+    "language": "Rust",
+    "stars": 4999,
+    "forks": 299,
+    "description": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work.",
+    "last_seen": "2026-10-15",
     "trending_days": 1
   },
   {
