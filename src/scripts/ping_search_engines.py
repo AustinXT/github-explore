@@ -27,8 +27,8 @@ ROOT = Path(__file__).resolve().parents[2]
 REPORTS_JSON = ROOT / "src" / "data" / "reports.json"
 SNAPSHOT = ROOT / "tmp" / "last_indexed.json"
 
-SITE_URL = os.environ.get("SITE_URL", "https://seeyeetech.com").rstrip("/")
-BASE_PATH = os.environ.get("PUBLIC_BASE_PATH", "/github-explorer").rstrip("/")
+SITE_URL = os.environ.get("SITE_URL", "https://nightvoyager.top").rstrip("/")
+BASE_PATH = os.environ.get("PUBLIC_BASE_PATH", "/github-explore").rstrip("/")
 INDEXNOW_KEY = os.environ.get("INDEXNOW_KEY", "").strip()
 BAIDU_PUSH_TOKEN = os.environ.get("BAIDU_PUSH_TOKEN", "").strip()
 
