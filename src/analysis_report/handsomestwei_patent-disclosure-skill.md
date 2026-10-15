@@ -12,25 +12,25 @@
 
 ## 项目展示
 
-![Mode A 初版交底书（时间戳目录 + mermaid 流程图）](docs/效果例-初版生成.jpg)
+![Mode A 初版交底书（时间戳目录 + mermaid 流程图）](https://raw.githubusercontent.com/handsomestwei/patent-disclosure-skill/main/docs/%E6%95%88%E6%9E%9C%E4%BE%8B-%E5%88%9D%E7%89%88%E7%94%9F%E6%88%90.jpg)
 *模式 A「发明交底书」一键出稿：每稿落进时间戳目录，mermaid 流程图自动按件编号 S1/S2 入图。*
 
-![Mode A 多稿迭代更新](docs/效果例-迭代更新.jpg)
+![Mode A 多稿迭代更新](https://raw.githubusercontent.com/handsomestwei/patent-disclosure-skill/main/docs/%E6%95%88%E6%9E%9C%E4%BE%8B-%E8%BF%AD%E4%BB%A3%E6%9B%B4%E6%96%B0.jpg)
 *同一项目多次迭代：每轮新时间戳，旧稿自动归档。*
 
-![Mode B 通俗解读 + Canvas 知识图谱](docs/效果例-解读.jpg)
+![Mode B 通俗解读 + Canvas 知识图谱](https://raw.githubusercontent.com/handsomestwei/patent-disclosure-skill/main/docs/%E6%95%88%E6%9E%9C%E4%BE%8B-%E8%A7%A3%E8%AF%BB.jpg)
 *模式 B 把公开专利拆成叙事 + 权利要求 + 术语表 + 线索图谱，落进 Obsidian 双链。*
 
-![Obsidian 多专利关系图谱](docs/效果例-obs图谱.jpg)
+![Obsidian 多专利关系图谱](https://raw.githubusercontent.com/handsomestwei/patent-disclosure-skill/main/docs/%E6%95%88%E6%9E%9C%E4%BE%8B-obs%E5%9B%BE%E8%B0%B1.jpg)
 *多专利关联：解读笔记 + 术语表 + Canvas 自动布局，专利 ↔ 概念 ↔ 申请人形成网状结构。*
 
-![实用新型线稿（含部件序号引出线）](docs/效果例-实用新型专利线稿含部件序号引出线.png)
+![实用新型线稿（含部件序号引出线）](https://raw.githubusercontent.com/handsomestwei/patent-disclosure-skill/main/docs/%E6%95%88%E6%9E%9C%E4%BE%8B-%E5%AE%9E%E7%94%A8%E6%96%B0%E5%9E%8B%E4%B8%93%E5%88%A9%E7%BA%BF%E7%A8%BF%E5%90%AB%E9%83%A8%E4%BB%B6%E5%BA%8F%E5%8F%B7%E5%BC%95%E5%87%BA%E7%BA%BF.png)
 *实用新型按件拼装 SVG：每个零件一个独立文件，部件序号以归一化坐标锚点注入，可局部重画。*
 
-![外观专利辅助线稿](docs/效果例-外观专利线稿.png)
+![外观专利辅助线稿](https://raw.githubusercontent.com/handsomestwei/patent-disclosure-skill/main/docs/%E6%95%88%E6%9E%9C%E4%BE%8B-%E5%A4%96%E8%A7%82%E4%B8%93%E5%88%A9%E7%BA%BF%E7%A8%BF.png)
 *外观线稿：把立体 / 平面判别 + 要点落面做成门禁脚本，CAD 不入文图。*
 
-![CAD 等轴测投影（CadQuery）](docs/效果例-cad提取等轴测投影图.png)
+![CAD 等轴测投影（CadQuery）](https://raw.githubusercontent.com/handsomestwei/patent-disclosure-skill/main/docs/%E6%95%88%E6%9E%9C%E4%BE%8B-cad%E6%8F%90%E5%8F%96%E7%AD%89%E8%BD%B4%E6%B5%8B%E6%8A%95%E5%BD%B1%E5%9B%BE.png)
 *CadQuery 等轴测投影：用户显式同意才 bootstrap，强制 Python 3.10–3.12 隔离 venv。*
 
 ## 项目画像

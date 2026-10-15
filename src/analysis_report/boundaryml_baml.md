@@ -14,7 +14,7 @@ BAML 是一个为 LLM/Agent 工作流自研的 DSL —— 用 `.baml` 文件同�
 
 ## 项目展示
 
-![BAML logo](fern/assets/baml-logo-white.png)
+![BAML logo](https://raw.githubusercontent.com/boundaryml/baml/canary/fern/assets/baml-logo-white.png)
 
 > README 视觉资产极简（仅 logo + 代码 demo），无 GIF / 无视频；演示靠 docs 站 playground 与博客。Phase 1 已确认 README 无展示性动图。
 
