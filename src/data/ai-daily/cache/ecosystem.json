@@ -843,6 +843,18 @@
       "canonical_url": "https://github.com/huggingface/transformers",
       "event_date": "2026-10-17",
       "date_seen": "2026-10-17"
+    },
+    {
+      "key": "github.com/anomalyco/opencode",
+      "canonical_url": "https://github.com/anomalyco/opencode",
+      "event_date": "2026-10-17",
+      "date_seen": "2026-10-17"
+    },
+    {
+      "key": "github.com/msitarzewski/agency-agents",
+      "canonical_url": "https://github.com/msitarzewski/agency-agents",
+      "event_date": "2026-10-17",
+      "date_seen": "2026-10-17"
     }
   ]
 }
