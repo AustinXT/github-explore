@@ -1,51 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-10-16",
+    "last_run": "2026-10-17",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/danny-avila/librechat",
-      "canonical_url": "https://github.com/danny-avila/LibreChat",
-      "event_date": "2026-09-16",
-      "date_seen": "2026-09-16"
-    },
-    {
-      "key": "github.com/mg1937/asc",
-      "canonical_url": "https://github.com/MG1937/ASC",
-      "event_date": "2026-09-16",
-      "date_seen": "2026-09-16"
-    },
-    {
-      "key": "github.com/earendil-works/pi",
-      "canonical_url": "https://github.com/earendil-works/pi",
-      "event_date": "2026-09-16",
-      "date_seen": "2026-09-16"
-    },
-    {
-      "key": "github.com/msitarzewski/agency-agents",
-      "canonical_url": "https://github.com/msitarzewski/agency-agents",
-      "event_date": "2026-09-16",
-      "date_seen": "2026-09-16"
-    },
-    {
-      "key": "github.com/shubhamsaboo/awesome-llm-apps",
-      "canonical_url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-      "event_date": "2026-09-16",
-      "date_seen": "2026-09-16"
-    },
-    {
-      "key": "github.com/thedotmack/claude-mem",
-      "canonical_url": "https://github.com/thedotmack/claude-mem",
-      "event_date": "2026-09-16",
-      "date_seen": "2026-09-16"
-    },
-    {
-      "key": "github.com/huggingface/transformers",
-      "canonical_url": "https://github.com/huggingface/transformers",
-      "event_date": "2026-09-16",
-      "date_seen": "2026-09-16"
-    },
     {
       "key": "github.com/cloudflare/security-audit-skill",
       "canonical_url": "https://github.com/cloudflare/security-audit-skill",
@@ -837,6 +795,54 @@
       "canonical_url": "https://github.com/NousResearch/hermes-agent",
       "event_date": "2026-10-16",
       "date_seen": "2026-10-16"
+    },
+    {
+      "key": "github.com/madslorentzen/ai-job-search",
+      "canonical_url": "https://github.com/MadsLorentzen/ai-job-search",
+      "event_date": "2026-10-17",
+      "date_seen": "2026-10-17"
+    },
+    {
+      "key": "github.com/leanprover/lean4",
+      "canonical_url": "https://github.com/leanprover/lean4",
+      "event_date": "2026-10-17",
+      "date_seen": "2026-10-17"
+    },
+    {
+      "key": "github.com/aeneasverif/aeneas",
+      "canonical_url": "https://github.com/AeneasVerif/aeneas",
+      "event_date": "2026-10-17",
+      "date_seen": "2026-10-17"
+    },
+    {
+      "key": "github.com/thedotmack/claude-mem",
+      "canonical_url": "https://github.com/thedotmack/claude-mem",
+      "event_date": "2026-10-17",
+      "date_seen": "2026-10-17"
+    },
+    {
+      "key": "github.com/openbmb/minicpm-v",
+      "canonical_url": "https://github.com/OpenBMB/MiniCPM-V",
+      "event_date": "2026-10-17",
+      "date_seen": "2026-10-17"
+    },
+    {
+      "key": "github.com/strands-labs/strands-decider",
+      "canonical_url": "https://github.com/strands-labs/strands-decider",
+      "event_date": "2026-10-17",
+      "date_seen": "2026-10-17"
+    },
+    {
+      "key": "github.com/jetbrains/mellum",
+      "canonical_url": "https://github.com/JetBrains/Mellum",
+      "event_date": "2026-10-17",
+      "date_seen": "2026-10-17"
+    },
+    {
+      "key": "github.com/huggingface/transformers",
+      "canonical_url": "https://github.com/huggingface/transformers",
+      "event_date": "2026-10-17",
+      "date_seen": "2026-10-17"
     }
   ]
 }
