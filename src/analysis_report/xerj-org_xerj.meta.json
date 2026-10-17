@@ -1,0 +1,6 @@
+{
+  "title": "GitHub 推荐：AI 搜索黑马 XERJ：3.5 个月 7700 stars，Agent 输出 token 省 2.7 倍",
+  "digest": "Rust 写的 AI-native 搜索引擎，3.5 个月 7700 stars。ES 兼容 + autoindex + AST + memory 五件套同二进制，Agent 输出 token 比 grep+Python 省 2.7 倍。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}
