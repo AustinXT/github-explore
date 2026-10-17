@@ -1157,6 +1157,8 @@ entries:
   - ai-coding
   - model-foundation
   - devtools
+  hmjz100_linkswift:
+  - uncategorized
   home-assistant_core:
   - workflow-automation
   home-assistant_home-assistant.io:
