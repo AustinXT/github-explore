@@ -2748,6 +2748,10 @@ entries:
   - ai-coding
   - devtools
   - editor-kms
+  xerj-org_xerj:
+  - ai-agent
+  - rag-search
+  - education
   xerrors_yuxi-know:
   - ai-agent
   - llm-framework
