@@ -189,6 +189,10 @@ entries:
   andrewyng_aisuite:
   - ai-agent
   - protocol-spec
+  android_skills:
+  - ai-agent
+  - ai-coding
+  - devtools
   andyyyy64_whichllm:
   - llm-inference
   - model-foundation

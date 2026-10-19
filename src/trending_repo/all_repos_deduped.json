@@ -53,11 +53,11 @@
     "name": "anthropics/claude-code",
     "url": "https://github.com/anthropics/claude-code",
     "language": "TypeScript",
-    "stars": 151419,
-    "forks": 26861,
+    "stars": 152488,
+    "forks": 27129,
     "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
-    "last_seen": "2026-10-17",
-    "trending_days": 35
+    "last_seen": "2026-10-19",
+    "trending_days": 36
   },
   {
     "name": "addyosmani/agent-skills",
@@ -210,6 +210,16 @@
     "trending_days": 23
   },
   {
+    "name": "shiyu-coder/Kronos",
+    "url": "https://github.com/shiyu-coder/kronos",
+    "language": "Python",
+    "stars": 41435,
+    "forks": 6901,
+    "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+    "last_seen": "2026-10-19",
+    "trending_days": 23
+  },
+  {
     "name": "Zie619/n8n-workflows",
     "url": "https://github.com/zie619/n8n-workflows",
     "language": "Python",
@@ -270,16 +280,6 @@
     "trending_days": 22
   },
   {
-    "name": "shiyu-coder/Kronos",
-    "url": "https://github.com/shiyu-coder/kronos",
-    "language": "Python",
-    "stars": 36816,
-    "forks": 6135,
-    "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-    "last_seen": "2026-08-12",
-    "trending_days": 22
-  },
-  {
     "name": "traefik/traefik",
     "url": "https://github.com/traefik/traefik",
     "language": "Go",
@@ -330,6 +330,16 @@
     "trending_days": 20
   },
   {
+    "name": "ruvnet/ruflo",
+    "url": "https://github.com/ruvnet/ruflo",
+    "language": "TypeScript",
+    "stars": 77007,
+    "forks": 9089,
+    "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+    "last_seen": "2026-10-19",
+    "trending_days": 20
+  },
+  {
     "name": "virattt/ai-hedge-fund",
     "url": "https://github.com/virattt/ai-hedge-fund",
     "language": "Python",
@@ -367,16 +377,6 @@
     "forks": 5289,
     "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
     "last_seen": "2026-08-30",
-    "trending_days": 19
-  },
-  {
-    "name": "ruvnet/ruflo",
-    "url": "https://github.com/ruvnet/ruflo",
-    "language": "TypeScript",
-    "stars": 76334,
-    "forks": 9021,
-    "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
-    "last_seen": "2026-10-18",
     "trending_days": 19
   },
   {
@@ -650,6 +650,16 @@
     "trending_days": 13
   },
   {
+    "name": "HKUDS/CLI-Anything",
+    "url": "https://github.com/hkuds/cli-anything",
+    "language": "Python",
+    "stars": 55062,
+    "forks": 4974,
+    "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+    "last_seen": "2026-10-19",
+    "trending_days": 13
+  },
+  {
     "name": "lfnovo/open-notebook",
     "url": "https://github.com/lfnovo/open-notebook",
     "language": "TypeScript",
@@ -727,16 +737,6 @@
     "forks": 2537,
     "description": "None",
     "last_seen": "2026-09-12",
-    "trending_days": 12
-  },
-  {
-    "name": "HKUDS/CLI-Anything",
-    "url": "https://github.com/hkuds/cli-anything",
-    "language": "Python",
-    "stars": 54383,
-    "forks": 4930,
-    "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-    "last_seen": "2026-10-18",
     "trending_days": 12
   },
   {
@@ -848,6 +848,16 @@
     "description": "An autonomous agent for deep financial research",
     "last_seen": "2026-05-06",
     "trending_days": 12
+  },
+  {
+    "name": "anomalyco/opencode",
+    "url": "https://github.com/anomalyco/opencode",
+    "language": "TypeScript",
+    "stars": 217494,
+    "forks": 29080,
+    "description": "The open source coding agent.",
+    "last_seen": "2026-10-19",
+    "trending_days": 11
   },
   {
     "name": "anthropics/knowledge-work-plugins",
@@ -1010,16 +1020,6 @@
     "trending_days": 11
   },
   {
-    "name": "anomalyco/opencode",
-    "url": "https://github.com/anomalyco/opencode",
-    "language": "TypeScript",
-    "stars": 216086,
-    "forks": 28934,
-    "description": "The open source coding agent.",
-    "last_seen": "2026-10-18",
-    "trending_days": 10
-  },
-  {
     "name": "anthropics/financial-services",
     "url": "https://github.com/anthropics/financial-services",
     "language": "Python",
@@ -1090,6 +1090,16 @@
     "trending_days": 10
   },
   {
+    "name": "MadsLorentzen/ai-job-search",
+    "url": "https://github.com/madslorentzen/ai-job-search",
+    "language": "Python",
+    "stars": 56279,
+    "forks": 17958,
+    "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+    "last_seen": "2026-10-19",
+    "trending_days": 10
+  },
+  {
     "name": "microsoft/ai-agents-for-beginners",
     "url": "https://github.com/microsoft/ai-agents-for-beginners",
     "language": "JupyterNotebook",
@@ -1148,6 +1158,16 @@
     "description": "Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evaluation, and data generation.",
     "last_seen": "2026-10-07",
     "trending_days": 10
+  },
+  {
+    "name": "akitaonrails/ai-memory",
+    "url": "https://github.com/akitaonrails/ai-memory",
+    "language": "Rust",
+    "stars": 11096,
+    "forks": 788,
+    "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+    "last_seen": "2026-10-19",
+    "trending_days": 9
   },
   {
     "name": "alibaba/page-agent",
@@ -1330,16 +1350,6 @@
     "trending_days": 9
   },
   {
-    "name": "MadsLorentzen/ai-job-search",
-    "url": "https://github.com/madslorentzen/ai-job-search",
-    "language": "Python",
-    "stars": 51773,
-    "forks": 17130,
-    "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-    "last_seen": "2026-10-18",
-    "trending_days": 9
-  },
-  {
     "name": "makeplane/plane",
     "url": "https://github.com/makeplane/plane",
     "language": "TypeScript",
@@ -1458,16 +1468,6 @@
     "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
     "last_seen": "2026-10-14",
     "trending_days": 9
-  },
-  {
-    "name": "akitaonrails/ai-memory",
-    "url": "https://github.com/akitaonrails/ai-memory",
-    "language": "Rust",
-    "stars": 10260,
-    "forks": 738,
-    "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
-    "last_seen": "2026-10-18",
-    "trending_days": 8
   },
   {
     "name": "badlogic/pi-mono",
@@ -2690,6 +2690,16 @@
     "trending_days": 6
   },
   {
+    "name": "stablyai/orca",
+    "url": "https://github.com/stablyai/orca",
+    "language": "TypeScript",
+    "stars": 97924,
+    "forks": 6244,
+    "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+    "last_seen": "2026-10-19",
+    "trending_days": 6
+  },
+  {
     "name": "storytold/artcraft",
     "url": "https://github.com/storytold/artcraft",
     "language": "Rust",
@@ -2887,6 +2897,16 @@
     "forks": 1562,
     "description": "Secure environments for developers and their agents",
     "last_seen": "2026-09-21",
+    "trending_days": 5
+  },
+  {
+    "name": "Comfy-Org/ComfyUI",
+    "url": "https://github.com/comfy-org/comfyui",
+    "language": "Python",
+    "stars": 139453,
+    "forks": 16560,
+    "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
+    "last_seen": "2026-10-19",
     "trending_days": 5
   },
   {
@@ -3330,16 +3350,6 @@
     "trending_days": 5
   },
   {
-    "name": "stablyai/orca",
-    "url": "https://github.com/stablyai/orca",
-    "language": "TypeScript",
-    "stars": 96102,
-    "forks": 6146,
-    "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
-    "last_seen": "2026-10-18",
-    "trending_days": 5
-  },
-  {
     "name": "stan-smith/FossFLOW",
     "url": "https://github.com/stan-smith/fossflow",
     "language": "TypeScript",
@@ -3687,16 +3697,6 @@
     "forks": 606,
     "description": "Incremental engine for long horizon agents 🌟 Star if you like it!",
     "last_seen": "2026-05-05",
-    "trending_days": 4
-  },
-  {
-    "name": "Comfy-Org/ComfyUI",
-    "url": "https://github.com/comfy-org/comfyui",
-    "language": "Python",
-    "stars": 138271,
-    "forks": 16472,
-    "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
-    "last_seen": "2026-10-18",
     "trending_days": 4
   },
   {
@@ -7850,6 +7850,16 @@
     "trending_days": 2
   },
   {
+    "name": "Kruk2/jasna",
+    "url": "https://github.com/kruk2/jasna",
+    "language": "Python",
+    "stars": 2805,
+    "forks": 209,
+    "description": "Video restoration tool",
+    "last_seen": "2026-10-19",
+    "trending_days": 2
+  },
+  {
     "name": "kubernetes/ingress-nginx",
     "url": "https://github.com/kubernetes/ingress-nginx",
     "language": "Go",
@@ -11000,6 +11010,16 @@
     "trending_days": 1
   },
   {
+    "name": "headroomlabs-ai/headroom",
+    "url": "https://github.com/headroomlabs-ai/headroom",
+    "language": "Python",
+    "stars": 76119,
+    "forks": 5915,
+    "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+    "last_seen": "2026-10-19",
+    "trending_days": 1
+  },
+  {
     "name": "hexo-ai/sia",
     "url": "https://github.com/hexo-ai/sia",
     "language": "Python",
@@ -11417,16 +11437,6 @@
     "forks": 1879,
     "description": "Zigbee 🐝 to MQTT bridge 🌉, get rid of your proprietary Zigbee bridges 🔨",
     "last_seen": "2026-01-02",
-    "trending_days": 1
-  },
-  {
-    "name": "Kruk2/jasna",
-    "url": "https://github.com/kruk2/jasna",
-    "language": "Python",
-    "stars": 2269,
-    "forks": 176,
-    "description": "Video restoration tool",
-    "last_seen": "2026-10-18",
     "trending_days": 1
   },
   {
@@ -13427,6 +13437,16 @@
     "forks": 16,
     "description": "verified autofill",
     "last_seen": "2025-11-12",
+    "trending_days": 1
+  },
+  {
+    "name": "withmarbleapp/os-taxonomy",
+    "url": "https://github.com/withmarbleapp/os-taxonomy",
+    "language": "JavaScript",
+    "stars": 5989,
+    "forks": 993,
+    "description": "None",
+    "last_seen": "2026-10-19",
     "trending_days": 1
   },
   {
