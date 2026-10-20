@@ -1,63 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-10-19",
+    "last_run": "2026-10-20",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/tencentcloud/octop",
-      "canonical_url": "https://github.com/TencentCloud/Octop",
-      "event_date": "2026-09-19",
-      "date_seen": "2026-09-19"
-    },
-    {
-      "key": "github.com/coder/coder",
-      "canonical_url": "https://github.com/coder/coder",
-      "event_date": "2026-09-19",
-      "date_seen": "2026-09-19"
-    },
-    {
-      "key": "github.com/tradesdontlie/tradingview-mcp",
-      "canonical_url": "https://github.com/tradesdontlie/tradingview-mcp",
-      "event_date": "2026-09-19",
-      "date_seen": "2026-09-19"
-    },
-    {
-      "key": "github.com/google/adk-go",
-      "canonical_url": "https://github.com/google/adk-go",
-      "event_date": "2026-09-19",
-      "date_seen": "2026-09-19"
-    },
-    {
-      "key": "github.com/higgsfield-ai/higgsfield",
-      "canonical_url": "https://github.com/higgsfield-ai/higgsfield",
-      "event_date": "2026-09-19",
-      "date_seen": "2026-09-19"
-    },
-    {
-      "key": "github.com/cactus-compute/needle",
-      "canonical_url": "https://github.com/cactus-compute/needle",
-      "event_date": "2026-09-19",
-      "date_seen": "2026-09-19"
-    },
-    {
-      "key": "github.com/yynxxxxx/codex-x",
-      "canonical_url": "https://github.com/yynxxxxx/Codex-X",
-      "event_date": "2026-09-19",
-      "date_seen": "2026-09-19"
-    },
-    {
-      "key": "github.com/volcengine/verl",
-      "canonical_url": "https://github.com/volcengine/verl",
-      "event_date": "2026-09-19",
-      "date_seen": "2026-09-19"
-    },
-    {
-      "key": "github.com/milvus-io/milvus",
-      "canonical_url": "https://github.com/milvus-io/milvus",
-      "event_date": "2026-09-19",
-      "date_seen": "2026-09-19"
-    },
     {
       "key": "github.com/builderio/agent-native",
       "canonical_url": "https://github.com/BuilderIO/agent-native",
@@ -843,6 +789,24 @@
       "canonical_url": "https://github.com/mattpocock/skills",
       "event_date": "2026-10-19",
       "date_seen": "2026-10-19"
+    },
+    {
+      "key": "github.com/headroomlabs-ai/headroom",
+      "canonical_url": "https://github.com/headroomlabs-ai/headroom",
+      "event_date": "2026-10-20",
+      "date_seen": "2026-10-20"
+    },
+    {
+      "key": "github.com/nethiafin/wine",
+      "canonical_url": "https://github.com/nethiafin/wine",
+      "event_date": "2026-10-20",
+      "date_seen": "2026-10-20"
+    },
+    {
+      "key": "github.com/benjaminsehl/omarcast",
+      "canonical_url": "https://github.com/benjaminsehl/omarcast",
+      "event_date": "2026-10-20",
+      "date_seen": "2026-10-20"
     }
   ]
 }
