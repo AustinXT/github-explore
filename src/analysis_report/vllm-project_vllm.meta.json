@@ -1,0 +1,6 @@
+{
+  "title": "GitHub推荐：94K star 的 vLLM：把操作系统分页搬进了显存管理",
+  "digest": "vLLM 把操作系统虚拟内存分页原样搬进显存管理，200 万行代码覆盖 12 种硬件、500 个模型。本文拆解 PagedAttention 跨域移植、调度器设计与 batch invariance 技术债。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}
