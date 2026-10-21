@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_run": "2026-10-20",
+    "last_run": "2026-10-21",
     "window_days": 30
   },
   "entries": [
@@ -807,6 +807,84 @@
       "canonical_url": "https://github.com/benjaminsehl/omarcast",
       "event_date": "2026-10-20",
       "date_seen": "2026-10-20"
+    },
+    {
+      "key": "github.com/graphify-labs/graphify",
+      "canonical_url": "https://github.com/Graphify-Labs/graphify",
+      "event_date": "2026-10-21",
+      "date_seen": "2026-10-21"
+    },
+    {
+      "key": "github.com/shubhamsaboo/awesome-llm-apps",
+      "canonical_url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "event_date": "2026-10-21",
+      "date_seen": "2026-10-21"
+    },
+    {
+      "key": "github.com/yujunzhixue/dsh-purge",
+      "canonical_url": "https://github.com/YuJunZhiXue/dsh-purge",
+      "event_date": "2026-10-21",
+      "date_seen": "2026-10-21"
+    },
+    {
+      "key": "github.com/anthropics/knowledge-work-plugins",
+      "canonical_url": "https://github.com/anthropics/knowledge-work-plugins",
+      "event_date": "2026-10-21",
+      "date_seen": "2026-10-21"
+    },
+    {
+      "key": "github.com/bigfish1913/pi-rust",
+      "canonical_url": "https://github.com/bigfish1913/pi-rust",
+      "event_date": "2026-10-21",
+      "date_seen": "2026-10-21"
+    },
+    {
+      "key": "github.com/cloudflare/security-audit-skill",
+      "canonical_url": "https://github.com/cloudflare/security-audit-skill",
+      "event_date": "2026-10-21",
+      "date_seen": "2026-10-21"
+    },
+    {
+      "key": "github.com/deepseek-ai/deepinfer",
+      "canonical_url": "https://github.com/deepseek-ai/deepinfer",
+      "event_date": "2026-10-21",
+      "date_seen": "2026-10-21"
+    },
+    {
+      "key": "github.com/sickn33/agentic-awesome-skills",
+      "canonical_url": "https://github.com/sickn33/agentic-awesome-skills",
+      "event_date": "2026-10-21",
+      "date_seen": "2026-10-21"
+    },
+    {
+      "key": "github.com/vllm-project/vllm",
+      "canonical_url": "https://github.com/vllm-project/vllm",
+      "event_date": "2026-10-21",
+      "date_seen": "2026-10-21"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/huggingface_transformers",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/huggingface_transformers/",
+      "event_date": "2026-10-21",
+      "date_seen": "2026-10-21"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/significant-gravitas_autogpt",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/significant-gravitas_autogpt/",
+      "event_date": "2026-10-21",
+      "date_seen": "2026-10-21"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/openclaw_openclaw",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/openclaw_openclaw/",
+      "event_date": "2026-10-21",
+      "date_seen": "2026-10-21"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/automatic1111_stable-diffusion-webui",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/automatic1111_stable-diffusion-webui/",
+      "event_date": "2026-10-21",
+      "date_seen": "2026-10-21"
     }
   ]
 }
