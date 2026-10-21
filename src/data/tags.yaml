@@ -2684,6 +2684,9 @@ entries:
   - llm-inference
   - rag-search
   - trading-finance
+  vllm-project_vllm:
+  - llm-inference
+  - iot-hardware
   vllm-project_vllm-omni:
   - llm-inference
   - model-foundation
