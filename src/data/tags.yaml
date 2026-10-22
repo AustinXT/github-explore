@@ -1118,6 +1118,10 @@ entries:
   - protocol-spec
   hashicorp_vault:
   - uncategorized
+  headroomlabs-ai_headroom:
+  - ai-agent
+  - llm-framework
+  - protocol-spec
   hehonghui_awesome-english-ebooks:
   - workflow-automation
   - education

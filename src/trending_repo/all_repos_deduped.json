@@ -400,6 +400,16 @@
     "trending_days": 18
   },
   {
+    "name": "DietrichGebert/ponytail",
+    "url": "https://github.com/dietrichgebert/ponytail",
+    "language": "JavaScript",
+    "stars": 172913,
+    "forks": 9410,
+    "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+    "last_seen": "2026-10-22",
+    "trending_days": 18
+  },
+  {
     "name": "public-apis/public-apis",
     "url": "https://github.com/public-apis/public-apis",
     "language": "Python",
@@ -427,16 +437,6 @@
     "forks": 8143,
     "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
     "last_seen": "2026-10-18",
-    "trending_days": 17
-  },
-  {
-    "name": "DietrichGebert/ponytail",
-    "url": "https://github.com/dietrichgebert/ponytail",
-    "language": "JavaScript",
-    "stars": 171017,
-    "forks": 9307,
-    "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-    "last_seen": "2026-10-21",
     "trending_days": 17
   },
   {
@@ -640,6 +640,16 @@
     "trending_days": 14
   },
   {
+    "name": "anthropics/knowledge-work-plugins",
+    "url": "https://github.com/anthropics/knowledge-work-plugins",
+    "language": "Python",
+    "stars": 31393,
+    "forks": 3517,
+    "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+    "last_seen": "2026-10-22",
+    "trending_days": 13
+  },
+  {
     "name": "cursor/plugins",
     "url": "https://github.com/cursor/plugins",
     "language": "TypeScript",
@@ -746,16 +756,6 @@
     "stars": 218578,
     "forks": 29178,
     "description": "The open source coding agent.",
-    "last_seen": "2026-10-20",
-    "trending_days": 12
-  },
-  {
-    "name": "anthropics/knowledge-work-plugins",
-    "url": "https://github.com/anthropics/knowledge-work-plugins",
-    "language": "Python",
-    "stars": 30659,
-    "forks": 3459,
-    "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
     "last_seen": "2026-10-20",
     "trending_days": 12
   },
@@ -1220,6 +1220,16 @@
     "trending_days": 9
   },
   {
+    "name": "cloudflare/security-audit-skill",
+    "url": "https://github.com/cloudflare/security-audit-skill",
+    "language": "JavaScript",
+    "stars": 38584,
+    "forks": 2407,
+    "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+    "last_seen": "2026-10-22",
+    "trending_days": 9
+  },
+  {
     "name": "coreyhaines31/marketingskills",
     "url": "https://github.com/coreyhaines31/marketingskills",
     "language": "JavaScript",
@@ -1520,16 +1530,6 @@
     "trending_days": 8
   },
   {
-    "name": "cloudflare/security-audit-skill",
-    "url": "https://github.com/cloudflare/security-audit-skill",
-    "language": "JavaScript",
-    "stars": 35383,
-    "forks": 2223,
-    "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-    "last_seen": "2026-10-21",
-    "trending_days": 8
-  },
-  {
     "name": "commaai/openpilot",
     "url": "https://github.com/commaai/openpilot",
     "language": "Python",
@@ -1647,6 +1647,16 @@
     "forks": 3355,
     "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
     "last_seen": "2026-05-28",
+    "trending_days": 8
+  },
+  {
+    "name": "luongnv89/claude-howto",
+    "url": "https://github.com/luongnv89/claude-howto",
+    "language": "Python",
+    "stars": 42812,
+    "forks": 5363,
+    "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
+    "last_seen": "2026-10-22",
     "trending_days": 8
   },
   {
@@ -1927,16 +1937,6 @@
     "forks": 1929,
     "description": "An evolving how-to guide for securing a Linux server.",
     "last_seen": "2026-07-09",
-    "trending_days": 7
-  },
-  {
-    "name": "luongnv89/claude-howto",
-    "url": "https://github.com/luongnv89/claude-howto",
-    "language": "Python",
-    "stars": 38434,
-    "forks": 4633,
-    "description": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
-    "last_seen": "2026-06-27",
     "trending_days": 7
   },
   {
@@ -2417,6 +2417,16 @@
     "forks": 1717,
     "description": "Agent Skills for Google products and technologies",
     "last_seen": "2026-10-02",
+    "trending_days": 6
+  },
+  {
+    "name": "Graphify-Labs/graphify",
+    "url": "https://github.com/graphify-labs/graphify",
+    "language": "Python",
+    "stars": 132538,
+    "forks": 12696,
+    "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
+    "last_seen": "2026-10-22",
     "trending_days": 6
   },
   {
@@ -3020,16 +3030,6 @@
     "trending_days": 5
   },
   {
-    "name": "Graphify-Labs/graphify",
-    "url": "https://github.com/graphify-labs/graphify",
-    "language": "Python",
-    "stars": 131178,
-    "forks": 12604,
-    "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
-    "last_seen": "2026-10-21",
-    "trending_days": 5
-  },
-  {
     "name": "hashicorp/vault",
     "url": "https://github.com/hashicorp/vault",
     "language": "Go",
@@ -3377,6 +3377,16 @@
     "forks": 1384,
     "description": "Show usage stats for OpenAI Codex and Claude Code, without having to login.",
     "last_seen": "2026-07-07",
+    "trending_days": 5
+  },
+  {
+    "name": "supabase/supabase",
+    "url": "https://github.com/supabase/supabase",
+    "language": "TypeScript",
+    "stars": 113345,
+    "forks": 16993,
+    "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
+    "last_seen": "2026-10-22",
     "trending_days": 5
   },
   {
@@ -4520,16 +4530,6 @@
     "trending_days": 4
   },
   {
-    "name": "supabase/supabase",
-    "url": "https://github.com/supabase/supabase",
-    "language": "TypeScript",
-    "stars": 112755,
-    "forks": 16852,
-    "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
-    "last_seen": "2026-10-21",
-    "trending_days": 4
-  },
-  {
     "name": "superset-sh/superset",
     "url": "https://github.com/superset-sh/superset",
     "language": "TypeScript",
@@ -5217,6 +5217,16 @@
     "forks": 694,
     "description": "A straightforward method for training your LLM, from downloading data to generating text.",
     "last_seen": "2026-06-10",
+    "trending_days": 3
+  },
+  {
+    "name": "fastapi/fastapi",
+    "url": "https://github.com/fastapi/fastapi",
+    "language": "Python",
+    "stars": 103534,
+    "forks": 10076,
+    "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
+    "last_seen": "2026-10-22",
     "trending_days": 3
   },
   {
@@ -7247,16 +7257,6 @@
     "forks": 50014,
     "description": "The library for web and native user interfaces.",
     "last_seen": "2025-12-06",
-    "trending_days": 2
-  },
-  {
-    "name": "fastapi/fastapi",
-    "url": "https://github.com/fastapi/fastapi",
-    "language": "Python",
-    "stars": 90271,
-    "forks": 7986,
-    "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
-    "last_seen": "2025-10-01",
     "trending_days": 2
   },
   {
@@ -11720,6 +11720,16 @@
     "trending_days": 1
   },
   {
+    "name": "Meloong-Git/PCL",
+    "url": "https://github.com/meloong-git/pcl",
+    "language": "VisualBasic.NET",
+    "stars": 8617,
+    "forks": 1192,
+    "description": "Minecraft 启动器 Plain Craft Launcher（PCL）。",
+    "last_seen": "2026-10-22",
+    "trending_days": 1
+  },
+  {
     "name": "mem0ai/mem0",
     "url": "https://github.com/mem0ai/mem0",
     "language": "Python",
@@ -12447,6 +12457,16 @@
     "forks": 1519,
     "description": "bluetooth mesh chat, IRC vibes",
     "last_seen": "2026-07-26",
+    "trending_days": 1
+  },
+  {
+    "name": "php/php-src",
+    "url": "https://github.com/php/php-src",
+    "language": "C",
+    "stars": 40947,
+    "forks": 8290,
+    "description": "The PHP Interpreter",
+    "last_seen": "2026-10-22",
     "trending_days": 1
   },
   {
