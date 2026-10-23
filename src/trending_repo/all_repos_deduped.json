@@ -550,6 +550,16 @@
     "trending_days": 14
   },
   {
+    "name": "anthropics/knowledge-work-plugins",
+    "url": "https://github.com/anthropics/knowledge-work-plugins",
+    "language": "Python",
+    "stars": 32024,
+    "forks": 3559,
+    "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+    "last_seen": "2026-10-23",
+    "trending_days": 14
+  },
+  {
     "name": "basecamp/omarchy",
     "url": "https://github.com/basecamp/omarchy",
     "language": "Shell",
@@ -638,16 +648,6 @@
     "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
     "last_seen": "2026-08-17",
     "trending_days": 14
-  },
-  {
-    "name": "anthropics/knowledge-work-plugins",
-    "url": "https://github.com/anthropics/knowledge-work-plugins",
-    "language": "Python",
-    "stars": 31393,
-    "forks": 3517,
-    "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-    "last_seen": "2026-10-22",
-    "trending_days": 13
   },
   {
     "name": "cursor/plugins",
@@ -797,6 +797,16 @@
     "forks": 3510,
     "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
     "last_seen": "2026-08-19",
+    "trending_days": 12
+  },
+  {
+    "name": "OpenBMB/VoxCPM",
+    "url": "https://github.com/openbmb/voxcpm",
+    "language": "Python",
+    "stars": 40090,
+    "forks": 4559,
+    "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
+    "last_seen": "2026-10-23",
     "trending_days": 12
   },
   {
@@ -970,16 +980,6 @@
     "trending_days": 11
   },
   {
-    "name": "OpenBMB/VoxCPM",
-    "url": "https://github.com/openbmb/voxcpm",
-    "language": "Python",
-    "stars": 37271,
-    "forks": 4234,
-    "description": "VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-Life Cloning",
-    "last_seen": "2026-09-14",
-    "trending_days": 11
-  },
-  {
     "name": "pascalorg/editor",
     "url": "https://github.com/pascalorg/editor",
     "language": "TypeScript",
@@ -1067,6 +1067,16 @@
     "forks": 10779,
     "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
     "last_seen": "2026-10-13",
+    "trending_days": 10
+  },
+  {
+    "name": "cloudflare/security-audit-skill",
+    "url": "https://github.com/cloudflare/security-audit-skill",
+    "language": "JavaScript",
+    "stars": 41270,
+    "forks": 2576,
+    "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+    "last_seen": "2026-10-23",
     "trending_days": 10
   },
   {
@@ -1217,16 +1227,6 @@
     "forks": 3697,
     "description": "The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra",
     "last_seen": "2026-06-17",
-    "trending_days": 9
-  },
-  {
-    "name": "cloudflare/security-audit-skill",
-    "url": "https://github.com/cloudflare/security-audit-skill",
-    "language": "JavaScript",
-    "stars": 38584,
-    "forks": 2407,
-    "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-    "last_seen": "2026-10-22",
     "trending_days": 9
   },
   {
@@ -3190,6 +3190,16 @@
     "trending_days": 5
   },
   {
+    "name": "NVIDIA/OpenShell",
+    "url": "https://github.com/nvidia/openshell",
+    "language": "Rust",
+    "stars": 18460,
+    "forks": 1862,
+    "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+    "last_seen": "2026-10-23",
+    "trending_days": 5
+  },
+  {
     "name": "Open-Dev-Society/OpenStock",
     "url": "https://github.com/open-dev-society/openstock",
     "language": "TypeScript",
@@ -3347,6 +3357,16 @@
     "forks": 1000,
     "description": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!",
     "last_seen": "2026-06-30",
+    "trending_days": 5
+  },
+  {
+    "name": "SnailSploit/Claude-Red",
+    "url": "https://github.com/snailsploit/claude-red",
+    "language": "Python",
+    "stars": 8170,
+    "forks": 1080,
+    "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.",
+    "last_seen": "2026-10-23",
     "trending_days": 5
   },
   {
@@ -4340,16 +4360,6 @@
     "trending_days": 4
   },
   {
-    "name": "NVIDIA/OpenShell",
-    "url": "https://github.com/nvidia/openshell",
-    "language": "Rust",
-    "stars": 14313,
-    "forks": 1649,
-    "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
-    "last_seen": "2026-10-02",
-    "trending_days": 4
-  },
-  {
     "name": "NVIDIA/SkillSpector",
     "url": "https://github.com/nvidia/skillspector",
     "language": "Python",
@@ -4517,16 +4527,6 @@
     "forks": 3328,
     "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.",
     "last_seen": "2026-08-14",
-    "trending_days": 4
-  },
-  {
-    "name": "SnailSploit/Claude-Red",
-    "url": "https://github.com/snailsploit/claude-red",
-    "language": "Python",
-    "stars": 5594,
-    "forks": 723,
-    "description": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.",
-    "last_seen": "2026-09-16",
     "trending_days": 4
   },
   {
@@ -8320,6 +8320,16 @@
     "trending_days": 2
   },
   {
+    "name": "nodejs/node",
+    "url": "https://github.com/nodejs/node",
+    "language": "JavaScript",
+    "stars": 122675,
+    "forks": 39940,
+    "description": "Node.js JavaScript runtime ✨🐢🚀✨",
+    "last_seen": "2026-10-23",
+    "trending_days": 2
+  },
+  {
     "name": "NomaDamas/k-skill",
     "url": "https://github.com/nomadamas/k-skill",
     "language": "JavaScript",
@@ -8627,6 +8637,16 @@
     "forks": 4825,
     "description": "A WhatsApp client library for NodeJS that connects through the WhatsApp Web browser app",
     "last_seen": "2026-01-31",
+    "trending_days": 2
+  },
+  {
+    "name": "php/php-src",
+    "url": "https://github.com/php/php-src",
+    "language": "C",
+    "stars": 41490,
+    "forks": 8348,
+    "description": "The PHP Interpreter",
+    "last_seen": "2026-10-23",
     "trending_days": 2
   },
   {
@@ -12180,16 +12200,6 @@
     "trending_days": 1
   },
   {
-    "name": "nodejs/node",
-    "url": "https://github.com/nodejs/node",
-    "language": "JavaScript",
-    "stars": 118399,
-    "forks": 36159,
-    "description": "Node.js JavaScript runtime ✨🐢🚀✨",
-    "last_seen": "2026-07-26",
-    "trending_days": 1
-  },
-  {
     "name": "nukeop/nuclear",
     "url": "https://github.com/nukeop/nuclear",
     "language": "TypeScript",
@@ -12460,16 +12470,6 @@
     "trending_days": 1
   },
   {
-    "name": "php/php-src",
-    "url": "https://github.com/php/php-src",
-    "language": "C",
-    "stars": 40947,
-    "forks": 8290,
-    "description": "The PHP Interpreter",
-    "last_seen": "2026-10-22",
-    "trending_days": 1
-  },
-  {
     "name": "pi-hole/pi-hole",
     "url": "https://github.com/pi-hole/pi-hole",
     "language": "Shell",
@@ -12677,6 +12677,16 @@
     "forks": 465,
     "description": "Vibe Workflow Platform for Non-technical Creators.",
     "last_seen": "2025-12-12",
+    "trending_days": 1
+  },
+  {
+    "name": "Renhuai123/ziwei-doushu",
+    "url": "https://github.com/renhuai123/ziwei-doushu",
+    "language": "TypeScript",
+    "stars": 6719,
+    "forks": 1375,
+    "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+    "last_seen": "2026-10-23",
     "trending_days": 1
   },
   {

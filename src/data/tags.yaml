@@ -890,6 +890,9 @@ entries:
   - ai-coding
   - devtools
   - protocol-spec
+  fastapi_fastapi:
+  - web-framework
+  - protocol-spec
   ffmpeg_asm-lessons:
   - video-audio
   fincept-corporation_finceptterminal:
