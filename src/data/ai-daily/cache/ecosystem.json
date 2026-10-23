@@ -1,27 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-10-22",
+    "last_run": "2026-10-23",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/akitaonrails/ai-memory",
-      "canonical_url": "https://github.com/akitaonrails/ai-memory",
-      "event_date": "2026-09-22",
-      "date_seen": "2026-09-22"
-    },
-    {
-      "key": "github.com/firecrawl/anydoc",
-      "canonical_url": "https://github.com/firecrawl/anydoc",
-      "event_date": "2026-09-22",
-      "date_seen": "2026-09-22"
-    },
-    {
-      "key": "github.com/firecrawl/pdf-inspector",
-      "canonical_url": "https://github.com/firecrawl/pdf-inspector",
-      "event_date": "2026-09-22",
-      "date_seen": "2026-09-22"
-    },
     {
       "key": "github.com/agent-substrate/substrate",
       "canonical_url": "https://github.com/agent-substrate/substrate",
@@ -897,6 +879,66 @@
       "canonical_url": "https://github.com/Bogzx/bg3-agent-harness",
       "event_date": "2026-10-21",
       "date_seen": "2026-10-22"
+    },
+    {
+      "key": "github.com/openresponses/openresponses",
+      "canonical_url": "https://github.com/openresponses/openresponses",
+      "event_date": "2026-10-22",
+      "date_seen": "2026-10-23"
+    },
+    {
+      "key": "github.com/openenv/openenv",
+      "canonical_url": "https://github.com/openenv/OpenEnv",
+      "event_date": "2026-10-22",
+      "date_seen": "2026-10-23"
+    },
+    {
+      "key": "github.com/opensandbox-group/opensandbox",
+      "canonical_url": "https://github.com/opensandbox-group/OpenSandbox",
+      "event_date": "2026-10-22",
+      "date_seen": "2026-10-23"
+    },
+    {
+      "key": "github.com/luongnv89/claude-howto",
+      "canonical_url": "https://github.com/luongnv89/claude-howto",
+      "event_date": "2026-10-22",
+      "date_seen": "2026-10-23"
+    },
+    {
+      "key": "github.com/ephemeral-ai-lab/layerfs",
+      "canonical_url": "https://github.com/Ephemeral-AI-Lab/layerfs",
+      "event_date": "2026-10-22",
+      "date_seen": "2026-10-23"
+    },
+    {
+      "key": "github.com/pgrundev/pgx",
+      "canonical_url": "https://github.com/pgrundev/pgx",
+      "event_date": "2026-10-22",
+      "date_seen": "2026-10-23"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/agentskills_agentskills",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/agentskills_agentskills/",
+      "event_date": "2026-10-23",
+      "date_seen": "2026-10-23"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/anthropic-experimental_sandbox-runtime",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/anthropic-experimental_sandbox-runtime/",
+      "event_date": "2026-10-23",
+      "date_seen": "2026-10-23"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/agent-substrate_substrate",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/agent-substrate_substrate/",
+      "event_date": "2026-10-23",
+      "date_seen": "2026-10-23"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/apache_maka",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/apache_maka/",
+      "event_date": "2026-10-23",
+      "date_seen": "2026-10-23"
     }
   ]
 }
