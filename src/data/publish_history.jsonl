@@ -385,3 +385,4 @@
 {"recorded_at": "2026-10-19T00:46:21.240911+00:00", "slug": "android_skills", "title": null, "state": "published", "published_at": "2026-10-19", "reason": "自动生成", "ci_run_id": "39181486238"}
 {"recorded_at": "2026-10-21T01:46:45.878031+00:00", "slug": "vllm-project_vllm", "title": null, "state": "published", "published_at": "2026-10-21", "reason": "自动生成", "ci_run_id": "39525433403"}
 {"recorded_at": "2026-10-22T00:40:13.024971+00:00", "slug": "headroomlabs-ai_headroom", "title": null, "state": "published", "published_at": "2026-10-22", "reason": "自动生成", "ci_run_id": "39698881770"}
+{"recorded_at": "2026-10-23T07:05:06.392505+00:00", "slug": "fastapi_fastapi", "title": null, "state": "published", "published_at": "2026-10-23", "reason": "自动生成", "ci_run_id": "39913216471"}

@@ -1,0 +1,6 @@
+{
+  "title": "GitHub推荐：2 万行代码、8 年 161 版：FastAPI 为何不发 1.0",
+  "digest": "FastAPI 用 1.5 万行纯逻辑把参数解析、校验、序列化、补全、OpenAPI 五件事收敛为一次签名声明。Dependant 单一中间表示让文档漂移在物理上不可能——8 年不发 1.0 是主动的演进策略。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}
