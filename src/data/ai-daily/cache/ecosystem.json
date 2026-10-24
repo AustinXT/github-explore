@@ -1,63 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-10-23",
+    "last_run": "2026-10-24",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/agent-substrate/substrate",
-      "canonical_url": "https://github.com/agent-substrate/substrate",
-      "event_date": "2026-09-23",
-      "date_seen": "2026-09-23"
-    },
-    {
-      "key": "github.com/dream-num/univer",
-      "canonical_url": "https://github.com/dream-num/univer",
-      "event_date": "2026-09-23",
-      "date_seen": "2026-09-23"
-    },
-    {
-      "key": "github.com/davila7/claude-code-templates",
-      "canonical_url": "https://github.com/davila7/claude-code-templates",
-      "event_date": "2026-09-23",
-      "date_seen": "2026-09-23"
-    },
-    {
-      "key": "github.com/google/ax",
-      "canonical_url": "https://github.com/google/ax",
-      "event_date": "2026-09-23",
-      "date_seen": "2026-09-23"
-    },
-    {
-      "key": "github.com/superdesigndev/treg",
-      "canonical_url": "https://github.com/superdesigndev/treg",
-      "event_date": "2026-09-23",
-      "date_seen": "2026-09-23"
-    },
-    {
-      "key": "github.com/j-m-recipes/recipes",
-      "canonical_url": "https://github.com/J-M-Recipes/recipes",
-      "event_date": "2026-09-23",
-      "date_seen": "2026-09-23"
-    },
-    {
-      "key": "github.com/sansan0/trendradar",
-      "canonical_url": "https://github.com/sansan0/TrendRadar",
-      "event_date": "2026-09-23",
-      "date_seen": "2026-09-23"
-    },
-    {
-      "key": "github.com/openclaw/openclaw",
-      "canonical_url": "https://github.com/openclaw/openclaw",
-      "event_date": "2026-09-23",
-      "date_seen": "2026-09-23"
-    },
-    {
-      "key": "github.com/automatic1111/stable-diffusion-webui",
-      "canonical_url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
-      "event_date": "2026-09-23",
-      "date_seen": "2026-09-23"
-    },
     {
       "key": "github.com/strands-agents/harness-sdk",
       "canonical_url": "https://github.com/strands-agents/harness-sdk",
@@ -939,6 +885,78 @@
       "canonical_url": "https://nightvoyager.top/github-explore/reports/apache_maka/",
       "event_date": "2026-10-23",
       "date_seen": "2026-10-23"
+    },
+    {
+      "key": "github.com/openbmb/voxcpm",
+      "canonical_url": "https://github.com/OpenBMB/VoxCPM",
+      "event_date": "2026-10-24",
+      "date_seen": "2026-10-24"
+    },
+    {
+      "key": "github.com/snailsploit/claude-red",
+      "canonical_url": "https://github.com/SnailSploit/Claude-Red",
+      "event_date": "2026-10-24",
+      "date_seen": "2026-10-24"
+    },
+    {
+      "key": "github.com/startluxlabs/startlux-prism",
+      "canonical_url": "https://github.com/StartLuxLabs/StartLux-Prism",
+      "event_date": "2026-10-24",
+      "date_seen": "2026-10-24"
+    },
+    {
+      "key": "github.com/tencent-hunyuan/hy-nomas",
+      "canonical_url": "https://github.com/Tencent-Hunyuan/Hy-Nomas",
+      "event_date": "2026-10-24",
+      "date_seen": "2026-10-24"
+    },
+    {
+      "key": "hf:tencent/hy-nomas",
+      "canonical_url": "https://huggingface.co/tencent/Hy-Nomas",
+      "event_date": "2026-10-24",
+      "date_seen": "2026-10-24"
+    },
+    {
+      "key": "github.com/huggingface/carbon",
+      "canonical_url": "https://github.com/huggingface/carbon",
+      "event_date": "2026-10-24",
+      "date_seen": "2026-10-24"
+    },
+    {
+      "key": "hf:huggingfacebio/carbon-x",
+      "canonical_url": "https://huggingface.co/HuggingFaceBio/Carbon-X",
+      "event_date": "2026-10-24",
+      "date_seen": "2026-10-24"
+    },
+    {
+      "key": "github.com/obsidianmd/pele",
+      "canonical_url": "https://github.com/obsidianmd/pele",
+      "event_date": "2026-10-24",
+      "date_seen": "2026-10-24"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/nvidia_skillspector",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/nvidia_skillspector",
+      "event_date": "2026-10-24",
+      "date_seen": "2026-10-24"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/mukul975_anthropic-cybersecurity-skills",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/mukul975_anthropic-cybersecurity-skills",
+      "event_date": "2026-10-24",
+      "date_seen": "2026-10-24"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/nvidia_cosmos",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/nvidia_cosmos",
+      "event_date": "2026-10-24",
+      "date_seen": "2026-10-24"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/modular_modular",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/modular_modular",
+      "event_date": "2026-10-24",
+      "date_seen": "2026-10-24"
     }
   ]
 }
