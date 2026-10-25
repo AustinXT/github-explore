@@ -386,3 +386,4 @@
 {"recorded_at": "2026-10-21T01:46:45.878031+00:00", "slug": "vllm-project_vllm", "title": null, "state": "published", "published_at": "2026-10-21", "reason": "自动生成", "ci_run_id": "39525433403"}
 {"recorded_at": "2026-10-22T00:40:13.024971+00:00", "slug": "headroomlabs-ai_headroom", "title": null, "state": "published", "published_at": "2026-10-22", "reason": "自动生成", "ci_run_id": "39698881770"}
 {"recorded_at": "2026-10-23T07:05:06.392505+00:00", "slug": "fastapi_fastapi", "title": null, "state": "published", "published_at": "2026-10-23", "reason": "自动生成", "ci_run_id": "39913216471"}
+{"recorded_at": "2026-10-25T05:55:34.957539+00:00", "slug": "aws_agent-toolkit-for-aws", "title": null, "state": "published", "published_at": "2026-10-25", "reason": "自动生成", "ci_run_id": "40165715242"}
