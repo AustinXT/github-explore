@@ -400,6 +400,16 @@
     "trending_days": 18
   },
   {
+    "name": "debpalash/VoiceStudio",
+    "url": "https://github.com/debpalash/voicestudio",
+    "language": "Python",
+    "stars": 85993,
+    "forks": 9532,
+    "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+    "last_seen": "2026-10-25",
+    "trending_days": 18
+  },
+  {
     "name": "DietrichGebert/ponytail",
     "url": "https://github.com/dietrichgebert/ponytail",
     "language": "JavaScript",
@@ -420,6 +430,16 @@
     "trending_days": 18
   },
   {
+    "name": "TauricResearch/TradingAgents",
+    "url": "https://github.com/tauricresearch/tradingagents",
+    "language": "Python",
+    "stars": 114105,
+    "forks": 22086,
+    "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+    "last_seen": "2026-10-25",
+    "trending_days": 18
+  },
+  {
     "name": "bytedance/deer-flow",
     "url": "https://github.com/bytedance/deer-flow",
     "language": "Python",
@@ -427,26 +447,6 @@
     "forks": 11286,
     "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
     "last_seen": "2026-09-07",
-    "trending_days": 17
-  },
-  {
-    "name": "debpalash/VoiceStudio",
-    "url": "https://github.com/debpalash/voicestudio",
-    "language": "Python",
-    "stars": 74433,
-    "forks": 8143,
-    "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-    "last_seen": "2026-10-18",
-    "trending_days": 17
-  },
-  {
-    "name": "TauricResearch/TradingAgents",
-    "url": "https://github.com/tauricresearch/tradingagents",
-    "language": "Python",
-    "stars": 105875,
-    "forks": 20279,
-    "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-    "last_seen": "2026-09-14",
     "trending_days": 17
   },
   {
@@ -517,6 +517,16 @@
     "forks": 449,
     "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more",
     "last_seen": "2026-06-06",
+    "trending_days": 15
+  },
+  {
+    "name": "pbakaus/impeccable",
+    "url": "https://github.com/pbakaus/impeccable",
+    "language": "Rust",
+    "stars": 87187,
+    "forks": 5211,
+    "description": "The design language that makes your AI harness better at design.",
+    "last_seen": "2026-10-25",
     "trending_days": 15
   },
   {
@@ -627,16 +637,6 @@
     "forks": 82210,
     "description": "The AI that really does things. Any OS. Any Platform. The lobster way. 🦞",
     "last_seen": "2026-09-30",
-    "trending_days": 14
-  },
-  {
-    "name": "pbakaus/impeccable",
-    "url": "https://github.com/pbakaus/impeccable",
-    "language": "Rust",
-    "stars": 85963,
-    "forks": 5139,
-    "description": "The design language that makes your AI harness better at design.",
-    "last_seen": "2026-10-24",
     "trending_days": 14
   },
   {
@@ -757,6 +757,16 @@
     "forks": 29178,
     "description": "The open source coding agent.",
     "last_seen": "2026-10-20",
+    "trending_days": 12
+  },
+  {
+    "name": "cloudflare/security-audit-skill",
+    "url": "https://github.com/cloudflare/security-audit-skill",
+    "language": "JavaScript",
+    "stars": 46087,
+    "forks": 2859,
+    "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+    "last_seen": "2026-10-25",
     "trending_days": 12
   },
   {
@@ -897,16 +907,6 @@
     "forks": 3621,
     "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
     "last_seen": "2026-04-06",
-    "trending_days": 11
-  },
-  {
-    "name": "cloudflare/security-audit-skill",
-    "url": "https://github.com/cloudflare/security-audit-skill",
-    "language": "JavaScript",
-    "stars": 43283,
-    "forks": 2701,
-    "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-    "last_seen": "2026-10-24",
     "trending_days": 11
   },
   {
@@ -1680,6 +1680,16 @@
     "trending_days": 8
   },
   {
+    "name": "Nutlope/hallmark",
+    "url": "https://github.com/nutlope/hallmark",
+    "language": "CSS",
+    "stars": 33112,
+    "forks": 1721,
+    "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+    "last_seen": "2026-10-25",
+    "trending_days": 8
+  },
+  {
     "name": "openai/plugins",
     "url": "https://github.com/openai/plugins",
     "language": "JavaScript",
@@ -1997,16 +2007,6 @@
     "forks": 3357,
     "description": "Production-grade Rust-native trading engine with deterministic event-driven architecture",
     "last_seen": "2026-08-17",
-    "trending_days": 7
-  },
-  {
-    "name": "Nutlope/hallmark",
-    "url": "https://github.com/nutlope/hallmark",
-    "language": "CSS",
-    "stars": 31627,
-    "forks": 1631,
-    "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-    "last_seen": "2026-10-24",
     "trending_days": 7
   },
   {
@@ -8090,6 +8090,16 @@
     "trending_days": 2
   },
   {
+    "name": "makecindy/cindy",
+    "url": "https://github.com/makecindy/cindy",
+    "language": "TypeScript",
+    "stars": 4555,
+    "forks": 642,
+    "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+    "last_seen": "2026-10-25",
+    "trending_days": 2
+  },
+  {
     "name": "malisper/pgrust",
     "url": "https://github.com/malisper/pgrust",
     "language": "Rust",
@@ -8670,6 +8680,16 @@
     "trending_days": 2
   },
   {
+    "name": "pollen-robotics/microduck",
+    "url": "https://github.com/pollen-robotics/microduck",
+    "language": "Rust",
+    "stars": 11392,
+    "forks": 1456,
+    "description": "A Tiny biped duck robot 🦆",
+    "last_seen": "2026-10-25",
+    "trending_days": 2
+  },
+  {
     "name": "pollen-robotics/microduck_rl",
     "url": "https://github.com/pollen-robotics/microduck_rl",
     "language": "Python",
@@ -8757,6 +8777,16 @@
     "forks": 34,
     "description": "Playstation 2 Static Recompiler & Runtime Tool to make native PC ports",
     "last_seen": "2026-01-29",
+    "trending_days": 2
+  },
+  {
+    "name": "Renhuai123/ziwei-doushu",
+    "url": "https://github.com/renhuai123/ziwei-doushu",
+    "language": "TypeScript",
+    "stars": 7440,
+    "forks": 1527,
+    "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+    "last_seen": "2026-10-25",
     "trending_days": 2
   },
   {
@@ -9520,6 +9550,16 @@
     "trending_days": 1
   },
   {
+    "name": "AgriciDaniel/claude-seo",
+    "url": "https://github.com/agricidaniel/claude-seo",
+    "language": "Python",
+    "stars": 20372,
+    "forks": 2922,
+    "description": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, agent readiness (Lighthouse Agentic Browsing, WebMCP, llms.txt), backlinks, local SEO, e-commerce, international SEO, Google APIs, and PDF/Excel reporting. 9 optional extensions for live SEO data.",
+    "last_seen": "2026-10-25",
+    "trending_days": 1
+  },
+  {
     "name": "agrinman/tunnelto",
     "url": "https://github.com/agrinman/tunnelto",
     "language": "Rust",
@@ -10127,6 +10167,16 @@
     "forks": 4684,
     "description": "open-source coding agent",
     "last_seen": "2026-06-17",
+    "trending_days": 1
+  },
+  {
+    "name": "coollabsio/coolify",
+    "url": "https://github.com/coollabsio/coolify",
+    "language": "PHP",
+    "stars": 63983,
+    "forks": 5756,
+    "description": "An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily deploy static sites, databases, full-stack applications and 360+ one-click services on your own servers.",
+    "last_seen": "2026-10-25",
     "trending_days": 1
   },
   {
@@ -11300,6 +11350,16 @@
     "trending_days": 1
   },
   {
+    "name": "JetBrains/thinkrail",
+    "url": "https://github.com/jetbrains/thinkrail",
+    "language": "TypeScript",
+    "stars": 1199,
+    "forks": 85,
+    "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+    "last_seen": "2026-10-25",
+    "trending_days": 1
+  },
+  {
     "name": "jiji262/douyin-downloader",
     "url": "https://github.com/jiji262/douyin-downloader",
     "language": "Python",
@@ -11687,16 +11747,6 @@
     "forks": 239,
     "description": "Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU.",
     "last_seen": "2026-08-15",
-    "trending_days": 1
-  },
-  {
-    "name": "makecindy/cindy",
-    "url": "https://github.com/makecindy/cindy",
-    "language": "TypeScript",
-    "stars": 3815,
-    "forks": 567,
-    "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
-    "last_seen": "2026-10-24",
     "trending_days": 1
   },
   {
@@ -12500,16 +12550,6 @@
     "trending_days": 1
   },
   {
-    "name": "pollen-robotics/microduck",
-    "url": "https://github.com/pollen-robotics/microduck",
-    "language": "Rust",
-    "stars": 10704,
-    "forks": 1385,
-    "description": "A Tiny biped duck robot 🦆",
-    "last_seen": "2026-10-24",
-    "trending_days": 1
-  },
-  {
     "name": "pollen-robotics/reachy_mini",
     "url": "https://github.com/pollen-robotics/reachy_mini",
     "language": "Python",
@@ -12707,16 +12747,6 @@
     "forks": 465,
     "description": "Vibe Workflow Platform for Non-technical Creators.",
     "last_seen": "2025-12-12",
-    "trending_days": 1
-  },
-  {
-    "name": "Renhuai123/ziwei-doushu",
-    "url": "https://github.com/renhuai123/ziwei-doushu",
-    "language": "TypeScript",
-    "stars": 6719,
-    "forks": 1375,
-    "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
-    "last_seen": "2026-10-23",
     "trending_days": 1
   },
   {

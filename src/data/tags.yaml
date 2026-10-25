@@ -329,6 +329,9 @@ entries:
   - devtools
   - web-framework
   - video-audio
+  aws_agent-toolkit-for-aws:
+  - ai-agent
+  - ai-coding
   axios_axios:
   - security
   axorax_awesome-free-apps:
