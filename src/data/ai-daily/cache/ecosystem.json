@@ -1,57 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-10-24",
+    "last_run": "2026-10-25",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/strands-agents/harness-sdk",
-      "canonical_url": "https://github.com/strands-agents/harness-sdk",
-      "event_date": "2026-09-24",
-      "date_seen": "2026-09-24"
-    },
-    {
-      "key": "github.com/tnt-likely/panwatch",
-      "canonical_url": "https://github.com/TNT-Likely/PanWatch",
-      "event_date": "2026-09-24",
-      "date_seen": "2026-09-24"
-    },
-    {
-      "key": "github.com/harry7557558/spirula-studio",
-      "canonical_url": "https://github.com/harry7557558/spirula-studio",
-      "event_date": "2026-09-24",
-      "date_seen": "2026-09-24"
-    },
-    {
-      "key": "github.com/hkuds/cli-anything",
-      "canonical_url": "https://github.com/HKUDS/CLI-Anything",
-      "event_date": "2026-09-24",
-      "date_seen": "2026-09-24"
-    },
-    {
-      "key": "github.com/deusdata/codebase-memory-mcp",
-      "canonical_url": "https://github.com/DeusData/codebase-memory-mcp",
-      "event_date": "2026-09-24",
-      "date_seen": "2026-09-24"
-    },
-    {
-      "key": "github.com/jasonkneen/instinctual-memory",
-      "canonical_url": "https://github.com/jasonkneen/instinctual-memory",
-      "event_date": "2026-09-24",
-      "date_seen": "2026-09-24"
-    },
-    {
-      "key": "github.com/shiyu-coder/kronos",
-      "canonical_url": "https://github.com/shiyu-coder/Kronos",
-      "event_date": "2026-09-24",
-      "date_seen": "2026-09-24"
-    },
-    {
-      "key": "github.com/microsoft/call-center-ai",
-      "canonical_url": "https://github.com/microsoft/call-center-ai",
-      "event_date": "2026-09-24",
-      "date_seen": "2026-09-24"
-    },
     {
       "key": "github.com/vectorize-io/hindsight",
       "canonical_url": "https://github.com/vectorize-io/hindsight",
@@ -957,6 +909,66 @@
       "canonical_url": "https://nightvoyager.top/github-explore/reports/modular_modular",
       "event_date": "2026-10-24",
       "date_seen": "2026-10-24"
+    },
+    {
+      "key": "github.com/aws/agent-toolkit-for-aws",
+      "canonical_url": "https://github.com/aws/agent-toolkit-for-aws",
+      "event_date": "2026-10-24",
+      "date_seen": "2026-10-25"
+    },
+    {
+      "key": "github.com/nutlope/hallmark",
+      "canonical_url": "https://github.com/Nutlope/hallmark",
+      "event_date": "2026-10-24",
+      "date_seen": "2026-10-25"
+    },
+    {
+      "key": "github.com/google-gemini/gemini-cli",
+      "canonical_url": "https://github.com/google-gemini/gemini-cli",
+      "event_date": "2026-10-24",
+      "date_seen": "2026-10-25"
+    },
+    {
+      "key": "github.com/makecindy/cindy",
+      "canonical_url": "https://github.com/makecindy/cindy",
+      "event_date": "2026-10-24",
+      "date_seen": "2026-10-25"
+    },
+    {
+      "key": "github.com/internrobotics/internw0",
+      "canonical_url": "https://github.com/InternRobotics/InternW0",
+      "event_date": "2026-10-23",
+      "date_seen": "2026-10-25"
+    },
+    {
+      "key": "github.com/theorem-labs/oss-verify-proofs",
+      "canonical_url": "https://github.com/theorem-labs/oss-verify-proofs",
+      "event_date": "2026-10-22",
+      "date_seen": "2026-10-25"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/pbakaus_impeccable",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/pbakaus_impeccable/",
+      "event_date": "2026-10-25",
+      "date_seen": "2026-10-25"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/modelcontextprotocol_servers",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/modelcontextprotocol_servers/",
+      "event_date": "2026-10-25",
+      "date_seen": "2026-10-25"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/huggingface_skills",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/huggingface_skills/",
+      "event_date": "2026-10-25",
+      "date_seen": "2026-10-25"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/vercel-labs_agent-browser",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/vercel-labs_agent-browser/",
+      "event_date": "2026-10-25",
+      "date_seen": "2026-10-25"
     }
   ]
 }
