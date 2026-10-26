@@ -5,48 +5,6 @@
   },
   "entries": [
     {
-      "key": "github.com/vectorize-io/hindsight",
-      "canonical_url": "https://github.com/vectorize-io/hindsight",
-      "event_date": "2026-09-25",
-      "date_seen": "2026-09-25"
-    },
-    {
-      "key": "github.com/nvidia/model-optimizer",
-      "canonical_url": "https://github.com/NVIDIA/Model-Optimizer",
-      "event_date": "2026-09-25",
-      "date_seen": "2026-09-25"
-    },
-    {
-      "key": "github.com/leejet/stable-diffusion.cpp",
-      "canonical_url": "https://github.com/leejet/stable-diffusion.cpp",
-      "event_date": "2026-09-25",
-      "date_seen": "2026-09-25"
-    },
-    {
-      "key": "github.com/docker/sandbox-kit-spec",
-      "canonical_url": "https://github.com/docker/sandbox-kit-spec",
-      "event_date": "2026-09-25",
-      "date_seen": "2026-09-25"
-    },
-    {
-      "key": "github.com/xiaomimimo/mimo-code",
-      "canonical_url": "https://github.com/XiaomiMiMo/MiMo-Code",
-      "event_date": "2026-09-25",
-      "date_seen": "2026-09-25"
-    },
-    {
-      "key": "github.com/nasiko-labs/nasiko",
-      "canonical_url": "https://github.com/Nasiko-Labs/nasiko",
-      "event_date": "2026-09-25",
-      "date_seen": "2026-09-25"
-    },
-    {
-      "key": "https://seeyeetech.com/github-explorer/reports/tensorflow_tensorflow",
-      "canonical_url": "https://seeyeetech.com/github-explorer/reports/tensorflow_tensorflow",
-      "event_date": "2026-09-25",
-      "date_seen": "2026-09-25"
-    },
-    {
       "key": "github.com/paperclipai/paperclip",
       "canonical_url": "https://github.com/paperclipai/paperclip",
       "event_date": "2026-09-26",
@@ -968,6 +926,78 @@
       "key": "https://nightvoyager.top/github-explore/reports/vercel-labs_agent-browser",
       "canonical_url": "https://nightvoyager.top/github-explore/reports/vercel-labs_agent-browser/",
       "event_date": "2026-10-25",
+      "date_seen": "2026-10-25"
+    },
+    {
+      "key": "github.com/pollen-robotics/microduck",
+      "canonical_url": "https://github.com/pollen-robotics/microduck",
+      "event_date": "2026-10-25",
+      "date_seen": "2026-10-25"
+    },
+    {
+      "key": "github.com/tauricresearch/tradingagents",
+      "canonical_url": "https://github.com/TauricResearch/TradingAgents",
+      "event_date": "2026-10-25",
+      "date_seen": "2026-10-25"
+    },
+    {
+      "key": "github.com/renhuai123/ziwei-doushu",
+      "canonical_url": "https://github.com/Renhuai123/ziwei-doushu",
+      "event_date": "2026-10-25",
+      "date_seen": "2026-10-25"
+    },
+    {
+      "key": "github.com/jetbrains/thinkrail",
+      "canonical_url": "https://github.com/JetBrains/thinkrail",
+      "event_date": "2026-10-25",
+      "date_seen": "2026-10-25"
+    },
+    {
+      "key": "github.com/coollabsio/coolify",
+      "canonical_url": "https://github.com/coollabsio/coolify",
+      "event_date": "2026-10-25",
+      "date_seen": "2026-10-25"
+    },
+    {
+      "key": "github.com/agricidaniel/claude-seo",
+      "canonical_url": "https://github.com/AgriciDaniel/claude-seo",
+      "event_date": "2026-10-25",
+      "date_seen": "2026-10-25"
+    },
+    {
+      "key": "github.com/shiyu-coder/kronos",
+      "canonical_url": "https://github.com/shiyu-coder/kronos",
+      "event_date": "2026-10-16",
+      "date_seen": "2026-10-25"
+    },
+    {
+      "key": "hf:nanbeige/nanbeige4.3-33b",
+      "canonical_url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
+      "event_date": "2026-10-24",
+      "date_seen": "2026-10-25"
+    },
+    {
+      "key": "github.com/zhangshuibai/molten",
+      "canonical_url": "https://github.com/zhangshuibai/molten",
+      "event_date": "2026-10-25",
+      "date_seen": "2026-10-25"
+    },
+    {
+      "key": "github.com/codician-team/diffinery",
+      "canonical_url": "https://github.com/codician-team/diffinery",
+      "event_date": "2026-10-25",
+      "date_seen": "2026-10-25"
+    },
+    {
+      "key": "github.com/now-join-us/cue-agent",
+      "canonical_url": "https://github.com/Now-Join-Us/cue-agent",
+      "event_date": "2026-10-25",
+      "date_seen": "2026-10-25"
+    },
+    {
+      "key": "github.com/ersingvn/ludra",
+      "canonical_url": "https://github.com/ersingvn/ludra",
+      "event_date": "2026-10-24",
       "date_seen": "2026-10-25"
     }
   ]
