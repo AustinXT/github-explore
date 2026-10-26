@@ -33,11 +33,11 @@
     "name": "affaan-m/ECC",
     "url": "https://github.com/affaan-m/ecc",
     "language": "JavaScript",
-    "stars": 282023,
-    "forks": 41941,
+    "stars": 289538,
+    "forks": 42891,
     "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-    "last_seen": "2026-10-17",
-    "trending_days": 37
+    "last_seen": "2026-10-26",
+    "trending_days": 38
   },
   {
     "name": "nvm-sh/nvm",
@@ -360,6 +360,16 @@
     "trending_days": 19
   },
   {
+    "name": "debpalash/VoiceStudio",
+    "url": "https://github.com/debpalash/voicestudio",
+    "language": "Python",
+    "stars": 88556,
+    "forks": 9763,
+    "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+    "last_seen": "2026-10-26",
+    "trending_days": 19
+  },
+  {
     "name": "microsoft/VibeVoice",
     "url": "https://github.com/microsoft/vibevoice",
     "language": "Python",
@@ -377,6 +387,16 @@
     "forks": 5289,
     "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
     "last_seen": "2026-08-30",
+    "trending_days": 19
+  },
+  {
+    "name": "TauricResearch/TradingAgents",
+    "url": "https://github.com/tauricresearch/tradingagents",
+    "language": "Python",
+    "stars": 115680,
+    "forks": 22227,
+    "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+    "last_seen": "2026-10-26",
     "trending_days": 19
   },
   {
@@ -400,16 +420,6 @@
     "trending_days": 18
   },
   {
-    "name": "debpalash/VoiceStudio",
-    "url": "https://github.com/debpalash/voicestudio",
-    "language": "Python",
-    "stars": 85993,
-    "forks": 9532,
-    "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-    "last_seen": "2026-10-25",
-    "trending_days": 18
-  },
-  {
     "name": "DietrichGebert/ponytail",
     "url": "https://github.com/dietrichgebert/ponytail",
     "language": "JavaScript",
@@ -427,16 +437,6 @@
     "forks": 51378,
     "description": "A collective list of free APIs",
     "last_seen": "2026-08-19",
-    "trending_days": 18
-  },
-  {
-    "name": "TauricResearch/TradingAgents",
-    "url": "https://github.com/tauricresearch/tradingagents",
-    "language": "Python",
-    "stars": 114105,
-    "forks": 22086,
-    "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
-    "last_seen": "2026-10-25",
     "trending_days": 18
   },
   {
@@ -510,6 +510,16 @@
     "trending_days": 16
   },
   {
+    "name": "pbakaus/impeccable",
+    "url": "https://github.com/pbakaus/impeccable",
+    "language": "Rust",
+    "stars": 88810,
+    "forks": 5297,
+    "description": "The design language that makes your AI harness better at design.",
+    "last_seen": "2026-10-26",
+    "trending_days": 16
+  },
+  {
     "name": "aquasecurity/trivy",
     "url": "https://github.com/aquasecurity/trivy",
     "language": "Go",
@@ -517,16 +527,6 @@
     "forks": 449,
     "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more",
     "last_seen": "2026-06-06",
-    "trending_days": 15
-  },
-  {
-    "name": "pbakaus/impeccable",
-    "url": "https://github.com/pbakaus/impeccable",
-    "language": "Rust",
-    "stars": 87187,
-    "forks": 5211,
-    "description": "The design language that makes your AI harness better at design.",
-    "last_seen": "2026-10-25",
     "trending_days": 15
   },
   {
@@ -640,6 +640,16 @@
     "trending_days": 14
   },
   {
+    "name": "Panniantong/Agent-Reach",
+    "url": "https://github.com/panniantong/agent-reach",
+    "language": "Python",
+    "stars": 103220,
+    "forks": 9153,
+    "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+    "last_seen": "2026-10-26",
+    "trending_days": 14
+  },
+  {
     "name": "tinyhumansai/openhuman",
     "url": "https://github.com/tinyhumansai/openhuman",
     "language": "Rust",
@@ -697,16 +707,6 @@
     "forks": 1388,
     "description": "The absolute trainer to light up AI agents.",
     "last_seen": "2026-03-31",
-    "trending_days": 13
-  },
-  {
-    "name": "Panniantong/Agent-Reach",
-    "url": "https://github.com/panniantong/agent-reach",
-    "language": "Python",
-    "stars": 91759,
-    "forks": 8057,
-    "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
-    "last_seen": "2026-10-05",
     "trending_days": 13
   },
   {
@@ -807,6 +807,16 @@
     "forks": 3510,
     "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
     "last_seen": "2026-08-19",
+    "trending_days": 12
+  },
+  {
+    "name": "multica-ai/andrej-karpathy-skills",
+    "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "language": "Unknown",
+    "stars": 224362,
+    "forks": 22452,
+    "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+    "last_seen": "2026-10-26",
     "trending_days": 12
   },
   {
@@ -977,16 +987,6 @@
     "forks": 8361,
     "description": "Microsoft PowerToys is a collection of utilities that supercharge productivity and customization on Windows",
     "last_seen": "2026-07-30",
-    "trending_days": 11
-  },
-  {
-    "name": "multica-ai/andrej-karpathy-skills",
-    "url": "https://github.com/multica-ai/andrej-karpathy-skills",
-    "language": "Unknown",
-    "stars": 217995,
-    "forks": 21968,
-    "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
-    "last_seen": "2026-10-10",
     "trending_days": 11
   },
   {
@@ -1390,6 +1390,16 @@
     "trending_days": 9
   },
   {
+    "name": "Nutlope/hallmark",
+    "url": "https://github.com/nutlope/hallmark",
+    "language": "CSS",
+    "stars": 35668,
+    "forks": 1856,
+    "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+    "last_seen": "2026-10-26",
+    "trending_days": 9
+  },
+  {
     "name": "OpenBB-finance/OpenBB",
     "url": "https://github.com/openbb-finance/openbb",
     "language": "Python",
@@ -1677,16 +1687,6 @@
     "forks": 9851,
     "description": "Ghidra is a software reverse engineering (SRE) framework",
     "last_seen": "2026-10-15",
-    "trending_days": 8
-  },
-  {
-    "name": "Nutlope/hallmark",
-    "url": "https://github.com/nutlope/hallmark",
-    "language": "CSS",
-    "stars": 33112,
-    "forks": 1721,
-    "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-    "last_seen": "2026-10-25",
     "trending_days": 8
   },
   {
@@ -3200,6 +3200,16 @@
     "trending_days": 5
   },
   {
+    "name": "NVIDIA/SkillSpector",
+    "url": "https://github.com/nvidia/skillspector",
+    "language": "Python",
+    "stars": 21926,
+    "forks": 1920,
+    "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
+    "last_seen": "2026-10-26",
+    "trending_days": 5
+  },
+  {
     "name": "Open-Dev-Society/OpenStock",
     "url": "https://github.com/open-dev-society/openstock",
     "language": "TypeScript",
@@ -4357,16 +4367,6 @@
     "forks": 2125,
     "description": "NocoBase is the most extensible AI-powered no-code/low-code platform for building business applications and enterprise solutions.",
     "last_seen": "2025-11-09",
-    "trending_days": 4
-  },
-  {
-    "name": "NVIDIA/SkillSpector",
-    "url": "https://github.com/nvidia/skillspector",
-    "language": "Python",
-    "stars": 6074,
-    "forks": 446,
-    "description": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks.",
-    "last_seen": "2026-06-15",
     "trending_days": 4
   },
   {
@@ -5680,6 +5680,16 @@
     "trending_days": 3
   },
   {
+    "name": "makecindy/cindy",
+    "url": "https://github.com/makecindy/cindy",
+    "language": "TypeScript",
+    "stars": 6117,
+    "forks": 761,
+    "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+    "last_seen": "2026-10-26",
+    "trending_days": 3
+  },
+  {
     "name": "manaflow-ai/cmux",
     "url": "https://github.com/manaflow-ai/cmux",
     "language": "Swift",
@@ -5947,6 +5957,16 @@
     "forks": 784,
     "description": "3D Gaussian Splat Editor",
     "last_seen": "2026-05-11",
+    "trending_days": 3
+  },
+  {
+    "name": "pollen-robotics/microduck",
+    "url": "https://github.com/pollen-robotics/microduck",
+    "language": "Rust",
+    "stars": 12265,
+    "forks": 1536,
+    "description": "A Tiny biped duck robot 🦆",
+    "last_seen": "2026-10-26",
     "trending_days": 3
   },
   {
@@ -7440,6 +7460,16 @@
     "trending_days": 2
   },
   {
+    "name": "gitroomhq/postiz-app",
+    "url": "https://github.com/gitroomhq/postiz-app",
+    "language": "TypeScript",
+    "stars": 38204,
+    "forks": 7430,
+    "description": "📨 The ultimate agentic social media scheduling tool 🤖",
+    "last_seen": "2026-10-26",
+    "trending_days": 2
+  },
+  {
     "name": "glide-browser/glide",
     "url": "https://github.com/glide-browser/glide",
     "language": "TypeScript",
@@ -7737,6 +7767,16 @@
     "forks": 1339,
     "description": "dev tools, env vars, task runner",
     "last_seen": "2026-08-08",
+    "trending_days": 2
+  },
+  {
+    "name": "JetBrains/thinkrail",
+    "url": "https://github.com/jetbrains/thinkrail",
+    "language": "TypeScript",
+    "stars": 2567,
+    "forks": 142,
+    "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+    "last_seen": "2026-10-26",
     "trending_days": 2
   },
   {
@@ -8087,16 +8127,6 @@
     "forks": 893,
     "description": "Command-line tool that allows searching and downloading app packages (known as ipa files) for iOS, iPadOS, tvOS, and visionOS from the App Store.",
     "last_seen": "2026-08-31",
-    "trending_days": 2
-  },
-  {
-    "name": "makecindy/cindy",
-    "url": "https://github.com/makecindy/cindy",
-    "language": "TypeScript",
-    "stars": 4555,
-    "forks": 642,
-    "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
-    "last_seen": "2026-10-25",
     "trending_days": 2
   },
   {
@@ -8677,16 +8707,6 @@
     "forks": 1484,
     "description": "Open source, privacy-first web analytics. Lightweight, cookie-free Google Analytics alternative. Self-hosted or cloud.",
     "last_seen": "2026-05-18",
-    "trending_days": 2
-  },
-  {
-    "name": "pollen-robotics/microduck",
-    "url": "https://github.com/pollen-robotics/microduck",
-    "language": "Rust",
-    "stars": 11392,
-    "forks": 1456,
-    "description": "A Tiny biped duck robot 🦆",
-    "last_seen": "2026-10-25",
     "trending_days": 2
   },
   {
@@ -9637,6 +9657,16 @@
     "forks": 5735,
     "description": "A one stop repository for generative AI research updates, interview resources, notebooks and much more!",
     "last_seen": "2026-06-19",
+    "trending_days": 1
+  },
+  {
+    "name": "alchaincyf/huashu-design",
+    "url": "https://github.com/alchaincyf/huashu-design",
+    "language": "HTML",
+    "stars": 26622,
+    "forks": 2955,
+    "description": "Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编辑 PPTX / 动画 / 信息图 · 六个候选挑三个方向 · 84 种带样张的风格库 · 越用越懂你的外观账本与设计体检 · HTML-native design skill for Claude Code, Codex, Cursor & any agent",
+    "last_seen": "2026-10-26",
     "trending_days": 1
   },
   {
@@ -10790,16 +10820,6 @@
     "trending_days": 1
   },
   {
-    "name": "gitroomhq/postiz-app",
-    "url": "https://github.com/gitroomhq/postiz-app",
-    "language": "TypeScript",
-    "stars": 25151,
-    "forks": 4288,
-    "description": "📨 The ultimate social media scheduling tool, with a bunch of AI 🤖",
-    "last_seen": "2025-12-29",
-    "trending_days": 1
-  },
-  {
     "name": "go-gitea/gitea",
     "url": "https://github.com/go-gitea/gitea",
     "language": "Go",
@@ -11347,16 +11367,6 @@
     "forks": 6101,
     "description": "The Kotlin Programming Language.",
     "last_seen": "2025-11-10",
-    "trending_days": 1
-  },
-  {
-    "name": "JetBrains/thinkrail",
-    "url": "https://github.com/jetbrains/thinkrail",
-    "language": "TypeScript",
-    "stars": 1199,
-    "forks": 85,
-    "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
-    "last_seen": "2026-10-25",
     "trending_days": 1
   },
   {
@@ -12247,6 +12257,16 @@
     "forks": 58,
     "description": "Backup automation for self-hosters. Built on top of restic",
     "last_seen": "2025-12-17",
+    "trending_days": 1
+  },
+  {
+    "name": "nightly-labs/openbot",
+    "url": "https://github.com/nightly-labs/openbot",
+    "language": "TypeScript",
+    "stars": 1279,
+    "forks": 169,
+    "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
+    "last_seen": "2026-10-26",
     "trending_days": 1
   },
   {
