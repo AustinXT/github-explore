@@ -1,0 +1,6 @@
+{
+  "title": "GitHub推荐：$399 机器鸭 12K Star：难的不是会走路，是升级不砖",
+  "digest": "17 万行 Rust、7 个 daemon、签名 OTA + 回滚 + 开机救砖——$399 机器鸭只为一件事：升级不砖。三条可迁移模式：借用检查器强制安全不变式、恢复路径放在被恢复对象之外、健康门禁只判定可归咎于 release 的条件。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}

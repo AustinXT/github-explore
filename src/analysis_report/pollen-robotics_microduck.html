@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* ====== 微信公众号排版 CSS ====== */
+
+body {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #3e3e3e;
+    background: #fff;
+}
+
+/* 正文段落 */
+p {
+    font-size: 15px !important;
+    line-height: 2 !important;
+    margin: 0 !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+    padding-right: 1.2em !important;
+    padding-left: 1.2em !important;
+    text-align: justify !important;
+}
+p + p {
+    margin-top: 0 !important;
+}
+
+/* 标题 */
+h1 {
+    font-size: 20px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 16px 0 !important;
+    padding: 0 !important;
+}
+h2 {
+    font-size: 18px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 24px 0 !important;
+    padding: 0 !important;
+}
+h3 {
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+    text-align: left !important;
+    margin: 16px 0 16px 0 !important;
+    padding: 0 0 0 1.2em !important;
+}
+h4 {
+    font-size: 15px !important;
+    color: rgb(0, 122, 170) !important;
+    margin: 12px 0 8px 0 !important;
+    padding: 0 !important;
+}
+
+/* 列表 */
+ul,
+ol {
+    padding-left: 2em !important;
+    margin: 1em 0 !important;
+    font-size: 15px !important;
+}
+li {
+    margin: 0.5em 0 !important;
+    line-height: 1.8em !important;
+    font-size: 15px !important;
+    color: #3e3e3e !important;
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    margin: 0 !important;
+    padding-left: 1.2em !important;
+}
+
+/* 引用 */
+blockquote {
+    border-left: 4px solid #888 !important;
+    padding: 8px 16px !important;
+    margin: 1em 0 !important;
+    color: #666 !important;
+    background: #f9f9f9 !important;
+}
+blockquote > p {
+    margin: 0.5em 0 !important;
+    padding: 0 !important;
+}
+blockquote::before,
+blockquote::after {
+    content: none !important;
+}
+
+/* 代码块 */
+pre {
+    font-size: 14px !important;
+    line-height: 1.4em !important;
+    color: #3e3e3e !important;
+    background: #f8f8f8 !important;
+    padding: 12px 16px !important;
+    border-radius: 4px !important;
+    overflow: auto !important;
+    margin: 1em 0 !important;
+}
+
+/* 脚注 */
+.footnotes {
+    font-size: 11px !important;
+    color: #666 !important;
+    line-height: 1.2 !important;
+    margin: 8px 0 0 0 !important;
+    padding: 4px 0 0 0 !important;
+    border-top: 1px solid #eee !important;
+}
+.footnotes p {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #666 !important;
+}
+
+/* 上标 */
+sup {
+    font-size: 0.75em !important;
+    vertical-align: super !important;
+    color: #e51f42 !important;
+    margin: 0 2px !important;
+}
+
+/* 表格 */
+table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 1em 0 !important;
+    font-size: 14px !important;
+    color: #3e3e3e !important;
+}
+th, td {
+    border: 1px solid #ddd !important;
+    padding: 8px 12px !important;
+    text-align: left !important;
+    line-height: 1.6 !important;
+}
+th {
+    background: #f5f5f5 !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+}
+td {
+    color: #3e3e3e !important;
+}
+
+/* 图片 */
+img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 1em auto !important;
+    border-radius: 4px !important;
+}
+
+/* 链接 */
+a {
+    color: rgb(0, 122, 170) !important;
+    text-decoration: none !important;
+}
+
+/* 行内代码 */
+code {
+    font-family: Menlo, Consolas, monospace !important;
+    background: #f4f4f4 !important;
+    padding: 0 4px !important;
+    border-radius: 3px !important;
+    font-size: 13px !important;
+    color: #c7254e !important;
+}
+
+/* 分割线 */
+hr {
+    border: none !important;
+    border-top: 1px solid #eee !important;
+    margin: 2em 0 !important;
+}
+</style>
+</head>
+<body>
+<blockquote>
+<p>GitHub: <a href="https://github.com/pollen-robotics/microduck">https://github.com/pollen-robotics/microduck</a></p>
+</blockquote>
+<h2>一句话总结</h2>
+<p>Pollen Robotics（Hugging Face 子公司）把一台 399 美元、25cm、800g 的双足小鸭的开源做成了一个「机器人操作系统」——17 万行 Rust、7 个独立 daemon、Unix socket + JSON-RPC、签名 OTA + 自动回滚 + 开机救砖，唯一的目标是让这台 399 美元的玩具<strong>永远不会因为升级而变砖</strong>。</p>
+<h2>值得关注的理由</h2>
+<ul>
+<li><strong>它是消费级机器人里罕见地把「产品化」当作第一难题的项目</strong>。官方路线图原话：「The hard part is productisation, not capability」。仓库里 OTA 升级模块的改动量排全仓第二（259 次），仅次于文档——这个排序本身就是一种价值观宣言。架构上，升级系统的<strong>恢复路径被刻意放在被恢复对象之外</strong>：<code>updaterd</code> 不能重启自己（<code>NEVER_RESTART</code> 是代码里的常量而非可配置项），开机 180 秒后由 systemd timer 触发一个 <code>/bin/sh</code> 脚本用 <code>readlink</code> 把软链切回 golden 版本。这套「升级系统自己也在被升级」的处理方式，在开源机器人项目里几乎没人做。</li>
+<li><strong>它的文档密度和「负面知识公开」程度是同类项目天花板</strong>。52 个 Markdown、2 万行文档，代码与文档比例约 1:7；<code>docs/design/</code> 12 篇架构决策 + <code>docs/project/</code> 10 篇踩坑记录（专门记录「什么出过错、什么能关掉它」）+ <code>docs/robot/</code> 9 篇现场运维速查。设计文档里还留着被自己推翻的决策（<code>~~no odometry~~ — reversed</code>）。更罕见的是它敢在文档里写「我们最初的判断只对了一半」和「最大的未跟踪缺口是 M9 自主大脑，它在 daemon 里根本不存在」。</li>
+<li><strong>「让危险状态不可表示」是教科书级的安全设计</strong>。<code>duck-control/src/safety.rs</code> 的模块头注释写得很清楚：安全层独占唯一的电机写句柄，「这个不变式由借用检查器强制，而不是靠一条『加第八个技能的人会记得』的规则」。非有限值直接拒绝而不是 clamp，限幅到执行器行程而不是解剖学极限，客户端只能发「意图」而拿不到总线。跌倒判定只报告不门控——「如果一条安全规则必须被恢复逻辑绕过才能生效，那它就不是一条规则」。</li>
+</ul>
+<h2>项目展示</h2>
+<p><img src="https://github.com/user-attachments/assets/c2f7c245-8217-46a1-8d1e-e0ba967cd969" alt="microduck"/></p>
+<p>25cm / 800g 的双足小鸭，身体由 Reachy Mini 的情感表达技术改造而来</p>
+<p><a href="https://github.com/user-attachments/assets/356a6011-8e0d-4b28-bda9-da78646583a3">It walks — 游戏手柄驾驶</a></p>
+<p>行为不是预设动作库，而是 RL 策略实时推理出来的——同一个 ONNX 权重也跑在浏览器里的 MuJoCo 模拟器上</p>
+<p><a href="https://github.com/user-attachments/assets/abfbf250-1b1c-42cb-8430-00267e2b148a">It rolls — 装上轮子切换 roller 模式</a></p>
+<p>同一套训练栈（MuJoCo + PPO + 域随机化）换一套硬件配置就能训出完全不同的运动模式</p>
+<p><a href="https://huggingface.co/spaces/pollen-robotics/microduck-simulator">官方模拟器 Demo（Hugging Face Space）</a></p>
+<p>浏览器内 WASM MuJoCo + ONNX Runtime Web，50Hz 客户端运行，<strong>跑的是和真机完全同一套策略权重</strong>——这是目前最直接的 sim2real 复现入口</p>
+<blockquote>
+<p>⚠️ 值得注意的细节：README 里「捡东西」和「摔倒自己爬起来」两个 demo 视频的链接<strong>已经 404</strong>，仓库内找不到替代素材。这两个恰好是最有说服力的能力（抓取、自愈），也从侧面印证了「文档维护跟不上产品迭代」这个判断。</p>
+</blockquote>
+<h2>项目画像</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub</td>
+<td><a href="https://github.com/pollen-robotics/microduck">https://github.com/pollen-robotics/microduck</a></td>
+</tr>
+<tr>
+<td>Star / Fork</td>
+<td>12,440 / 1,551（fork 率 12.5%）</td>
+</tr>
+<tr>
+<td>代码行数</td>
+<td>169,440 行（Rust 58.1%、C Header 26.4%、JSON 4.6%、Shell 4.2%；GitHub 按字节算是 Rust 84.4%）</td>
+</tr>
+<tr>
+<td>项目年龄</td>
+<td>2.9 个月（首次提交 2026-07-29）</td>
+</tr>
+<tr>
+<td>开发阶段</td>
+<td>密集开发（近 30 天 275 次提交，3 个月 49 个 release）</td>
+</tr>
+<tr>
+<td>贡献模式</td>
+<td>公司主导的小团队（23 人，主作者占 60.6% 的提交 / 70.0% 的 GitHub 贡献计数）</td>
+</tr>
+<tr>
+<td>热度定位</td>
+<td>大众热门（发布 24 小时售出约 6,500 台 / $2.6M）</td>
+</tr>
+<tr>
+<td>质量评级</td>
+<td>代码 优秀 · 文档 优秀 · 测试 充分（1,531 个测试）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>注：Star 增长曲线无法采样——GitHub <code>stargazers</code> API 对当前 token 返回 403，因此「爆发型增长」是基于发布事件与提交量的代理指标推断，而非直接测量的时间序列。</p>
+</blockquote>
+<h2>作者视角：为什么存在这个项目</h2>
+<h3>创始人/作者背景</h3>
+<p>Pollen Robotics 运营 10.5 年，总部在法国波尔多，做过 Reachy 和 Reachy Mini 两代桌面情感机器人——那是一条 Python 生态的产品线，核心卖点是「有表情、会表达情绪」。2025 年 4 月被 Hugging Face 收购后，公司整体转向「可被强化学习训练的开放硬件载体」，目标用户从教育市场换成了 AI/RL 研究者。</p>
+<p>MicroDuck 是这次转型后的第一个项目，也是两条产品线的合并产物：身体继承 Reachy Mini 的情感表达基因（README 提到鸭子「用自己独特的声音嘎叫」、会「合唱」），大脑换成了 RL 策略。收购带来了生态位（Hugging Face Hub 作为模型托管、lerobot 社区），而 Pollen 手里正好有「一具会做情感表达的双足身体」——两边拼起来才有了这个「25 厘米的具身载体」。</p>
+<h3>问题判断</h3>
+<p>作者看到的是一个<strong>结构性空位</strong>：机器人 RL 的现有栈全是重资产——Isaac Gym/Lab 要求 RTX 加完整 Isaac Sim 安装，学习曲线陡到学术界之外的人进不来；同时市面上的开源机器人项目基本停在「实验室能跑」阶段，从来没人认真做过消费级产品最痛的那件事：<strong>升级</strong>。</p>
+<p><code>docs/design/updater-design.md</code> §16 把动机写得很直白：「On a previous robot, releases were validated by hand」（上一台机器人的版本是靠手工验证的）。这句话背后是三年交付经验的重量。</p>
+<p>而时机是 2026 年：RL 策略的板端推理链路（ONNX Runtime + NPU）刚好成熟到能塞进一台 25cm 的机器里；「低成本失败」这个 sim2real 的核心前提被小尺寸机器人满足了——失败一次的成本极低，而且机器人自己会爬起来。</p>
+<h3>解法哲学</h3>
+<p>作者明确选择了什么，也明确拒绝了什么：</p>
+<ul>
+<li><strong>选「产品化」，不选「能力最大化」</strong>。路线图 M1–M4 的验收标准只有一句话：「一个会走路、能 OTA 升级、且升级不砖的机器人」。能力（运动学、里程计、ToF、视线、声音、合唱）在那之后才铺。</li>
+<li><strong>选「简单」，不选「实时工程」</strong>。控制环明确拒绝 <code>SCHED_FIFO</code>、CPU pinning、<code>mlockall</code>；50Hz 用 <code>MissedTickBehavior::Skip</code> 而不是 <code>Delay</code>——理由写在 <code>robotd-design.md</code>：「<code>Delay</code> 每次唤醒的延迟都会累加到周期上，环会漂移得比配置慢」。</li>
+<li><strong>选「减法」，不选「flag 爆炸」</strong>。参数从原型的数量收敛到「约十个值，不是 142 个」；v1/v1.5/v1.6、另外四种 IMU、三种相机、Pi 全部砍掉。</li>
+<li><strong>明确不做的清单</strong>：不做 fleet backend（模型策略是「latest version, all robots」）、不做 A/B 分区（判定 RAUC/Mender 是过度设计）、不做 OS OTA、不做 delta update、不做遥测看板、不做外设/MCU 固件 OTA。</li>
+<li><strong>选「开放但分层」</strong>：软件栈 Apache-2.0 全开，机械设计不公开——官方自嘲叫「open brain in a closed shell」。签名公钥是<strong>集合</strong>不是单把，因为「机器人无法 OTA 引入新公钥」，一旦丢钥匙就意味着全量返厂重刷。</li>
+</ul>
+<h3>战略图景</h3>
+<p>核心产品 + 商业化硬件，软件开源是销售与生态策略而非开源驱动的理想主义。开源策略是 <strong>genuinely open（软件层）但不是 open-core</strong>——没有付费专有功能门，变现靠硬件销售 + Hugging Face Hub 上的模型托管（策略、鸭检测器权重都在 <code>pollen-robotics/*</code> 组织下）。</p>
+<p>值得单独指出的是团队文档里罕见的<strong>自我修正记录</strong>：<code>roadmap.md</code> 写着「The founding claim was half right... It judged the volume wrong.」（最初的判断只对了一半……规模估错了），并主动承认自主大脑是最大的未跟踪缺口。在一个商业项目里，把自己的判断失误写进公开路线图，是这份项目最难得的品质。</p>
+<h2>核心价值提炼</h2>
+<h3>创新之处</h3>
+<ol>
+<li><strong>让危险状态「不可表示」而不是靠流程记住</strong>（新颖度 4/5 · 实用性 5/5 · 可迁移性 5/5）<br/>安全层独占唯一的电机写句柄，由 Rust 借用检查器强制；<code>SO_PEERCRED</code> 把授权分成两层——组决定「谁能说话」，<code>allow_uids</code>/<code>allow_gids</code> 决定「谁能改变机器人」，只读调用刻意不设防（「support 必须能检查一台它无权修改的机器人」）。Unix socket 让「误绑定 0.0.0.0」这个 bug 类别<strong>根本无法表达</strong>。适用场景：任何「多个客户端能驱动同一个执行器」的系统。</li>
+<li><strong>恢复路径放在被恢复对象之外</strong>（4/5 · 5/5 · 5/5）<br/>三层独立：提交前自检 → systemd transient timer 延迟重启 → 开机 180 秒的 boot check + <code>/bin/sh</code> 的 <code>robot-rescue</code> + golden 软链。救援脚本被<strong>复制</strong>到 <code>/usr/local/sbin</code> 而非放在 release 目录里，理由是一句很漂亮的话：「一个作为 release 载荷发布的救援脚本，会被它存在的目的所毁掉的那些 release 毁掉」。适用场景：固件 OTA。</li>
+<li><strong>健康门禁只判定「可归咎于 release 的条件」</strong>（4/5 · 5/5 · 5/5）<br/>电池、电机温度、板温、时钟天花板全是<strong>描述</strong>，不参与任何自动决策。否则「电池电量低触发回滚 → 替代版本同样低电量 → 永远更新不了」。更妙的是三态判定：healthy 提交、degraded 也提交、其他才回滚——「一个没电的机器人在 golden 上一样失败，回滚等于把硬件故障藏在软件变更后面」。</li>
+<li><strong>故障检测与故障响应分层：「倒下」与「正在倒下」是两个问题</strong>（4/5 · 4/5 · 4/5）<br/><code>safety.fallen</code> 做位置判定 + 200ms 去抖（用于报告）；<code>fall::FallPredictor</code> 用 <code>ġ = −ω × g</code> 在<strong>速率</strong>上做检测并线性外推 300ms 到「未来会在哪里」。刻意不对四元数求导——那会把滤波器延迟加到「唯一价值就是早」的数上。</li>
+<li><strong>「什么都不做」被编码为一个状态</strong>（5/5 · 3/5 · 3/5）<br/>暂停姿态不是 home pose，而是<strong>行走策略自己在零指令下的平均站姿</strong>（左右镜像）。因为 home pose 只在「策略持续维持平衡」时才是平衡姿态——仿真数据：机器人保持 home pose 站在地板上，一半在 1–2 秒内倾倒超过 40°。</li>
+<li><strong>MJCF 编译成扁平链 + 对照 MuJoCo 自家 <code>mj_kinematics</code> 做测试基准</strong>（3/5 · 5/5 · 5/5）<br/>原型用 <code>HashMap&lt;String, f64&gt;</code> 传关节角，每次查询重算全身并分配新 <code>Vec</code>——bench 节奏可以，50Hz 循环里每 tick 问两只脚不行。改成加载期解析名字为索引、每个 site 一条扁平 root→site 链，查询是无哈希、无分配的折叠。正确性用 64 个随机姿态与 MuJoCo 逐 site 比对固定。</li>
+<li><strong>「策略不是二进制，所以策略不验签」的显式论证</strong>（4/5 · 3/5 · 3/5）<br/>引擎安装的一切都验签，社区策略是第一个例外。论证是：沙箱（唯一写句柄 + 关节限幅 + 跌倒反射 + deadman + 形状门禁）<strong>就是边界</strong>，不是签名。社区策略永不自动应用、永不是 reset 目标。</li>
+<li><strong>同一个错误犯四次，然后用测试强制它不再发生</strong>（4/5 · 5/5 · 5/5）<br/>单位文件、GStreamer 栈、NPU、登录 shell 提示符四件事都写进了 <code>install.sh</code>，而 <code>install.sh</code> 不在 artifact 里。修法不是「这次小心点」，而是一个测试 <code>every_install_sh_step_reaches_an_updated_board</code> 读取 <code>install.sh</code> 的所有调用点，要求每一步都被 hook 也执行、或被书面记录为「仅全新安装才做」。「这是一个强制函数而不是证明——逃逸口是表格里的一行——但四个实例都得为那一行辩护，而且没有一个能辩护。」</li>
+</ol>
+<h3>可复用的模式与技巧</h3>
+<ul>
+<li><strong>库 crate 无 tokio / 无 socket / 无 systemd</strong>：<code>duck-control</code> 只依赖 serde/thiserror/tracing/ort/rustypot 等纯库，把「控制逻辑」和「进程关注点」的边界交给编译器而不是纪律。该 crate 还明确写了「将来可以被单独提到自己的 repo 而无需重写」。</li>
+<li><strong>协议选型用实测依赖数说话</strong>：文档给出一张表——JSON-RPC/NDJSON 自研(30 依赖) / jsonrpsee-types(36) / varlink(24) / zbus(66) / axum(66) / tarpc(71) / tonic(81) / jsonrpsee-server(112)，并注明「依赖数记录下来供参考，不是决策依据」。否掉 <code>jsonrpsee-server</code> 的具体理由是「<strong>它不能服务 unix socket</strong>」——只有 HTTP/WS 传输，<code>jsonrpsee-ipc</code> 从未实现过。</li>
+<li><strong>意图进、状态出，状态必须报告被拒绝的东西</strong>：<code>robot.state</code> 带 <code>limited_by: ["max_velocity"]</code>，因为「teleop UI 显示摇杆推了但机器人不动且没有解释，是不可用的」。</li>
+<li><strong>健康是发布出来的，不是问出来的</strong>：控制环发布 atomics，IPC 侧计算，这样一个卡死的环会<strong>报告自己不健康</strong>而不是挂住调用方。</li>
+<li><strong>控制平面与数据平面分离，特征不过进程边界</strong>：<code>robotd</code> 要的是「球在 (x,y)」而不是 27MB/s 的帧。</li>
+<li><strong>信任锚是集合不是单点</strong>：备用公钥必须从第一版固件就随镜像出厂。</li>
+<li><strong>文档预算也是设计决策</strong>：<code>robotd-design.md</code> §4.5 明确写「五个子系统没有设计页，这是规则在起作用而不是缺口」——只有当第二个读者不得不从代码推导契约时才配一篇。</li>
+</ul>
+<h3>关键设计决策</h3>
+<ol>
+<li>
+<p><strong>决策：七 daemon 进程模型 + Unix socket + JSON-RPC 2.0 / NDJSON</strong></p>
+<ul>
+<li>问题：单进程多线程会在「媒体栈崩溃」时带走电机控制；多进程会引入跨进程一致性问题</li>
+<li>方案：每个服务一个 crate + 一个 socket。<code>mediad</code> 与 <code>robotd</code> 分离的理由写得很具体——VL53L5/8CX 固件上传约 90KB over I²C 要数秒，I²C 总线与音频编解码器共享，而「大多数鸭子根本没装传感器」，所以带它重试循环的逻辑不该住在拥有电机的进程里</li>
+<li>Trade-off：牺牲跨进程零拷贝（原始帧约 1.8 MiB 明确<strong>不走 socket</strong>），换故障隔离与「恢复路径不依赖主进程」</li>
+<li>可迁移性：<strong>高</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>决策：<code>updaterd</code> 是独立进程，且不能重启自己</strong></p>
+<ul>
+<li>问题：进程无法干净地替换自己正在运行的二进制</li>
+<li>方案：升级时重启 release 里的所有单元<strong>除了</strong> <code>updaterd</code> 和 <code>btd</code>；<code>NEVER_RESTART</code> 是代码里的常量而非配置项——「它们是什么的属性，不是运维能搞错的选项」。重启走 <code>systemd-run --on-active=5s</code> 的 transient timer 而不是子进程（子进程会坐在 <code>updaterd</code> 的 cgroup 里，重启自己时被杀）</li>
+<li>Trade-off：更新后有几秒运行版本落后于已安装版本，<code>robotctl version</code> 会同时报两个版本并说明分歧类型</li>
+<li>可迁移性：<strong>高</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>决策：软链 + <code>rename(2)</code> 原子切换，而非覆盖文件</strong></p>
+<ul>
+<li>问题：半写状态绝不能上线</li>
+<li>方案：<code>releases/&lt;ver&gt;/</code> + <code>current</code> 软链；额外存在 <code>golden</code> 软链，让<strong>恢复路径不需要任何解析器</strong>——一个 <code>/bin/sh</code> 脚本能 <code>readlink</code> 就能救砖</li>
+<li>Trade-off：每次升级重写 eMMC；<code>known_bad</code> 熔断就是为此设的，防止「check → apply → gate 失败 → 回滚 → 等 6h → 重复」的无限循环磨 eMMC</li>
+<li>可迁移性：<strong>高</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>决策：引导顺序用截止时间而非 <code>OnFailure=</code></strong></p>
+<ul>
+<li>问题：所有 unit 都是 <code>Restart=always</code>，会无限 crash-loop 但从不进入 <code>failed</code> 状态——<code>OnFailure=</code> 永远不触发</li>
+<li>方案：改成 <code>OnBootSec=180</code> 的截止时间，因为「板子比看起来慢——<code>hci0</code> 约 73 秒后才存在」</li>
+<li>可迁移性：<strong>高</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>决策：控制环读快照而非等待（ArcSwap + 时间戳）</strong></p>
+<ul>
+<li>问题：任何客户端都不能给控制环施加背压</li>
+<li>方案：意图槽位是 <code>ArcSwap</code>，环每 tick 一次原子 load；遥测走 bounded broadcast，慢订阅者<strong>得到缺口</strong>而非背压。<strong>twist 和 head 是分开的槽位</strong>——合并槽位需要 read-modify-write，两个客户端会静默互相覆盖</li>
+<li>Trade-off：慢客户端丢数据（明确选择）</li>
+<li>可迁移性：<strong>高</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>决策：发布者用 Rust <code>xtask</code> 而非 shell 脚本</strong></p>
+<ul>
+<li>问题：shell 版依赖外部安装的 minisign/tar/zstd/sha2，其行为可能与机器人接受的存在漂移</li>
+<li>方案：xtask 复用机器人验签用的<strong>同一批 crate</strong>。「这是最后一个差异应该能藏起来的地方」</li>
+<li>可迁移性：<strong>高</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>决策：策略权重不进 release，走独立 channel</strong></p>
+<ul>
+<li>问题：九个 <code>.onnx</code> 塞在 daemon artifact 里 → 步态重训要发 daemon release；daemon 修复要重下 6MB 没变的权重</li>
+<li>方案：<code>microduck-policies</code> 放在 Hugging Face Hub 上，workspace metadata 里记的是<strong>地板</strong>而非精确值</li>
+<li>可迁移性：<strong>高</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>决策：保留 26.4% 的 C 头文件</strong></p>
+<ul>
+<li>问题：需要直连 ST ToF 传感器 VL53L5CX / VL53L8CX</li>
+<li>方案：vendor 头文件约 46,000 行原样保留 + 一个 DKMS 音频驱动；<strong>Dynamixel 舵机部分已用纯 Rust 的 <code>rustypot</code> 重写</strong>，只保留 <code>imu_to_dxl</code> 板的自定义寄存器块</li>
+<li>Trade-off：vendor 头文件不可改</li>
+<li>可迁移性：低（特定上下文）</li>
+</ul>
+</li>
+<li>
+<p><strong>决策：标定参数在启动时断言并纠正，而不只是检查</strong></p>
+<ul>
+<li>问题：换装的 XL330 出厂 ID 是 1、波特率 57600，都不是这条总线用的</li>
+<li>方案：<code>open_bus</code> ping 15 个预期 ID；<strong>恰好一个</strong>沉默时定位 ID 1（先 1 Mbps 试，再重开端口到 57600），写入缺失 ID 和波特率后重启该舵机（重启清掉 flash 留下的硬件错误 alert，否则会一直扣住扭矩直到有人拔电池）。<strong>两个舵机缺失时不动手</strong>——无从判断是哪个被替换，journal 如实记录</li>
+<li>可迁移性：<strong>中</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>决策：ONNX Runtime 的 panic 必须变成错误</strong></p>
+<ul>
+<li>问题：<code>ort</code> 在 <code>setup_api</code> 里 <code>expect</code>，路径懒加载，panic 无法被 catch 成错误。不处理会直接杀掉控制线程——永远没有 tick 落地，健康上报「循环还没完成一次周期」，守护进程看起来像卡死而不是说明原因</li>
+<li>方案：<code>policy::ensure_runtime</code> 先用 <code>ort</code> 自己的 loader 规则探测 dylib；<code>catching_ort_panics</code> 用 <code>catch_unwind</code> 包住调用。注释还指出 <strong><code>panic = "abort"</code> 会破坏这一切</strong>，所以根 <code>Cargo.toml</code> 刻意不设 <code>[profile.release]</code>——<code>strip = true</code> 会把 journald 里的 panic backtrace 变成裸地址，「而这正是你诊断一台无法接调试器的机器人时最需要的东西」</li>
+<li>可迁移性：<strong>高</strong></li>
+</ul>
+</li>
+</ol>
+<h2>竞品格局与定位</h2>
+<h3>竞品对比矩阵</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>MicroDuck</th>
+<th>Open_Duck_Mini</th>
+<th>unitree_rl_gym</th>
+<th>lerobot</th>
+<th>IsaacLab / legged_gym</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Star 数</td>
+<td>12,440</td>
+<td>4,522</td>
+<td>3,642</td>
+<td>28,490</td>
+<td>8,482 / 3,159</td>
+</tr>
+<tr>
+<td>形态</td>
+<td>双足消费整机</td>
+<td>双足 DIY</td>
+<td>四足研究平台</td>
+<td>无硬件（数据集+策略）</td>
+<td>仿真框架</td>
+</tr>
+<tr>
+<td>硬件价格</td>
+<td>$399</td>
+<td>~$100 级零件</td>
+<td>Go2 约 $1,600+</td>
+<td>—</td>
+<td>需 RTX + Isaac Sim</td>
+</tr>
+<tr>
+<td>机械设计公开</td>
+<td>❌ 不公开</td>
+<td>✅ CAD/BOM 全公开</td>
+<td>商业闭源</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>软件栈开源</td>
+<td>✅ Apache-2.0</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>仿真栈</td>
+<td>MuJoCo + MJLab</td>
+<td>MuJoCo</td>
+<td>Isaac Gym/Lab</td>
+<td>多种</td>
+<td>Isaac Sim</td>
+</tr>
+<tr>
+<td>OTA + 自动回滚</td>
+<td>✅ 签名 + 健康门禁</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>主要用户</td>
+<td>RL 研究者 / Maker / 教育</td>
+<td>想自己造一只的爱好者</td>
+<td>研究机构</td>
+<td>数据集团队</td>
+<td>研究机构</td>
+</tr>
+</tbody>
+</table>
+<h3>差异化护城河</h3>
+<p><strong>信任护城河 + 生态护城河为主，技术护城河最弱。</strong>「产品化才是难点」这个判断一旦被竞品接受并执行，护城河就薄了——代码本身是 Apache-2.0 白送的。真正难复制的是三样东西：</p>
+<ol>
+<li><strong>Pollen 作为 Hugging Face 子公司的生态位置</strong>：<code>microduck</code> 与 <code>lerobot</code> 同属一个生态，<code>microduck_rl</code> 的 MuJoCo 路径不撞 NVIDIA。</li>
+<li><strong>从原型继承、从未写进任何公开文档的调参知识</strong>：<code>return_delay_time=0</code>（XL330 默认 250 时每 tick 多花 8ms，占 40% 预算）、<code>shutdown=52</code>（清掉 input-voltage 位才能让 2S 电池跑额定 6.0V 舵机）、低通滤波 alpha、kP 160——复制者必须重新踩一遍坑才能得到同一台机器人。</li>
+<li><strong>负知识库</strong>：<code>docs/project/</code> 那 10 篇「什么出过错、什么能关掉它」的踩坑记录，是三年经验压缩出来的。</li>
+</ol>
+<h3>竞争风险</h3>
+<p><strong>最可能被 Open_Duck Mini 生态分流，而非被 Unitree 替代。</strong> 如果社区对「硬件也要开源」的诉求持续升温（issue #173 要求 3D 打印源文件是明确信号），一个「硬件也开源的 Microduck 软件栈」会同时拿走两边的用户——而 Pollen 恰好<strong>有能力做这件事</strong>，因为软件栈已经是 Apache-2.0。这是这个项目最值得观察的下一步。</p>
+<p>对 Unitree 的竞争则基本不构成威胁：Go2 生态成熟度、ROS 2 社区规模、机型多样性和四足稳定性都碾压，Microduck 也从来不在那个赛道上。</p>
+<h3>生态定位</h3>
+<p><strong>开源具身智能的「参考实现 + 消费级载体」双栖。</strong> 它在 Hugging Face 生态里占住了一个此前空着的位置：一个真的能买、能走、能升级、能被 RL 训练的完整身体。围绕它已经形成了一个分仓的产品族——</p>
+<ul>
+<li><code>microduck</code>（板端 daemon 运行时）← 本文主角</li>
+<li><code>microduck_rl</code>（MuJoCo + MJLab + PPO 训练栈，2,681 star）</li>
+<li><code>microduck-policies</code>（HF Hub 上的策略权重）</li>
+<li><code>microduck-duck-detector</code>（NPU 格式的鸭检测器）</li>
+<li><code>microduck-gst-plugins</code>（带 patch 的 <code>mpph264enc</code> / <code>webrtcsink</code>）</li>
+<li><code>microduck_yocto</code>（BitBake 整机镜像栈）</li>
+</ul>
+<p><strong>要跑通完整闭环需要跨三个仓库</strong>：训练栈在 <code>microduck_rl</code>、权重在 Hub、运行时在本文主角。</p>
+<h2>套利机会分析</h2>
+<ul>
+<li><strong>信息差</strong>：主仓库已经不是「潜力股」——2.6M 美元首日订单完成了一轮价值发现。但 <strong>12.5% 的 fork 率 + 59 个 open PR</strong> 说明热度已经从「围观」转向「动手」：社区已经产出 <code>q2p/microduck-beak-throw</code>、<code>Nupr-Haokun/microduck-step-up-head-brake</code> 等独立策略仓库，HF Space 上也出现了 <code>RemiFabre/microduck-reachy-simulator</code>、<code>FormaLau/microduck-bohemian-rhapsody</code>（四鸭歌剧群舞）这类衍生作品。<strong>这些衍生工作才是尚未被 star 计量的价值</strong>——主仓库 star 数反而不是好的观察指标了。</li>
+<li><strong>技术借鉴</strong>：这个项目对「做嵌入式设备软件」的人的价值远高于「做 RL」的人。最值得抄的三样：借用检查器强制安全不变式、恢复路径放在被恢复对象之外、健康门禁只判定可归咎于 release 的条件。这三个模式跟机器人没关系，任何带 OTA 的设备都能用。</li>
+<li><strong>生态位</strong>：$399 价位 + 消费级交付 + 软件全开源 + 双足 + sim2real 可复现，这个交叉点目前空着。</li>
+<li><strong>趋势判断</strong>：符合「具身智能从实验室走向消费级」的大趋势，且比 Unitree 有后发优势（消费级交付路径、HF 生态位、不依赖 NVIDIA）。但增长曲线已经完成爆发期，真正的观察指标应从 star 数切换到 <strong>fork 数、衍生策略数、issue 里第三方 PR 的比例</strong>。</li>
+</ul>
+<h2>风险与不足</h2>
+<ol>
+<li><strong>营销口径超前于实际交付</strong>。README 的「This repo is the duck's brain」「It does things」配上视频，确实会让买家高估自主性。issue #454 的作者完整读完文档后写「更接近一台高级遥控玩具」——<strong>而这是对的</strong>：M9 自主大脑（16 状态机的能量/情绪模型 + 新奇格探索 + ToF 避障）至今 unported，官方路线图自己承认「runtime 的 <code>autonomous.rs</code> 在 daemon 里根本不存在」，<code>docs/ideas/autonomous_behavior.md</code> 只是「holding pen」。这不是吹牛，是<strong>承诺尚未交付</strong>。</li>
+<li><strong>LAN 内 WebRTC 无认证，且官方文档自相矛盾</strong>。<code>docs/design/remote-webrtc.md</code> §4 自陈同网段任何人可看摄像头、可驾驶机器人，并写着「这在家里不可接受，发货前必须解决」；但 <code>docs/robot/udp-pad.md</code> 把 WebRTC 描述为「已认证且加密」。对一个已经把摄像头和电机权暴露在局域网上的消费机器人，这是实质风险。出厂 PIN 当前默认值还是 <code>000000</code>（配置存储自己注明「它只证明物理在场」）。</li>
+<li><strong>最关键的失败路径从未在真机上验证过</strong>。<code>docs/project/boot-recovery-net.md</code> 自陈救援路径<strong>从未在真板子上跑过</strong>；<code>updater-design.md</code> §16.5 说 <code>systemctl restart</code> 从未对真实 systemd 跑过、30s 门禁超时是猜的。讽刺的是，这恰恰是项目自称最难的那件事。</li>
+<li><strong>硬件的「开源」是打折的</strong>。机械 CAD / 3D 打印源文件不公开，3D 模型素材带非商业条款——「open brain in a closed shell」。供应链也全在中国（Seeed Studio 代工、瑞芯微 RK3566），而发售市场覆盖美加欧英日韩、不含中国大陆（issue #182）。</li>
+<li><strong>WebRTC 双向音频缺失</strong>卡死了 LLM 语音交互场景。设计文档已 spec 了音频轨与 TLV320AIC3104 编解码器硬件路径，但 <code>mediad</code> 只实现了视频（issue #215）——这正是 #454 那类「LLM 发目标」诉求的技术前置条件。</li>
+<li><strong>工程管理上的两个小缺口</strong>：仓库不用 Conventional Commits（1400 次提交里只有 200 条能被分类器识别，95% 落进 Other），<code>git log --grep=fix</code> 这类查询基本失效；同时没有传统 CHANGELOG.md（对 OTA 系统用 <code>update-log.jsonl</code> + <code>runs/&lt;id&gt;.jsonl</code> 是更合理的选择，但对「一眼看变更」的读者是缺失）。另外 59 个 open PR 对 23 人的团队是实打实的 review 压力。</li>
+<li><strong>战略上的依赖</strong>：项目热度绑定在 Hugging Face 生态的持续投入上，而收购后 Pollen 同时在做 lerobot 数据那条线——两条线在争夺同一个团队的资源。</li>
+</ol>
+<h2>行动建议</h2>
+<ul>
+<li><strong>如果你要用它</strong>：先确认你的场景落在「RL 策略驱动」这个模型上——如果你要的是预设动作库 + 遥控手感，微型遥控仓鼠（Petoi Bittle X V2）或 Open_Duck Mini 更省事。如果你确实要做 sim2real 且预算敏感，MicroDuck 是目前唯一的完整解：$399 + 完整训练栈 + 板端推理 + OTA，比任何 Unitree 方案低两个数量级的硬件门槛。<strong>但下单前必须确认你的网络是封闭可信的</strong>——LAN 内 WebRTC 无认证这个问题在发货前不一定会解决。</li>
+<li>
+<p><strong>如果你要学它</strong>：按这个顺序读，每篇都值得：</p>
+<ol>
+<li><code>docs/design/architecture.md</code> —— 一页 ASCII 图看全系统</li>
+<li><code>docs/design/robotd-design.md</code> —— 控制环与安全层的论证密度最高</li>
+<li><code>docs/design/updater-design.md</code> —— 分布式系统经验移植到嵌入式，最可迁移</li>
+<li><code>docs/project/*.md</code> —— 负面知识范本，10 篇「什么出过错」</li>
+<li>代码：<code>duck-control/src/safety.rs</code>（安全层的借用检查器不变式）、<code>duck-control/src/fall.rs</code>（速率检测 vs 位置检测）、<code>duck-control/src/obs.rs</code>（const 断言固定 ABI）、<code>updater/src/store.rs</code>（软链原子切换 + golden）、<code>kinematics/src/mjcf.rs</code>（把解释器编译成数据结构）</li>
+</ol>
+</li>
+<li><strong>如果你要 fork 它</strong>：软件 fork 完全可以（Apache-2.0），但先想清楚你要补哪一块。三个最可能的价值点：<strong>①硬件 CAD 公开化</strong>——这是社区已经在 issue #173 里明确要求的方向，也是 Pollen 有能力做但暂未做的事；<strong>②社区策略的签名与分发</strong>——目前官方策略验签、社区策略不验签（靠沙箱当边界），这个空档迟早要补；<strong>③自主大脑 M9</strong>——路线图里最大的未跟踪缺口，官方文档只给了 holding pen，谁先做出来谁就定义这个品类的形态。</li>
+</ul>
+<h3>知识入口</h3>
+<table>
+<thead>
+<tr>
+<th>资源</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DeepWiki</td>
+<td><a href="https://deepwiki.com/pollen-robotics/microduck">https://deepwiki.com/pollen-robotics/microduck</a> （探测返回 HTTP 429 限流，无法确认收录状态）</td>
+</tr>
+<tr>
+<td>Zread.ai</td>
+<td><a href="https://zread.ai/pollen-robotics/microduck">https://zread.ai/pollen-robotics/microduck</a> （HTTP 403 反爬，无法确认收录状态）</td>
+</tr>
+<tr>
+<td>关联论文</td>
+<td><a href="https://arxiv.org/abs/2601.22074">mjlab: A Lightweight Framework for GPU-Accelerated Robot Learning</a>（底层训练框架，非本项目专有）；<a href="https://arxiv.org/html/2609.21185">When to Waddle: A Comparative Study of Bipedal Torso-Stabilization on Low-Friction Surfaces</a>（仅在参考文献中引用 Microduck）</td>
+</tr>
+<tr>
+<td>在线 Demo</td>
+<td><a href="https://huggingface.co/spaces/pollen-robotics/microduck-simulator">Hugging Face Space — Microduck Simulator</a>（浏览器内跑与真机同一套策略权重）</td>
+</tr>
+<tr>
+<td>姊妹仓库</td>
+<td><a href="https://github.com/pollen-robotics/microduck_rl">microduck_rl</a>（训练栈）· <a href="https://github.com/pollen-robotics/microduck_yocto">microduck_yocto</a>（整机镜像）· <a href="https://github.com/apirrone/Open_Duck_Mini">Open_Duck_Mini</a>（硬件全开源的社区版本）</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<blockquote>
+<p><strong>外部深度视角</strong>：</p>
+<ul>
+<li><a href="https://kingy.ai/blog/hugging-face-microduck-physical-ai-robot/">Hugging Face Microduck: Why the $399 Robot Matters</a> —— 独立观点：真正的技术贡献不是「用 MuJoCo + PPO」，而是域随机化 + 执行器精细建模 + 机械间隙的 sim2real 尝试，且<strong>小尺寸是关键</strong>（失败便宜、可恢复）；但「1–2 小时训练」只是仓库自报、缺 GPU/种子/成功阈值细节；最尖锐的批评是<strong>社区依赖性</strong>——发布时不存在机器人技能市场，SDK、App、模型频道均未完工；并直接反驳「第一个便宜的可 RL 教学机器人」（Open Duck Mini、Petoi Bittle X V2 都更早）。</li>
+<li><a href="https://tonybai.com/2026/09/01/microduck-rust-robot-brain-deep-dive/">一只机器鸭子，用 Rust 写了个「大脑」</a> —— 独立观点：肯定「Unix socket + SO_PEERCRED 借操作系统权限做访问控制」与 <code>spawn_blocking</code> 把验签/解压从 Tokio 控制环剥离的取舍；追问五点——①安全仍依赖进程边界与 OS 权限，socket 不等于应用层鉴权 ②整体目录替换式发布的存储/启动/断电代价未量化 ③<strong>健康门禁是二元的</strong>，步态质量退化未必能被健康检查捕获 ④50Hz 实时性只从架构推断，无端到端抖动或串口最坏响应时间压测 ⑤统一 61 维观测支持策略热切换，但切换瞬间的一致性与各策略的安全约束仍需额外机制。</li>
+</ul>
+</blockquote>
+</body>
+</html>
