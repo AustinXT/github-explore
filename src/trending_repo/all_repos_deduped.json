@@ -3,11 +3,11 @@
     "name": "obra/superpowers",
     "url": "https://github.com/obra/superpowers",
     "language": "Shell",
-    "stars": 300473,
-    "forks": 26826,
+    "stars": 306152,
+    "forks": 27258,
     "description": "An agentic skills framework & software development methodology that works.",
-    "last_seen": "2026-10-16",
-    "trending_days": 94
+    "last_seen": "2026-10-27",
+    "trending_days": 95
   },
   {
     "name": "mattpocock/skills",
@@ -20,6 +20,16 @@
     "trending_days": 44
   },
   {
+    "name": "affaan-m/ECC",
+    "url": "https://github.com/affaan-m/ecc",
+    "language": "JavaScript",
+    "stars": 290549,
+    "forks": 43040,
+    "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+    "last_seen": "2026-10-27",
+    "trending_days": 39
+  },
+  {
     "name": "TapXWorld/ChinaTextbook",
     "url": "https://github.com/tapxworld/chinatextbook",
     "language": "Roff",
@@ -28,16 +38,6 @@
     "description": "所有小初高、大学PDF教材。",
     "last_seen": "2026-08-06",
     "trending_days": 39
-  },
-  {
-    "name": "affaan-m/ECC",
-    "url": "https://github.com/affaan-m/ecc",
-    "language": "JavaScript",
-    "stars": 289538,
-    "forks": 42891,
-    "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-    "last_seen": "2026-10-26",
-    "trending_days": 38
   },
   {
     "name": "nvm-sh/nvm",
@@ -450,6 +450,16 @@
     "trending_days": 17
   },
   {
+    "name": "pbakaus/impeccable",
+    "url": "https://github.com/pbakaus/impeccable",
+    "language": "Rust",
+    "stars": 90170,
+    "forks": 5358,
+    "description": "The design language that makes your AI harness better at design.",
+    "last_seen": "2026-10-27",
+    "trending_days": 17
+  },
+  {
     "name": "asgeirtj/system_prompts_leaks",
     "url": "https://github.com/asgeirtj/system_prompts_leaks",
     "language": "JavaScript",
@@ -507,16 +517,6 @@
     "forks": 4468,
     "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
     "last_seen": "2026-07-29",
-    "trending_days": 16
-  },
-  {
-    "name": "pbakaus/impeccable",
-    "url": "https://github.com/pbakaus/impeccable",
-    "language": "Rust",
-    "stars": 88810,
-    "forks": 5297,
-    "description": "The design language that makes your AI harness better at design.",
-    "last_seen": "2026-10-26",
     "trending_days": 16
   },
   {
@@ -1150,6 +1150,16 @@
     "trending_days": 10
   },
   {
+    "name": "Nutlope/hallmark",
+    "url": "https://github.com/nutlope/hallmark",
+    "language": "CSS",
+    "stars": 38404,
+    "forks": 2004,
+    "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+    "last_seen": "2026-10-27",
+    "trending_days": 10
+  },
+  {
     "name": "onyx-dot-app/onyx",
     "url": "https://github.com/onyx-dot-app/onyx",
     "language": "Python",
@@ -1310,6 +1320,16 @@
     "trending_days": 9
   },
   {
+    "name": "HKUDS/DeepTutor",
+    "url": "https://github.com/hkuds/deeptutor",
+    "language": "Python",
+    "stars": 45411,
+    "forks": 5712,
+    "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+    "last_seen": "2026-10-27",
+    "trending_days": 9
+  },
+  {
     "name": "jwasham/coding-interview-university",
     "url": "https://github.com/jwasham/coding-interview-university",
     "language": "Unknown",
@@ -1387,16 +1407,6 @@
     "forks": 12106,
     "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫 | 知乎问答文章｜评论爬虫",
     "last_seen": "2026-08-12",
-    "trending_days": 9
-  },
-  {
-    "name": "Nutlope/hallmark",
-    "url": "https://github.com/nutlope/hallmark",
-    "language": "CSS",
-    "stars": 35668,
-    "forks": 1856,
-    "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-    "last_seen": "2026-10-26",
     "trending_days": 9
   },
   {
@@ -1617,16 +1627,6 @@
     "forks": 1380,
     "description": "Multi-platform SDK for integrating GitHub Copilot Agent into apps and services",
     "last_seen": "2026-08-01",
-    "trending_days": 8
-  },
-  {
-    "name": "HKUDS/DeepTutor",
-    "url": "https://github.com/hkuds/deeptutor",
-    "language": "Python",
-    "stars": 34338,
-    "forks": 4395,
-    "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
-    "last_seen": "2026-08-11",
     "trending_days": 8
   },
   {
@@ -4220,6 +4220,16 @@
     "trending_days": 4
   },
   {
+    "name": "makecindy/cindy",
+    "url": "https://github.com/makecindy/cindy",
+    "language": "TypeScript",
+    "stars": 7285,
+    "forks": 868,
+    "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+    "last_seen": "2026-10-27",
+    "trending_days": 4
+  },
+  {
     "name": "maziyarpanahi/openmed",
     "url": "https://github.com/maziyarpanahi/openmed",
     "language": "Python",
@@ -5320,6 +5330,16 @@
     "trending_days": 3
   },
   {
+    "name": "gitroomhq/postiz-app",
+    "url": "https://github.com/gitroomhq/postiz-app",
+    "language": "TypeScript",
+    "stars": 39075,
+    "forks": 7478,
+    "description": "📨 The ultimate agentic social media scheduling tool 🤖",
+    "last_seen": "2026-10-27",
+    "trending_days": 3
+  },
+  {
     "name": "google/guava",
     "url": "https://github.com/google/guava",
     "language": "Java",
@@ -5520,6 +5540,16 @@
     "trending_days": 3
   },
   {
+    "name": "JetBrains/thinkrail",
+    "url": "https://github.com/jetbrains/thinkrail",
+    "language": "TypeScript",
+    "stars": 3729,
+    "forks": 196,
+    "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+    "last_seen": "2026-10-27",
+    "trending_days": 3
+  },
+  {
     "name": "jihe520/MathModelAgent",
     "url": "https://github.com/jihe520/mathmodelagent",
     "language": "Python",
@@ -5677,16 +5707,6 @@
     "forks": 277,
     "description": "Visualize your year in travel using your Google Location History (Timeline) data",
     "last_seen": "2026-08-22",
-    "trending_days": 3
-  },
-  {
-    "name": "makecindy/cindy",
-    "url": "https://github.com/makecindy/cindy",
-    "language": "TypeScript",
-    "stars": 6117,
-    "forks": 761,
-    "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
-    "last_seen": "2026-10-26",
     "trending_days": 3
   },
   {
@@ -7460,16 +7480,6 @@
     "trending_days": 2
   },
   {
-    "name": "gitroomhq/postiz-app",
-    "url": "https://github.com/gitroomhq/postiz-app",
-    "language": "TypeScript",
-    "stars": 38204,
-    "forks": 7430,
-    "description": "📨 The ultimate agentic social media scheduling tool 🤖",
-    "last_seen": "2026-10-26",
-    "trending_days": 2
-  },
-  {
     "name": "glide-browser/glide",
     "url": "https://github.com/glide-browser/glide",
     "language": "TypeScript",
@@ -7767,16 +7777,6 @@
     "forks": 1339,
     "description": "dev tools, env vars, task runner",
     "last_seen": "2026-08-08",
-    "trending_days": 2
-  },
-  {
-    "name": "JetBrains/thinkrail",
-    "url": "https://github.com/jetbrains/thinkrail",
-    "language": "TypeScript",
-    "stars": 2567,
-    "forks": 142,
-    "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
-    "last_seen": "2026-10-26",
     "trending_days": 2
   },
   {
@@ -8367,6 +8367,16 @@
     "forks": 2119,
     "description": "LLM Wiki is a cross-platform desktop application that turns your documents into an organized, interlinked knowledge base — automatically. Instead of traditional RAG (retrieve-and-answer from scratch every time), the LLM incrementally builds and maintains a persistent wiki from your sources。",
     "last_seen": "2026-09-11",
+    "trending_days": 2
+  },
+  {
+    "name": "nightly-labs/openbot",
+    "url": "https://github.com/nightly-labs/openbot",
+    "language": "TypeScript",
+    "stars": 2123,
+    "forks": 226,
+    "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
+    "last_seen": "2026-10-27",
     "trending_days": 2
   },
   {
@@ -12260,16 +12270,6 @@
     "trending_days": 1
   },
   {
-    "name": "nightly-labs/openbot",
-    "url": "https://github.com/nightly-labs/openbot",
-    "language": "TypeScript",
-    "stars": 1279,
-    "forks": 169,
-    "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
-    "last_seen": "2026-10-26",
-    "trending_days": 1
-  },
-  {
     "name": "NirDiamant/agents-towards-production",
     "url": "https://github.com/nirdiamant/agents-towards-production",
     "language": "JupyterNotebook",
@@ -13317,6 +13317,16 @@
     "forks": 31,
     "description": "Japanese Input Method System for Linux, macOS, Neural Kana-Kanji Conversion Engine",
     "last_seen": "2026-07-01",
+    "trending_days": 1
+  },
+  {
+    "name": "togg53192-cmd/jailbreaks",
+    "url": "https://github.com/togg53192-cmd/jailbreaks",
+    "language": "Unknown",
+    "stars": 5145,
+    "forks": 798,
+    "description": "LIST OF ALL MY JAILBREAKS",
+    "last_seen": "2026-10-27",
     "trending_days": 1
   },
   {

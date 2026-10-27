@@ -1566,6 +1566,9 @@ entries:
   mahlernim_google-timeline-visualizer:
   - devtools
   - video-audio
+  makecindy_cindy:
+  - ai-agent
+  - ai-coding
   makeplane_plane:
   - web-framework
   - protocol-spec
@@ -2077,6 +2080,8 @@ entries:
   - uncategorized
   playcanvas_supersplat:
   - uncategorized
+  pollen-robotics_microduck:
+  - security
   posthog_posthog:
   - devtools
   - database
