@@ -1,0 +1,6 @@
+{
+  "title": "GitHub推荐：TapTap 母公司开源 Cindy：把 Claude Code 和 Codex 装进一个客户端",
+  "digest": "Cindy 是 TapTap 母公司开源的本地优先 AI Agent 客户端，把 Claude Code / Codex / Pi 三套 harness 抽象成可切换的执行引擎：交接文本由代码确定性拼接，跨引擎跨设备上下文不归零。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}

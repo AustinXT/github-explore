@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* ====== 微信公众号排版 CSS ====== */
+
+body {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #3e3e3e;
+    background: #fff;
+}
+
+/* 正文段落 */
+p {
+    font-size: 15px !important;
+    line-height: 2 !important;
+    margin: 0 !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+    padding-right: 1.2em !important;
+    padding-left: 1.2em !important;
+    text-align: justify !important;
+}
+p + p {
+    margin-top: 0 !important;
+}
+
+/* 标题 */
+h1 {
+    font-size: 20px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 16px 0 !important;
+    padding: 0 !important;
+}
+h2 {
+    font-size: 18px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 24px 0 !important;
+    padding: 0 !important;
+}
+h3 {
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+    text-align: left !important;
+    margin: 16px 0 16px 0 !important;
+    padding: 0 0 0 1.2em !important;
+}
+h4 {
+    font-size: 15px !important;
+    color: rgb(0, 122, 170) !important;
+    margin: 12px 0 8px 0 !important;
+    padding: 0 !important;
+}
+
+/* 列表 */
+ul,
+ol {
+    padding-left: 2em !important;
+    margin: 1em 0 !important;
+    font-size: 15px !important;
+}
+li {
+    margin: 0.5em 0 !important;
+    line-height: 1.8em !important;
+    font-size: 15px !important;
+    color: #3e3e3e !important;
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    margin: 0 !important;
+    padding-left: 1.2em !important;
+}
+
+/* 引用 */
+blockquote {
+    border-left: 4px solid #888 !important;
+    padding: 8px 16px !important;
+    margin: 1em 0 !important;
+    color: #666 !important;
+    background: #f9f9f9 !important;
+}
+blockquote > p {
+    margin: 0.5em 0 !important;
+    padding: 0 !important;
+}
+blockquote::before,
+blockquote::after {
+    content: none !important;
+}
+
+/* 代码块 */
+pre {
+    font-size: 14px !important;
+    line-height: 1.4em !important;
+    color: #3e3e3e !important;
+    background: #f8f8f8 !important;
+    padding: 12px 16px !important;
+    border-radius: 4px !important;
+    overflow: auto !important;
+    margin: 1em 0 !important;
+}
+
+/* 脚注 */
+.footnotes {
+    font-size: 11px !important;
+    color: #666 !important;
+    line-height: 1.2 !important;
+    margin: 8px 0 0 0 !important;
+    padding: 4px 0 0 0 !important;
+    border-top: 1px solid #eee !important;
+}
+.footnotes p {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #666 !important;
+}
+
+/* 上标 */
+sup {
+    font-size: 0.75em !important;
+    vertical-align: super !important;
+    color: #e51f42 !important;
+    margin: 0 2px !important;
+}
+
+/* 表格 */
+table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 1em 0 !important;
+    font-size: 14px !important;
+    color: #3e3e3e !important;
+}
+th, td {
+    border: 1px solid #ddd !important;
+    padding: 8px 12px !important;
+    text-align: left !important;
+    line-height: 1.6 !important;
+}
+th {
+    background: #f5f5f5 !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+}
+td {
+    color: #3e3e3e !important;
+}
+
+/* 图片 */
+img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 1em auto !important;
+    border-radius: 4px !important;
+}
+
+/* 链接 */
+a {
+    color: rgb(0, 122, 170) !important;
+    text-decoration: none !important;
+}
+
+/* 行内代码 */
+code {
+    font-family: Menlo, Consolas, monospace !important;
+    background: #f4f4f4 !important;
+    padding: 0 4px !important;
+    border-radius: 3px !important;
+    font-size: 13px !important;
+    color: #c7254e !important;
+}
+
+/* 分割线 */
+hr {
+    border: none !important;
+    border-top: 1px solid #eee !important;
+    margin: 2em 0 !important;
+}
+</style>
+</head>
+<body>
+<blockquote>
+<p>GitHub: <a href="https://github.com/makecindy/cindy">https://github.com/makecindy/cindy</a></p>
+</blockquote>
+<h2>一句话总结</h2>
+<p>Cindy 是心动公司（TapTap 母公司）开源的本地优先 AI Agent 客户端，它把 Claude Code / Codex / Pi 三套 harness 抽象成可中途切换的「执行引擎」，让同一个任务在换模型、换引擎、换设备（桌面 / 手机 / SSH 远端）之后仍然连续跑完，而不必重复付费。</p>
+<h2>值得关注的理由</h2>
+<p><strong>1. 它不是又一个 AI 聊天框，而是第一个把 harness 抽象成可替换插件的开源项目。</strong></p>
+<p>大部分同类项目做的是「给 Claude Code 套个 GUI」——换引擎等于换软件。Cindy 反过来把「引擎」降级成一个可替换部件：切换时原生会话「停泊」、交接文本由代码从数据库确定性拼接（零 LLM 调用、可单测可复现）、失败语义分级到「数据库提交即 commit point」。这套东西从零做需要 6–12 个月和 2–3 个熟悉 SDK 内部的人。</p>
+<p><strong>2. 最被低估的资产是它的「规则工程」体系。</strong></p>
+<p><code>AGENTS.md</code>（19,950 字节）是 Codex 与 Claude Code 的共用正本——<code>CLAUDE.md</code> 只有 11 字节，内容就是 <code>@AGENTS.md</code>。它不是自我介绍，而是一张「触发条件 → 该读哪份规则」的索引表，指向 <code>docs/dev-rules/</code>（49 篇）、<code>docs/product-rules/</code>（37 篇）、<code>docs/design-rules/</code>（10 篇）三套标注「权威」的规则集。<code>REVIEW.md</code> 则是给 CI 自动审阅器用的口径手册，甚至区分了「机器已覆盖」与「范围划分」两种「不报」的理由。463 个 Markdown、71,147 行文档，约等于代码量的 16%。</p>
+<p><strong>3. 它是一个罕见的「成熟商业产品整体开源」样本。</strong></p>
+<p>仓库 2026-07-24 的首个 commit 就叫「Cindy 首次开源提交 / initial open-source release」，作者账号在开源前 4 天才创建。所以 3 个月 10,465 个 commit 不是从零长出来的速度，而是把一个已经跑通的产品整体倒了出来。读它等于读一个成熟产品的横切面，而不是看一个成长中的项目。</p>
+<h2>项目展示</h2>
+<p><img src="https://raw.githubusercontent.com/makecindy/cindy/main/.github/assets/hero-en.webp" alt="Cindy Hero 英文版"/></p>
+<p><em>产品定位：本地优先的 AI Agent 客户端，把多套 harness 收进同一个工作台</em></p>
+<p><img src="https://raw.githubusercontent.com/makecindy/cindy/main/.github/assets/hero-zh.webp" alt="Cindy Hero 中文版"/></p>
+<p><em>官方中文版封面，与英文版同源</em></p>
+<p><img src="https://cindy.app/product/showcase/desktop-feedback-en.webp" alt="桌面端任务 / 对话 / 项目文件"/></p>
+<p><em>桌面端：任务、对话与项目文件在同一工作区内连续</em></p>
+<p><img src="https://cindy.app/product/showcase/phone-feedback-en.webp" alt="移动端原生对话"/></p>
+<p><em>移动端：与桌面端共享同一任务，可远程遥控</em></p>
+<p><img src="https://cindy.app/product/skill-market.webp" alt="SkillHub 插件市场"/></p>
+<p><em>SkillHub：技能与插件市场（官方标注仍 in the making）</em></p>
+<blockquote>
+<p>补充：仓库内 <code>docs/design-previews/</code>、<code>docs/e2e-evidence/</code>、<code>docs/acceptance/</code> 提供了大量界面与验收证据，无需运行即可作为学习材料；README 与官网均无架构图与 Demo 视频。</p>
+</blockquote>
+<h2>项目画像</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub</td>
+<td><a href="https://github.com/makecindy/cindy">https://github.com/makecindy/cindy</a></td>
+</tr>
+<tr>
+<td>Star / Fork</td>
+<td>6,884 / 827（watchers 27）</td>
+</tr>
+<tr>
+<td>许可证</td>
+<td>Apache-2.0（客户端全开源；后端服务闭源，在另一仓库）</td>
+</tr>
+<tr>
+<td>代码行数</td>
+<td>4,409,086 行代码 + 578,140 行注释，16,580 个文件（TypeScript 59.2%、JSON 19.6%、TSX 13.8%，行数口径；字节口径 TypeScript 96.1%）</td>
+</tr>
+<tr>
+<td>项目年龄</td>
+<td>3.1 个月（仓库创建 2026-07-22，首次开源提交 2026-07-24）</td>
+</tr>
+<tr>
+<td>开发阶段</td>
+<td>密集开发（近 30 天 4,975 个 commit，占全史 47.5%）</td>
+</tr>
+<tr>
+<td>贡献模式</td>
+<td>公司主导 + 社区协作（195 位贡献者，Top 1 占 35.1%，Top 10 占约 90%）</td>
+</tr>
+<tr>
+<td>热度定位</td>
+<td>大众热门（GitHub Trending 日榜 #1、周榜 #1，TypeScript 分类连续 8 周在榜；30 天 +3,741 star）</td>
+</tr>
+<tr>
+<td>质量评级</td>
+<td>代码[良好] 文档[优秀] 测试[充分]</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>口径提示：三个阶段采集到的语言占比是两套口径——<code>code_scale</code> 给出的是行数占比（TypeScript 59.2%），GitHub API 给出的是字节占比（TypeScript 96.1%，因 JSON 与压缩资源被放大）。本报告统一采用行数口径。依赖数量同理：自动采集只读了根 <code>package.json</code>，得到「runtime 1 / dev 4」，严重低估；实测 51 个工作区包、去重依赖 281 个（runtime 229 / dev 54 / peer 4）。</p>
+</blockquote>
+<h2>作者视角：为什么存在这个项目</h2>
+<h3>创始人/作者背景</h3>
+<p>主体是<strong>心动公司（XD Inc.，港股 2400.HK，TapTap 母公司）</strong>，以 Organization 账号 <code>makecindy</code> 发布，CEO 黄一孟在 2026-07-26 的 TDW 发布会亲自站台。这不是个人项目：git 邮箱分布坐实了这一点——<code>@xd.com</code> 2,299 个 commit、<code>@xindong.com</code> 17 个、<code>@magiclizi.com</code> 1,514 个（首席作者自有域名）、<code>@anthropic.com</code> 15 个、<code>@cursor.com</code> 7 个。</p>
+<p>更值得注意的是<strong>它是怎么立项的</strong>：发布前公司无立项、无预算、无专属团队，靠跨职能自发协作推进，HR 也提交代码。典型路径是「内部工具先长出来，再产品化」。心动的主业是游戏，TapDB 遥测 SDK 被直接复用为 Cindy 的埋点系统。</p>
+<h3>问题判断</h3>
+<p>作者看到的是<strong>内部工程痛点</strong>，不是学术命题。三个具体问题：</p>
+<ol>
+<li><strong>harness 与模型耦合</strong>。Claude Code、Codex、Pi 各有独立的会话状态（原生 session id、transcript 目录、MCP 作用域、权限模型、事件格式）。用户在 Claude Code 里跑了 3 小时，切到 Codex 后这些全部归零。</li>
+<li><strong>重复付费</strong>。已有 Claude Code / Codex Coding Plan 订阅的人，想在统一客户端里用就得再买一份 key 额度。</li>
+<li><strong>Agent 被困在一台机器</strong>。任务在桌面发起、人在手机上；或者人在工位、Agent 跑在另一台有 GPU 和凭证的机器上。</li>
+</ol>
+<p><strong>时机为什么是 2026 年 7 月？</strong>三个条件同时成立：Claude Code SDK 与 Codex app-server 都成熟到可以被「编排」（<code>thread.setModel</code>、<code>mcp_tool</code> Hook 是能力路由的物理基础）；Agent Loop 本身已经商品化，竞争维度自然上移到连接与治理；跨设备 Agent 的需求被上游移动端缺失创造出来——同期的 Orca 拿了 10.7 万 star 证明这个需求真实存在。Cindy 是同一需求窗口里的第二个入场者，但选了不同落点。</p>
+<h3>解法哲学</h3>
+<p><strong>功能完整，但用「能力声明」而不是「功能探测」控制复杂度。</strong>这是最值得学的决策之一。<code>packages/maker-core/src/types/capabilities.ts:11-25</code>：</p>
+<pre><code>export type CapabilityStatus =
+  | { supported: true }
+  | {
+      supported: false;
+      reason: 'sdk-missing' | 'not-implemented' | 'platform-limited';
+      /** 上游引用，便于跟踪修复（如 '@openai/codex-sdk Thread.setModel'） */
+      upstreamRef?: string;
+      message?: string;
+    };</code></pre>
+<p>三态区分的意义在于把责任分清：<code>sdk-missing</code> 等上游、<code>not-implemented</code> 是自己的活、<code>platform-limited</code> 改不了。UI 因此能给出准确的降级提示（灰按钮 + 「Codex 不支持会话树」），团队也能量化「还差多少」——<code>upstreamRef</code> 直接挂上游 issue 引用，等于一张隐形的 roadmap。</p>
+<p><strong>明确选择不做什么</strong>（<code>docs/product-rules/core-product-principles.md</code> §3）：</p>
+<table>
+<thead>
+<tr>
+<th>选择了不做</th>
+<th>证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>不重造 Agent Loop</td>
+<td>「Cindy 不以重新实现 Claude Code、Codex 或其他 Agent Loop 为目标」</td>
+</tr>
+<tr>
+<td>不把上游能力包装成自己的「智能」</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>不做闭源插件独占格式</td>
+<td><code>packages/plugin-protocol</code> 是独立可读协议包，<code>.cindy</code> 是公开格式</td>
+</tr>
+<tr>
+<td>不降级上游能力（对 Pi）</td>
+<td>「Pi 上游 GUI 非退化红线」：静态扫描只能提供<strong>可跳过的诊断</strong>，不得阻断一个原本可用的包</td>
+</tr>
+<tr>
+<td>不抢模型的订阅费</td>
+<td>「no duplicate bill」是核心卖点</td>
+</tr>
+</tbody>
+</table>
+<p>「上游能力非退化」这条红线非常罕见——多数第三方宿主做不到：宿主不得因为自己的安全检查而让用户失去能力。</p>
+<h3>战略意图</h3>
+<p><strong>在心动/XD 的图景里，Cindy 更像基础设施 + 品牌实验，不是核心产品。</strong>公司的直接收益是品牌与技术形象（CEO 站台带来 6.9K star 的初始爆发）、内部 Agent 基础设施，以及订阅收入（Plus / Super / Ultra，区域化定价，中国大陆版与全球版双发行）。</p>
+<p><strong>开源策略判定：客户端 genuinely open，商业化走 open-core。</strong>客户端 Apache-2.0 全开源；后端闭源但 README 里明确标注——「Not in this repo: the backend service lives in a separate repository and is not part of this monorepo」；还有真正的社区通道（CONTRIBUTING、DCO 而非 CLA、公开 PR 模板、Code of Conduct、4 个 workflow、195 人贡献历史）。</p>
+<p><strong>但有一条裂缝必须点出：企业叙事全部在闭源侧。</strong>跨设备 relay、企业 SSO、审计日志、成本归因、SkillHub 市场都依赖闭源后端。「开源客户端 + 闭源后端 + 企业治理叙事」这个组合，在安全审计严格的采购流程里可能自相矛盾——企业客户要审计，就必须信任一个不可审计的后端。这是 Cindy 架构层面最大的风险。</p>
+<h2>核心价值提炼</h2>
+<h3>创新之处</h3>
+<p>按新颖度 × 实用性排序：</p>
+<p><strong>1. 跨引擎切换的「意图制 + 停泊 + 确定性交接」三段式</strong>（新颖度 5/5 · 实用性 5/5 · 可迁移性 5/5）</p>
+<ul>
+<li><strong>意图制</strong>：外部调用只登记切换意图并返回 <code>deferred</code>，用户在模型选择器里反复改选零成本；真切换推迟到<strong>下一条消息发送时刻</strong>由 send 事务执行一次。</li>
+<li><strong>停泊</strong>：每家引擎的原生会话离场时「停泊」，快照存在边界行里、<strong>不新增 schema</strong>；切回时 resume 停泊会话，只注入增量交接，prompt cache 前缀与引擎自身记忆都保住。</li>
+<li><strong>确定性交接</strong>：交接文本由<strong>代码</strong>从数据库消息历史拼接（<code>buildHandoffText</code>），最近 4 轮逐字（每条 2,000 字上限）+ 更早轮次单行提要（3,000 字预算）+ 工具调用摘要 + 改动文件清单 + 命令清单，硬上限 16,000 字。<strong>不经 LLM 生成，零额外延迟、可单测、可复现。</strong></li>
+<li><strong>检索指引兜底</strong>：附带「早期原文检索」指引，让新引擎按需拉完整历史。摘要管大局、检索管细节，消除逐字窗口外的细节性失忆。</li>
+<li><strong>失败语义分级</strong>：数据库提交之前任何失败 → 原样抛错、状态不变；<strong>数据库提交即 commit point</strong>；之后才降级；新引擎 spawn 失败返回 <code>engineReady=false</code>，走既有 lazy-create 重试。</li>
+</ul>
+<p><strong>2. 「恢复动作的作用半径必须 ≤ 故障半径」</strong>（5/5 · 5/5 · 5/5）</p>
+<p>任何触及 device-link 重试 / 超时 / 断链恢复的 PR，必须回答三问：① 故障在哪个粒度；② 动作是否与故障同半径（扩大必须给出理由 + 多控制端拓扑用例证明其它 peer 零感知）；③ 其它 peer 是否零感知。<br/><code>packages/device-link/src/__tests__/client.test.ts</code> 有对应用例：两个控制端共用同一被控端，其中一个的直连静默，断言命令只执行一次、结果经 relay 送达，另一个控制端仍走直连、在途请求与 relay 连接不受影响。</p>
+<p><strong>3. Loop Guard 四层递进判据</strong>（5/5 · 4/5 · 5/5）</p>
+<p>把「模型死循环」变成可测的工程问题（<code>packages/maker-core/src/agents/shared/loop-guard.ts</code>）：</p>
+<ul>
+<li>第 1 层：name + input + output 完全一字不差连续 4 次</li>
+<li>第 2 层：按 name + input 指纹（不含 output）的 12 滑动窗口，distinct ≤ 2，抓「output 每次都变」和 ABAB ping-pong</li>
+<li>第 3 层：16 窗口 + distinct ≤ 4，抓 ABCDABCD…（注释有实锤：xai/grok 单 turn 在 4 个不同 Grep 里轮转一千多次调用，distinct=4 &gt; 2 从第 2 层漏网）</li>
+<li>第 4 层：同类参数契约错误连续 3 次即止损（实锤：xai/grok 单 session 16 次 Edit 缺 <code>file_path</code>，每次 input 都不同 → 指纹恒新，前三层全部漏网）</li>
+<li>配套「节奏豁免」：距上次调用开始或结果到达 ≥ 30 秒 → 视为在等外部进度，不计入判据（避免误杀轮询 CI、跑长测试）</li>
+</ul>
+<p><strong>4. CapabilityStatus 三态 + 能力位协商</strong>（4/5 · 5/5 · 5/5）</p>
+<p>跨版本互操作不用 feature detect，而是发<strong>能力位</strong>（capability bit），老 host 缺省 false（fail closed）。解决的是「手机端和桌面端版本不同步，怎么知道对面支不支持某功能」这个经典难题。而且跨设备时能力位必须从<strong>会话所在的被控电脑</strong>读，不是从模型目录读——代码里有专门测试锁住这点，注释写着「Agent 在离线的第三台电脑时目录读不到，入口不能因此消失」。</p>
+<p><strong>5. model-compat 的「绝不从模型名推断」原则</strong>（4/5 · 5/5 · 4/5）</p>
+<p>匹配靠 <strong>origin 精确一致 + path 前缀</strong>，多 profile 命中时按 <code>baseUrl.length</code> 降序取最长匹配，同 baseUrl 再按 <code>authKind</code> 收窄，最后用 <code>policySignature</code>（规范化 JSON，排除 id 和 authKind）比较——<strong>只有 wire 契约完全一致的候选才共享 patch，真正冲突的声明保持未解析</strong>。源码注释两处明说：「never guess from a model name」「Execution facts, never inferred from the display name or a user's account identity」。</p>
+<p><strong>6. 代输入（input handoff）的秘密污染追踪</strong>（4/5 · 4/5 · 5/5）</p>
+<p>主人填的值只交给宿主执行那一下，随即清零——不进模型上下文、工具结果、续接消息、数据库、日志、上传日志、IM、推送。更进一步：主人在 Agent 驱动的页面填过密码后，该页面路径在 15 分钟内<strong>暂停 Agent 的读页工具</strong>（脚本执行、网络请求与响应体、console）。多数项目只做了「不记录密码」，没做「填完密码后禁止 agent 继续读那个页面」。</p>
+<p><strong>7. 远端 daemon「字段新增也 bump 协议版本」</strong>（4/5 · 5/5 · 5/5）</p>
+<p><code>packages/maker-cc-manager/src/protocol.ts</code> 里 v2 的 bump 理由写得很清楚：旧 daemon 会<strong>无声忽略未知字段</strong>，导致 capability routing fail-open，因此这项表面上的字段新增必须按不兼容协议升级处理。旧 daemon 收到 <code>INVALID_PROTOCOL_VERSION</code> 会明确提示升级。</p>
+<p><strong>8. Auto Review 的 unavailable 三态</strong>（4/5 · 5/5 · 5/5）</p>
+<p>把「审阅器故障」和「模型判定动作危险」分开：前者降级为 <code>ask</code> 弹确认卡让用户接管（每会话只提示一次），后者保持静默。走既有的 <code>[CODE] fallback text</code> 约定，不新增协议。</p>
+<h3>可复用的模式与技巧</h3>
+<ol>
+<li><strong>「声明」代替「探测」</strong>：能力用三态 + 上游引用声明，跨版本用能力位协商，老端 fail closed。适用于任何多端 / 多插件 / 多后端客户端系统。</li>
+<li><strong>意图制 + 停泊 + 确定性交接</strong>：任何「跨 LLM 引擎 / 跨后端 / 跨版本保持上下文」的系统都能用。关键是交接文本由代码生成而非 LLM——零延迟、可测、可复现。</li>
+<li><strong>故障半径三问</strong>：任何多端 / 多连接 / 多租户 / 共享链路的系统都该抄。适用面比前两条宽得多，且<strong>可写成断言</strong>。</li>
+<li><strong>权威协议包 + 明确准入边界 + append-only 能力协商 + 双层大小限</strong>（<code>packages/device-link-protocol</code>）：<code>PROTOCOL_VERSION</code> 只此一处；只有 relay 需要解析的部分才进协议包，隧道内容对 relay 不透明；能力集是 append-only，旧 server 缺省为空集，客户端只在能力集包含对应项时才发该帧（避免旧 server 静默丢弃造成黑洞）；<code>MAX_FRAME_BYTES = 2MB</code>（协议层优雅拒绝）+ <code>WS_MAX_PAYLOAD_BYTES = 4MB</code>（传输层硬兜底）。</li>
+<li><strong>「宁可不给 context，也不猜一个」</strong>（<code>docs/dev-rules/orca-team-architecture.md</code>）：MCP transport 层的 session id 不证明业务会话归属，缺失或不一致时一律降级为 <code>NO_SESSION_CONTEXT</code>，绝不猜一个 ctx 造成跨会话串线。跨会话串线是安全事故，宁可缺失不可错配。</li>
+<li><strong>能力槽（capability slot）替代裸 API 权限</strong>：插件在 manifest 里声明要什么（network / notify / fs / main-view / task-view / session-context / pick / preview / skill / workspace），宿主代为执行；每个插件独立 Electron 沙箱进程。关键是作者不假装插件都能隔离——<code>skill</code> 是<strong>唯一</strong>越出沙箱的能力，被明确标出并放在清单最上部。</li>
+<li><strong>渐进式发现</strong>（借鉴 Anthropic Skill 的分层披露）：常驻上下文只有「身份 + recall 召回线索」，完整信息按需拉取；manual 与 tool-call 两条披露路径可反复交叉、无固定顺序；每条路径的产物都不是授权，调用时仍实时校验。</li>
+<li><strong>错误分类带语义</strong>：独立的错误分类模块（<code>overload-error</code> 可重试 / <code>context-overflow-error</code> 原样重试必败、恢复动作是压缩或新开会话 / <code>unsupported-request-option-error</code> 写回 models.json 自愈并重放），每个错误都标注「该重试还是该换动作」。空 catch 仅 12 处（maker-core）+ 17 处（desktop），且都带注释。</li>
+<li><strong>Windows 保留名 + 路径穿越的结构性防护</strong>：插件 id 正则 <code>^[a-z0-9][a-z0-9-]{0,31}$</code>——因为 id 直接用作安装目录名，必须双平台安全，且天然杜绝路径穿越，额外排除 <code>con</code> / <code>prn</code> / <code>aux</code> / <code>nul</code> / <code>com[1-9]</code> / <code>lpt[1-9]</code>。</li>
+<li><strong>NO_PROXY 强制包含 localhost</strong>：Codex 子进程的 rmcp（Rust reqwest）会把 Cindy MCP HTTP bridge 的 localhost 请求也走 HTTP_PROXY（企业网络 / PAC 常见现象），上游代理不识别 localhost 返回 HTML 错误页 → MCP transport 全员崩溃。修法是把 <code>127.0.0.1</code> / <code>localhost</code> / <code>::1</code> 强制并入 NO_PROXY，并合并小写 <code>no_proxy</code> 后删除小写副本（防大小写双份在 Rust / Go 生态互相覆盖）。</li>
+</ol>
+<h3>关键设计决策</h3>
+<p><strong>决策 1：四层协议桥分层，把「上游协议互转」从业务代码里隔离出来</strong></p>
+<p>Claude Code SDK 说 Anthropic Messages 协议，Codex 说 OpenAI Responses，很多网关说 OpenAI Chat Completions，Google 又是另一套。要让「用我已有的订阅跑 Codex 模型」，就得在 Anthropic Messages ↔ OpenAI Responses 之间做双向翻译——包括流式 SSE、工具调用、reasoning 块、图片、usage 计量。项目把它拆成四个职责单一的包：<code>anthropic-compat-proxy</code>（loopback HTTP 代理）、<code>anthropic-responses-bridge</code>、<code>responses-anthropic-bridge</code>、<code>responses-chat-bridge</code>。共享的协议判定在 <code>packages/model-compat/src/protocol.ts</code>：</p>
+<pre><code>const native = harness === 'codex' ? 'openai-responses' : harness === 'claude-code' ? 'anthropic' : null;
+return (native ? available.find(route =&gt; route.protocol === native) : undefined) ?? available[0];</code></pre>
+<p>即<strong>优先用 harness 的原生协议，不匹配才降级</strong>。</p>
+<ul>
+<li><strong>Trade-off</strong>：26k 行（含测试）bridge 是一笔持续维护债——上游协议一变就得跟着改。换来的是每个包可独立测试、独立替换（比如 vLLM 只支持 Chat Completions，就只挂 <code>responses-chat-bridge</code>）。</li>
+<li><strong>可迁移性</strong>：中-高。模式通用（每个协议方向一个包 + 共享判定层），但工作量很大，只有做「一个客户端接多个上游」才值得。</li>
+</ul>
+<p><strong>决策 2：模块边界写死在架构不变量里</strong></p>
+<p><code>maker-shared</code> 是零依赖纯逻辑层（package.json 明确写 <code>Zero React/Electron/Expo runtime dependencies</code>），被 desktop 和 mobile 共用；<code>maker-core</code> 是 Electron 无关的编排核心，通过 <code>MakerDeps</code> / <code>AgentDeps</code> 注入宿主能力（SQLite 工厂、日志、auth adapter、memory manager）；<code>apps/desktop</code> 是唯一知道 Electron 的地方。<code>docs/dev-rules/architecture-invariants.md</code> §1-2 把这条边界写成硬不变量。</p>
+<p><strong>决策 3：代码常量与设计裁决分居两处，是一个已知隐患</strong></p>
+<p><code>docs/dev-rules/maker-core-and-agent-behavior.md</code> 记录了「三个引擎均关闭了『同类契约错误连续 3 次即中断』的规则」，理由是「同类错误不能证明模型没有在修正调用，Pi / Codex 也尚无可靠模型响应批次标识」，运行时用 <code>contractConsecutiveLimit: Number.POSITIVE_INFINITY</code> 关掉，代价是「不同参数持续出现同类错误可能多重试几次」。但 <code>loop-guard.ts</code> 里的 <code>DEFAULT_CONTRACT_CONSECUTIVE_LIMIT = 3</code> 仍在——有意的运行时关闭，但两处分离，容易在后续重构中被误恢复。</p>
+<h2>竞品格局与定位</h2>
+<h3>竞品对比矩阵</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th><strong>Cindy</strong></th>
+<th>Orca</th>
+<th>Munder Difflin</th>
+<th>desktop-cc-gui</th>
+<th>CloudCLI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Star</td>
+<td>6,884</td>
+<td><strong>107,359</strong></td>
+<td>9,110</td>
+<td>4,538</td>
+<td>14,302</td>
+</tr>
+<tr>
+<td>Harness 覆盖面</td>
+<td>3（CC / Codex / Pi）</td>
+<td>多 agent fleet</td>
+<td><strong>17</strong></td>
+<td>多引擎</td>
+<td>单引擎取向</td>
+</tr>
+<tr>
+<td>跨 harness 记忆 / 技能</td>
+<td>✅ harness 无关</td>
+<td>❌</td>
+<td>❌ per-agent</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>移动端</td>
+<td>✅ Expo RN + device-link</td>
+<td>✅</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅ Web / 移动</td>
+</tr>
+<tr>
+<td>本地优先</td>
+<td>✅ 真本地</td>
+<td>部分</td>
+<td>✅</td>
+<td>✅</td>
+<td>❌ Web 托管</td>
+</tr>
+<tr>
+<td>企业治理</td>
+<td>路线图（SSO / 审计 / 成本归因，<strong>闭源后端</strong>）</td>
+<td>❌</td>
+<td>成本账本</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>插件生态</td>
+<td>协议已开源，市场 in the making</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>技术栈</td>
+<td>Electron + RN</td>
+<td>—</td>
+<td>Electron + Pixi</td>
+<td><strong>Tauri</strong>（内存更优）</td>
+<td>Web</td>
+</tr>
+<tr>
+<td>License</td>
+<td>Apache-2.0</td>
+<td>MIT</td>
+<td>MIT</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3>差异化护城河</h3>
+<p><strong>技术护城河（最强，但深而不宽）</strong>：跨 harness 的上下文连续性工程——停泊 + 确定性交接 + 检索指引 + 能力位协商 + 四层协议桥。从零做需要 6–12 个月和 2–3 个熟悉 SDK 内部的人。但它垂直方向极难被绕过，横向扩展（更多 harness、更多设备类型）成本却线性上升。</p>
+<p><strong>信任护城河（中）</strong>：Apache-2.0 + DCO（而非 CLA）+ 公开 PR 模板 + 4 个 workflow + 71k 行文档 + 195 人贡献历史。竞品里 Orca 是 MIT，但只有 Cindy 有这份「规则即架构」的文档体系。对企业买家来说，「客户端可审计」是硬需求。</p>
+<p><strong>生态护城河（最弱，当前最大短板）</strong>：插件市场仍标注「in the making」，SkillHub 生态在闭源后端。Munder Difflin、Orca 都没有插件市场——但 Cindy 也还没建起来。</p>
+<h3>竞争风险</h3>
+<p><strong>最可能被替代：Orca。</strong>15 倍 star 差距、MIT 许可、同样在抢「多 agent + 多设备」的心智。如果 Orca 先把跨 harness 记忆层做出来（它已有 fleet 概念基础），Cindy 的核心差异化会被直接侵蚀。</p>
+<p><strong>最可能侵蚀价格带：desktop-cc-gui（更轻）+ CloudCLI（更易用）。</strong>这两个加起来会吃掉「个人开发者单机用户」这层。Cindy 的应对必须是把「跨设备 + 企业」做深，而不是在单机体验上卷——代价是单机用户会变成「够用但不完美」的中间地带。</p>
+<p><strong>被上游直接吃掉的隐忧（最大的战略风险）</strong>：Claude Code / Codex 都在往桌面端和移动端走。若 Anthropic 或 OpenAI 官方推出带跨模型记忆 + 移动端的客户端，Cindy 的整个存在理由会被覆盖。这恰恰是它坚持「连接层」定位、坚持「上游能力非退化」红线、不重造 Agent Loop 的原因——保持连接层定位才能在上游扩张时活下来。</p>
+<h3>生态定位</h3>
+<p>Cindy 站在「<strong>Agent 时代的浏览器</strong>」位置——不生产内容，生产<strong>编排与治理层</strong>：</p>
+<ul>
+<li>向下：适配 CC / Codex / Pi 三个执行引擎，把它们的差异吸收在 <code>maker-core</code> 里；</li>
+<li>向上：提供记忆、技能、插件、IM、浏览器、手机、SSH、调度、企业治理；</li>
+<li>横向：成为「同一个任务跨设备跨引擎」的标准载体（device-link 协议 + <code>.xdtshare</code> 会话分享格式）；</li>
+<li>纵向：模型目录与路由层（<code>model-providers</code>）成为「一个账号用什么模型」的事实标准。</li>
+</ul>
+<p>但它<strong>不能自己闭环</strong>——一切价值都建立在「用户已经有 Claude Code / Codex」之上。这是典型的 <strong>platform 定位</strong>：不是 app，是 app 之间的连接层。</p>
+<h2>套利机会分析</h2>
+<ul>
+<li><strong>信息差</strong>：<strong>不是被低估的潜力股，是已充分定价的当红项目</strong>（star 增速远超工程成熟度，watchers 仅 27 说明多数 star 是围观收藏）。真正的稀缺资产在别处——<code>AGENTS.md</code> + 22 个 docs 子目录构成的「把产品 / 工程 / 设计规则写成 AI 可执行形式」的规则工程体系，以及「故障半径三问」这类可迁移的工程规范。同类项目里，Orca 拿了 15 倍 star 但没有这套文档资产，这是信息差所在。</li>
+<li><strong>技术借鉴</strong>：可直接抄的有三件——<strong>跨引擎切换的三段式</strong>（意图制 + 停泊 + 确定性交接）、<strong>故障半径三问</strong>、<strong>能力声明三态 + 能力位协商</strong>。前两件适用面远超 Agent 客户端，属于「任何多端 / 多连接 / 多租户系统都能用」的通用模式。</li>
+<li><strong>生态位</strong>：填补的是「harness 聚合层」这个空白——上游 Claude Code / Codex 各自封闭，下游 GUI 各自单引擎，中间这层没人认真做。Orca 从另一侧（多 agent fleet）逼近，但缺跨 harness 记忆层。</li>
+<li><strong>趋势判断</strong>：增长凶猛（30 天 +3,741 star，Trending 日榜 #1），符合「Agent 工具从单点走向平台」的技术趋势。后发优势体现在文档与协议规范上——<code>device-link-protocol</code> 是单一权威包，谁先定标准谁受益。但<strong>护城河依赖闭源后端供能</strong>，且生态（插件市场）尚未建立，这两点决定了它的天花板。</li>
+</ul>
+<h2>风险与不足</h2>
+<ol>
+<li><strong>后端闭源是最大的架构性风险。</strong>客户端 44 万行，服务端在另一个仓库。跨设备 relay、企业 SSO、审计、成本归因、SkillHub——也就是「企业叙事」的全部支撑——都不在开源部分。<strong>开源仓无法自证企业能力</strong>，这在安全审计严格的采购流程里可能自相矛盾。</li>
+<li><strong>文件规模失控。</strong><code>packages/maker-core/src/agents/codex/index.ts</code> 15,927 行、<code>pi/index.ts</code> 9,865 行、<code>claude-code/index.ts</code> 8,269 行、<code>apps/desktop/src/main/maker-ipc/register.ts</code> 25,810 行、<code>makerChatStore.ts</code> 19,939 行、<code>apps/mobile/app/sessions/[sessionId].tsx</code> 13,645 行。这不是「代码多」的问题，是<strong>职责边界失效</strong>——一个 Codex adapter 塞了 16k 行，意味着 protocol / session / capability / error / retry 全搅在一起。AGENTS.md 里明明有「模块边界」规则，实现已经越过了它。</li>
+<li><strong>CI 成本正在成为瓶颈。</strong><code>ci.yml</code> 注释里明写：desktop 的 tsc 峰值内存突破 4GB，需要 <code>--max-old-space-size=6144</code>。注释还承认「已排除单点热点：移走最大的单个测试文件只省 ~5MB……是整仓类型规模的自然结果」——这是架构债务的直接账单。</li>
+<li><strong>测试方式有土办法。</strong>4,741 个测试文件、8 个 tier（含专门的 <code>guard</code> tier 做跨文件安全契约门禁）对 44 万行代码比例合理；但测试文件本身巨大（<code>codex/index.test.ts</code> 35,334 行），且<strong>大量测试是在读源码文本做断言</strong>（<code>readFileSync(... 'utf8')</code> 后 <code>expect(source).toContain(...)</code>）。这是一种「用文本断言锁住架构不变式」的有效但脆弱的做法——重构会误伤、格式化会误伤，还掩盖了真实的类型错误。</li>
+<li><strong>类型逃逸 585 处</strong>，分布不均：maker-shared <strong>0</strong>、model-compat 1、orca-workflow 0、<code>apps/desktop/src</code> 249。共享层守住了类型纪律，React / renderer 层放弃了。按 262 万行 desktop 代码算比例极低（约 0.0095%），可接受，但方向值得警惕。</li>
+<li><strong>文档规模可能已过可维护边界。</strong>71,147 行 Markdown ≈ 代码的 16%。<code>docs/dev-rules/orca-team-architecture.md</code> 单文件 126KB，其中一行就是一个上千字的段落。这种「一整个产品维度写成一个文档」的写法对 AI 检索友好，但人类已难做小步修改。</li>
+<li><strong>无 CHANGELOG。</strong>10,465 个 commit / 3 个月节奏的项目没有 CHANGELOG.md 或 HISTORY.md，变更信息散在 git log 与 PR 里，release notes 靠官网和公众号。</li>
+<li><strong>「harness 中立」叙事有真实边界。</strong>Issue #1991 揭示：Pi 作为第三套 harness，其 skills / MCP 作用域语义无法与其他两者对齐，方案退化为「关掉功能」而非做语义映射（配套 #2465 选渐进收窄，先做 skills-only admission）。配套 Issue #192（全库讨论度最高，40 评）是产品原则层争论——取消代理层让 Agent 直接调 GitHub API，对应 <code>docs/product-rules/agent-user-parity.md</code>「用户本人能做的（含跨电脑）Agent 也要能做」，这决定了 Cindy 是「帮主人办事的助理」还是「有独立身份的 agent」。</li>
+<li><strong>版本策略有认知负担。</strong><code>v1.0.0</code> 与滚动的 <code>v0.1.x</code> 并存（106 个 tag、74 个 Release，v0.1.x 已到 118 且 beta 与正式成对出现，约每 1.2 天一个 Release）。双轨制让用户困惑「该装哪个」。</li>
+<li><strong>上游原生 harness 本身就有桌面端与移动端诉求。</strong>Cindy 的价值主张恰好建立在「上游不提供跨设备统一工作台」这个缺口上——缺口收窄的速度比 star 增长更能决定它的未来。</li>
+</ol>
+<h2>行动建议</h2>
+<h3>如果你要用它</h3>
+<ul>
+<li><strong>选它</strong>：你已经有 Claude Code / Codex 订阅且不想重复付费；任务需要跨设备（桌面发起、手机接管）；需要在多个引擎之间切换且不能接受上下文归零；团队需要统一治理（但要清楚这部分在闭源后端）。</li>
+<li><strong>别选它</strong>：你只想要一个轻量的 Claude Code GUI——desktop-cc-gui 用 Tauri，内存占用远优于 Electron（Cindy 的 desktop typecheck 已需 6GB 堆）；你不需要跨设备——Orca / CloudCLI 更成熟；你需要的是完整开源的企业方案——Cindy 的 SSO / 审计 / 成本归因都在闭源侧。</li>
+<li><strong>注意</strong>：Electron + Expo 的安装成本明显高于 Web 端方案；插件市场尚未就绪，别把生态当现有资产规划。</li>
+</ul>
+<h3>如果你要学它</h3>
+<p>按这个顺序读，性价比最高：</p>
+<ol>
+<li><strong><code>AGENTS.md</code> + <code>docs/dev-rules/</code></strong> —— 学「规则工程」：怎么把架构不变量写成 AI 编码代理可直接执行的触发条件表；<code>docs/dev-rules/orca-team-architecture.md</code> 是唯一标注 authoritative 的文件。</li>
+<li><strong><code>REVIEW.md</code></strong> —— 学「审阅口径」：怎么区分「机器已覆盖」与「范围划分」两种「不报」的理由，怎么给自动 reviewer 声明自己的局限（「拿不准宁可误报，也不要用推测填空」）。</li>
+<li><strong><code>packages/maker-core/src/agents/shared/loop-guard.ts</code>（810 行）</strong> —— 学怎么把非结构化问题（模型死循环）变成四层可测判据，每层配真实案例。</li>
+<li><strong><code>apps/desktop/src/main/maker-ipc/sessionAgentSwitchHandler.ts</code> + <code>agentHandoff.ts</code>（1,199 行）</strong> —— 学跨引擎上下文连续性的完整实现（意图制 / 停泊 / 确定性交接 / 失败语义分级）。</li>
+<li><strong><code>packages/maker-core/src/types/capabilities.ts</code> + <code>packages/maker-shared/src/agentCapabilities.ts</code></strong> —— 学能力声明与跨版本协商。</li>
+<li><strong><code>packages/device-link-protocol/src/protocol.ts</code></strong> —— 学多端 relay 协议的严谨写法（单一权威包 / 准入边界 / append-only 能力协商 / 双层大小限）。</li>
+<li><strong><code>packages/model-compat/src/profiles.ts</code></strong> —— 学「绝不从模型名推断」的 provider 匹配。</li>
+</ol>
+<h3>如果你要 fork 它</h3>
+<ul>
+<li><strong>优先补的短板</strong>：① 插件生态与市场（当前最大护城河缺口）；② 补一份 CHANGELOG 与结构化 release notes；③ 拆分超大文件——<code>codex/index.ts</code> 16k 行、<code>register.ts</code> 25.8k 行是明确的职责边界失效，按 protocol / session / capability / error / retry 拆开收益最大；④ 把「代码常量 vs 文档裁决」收归一处，避免 <code>contractConsecutiveLimit</code> 这类分居两处的配置被误恢复。</li>
+<li><strong>技术选型上的机会</strong>：Electron 是明确的负债（typecheck 已触 6GB 堆，Tauri 竞品的内存优势真实存在），但换壳成本极高——更现实的做法是先把 <code>maker-core</code> / <code>maker-shared</code> 的边界守住（它们已经是零 Electron 依赖的），为将来换壳留出可能性。</li>
+<li><strong>协议层的机会</strong>：如果你的场景不需要多端，砍掉 device-link / relay / IM 适配器这三条线，保留 maker-core 的 harness 抽象 + 确定性交接 + 能力声明三件套，就是一个非常干净的「多 harness 统一客户端」——这部分是 Cindy 最值得抄的核心，也是最适合自建的部分。</li>
+<li><strong>企业场景</strong>：如果客户要求开源可审计，Cindy 的闭源后端是硬伤，需要自行补齐 relay / SSO / 审计的替代实现——协议定义（device-link-protocol、maker-cc-manager protocol）都是公开可读的，可以据此实现兼容的服务端。</li>
+</ul>
+<h3>知识入口</h3>
+<table>
+<thead>
+<tr>
+<th>资源</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DeepWiki</td>
+<td>未收录（deepwiki.com 返回 429 Vercel checkpoint，搜索侧亦无收录）</td>
+</tr>
+<tr>
+<td>Zread.ai</td>
+<td>未收录（403 Cloudflare challenge）</td>
+</tr>
+<tr>
+<td>关联论文</td>
+<td>无（<code>site:arxiv.org</code> 无结果；产品型发布而非研究型）</td>
+</tr>
+<tr>
+<td>在线 Demo</td>
+<td>无托管 playground。替代路径：<a href="https://cindy.app/download/">cindy.app/download/</a>（或 winget <code>Cindy.Cindy</code> / <code>Cindy.Cindy.CN</code>）、「Skip Sign-In」免登录本地模式；仓库内 <code>docs/design-previews/</code>、<code>docs/e2e-evidence/</code>、<code>docs/acceptance/</code> 可作无需运行的学习材料</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<blockquote>
+<p>数据基准：<code>makecindy/cindy</code> @ <code>3e9d381773</code>（2026-10-27），Star 6,884 / Fork 827，10,465 commits，195 位贡献者。<br/>报告分三阶段生成，中间产物见 <code>tmp/cindy-phase-1-analysis.md</code>、<code>tmp/cindy-phase-2-analysis.md</code>、<code>tmp/cindy-phase-3-analysis.md</code>。</p>
+</blockquote>
+</body>
+</html>
