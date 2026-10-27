@@ -1,33 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-10-25",
+    "last_run": "2026-10-27",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/paperclipai/paperclip",
-      "canonical_url": "https://github.com/paperclipai/paperclip",
-      "event_date": "2026-09-26",
-      "date_seen": "2026-09-26"
-    },
-    {
-      "key": "github.com/anthropics/claude-plugins-official",
-      "canonical_url": "https://github.com/anthropics/claude-plugins-official",
-      "event_date": "2026-09-26",
-      "date_seen": "2026-09-26"
-    },
-    {
-      "key": "github.com/anthropics/skills",
-      "canonical_url": "https://github.com/anthropics/skills",
-      "event_date": "2026-09-26",
-      "date_seen": "2026-09-26"
-    },
-    {
-      "key": "github.com/androoagi/starnet",
-      "canonical_url": "https://github.com/androoAGI/starnet",
-      "event_date": "2026-09-26",
-      "date_seen": "2026-09-26"
-    },
     {
       "key": "github.com/tensorflow/tensorflow",
       "canonical_url": "https://github.com/tensorflow/tensorflow",
@@ -999,6 +975,120 @@
       "canonical_url": "https://github.com/ersingvn/ludra",
       "event_date": "2026-10-24",
       "date_seen": "2026-10-25"
+    },
+    {
+      "key": "github.com/nvidia/skillspector",
+      "canonical_url": "https://github.com/NVIDIA/SkillSpector",
+      "event_date": "2026-10-26",
+      "date_seen": "2026-10-27"
+    },
+    {
+      "key": "github.com/nightly-labs/openbot",
+      "canonical_url": "https://github.com/nightly-labs/openbot",
+      "event_date": "2026-10-26",
+      "date_seen": "2026-10-27"
+    },
+    {
+      "key": "github.com/panniantong/agent-reach",
+      "canonical_url": "https://github.com/Panniantong/Agent-Reach",
+      "event_date": "2026-10-26",
+      "date_seen": "2026-10-27"
+    },
+    {
+      "key": "github.com/gitroomhq/postiz-app",
+      "canonical_url": "https://github.com/gitroomhq/postiz-app",
+      "event_date": "2026-10-26",
+      "date_seen": "2026-10-27"
+    },
+    {
+      "key": "github.com/alchaincyf/huashu-design",
+      "canonical_url": "https://github.com/alchaincyf/huashu-design",
+      "event_date": "2026-10-26",
+      "date_seen": "2026-10-27"
+    },
+    {
+      "key": "github.com/multica-ai/andrej-karpathy-skills",
+      "canonical_url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "event_date": "2026-10-26",
+      "date_seen": "2026-10-27"
+    },
+    {
+      "key": "github.com/martinkeith700/ruyijs",
+      "canonical_url": "https://github.com/martinkeith700/ruyiJS",
+      "event_date": "2026-10-26",
+      "date_seen": "2026-10-27"
+    },
+    {
+      "key": "github.com/pinecone-io/pg_pinecone",
+      "canonical_url": "https://github.com/pinecone-io/pg_pinecone",
+      "event_date": "2026-10-26",
+      "date_seen": "2026-10-27"
+    },
+    {
+      "key": "github.com/yaojingang/geoinflow",
+      "canonical_url": "https://github.com/yaojingang/GEOInflow",
+      "event_date": "2026-10-26",
+      "date_seen": "2026-10-27"
+    },
+    {
+      "key": "github.com/smhanov/agentloop",
+      "canonical_url": "https://github.com/smhanov/agentloop",
+      "event_date": "2026-10-25",
+      "date_seen": "2026-10-27"
+    },
+    {
+      "key": "github.com/google/adk-go",
+      "canonical_url": "https://github.com/google/adk-go",
+      "event_date": "2026-10-27",
+      "date_seen": "2026-10-27"
+    },
+    {
+      "key": "github.com/microsoft/call-center-ai",
+      "canonical_url": "https://github.com/microsoft/call-center-ai",
+      "event_date": "2026-10-27",
+      "date_seen": "2026-10-27"
+    },
+    {
+      "key": "github.com/volcengine/verl",
+      "canonical_url": "https://github.com/volcengine/verl",
+      "event_date": "2026-10-27",
+      "date_seen": "2026-10-27"
+    },
+    {
+      "key": "github.com/milvus-io/milvus",
+      "canonical_url": "https://github.com/milvus-io/milvus",
+      "event_date": "2026-10-27",
+      "date_seen": "2026-10-27"
+    },
+    {
+      "key": "github.com/sansan0/trendradar",
+      "canonical_url": "https://github.com/sansan0/TrendRadar",
+      "event_date": "2026-10-27",
+      "date_seen": "2026-10-27"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/composiohq_awesome-claude-skills",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/composiohq_awesome-claude-skills/",
+      "event_date": "2026-10-27",
+      "date_seen": "2026-10-27"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/github_spec-kit",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/github_spec-kit/",
+      "event_date": "2026-10-27",
+      "date_seen": "2026-10-27"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/browser-use_browser-use",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/browser-use_browser-use/",
+      "event_date": "2026-10-27",
+      "date_seen": "2026-10-27"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/anthropics_skills",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/anthropics_skills/",
+      "event_date": "2026-10-27",
+      "date_seen": "2026-10-27"
     }
   ]
 }
