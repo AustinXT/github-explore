@@ -1,0 +1,6 @@
+{
+  "title": "GitHub推荐：Postiz：34 平台如何给 Agent 不可撤销的发布权",
+  "digest": "39K stars 的 Postiz 用 Temporal 工作流解决「发布不可撤销」：以心跳缺失区分「从未启动」与「结果未知」，后者绝不重试。它正从给人用的排期工具，重构为 Agent 的发布基础设施。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}

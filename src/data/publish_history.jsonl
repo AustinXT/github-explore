@@ -389,3 +389,4 @@
 {"recorded_at": "2026-10-25T05:55:34.957539+00:00", "slug": "aws_agent-toolkit-for-aws", "title": null, "state": "published", "published_at": "2026-10-25", "reason": "自动生成", "ci_run_id": "40165715242"}
 {"recorded_at": "2026-10-27T02:22:47.795613+00:00", "slug": "pollen-robotics_microduck", "title": null, "state": "published", "published_at": "2026-10-27", "reason": "自动生成", "ci_run_id": "40434133302"}
 {"recorded_at": "2026-10-27T07:39:41.831656+00:00", "slug": "makecindy_cindy", "title": null, "state": "published", "published_at": "2026-10-27", "reason": "自动生成", "ci_run_id": "40464541064"}
+{"recorded_at": "2026-10-28T03:40:48.002606+00:00", "slug": "gitroomhq_postiz-app", "title": null, "state": "published", "published_at": "2026-10-28", "reason": "自动生成", "ci_run_id": "40624234420"}
