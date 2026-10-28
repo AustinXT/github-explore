@@ -1,39 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-10-27",
+    "last_run": "2026-10-28",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/tensorflow/tensorflow",
-      "canonical_url": "https://github.com/tensorflow/tensorflow",
-      "event_date": "2026-09-27",
-      "date_seen": "2026-09-27"
-    },
-    {
-      "key": "github.com/mobile-next/mobile-mcp",
-      "canonical_url": "https://github.com/mobile-next/mobile-mcp",
-      "event_date": "2026-09-27",
-      "date_seen": "2026-09-27"
-    },
-    {
-      "key": "github.com/stablyai/orca",
-      "canonical_url": "https://github.com/stablyai/orca",
-      "event_date": "2026-09-27",
-      "date_seen": "2026-09-27"
-    },
-    {
-      "key": "github.com/hypit-ai/hypit",
-      "canonical_url": "https://github.com/hypit-ai/hypit",
-      "event_date": "2026-09-27",
-      "date_seen": "2026-09-27"
-    },
-    {
-      "key": "github.com/openai/tart",
-      "canonical_url": "https://github.com/openai/tart",
-      "event_date": "2026-09-27",
-      "date_seen": "2026-09-27"
-    },
     {
       "key": "github.com/mvschwarz/openrig",
       "canonical_url": "https://github.com/mvschwarz/openrig",
@@ -1089,6 +1059,144 @@
       "canonical_url": "https://nightvoyager.top/github-explore/reports/anthropics_skills/",
       "event_date": "2026-10-27",
       "date_seen": "2026-10-27"
+    },
+    {
+      "key": "github.com/hkuds/deeptutor",
+      "canonical_url": "https://github.com/HKUDS/DeepTutor",
+      "event_date": "2026-10-27",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "github.com/togg53192-cmd/jailbreaks",
+      "canonical_url": "https://github.com/togg53192-cmd/jailbreaks",
+      "event_date": "2026-10-27",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "github.com/brass-lang/brass",
+      "canonical_url": "https://github.com/brass-lang/brass",
+      "event_date": "2026-10-27",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "github.com/channelcooperstart/capri-ai",
+      "canonical_url": "https://github.com/ChannelCooperStart/capri-ai",
+      "event_date": "2026-10-27",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "github.com/ericcc0321/soulgent",
+      "canonical_url": "https://github.com/Ericcc0321/soulgent",
+      "event_date": "2026-10-27",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "github.com/onurozcan/omux",
+      "canonical_url": "https://github.com/onurozcan/omux",
+      "event_date": "2026-10-27",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "github.com/r44vc0rp/query",
+      "canonical_url": "https://github.com/R44VC0RP/query",
+      "event_date": "2026-10-27",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "github.com/anthropics/claude-plugins-official",
+      "canonical_url": "https://github.com/anthropics/claude-plugins-official",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/obra_superpowers",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/obra_superpowers/",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/mattpocock_skills",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/mattpocock_skills/",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/affaan-m_ecc",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/affaan-m_ecc/",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/anthropics_claude-code",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/anthropics_claude-code/",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/addyosmani_agent-skills",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/addyosmani_agent-skills/",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/msitarzewski_agency-agents",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/msitarzewski_agency-agents/",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/thedotmack_claude-mem",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/thedotmack_claude-mem/",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/shiyu-coder_kronos",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/shiyu-coder_kronos/",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/anthropics_claude-plugins-official",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/anthropics_claude-plugins-official/",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/nousresearch_hermes-agent",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/nousresearch_hermes-agent/",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/shubhamsaboo_awesome-llm-apps",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/shubhamsaboo_awesome-llm-apps/",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/hkuds_lightrag",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/hkuds_lightrag/",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/chromedevtools_chrome-devtools-mcp",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/chromedevtools_chrome-devtools-mcp/",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/sst_opencode",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/sst_opencode/",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-28"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/garrytan_gstack",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/garrytan_gstack/",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-28"
     }
   ]
 }
