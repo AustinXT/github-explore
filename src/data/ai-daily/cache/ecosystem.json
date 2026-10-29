@@ -1,15 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-10-28",
+    "last_run": "2026-10-29",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/mvschwarz/openrig",
-      "canonical_url": "https://github.com/mvschwarz/openrig",
-      "event_date": "2026-09-28",
-      "date_seen": "2026-09-28"
-    },
     {
       "key": "github.com/nvidia/openshell",
       "canonical_url": "https://github.com/NVIDIA/OpenShell",
@@ -1197,6 +1191,102 @@
       "canonical_url": "https://nightvoyager.top/github-explore/reports/garrytan_gstack/",
       "event_date": "2026-10-28",
       "date_seen": "2026-10-28"
+    },
+    {
+      "key": "github.com/elayadesign/ai-design-skills",
+      "canonical_url": "https://github.com/elayadesign/ai-design-skills",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-29"
+    },
+    {
+      "key": "github.com/macro-inc/macro",
+      "canonical_url": "https://github.com/macro-inc/macro",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-29"
+    },
+    {
+      "key": "github.com/expo/skills",
+      "canonical_url": "https://github.com/expo/skills",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-29"
+    },
+    {
+      "key": "github.com/ruvnet/ruview",
+      "canonical_url": "https://github.com/ruvnet/RuView",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-29"
+    },
+    {
+      "key": "github.com/hmjz100/linkswift",
+      "canonical_url": "https://github.com/hmjz100/LinkSwift",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-29"
+    },
+    {
+      "key": "github.com/xiaolai/the-craft-of-selfteaching",
+      "canonical_url": "https://github.com/xiaolai/the-craft-of-selfteaching",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-29"
+    },
+    {
+      "key": "github.com/githubnext/chopin",
+      "canonical_url": "https://github.com/githubnext/chopin",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-29"
+    },
+    {
+      "key": "github.com/githubnext/ace",
+      "canonical_url": "https://github.com/githubnext/ace",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-29"
+    },
+    {
+      "key": "hf:liquidai/lfm3-1.7b",
+      "canonical_url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+      "event_date": "2026-10-23",
+      "date_seen": "2026-10-29"
+    },
+    {
+      "key": "hf:inclusionai/ling-3.1-flash-1019",
+      "canonical_url": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019",
+      "event_date": "2026-10-27",
+      "date_seen": "2026-10-29"
+    },
+    {
+      "key": "github.com/openbmb/minicpm-ocr",
+      "canonical_url": "https://github.com/OpenBMB/MiniCPM-OCR",
+      "event_date": "2026-10-27",
+      "date_seen": "2026-10-29"
+    },
+    {
+      "key": "github.com/minimax-ai/mcode-stack",
+      "canonical_url": "https://github.com/MiniMax-AI/mcode-stack",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-10-29"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/hugohe3_ppt-master",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/hugohe3_ppt-master/",
+      "event_date": "2026-10-29",
+      "date_seen": "2026-10-29"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/lobehub_lobehub",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/lobehub_lobehub/",
+      "event_date": "2026-10-29",
+      "date_seen": "2026-10-29"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/warpdotdev_warp",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/warpdotdev_warp/",
+      "event_date": "2026-10-29",
+      "date_seen": "2026-10-29"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/santifer_career-ops",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/santifer_career-ops/",
+      "event_date": "2026-10-29",
+      "date_seen": "2026-10-29"
     }
   ]
 }
