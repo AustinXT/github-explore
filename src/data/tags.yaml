@@ -1840,6 +1840,11 @@ entries:
   - protocol-spec
   nicbarker_clay:
   - uncategorized
+  nightly-labs_openbot:
+  - ai-agent
+  - devtools
+  - database
+  - protocol-spec
   nilsherzig_llocalsearch:
   - ai-agent
   - llm-framework
