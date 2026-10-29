@@ -3,11 +3,11 @@
     "name": "obra/superpowers",
     "url": "https://github.com/obra/superpowers",
     "language": "Shell",
-    "stars": 306152,
-    "forks": 27258,
+    "stars": 307209,
+    "forks": 27335,
     "description": "An agentic skills framework & software development methodology that works.",
-    "last_seen": "2026-10-27",
-    "trending_days": 95
+    "last_seen": "2026-10-28",
+    "trending_days": 96
   },
   {
     "name": "mattpocock/skills",
@@ -150,6 +150,16 @@
     "trending_days": 25
   },
   {
+    "name": "ruvnet/RuView",
+    "url": "https://github.com/ruvnet/ruview",
+    "language": "Rust",
+    "stars": 100771,
+    "forks": 13141,
+    "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+    "last_seen": "2026-10-28",
+    "trending_days": 25
+  },
+  {
     "name": "shiyu-coder/Kronos",
     "url": "https://github.com/shiyu-coder/kronos",
     "language": "Python",
@@ -187,16 +197,6 @@
     "forks": 10504,
     "description": "Learn it. Build it. Ship it for others.",
     "last_seen": "2026-09-29",
-    "trending_days": 24
-  },
-  {
-    "name": "ruvnet/RuView",
-    "url": "https://github.com/ruvnet/ruview",
-    "language": "Rust",
-    "stars": 93726,
-    "forks": 12423,
-    "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
-    "last_seen": "2026-09-14",
     "trending_days": 24
   },
   {
@@ -430,6 +430,16 @@
     "trending_days": 18
   },
   {
+    "name": "pbakaus/impeccable",
+    "url": "https://github.com/pbakaus/impeccable",
+    "language": "Rust",
+    "stars": 92101,
+    "forks": 5445,
+    "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+    "last_seen": "2026-10-28",
+    "trending_days": 18
+  },
+  {
     "name": "public-apis/public-apis",
     "url": "https://github.com/public-apis/public-apis",
     "language": "Python",
@@ -447,16 +457,6 @@
     "forks": 11286,
     "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
     "last_seen": "2026-09-07",
-    "trending_days": 17
-  },
-  {
-    "name": "pbakaus/impeccable",
-    "url": "https://github.com/pbakaus/impeccable",
-    "language": "Rust",
-    "stars": 90170,
-    "forks": 5358,
-    "description": "The design language that makes your AI harness better at design.",
-    "last_seen": "2026-10-27",
     "trending_days": 17
   },
   {
@@ -990,6 +990,16 @@
     "trending_days": 11
   },
   {
+    "name": "Nutlope/hallmark",
+    "url": "https://github.com/nutlope/hallmark",
+    "language": "CSS",
+    "stars": 40345,
+    "forks": 2097,
+    "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+    "last_seen": "2026-10-28",
+    "trending_days": 11
+  },
+  {
     "name": "pascalorg/editor",
     "url": "https://github.com/pascalorg/editor",
     "language": "TypeScript",
@@ -1090,6 +1100,16 @@
     "trending_days": 10
   },
   {
+    "name": "HKUDS/DeepTutor",
+    "url": "https://github.com/hkuds/deeptutor",
+    "language": "Python",
+    "stars": 47645,
+    "forks": 5922,
+    "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+    "last_seen": "2026-10-28",
+    "trending_days": 10
+  },
+  {
     "name": "HKUDS/Vibe-Trading",
     "url": "https://github.com/hkuds/vibe-trading",
     "language": "Python",
@@ -1147,16 +1167,6 @@
     "forks": 867,
     "description": "Memory for 24/7 proactive agents like openclaw (moltbot, clawdbot).",
     "last_seen": "2026-03-01",
-    "trending_days": 10
-  },
-  {
-    "name": "Nutlope/hallmark",
-    "url": "https://github.com/nutlope/hallmark",
-    "language": "CSS",
-    "stars": 38404,
-    "forks": 2004,
-    "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-    "last_seen": "2026-10-27",
     "trending_days": 10
   },
   {
@@ -1317,16 +1327,6 @@
     "forks": 13103,
     "description": "real time face swap and one-click video deepfake with only a single image",
     "last_seen": "2026-04-13",
-    "trending_days": 9
-  },
-  {
-    "name": "HKUDS/DeepTutor",
-    "url": "https://github.com/hkuds/deeptutor",
-    "language": "Python",
-    "stars": 45411,
-    "forks": 5712,
-    "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
-    "last_seen": "2026-10-27",
     "trending_days": 9
   },
   {
@@ -3150,6 +3150,16 @@
     "trending_days": 5
   },
   {
+    "name": "makecindy/cindy",
+    "url": "https://github.com/makecindy/cindy",
+    "language": "TypeScript",
+    "stars": 7926,
+    "forks": 928,
+    "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+    "last_seen": "2026-10-28",
+    "trending_days": 5
+  },
+  {
     "name": "marin-community/marin",
     "url": "https://github.com/marin-community/marin",
     "language": "Python",
@@ -4010,6 +4020,16 @@
     "trending_days": 4
   },
   {
+    "name": "hmjz100/LinkSwift",
+    "url": "https://github.com/hmjz100/linkswift",
+    "language": "JavaScript",
+    "stars": 34090,
+    "forks": 2402,
+    "description": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘",
+    "last_seen": "2026-10-28",
+    "trending_days": 4
+  },
+  {
     "name": "home-assistant/core",
     "url": "https://github.com/home-assistant/core",
     "language": "Python",
@@ -4107,6 +4127,16 @@
     "forks": 9714,
     "description": "Jenkins automation server",
     "last_seen": "2026-07-30",
+    "trending_days": 4
+  },
+  {
+    "name": "JetBrains/thinkrail",
+    "url": "https://github.com/jetbrains/thinkrail",
+    "language": "TypeScript",
+    "stars": 4779,
+    "forks": 248,
+    "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+    "last_seen": "2026-10-28",
     "trending_days": 4
   },
   {
@@ -4210,6 +4240,16 @@
     "trending_days": 4
   },
   {
+    "name": "macro-inc/macro",
+    "url": "https://github.com/macro-inc/macro",
+    "language": "Rust",
+    "stars": 5292,
+    "forks": 513,
+    "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+    "last_seen": "2026-10-28",
+    "trending_days": 4
+  },
+  {
     "name": "magnitudedev/magnitude",
     "url": "https://github.com/magnitudedev/magnitude",
     "language": "TypeScript",
@@ -4217,16 +4257,6 @@
     "forks": 251,
     "description": "Open source inference server that runs the best local models for your hardware, plugged into the agent you already use. Works with Pi, OpenCode, Hermes, OpenClaw, Codex, Claude Code, Oh My Pi, and Cline.",
     "last_seen": "2026-09-06",
-    "trending_days": 4
-  },
-  {
-    "name": "makecindy/cindy",
-    "url": "https://github.com/makecindy/cindy",
-    "language": "TypeScript",
-    "stars": 7285,
-    "forks": 868,
-    "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
-    "last_seen": "2026-10-27",
     "trending_days": 4
   },
   {
@@ -5440,16 +5470,6 @@
     "trending_days": 3
   },
   {
-    "name": "hmjz100/LinkSwift",
-    "url": "https://github.com/hmjz100/linkswift",
-    "language": "JavaScript",
-    "stars": 23430,
-    "forks": 1423,
-    "description": "一个基于 JavaScript 的网盘文件下载地址获取工具。基于【网盘直链下载助手】修改 ，支持 百度网盘 / 阿里云盘 / 中国移动云盘 / 天翼云盘 / 迅雷云盘 / 夸克网盘 / UC网盘 / 123云盘 八大网盘",
-    "last_seen": "2026-10-16",
-    "trending_days": 3
-  },
-  {
     "name": "hoppscotch/hoppscotch",
     "url": "https://github.com/hoppscotch/hoppscotch",
     "language": "TypeScript",
@@ -5537,16 +5557,6 @@
     "forks": 81,
     "description": "Help AI coding agents write modern Go",
     "last_seen": "2026-08-29",
-    "trending_days": 3
-  },
-  {
-    "name": "JetBrains/thinkrail",
-    "url": "https://github.com/jetbrains/thinkrail",
-    "language": "TypeScript",
-    "stars": 3729,
-    "forks": 196,
-    "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
-    "last_seen": "2026-10-27",
     "trending_days": 3
   },
   {
@@ -5687,16 +5697,6 @@
     "forks": 732,
     "description": "None",
     "last_seen": "2026-04-30",
-    "trending_days": 3
-  },
-  {
-    "name": "macro-inc/macro",
-    "url": "https://github.com/macro-inc/macro",
-    "language": "Rust",
-    "stars": 2821,
-    "forks": 290,
-    "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
-    "last_seen": "2026-08-14",
     "trending_days": 3
   },
   {
@@ -5847,6 +5847,16 @@
     "forks": 3061,
     "description": "The Modular Platform (includes MAX & Mojo)",
     "last_seen": "2026-08-22",
+    "trending_days": 3
+  },
+  {
+    "name": "nightly-labs/openbot",
+    "url": "https://github.com/nightly-labs/openbot",
+    "language": "TypeScript",
+    "stars": 3057,
+    "forks": 301,
+    "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
+    "last_seen": "2026-10-28",
     "trending_days": 3
   },
   {
@@ -8370,16 +8380,6 @@
     "trending_days": 2
   },
   {
-    "name": "nightly-labs/openbot",
-    "url": "https://github.com/nightly-labs/openbot",
-    "language": "TypeScript",
-    "stars": 2123,
-    "forks": 226,
-    "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
-    "last_seen": "2026-10-27",
-    "trending_days": 2
-  },
-  {
     "name": "nodejs/node",
     "url": "https://github.com/nodejs/node",
     "language": "JavaScript",
@@ -9167,6 +9167,16 @@
     "forks": 1156,
     "description": "mini cli search engine for your docs, knowledge bases, meeting notes, whatever. Tracking current sota approaches while being all local",
     "last_seen": "2026-04-07",
+    "trending_days": 2
+  },
+  {
+    "name": "togg53192-cmd/jailbreaks",
+    "url": "https://github.com/togg53192-cmd/jailbreaks",
+    "language": "Unknown",
+    "stars": 6742,
+    "forks": 979,
+    "description": "LIST OF ALL MY JAILBREAKS",
+    "last_seen": "2026-10-28",
     "trending_days": 2
   },
   {
@@ -10520,6 +10530,16 @@
     "trending_days": 1
   },
   {
+    "name": "elayadesign/ai-design-skills",
+    "url": "https://github.com/elayadesign/ai-design-skills",
+    "language": "Unknown",
+    "stars": 10865,
+    "forks": 774,
+    "description": "None",
+    "last_seen": "2026-10-28",
+    "trending_days": 1
+  },
+  {
     "name": "elder-plinius/G0DM0D3",
     "url": "https://github.com/elder-plinius/g0dm0d3",
     "language": "TypeScript",
@@ -10627,6 +10647,16 @@
     "forks": 4496,
     "description": "Evolution API is an open-source WhatsApp integration API",
     "last_seen": "2025-10-15",
+    "trending_days": 1
+  },
+  {
+    "name": "expo/skills",
+    "url": "https://github.com/expo/skills",
+    "language": "Shell",
+    "stars": 3451,
+    "forks": 219,
+    "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services",
+    "last_seen": "2026-10-28",
     "trending_days": 1
   },
   {
@@ -13320,16 +13350,6 @@
     "trending_days": 1
   },
   {
-    "name": "togg53192-cmd/jailbreaks",
-    "url": "https://github.com/togg53192-cmd/jailbreaks",
-    "language": "Unknown",
-    "stars": 5145,
-    "forks": 798,
-    "description": "LIST OF ALL MY JAILBREAKS",
-    "last_seen": "2026-10-27",
-    "trending_days": 1
-  },
-  {
     "name": "tokio-rs/tokio",
     "url": "https://github.com/tokio-rs/tokio",
     "language": "Rust",
@@ -13617,6 +13637,16 @@
     "forks": 353,
     "description": "Claude Code toolkit - agents, commands, skills, rules, and hooks for productive AI-assisted development",
     "last_seen": "2026-09-05",
+    "trending_days": 1
+  },
+  {
+    "name": "xiaolai/the-craft-of-selfteaching",
+    "url": "https://github.com/xiaolai/the-craft-of-selfteaching",
+    "language": "JupyterNotebook",
+    "stars": 18404,
+    "forks": 17879,
+    "description": "One has no future if one couldn't teach themself.",
+    "last_seen": "2026-10-28",
     "trending_days": 1
   },
   {

@@ -1027,6 +1027,9 @@ entries:
   - model-foundation
   - devtools
   - protocol-spec
+  gitroomhq_postiz-app:
+  - ai-agent
+  - devtools
   goauthentik_authentik:
   - web-framework
   - security
@@ -1342,6 +1345,9 @@ entries:
   - ai-coding
   - devtools
   - data-pipeline
+  jetbrains_thinkrail:
+  - ai-agent
+  - ai-coding
   jiayi-pan_tinyzero:
   - model-foundation
   jihe520_mathmodelagent:
