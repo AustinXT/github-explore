@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* ====== 微信公众号排版 CSS ====== */
+
+body {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #3e3e3e;
+    background: #fff;
+}
+
+/* 正文段落 */
+p {
+    font-size: 15px !important;
+    line-height: 2 !important;
+    margin: 0 !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+    padding-right: 1.2em !important;
+    padding-left: 1.2em !important;
+    text-align: justify !important;
+}
+p + p {
+    margin-top: 0 !important;
+}
+
+/* 标题 */
+h1 {
+    font-size: 20px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 16px 0 !important;
+    padding: 0 !important;
+}
+h2 {
+    font-size: 18px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 24px 0 !important;
+    padding: 0 !important;
+}
+h3 {
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+    text-align: left !important;
+    margin: 16px 0 16px 0 !important;
+    padding: 0 0 0 1.2em !important;
+}
+h4 {
+    font-size: 15px !important;
+    color: rgb(0, 122, 170) !important;
+    margin: 12px 0 8px 0 !important;
+    padding: 0 !important;
+}
+
+/* 列表 */
+ul,
+ol {
+    padding-left: 2em !important;
+    margin: 1em 0 !important;
+    font-size: 15px !important;
+}
+li {
+    margin: 0.5em 0 !important;
+    line-height: 1.8em !important;
+    font-size: 15px !important;
+    color: #3e3e3e !important;
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    margin: 0 !important;
+    padding-left: 1.2em !important;
+}
+
+/* 引用 */
+blockquote {
+    border-left: 4px solid #888 !important;
+    padding: 8px 16px !important;
+    margin: 1em 0 !important;
+    color: #666 !important;
+    background: #f9f9f9 !important;
+}
+blockquote > p {
+    margin: 0.5em 0 !important;
+    padding: 0 !important;
+}
+blockquote::before,
+blockquote::after {
+    content: none !important;
+}
+
+/* 代码块 */
+pre {
+    font-size: 14px !important;
+    line-height: 1.4em !important;
+    color: #3e3e3e !important;
+    background: #f8f8f8 !important;
+    padding: 12px 16px !important;
+    border-radius: 4px !important;
+    overflow: auto !important;
+    margin: 1em 0 !important;
+}
+
+/* 脚注 */
+.footnotes {
+    font-size: 11px !important;
+    color: #666 !important;
+    line-height: 1.2 !important;
+    margin: 8px 0 0 0 !important;
+    padding: 4px 0 0 0 !important;
+    border-top: 1px solid #eee !important;
+}
+.footnotes p {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #666 !important;
+}
+
+/* 上标 */
+sup {
+    font-size: 0.75em !important;
+    vertical-align: super !important;
+    color: #e51f42 !important;
+    margin: 0 2px !important;
+}
+
+/* 表格 */
+table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 1em 0 !important;
+    font-size: 14px !important;
+    color: #3e3e3e !important;
+}
+th, td {
+    border: 1px solid #ddd !important;
+    padding: 8px 12px !important;
+    text-align: left !important;
+    line-height: 1.6 !important;
+}
+th {
+    background: #f5f5f5 !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+}
+td {
+    color: #3e3e3e !important;
+}
+
+/* 图片 */
+img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 1em auto !important;
+    border-radius: 4px !important;
+}
+
+/* 链接 */
+a {
+    color: rgb(0, 122, 170) !important;
+    text-decoration: none !important;
+}
+
+/* 行内代码 */
+code {
+    font-family: Menlo, Consolas, monospace !important;
+    background: #f4f4f4 !important;
+    padding: 0 4px !important;
+    border-radius: 3px !important;
+    font-size: 13px !important;
+    color: #c7254e !important;
+}
+
+/* 强调 */
+strong {
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+}
+em {
+    font-style: normal !important;
+    color: #888 !important;
+    font-size: 13px !important;
+}
+
+/* 分割线 */
+hr {
+    border: none !important;
+    border-top: 1px solid #eee !important;
+    margin: 2em 0 !important;
+}
+</style>
+</head>
+<body>
+<blockquote>
+<p>GitHub: <a href="https://github.com/nightly-labs/openbot">https://github.com/nightly-labs/openbot</a></p>
+</blockquote>
+<h2>一句话总结</h2>
+<p>一个前 Solana DeFi CEO 做的 Electron 桌面工作台，把你<strong>已经在付费订阅</strong>的 Codex、Claude、Grok 等 13 个 CLI agent 收编成一支有角色、能互相委派、共享文件的「AI 团队」，全程 local-first；代价是它用的是 PolyForm 非商用协议（不是开源），而且 macOS 之外根本没有进程隔离。</p>
+<h2>值得关注的理由</h2>
+<ol>
+<li><strong>13 个 provider 靠一张「能力声明表」统一，核心代码零分支</strong>。<code>packages/contracts/src/agent-providers.ts</code> 里每个 provider 一行，声明 13 项能力（<code>steer</code> 是 native 还是 deferred、支不支持并发、怎么隔离工作区、用量怎么上报、skill 目录在哪）。表格用 <code>as const satisfies Record&lt;AgentProviderId, AgentProviderDescriptor&gt;</code> 收口——<strong>新增一个 provider 忘了填行，TypeScript 直接报 TS2741 并点名那个 id</strong>，不用跑测试就能发现。渲染层在问 main 之前就知道该 provider 支不支持某个按钮。这是目前开源 agent 编排工具里最扎实的 provider 抽象层。</li>
+<li><strong>把 SQLite 用成了一条可重放的事件账本</strong>。<code>src/backend/database/database-core.ts</code> 的 <code>dispatch(commandId, events, project)</code> 在<strong>单个 SQLite 事务</strong>里完成「追加事件 → 执行读投影 → 写命令回执 → 提交」，回执让 <code>commandId</code> <strong>幂等</strong>；<code>src/backend/database/thread-replay.ts</code> 能从事件流按 sequence 重放，重建全部投影状态。投影是<strong>同步</strong>的（同一个事务内直接写 <code>projection_*</code> 表），不是异步追平。这不是「用了 SQLite」，是拿 SQLite 承载了一条有回执、可审计、可崩溃恢复的账本。</li>
+<li><strong>29.5 commits/天、0.69 天一个版本、105 个 Release</strong>。2.5 个月 2304 次提交，10 月单月 1306 次（比 8 月高 5.8 倍且仍在加速），版本号从 0.1.0 走到 0.53.2 只用了 76 天，平均每个 release 间隔不到一天。对比一下：普通活跃开源项目是 1–3 commits/天、1–4 周一个版本。</li>
+<li><strong>一批可以直接抄走的工程纪律工具</strong>。<code>scripts/debt-ratchet.ts</code> + <code>type-ratchet.ts</code> 用「per-file per-check 的 baseline，只允许降低不允许升高」把技术债变成 CI 可判定的单调递减量（实测 <code>src/</code> + <code>packages/</code> 非测试代码 <code>@ts-ignore</code> / <code>@ts-expect-error</code> = <strong>0</strong>，<code>any</code> = 34 处）；<code>changelog.d/</code> 增量 changelog 目录让两个 PR 永远不会改同一行 CHANGELOG；<code>scripts/verify-preload-bundle.ts</code> 验证的是<strong>打出来的 preload bundle</strong> 而不是源码。</li>
+<li><strong>它敢把安全问题写在 README 顶部</strong>。README 第 13–18 行直接写「Agents currently run with <code>danger-full-access</code> and <code>approvalPolicy: never</code>」，<code>SECURITY.md</code> 补一句「Full local access is an explicit current product decision, not a security boundary」。在 2026 年的 agent 工具里，这种诚实是稀缺的——而且它的隔离代码在 Linux/Windows 上是<strong>拒绝启动进程</strong>而不是静默降级。</li>
+</ol>
+<h2>项目展示</h2>
+<p><img alt="共享频道中的多 agent 协作：Chief / Research / Builder / Launch 四个角色互派任务并共享文件产物" src="https://openbot.run/assets/a-channel-Cfnf--ZC.webp"/></p>
+<p><em>这是这个项目最关键的一张图：不是「一个聊天框里多个模型」，而是有角色、有频道、有派工的团队。左侧 Chief 派活，Builder 产出的文件直接挂在频道里</em></p>
+<p><img alt="Agent 线程内的任务看板：Workstream / Owner / Status 三列派工表 + 文件产物 + Shell 命令" src="https://openbot.run/assets/a-thread-C4YG4M8v.webp"/></p>
+<p><em>「角色 → 任务 → 产物」的数据模型：每个任务有唯一 owner，产物和 Shell 执行记录都在同一视图里</em></p>
+<p><img alt="Routines 定时调度与 run history（工作日 9:00 AM）" src="https://openbot.run/assets/a-routine-CV81WGxY.webp"/></p>
+<p><em>Routines 是它区别于所有 CLI agent 的核心能力——agent 常驻、按表干活，而不是你坐在终端前一轮一轮喂</em></p>
+<p><img alt="Provider / Model 选择器：ChatGPT(Codex CLI)、OpenAI、Gemini 等多 provider 入口" src="https://openbot.run/assets/pick-a-model-BWAQz_tq.webp"/></p>
+<p><em>provider-neutral 抽象的视觉证据：换模型是下拉框里的一行，而不是重开一个工具</em></p>
+<p><img alt="OpenBot 品牌卡 Meet OpenBot" src="https://openbot.run/openbot-social.png"/></p>
+<p><em>官方品牌卡（1600×900）</em></p>
+<blockquote>
+<p>说明：README 里一张产品图都没有（只有 2 个 badge），上图全部来自官网 <code>openbot.run</code> 的 <code>apps/auth-api</code> 指南资源目录，链接均已实测可访问。</p>
+</blockquote>
+<h2>项目画像</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub</td>
+<td><a href="https://github.com/nightly-labs/openbot">https://github.com/nightly-labs/openbot</a></td>
+</tr>
+<tr>
+<td>Star / Fork / Watcher</td>
+<td>3,285 / 316 / 10 subscribers</td>
+</tr>
+<tr>
+<td>Open Issue / Open PR</td>
+<td>265 / 47（已合并 PR 500+，37 位贡献者）</td>
+</tr>
+<tr>
+<td>代码行数</td>
+<td>916,278 行（TypeScript 68.1%、TSX 24.0%、CSS 5.7%）；<strong>扣除 i18n 翻译资源后 ≈ 75.7 万行真实业务代码</strong></td>
+</tr>
+<tr>
+<td>注释比</td>
+<td>11.2%（代码：注释 = 8.9:1）</td>
+</tr>
+<tr>
+<td>文件 / 依赖</td>
+<td>5,970 个文件 / 66 个运行时+开发依赖（runtime 40 + dev 26）</td>
+</tr>
+<tr>
+<td>许可证</td>
+<td><strong>PolyForm Noncommercial 1.0.0</strong>（source-available，非 OSI 开源；≤0.1.11 曾为 Apache-2.0）</td>
+</tr>
+<tr>
+<td>项目年龄</td>
+<td><strong>2.5 个月</strong>（2026-08-12 首次提交，2026-10-28 最后推送）</td>
+</tr>
+<tr>
+<td>总提交 / 贡献者</td>
+<td>2,304 commits（<strong>29.5/天</strong>）/ 44 人（主作者 58.9%，含 <code>github-actions[bot]</code> 55 次）</td>
+</tr>
+<tr>
+<td>开发阶段</td>
+<td>密集开发（近 30 天 1,450 commits，10 月单月 1,306 且仍在加速）</td>
+</tr>
+<tr>
+<td>开发模式</td>
+<td>职业项目（周末占比 19.4%、深夜占比 8.5%）</td>
+</tr>
+<tr>
+<td>版本发布</td>
+<td>v0.53.2 / 122 tag / 105 Release，<strong>平均 0.69 天一个版本</strong></td>
+</tr>
+<tr>
+<td>热度定位</td>
+<td>中等热度 + 爆发上升通道（3 天从 1,279 → 3,285，日榜最高第 2）</td>
+</tr>
+<tr>
+<td>质量评级</td>
+<td>代码[优秀] 文档[优秀] 测试[充分]</td>
+</tr>
+</tbody>
+</table>
+<p><strong>技术栈与形态</strong>：Bun workspaces monorepo（7 个顶层工作区）+ Electron + SolidJS + Effect + SQLite（本地状态）/ Cloudflare Workers + D1 + R2（账号与元数据）/ WebRTC v3 + 自建 Signal 服务（远程接入）/ Expo React Native（移动端）/ Docker + seccomp + Nix flake（分发）。<strong>桌面端、移动端、自托管服务端、Discord/Telegram/Slack bot、官网五端同仓</strong>，这是它发布节奏能这么快的结构性原因——一次改动同时影响五个产品面。</p>
+<h2>作者视角：为什么存在这个项目</h2>
+<h3>创始人/作者背景</h3>
+<p><code>nightly-labs</code> 是个组织账号，法人主体是波兰有限责任公司 <strong>Synthetify Labs sp. z o.o.</strong>（署名在 <code>NOTICE</code>、<code>LICENSE</code> 和 Windows 发行签名里）。创始人 <strong>Norbert Bodziony</strong> 此前是 Solana 生态 DeFi 合成资产协议 <strong>Synthetify</strong> 的 CEO，2022 年做过加密钱包 <strong>Nightly</strong>——「Nightly Labs」这个名字是延续下来的。2026 年他带团队转入 AI agent 工具赛道。</p>
+<p><strong>这个背景不是装饰</strong>，它直接解释了项目的三条路线选择：</p>
+<ul>
+<li><strong>为什么是 local-first + 自托管</strong>：钱包生意的本质是「用户资产与密钥必须在我能控制的设备上，多设备可达但不外包托管」。这条基因原封不动地迁移成了「编排状态、文件、浏览器数据都在你自己机器上，手机随时接入但不用把工作区交出去」。</li>
+<li><strong>为什么是 PolyForm 非商用 + CLA 收版权</strong>：crypto 项目的 source-available 商业化是作者熟悉的打法。<code>AGENTS.md</code> 把「Keep PolyForm Noncommercial 1.0.0」列为不可谈判项，商业授权走 <code>licenses@openbot.run</code>。</li>
+<li><strong>为什么是「一个任务一个 owner + 显式委派」</strong>：这是链上账本式的资源独占模型——一个任务一个 owner，转移用显式 handoff，冲突在状态机层被拒绝，而不是靠 prompt 里写「请不要同时做这件事」。</li>
+</ul>
+<h3>问题判断</h3>
+<p>作者看到的是一个<strong>已经存在但被浪费的资产</strong>：到 2026 年，ChatGPT/Codex、Claude Code、Grok、Cursor、Cline、Muse Code 的消费级订阅已经普及，但这些 CLI agent 各自跑在不同终端、互不通信、上下文随会话消失、退出即失忆。用户为一堆能力重复付费，却拿不到任何协作能力。</p>
+<p>于是他的定位切口非常锋利：<strong>provider 已经是商品，OpenBot 不训模型、不做模型路由网关，只做「agent 编排层 + 状态宿主」</strong>。这是唯一能让「已付费的订阅」不被浪费的产品形态。</p>
+<p>时机也踩得很准——2026 年正好是「CLI agent 能力成熟 + 商业订阅普及 + ACP（Agent Client Protocol）成为行业标准」三者的交点。<code>agent-providers.ts</code> 里 13 个 provider 的排列本身就是一条时间线：从 codex/claude/grok（自研协议适配）到 opencode/antigravity/cursor/cline（走 ACP），再到 pi/muse/inception/deepseek/openrouter（<strong>共用同一个 <code>cliName: "Pi CLI"</code></strong>——不重新造 CLI，而是复用已有 CLI 的多 provider 支持，这个省力设计很典型）。</p>
+<h3>解法哲学</h3>
+<p><strong>① 核心封闭、外围开放。</strong> 编排模型、数据库、IPC 契约严格内部化；对外只留 ACP 一个标准口子给任意第三方 agent，另有 MCP（agent 自带工具）、Skills、Plugins、Marketplace 四层扩展。</p>
+<p><strong>② 功能完整，但用「能力声明」把复杂度外推给 provider。</strong> 作者没有选择让每个 provider 走同一条代码路径，而是让每个 provider 明确声明自己会什么，编排层按声明调度。这是整个项目最核心的哲学——<strong>复杂性不消灭，被表格化</strong>。</p>
+<p><strong>③ 易用性优先，但用「诚实降级」代替静默失败。</strong> Linux/Windows 上 Workspace-only 隔离<strong>直接不启动进程</strong>，报错要求用户显式选 Full access，而不是降级成无约束执行还装作有隔离。</p>
+<p><strong>④ 拒绝「假装安全」。</strong> README 顶部 WARNING 明写 <code>danger-full-access</code> + <code>approvalPolicy: never</code>，<code>SECURITY.md</code> 写明「Full local access is an explicit current product decision, not a security boundary」。<strong>这既是诚实的，也是自我限定的</strong>：它把「这不是安全边界」写进合同，而不是留给用户去发现。</p>
+<h3>战略意图</h3>
+<p>这是一个<strong>核心产品</strong>，而且<strong>明确有商业化意图</strong>，走的是 open-core 而非 genuinely open：</p>
+<ul>
+<li>代码在 GitHub 公开可读，但 LICENSE 是 PolyForm 非商用，<strong>商业使用需单独授权</strong>；CLA 要求所有外部贡献者把版权转让给 Synthetify Labs。</li>
+<li>商业化路径清晰可见：<code>apps/auth-api</code> 跑在 Cloudflare Workers + D1 + R2，含 <strong>Stripe</strong>（<code>stripe:bootstrap</code> 脚本）、hosted servers 目录、hosted sites、billing、host key handover、cloud authorization、multi-tenant hosting；另有 macOS <strong>Host Manager</strong>（多租户 Mac mini 客户机）。</li>
+<li>云侧只放<strong>账号与元数据</strong>。<code>AGENTS.md</code> 原话：「Cloudflare holds accounts, avatars, host configuration, memberships, invitations, and logical sessions; it does not hold chats, files, or commands.」<strong>云是控制面，不是数据面</strong>——这是刻意的信任边界设计，也是它能同时卖「本地优先」和「托管多租户」的原因。</li>
+<li>平台层的野心在 Marketplace（<code>marketplace/plugin-catalog</code>、<code>production-catalog</code>）、Skills、Plugins、Team API v4+。</li>
+</ul>
+<h2>核心价值提炼</h2>
+<h3>创新之处</h3>
+<ol>
+<li><strong>Provider 能力声明表 + 编译期全覆盖检查</strong> — 新颖度 4/5 | 实用性 5/5 | 可迁移性 5/5 <code>packages/contracts/src/agent-providers.ts</code>（708 行）用 <code>as const satisfies Record&lt;AgentProviderId, AgentProviderDescriptor&gt;</code> 定义 13 个 provider × 13 项能力。缺行 → TS2741 点名。新增 provider 的成本被压缩到「一行表 + 一个 driver」（<code>src/backend/provider-drivers.ts</code>）。<strong>适用场景</strong>：任何后端数量会持续增长、而前端需要按能力差异化渲染的系统。</li>
+<li><strong>命令回执式幂等 dispatch（event log + projection + receipt 同事务）</strong> — 新颖度 4/5 | 实用性 5/5 | 可迁移性 5/5 <code>database-core.ts</code> 的 <code>dispatch&lt;T&gt;(commandId, events, project)</code> 在 <code>BEGIN IMMEDIATE</code> 事务内追加 <code>orchestration_events</code> → 执行投影 → 写 <code>orchestration_command_receipts</code>（含 <code>result_json</code>）→ <code>COMMIT</code>。重复 <code>commandId</code> 直接返回缓存结果。<code>thread-replay.ts</code> 的 <code>rebuildThreadProjection(threadId)</code> 从事件流重放重建 messages / turns / provider-session 链接 / summaries / attachments 投影。<strong>适用场景</strong>：需要崩溃恢复 + 幂等重试 + 可审计历史的本地状态存储。</li>
+<li><strong>ACP Flavor Hook：「协议原生 + 观测到的 quirk」</strong> — 新颖度 4/5 | 实用性 4/5 | 可迁移性 5/5 <code>src/backend/acp-flavor.ts</code> 的 <code>AcpFlavor</code> 接口<strong>全是可选 hook，缺省即协议原生行为</strong>（<code>DEFAULT_ACP_FLAVOR = {}</code>，注释写明这就是 Grok 和 Cline 的行为）。已有 hook 如 <code>CURSOR_ACP_FLAVOR.noiseChunk</code> 精确匹配 Cursor 2026.10.22-27dcf5f 的一个 chunk，<code>sessionNotFound</code> 只在 <code>-32602</code> 且 <code>data.message</code> 匹配时才返回 true。注释要求「每个 hook 注明观察到的具体 agent 版本」。<strong>核心代码零 provider 分支，quirk 全部可追溯。</strong></li>
+<li><strong>构建产物级的 preload 验证</strong> — 新颖度 4/5 | 实用性 4/5 | 可迁移性 4/5 <code>scripts/verify-preload-bundle.ts</code>（8.8KB）在 <code>bun run build</code> <strong>之后</strong>把真正打出来的 preload bundle 放进 VM、配一个假 Electron，断言：只暴露 <code>openbot</code> 这一个 world；每个方法都被 <code>IPC_ENDPOINTS</code> 命名；每个方法发到正确 channel；request 必须 <code>invoke</code>、event 必须 <code>on</code>/<code>once</code>；bundle 不得加载 sandboxed preload 加载不了的模块、不得含 <code>import()</code>。<strong>大部分同类项目只测源码不测产物。</strong></li>
+<li><strong>多级任务所有权状态机（owner 与 assignment 分离）</strong> — 新颖度 4/5 | 实用性 4/5 | 可迁移性 4/5 <code>src/backend/channel-service.ts</code>（2811 行）里每个 <code>ChannelTask</code> 有 <code>ownerAgentId</code>，<strong>一个 task 同时只有一个 owner</strong>。转交（<code>reassign</code>）会替换 owner 记录，但<strong>旧 owner 的 assignment 仍在跑</strong>——代码注释说得很清楚：「the identity of the owner alone does not show that the task is free: the assignment of the previous owner does」。占用判定看 assignment，不看 owner 字段。</li>
+<li><strong>能力字符串协商的协议版本系统</strong> — 新颖度 3/5 | 实用性 4/5 | 可迁移性 4/5 <code>packages/contracts/src/team-protocol/</code> 下有 v1..v8 共 8 个版本，每版四个文件（冻结的 wire / base / adapter / webrtc-adapter），外加约 130 个能力模块。兼容不靠「版本号 + if/else」，而是<strong>协商出 capability 字符串集合</strong>，host 只在协商到时才发新字段（如 <code>history-extent-v1</code> 才让 channel page 带 unloaded length）。<strong>适用场景</strong>：长生命周期客户端-服务端协议演进。</li>
+<li><strong>流式 SHA-256 + 版本化 sidecar manifest</strong> — 新颖度 3/5 | 实用性 4/5 | 可迁移性 5/5 <code>src/backend/file-hash.ts</code> 的 <code>sha256File</code> 用 <code>createReadStream</code> + Effect 的 <code>acquireUseRelease</code> 流式哈希，<strong>不整体读入内存</strong>。<code>src/backend/attachment-files.ts</code> 为每次传输写 <code>.openbot-transfer.json</code>（<code>version: 2</code>——v1→v2 是因为字段从 <code>recipientBotIds</code> 改名成 <code>recipientAgentIds</code>，注释解释了为什么不能把两种形状塞进同一版本号），包含每个附件的 <code>sha256</code>/<code>size</code>/<code>mimeType</code>。注释明确写：<strong>「Nothing in the app reads this sidecar back - it is written for the user and the model looking at the transfer directory」</strong>——manifest 是写给人（和 agent）看的，让接收方能独立验证完整性。</li>
+<li><strong>技术债棘轮（debt-ratchet / type-ratchet）</strong> — 新颖度 3/5 | 实用性 5/5 | 可迁移性 5/5 <code>scripts/debt-ratchet.ts</code> 提供通用规则，<code>scripts/type-ratchet.ts</code> 用它约束 TypeScript 选项。机制：baseline 文件 <code>tools/typescript/type-baseline.json</code> 记录<strong>每个文件在每项检查下的当前计数</strong>，实际计数超过 baseline 就失败；<code>--write</code> 只能<strong>降低</strong> baseline（「a higher count is a hand edit that a reviewer sees」）；某项检查清零后从 baseline 移除并把对应 TS 选项打开。<strong>适用场景</strong>：任何想清理 <code>any</code> / lint 债务但不想被一次大清理阻塞发布的团队。</li>
+<li><strong>隐藏 Electron 窗口做构建期 WebGL 渲染</strong> — 新颖度 4/5 | 实用性 3/5 | 可迁移性 3/5 <code>apps/auth-api</code> 跑在 Cloudflare Workers，<strong>没有 WebGL</strong>，但文章配图要用 <code>@paper-design/shaders</code> 程序化生成。解法：<code>apps/auth-api/content-image-electron.mjs</code> 开一个<strong>隐藏的 BrowserWindow</strong>（<code>contextIsolation: true, nodeIntegration: false, sandbox: true, webgl: true</code>，且必须 <code>paintWhenInitiallyHidden: true</code> + <code>backgroundThrottling: false</code>，因为 shader 库靠 ResizeObserver 定 canvas 尺寸），在 <code>about:blank</code> 注入 bundle，每张图 <code>executeJavaScript("window.openBotContentImage.render(...)")</code> 返回 data URL。产物 commit 进 <code>content-art/</code>，<code>content-images.ts</code> 算 manifest key，<strong>只有输入变了的图才重画</strong>，没文章引用的图被删除——「The build fails until the folder matches the articles」。代价：需要一台有 GPU 的开发机，CI 跑不了这一段（注释明说「this runs on a developer's machine and not in CI」）。</li>
+<li><strong>记忆审阅按单价而非按名字降级模型</strong> — 新颖度 3/5 | 实用性 4/5 | 可迁移性 4/5 v0.53.2 引入的 agent 长期记忆，触发条件是每 20 轮 / 静默 15 分钟 / 清空聊天 / 关闭 side thread。记忆上限从 64 提到 256 条，prompt 只注入必要记忆。<code>reviewModel()</code> 用 <code>inputPrice(provider, id)</code> 比较，<strong>只有当 provider 默认模型单价确实更低时才降级</strong>，价格未知就保持原模型。<strong>适用场景</strong>：后台辅助任务（摘要、记忆整理、分类）用便宜模型跑。</li>
+</ol>
+<h3>可复用的模式与技巧</h3>
+<ol>
+<li><strong>能力声明表 + <code>satisfies</code> 编译期全覆盖</strong> — 多 provider / 多后端 / 多端适配层，新增项漏配时在编译期报错并点名。</li>
+<li><strong>命令回执幂等 dispatch</strong> — 本地状态存储需要崩溃恢复、幂等重试与审计时。</li>
+<li><strong>协议原生 + quirk hook</strong> — 接入一批「基本兼容但各有小毛病」的第三方实现（ACP、SSE 变体、私有 API）。</li>
+<li><strong>构建产物级 bridge 验证</strong> — Electron preload、sandbox bridge、序列化边界。</li>
+<li><strong>能力字符串协商</strong> — 长生命周期客户端-服务端协议演进与混合版本共存。</li>
+<li><strong>流式哈希 + sidecar manifest</strong> — agent 间文件传输与完整性自证。</li>
+<li><strong>技术债棘轮（只降不升 baseline）</strong> — 渐进式清理类型/lint 债务。</li>
+<li><strong><code>changelog.d/</code> 增量 changelog</strong> — 高频发布 + 多 PR 并行的项目；每个 PR 写自己的一份，发布时汇总，<strong>两个 PR 永远不改 CHANGELOG.md 的同一行</strong>。</li>
+<li><strong>lane 化 FIFO 队列</strong> — <code>src/backend/agent/drain-scheduler.ts</code> 把一个 agent 的 own chat、channel task、messaging delivery 拆成独立 lane，每条 lane 内串行（「One queue that runs one turn at a time」）。</li>
+<li><strong>乐观并发的摘要版本号</strong> — 多个任务并发更新同一份压缩上下文时用版本号检测冲突。</li>
+<li><strong>fail-closed 的平台能力降级</strong> — 沙箱/隔离能力在部分平台缺失时，宁可功能不可用也不静默降级。</li>
+</ol>
+<h3>关键设计决策</h3>
+<p><strong>决策 1：用「能力矩阵」取代「provider 分支」</strong></p>
+<ul>
+<li>问题：13 个 provider 各有协议、登录方式、steer 能力、并发能力、用量上报、skill 目录约定、隔离方式。若用 <code>switch (provider)</code>，分支会散落在 renderer、preload、backend 多处，漏一处就是静默 bug。</li>
+<li>方案：13 项能力集中在一张 <code>as const satisfies</code> 收口的表里，新增 id 缺行 → TS2741 点名。</li>
+<li>Trade-off：牺牲了 provider 的<strong>动态</strong>可扩展性（新增 provider 必须改 contracts 包），换来「加一个 provider 只需两处改动」，且渲染层无需往返 main 就能决定 UI。</li>
+<li>可迁移性：高。</li>
+</ul>
+<p><strong>决策 2：<code>ForeignProviderId</code> —— 用品牌类型处理「新 host 对旧 client」</strong></p>
+<ul>
+<li>问题：Team API v1-v8 并存，host 可能比 client 新，client 会见到不认识的 provider id。</li>
+<li>方案：<code>declare const FOREIGN_PROVIDER: unique symbol; type ForeignProviderId = string &amp; { readonly [FOREIGN_PROVIDER]: true }</code>。不认识的 id 仍可读、仍可路由，但 <code>isKnownAgentProvider()</code> 为 false，OpenBot 不会为它建账号或选模型。</li>
+<li>Trade-off：引入了必须处处小心的第三态（known / foreign / local-only），换来<strong>旧 client 面对新 host 不崩</strong>。</li>
+<li>可迁移性：高。</li>
+</ul>
+<p><strong>决策 3：IPC 契约手写而非 codegen，但验证做到构建产物层</strong></p>
+<ul>
+<li>问题：renderer ↔ main 的 IPC 通道如果只是字符串约定，加一个 endpoint 要改三四处。</li>
+<li>方案：<code>packages/contracts/src/ipc-endpoints.ts</code>（1915 行）是单一真相源，每个 endpoint 携带 wire channel、所属 group、kind（request/event）与载荷类型；类型是<strong>幻影成员</strong>（<code>readonly __request?: void</code>，只为类型检查存在，运行时仍是 <code>{ kind, channel }</code>）。<strong>没有 codegen 是刻意的</strong>——手写 TS 比 DSL+生成器更易 review，且 <code>satisfies</code> 的编译期保证更强。</li>
+<li>Trade-off：手工维护 1915 行契约 + 100 多行验证脚本，比 codegen 重；换来<strong>没有生成器、没有 stale 生成产物、契约即文档</strong>。</li>
+<li>可迁移性：高（尤其「验证产物而非源码」这一层）。</li>
+</ul>
+<p><strong>决策 4：ACP 接入 = 协议原生 + 每 agent quirk hook</strong></p>
+<ul>
+<li>问题：ACP 是行业标准，但每个实现都有偏差（missing session 错误码不同、失败提示混进答案文本、后台任务让 <code>session/prompt</code> 长时间不返回、reasoning 插在答案 token 之间）。</li>
+<li>方案：<strong>进程与协议分离</strong>——<code>acp-connection.ts</code>（219 行）只管子进程 + <code>ndJsonStream</code> + 退出诊断（含 Windows 进程树 <code>endProcessTree</code>），完全不碰 session；<code>acp-client.ts</code>（2846 行）管 session。quirk 全部推到 <code>AcpFlavor</code> hook。</li>
+<li>Trade-off：每个新 agent 可能要加一个 flavor 文件（当前 <code>acp-flavor.ts</code> / <code>-antigravity</code> / <code>-opencode</code> 三个）；换来<strong>核心代码零分支、quirk 可追溯到具体版本</strong>。</li>
+<li>可迁移性：高。</li>
+</ul>
+<p><strong>决策 5：Provider 一致性测试 —— 用假 agent 跑同一组用例</strong></p>
+<ul>
+<li>方案：<code>scripts/provider-conformance-e2e.ts</code> 对每个说 ACP 的 driver 跑<strong>同一组用例</strong>（列模型、单轮、模型切换、取消、取消后再一轮、新进程 resume、missing session、必需的 sign-in），用 <code>scripts/provider-fakes/agents/conformance.ts</code> 假 agent 驱动，<strong>跳过某个用例即失败</strong>。</li>
+<li>Trade-off：只覆盖 ACP 系（codex/claude/pi/inception/deepseek/openrouter/muse 走别的协议，报告里明确列在 <code>notCovered</code>）；换来<strong>协议一致性由测试保证而非人工回归</strong>。</li>
+<li>可迁移性：中高。</li>
+</ul>
+<p><strong>决策 6：内嵌浏览器隔离 —— 独立 Electron session + 能力受限的 webPreferences</strong></p>
+<ul>
+<li>方案：<code>src/backend/browser-host.ts</code> 的 <code>BROWSER_WEB_PREFERENCES</code>：<code>sandbox: true, contextIsolation: true, nodeIntegration: false, nodeIntegrationInSubFrames: false, nodeIntegrationInWorker: false, webviewTag: false, webSecurity: true, allowRunningInsecureContent: false</code>。每个 agent profile / tab 用<strong>独立的 <code>session.fromPartition()</code></strong>（<code>persist:openbot-browser</code> 为共享，每个 profile 一个 <code>persist:&lt;partition&gt;</code>），cookie / storage / cache 物理隔离；私隐 session 用 <code>session.fromPartition("openbot-private-&lt;uuid&gt;", { cache: false })</code>。</li>
+<li>关键：agent 的浏览器能力<strong>通过 MCP 工具暴露</strong>，而不是给页面注入任何特权；浏览器页在另一个 WebContentsView 里，拿不到 <code>window.openbot</code>，也读不到托管附件。凭据填充有防护：<code>PreparedBrowserSecret.agentScriptedOrigin</code> 标记「该 origin 上 agent 自己跑过脚本」，此时<strong>只有用户能填，agent 不能</strong>。</li>
+<li>Trade-off：每个 profile 一个 partition 占磁盘；换来<strong>浏览器侧真实的 session 级隔离</strong>。</li>
+<li>可迁移性：中高。</li>
+</ul>
+<p><strong>决策 7：进程隔离 —— macOS Seatbelt 沙箱，Linux/Windows fail closed</strong></p>
+<ul>
+<li>方案：<code>src/backend/process-confinement.ts</code> 在 macOS 用 <code>/usr/bin/sandbox-exec</code> 加载<strong>动态生成的 Seatbelt profile</strong>（<code>seatbeltProfile(writable, protectedPaths, inProjects, contents, lockFolders)</code>），规则是「写入拒绝 → 允许 writable → 再次拒绝 protected」，<strong>最后匹配的规则生效</strong>。每个 provider 的 state path 单独建模（五个维度：writable / protected / protectedInProjects / writableContents / lockFolders）——比如 OpenCode 的 cache 目录要单独一份，因为里面有 npm 包和 language server。</li>
+<li>Linux/Windows <strong>明确抛错</strong>：<code>throw new ProcessConfinementUnavailableError(sourceText("error.agent.workspaceOnlyMacOnly"))</code>，文件顶部注释写明「on Linux and Windows the process does not start, and the user must choose Full access」。</li>
+<li>Trade-off：Windows/Linux 上 Workspace-only 模式不可用（功能缺失）；换来<strong>绝不静默降级为无约束执行</strong>。</li>
+<li>可迁移性：中高（macOS 路线可直接抄）。</li>
+</ul>
+<p><strong>决策 8：多 agent 频道 —— 单一 task owner + 显式委派 + lane 化队列</strong></p>
+<ul>
+<li>方案：<code>channel-service.ts</code> 的 <code>ChannelTask</code> 单一 owner；委派用 <code>channel_assign</code> 工具建子任务形成依赖图，父任务等依赖完成；<code>drain-scheduler.ts</code> 的 lane 机制保证每个 agent 的每条 lane 内串行。</li>
+<li>未完成时的诚实处理：owner 忙 / 用量超限 / owner 被隐藏 / owner 离开，任务进 <code>heldByLimit</code> 等状态等待，<strong>不会</strong>派给别的 agent。</li>
+<li>Trade-off：串行化牺牲吞吐；换来<strong>责任归属清晰、无重复劳动</strong>。</li>
+<li>可迁移性：高。</li>
+</ul>
+<p><strong>决策 9：上下文预算 —— 摘要链 + 0.8 阈值 + 乐观并发版本号</strong></p>
+<ul>
+<li>方案：<code>src/backend/agent/context-compaction.ts</code> 在 0.8 阈值触发，<code>CONTEXT_COMPACTION_TIMEOUT_MS = 120_000</code>，启动后的 compaction 有 10 倍宽限期（#3466）。<strong>compaction 本身是一个真实的 provider turn</strong>，所以要用 <code>claimTurn</code> 吞掉属于它的 <code>turn/started</code>。预算按<strong>外部 provider thread id</strong> 而非 agent id 记账（一个 agent 的多个 thread 并行跑）。Codex 在 compaction turn 期间拒绝输入，所以有 <code>RefusalHold</code> 机制把被拒消息放回队列。频道摘要：<code>CONTEXT_CHARACTERS = 120_000</code>、<code>SUMMARY_CHARACTERS = 12_000</code>、<code>SUMMARY_TARGET_CHARACTERS = 8_000</code>。</li>
+<li>Trade-off：摘要必然有损；换来频道历史在有界 prompt 窗口内无限延伸。</li>
+<li>可迁移性：高。</li>
+</ul>
+<h2>竞品格局与定位</h2>
+<h3>竞品对比矩阵</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>OpenBot</th>
+<th>OpenClaw</th>
+<th>Paperclip</th>
+<th>Orca</th>
+<th>CopilotKit/OpenBot</th>
+<th>Vibe Kanban</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stars</td>
+<td>3,285</td>
+<td>393,299</td>
+<td>108,307</td>
+<td>109,081</td>
+<td>7,655</td>
+<td>28,491</td>
+</tr>
+<tr>
+<td>许可</td>
+<td><strong>PolyForm 非商用</strong></td>
+<td>MIT</td>
+<td>MIT</td>
+<td>MIT</td>
+<td>MIT</td>
+<td>Apache-2.0</td>
+</tr>
+<tr>
+<td>形态</td>
+<td>桌面 app + 移动 + 自托管</td>
+<td>终端 + IM 渠道</td>
+<td>服务端（自建 Node+DB）</td>
+<td>桌面 + 移动 + 远程</td>
+<td>Docker + PostgreSQL</td>
+<td>看板 Web</td>
+</tr>
+<tr>
+<td>多 agent 角色/频道语义</td>
+<td><strong>完整</strong>（角色、频道、委派、依赖图）</td>
+<td>弱（单人助理）</td>
+<td>中（org chart）</td>
+<td>中</td>
+<td>中</td>
+<td>弱（仅任务卡）</td>
+</tr>
+<tr>
+<td>跨 provider 会话连续</td>
+<td><strong>有</strong>（provider-handoffs 带 32k 字符历史迁移）</td>
+<td>无</td>
+<td>无</td>
+<td>无</td>
+<td>无</td>
+<td>无</td>
+</tr>
+<tr>
+<td>接入 provider 数</td>
+<td><strong>13</strong>（含 ACP 标准口）</td>
+<td>少</td>
+<td>少</td>
+<td>少</td>
+<td>中</td>
+<td>中</td>
+</tr>
+<tr>
+<td>部署门槛</td>
+<td><strong>下载即用，零部署</strong></td>
+<td>低</td>
+<td>高（需自建服务端+DB）</td>
+<td>中</td>
+<td>高（Docker+PG）</td>
+<td>低</td>
+</tr>
+<tr>
+<td>治理/审计/权限</td>
+<td><strong>弱</strong>（#1967 待补）</td>
+<td>弱</td>
+<td>中</td>
+<td>弱</td>
+<td><strong>强</strong>（CEL 网关+审计+容器化）</td>
+<td>弱</td>
+</tr>
+<tr>
+<td>进程隔离</td>
+<td>macOS Seatbelt；<strong>Win/Linux 拒绝启动</strong></td>
+<td>未验证</td>
+<td>未验证</td>
+<td>未验证</td>
+<td><strong>per-bot 容器化</strong></td>
+<td>无</td>
+</tr>
+</tbody>
+</table>
+<h3>差异化护城河</h3>
+<ol>
+<li><strong>Provider 抽象的深度</strong> —— 13 个 provider × 13 项能力声明 + ACP flavor hook + conformance e2e 一致性测试 + <code>provider-handoffs/</code> 的跨 provider 会话迁移。这是纯工程量堆出来的护城河，<strong>竞品短期内抄不动</strong>——尤其是 conformance e2e 那套「所有 ACP driver 跑同一组用例、跳过即失败」的机制。</li>
+<li><strong>本地状态的完整性</strong> —— 事件溯源 + 幂等回执 + 可重放投影，加上桌面 / web / 移动三端共享同一套 <code>packages/contracts</code> 契约。</li>
+<li><strong>契约冻结纪律</strong> —— 8 个 Team API 版本永久保留（<code>AGENTS.md</code>：「Released Team API adapters are permanent」），任何旧 client 都能连新 host；<code>agent-providers.ts</code> 里的注释把能力表类比为「released vocabulary，must never move」。</li>
+</ol>
+<h3>竞争风险</h3>
+<ol>
+<li><strong>治理/审计缺失是硬伤</strong>。Issue <a href="https://github.com/nightly-labs/openbot/issues/1967">#1967</a> 要求 per-user / per-bot 权限与 owner/admin/member 多角色，并且明确「权限必须在 host 侧强制执行，不只是 UI 隐藏」。<strong>多租户 hosting 已经交付，权限模型还在排队</strong>——这既是企业市场的准入证，也是 Team API 商业线的真正阻塞项。</li>
+<li><strong>PolyForm 非商用是商业天花板</strong>。同赛道竞品清一色 MIT / Apache-2.0（OpenClaw、Paperclip、Orca、Vibe Kanban），企业采购的法务门槛高一个量级。这既是护城河的一部分（source-available 保护），也是它最难跨过的坎。</li>
+<li><strong>同名混淆</strong>。<code>CopilotKit/OpenBot</code>（7.7K star）是实打实的品牌损耗，两个项目在做完全不同的事，却在 SEO 和心智上持续互相干扰。</li>
+<li><strong>Windows/Linux 用户拿不到安全承诺</strong>。<code>process-confinement.ts</code> 在非 macOS 上 fail-closed 是正确的工程选择，但产品后果是<strong>Windows 用户（agent 工具的主力人群之一）只能选 Full access</strong>。</li>
+<li><strong>社区成熟度远低于产品成熟度</strong>。90 万行代码、122 个 tag、105 个 Release 对应的外部贡献基本是 1–2 人贡献量级（<code>detasar</code> 19、<code>aniruddhaadak80</code> 17、<code>634634624</code> 14）。制度（CONTRIBUTING 11KB + CODE_OF_CONDUCT + CLA）搭好了，跑在社区规模前面。</li>
+</ol>
+<h3>生态定位</h3>
+<p><strong>local-first 的 agent 团队工作台 + 未来的托管平台</strong>。它不与 OpenClaw 抢「IM 入口」，不与 Paperclip 抢「企业编排」，不与 Vibe Kanban 抢「任务看板」，而是占据「<strong>桌面 + 自托管 + 多 provider</strong>」这个象限，并用 ACP 作为向第三方 agent 开放的接口。Marketplace + Skills + Plugins + Host Manager 构成未来的平台层。</p>
+<p><strong>唯一未被挤压的缝隙是 hosted server / Team API / 多租户托管这条商业化线</strong>——而它正卡在 #1967 的权限模型缺口上：<strong>商业化蓝海的入口，同时是当前最明确的产品待办</strong>。</p>
+<h2>套利机会分析</h2>
+<ul>
+<li><strong>信息差</strong>：<strong>star 溢价已经发生，不算被低估</strong>。2.5 个月 3285 star、日均 +1300、Trending 三天涨 1995，是典型的一次性曝光曲线。但<strong>开发密度远超 star 增速</strong>——这不是「一夜爆红后无人维护」。真正的信息差在别处：PolyForm 非商用 + CLA 把大企业挡在门外，于是「同款能力、没有授权费的路径」成了缺口；而 #1967 一旦补上，这个缺口就同时变成产品优势和商业入口。</li>
+<li><strong>技术借鉴</strong>：本报告里 11 个可复用模式中，<strong>技术债棘轮、命令回执幂等 dispatch、能力声明表 + <code>satisfies</code>、构建产物级 bridge 验证、<code>changelog.d/</code> 增量 changelog</strong> 这五个是「半小时内可以抄进自己项目」的级别，且都带具体文件路径。</li>
+<li><strong>生态位</strong>：填补的是「<strong>多 agent 协作的状态宿主</strong>」这个空白——不是又一个 agent runtime（OpenCode / Crush / OpenHands），不是又一个 agent 编排框架（Paperclip / Orca），而是「谁在跑、跑在哪、上下文怎么留、文件怎么共享、provider 怎么换」这一层。</li>
+<li><strong>趋势判断</strong>：<strong>有后发优势</strong>。OpenClaw 393K star、Paperclip 108K、Orca 109K 都比它早，但 OpenBot 在两个维度上是后来者才做对的：① 用 <strong>ACP 行业标准</strong>而不是自研协议接入第三方 agent；② 用 <strong>capability 协商</strong>而不是版本号 if/else 来做协议演进。这两点在 2026 年才成熟，它直接吃到了。<ul> <li>反面：它也吃了后发者该吃的亏——<strong>同名混淆</strong>（CopilotKit/OpenBot 更早占了这个名字）、<strong>Windows/Linux 隔离缺位</strong>、<strong>PolyForm 授权</strong>让企业采用曲线比 MIT 对手长得多。</li> </ul></li>
+</ul>
+<h2>风险与不足</h2>
+<ol>
+<li><strong>不是开源软件</strong>。PolyForm Noncommercial 1.0.0 不是 OSI 认证的自由软件，商业使用需单独授权，CLA 还会把外部贡献的版权集中到 Synthetify Labs 一家手里。<strong>引用它的代码到商业闭源产品里会踩法律问题</strong>，这是选型时最容易被 README 一句话掩盖的雷。</li>
+<li><strong>默认安全姿态就是「完全放权」</strong>。<code>danger-full-access</code> + <code>approvalPolicy: never</code> 是默认值，不是可选项。外部红队文章的判断在这一点上<strong>成立</strong>：prompt injection 直接等价于系统级命令执行；agent 间通信会放大单个被攻陷 agent 的影响半径。</li>
+<li><strong>进程隔离只有 macOS 有</strong>。Windows/Linux 上 Workspace-only 模式<strong>拒绝启动</strong>，用户只能选 Full access。（注：外部有文章称这是「静默降级为无约束执行」，<strong>这个措辞不准确</strong>——代码是 fail-closed 的显式拒绝，比静默降级更负责任，但产品后果仍然存在。）</li>
+<li><strong>Computer Use 路线落后于社区</strong>。<code>cua-driver</code> 纯像素方案每步要 1280x800+ 全分辨率截图（1,500–2,500 token/帧）+ 3–5 秒延迟，5 步任务烧 10,000–15,000 token。社区在 Issue #3782 里提议的 AT-SPI2 可访问性树 + CDP 四层语义架构（视觉降级为 fallback）明显更优，<strong>官方 CHANGELOG 里的推进明显更保守</strong>——社区已经跑在官方前面。</li>
+<li><strong>频道摘要是当前最脆的一环</strong>。读 <code>src/backend/channel-history.ts</code> 可以精确定位两个同源 bug：<ul> <li><strong>#1693</strong>：摘要链把<strong>上一轮摘要也作为输入</strong>，所以每过一轮摘要就再长一点；一旦某轮超过 12k 且 shorten pass 也没压下来，直接 <code>channelHistoryInvalid</code> 失败，且 <code>summary</code> 变量<strong>未被写回</strong>（<code>saveSummary</code> 只在成功路径调用），<code>throughSequence</code> 保持不变。修法不是「缩预算重试」，而是改成<strong>增量式摘要</strong>或让 shorten pass 无条件先执行。</li> <li><strong>#3761</strong>：版本冲突时<strong>整体丢弃</strong>本次摘要结果（连 <code>throughSequence</code> 一起丢），下一轮从旧的 <code>throughSequence</code> 重新处理同一批消息 → 因为 <code>throughSequence</code> 没推进，输入集合不变，同样摘要任务反复失败，这就是「lead 久等」的机制。修法是版本冲突时<strong>合并</strong>而非丢弃。</li> <li>这不是架构限制，是<strong>明确可落地的 bug</strong>。</li> </ul></li>
+<li><strong>并发能力声明是编译期常量</strong>。<code>agent-providers.ts</code> 里 custom ACP 的 <code>concurrentTurns: false</code> 是硬编码常量（<code>as const satisfies</code>），不随运行时变化。但底层 session 模型（每 thread 一个 ACP <code>session/new</code>）本已支持并行——<strong>并发是「provider 能力声明」层面的保守声明，不是架构限制</strong>。修复路径不是改一个 boolean，而是让它变成可运行时声明（自定义 agent 注册时携带能力字段，来自 <code>src/main/custom-agent-store.ts</code>）。社区成员 botdoggy 已在自己 fork 实现并配了确定性 e2e，等 <code>approved</code> label 即可开 PR。</li>
+<li><strong>i18n 是真正的维护放大器</strong>。<code>packages/i18n</code> 8344 次改动、159,275 行、13 种语言、1,378 个文件——<strong>每加一条 UI 文案要同步 13 个语言文件</strong>。这个成本随语言数线性增长，会成为多语言扩张的硬天花板。</li>
+<li><strong>协议演进包袱</strong>。8 个 Team API 版本各 4 个文件 + 约 130 个能力模块，<code>knip.config.ts</code> 得专门为 <code>team-protocol/v*.ts</code> 关掉 unused-export 报告。<strong>能力协商本身值得学，8 份手抄副本属于过度工程</strong>。</li>
+<li><strong>缺乏可验证的性能承诺</strong>。README 里没有任何 benchmark（外部审计专门指出了这点）。内部虽有 <code>scripts/web-client-perf-e2e.ts</code> 和 <code>dev-automation/bench.ts</code>，但没有对用户公开的对比数据。<code>bun run dev:bench</code> 有 CPU/RAM 场景基准，但没进文档。</li>
+<li><strong>没有正式版本稳定承诺</strong>。0.53.x 的版本号意味着<strong>契约尚未稳定</strong>。对一个要被放进别人工作流、要托管别人文件的桌面应用来说，API 破坏性变更的频率是个实际风险。</li>
+</ol>
+<h2>行动建议</h2>
+<ul>
+<li><strong>如果你要用它</strong>： <ul> <li><strong>适合</strong>：macOS 用户，已同时订阅多个 AI CLI（Codex / Claude / Grok / Cursor / Cline 任一），想让人 agent 真的组队干活、能自己排班（用 Routines）、需要内嵌浏览器和 Computer Use，且<strong>你的代码和凭据不能交出去</strong>。</li> <li><strong>不适合</strong>：企业生产环境（治理与审计缺位 + PolyForm 法务门槛）、Windows/Linux 用户（有强隔离需求时）、团队协作场景（#1967 未解决意味着<strong>能上服务器 = 能看所有 bot</strong>）、以及任何要把它的代码集成进商业闭源产品的团队（授权问题）。</li> <li><strong>替代路线</strong>：想走真 MIT 开源就选 OpenClaw / Orca / Paperclip；想要企业治理能力看 CopilotKit/OpenBot（注意同名）；只想在终端里跑多个 agent 选 Claude Squad。</li> <li><strong>落地建议</strong>：先只开<strong>一个</strong> provider 的 Full access 试跑，别一上来把所有 agent 和频道都配上；把 <code>~/OpenBot/Shared/Transfers</code> 里的 <code>.openbot-transfer.json</code> 纳入你的备份；不要在生产凭据的浏览器 profile 上开 Computer Use。</li> </ul></li>
+<li><strong>如果你要学它</strong>（按价值密度排序）： <ul> <li><code>packages/contracts/src/agent-providers.ts</code>（708 行）— 能力声明表 + <code>satisfies</code> 编译期全覆盖，<strong>最值得抄</strong></li> <li><code>src/backend/database/database-core.ts</code> + <code>src/backend/database/thread-replay.ts</code> — 事件溯源 + 幂等回执 + 可重放投影，<strong>本项目最值得抄的架构</strong></li> <li><code>scripts/debt-ratchet.ts</code> + <code>scripts/type-ratchet.ts</code> — 技术债棘轮，<strong>最值得抄的小工具</strong>（半小时能落地）</li> <li><code>src/backend/acp-flavor.ts</code> — 协议原生 + quirk hook 的适配层写法</li> <li><code>scripts/verify-preload-bundle.ts</code> — 验证构建产物而非源码的 bridge 测试思路</li> <li><code>src/backend/process-confinement.ts</code> — macOS Seatbelt profile 动态生成 + fail-closed 降级</li> <li><code>src/backend/browser-host.ts</code> — 多 Electron session 隔离 + 能力受限 webPreferences</li> <li><code>src/backend/channel-service.ts</code> — owner/assignment 分离的任务状态机</li> <li><code>src/backend/agent/drain-scheduler.ts</code> — lane 化 FIFO 队列</li> <li><code>docs/ARCHITECTURE.md</code> + <code>docs/architecture/</code>（13 篇专题）— 架构文档纪律的范例</li> </ul></li>
+<li><strong>如果你要 fork 它</strong>： <ol> <li><strong>补权限模型</strong>（#1967）：在 host 侧强制 owner/admin/member + per-bot 授权，而不是 UI 隐藏——这是团队付费和合规的准入证，也是它相对 CopilotKit/OpenBot 唯一的短板。</li> <li><strong>修频道摘要的两个同源 bug</strong>（#1693 / #3761）：摘要改增量式、版本冲突改合并而非丢弃。这是明确的 bug 而非架构限制。</li> <li><strong>把 <code>concurrentTurns</code> 改成运行时可声明</strong>（#3763）：能力应来自自定义 agent 的注册记录（<code>src/main/custom-agent-store.ts</code>），而不是一张全局常量表。botdoggy 的 fork 实现路径是对的。</li> <li><strong>推进语义 Computer Use</strong>（#3782）：AT-SPI2 可访问性树 + CDP，视觉降级为 fallback——省下的是 token 和延迟，不是画质。</li> <li><strong>补 Windows/Linux 隔离</strong>：<code>process-confinement.ts</code> 的 fail-closed 是对的，但功能缺失就是产品缺失。Windows 上可以用 Job Object / AppContainer，Linux 上 bubblebang 其实能做但注释说它「无法拒绝尚不存在的新文件」——这个约束是可以绕过的（预创建目标文件、或用 mount namespace 做只读 bind mount）。</li> <li><strong>公开 benchmark</strong>：把 <code>dev:bench</code> 的结果做成 README 里的对比表，这是外部审计反复提的要求。</li> </ol></li>
+</ul>
+<h3>知识入口</h3>
+<table>
+<thead>
+<tr>
+<th>资源</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>官方网站</td>
+<td><a href="https://openbot.run/">https://openbot.run/</a></td>
+</tr>
+<tr>
+<td>官方文档</td>
+<td><a href="https://openbot.run/docs">https://openbot.run/docs</a></td>
+</tr>
+<tr>
+<td>长文介绍</td>
+<td><a href="https://openbot.run/news/introducing-openbot">https://openbot.run/news/introducing-openbot</a></td>
+</tr>
+<tr>
+<td>架构文档（仓库内）</td>
+<td><a href="https://github.com/nightly-labs/openbot/blob/main/docs/ARCHITECTURE.md">https://github.com/nightly-labs/openbot/blob/main/docs/ARCHITECTURE.md</a></td>
+</tr>
+<tr>
+<td>自托管部署</td>
+<td><a href="https://github.com/nightly-labs/openbot/blob/main/docs/self-hosting.md">https://github.com/nightly-labs/openbot/blob/main/docs/self-hosting.md</a></td>
+</tr>
+<tr>
+<td>多租户托管</td>
+<td><a href="https://github.com/nightly-labs/openbot/blob/main/docs/multi-tenant-hosting.md">https://github.com/nightly-labs/openbot/blob/main/docs/multi-tenant-hosting.md</a></td>
+</tr>
+<tr>
+<td>Provider 条款</td>
+<td><a href="https://github.com/nightly-labs/openbot/blob/main/docs/provider-terms.md">https://github.com/nightly-labs/openbot/blob/main/docs/provider-terms.md</a></td>
+</tr>
+<tr>
+<td>DeepWiki</td>
+<td>未收录（探测被 Vercel Security Checkpoint 拦截，搜索索引无条目）</td>
+</tr>
+<tr>
+<td>Zread.ai</td>
+<td>未收录（403 bot 拦截）</td>
+</tr>
+<tr>
+<td>关联论文</td>
+<td>无（工程型产品项目，无学术定位）</td>
+</tr>
+<tr>
+<td>在线 Demo</td>
+<td>无独立 playground；官网首页有可交互脚本化 landing demo</td>
+</tr>
+<tr>
+<td>独立审计</td>
+<td><a href="https://mrkeyoor.com/repos/nightly-labs-openbot">https://mrkeyoor.com/repos/nightly-labs-openbot</a></td>
+</tr>
+<tr>
+<td>安全红队分析</td>
+<td><a href="https://explainx.ai/blog/nightly-labs-openbot-desktop-workspace-codex-claude-grok-agents-danger-full-access-polyform-noncommercial-2026">https://explainx.ai/blog/nightly-labs-openbot-desktop-workspace-codex-claude-grok-agents-danger-full-access-polyform-noncommercial-2026</a></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
