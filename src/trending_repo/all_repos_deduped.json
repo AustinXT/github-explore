@@ -3,21 +3,21 @@
     "name": "obra/superpowers",
     "url": "https://github.com/obra/superpowers",
     "language": "Shell",
-    "stars": 308222,
-    "forks": 27415,
+    "stars": 309249,
+    "forks": 27511,
     "description": "An agentic skills framework & software development methodology that works.",
-    "last_seen": "2026-10-29",
-    "trending_days": 97
+    "last_seen": "2026-10-30",
+    "trending_days": 98
   },
   {
     "name": "mattpocock/skills",
     "url": "https://github.com/mattpocock/skills",
     "language": "Shell",
-    "stars": 283965,
-    "forks": 23783,
+    "stars": 307231,
+    "forks": 25849,
     "description": "Skills for Real Engineers. Straight from my .agents directory.",
-    "last_seen": "2026-10-10",
-    "trending_days": 44
+    "last_seen": "2026-10-30",
+    "trending_days": 45
   },
   {
     "name": "affaan-m/ECC",
@@ -80,6 +80,16 @@
     "trending_days": 32
   },
   {
+    "name": "thedotmack/claude-mem",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "language": "TypeScript",
+    "stars": 105750,
+    "forks": 9317,
+    "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+    "last_seen": "2026-10-30",
+    "trending_days": 32
+  },
+  {
     "name": "msitarzewski/agency-agents",
     "url": "https://github.com/msitarzewski/agency-agents",
     "language": "Shell",
@@ -97,16 +107,6 @@
     "forks": 49804,
     "description": "The agent that grows with you",
     "last_seen": "2026-09-06",
-    "trending_days": 31
-  },
-  {
-    "name": "thedotmack/claude-mem",
-    "url": "https://github.com/thedotmack/claude-mem",
-    "language": "TypeScript",
-    "stars": 104462,
-    "forks": 9219,
-    "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
-    "last_seen": "2026-10-29",
     "trending_days": 31
   },
   {
@@ -340,6 +340,16 @@
     "trending_days": 20
   },
   {
+    "name": "pbakaus/impeccable",
+    "url": "https://github.com/pbakaus/impeccable",
+    "language": "Rust",
+    "stars": 96708,
+    "forks": 5698,
+    "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+    "last_seen": "2026-10-30",
+    "trending_days": 20
+  },
+  {
     "name": "virattt/ai-hedge-fund",
     "url": "https://github.com/virattt/ai-hedge-fund",
     "language": "Python",
@@ -387,16 +397,6 @@
     "forks": 5289,
     "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
     "last_seen": "2026-08-30",
-    "trending_days": 19
-  },
-  {
-    "name": "pbakaus/impeccable",
-    "url": "https://github.com/pbakaus/impeccable",
-    "language": "Rust",
-    "stars": 94840,
-    "forks": 5594,
-    "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
-    "last_seen": "2026-10-29",
     "trending_days": 19
   },
   {
@@ -780,6 +780,16 @@
     "trending_days": 12
   },
   {
+    "name": "HKUDS/DeepTutor",
+    "url": "https://github.com/hkuds/deeptutor",
+    "language": "Python",
+    "stars": 51541,
+    "forks": 6311,
+    "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+    "last_seen": "2026-10-30",
+    "trending_days": 12
+  },
+  {
     "name": "JuliusBrussee/caveman",
     "url": "https://github.com/juliusbrussee/caveman",
     "language": "Go",
@@ -910,6 +920,16 @@
     "trending_days": 12
   },
   {
+    "name": "anthropics/skills",
+    "url": "https://github.com/anthropics/skills",
+    "language": "Python",
+    "stars": 185093,
+    "forks": 21882,
+    "description": "Public repository for Agent Skills",
+    "last_seen": "2026-10-30",
+    "trending_days": 11
+  },
+  {
     "name": "block/goose",
     "url": "https://github.com/block/goose",
     "language": "Rust",
@@ -967,16 +987,6 @@
     "forks": 2061,
     "description": "A Python library for extracting structured information from unstructured text using LLMs with precise source grounding and interactive visualization.",
     "last_seen": "2026-02-12",
-    "trending_days": 11
-  },
-  {
-    "name": "HKUDS/DeepTutor",
-    "url": "https://github.com/hkuds/deeptutor",
-    "language": "Python",
-    "stars": 49564,
-    "forks": 6104,
-    "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
-    "last_seen": "2026-10-29",
     "trending_days": 11
   },
   {
@@ -1080,16 +1090,6 @@
     "trending_days": 10
   },
   {
-    "name": "anthropics/skills",
-    "url": "https://github.com/anthropics/skills",
-    "language": "Python",
-    "stars": 178143,
-    "forks": 21101,
-    "description": "Public repository for Agent Skills",
-    "last_seen": "2026-09-25",
-    "trending_days": 10
-  },
-  {
     "name": "bilawalsidhu/gods-eye-view",
     "url": "https://github.com/bilawalsidhu/gods-eye-view",
     "language": "JavaScript",
@@ -1187,6 +1187,16 @@
     "forks": 18077,
     "description": "Lightweight coding agent that runs in your terminal",
     "last_seen": "2026-08-26",
+    "trending_days": 10
+  },
+  {
+    "name": "pingdotgg/t3code",
+    "url": "https://github.com/pingdotgg/t3code",
+    "language": "TypeScript",
+    "stars": 32503,
+    "forks": 8601,
+    "description": "None",
+    "last_seen": "2026-10-30",
     "trending_days": 10
   },
   {
@@ -1437,16 +1447,6 @@
     "forks": 10641,
     "description": "Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages.",
     "last_seen": "2026-06-06",
-    "trending_days": 9
-  },
-  {
-    "name": "pingdotgg/t3code",
-    "url": "https://github.com/pingdotgg/t3code",
-    "language": "TypeScript",
-    "stars": 25539,
-    "forks": 6583,
-    "description": "None",
-    "last_seen": "2026-10-05",
     "trending_days": 9
   },
   {
@@ -2550,6 +2550,16 @@
     "trending_days": 6
   },
   {
+    "name": "JetBrains/thinkrail",
+    "url": "https://github.com/jetbrains/thinkrail",
+    "language": "TypeScript",
+    "stars": 6453,
+    "forks": 352,
+    "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+    "last_seen": "2026-10-30",
+    "trending_days": 6
+  },
+  {
     "name": "juspay/hyperswitch",
     "url": "https://github.com/juspay/hyperswitch",
     "language": "Rust",
@@ -2577,6 +2587,16 @@
     "forks": 43148,
     "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
     "last_seen": "2025-10-18",
+    "trending_days": 6
+  },
+  {
+    "name": "lightpanda-io/browser",
+    "url": "https://github.com/lightpanda-io/browser",
+    "language": "Zig",
+    "stars": 38072,
+    "forks": 1857,
+    "description": "Lightpanda: the headless browser designed for AI and automation",
+    "last_seen": "2026-10-30",
     "trending_days": 6
   },
   {
@@ -3100,16 +3120,6 @@
     "trending_days": 5
   },
   {
-    "name": "JetBrains/thinkrail",
-    "url": "https://github.com/jetbrains/thinkrail",
-    "language": "TypeScript",
-    "stars": 5844,
-    "forks": 309,
-    "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
-    "last_seen": "2026-10-29",
-    "trending_days": 5
-  },
-  {
     "name": "karpathy/nanochat",
     "url": "https://github.com/karpathy/nanochat",
     "language": "Python",
@@ -3140,16 +3150,6 @@
     "trending_days": 5
   },
   {
-    "name": "lightpanda-io/browser",
-    "url": "https://github.com/lightpanda-io/browser",
-    "language": "Zig",
-    "stars": 34715,
-    "forks": 1644,
-    "description": "Lightpanda: the headless browser designed for AI and automation",
-    "last_seen": "2026-09-07",
-    "trending_days": 5
-  },
-  {
     "name": "likec4/likec4",
     "url": "https://github.com/likec4/likec4",
     "language": "TypeScript",
@@ -3157,6 +3157,16 @@
     "forks": 329,
     "description": "Visualize, collaborate, and evolve the software architecture with always actual and live diagrams from your code",
     "last_seen": "2026-07-24",
+    "trending_days": 5
+  },
+  {
+    "name": "macro-inc/macro",
+    "url": "https://github.com/macro-inc/macro",
+    "language": "Rust",
+    "stars": 5767,
+    "forks": 537,
+    "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+    "last_seen": "2026-10-30",
     "trending_days": 5
   },
   {
@@ -4250,16 +4260,6 @@
     "trending_days": 4
   },
   {
-    "name": "macro-inc/macro",
-    "url": "https://github.com/macro-inc/macro",
-    "language": "Rust",
-    "stars": 5292,
-    "forks": 513,
-    "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
-    "last_seen": "2026-10-28",
-    "trending_days": 4
-  },
-  {
     "name": "magnitudedev/magnitude",
     "url": "https://github.com/magnitudedev/magnitude",
     "language": "TypeScript",
@@ -4677,6 +4677,16 @@
     "forks": 263,
     "description": "Run Windows apps on 🐧 Linux with ✨ seamless integration",
     "last_seen": "2025-10-12",
+    "trending_days": 4
+  },
+  {
+    "name": "togg53192-cmd/jailbreaks",
+    "url": "https://github.com/togg53192-cmd/jailbreaks",
+    "language": "Unknown",
+    "stars": 10437,
+    "forks": 1515,
+    "description": "LIST OF ALL MY JAILBREAKS",
+    "last_seen": "2026-10-30",
     "trending_days": 4
   },
   {
@@ -6090,6 +6100,16 @@
     "trending_days": 3
   },
   {
+    "name": "Renhuai123/ziwei-doushu",
+    "url": "https://github.com/renhuai123/ziwei-doushu",
+    "language": "TypeScript",
+    "stars": 11053,
+    "forks": 2215,
+    "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+    "last_seen": "2026-10-30",
+    "trending_days": 3
+  },
+  {
     "name": "rmyndharis/OpenWA",
     "url": "https://github.com/rmyndharis/openwa",
     "language": "TypeScript",
@@ -6277,16 +6297,6 @@
     "forks": 114,
     "description": "fresh directories for every vibe",
     "last_seen": "2026-01-21",
-    "trending_days": 3
-  },
-  {
-    "name": "togg53192-cmd/jailbreaks",
-    "url": "https://github.com/togg53192-cmd/jailbreaks",
-    "language": "Unknown",
-    "stars": 8461,
-    "forks": 1181,
-    "description": "LIST OF ALL MY JAILBREAKS",
-    "last_seen": "2026-10-29",
     "trending_days": 3
   },
   {
@@ -7090,6 +7100,16 @@
     "trending_days": 2
   },
   {
+    "name": "CopilotKit/OpenBot",
+    "url": "https://github.com/copilotkit/openbot",
+    "language": "TypeScript",
+    "stars": 8591,
+    "forks": 1088,
+    "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+    "last_seen": "2026-10-30",
+    "trending_days": 2
+  },
+  {
     "name": "CoplayDev/unity-mcp",
     "url": "https://github.com/coplaydev/unity-mcp",
     "language": "C#",
@@ -7307,6 +7327,16 @@
     "forks": 390,
     "description": "A native, user-mode, multi-process, graphical debugger.",
     "last_seen": "2026-10-08",
+    "trending_days": 2
+  },
+  {
+    "name": "expo/skills",
+    "url": "https://github.com/expo/skills",
+    "language": "Shell",
+    "stars": 3826,
+    "forks": 243,
+    "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services",
+    "last_seen": "2026-10-30",
     "trending_days": 2
   },
   {
@@ -8310,6 +8340,16 @@
     "trending_days": 2
   },
   {
+    "name": "milind-soni/OpenMausBot",
+    "url": "https://github.com/milind-soni/openmausbot",
+    "language": "TypeScript",
+    "stars": 8244,
+    "forks": 1176,
+    "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+    "last_seen": "2026-10-30",
+    "trending_days": 2
+  },
+  {
     "name": "mindcraft-bots/mindcraft",
     "url": "https://github.com/mindcraft-bots/mindcraft",
     "language": "JavaScript",
@@ -8827,16 +8867,6 @@
     "forks": 34,
     "description": "Playstation 2 Static Recompiler & Runtime Tool to make native PC ports",
     "last_seen": "2026-01-29",
-    "trending_days": 2
-  },
-  {
-    "name": "Renhuai123/ziwei-doushu",
-    "url": "https://github.com/renhuai123/ziwei-doushu",
-    "language": "TypeScript",
-    "stars": 7440,
-    "forks": 1527,
-    "description": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
-    "last_seen": "2026-10-25",
     "trending_days": 2
   },
   {
@@ -10240,16 +10270,6 @@
     "trending_days": 1
   },
   {
-    "name": "CopilotKit/OpenBot",
-    "url": "https://github.com/copilotkit/openbot",
-    "language": "TypeScript",
-    "stars": 7952,
-    "forks": 1037,
-    "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
-    "last_seen": "2026-10-29",
-    "trending_days": 1
-  },
-  {
     "name": "CorentinTh/it-tools",
     "url": "https://github.com/corentinth/it-tools",
     "language": "Vue",
@@ -10657,16 +10677,6 @@
     "forks": 4496,
     "description": "Evolution API is an open-source WhatsApp integration API",
     "last_seen": "2025-10-15",
-    "trending_days": 1
-  },
-  {
-    "name": "expo/skills",
-    "url": "https://github.com/expo/skills",
-    "language": "Shell",
-    "stars": 3451,
-    "forks": 219,
-    "description": "A collection of AI agent skills for working with Expo projects and Expo Application Services",
-    "last_seen": "2026-10-28",
     "trending_days": 1
   },
   {
@@ -12047,16 +12057,6 @@
     "forks": 462,
     "description": "b站会员购购票辅助工具",
     "last_seen": "2026-06-21",
-    "trending_days": 1
-  },
-  {
-    "name": "milind-soni/OpenMausBot",
-    "url": "https://github.com/milind-soni/openmausbot",
-    "language": "TypeScript",
-    "stars": 7266,
-    "forks": 1093,
-    "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-    "last_seen": "2026-10-29",
     "trending_days": 1
   },
   {

@@ -2561,6 +2561,10 @@ entries:
   toeverything_affine:
   - editor-kms
   - database
+  togg53192-cmd_jailbreaks:
+  - ai-agent
+  - llm-inference
+  - model-foundation
   toml-lang_toml:
   - uncategorized
   tooljet_tooljet:
