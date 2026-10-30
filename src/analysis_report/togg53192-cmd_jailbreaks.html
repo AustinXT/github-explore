@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* ====== 微信公众号排版 CSS ====== */
+
+body {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #3e3e3e;
+    background: #fff;
+}
+
+/* 正文段落 */
+p {
+    font-size: 15px !important;
+    line-height: 2 !important;
+    margin: 0 !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+    padding-right: 1.2em !important;
+    padding-left: 1.2em !important;
+    text-align: justify !important;
+}
+p + p {
+    margin-top: 0 !important;
+}
+
+/* 标题 */
+h1 {
+    font-size: 20px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 16px 0 !important;
+    padding: 0 !important;
+}
+h2 {
+    font-size: 18px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 24px 0 !important;
+    padding: 0 !important;
+}
+h3 {
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+    text-align: left !important;
+    margin: 16px 0 16px 0 !important;
+    padding: 0 0 0 1.2em !important;
+}
+h4 {
+    font-size: 15px !important;
+    color: rgb(0, 122, 170) !important;
+    margin: 12px 0 8px 0 !important;
+    padding: 0 !important;
+}
+
+/* 列表 */
+ul,
+ol {
+    padding-left: 2em !important;
+    margin: 1em 0 !important;
+    font-size: 15px !important;
+}
+li {
+    margin: 0.5em 0 !important;
+    line-height: 1.8em !important;
+    font-size: 15px !important;
+    color: #3e3e3e !important;
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    margin: 0 !important;
+    padding-left: 1.2em !important;
+}
+
+/* 引用 */
+blockquote {
+    border-left: 4px solid #888 !important;
+    padding: 8px 16px !important;
+    margin: 1em 0 !important;
+    color: #666 !important;
+    background: #f9f9f9 !important;
+}
+blockquote > p {
+    margin: 0.5em 0 !important;
+    padding: 0 !important;
+}
+blockquote::before,
+blockquote::after {
+    content: none !important;
+}
+
+/* 代码块 */
+pre {
+    font-size: 14px !important;
+    line-height: 1.4em !important;
+    color: #3e3e3e !important;
+    background: #f8f8f8 !important;
+    padding: 12px 16px !important;
+    border-radius: 4px !important;
+    overflow: auto !important;
+    margin: 1em 0 !important;
+}
+
+/* 脚注 */
+.footnotes {
+    font-size: 11px !important;
+    color: #666 !important;
+    line-height: 1.2 !important;
+    margin: 8px 0 0 0 !important;
+    padding: 4px 0 0 0 !important;
+    border-top: 1px solid #eee !important;
+}
+.footnotes p {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #666 !important;
+}
+
+/* 上标 */
+sup {
+    font-size: 0.75em !important;
+    vertical-align: super !important;
+    color: #e51f42 !important;
+    margin: 0 2px !important;
+}
+/* 表格 */
+table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 1em 0 !important;
+    font-size: 14px !important;
+    color: #3e3e3e !important;
+}
+th, td {
+    border: 1px solid #ddd !important;
+    padding: 8px 12px !important;
+    text-align: left !important;
+    line-height: 1.6 !important;
+}
+th {
+    background: #f5f5f5 !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+}
+td {
+    color: #3e3e3e !important;
+}
+
+/* 图片 */
+img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 1em auto !important;
+    border-radius: 4px !important;
+}
+
+/* 链接 */
+a {
+    color: rgb(0, 122, 170) !important;
+    text-decoration: none !important;
+}
+
+/* 行内代码 */
+code {
+    font-family: Menlo, Consolas, monospace !important;
+    background: #f4f4f4 !important;
+    padding: 0 4px !important;
+    border-radius: 3px !important;
+    font-size: 13px !important;
+    color: #c7254e !important;
+}
+
+/* 强调 */
+strong {
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+}
+em {
+    font-style: normal !important;
+    color: #888 !important;
+    font-size: 13px !important;
+}
+
+/* 分割线 */
+hr {
+    border: none !important;
+    border-top: 1px solid #eee !important;
+    margin: 2em 0 !important;
+}
+</style>
+</head>
+<body>
+<blockquote><p>GitHub: <a href="https://github.com/togg53192-cmd/jailbreaks">https://github.com/togg53192-cmd/jailbreaks</a></p></blockquote>
+<h2>一句话总结</h2>
+<p>一个独立开发者用 4 个月、39 个纯 Markdown 文件、<strong>一行代码都不写</strong>，靠「谁家今天发新模型，我今天就出对应提示词」的滚动追踪，做出了 9,838 star / 1,382 fork 的细分赛道头部；它的真实资产不是内容而是<strong>时效性</strong>，而内容本身已被一个 524 star 的仓库逐字节抄走并挂上了付费 API 的推广位。</p>
+<h2>值得关注的理由</h2>
+<ul><li><strong>一个反常识的样本</strong>：GitHub 语言统计为空、tokei 实测代码行数 0、无 LICENSE、无 CI、无测试、无 release，却做到了 9,838 star。它证明了一件事——<strong>在「信息产品」这个品类里，时效性和策展判断力可以完全替代工程化投入</strong>。</li><li><strong>可验证的「策展方法论」</strong>：README 把提示词按<strong>注入载体</strong>（system prompt / <code>AGENTS.md</code> / operating specification / Ollama Modelfile / 配置块）而非主题分类，每份工件自带「该粘到哪」的声明，版本用「新增 <code>v2.md</code> 而非覆盖」表达。这套「文件即数据库、文件名即主键、README 即 schema」的极简架构，对任何做小规模知识资产库的人都可直接迁移。</li><li><strong>一个正在发生的版权事故</strong>：我逐文件校验了 <code>Alejandros17487/ai-jailbreaks</code>（524 star），<strong>33 个共有文件在做空白归一化后哈希完全一致</strong>——它不是 fork（不在本仓库的 fork 列表里），是直接抄走，然后在 README 顶部挂了 <code>7api.st</code> 的付费 API 引流位。而原仓库没有 LICENSE，所以这份复制在法律上畅通无阻。</li><li><strong>一个仍在爬坡的窗口</strong>：star-history 周采样显示 9/15→9/23 十天内从 198 涨到 1,994（约 10 倍），10/22 已达 7,541，今天 9,838——<strong>增长不是历史的，是当下的</strong>。</li></ul>
+<h2>项目画像</h2>
+<table><thead><tr><th>维度</th><th>数据</th></tr></thead><tbody><tr><td>GitHub</td><td><a href="https://github.com/togg53192-cmd/jailbreaks">https://github.com/togg53192-cmd/jailbreaks</a></td></tr><tr><td>Star / Fork</td><td>9,838 / 1,382（Watcher 97；Fork/Star 14.0%，绝大多数 star 者「复制走用」）</td></tr><tr><td>代码行数</td><td><strong>0 行可执行代码</strong>；Markdown 6,091 行（39 个文件：37×<code>.md</code> + 1×<code>.txt</code>），GitHub 语言统计为空——这是事实而非采集失败</td></tr><tr><td>许可证</td><td>无（未声明 LICENSE，默认保留全部权利——本仓库最要紧的一处缺陷）</td></tr><tr><td>项目年龄</td><td>4.4 个月（首次提交 2026-06-18）</td></tr><tr><td>开发阶段</td><td>密集开发（80 commits，近 30 天 43 个，10 月单月 36 个；commit 计数按作者时间口径，按提交者时间则近 30 天 38 个）</td></tr><tr><td>贡献模式</td><td>独立开发者主导（作者本人 70/80 = 87.5% 的提交，与 GitHub API 贡献者统计口径一致；共 5 位贡献者，其余 4 位合计 10 个）</td></tr><tr><td>热度定位</td><td>大众热门（细分赛道头部，但与生态头部 L1B3RT4S 的 22,805 star 差一个量级）</td></tr><tr><td>质量评级</td><td>内容 良好 / 文档 良好 / 索引 一般 / 测试 无 / CI 无 / 许可 <strong>缺失</strong></td></tr></tbody></table>
+<h2>作者视角：为什么存在这个项目</h2>
+<blockquote><p>本仓库<strong>无官方文档、无博客、无 wiki、无 <code>.github/</code> 目录、作者 bio/company/location/blog 四项全空</strong>。以下全部由 README 措辞、commit 历史、issue 响应模式与文件结构反推，属推断而非官方自述。</p></blockquote>
+<h3>创始人/作者背景</h3>
+<p><code>togg53192-cmd</code>，2025-07-25 注册，1.27 年账号，300 followers，14 个公开仓库。真正有热度的只有这一个（repo_rank = 1）。其余 13 个是 0–20 star 的无关小项目（OSINT 聚合器、图像编辑器、Chrome 扩展、IP 追踪、CS2 外挂、4 个空 HTML 壳）——<strong>不是批量铺开的矩阵号，jailbreaks 是孤例式爆发</strong>，既说明作者没有团队、也没有在做矩阵化运营。</p>
+<p>更值得注意的是 <strong>git 历史里的第一条线索</strong>：仓库首日 2026-06-18 的前 4 次提交是「Add guidelines for writing adult fiction」「Establish collaboration guidelines for adult fiction」「Create collaboration guidelines for dark fiction writing」「Introduce author's insights on dark fiction and collaboration」，对应 <code>opus v1/v2</code>、<code>sonnet v1</code>、<code>Sonnet v2</code> 四个文件——<strong>本仓库最早的四份工件，commit message 与内容都是第一人称的成人/暗黑文学作者人设铺垫</strong>。<code>opus v1.md</code> 至今仍是一段完整的虚构作家自述，与 README 现标的「Conversational groundwork persona」完全对得上。后来 <code>fe77207 Revise content policy and boundary definitions</code> 把这条线重新叙事化为「研究/教育」。</p>
+<p>这个细节决定了对本项目的所有解读：<strong>它不是安全研究者的工具集，而是一个创作者把自己的「定制 agent 行为契约」方法沉淀下来之后，顺手做成了索引。</strong></p>
+<h3>问题判断</h3>
+<p>作者的问题意识是<strong>自用中长出来的</strong>，不是外部观察来的。证据是完整的时间线闭环：</p>
+<table><thead><tr><th>时间</th><th>事件</th><th>含义</th></tr></thead><tbody><tr><td>2026-06-18</td><td>建仓，一天内 13 次批量上传，随后把无扩展名文件统一重命名</td><td>「先有货、后整理」——作者手上已有一批成品，只是找了个地方放</td></tr><tr><td>2026-06 ~ 08-16</td><td>star 停在 11–12，<strong>零 fork</strong></td><td>纯自用阶段，无外部关注</td></tr><tr><td>2026-08-19</td><td>第一个 fork 出现（8 月共 3 个）</td><td>社区开始发现</td></tr><tr><td>2026-09-08 起</td><td>fork 批量出现（9 月 333 个、10 月 1,066 个；全量翻页快照口径，GitHub 页面计数为 1,382）</td><td>被当成该赛道「默认收件箱」</td></tr><tr><td>2026-09-15 → 09-23</td><td>star 198 → 1,994（10 天约 10 倍）</td><td>第一次爆发</td></tr><tr><td>2026-09 / 10</td><td>commit 各 26 / 36 个，模型清单同步换成 GLM 5.3、Step-5、Gemini 4 Argon、Mistral Large 4、Muse Wonder、Kimi K3.1、Nemotron 3 Ultra</td><td><strong>作者在 star 涨起来之后，加大了更新频率</strong></td></tr></tbody></table>
+<p><strong>为什么是 2026 年 6 月</strong>：前置条件是 2025H2 之后新一代模型与 agent harness 的密集发布；但更直接的答案是——<strong>作者自己第一次需要这类工件的时候</strong>。这是典型的自用型项目时间点：需求先于市场。</p>
+<p>而 17 个 open issue 里排着一条按版本号编号的追新队列（Gemini 3.8 / GPT-6 Luna / Kimi 3.1 / Nemotron 3 Ultra / Qwen 3.8），说明<strong>社区已经把「模型发布」当成了这个仓库的更新信号</strong>——作者更新频率直接由上游模型发布节奏决定。</p>
+<h3>解法哲学</h3>
+<p>README 的「Contributing」五条是这个项目唯一的宪法，也是理解作者取舍的钥匙。逐条对照「做」与「不做」：</p>
+<p><strong>明确做的</strong>：一文件一提示词；内容完整（<code>complete and paste-ready. No summaries. No partial excerpts</code>）；声明注入面（明文列举 system prompt / <code>AGENTS.md</code> / Modelfile / configuration slot）；版本不覆盖（「Significant revisions should receive a new version rather than silently replacing an older prompt」）；描述准确（「Avoid claiming compatibility with versions or models that have not been tested」）。</p>
+<p><strong>明确不做的</strong>——这部分比做的更能说明作者是谁：</p>
+<table><thead><tr><th>不做</th><th>证据</th></tr></thead><tbody><tr><td>不建社区网络</td><td>Issue #19 是外部 JB 制作人上门求互推（从我这取一条 + 标注我），<strong>0 回复至今 open</strong></td></tr><tr><td>不做多渠道分发</td><td>Issue #31 请求建 Telegram 频道（「if it got removed from GitHub then it show telegram」），未落地；作者把 GitHub 当唯一权威副本，并接受「被删仓」风险</td></tr><tr><td>不做版本化发布</td><td>0 tag / 0 release / 0 CHANGELOG，版本只活在文件名里</td></tr><tr><td>不做治理文件</td><td>无 <code>CONTRIBUTING.md</code> / <code>CODE_OF_CONDUCT.md</code> / <code>SECURITY.md</code> / issue 模板 / PR 模板 / <code>.github/</code>；README 的 Contributing 一节是唯一规范来源</td></tr><tr><td>不做工程化</td><td>无 CI、无脚本、无 schema 校验、无哈希、无回归测试</td></tr><tr><td>不做商业化</td><td>README 无任何指向自家产品、Discord、Telegram、Sponsor 的链接</td></tr></tbody></table>
+<p><strong>从 PR 审查反推的接受标准</strong>：#23（附完整结构说明）、#13（剔除 Discord 水印）、#10（纯 housekeeping 补扩展名 + 拆 macOS 大小写冲突）全部合并；#28「taking a course about git and github」至今 open。</p>
+<p>把这些放在一起看，作者的策展立场是清晰的：<strong>他要的是一本目录清晰、可在 GitHub 里并排 diff 的「模型提示词样本册」，并且坚持自己作为策展者的身份。</strong> README 的一节 Contributing 实际承担了 CHANGELOG / CONTRIBUTING / SECURITY 三份文件的职责——这是本项目最核心的一次取舍：<strong>规范停留在散文层面，没有 CI 或 schema 校验兜底</strong>，于是它既保住了零依赖，也付出了索引漂移与命名混乱的代价（见下方第 5 条）。</p>
+<h3>战略图景</h3>
+<p>判定：<strong>这是一个内容产品 / 流量位，不是一个软件项目。</strong></p>
+<p>证据是三零一强：<strong>零商业化</strong>（无自家产品导流）、<strong>零平台化</strong>（拒绝 Telegram、拒绝互推、拒绝模板——拒绝一切把读者变成关系的动作）、<strong>零持续性承诺</strong>（0 tag、0 roadmap、2026-07 整月零提交）；<strong>却有最强的持续性行为</strong>（9/10 月 26+36 次提交，严格对应当月新发布模型）。</p>
+<p>作者在运营的是一个<strong>模型版本追踪位</strong>。README 的模型清单本身就是按发布顺序滚动更新的版本追踪表——这个清单天然是一份「模型时代的提示词形态」历史切片，因为同一模型的两版提示词（<code>qwen-3.7.md</code> 的 740 行 XML 式 vs <code>qwen-3.8.md</code> 的 120 行 operating-spec 式）会并列留在仓库里。</p>
+<p>内容上分双轨：<strong>闭源前沿</strong>（10 月主力：Gemini 4 Argon / Mistral Large 4 / Muse / Step-5 / Nemotron 3 Ultra）与<strong>开源及免费 stealth 模型</strong>（9 月主力：GLM 5.3 / Kimi K3 / LongCat / MiMo / DeepSeek 4.1 / OpenCode Zen 一族）。<strong>后者是真正的差异化资产</strong>——竞品几乎无人跟进 OpenCode Zen 这条线。</p>
+<h2>核心价值提炼</h2>
+<h3>创新之处</h3>
+<ol><li><strong>载体原生（carrier-native）的工件封装</strong> — 新颖度 3/5 | 实用性 5/5 | 可迁移性 5/5<br/>别的仓库给「提示词」，这个仓库给<strong>部署工件</strong>。每份文件自带注入面声明，且声明写进了工件的语法里而非外挂文档：Ollama Modelfile 体真的带 <code>FROM</code> + <code>SYSTEM """…"""</code> + <code>PARAMETER</code>，可以直接 <code>ollama create gemma4-jb -f gemma4.md</code> 跑起来；<code>grok-config.txt</code> 是带 <code>&lt;ctx&gt;/&lt;priority&gt;/&lt;router&gt;/&lt;interpret&gt;/&lt;reasoning&gt;/&lt;voice&gt;</code> 子标签的 <code>&lt;CFG&gt;</code> 块；另有 9 份以 <code># Assistant Operating Specification</code> 起手、若干份以 <code>&lt;system-reminder&gt;</code> 开头模拟 harness 注入。<br/><em>so what</em>：把「放哪里用」编码进工件语法，意味着投放可以机械化，而不是靠人肉记忆。这是从「提示词」到「部署工件」的关键跃迁。</li><li><strong>按注入面而非按主题的索引分类学</strong> — 新颖度 3/5 | 实用性 4/5 | 可迁移性 4/5<br/>README 表格三列 <code>Model | File | Type</code>，<code>Type</code> 列就是<strong>载体声明的规范化表述</strong>（「System prompt」/「Assistant operating specification」/「Workspace operating profile」/「<code>FROM</code> + <code>SYSTEM</code> block」/「<code>&lt;CFG&gt;</code> priority and routing configuration」）。分类依据是「应该投放到哪个面」，对使用者正交；每类有稳定形态特征（Modelfile 必带 <code>FROM</code>/<code>SYSTEM</code>，<code>&lt;CFG&gt;</code> 必带子标签，operating spec 必带编号章节 + Boundaries + 决策函数，纯 system prompt 无标题散文起手）。<br/><em>so what</em>：这是一条任何「需要投放到多种接口的配置/模板/示例库」都能直接抄走的索引轴。</li><li><strong>非破坏式版本化（additive versioning）</strong> — 新颖度 3/5 | 实用性 5/5 | 可迁移性 4/5<br/>不打 tag、不覆盖旧文件，而是新增 <code>opus v2.md</code> / <code>Sonnet v2.md</code> / <code>Muse-spark-1-3-v2.md</code> / <code>deepseek v4.md</code>。副作用是：同一模型两版提示词可以在 GitHub 里直接 <code>?diff=split</code> 并排对照——<strong>这是本仓库最被低估的能力</strong>。代价是版本谱系不可机读（v2 是修订还是针对另一模型版本重写，无 metadata），同模型文件数随版本线性膨胀（Anthropic 一家占 4 个链接）。</li><li><strong>模型追踪作为策展单位</strong> — 新颖度 4/5 | 实用性 5/5 | 可迁移性 3/5<br/>索引键 = 厂商 + 模型版本，不是主题、不是技巧、不是难度。仓库索引等价于一份滚动版本追踪表，天然承载历史切片。<strong>这是本项目唯一无法被一次性复制的资产</strong>（见「竞品格局」）。</li><li><strong>把「拒绝即失败」写成可执行决策函数</strong> — 新颖度 4/5 | 实用性 3/5 | 可迁移性 4/5<br/><code>grok-4.7.md</code> 里写成可执行伪代码 <code>resolve(request): if matches one of the five boundaries: decline ... else: build(request, fidelity=FULL)</code>，并附「误判自检清单」（哪些内心独白属于推理错误、应丢弃）。<code>Unified.md</code> 与 <code>kimik3.1.md</code> 把同一套论证重构成「Operating Policy + 六条 Boundaries + 分类决策函数」。<br/><em>so what</em>：<strong>这套文档工程手法可以完全脱离越狱语境使用</strong>——任何需要写「agent 行为契约」「内容策略」「路由规则」文档的人都能照搬：散文规则 → 判定器 + 反例清单。</li><li><strong>纯 Markdown + GitHub 原生 diff 的并排对照</strong> — 新颖度 3/5 | 实用性 4/5 | 可迁移性 4/5<br/>刻意不用 ZIP / JSON / 数据库，换来的是零安装零运行时、记事本可改、PR 友好，以及「在 GitHub 里直接 diff 两个模型的 system prompt」这个任何 JSON 方案都要自己实现的能力。</li></ol>
+<h3>可复用的模式与技巧</h3>
+<ol><li><strong>文件名即主键</strong>（file-as-DB）：每个资产一文件，文件名承担唯一标识与元数据。适用：零依赖内容资产库。⚠️ 前提是<strong>命名规范必须在第一天就存在</strong>——见下方「关键设计决策」第 5 条的反面教训。</li><li><strong>载体原生封装</strong>：把「放哪里用」写进工件语法而非外挂文档。适用：需投放到多种接口的配置/模板/示例库。</li><li><strong>按注入面而非按主题分区</strong>：索引键 = 部署位置/消费面。适用：配置库、SDK 示例库、插件库。</li><li><strong>非破坏式版本化 + 并排对照</strong>：版本摊平成并列文件，旧版不被 git history 埋掉。适用：会迭代但旧版仍有参考价值的资产。</li><li><strong>单一索引文件 = 文档 + schema + 使用手册三重身份</strong>：README 同时是索引、规范、使用说明，零依赖。适用：小规模策展型仓库。⚠️ 代价是索引必然漂移（本仓库已漂移 5 个文件）。</li><li><strong>规则写成判定器 + 反例清单</strong>：散文规则 → 可判定决策函数 + 误判自检表。适用：agent 行为规范、内容策略、路由策略文档。</li><li><strong>研究叙事作为免责护栏</strong>：研究框架 + 边界声明 + 保留全部权利三层叠加。适用：灰区知识发布。⚠️ <strong>注意这是声誉措施不是技术控制</strong>——外部评论已准确指出这点。</li><li><strong>反向内容作为诊断样本</strong>（源自 Issue #14 信号）：社区最想要的其实是「模型拒绝时的原始输出」，用来当失败诊断样本读。这是比「正向提示词」更稀缺、也更接近真实评测需求的数据。</li><li><strong>模型版本追踪表作为索引</strong>：随时间滚动的版本清单。适用：快速迭代的外部依赖追踪。</li></ol>
+<h3>关键设计决策</h3>
+<ol><li><strong>README 作为唯一 schema 与索引——「无 schema 时代的 schema」</strong><ul><li>问题：39 个平铺文件，用户怎么知道哪个对应哪个模型、该粘到哪、是否完整？</li><li>方案：三列表格做索引，<code>Type</code> 列是载体声明的规范化表述；README 同时承担使用指南（5 个投放子节）、贡献规范（5 条）、免责声明。</li><li>Trade-off：换来零学习成本、零依赖、GitHub 原生渲染、浏览器内直接 diff；牺牲机器可读性——无 frontmatter、无 sidecar，索引一致性全靠人工维护，必然漂移。</li><li>可迁移性：<strong>高</strong></li></ul></li><li><strong>「一文件一提示词」= 文件即数据库，文件名即主键</strong><ul><li>方案：不用数据库/frontmatter/目录层级。<code>opus v1.md</code>/<code>opus v2.md</code> 天然成版本序列；<code>glm-zcode-5.3.md</code> + <code>glm-zcode-5.3-AGENTS.md</code> 天然成「同模型两载体」一对。</li><li>Trade-off：换来 <code>ls</code> 就是一次检索、IDE/fzf 直接可用；牺牲文件名承载不了的关系——同模型多载体只能靠 <code>-AGENTS</code> 后缀表达，且无法表达「这版是为哪个模型版本适配的」。</li><li>可迁移性：<strong>高</strong></li></ul></li><li><strong>载体声明机制——让工件可被机械投放</strong><ul><li>Trade-off：文件内声明做到零歧义 + 可直接投放（Modelfile 真能跑）；代价是<strong>不机器可解析</strong>——6 种标记语法，要自动化投放得写 5+ 套解析分支。<strong>这正是竞品 <code>gpt-instruct</code> 能做 SHA-256 + 回归套件而这里不能的根因。</strong></li><li>可迁移性：<strong>高</strong></li></ul></li><li><strong>非破坏式版本化</strong><ul><li>Trade-off：与 git tag 相比，tag 让「同一文件新旧」有明确谱系；本方案把版本摊平成 N 个文件，好处是浏览器内直接并排 diff 且旧版不被 git history 埋掉，代价是<strong>版本谱系不可机读</strong>，且同模型文件数随版本线性膨胀。</li><li>可迁移性：<strong>中–高</strong></li></ul></li><li><strong>命名规范晚于存量——「文件名即主键」设计的最大脆弱面（反面教材）</strong><ul><li>规范：Contributing 第 1 条要求「lowercase names with hyphens and no spaces」，示例 <code>model-name.md</code>。</li><li>实际：<strong>规范发布于 2026-10-13，而仓库 90% 的文件在此之前已存在</strong>。现状是规范与存量错位：6 个带空格文件名（<code>Grok build.md</code>/<code>Muse spark 1.3.md</code>/<code>Sonnet v2.md</code>/<code>opus v1.md</code>/<code>opus v2.md</code>/<code>sonnet v1.md</code>）；版本号两套语法并存（<code>opus v1</code> 空格点分 vs <code>Muse-spark-1-3-v2</code> 连字符点分）；曾缺 <code>.md</code> 扩展名；曾有 <code>GLM ZCODE.md</code> vs <code>Glm Zcode.md</code> 大小写冲突（macOS 上致命）。</li><li>PR #10 的修补：两个 commit（13 文件 + 6 文件 R100，<strong>内容零改动</strong>）补齐 <code>.md</code> 扩展名、拆掉大小写冲突、给无版本号文件补版本号。</li><li><strong>PR #10 还漏了</strong>：6 个空格文件名全保留（README 里要写 <code>%20</code> 编码，脚本容易踩坑）、命名风格未统一、同模型多载体关系看不出（<code>muse-ai-AGENTS.md</code> 与 <code>Muse spark 1.3.md</code> 同模型却看不出）、<code>qwen-preferences.md</code> 空占位未清理。</li><li><strong>根因：规范只能靠人读 README 执行，没有 CI 或 schema 校验兜底。</strong> 若规范在 2026-06 建仓当天就存在，本可一次 rename commit 全部统一。</li><li>可迁移性：<strong>高</strong>（教训极其直接）</li></ul></li><li><strong>提交工作流：25 次网页上传 + 本地改名</strong><ul><li>事实：80 个提交里有 <strong>25 个（31.3%）是 <code>Add files via upload</code></strong>，即 GitHub 网页端上传。上传时平台把文件名强制为 <code>AGENTS.md</code>（或 <code>AGENTS.txt</code>），作者随后必须本地 <code>git mv</code> 改名。全库 40 个 R100 重命名里，至少 14 对是这套「占位名 → 语义名」的两段式提交（<code>AGENTS.md → kimik3.1.md</code>、<code>AGENTS.md → Unified.md</code>、<code>AGENTS.txt → Beam.md</code>、<code>AGENTS.md → Muse-wonder.md</code>、<code>AGENTS.md → Gemini-4-Argon.md</code>……）。</li><li><strong>这解释了为什么「被修改最多的文件」是 <code>AGENTS.md</code>（14 次）——它不是被反复修订的核心文件，而是同一个占位文件名被 14 份不同内容依次复用。</strong> 按时间顺序读这 14 个目标文件名，等于一份维护者的模型追踪清单：DeepSeek 4.1 → GLM Zcode 5.3 → Muse Spark 1.3 → Grok Build → GLM 5.3 Flash → Step-5 → Mistral Large 4 → Muse Spark 1.3 v2 → Gemini 4 Argon → Muse Wonder → Unified → Kimi K3.1。</li><li>作者本人从未把仓库 clone 到本地做内容版本管理（无 tag、无 changelog、无分支流），但确实用了本地 git 做重命名与合并；<strong>社区贡献者走的则是完全规范的 PR 流程</strong>——只有主维护者自己用网页上传。</li><li>可迁移性：<strong>高</strong></li></ul></li></ol>
+<h2>竞品格局与定位</h2>
+<h3>竞品对比矩阵</h3>
+<table><thead><tr><th>维度</th><th>toggg53192-cmd/jailbreaks</th><th>YuJunZhiXue/dsh-purge</th><th>MDX-Tom/gpt-instruct</th><th>elder-plinius/L1B3RT4S</th><th>Alejandros17487/ai-jailbreaks</th></tr></thead><tbody><tr><td>Star</td><td>9,838</td><td>13,556</td><td>10,957</td><td>22,805</td><td>524</td></tr><tr><td>形态</td><td>纯 Markdown 语料库</td><td>DeepSeek Harness 运行时补丁插件</td><td>Codex 提示词 + 测试包</td><td>提示词大杂烩 + token 技巧</td><td>原仓库的逐字节镜像 + API 引流</td></tr><tr><td>覆盖广度</td><td>37 工件 / 9 家厂商 / 30 行索引</td><td>锁定单一 harness</td><td>锁定单一方案</td><td>广但浅</td><td>与原仓库全同步（落后 3 个新模型）</td></tr><tr><td>Commit 数</td><td>80</td><td>24</td><td>84</td><td>254</td><td>5</td></tr><tr><td>载体标注</td><td><strong>5 类载体，每类文件内自证</strong></td><td>注入面固定</td><td>单一形态</td><td>无</td><td>抄原仓库（较规范）</td></tr><tr><td>可验证性</td><td>无</td><td>版本化 release（v1.1.83）+ Apply/Restore</td><td><strong>SHA-256 + 回归套件 + A/B/C 发布闸门</strong></td><td>254 commits</td><td>无</td></tr><tr><td>许可</td><td><strong>无 LICENSE</strong></td><td>Apache-2.0 + 署名要求</td><td>MIT</td><td>AGPL-3.0</td><td>无</td></tr><tr><td>版本化</td><td>文件名内嵌版本号（0 tag/0 release）</td><td>语义化 release</td><td>语义化 release</td><td>git 历史</td><td>补了 CHANGELOG（但 0 tag）</td></tr><tr><td>失效治理</td><td>无（#5 开 6 评论仍 open）</td><td>可 Apply/Restore</td><td>回归测试</td><td>无</td><td>无</td></tr><tr><td>可发现性</td><td>0 topics</td><td>—</td><td>—</td><td>—</td><td><strong>6 topics，反超原仓库</strong></td></tr></tbody></table>
+<h3>差异化护城河</h3>
+<p><strong>技术层：弱。</strong> 载体标注是一套可被照抄的规范，且已被证明可抄。</p>
+<p><strong>生态层：中偏弱，而且正在变弱。</strong> 一个真实但需要精确表述的事实：本仓库的 fork 列表里确实有 <code>YuJunZhiXue/jailbreaks</code>（2026-09-08）和 <code>MDX-Tom/jailbreaks</code>（2026-10-26）——两位头部竞品作者都曾 fork 过本仓库。<strong>但必须指出因果方向</strong>：他们各自的旗舰仓库 <code>dsh-purge</code>（2026-08-19）和 <code>gpt-instruct</code>（2026-07-11）<strong>都创建于各自 fork 之前</strong>。所以 fork 记录证明的是「他们来消费过这个库」，<strong>不能证明「他们是从这个库长出来的」</strong>。这两个头部项目是本仓库的<strong>下游消费者与背书</strong>，不是它的派生。</p>
+<p><strong>信任层：弱。</strong> 无 LICENSE / 无 release / 无回归测试 / 无协调披露，README 的免责声明在外部评论中被准确评价为「a norm, not a control」。</p>
+<p><strong>真正稀缺的只有两样</strong>，而且都只依赖作者个人劳作、没有被任何机制固化：</p>
+<ol><li><strong>滚动模型追踪的持续性</strong>——竞品都没有：dsh-purge 锁定单一 harness，gpt-instruct 是单一方案。<strong>时效性是唯一无法被一次性复制的资产。</strong></li><li><strong>OpenCode Zen 免费 stealth 模型这条线</strong>（Big Pickle / Space Bunny / LongCat / MiMo / Step-5）——竞品几乎完全没跟。</li></ol>
+<h3>竞争风险</h3>
+<ol><li><strong>内容已被整体复制，且复制方在变现</strong>（最高优先级）：<code>Alejandros17487/ai-jailbreaks</code> 的 33 个共有文件<strong>在做空白归一化后哈希完全一致</strong>。它<strong>不在本仓库的 fork 列表里</strong>——也就是说它连 fork 都没走，直接把内容整体搬走，然后在 README 顶部加了 <code>7api.st</code> 的付费 API 引流位（「up to 99% off, including Uncensored and Abliterated models that never refuse」）+ Telegram 频道 + 带 <code>?start=github2</code> 返利参数的 bot 链接。它还顺手补了 <code>CHANGELOG.md</code> / <code>CONTRIBUTING.md</code> / <code>SECURITY.md</code>、加了 6 个 topics、把 6 个带空格文件名全部规范化、<strong>把原仓库自己都漏收的 <code>beam.md</code> / <code>unified.md</code> / <code>muse-wonder.md</code> 收进了索引</strong>。原仓库 README <strong>完全没有提到这个镜像</strong>。</li><li><strong>无 LICENSE 让这一切畅通无阻</strong>：默认保留全部权利，但内容已被整体搬运并挂上商业推广位，原仓库既无收益也无护城河。</li><li><strong>治理度被反超</strong>：镜像者补齐了本仓库一直没补的治理文件，搜索可见性也反超（本仓库 0 topics）。</li><li><strong>失效治理缺失导致「star 数 ≠ 有效性」</strong>：无兼容矩阵、无失效标记、无 CI 校验，唯一的处置是 README 里一句「If a file appears outdated, open an issue」。#5 开 6 评论至今 open，#9、#8、#12 同类。<strong>在无版本化发布、无回归测试的前提下，9,838 star 和免责声明都无法推断任何一份工件当前是否有效。</strong></li><li><strong>作者单点依赖</strong>：87.5% 提交集中度 + 2026-07 整月零提交的先例 + 14 个仓库分散注意力。</li></ol>
+<h3>生态定位</h3>
+<p><strong>上游原料节点（upstream feedstock node），而非产品。</strong></p>
+<p>真实功能有三层：① 给下游竞品与镜像者供料；② 作为「模型版本追踪位」提供低成本查阅基准；③ 为该细分赛道提供默认收件箱（issue #31/#32 反映用户已把它当成默认收件箱，并自发建立 Telegram 备灾渠道）。</p>
+<p>用 npm 类比：<strong>它更像一个早期的 registry 镜像，而不是一个 npm 包本身。</strong></p>
+<h2>套利机会分析</h2>
+<ul><li><strong>信息差</strong>：<strong>低</strong>。9,838 star 的可发现性溢价已经兑现，这个位置没有留给新人的套利空间。但有一个<strong>反向信息差</strong>值得注意——多数人看到「9,838 star 的越狱仓库」会以为它是一个成熟项目；实际上它 0 行代码、0 测试、0 CI、0 release、<strong>连 LICENSE 都没有</strong>，且<strong>已有 33 份文件被整体复制并挂上商业推广位</strong>。也就是说，<strong>star 数与工程成熟度、与权利归属完全脱钩</strong>。读这个仓库的人如果按 star 数分配信任，会分配错。</li><li><strong>技术借鉴</strong>：这是本仓库最实在的价值所在，而且<strong>与它的内容毫无关系</strong>——是它的策展架构。「文件即数据库 / 文件名即主键 / 单一索引文件承担 schema + 索引 + 手册三重身份 / 按注入面而非按主题分区 / 非破坏式版本化 + 并排对照 / 载体原生封装」这一整套，是任何做小规模知识资产库、配置库、示例库、模板库的人可以直接照搬的。</li><li><strong>生态位</strong>：填补的是「模型发布 → 提示词工件」这条链上的<strong>时效性空档</strong>。这个空档不是技术空档而是<strong>人力空档</strong>——没有人愿意持续做「每天跟一遍各家模型发布」这件没有技术含量但极耗时间的事。</li><li><strong>趋势判断</strong>：<strong>符合趋势，且仍在爬坡</strong>。star 曲线最后 8 天净增约 2,300，尚未见顶。但「后发优势」在这里是<strong>反过来的</strong>：本项目没有后发优势，因为头部竞品在工程化、许可、可验证三个维度全面超越，而它唯一的优势是「更早、更全、更新更快」的时间差——<strong>而时间差每天在缩小</strong>。真正的机会不在于追赶头部，而在于<strong>把时效性这个唯一资产机制化</strong>（见「行动建议」）。</li></ul>
+<h2>风险与不足</h2>
+<ol><li><strong>许可缺失是硬伤，不是瑕疵</strong>：无 LICENSE = 默认保留全部权利。但内容已被整体复制并挂上付费 API 引流位，<strong>权利归属与实际流通状态完全脱节</strong>。机构/企业连「内部使用是否合法」都无法确认；社区也无从把它的内容接进自己的红队平台。IndieKings 的评价很准确：<strong>被 fork 的一方拿到了许可证，留下的这一方反而没有。</strong></li><li><strong>完整性契约有三处例外</strong>：抽样验证 37 份工件中的 20 份（54%），均为完整可投放文本，无「节选」、无省略号截断、无「（以下略）」，文件尾普遍是收束句或完整的 Ollama <code>PARAMETER</code> 块，符合 <code>paste-ready</code> 契约。<strong>例外 3 处</strong>：<code>qwen-preferences.md</code> 是 1 字节空占位（内容已于 2026-06-18 删除，残留未清理）；<code>opus v2.md</code> 首字损坏（<code>aaI want to...</code>）；<code>Muse spark 1.3.md</code> 的 H1 写成了 <code># \# Muse Spark 1.3</code>（转义残留）。<code>deepseek v4.md</code> 结尾还混入了与提示词无关的拼接内容。</li><li><strong>索引漂移且数量口径三套不自洽</strong>：README 的 33 个链接<strong>全部有效，0 失效链接</strong>；但有 <strong>5 个文件未被收录</strong>——<code>Unified.md</code>（97 行，全库最完整的 operating policy 骨架之一）、<code>Beam.md</code>（230 行，同骨架的另一实现）、<code>Muse-wonder.md</code>、<code>kimik3.1.md</code>（作者 <code>fe77207</code> 唯一改动过的文件）、以及空占位 <code>qwen-preferences.md</code>。<strong>遗漏的不是边角料，是高价值资产。</strong> 同时数量口径三套对不上：badge 与正文称「32 prompts / 26+ targets」，README 表格实际 30 行 / 33 链接，磁盘实际 37 份内容工件。<strong>偏差方向是「索引落后于内容」，不是「内容虚标」</strong>——作者更新内容快于维护索引，这是纯手工索引 + 无 CI 校验的必然结果。</li><li><strong>零可验证性</strong>：无哈希、无签名、无回归套件、无 CI、无依赖清单。第三方无法验证工件是否被篡改，维护者无法验证工件当前是否有效。对照 <code>gpt-instruct</code> 的 SHA-256 + 回归套件 + 分级发布闸门，差距最大——<strong>但这也是最容易补齐的一项</strong>。</li><li><strong>失效治理完全缺失</strong>：#5「Muse.ai jailbreak doesnt work」开 6 评论至今 open，#9、#8、#12 同类。没有兼容矩阵、没有「最后验证时间」标记、没有失效下架机制。用户读到一份 2026-06 的提示词时，无法知道它是否还对 2026-10 的模型有效。</li><li><strong>协作机制原始</strong>：无 issue 模板、无 PR 模板、无 CI、无 lint 规范（虽然内容型仓库没有 lint 也很正常）；「PR 格式对了就合并」全靠人眼判断，#28 至今卡着。2026-07 整月零提交也说明维护者可能随时消失。</li><li><strong>零运营素材</strong>：README 全部 4 个图片都是 shields.io 徽章，仓库无任何二进制媒体文件，无截图、无架构图、无 Demo、无视频。对一个要靠 star 与信任吃饭的内容产品来说，这是曝光效率上的浪费。</li></ol>
+<h2>行动建议</h2>
+<h3>如果你要用它</h3>
+<ul><li><strong>把它当「模型版本追踪表」，别当「提示词库」</strong>。真正值钱的不是里面某一份提示词，而是「某家模型某版本发布时，社区普遍在用什么形态的 system prompt」这份切片。</li><li><strong>按载体取用，不要按模型名取用</strong>。这个仓库最有价值的组织方式是按注入面分类：需要 API system 字段就去 system prompt 一节，需要 agent 长期行为约束就用 <code>AGENTS.md</code> / operating specification 一节，需要本地模型就直接用 Modelfile 体（<code>ollama create &lt;name&gt; -f &lt;file&gt;</code>）。</li><li><strong>用之前先做版本自检</strong>。这个仓库没有兼容矩阵，README 的版本承诺是「Avoid claiming compatibility with versions or models that have not been tested」——<strong>作者自己都没测</strong>。请把它当作待验证的候选，而不是可直接投产的配置。</li><li><strong>安全立场</strong>：如果你的目标是防御侧（做 prompt injection 评测、训练抗攻击模型），这个仓库是相当有价值的<strong>手法分类样本</strong>（人设锁定 / 指令层级覆盖 / 语境重定义 / 伪造授权文件 / 模拟系统提醒 等家族），但请注意它<strong>没有版本化发布、没有回归测试、没有协调披露</strong>——它是一份语料，不是一份漏洞报告。</li><li><strong>合规上注意</strong>：原仓库无 LICENSE，默认保留全部权利，商用与再分发需自行取得授权；同时请自行核对你所用平台的 ToS。</li></ul>
+<h3>如果你要学它</h3>
+<p>按这个顺序读（这 6 个文件覆盖了全部设计决策）：</p>
+<ol><li><strong><code>README.md</code>（221 行）</strong> — 唯一的设计文档。精读三处：① <code>Collection</code> 表的 <code>Type</code> 列（载体声明的规范化表述）；② <code>How to Use</code> 的 5 个投放子节（<strong>把「文件」翻译成「动作」的投放手册</strong>）；③ <code>Contributing</code> 的 5 条（一个内容型仓库的「宪法」该长什么样）。</li><li><strong><code>gemma4.md</code> / <code>gpt-oss-20b.md</code></strong> — 载体原生封装的样本。看 <code>FROM</code> + <code>SYSTEM """…"""</code> + <code>PARAMETER</code> 的 Ollama 语法如何让工件<strong>自证可投放</strong>。</li><li><strong><code>grok-config.txt</code>（40 行）</strong> — 配置块体的样本。XML 式 <code>&lt;CFG&gt;</code> 与子标签分层，把「一个配置要覆盖哪些维度」显式列出来。</li><li><strong><code>opus v1.md</code> vs <code>opus v2.md</code>、<code>sonnet v1.md</code> vs <code>Sonnet v2.md</code></strong> — 非破坏式版本化的对照读法。同一模型两版在 GitHub 里并排 diff，是这个仓库最被低估的能力。</li><li><strong><code>Unified.md</code>（97 行）/ <code>muse-ai-AGENTS.md</code></strong> — operating specification 的成熟骨架（身份 → 边界 → 分类决策 → 推理协议 → 表达规范 → 交付标准）。<strong>这是最值得抄的部分，也是原仓库自己漏收了索引的资产。</strong></li><li><strong><code>grok-4.7.md</code></strong> — 看规则怎么被写成可执行判定函数 <code>resolve(request)</code> + 误判自检清单。这套手法可脱离越狱语境直接迁移到任何 agent 行为契约文档。</li></ol>
+<p><strong>顺带读一遍反面教材</strong>：<code>git log --name-status</code> 里那 14 对 <code>AGENTS.md → X.md</code> 的 R100 重命名——它是「维护者不用规范流程管理内容」的活标本，也是本仓库 6 个空格文件名和 1 字节空占位的根因。</p>
+<h3>如果你要 fork 它</h3>
+<p><strong>最有价值的改进方向</strong>（按 ROI 排序）：</p>
+<ol><li><strong>补 <code>LICENSE</code></strong>（MIT / Apache-2.0）——成本 5 分钟，收益是立刻堵住「被整体复制并变现」的漏洞，同时让机构能合法引用与再分发。<strong>这是本仓库当前最紧要的一步。</strong></li><li><strong>补索引一致性</strong>：把 <code>Unified.md</code> / <code>Beam.md</code> / <code>Muse-wonder.md</code> / <code>kimik3.1.md</code> 收进 README 表格，删掉 <code>qwen-preferences.md</code> 空占位，让 badge 数量与实际工件数对齐（当前 32 / 33 / 37 三套口径）。</li><li><strong>补命名规范化</strong>：一次性 rename commit 清掉 6 个空格文件名、统一版本号语法（小写连字符点分）、把同模型多载体关系编码进文件名（如 <code>glm-zcode-5.3-AGENTS.md</code> 已经是好例子）。</li><li><strong>补「最后验证时间 + 兼容矩阵」</strong>：每份文件加一行 <code>Verified against &lt;model-version&gt; on &lt;date&gt;</code>，README 加一张兼容表。这直接解决 #5/#8/#9/#12 这类失效 issue 的根因，也是把时效性资产化的最小成本路径。</li><li><strong>补可验证性</strong>：<code>checksums.txt</code> + 一个 CI workflow（GitHub Actions 跑 checksum diff）。这是竞品 <code>gpt-instruct</code> 已经做到、而这里完全空缺的能力，也是最容易补齐的一项。</li><li><strong>补「反向内容」</strong>：按 Issue #14 的信号，把「模型拒绝时的原始输出」也作为诊断样本入库。这比再收 10 份正向提示词更有价值，因为它直接支撑排障与回归评测。</li><li><strong>补 topic 标签</strong>：0 topics 是可发现性的直接损失（镜像者补了 6 个就反超了）。</li><li><strong>补 <code>SECURITY.md</code> 与协调披露流程</strong>：明确「发现问题 → 通知维护者 → 修复窗口」的路径，把「发布可用提示词」与「发布漏洞报告」区分开——外部评论已指出这个区分是当前最大的叙事漏洞。</li></ol>
+<h3>知识入口</h3>
+<table><thead><tr><th>资源</th><th>链接</th></tr></thead><tbody><tr><td>DeepWiki</td><td><a href="https://deepwiki.com/togg53192-cmd/jailbreaks">https://deepwiki.com/togg53192-cmd/jailbreaks</a> （已收录；探测时返回 429 限流，非 404）</td></tr><tr><td>Zread.ai</td><td>未收录（探测返回 403）</td></tr><tr><td>关联论文</td><td>无直接引用本仓库的论文。主题相邻坐标：<a href="https://arxiv.org/pdf/2403.17336v1">Don't Listen To Me</a>（448 条越狱提示的体裁分类学）、<a href="https://arxiv.org/abs/2610.02827">MLCommons Jailbreak Benchmark v1.0</a>、<a href="https://arxiv.science/abs/2510.15476">SoK: Systematizing LLM Prompt Security</a></td></tr><tr><td>在线 Demo</td><td>无（仓库无任何可运行代码、playground 或验证器；下游 <code>dsh-purge</code> 有 Drill 实验台、<code>gpt-instruct</code> 有 dry-run / 回滚）</td></tr><tr><td>逐字镜像</td><td><a href="https://github.com/Alejandros17487/ai-jailbreaks">https://github.com/Alejandros17487/ai-jailbreaks</a> （524 star，33 个共有文件哈希一致，README 顶部挂有付费 API 引流位；不在本仓库 fork 列表中）</td></tr><tr><td>外部深度分析</td><td><a href="https://cn-sec.com/archives/5535549.html">cn-sec：七层手法从身份层打到部署层</a> · <a href="https://www.indiekings.com/2026/10/jailbreaks-repo-32-prompts-and-research.html">IndieKings：32 Prompts and a Research-Only Warning</a></td></tr></tbody></table>
+</body>
+</html>
