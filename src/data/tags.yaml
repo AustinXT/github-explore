@@ -2191,6 +2191,8 @@ entries:
   - ai-agent
   - devtools
   - workflow-automation
+  renhuai123_ziwei-doushu:
+  - data-pipeline
   reorproject_reor:
   - ai-coding
   - llm-framework
