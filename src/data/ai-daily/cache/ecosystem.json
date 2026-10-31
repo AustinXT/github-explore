@@ -1,57 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-10-30",
+    "last_run": "2026-10-31",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/nvidia/openshell",
-      "canonical_url": "https://github.com/NVIDIA/OpenShell",
-      "event_date": "2026-09-30",
-      "date_seen": "2026-09-30"
-    },
-    {
-      "key": "github.com/vectifyai/pageindex",
-      "canonical_url": "https://github.com/VectifyAI/PageIndex",
-      "event_date": "2026-09-30",
-      "date_seen": "2026-09-30"
-    },
-    {
-      "key": "github.com/t8y2/dbx",
-      "canonical_url": "https://github.com/t8y2/dbx",
-      "event_date": "2026-09-30",
-      "date_seen": "2026-09-30"
-    },
-    {
-      "key": "github.com/abue-ammar/tinycast",
-      "canonical_url": "https://github.com/abue-ammar/tinycast",
-      "event_date": "2026-09-30",
-      "date_seen": "2026-09-30"
-    },
-    {
-      "key": "github.com/block/buzz",
-      "canonical_url": "https://github.com/block/buzz",
-      "event_date": "2026-09-30",
-      "date_seen": "2026-09-30"
-    },
-    {
-      "key": "github.com/yetone/magpie",
-      "canonical_url": "https://github.com/yetone/magpie",
-      "event_date": "2026-09-30",
-      "date_seen": "2026-09-30"
-    },
-    {
-      "key": "github.com/feitangyuan/onetake",
-      "canonical_url": "https://github.com/feitangyuan/onetake",
-      "event_date": "2026-09-30",
-      "date_seen": "2026-09-30"
-    },
-    {
-      "key": "github.com/rohitg00/ai-engineering-from-scratch",
-      "canonical_url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "event_date": "2026-09-30",
-      "date_seen": "2026-09-30"
-    },
     {
       "key": "github.com/colbymchenry/codegraph",
       "canonical_url": "https://github.com/colbymchenry/codegraph",
@@ -1371,6 +1323,42 @@
       "canonical_url": "https://nightvoyager.top/github-explore/reports/deepseek-ai_DeepSeek-V3/",
       "event_date": "2026-10-30",
       "date_seen": "2026-10-30"
+    },
+    {
+      "key": "github.com/anthropics/skills",
+      "canonical_url": "https://github.com/anthropics/skills",
+      "event_date": "2026-10-30",
+      "date_seen": "2026-10-31"
+    },
+    {
+      "key": "github.com/lightpanda-io/browser",
+      "canonical_url": "https://github.com/lightpanda-io/browser",
+      "event_date": "2026-10-30",
+      "date_seen": "2026-10-31"
+    },
+    {
+      "key": "hf:microsoft/mage-vl-cowork",
+      "canonical_url": "https://huggingface.co/microsoft/Mage-VL-Cowork",
+      "event_date": "2026-10-30",
+      "date_seen": "2026-10-31"
+    },
+    {
+      "key": "github.com/dbreunig/nesformer",
+      "canonical_url": "https://github.com/dbreunig/nesformer",
+      "event_date": "2026-10-30",
+      "date_seen": "2026-10-31"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/akitaonrails_ai-memory",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/akitaonrails_ai-memory",
+      "event_date": "2026-10-31",
+      "date_seen": "2026-10-31"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/vercel-labs_skills",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/vercel-labs_skills",
+      "event_date": "2026-10-31",
+      "date_seen": "2026-10-31"
     }
   ]
 }
