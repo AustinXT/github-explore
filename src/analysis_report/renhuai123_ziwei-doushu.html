@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* ====== 微信公众号排版 CSS ====== */
+
+body {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #3e3e3e;
+    background: #fff;
+}
+
+/* 正文段落 */
+p {
+    font-size: 15px !important;
+    line-height: 2 !important;
+    margin: 0 !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+    padding-right: 1.2em !important;
+    padding-left: 1.2em !important;
+    text-align: justify !important;
+}
+p + p {
+    margin-top: 0 !important;
+}
+
+/* 标题 */
+h1 {
+    font-size: 20px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 16px 0 !important;
+    padding: 0 !important;
+}
+h2 {
+    font-size: 18px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 24px 0 !important;
+    padding: 0 !important;
+}
+h3 {
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+    text-align: left !important;
+    margin: 16px 0 16px 0 !important;
+    padding: 0 0 0 1.2em !important;
+}
+h4 {
+    font-size: 15px !important;
+    color: rgb(0, 122, 170) !important;
+    margin: 12px 0 8px 0 !important;
+    padding: 0 !important;
+}
+
+/* 列表 */
+ul,
+ol {
+    padding-left: 2em !important;
+    margin: 1em 0 !important;
+    font-size: 15px !important;
+}
+li {
+    margin: 0.5em 0 !important;
+    line-height: 1.8em !important;
+    font-size: 15px !important;
+    color: #3e3e3e !important;
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    margin: 0 !important;
+    padding-left: 1.2em !important;
+}
+
+/* 引用 */
+blockquote {
+    border-left: 4px solid #888 !important;
+    padding: 8px 16px !important;
+    margin: 1em 0 !important;
+    color: #666 !important;
+    background: #f9f9f9 !important;
+}
+blockquote > p {
+    margin: 0.5em 0 !important;
+    padding: 0 !important;
+}
+blockquote::before,
+blockquote::after {
+    content: none !important;
+}
+
+/* 代码块 */
+pre {
+    font-size: 14px !important;
+    line-height: 1.4em !important;
+    color: #3e3e3e !important;
+    background: #f8f8f8 !important;
+    padding: 12px 16px !important;
+    border-radius: 4px !important;
+    overflow: auto !important;
+    margin: 1em 0 !important;
+}
+
+/* 脚注 */
+.footnotes {
+    font-size: 11px !important;
+    color: #666 !important;
+    line-height: 1.2 !important;
+    margin: 8px 0 0 0 !important;
+    padding: 4px 0 0 0 !important;
+    border-top: 1px solid #eee !important;
+}
+.footnotes p {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #666 !important;
+}
+
+/* 上标 */
+sup {
+    font-size: 0.75em !important;
+    vertical-align: super !important;
+    color: #e51f42 !important;
+    margin: 0 2px !important;
+}
+
+img { max-width: 100% !important; height: auto !important; display: block; margin: 1em auto !important; }
+table { border-collapse: collapse !important; width: 100% !important; margin: 1em 0 !important; font-size: 14px !important; }
+th, td { border: 1px solid #ddd !important; padding: 8px 12px !important; text-align: left !important; }
+th { background: #f5f5f5 !important; font-weight: bold !important; }
+a { color: #1e6bb8 !important; text-decoration: none !important; word-break: break-all !important; }
+hr { border: none !important; border-top: 1px solid #eee !important; margin: 1.5em 0 !important; }
+</style>
+</head>
+<body>
+<blockquote><p>GitHub: <a href="https://github.com/renhuai123/ziwei-doushu">https://github.com/renhuai123/ziwei-doushu</a></p></blockquote>
+<h2>一句话总结</h2>
+<p>把紫微斗数排盘从「各家黑箱 App」改写成一套可审计、可复现、可批量执行的确定性 TypeScript 引擎，用 67.5 万张命盘 × 13 维的确定性生成数据集，替掉让大模型「凭空排盘」的高幻觉路径——项目开源的是算法与数据，闭源的是断语库与商业化解读。</p>
+<h2>值得关注的理由</h2>
+<ol><li><strong>它证明了一件事：玄学领域也能做严肃的确定性工程</strong>。项目把主流排盘软件当作 oracle，一项一项对拍出 24 处星曜亮度差异、换年规则差异、天魁天钺辛年错位，最后全部落进 10 个可配置的「流派开关」和 768 盘回归测试里。这是把差分测试、属性测试这些软件工程手法整套搬进一个没有 spec 的领域的样本。</li><li><strong>11.2k star 背后的真实驱动力是 AI 数据需求，不是玄学热度</strong>。README 首章就摆数据规模对照表（v3 51.8 万样本 → v4 67.5 万盘 × 13 维），数据集用 CC BY 4.0 而非 MIT，明确允许别人拿去微调商用——这在玄学开源项目里是极其罕见的清醒。</li><li><strong>数据资产是这个项目唯一真正的护城河</strong>，代码不是。核心安星全部来自上游 iztro，护城河在于「倪师体系语料 + 大规模确定性数据集 + 可回放引文」这三件组合——作者 25 个公开仓库中 Star 排第二的是 136 star，本仓 11.2k，量级差 82 倍。</li></ol>
+<h2>项目展示</h2>
+<p><img src="https://raw.githubusercontent.com/renhuai123/ziwei-doushu/main/docs/update-20261015.png" alt="本轮更新总览（2026-10-15）" style="max-width:100%;"/></p>
+<p>README 首图即版本总览——这个项目的 README 本身就是它的落地页（34 次修改，占全部提交的 60.7%）</p>
+<p><img src="https://raw.githubusercontent.com/renhuai123/ziwei-doushu/main/docs/tianji-ziwei/overview.png" alt="倪海厦《天纪·紫微斗数》一图看全" style="max-width:100%;"/></p>
+<p>《天纪》体系结构总览：古籍原文 + 倪师原话 + 排盘算法 + 解读数据的一图看全</p>
+<p><img src="https://static.metisziwei.com/_next/image?url=%2Fimages%2Fscenes%2Fmetis-showcase-chart-20260709.jpg&amp;w=3840&amp;q=75" alt="紫微命盘 / Destiny Engine" style="max-width:100%;"/></p>
+<p>线上产品 ouranic.cn 的命盘页（开源版 demo 仅 75 行，生产版 1,227 行）</p>
+<p><img src="https://static.metisziwei.com/_next/image?url=%2Fimages%2Fscenes%2Fmetis-showcase-heming-20260925.jpg&amp;w=3840&amp;q=75" alt="合盘分析 / Synastry" style="max-width:100%;"/></p>
+<p>合盘对照是 README 之外最有差异化的能力</p>
+<p><a href="https://www.bilibili.com/video/BV1KJsLekEfA?p=3&amp;t=1527">天纪《紫微斗数》教学视频片段</a></p>
+<p>README 里每条倪师原话都带 B 站时间戳，点开即可跳到原视频那一秒复核</p>
+<h2>项目画像</h2>
+<table style="border-collapse:collapse;width:100%;font-size:14px;"><thead><tr><th>维度</th><th>数据</th></tr></thead><tbody><tr><td>GitHub</td><td><a href="https://github.com/renhuai123/ziwei-doushu">https://github.com/renhuai123/ziwei-doushu</a></td></tr><tr><td>Star / Fork</td><td>11,218 / 2,236（fork 比 20%，高于 iztro 的 16%）</td></tr><tr><td>许可证</td><td>MIT（代码）+ CC BY 4.0（数据集，允许商用与微调）+ 公版（古籍原文）+ CC BY-NC-SA 4.0（倪师原话引文，非商用）——四套条款并存</td></tr><tr><td>代码行数</td><td>16,950（TypeScript 40.2%、TSX 36.0%、JSON 21.6% 为数据集、CSS 2.1%；真实 TS/TSX 源码约 13,293 行）</td></tr><tr><td>项目年龄</td><td>6 个月（2026-05-01 首次提交，2026-10-31 仍在推送）</td></tr><tr><td>开发阶段</td><td>稳定维护（56 个 commit 里 35 个集中在 2026-10 单月，7/8 月整月零提交）</td></tr><tr><td>贡献模式</td><td>独立开发（Top 贡献者 87.5%，含双 git 身份；真实人类贡献者仅 2 人）</td></tr><tr><td>热度定位</td><td>大众热门（2026-10-23 首登 GitHub 全球日榜约 #8）</td></tr><tr><td>质量评级</td><td>代码[良好] 文档[优秀] 测试[基本]</td></tr></tbody></table>
+<h2>作者视角：为什么存在这个项目</h2>
+<h3>创始人/作者背景</h3>
+<p>王多鱼 AI（GitHub: renhuai123 / Renhuai123），账号创建于 2021-10，25 个公开仓库、395 粉丝。自述「国内首位一人用 AI 从 0 到 1 打造商业化 SaaS 级产品」，作品集 wangduoyuai.com，商业化主体为「北京王多鱼科技有限责任公司」（ICP 京 ICP 备 2026069066 号-1，2026-10-31 刚把线上平台从 metisziwei.com 更名迁移到 ouranic.cn）。他围绕倪海厦的「天纪/人纪/地纪」体系搭了完整语料栈——nihai-tianji-corpus（4,886 条判语）、nihai-renji-corpus（19,294 条判语）、ni-haixia-reasoning-chain（推理链形式化引擎），并配套发布论文 <a href="https://zenodo.org/records/23232531">《从讲述到推理链》</a>。既是玄学内容整理者，也是 Next.js 全栈工程师；商业模式是「开源引擎引流 + SaaS 专业版（¥168 一次性 + 微信支付）」。</p>
+<p>这个背景直接塑造了项目的形态：它不是一个「技术人的技术玩具」，而是<strong>内容资产与引擎双轮驱动的产品矩阵</strong>——单看这一个仓库会低估它的实际工作量。</p>
+<h3>问题判断</h3>
+<p>作者看到了一个别人没重视、但对用户极其痛的点：<strong>主流排盘软件之间对同一个生日给出的结果不一样</strong>。代码注释里留着完整的时间线：</p>
+<ul><li>2026-05-08：发现 iztro 默认亮度表与《紫微斗数全书》有 24 处差异</li><li>2026-05-12：发现换年规则（立春 vs 正月初一）导致「宫位一样、其他完全不一样」</li><li>2026-08-13：用户留言问「1986 年至 1992 年中国大陆执行夏令时，不知道该软件是否核算在内？」——当时答案是「没有」</li><li>2026-09-01：会员反馈立春当天凌晨出生被算进新年，根因是 getYearGanByLiChun()「即使传入时间也按日切换（实测无效）」</li></ul>
+<p>诊断结论写在 lib/ziwei/algorithm.ts 顶部：<strong>不是 iztro 算错了，是 iztro 的口径 ≠ 用户认知中的口径，而这种口径差异从来没有被显式建模过</strong>。</p>
+<p>时机选择同样关键：2026 年 10 月 LLM 微调热潮让「高质量中文领域结构化数据」从噱头变成硬需求，一个能确定性生成 67.5 万张盘 × 13 维文本的引擎，一夜之间从民间小工具变成了 AI 数据基础设施。这就是 11.2k star 的真实来源——<strong>来拿数据微调模型的开发者，而不是来算命的用户</strong>。</p>
+<h3>解法哲学</h3>
+<p>一句话概括：<strong>「口径可追溯优先于结论听起来合理」</strong>。这不是口号，是可验证的工程约束：</p>
+<ul><li><strong>流派分歧全部建模为枚举 + 配置对象</strong>（lib/ziwei/school-config.ts 的 10 个类型别名 + SchoolConfig 接口 + SCHOOL_DEFAULT_CONFIG + localStorage 持久化 + 键名迁移），而不是硬编码 if 链。用户报「盘不对」时，回答不再是「你错了」，而是「你切到 split 试试」。</li><li><strong>每个开关都附「为什么这样定」的注释块并注明出处可考</strong>。shier-shen.ts 头注自证「将星列 = 三合帝旺 12/12 全中；按寅起一则全错」。</li><li><strong>对不确定的部分，明确拒绝自动化</strong>。dst-cn.ts 文件头：「我们无法知道用户报的是夏令时读数、还是他自己已经换算过的标准时。默默减一小时既可能算错，又会把所有存量历史命盘悄悄改掉。所以只告知，让用户自己决定。」lunar-solar.ts：「绝不静默滚动到相邻日期——那会让用户排到一张错盘还不知道。」</li><li><strong>明确选择不做的事</strong>：不做解读层开源（db-analysis.ts 留空壳），但把 13 个 TopicKey 的类型契约完整开源作为可插拔插槽；不做 AI 解读后端；不引入 vitest 等测试框架；不学竞品 ziwei_core 的数据表热补丁，改为静态生成表。</li></ul>
+<h3>战略意图</h3>
+<p><strong>明确的 open-core，商业化意图写在明处</strong>。README 第七章用表格逐行列出开源边界：✅ 排盘引擎 / 古籍公版原文 / SEO 知识图谱 / Demo 界面 / 51.8 万样本集 / 13 维 v4 数据集；❌ 断语库 / AI prompt / 后端 API / 用户系统 / 服务端安全。</p>
+<p>更值得注意的是许可设计：<strong>数据集用 CC BY 4.0 而非 MIT</strong>，明确允许商用与模型微调，只要求「保留来源标注」并给出三段现成的署名文本——这是刻意为「别人拿去微调」开门，因为那正是流量入口。而最易踩法律红线的倪师原话引文被单独切出去，标 CC BY-NC-SA 4.0 放在 docs/tianji-ziwei/LICENSE.md，DATASET-LICENSE 明确写「解读文本中引用的倪海厦《天纪》原话……不属于本数据集的授权范围」。四套条款并存，边界清晰。</p>
+<p>商业路径：<strong>开源引擎与数据引流 → 闭源断语库 + AI 解读 + SaaS 专业版变现</strong>。仓库归个人账号，运营主体是公司。</p>
+<h2>核心价值提炼</h2>
+<h3>创新之处</h3>
+<ol><li><strong>「金标准盘对拍」驱动的口径收敛工作流</strong>（<strong>新颖度 4 / 实用性 4 / 可迁移性 5</strong>）
+<p>把「用户说盘不对」转成可执行的工程任务：拿主流排盘软件的输出当 oracle，逐宫逐星 diff，定位到具体字段（换年规则 / 亮度表 / 星曜落宫 / 截空副截 / 大耗 / 副旬 / 魁钺），修正后再对拍。school-data.ts 里记着每一轮实证数字：24 处亮度差异、24/24 杂曜落宫验证、5 张金标准盘 53 颗星 53/53 吻合、150 组金标准盘闰月对照。</p>
+<p>适用场景：任何「没有 spec、只有另一个实现」的对齐型任务——BI 指标对账、协议实现互操作、跨库迁移校验。</p></li><li><strong>「神谕差分」测试法：独立誊写 oracle + 逐日穷举 + 变异测试</strong>（<strong>新颖度 5 / 实用性 4 / 可迁移性 5</strong>）
+<p>scripts/regression/dst-cn.test.ts 把被测的 XLS_CN 夏令时表和判定函数<strong>独立誊写一遍</strong>作为 oracle（连 else if 这个「别顺手优化」的细节都逐字保留），对 1930–1995 共 24,076 天逐日穷举比对，再单独测边界日前一天/当天/次日 + 11 个表外年份 × 5 个日期，最后做变异测试证明这个比对抓得住错。</p>
+<p>适用场景：规则来自外部权威、而权威本身无 API 可查的场景——税则、法规、历史日历。</p></li><li><strong>无 spec 领域的属性测试替代快照测试</strong>（<strong>新颖度 4 / 实用性 5 / 可迁移性 5</strong>）
+<p>768 张盘 × 7 条「紫微铁律」断言：必须正好 12 宫、宫名集合唯一、地支 0–11 各且仅一次、十二宫逆时针排布（第 k 宫地支 = （命宫地支 − k + 12）% 12）、机梁同宫只能在辰戌、紫微 + 天府地支和 ≡ 4 (mod 12)。完全不依赖 golden file。</p>
+<p>适用场景：结构由公式决定但无标准答案的系统——排盘、日历、编解码器、几何布局、调度器。</p></li><li><strong>模糊参数的「检测但不自动决策」原则化实现</strong>（<strong>新颖度 3 / 实用性 5 / 可迁移性 5</strong>）
+<p>dst-cn.ts（只判定不扣除）+ clock-adjust.ts（跨日返回 null 不替用户改日期）+ lunar-solar.ts（绝不静默滚动到相邻日期）三处一致贯彻，附 NOAA 均时差公式与海外时区参数化。</p>
+<p>适用场景：任何会改动用户历史数据的歧义输入——时区、夏令时、金额单位、重名消歧。</p></li><li><strong>语义错位的四重防线</strong>（<strong>新颖度 4 / 实用性 5 / 可迁移性 5</strong>）
+<p>针对 issue #26 暴露的 hour 时辰序号 vs 钟点错位，项目从五个层面堵：类型注释 → 入口 RangeError → 数据自带对照注释 → 源码正则回归 → 边界回归。详见下方关键设计决策 4。</p></li><li><strong>闭环可回放的引文溯源机制</strong>（<strong>新颖度 4 / 实用性 3 / 可迁移性 3</strong>）
+<p>docs/tianji-ziwei/entries.jsonl 每条记录带 bvid + part + t_hms，可精确跳回 B 站原视频的某一秒。README 里「倪师在《天纪》中指出：『斗数批六亲本来就比较差一点。』（2 上 · 00:25:27）」就是这套机制的产物——争议性结论用可回放的原始出处支撑，而不是用权威语气断言。</p></li></ol>
+<h3>可复用的模式与技巧</h3>
+<ol><li><strong>独立 oracle 差分测试</strong>：被测实现与独立誊写的参照实现逐条对拍，再叠穷举 + 边界 + 变异。适合无 spec 的第三方对齐、历法/税则/协议实现。</li><li><strong>属性不变量断言代替 golden file</strong>：用公式化的领域铁律做断言。适合排盘、编解码器、几何布局、状态机。</li><li><strong>语义错位四重防线</strong>：类型注释 + 入口 RangeError + 数据自带对照注释 + 源码正则回归。适合「同名参数在多层语义不同」的数据管道，尤其是数据要交给外部模型消费的场景。</li><li><strong>只判定不自动决策 + 用户显式确认</strong>：检测到歧义就告知，改动由用户触发。适合夏令时、时区、金额单位、会改历史数据的输入。</li><li><strong>失败即抛错的入口校验</strong>：非法日期/越界枚举在函数第一行 throw RangeError，配 assert.throws 回归。适合所有数据生成入口与批处理脚本。</li><li><strong>整数矩阵化领域表 + 单一查询函数</strong>：把不可靠的手抄表编译成机器可比对的资产。适合亮度/税率/星座等大规模传统表。</li><li><strong>枚举 + 单一默认常量 + 配置持久化 + 键名迁移</strong>：多方言系统的完整落地。适合日期格式、税务辖区、单位制、模型版本。</li><li><strong>三层条件 + 强制 source 字段的知识规则库</strong>：必须/加分/破格三段式，每条规则必带出处。适合风控规则、医学诊断规则、lint 规则。</li><li><strong>按版权性质分层的内容资产</strong>：代码 MIT / 数据 CC BY / 古籍公版 / 引文 NC。适合含第三方引文的内容型开源项目。</li><li><strong>闭源模块留类型契约 + 空实现</strong>：让下游能编译但拿不到资产。适合发布 SDK 但保留核心资产。</li><li><strong>文件头写「这个文件不许做什么」</strong>：lunar-solar.ts 头注「这里不许出现排盘 / 时辰 / 真太阳时 / 四化任何一行」。是防止范围蔓延最有效的注释形式。</li></ol>
+<h3>关键设计决策</h3>
+<p><strong>决策 1：把 iztro 当「星曜安放内核」而非「排盘引擎」，所有口径分歧在装配层覆盖</strong></p>
+<ul><li>问题：iztro 的安星算法是对的，但口径与中国用户认知中的主流排盘不一致。</li><li>方案：generateChart() 拿到 iztro 的 astrolabe 后在装配层做四类修正——换年规则改 astro.config({ yearDivide: 'normal' })；亮度不再走 iztro 覆写，改由 schoolStarBrightness(starName, branch, currentBrightSchool) 直接查 SB_[school] 表；位置修正用 relocateStar()（换宫后必须按新宫地支重算亮度）；缺失星用 applySchoolDahao / applySchoolFuxun / applySchoolJiekong 补入。</li><li>Trade-off：牺牲 iztro「一份配置全局生效」的简洁，换来口径可切换可核对。代价是 astro.config 有全局副作用，currentBrightSchool 更是模块级可变全局变量 let currentBrightSchool: BrightnessSchool = 'QS'，多用户并发下有串扰隐患——作者自己在 algorithm.ts:101 留了警告。</li><li>可迁移性：<strong>高</strong>。「上游库只做确定的事，口径差异在适配层收敛」适用于任何接第三方库又要对齐自家口径的场景。</li></ul>
+<p><strong>决策 2：流派分歧做成枚举 + 配置对象，而非 if 链</strong></p>
+<ul><li>问题：紫微斗数有大量合法分歧（闰月 4 口径、晚子时 4 种、亮度多流派、庚年四化 5 变体、截空单/双/占、魁钺 4 派、长生 3 派）。硬编码后，用户报「盘不对」时无法区分是 bug 还是流派差异。</li><li>方案：10 个类型别名 → SchoolConfig 接口 → SCHOOL_DEFAULT_CONFIG 基线 → localStorage 持久化 → loadSchoolConfig() 安全 fallback → migrateLegacyKeys() 处理键名改名 → DEFAULT_LEAP_MONTH 单一常量被多模块引用（注释明写「别再各写字面量」）。</li><li>Trade-off：牺牲简洁（10 个枚举 × 多分支），换来用户可自查可复现。</li><li>可迁移性：<strong>高</strong>。</li></ul>
+<p><strong>决策 3：引擎入口强校验并抛错，不静默容错</strong></p>
+<ul><li>问题：外部评测实测 v3 数据集 518,400 条里有 2,520 条（0.49%）是「2 月 30 日 / 非闰年 2 月 29 日」这类不存在的日期。iztro 不报错而是静默顺延排盘，导致数据集中这批样本是脏的且无标记。</li><li>方案：generateChart() 第一行双重校验——hour 必须是 0–11 整数否则 RangeError；公历日期用 new Date(Date.UTC(...)) 探针回验年月日，任何一项不等就抛 RangeError。lunarToSolar() 非法输入返回 null。solar-date-exists.test.ts 用 assert.throws(..., RangeError) 钉死 7 个非法日期 + 5 个合法边界。</li><li>Trade-off：上层必须处理异常（app/chart/page.tsx 的 onSubmit 没有 try/catch，实际会白屏）；换来数据集不再被静默污染。</li><li>可迁移性：<strong>高</strong>。</li></ul>
+<p><strong>决策 4：hour 语义四重锁定，专治 #26 类语义错位</strong></p>
+<ul><li>问题：引擎侧 iztro 的 timeIndex 是时辰序号 0–11（子=0），数据集生成层却按钟点 0–23 传。famous.ts 里 11 条名人样本有 7 条的注释与索引对不上（hour: 5 注释写「午时」实为巳时）。数据集是给别人拿去微调的，错位会污染下游所有模型。</li><li>方案：类型层注释写明「时辰 branch index (0=子……11=亥）」→ 入口 RangeError 拒绝 −1/12/0.5 → famous.ts 每条数据自带「约巳时」对照注释 → famous-hour-consistency.test.ts 用<strong>正则解析源码</strong>断言注释时辰与索引地支一致（因 famous.ts 带 import 'server-only'，正则解析「更省事也更跨平台」）→ iztro-time-index-boundary.test.ts 钉住 BRANCHES 顺序不可变、23:30 → 次日子时、00:30 → 本日子时。</li><li>Trade-off：源码正则比运行时断言脆，换来跨平台零依赖。</li><li>可迁移性：<strong>高</strong>。</li></ul>
+<p><strong>决策 5：四化系统「一张映射表 + N 个来源适配器 + 1 个 overlay 合成器」</strong></p>
+<ul><li>问题：四化在年/大限/流年/流月/流日/流时 6 个层级都出现，各层「天干怎么来」完全不同（公历年推 / 宫干 / 五虎遁 / 农历日柱 / 五鼠遁），但「天干 → 禄权科忌」的映射是同一张表。</li><li>方案：映射层只有一张 SI_HUA_TABLE: Record&lt;number, [string,string,string,string]&gt; + getSiHuaByStem()；来源层 getDaXianSiHua / getLiuNianSiHua / getLiuYueSiHua（五虎遁 + 闰月前后半月 + 闰十二月跨年取次年干）/ getLiuRiSiHua / getLiuShiSiHua 各算各的；呈现层 buildOverlayForStar() 合成优先级 native &lt; daXian &lt; liuNian &lt; liuYue 的 SiHuaOverlay。</li><li>Trade-off：单文件 276 行密度高；换来「改一处映射表，全层级同步」。</li><li>可迁移性：<strong>高</strong>。附注：detectSelfSihua（宫干自化）与 findIncomingPalaces（来因宫）在算法层已下线，保留代码仅供导出——接口先行、实现可切换。</li></ul>
+<p><strong>决策 6：41 个独立格局探测器 + 三层条件 + 出处字段</strong></p>
+<ul><li>问题：格局（紫府同宫、日月并明、七杀朝斗、三奇加会、火贪格……）每条都是「必须满足 A 且 B，若会煞则破格」的复合条件。</li><li>方案：patterns.ts（1119 行）用 detectXxx(chart, ming, patterns) 函数式，每个探测器内部分 required / bonus / breaking 三段，产出带 level（excellent/good/neutral/caution）与<strong>强制古籍出处</strong> source 的 Pattern 对象。共享宫位关系抽成 getSanFangPalaces（三方四正）/ getJiaPalaces（夹宫）/ shaCountInPalace。</li><li>Trade-off：<strong>不是 DSL，是手写 if 链</strong>，重复度不低，换来每个探测器都自带人话注释与出处、更好读也更好加。</li><li>可迁移性：<strong>中</strong>。</li></ul>
+<p><strong>决策 7：领域表整数 ID 化，牺牲可读性换可核对性</strong></p>
+<ul><li>问题：亮度表涉及 14 主星 + 6 吉 + 6 煞 + 30 余杂曜 × 12 宫 × 多流派，手写中文数组几千字符且极易在索引方向上出错。</li><li>方案：全部转成整数矩阵（SCHOOL_AX.SB_QS 等），星用 1-based ID，亮度 1–7 数值（0 = 留白），宫位<strong>子起一</strong>（1=子……12=亥）。school-data.ts 负责 ID→中文名映射并暴露唯一查询入口 schoolStarBrightness()。文件头用两个 ★ 记录了两次方向性订正（「原写『1=寅』是错的」「原写『1=平……7=庙』整个方向反了」）。</li><li>Trade-off：[[0,0,0,0,0],[0,6,14,4,3],...] 完全不可读，换来能与金标准盘逐格对拍。</li><li>可迁移性：<strong>高</strong>。</li></ul>
+<p><strong>决策 8：用 scripts/regression/ + npm test 串行脚本代替标准测试框架</strong></p>
+<ul><li>问题：紫微斗数没有「正确答案」的 spec，只有「与主流软件一致」这个软目标，传统单测语义可疑。</li><li>方案：10 个独立脚本，用 node:assert/strict 或自定义 fail() 计数器，失败 process.exit(1)，CI（.github/workflows/ci.yml）只做 npm ci → npm run typecheck → npm test。</li><li>Trade-off：<strong>优点</strong>——属性断言 + 独立 oracle 差分是本项目最专业的部分；<strong>缺点</strong>——无覆盖率报告、&amp;&amp; 短路一次只暴露一个失败、<strong>没有 golden file / 快照比对</strong>（而「与主流盘逐星对齐」恰恰是这个项目的核心矛盾，验证全靠人工看金标准盘）、且注释里提到的 scripts/diff-chart-vs-other.ts（对拍脚本）与 scripts/extract-school-tables.ts（表生成器）<strong>在开源仓库里并不存在</strong>——最关键的验证工具没有随代码开源。</li><li>可迁移性：<strong>高</strong>。</li></ul>
+<p><strong>决策 9：db-analysis.ts 留空壳但留全类型，实现开源边界</strong></p>
+<ul><li>问题：断语库（14 主星 × 13 主题 × 4 段 markers）是核心商业资产，但知识图谱页面需要知道数据形状才能编译。</li><li>方案：STAR_DB: Record&lt;string, unknown&gt; = {} 空实现，但完整保留 13 个 TopicKey、TOPIC_PALACE_NAME、TOPIC_LABEL，供 lib/seo/knowledge.ts 做 14×13 的 slug 映射。</li><li>Trade-off：知识库详情页生成 0 条静态路由（SEO 价值归零），换来商业资产零泄露。</li><li>可迁移性：<strong>高</strong>。</li></ul>
+<h2>竞品格局与定位</h2>
+<h3>竞品对比矩阵</h3>
+<table style="border-collapse:collapse;width:100%;font-size:14px;"><thead><tr><th>维度</th><th>ziwei-doushu</th><th>iztro（底层依赖）</th><th>ziwei-chart</th><th>taibu</th><th>ziwei_core</th></tr></thead><tbody><tr><td>定位</td><td>倪师体系完整引擎 + 数据集</td><td>通用排盘库（事实标准）</td><td>开箱即用 Web 应用</td><td>多术数 AI 工具包</td><td>跨平台内嵌引擎</td></tr><tr><td>Star</td><td>11,218</td><td>4,299</td><td>480</td><td>715</td><td>未获精确值</td></tr><tr><td>语言栈</td><td>TypeScript / Next.js</td><td>TypeScript</td><td>React + Vite</td><td>TypeScript</td><td>Dart / Flutter</td></tr><tr><td>与 iztro 的关系</td><td><strong>在其上做装配层修正</strong></td><td>上游本体</td><td>下游应用</td><td>独立</td><td>独立</td></tr><tr><td>真太阳时</td><td>有模块，<strong>但未接入生产路径</strong></td><td>无</td><td>有</td><td>—</td><td>有（sxwnl SPA）</td></tr><tr><td>流派可切换</td><td>10 个开关建模完成，<strong>开源版仅闰月接线</strong></td><td>单派硬编码</td><td>—</td><td>—</td><td>数据表可热补丁</td></tr><tr><td>测试资产</td><td>768 盘属性断言 + 24,076 天差分</td><td>第三方 716,314 golden case 对齐</td><td>—</td><td>—</td><td>—</td></tr><tr><td>数据资产</td><td><strong>67.5 万盘 × 13 维，CC BY 4.0 可商用</strong></td><td>无</td><td>无</td><td>无</td><td>无</td></tr><tr><td>解读层</td><td><strong>闭源</strong>（商业化核心）</td><td>已自带 AI 层</td><td>托管 AI 解读</td><td>AI 算命</td><td>无</td></tr></tbody></table>
+<h3>差异化护城河</h3>
+<ul><li><strong>技术护城河（中等）</strong>：算法本身不是壁垒——核心安星全来自 iztro。真正的壁垒是「口径对齐的工程化」：24 处亮度差异、7 处名人样本时辰错位、150 组金标准盘闰月对照，这些是逐项人工核对积累出来的、无法快速复制。但这些积累<strong>沉淀在代码注释里而非可执行的验证脚本里</strong>（diff-chart-vs-other.ts 未开源），护城河会随人员流失而流失。</li><li><strong>生态护城河（强）</strong>：11.2k star + 67.5 万盘数据集 + 1848 条带时间戳的倪师原话 + CC BY 4.0 商用许可 + 三纪语料姊妹仓。<strong>数据资产是唯一真正的护城河</strong>——11.2k vs 作者次高仓库 136 star，量级差 82 倍。</li><li><strong>信任护城河（强且独特）</strong>：README 首屏主动写「六亲判断不准」并附倪师原话 + B 站时间戳；主动承认「开源版 demo 命盘页 75 行 vs 生产 1,227 行」；主动纠正自己 README 里「夏令时自动扣除」的错误描述；changelog 里主动「soften unsupported absolute claims」、「remove decade conclusions that could not be supported from the chart alone」。<strong>在一个充斥玄学夸大宣传的领域里，「可核对的诚实」本身就是差异化。</strong></li></ul>
+<h3>竞争风险</h3>
+<ol><li><strong>上游 iztro 漂移</strong>：本项目 94.6% 贡献集中于一人，而 iztro v2.5.0 → v2.6.0 就改过年界（立春 → 正月初一）导致跨版本出不同盘。本项目整个「对齐主流口径」的工作建立在「主流口径是稳定的」这个假设上——一旦主流软件自己改口径，这 10 个开关的默认值就要跟着改。</li><li><strong>护城河流失</strong>：口径对齐的核心知识在注释里但不在 CI 里，没有 golden file 差分脚本兜底。</li><li><strong>技术债累积</strong>：refactor commit 为 0；as any 集中在 algorithm.ts（9 处）；currentBrightSchool 是可变全局；calcTrueSolarBranch 有两份逐字重复拷贝；10 个流派开关里 9 个在开源版未接线。作者自己在 algorithm.ts:30 记录了「根治『切流派后全局亮度泄漏』」——说明这类 bug 已经发生过。</li><li><strong>数据质量存量</strong>：v3 数据集 0.49% 无效日期已被新版引擎修复，但<strong>已发布的 v3 数据集无法回溯修正</strong>，而它才是 issue #13 讨论商用许可的那一份。</li><li><strong>IP 授权不确定性</strong>：姊妹项目 ni-haixia-reasoning-chain 的 notes 披露其亮度与四化表据称「从文墨天机逆向而来」，法律状态不明；数据表来源的可信度存在公开质疑。</li></ol>
+<h3>生态定位</h3>
+<p><strong>中文紫微排盘的「数据底座」</strong>。不做最全的引擎（iztro 做引擎）、不做最易用的应用（ziwei-chart 做应用）、不做最广的术数集（taibu 做广度），只做「最有数据、最有史料、最讲证据」的那一环。在 AI 微调需求爆发的 2026 年，这个定位极其精准：11.2k star 主要由「我要拿数据微调模型」的开发者驱动，而非「我要算命」。</p>
+<p>生态格局的另一个信号：taibu、mingyu、mingpan 都在往 MCP / Skills 走，说明<strong>「传统术数 → Agent 工具」是本赛道 2026 年的共同收敛方向</strong>。ziwei-doushu 与它们恰好互补——taibu 的「排盘幻觉」问题正是本项目 README 暗示的用途之一（「引擎做校对防排盘幻觉」）。</p>
+<h2>套利机会分析</h2>
+<ul><li><strong>信息差</strong>：<strong>已经不成立</strong>。项目已被新浪、今日头条、博客园、掘金、GitHub 日榜多次覆盖，是典型的红海入口。但<strong>数据集与语料资产的稀缺性尚未被充分定价</strong>——67.5 万盘 × 13 维、CC BY 4.0 可商用微调、56.6 GB 解压后逐字节校验，这样的中文命理结构化数据在整个公开生态里几乎没有第二份。真正值得关注的不是 star 数，而是这份数据能不能直接用。</li><li><strong>技术借鉴</strong>：本报告列出的 11 条可复用模式里，有 7 条与玄学毫无关系——独立 oracle 差分测试、属性断言代替快照、语义错位四重防线、只判定不自动决策、入口抛错校验、整数矩阵化领域表、枚举 + 单一默认常量。<strong>其中「独立 oracle 差分 + 属性测试」这一套是任何无 spec 领域都该直接抄走的。</strong></li><li><strong>生态位</strong>：填补的是「传统领域知识工程化 + 大规模确定性数据集」这个空白。同赛道要么只做引擎（iztro）、只做应用（ziwei-chart）、只做术数广度（taibu），还没有人同时给出引擎 + 数据 + 可回放史料三件套。</li><li><strong>趋势判断</strong>：向上。11.2k star 6 个月内达成且仍在涨，10 月单月 35 个 commit 说明迭代未停；AI 微调对中文领域结构化数据的需求是真实的持续需求，且随模型能力提升而放大。后发优势在于：后来者要复制的不只是算法（iztro 已免费提供），而是<strong>那份已经对拍过 24 处差异、51.8 万→67.5 万样本的数据集，以及背后 1848 条带时间戳的语料</strong>——这些没法快速重造。</li></ul>
+<h2>风险与不足</h2>
+<ol><li><strong>开源快照与生产站点之间存在明确的接线缺口</strong>。这是本次代码走查最重要的发现，也是 README 能力表没有区分说明的地方：
+<ul><li>lib/ziwei/true-solar-time.ts（166 行，NOAA 均时差 + 海外时区参数化）<strong>没有接入生产路径</strong>——calculateTrueSolarTime 全仓库只出现在自身与一个测试文件里。实际生产路径走的是 components/BirthForm.tsx:35 与 lib/ziwei/share.ts:5 的两份 calcTrueSolarBranch，两者<strong>逐字相同、只做经度修正 (longitude - 120) * 4、不含均时差</strong>（均时差最大约 +16 / −14 分钟，理论上能推动跨越时辰边界），也不含 DST 处理。README 宣称的「真太阳时校正（经度差 + 均时差）」「海外出生地 240 国/地区真太阳时」在开源版代码里是未接线的。</li><li><strong>流派切换同样未接线</strong>：setBrightnessSchool() 从 algorithm.ts:117 导出但全仓库无调用者；SchoolConfig 的 10 个开关中只有 leapMonth 真正生效（经 generateChart(birthInfo, { leapMonth }) 参数），其余 9 个只是类型 + 默认值，loadSchoolConfig() 也无人调用。这意味着开源版跑起来是「固定 QS 亮度 + 固定 split 闰月」的单一硬编码路径——<strong>恰恰是本项目最核心的「口径可切换」卖点，没有接线。</strong></li></ul></li><li><strong>断语库永远闭源</strong>，lib/ziwei/db-analysis.ts 是 STAR_DB = {} 空壳，AI 解读（/api/interpret）、合盘（/api/heming）、prompt 全部不在仓库里。想用这个仓库做产品，拿到的是引擎不是可用产品。</li><li><strong>Key-person 风险极高</strong>：真实人类贡献者只有 2 人（作者本人 + 1 位外部用户各 1 次提交），open PR 有 12 个但外部参与以提案为主。仓库归个人账号，运营主体是另设的公司。</li><li><strong>数据质量与语义错位</strong>：v3 数据集含 0.49% 无效日期（已在新版修复，但存量无法回溯）；#26 的 hour 语义错位说明数据集生成层与排盘层的接口契约没有类型级强约束，v4 数据集是否彻底修复未经独立验证。</li><li><strong>许可对商用的真实约束</strong>：数据集本身 CC BY 4.0 可商用，但<strong>解读文本中引用的倪师原话不在授权范围内</strong>（CC BY-NC-SA 4.0）。这意味着拿数据集做商用微调时，产物的许可状态是模糊的——issue #13 里作者本人给的就是有条件回答。</li><li><strong>工程规范欠缺</strong>：无 eslint / prettier 配置（package.json 里连 lint 脚本都没有，代码里却有 eslint-disable-next-line 注释）；无独立 CHANGELOG（变更历史散在 README 的「本轮更新」章节）；无 examples/ 目录；版本策略混乱——3 个 tag 用了 3 套互不兼容的命名法（v4.0-13d / v3.0-samples / engine-2026.10.03），实际是数据集版本 / 引擎版本 / 发布快照三条独立演进线。</li><li><strong>体验摩擦簇</strong>：「仓库能 clone ≠ 能跑起来」。issue #1（评论最多的 issue，9 条）、#18、#14、#32 全属这类——v4 数据集解压 56.6 GB、Next.js 全栈需 Node 环境、还要自备模型 API key。2,236 个 fork 里有多少真的跑起来了，值得怀疑。</li><li><strong>声明与实现不一致</strong>：lib/classics/data/quanshu.ts 声明 wordCount: 100000（「全本约 10 万字」），但该文件只有 146 行，实际段落远少于此。</li></ol>
+<h2>行动建议</h2>
+<h3>如果你要用它</h3>
+<ul><li><strong>别把它当产品用</strong>——断语库、AI 解读、合盘全部闭源，仓库给你的是引擎。</li><li><strong>要数据就去拿 v4 数据集</strong>（67.5 万盘 × 13 维，CC BY 4.0 可商用微调），这是这个项目对你最直接的价值。但注意三点：① 商用产物的许可边界需自己评估（倪师原话引文非商用）；② 拿之前先跑一遍日期存在性校验（v3 有 0.49% 无效日期）；③ 务必核对 hour 语义是<strong>时辰序号 0–11</strong>而非钟点 0–23——这正是 issue #26 的事故原点，也是外部评测发现 11 个名人 fixture 中 7 个最初出错的根因。</li><li><strong>要在产品里起盘</strong>：直接用 iztro + 自己写装配层修正（换年规则、亮度表、截空副截、大耗、副旬、魁钺），比 fork 这个仓库更干净——它的 10 个流派开关在开源版只有 1 个接线。</li><li><strong>要跨平台（iOS/Android/Flutter）</strong>：看 RedSC1/ziwei_core，它有 6000 年时间跨度、BCE 支持和可热补丁的数据表，是这个项目补不上的部分。</li><li><strong>要做 Agent 工具</strong>：看 ChesterRa/mingpan 的纯事实 MCP 路线——「Facts only，interpretation is left to the AI」比「引擎开源、解读闭源」在 Agent 生态里更干净。</li></ul>
+<h3>如果你要学它</h3>
+<p><strong>按这个顺序读，效率最高</strong>：</p>
+<ol><li><strong>scripts/regression/dst-cn.test.ts</strong> — 「神谕差分」测试法的完整样板：独立誊写 oracle、24,076 天逐日穷举、边界日、表外年份、变异测试。这是最值得整段抄走的一个文件。</li><li><strong>scripts/regression/pan-integrity.test.ts</strong> — 768 盘 × 7 条不变量属性断言，示范无 spec 领域如何不用 golden file 也能测。</li><li><strong>lib/ziwei/school-config.ts</strong> + <strong>lib/ziwei/school-data.ts</strong> — 「枚举 + 单一默认常量 + 配置持久化 + 键名迁移」的完整多口径系统落地，以及整数矩阵化领域表的组织方式。</li><li><strong>lib/ziwei/algorithm.ts 的文件头注释</strong> — 整条口径收敛的推理链都在里面：换年规则、亮度表、截空副截、大耗、副旬、魁钺逐项差异的定位过程。</li><li><strong>lib/ziwei/dst-cn.ts</strong> + clock-adjust.ts + lunar-solar.ts 三个文件头 — 「只判定不自动决策」原则的三种实现（时区 / 跨日 / 非法日期）。</li><li><strong>lib/ziwei/db-analysis.ts</strong> — 「空实现 + 完整类型契约」实现开源边界的最小范式。</li><li><strong>docs/tianji-ziwei/entries.jsonl</strong> — 引文溯源机制的数据结构（bvid + part + t_hms）。</li></ol>
+<p><strong>顺手可以拿走的两个反向教训</strong>：① 回归脚本里注释提到的 diff-chart-vs-other.ts 和 extract-school-tables.ts 并不在仓库里——把验证工具排除在开源范围外，等于把护城河留在人的记忆里；② 10 个开关建好但只接了 1 个，比只建 1 个更危险，因为它制造了「已支持」的错觉。</p>
+<h3>如果你要 fork 它</h3>
+<p><strong>值得做的改进，按优先级</strong>：</p>
+<ol><li><strong>补上 golden file 差分测试</strong>——这是项目最大的缺口，也是最该由社区接手的一环：把 5 张金标准盘的 53 颗星做成可自动比对的快照，让「与主流盘逐星一致」从人工核对变成 CI 断言。这是能立刻提升可信度、又不需要理解命理内容的工程活。</li><li><strong>接线真太阳时与流派开关</strong>——true-solar-time.ts 已有完整 NOAA 均时差实现但没接；setBrightnessSchool() 导出了但没人调；两份重复的 calcTrueSolarBranch 该合并成 true-solar-time.ts 的唯一入口。做完这一步，项目最核心的卖点才真正在开源版成立。</li><li><strong>消除模块级可变全局</strong>——currentBrightSchool 改成 generateChart() 的参数或上下文对象传下去，根治作者自己记录过的「切流派后全局亮度泄漏」。</li><li><strong>补 lint / formatter / CHANGELOG / 统一版本策略</strong>——三套 tag 命名法收敛成 SemVer 是低垂果实。</li><li><strong>修文档与实现的三处偏差</strong>——README 能力表区分「开源版已支持」与「仅线上支持」；quanshu.ts 的 wordCount 改成实际值；补一份 examples 目录。</li><li><strong>补数据集生成侧的日期合法性校验</strong>——把 generateChart() 入口的 RangeError 校验前移到批量生成脚本的最前面，避免再次产出 0.49% 的脏样本。</li></ol>
+<h3>知识入口</h3>
+<table style="border-collapse:collapse;width:100%;font-size:14px;"><thead><tr><th>资源</th><th>链接</th></tr></thead><tbody><tr><td>DeepWiki</td><td>未收录（<a href="https://deepwiki.com/Renhuai123/ziwei-doushu">https://deepwiki.com/Renhuai123/ziwei-doushu</a> 返回 404）</td></tr><tr><td>Zread.ai</td><td>未收录（<a href="https://zread.ai/Renhuai123/ziwei-doushu">https://zread.ai/Renhuai123/ziwei-doushu</a> 返回 403）</td></tr><tr><td>关联论文</td><td><a href="https://zenodo.org/records/23232531">从讲述到推理链：倪海厦紫微斗数断法的逐步推理引擎</a>（Zenodo DOI 10.5281/zenodo.23232530，配套作者 <a href="https://github.com/Renhuai123/ni-haixia-reasoning-chain">ni-haixia-reasoning-chain</a>）；<a href="https://arxiv.org/abs/2602.12889">BaziQA</a>（arXiv:2602.12889，含紫微命盘预计算的命理推理基准）；<a href="https://clawrxiv.io/abs/2604.00821">Cross-System Consistency in Chinese Computational Cosmology</a>（clawRxiv 2604.00821，26.3 万命盘的多 Agent 一致性分析）</td></tr><tr><td>在线 Demo</td><td><a href="https://ouranic.cn/chart">https://ouranic.cn/chart</a>（线上平台，2026-10-31 更名迁移自 metisziwei.com）；上游 iztro 自带 <a href="https://demo.iztro.com">https://demo.iztro.com</a> 与 <a href="https://ziwei.pub">https://ziwei.pub</a></td></tr><tr><td>外部深度评测</td><td><a href="https://hysenlabs.com/projects/renhuai123-ziwei-doushu">hysenlabs: ziwei-doushu evaluation</a>（唯一做了代码级实测的第三方：实测出 hour 语义陷阱与 v3 数据集 0.49% 无效日期）；<a href="http://blog.veyvin.com/archives/github-trending-2026-10-23-renhuai123-ziwei-doushu">当紫微斗数遇上代码</a>（提出时辰边界、流派取舍、可复现性三个未解问题）</td></tr></tbody></table>
+</body>
+</html>

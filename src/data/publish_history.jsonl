@@ -393,3 +393,4 @@
 {"recorded_at": "2026-10-28T10:30:52.571745+00:00", "slug": "jetbrains_thinkrail", "title": null, "state": "published", "published_at": "2026-10-28", "reason": "自动生成", "ci_run_id": "40669664557"}
 {"recorded_at": "2026-10-29T01:59:36.641169+00:00", "slug": "nightly-labs_openbot", "title": null, "state": "published", "published_at": "2026-10-29", "reason": "自动生成", "ci_run_id": "40800051546"}
 {"recorded_at": "2026-10-30T10:59:47.594286+00:00", "slug": "togg53192-cmd_jailbreaks", "title": null, "state": "published", "published_at": "2026-10-30", "reason": "自动生成", "ci_run_id": "41041583972"}
+{"recorded_at": "2026-10-31T01:33:09.229008+00:00", "slug": "renhuai123_ziwei-doushu", "title": null, "state": "published", "published_at": "2026-10-31", "reason": "自动生成", "ci_run_id": "41154258731"}
