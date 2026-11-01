@@ -415,6 +415,8 @@ entries:
   braveopotato_fcksignups:
   - database
   - protocol-spec
+  bregman-arie_devops-exercises:
+  - uncategorized
   browser-use_browser-use:
   - ai-agent
   - llm-inference
@@ -1680,6 +1682,11 @@ entries:
   - media-generation
   microsoft_web-dev-for-beginners:
   - education
+  milind-soni_openmausbot:
+  - ai-agent
+  - ai-coding
+  - devtools
+  - security
   millionco_react-doctor:
   - ai-agent
   - ai-coding
