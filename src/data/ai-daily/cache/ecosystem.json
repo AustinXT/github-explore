@@ -1,45 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-10-31",
+    "last_run": "2026-11-01",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/colbymchenry/codegraph",
-      "canonical_url": "https://github.com/colbymchenry/codegraph",
-      "event_date": null,
-      "date_seen": "2026-10-01"
-    },
-    {
-      "key": "github.com/harry0703/moneyprinterturbo",
-      "canonical_url": "https://github.com/harry0703/MoneyPrinterTurbo",
-      "event_date": null,
-      "date_seen": "2026-10-01"
-    },
-    {
-      "key": "github.com/dietrichgebert/ponytail",
-      "canonical_url": "https://github.com/DietrichGebert/ponytail",
-      "event_date": null,
-      "date_seen": "2026-10-01"
-    },
-    {
-      "key": "github.com/composiohq/awesome-claude-skills",
-      "canonical_url": "https://github.com/ComposioHQ/awesome-claude-skills",
-      "event_date": null,
-      "date_seen": "2026-10-01"
-    },
-    {
-      "key": "github.com/modelcontextprotocol/servers",
-      "canonical_url": "https://github.com/modelcontextprotocol/servers",
-      "event_date": null,
-      "date_seen": "2026-10-01"
-    },
-    {
-      "key": "github.com/sst/opencode",
-      "canonical_url": "https://github.com/sst/opencode",
-      "event_date": null,
-      "date_seen": "2026-10-01"
-    },
     {
       "key": "github.com/tile-ai/tilelang",
       "canonical_url": "https://github.com/tile-ai/tilelang",
@@ -1359,6 +1323,60 @@
       "canonical_url": "https://nightvoyager.top/github-explore/reports/vercel-labs_skills",
       "event_date": "2026-10-31",
       "date_seen": "2026-10-31"
+    },
+    {
+      "key": "github.com/orkas-ai/orkas",
+      "canonical_url": "https://github.com/Orkas-AI/Orkas",
+      "event_date": "2026-10-31",
+      "date_seen": "2026-11-01"
+    },
+    {
+      "key": "github.com/thu-maic/openmaic",
+      "canonical_url": "https://github.com/THU-MAIC/OpenMAIC",
+      "event_date": "2026-10-31",
+      "date_seen": "2026-11-01"
+    },
+    {
+      "key": "github.com/deepseek-ai/dsh-superagent-prototype",
+      "canonical_url": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "event_date": "2026-10-31",
+      "date_seen": "2026-11-01"
+    },
+    {
+      "key": "github.com/vercel-labs/agent-desktop",
+      "canonical_url": "https://github.com/vercel-labs/agent-desktop",
+      "event_date": "2026-10-31",
+      "date_seen": "2026-11-01"
+    },
+    {
+      "key": "github.com/tavern-labs-ai/persona-ai-sdk",
+      "canonical_url": "https://github.com/tavern-labs-ai/persona-ai-sdk",
+      "event_date": "2026-10-31",
+      "date_seen": "2026-11-01"
+    },
+    {
+      "key": "github.com/aevonix/flashalign",
+      "canonical_url": "https://github.com/Aevonix/FlashAlign",
+      "event_date": "2026-10-31",
+      "date_seen": "2026-11-01"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/forrestchang_andrej-karpathy-skills",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/forrestchang_andrej-karpathy-skills",
+      "event_date": "2026-11-01",
+      "date_seen": "2026-11-01"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/langgenius_dify",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/langgenius_dify",
+      "event_date": "2026-11-01",
+      "date_seen": "2026-11-01"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/dietrichgebert_ponytail",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/dietrichgebert_ponytail",
+      "event_date": "2026-11-01",
+      "date_seen": "2026-11-01"
     }
   ]
 }
