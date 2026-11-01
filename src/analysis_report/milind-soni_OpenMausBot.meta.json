@@ -1,0 +1,6 @@
+{
+  "title": "OpenMausBot 把 Claude Code 变成聊天同事，82 天拿下 10K stars",
+  "digest": "把 claude / codex CLI 变成「聊天联系人」的本地优先 Electron 应用：82 天 10,284 star、52% commit 带 Claude 联合署名；薄 SPI 与差分安全测试可抄走，但安全默认值靠配置兜。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}
