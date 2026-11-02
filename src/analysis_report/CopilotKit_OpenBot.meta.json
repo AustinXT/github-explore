@@ -1,0 +1,6 @@
+{
+  "title": "GitHub推荐：9.8K stars、2.6 个月：OpenBot 让 AI 同事的动作先裁决再执行",
+  "digest": "OpenBot 把「AI 同事」的企业治理层写成可运行代码：每个工具调用先由 CEL 策略引擎裁决、落审计行，再决定执行还是拒绝。2.6 个月、9,816 star，最值得抄的是中性空值绑定、词汇即边界、决策行/结果行分离这几条工程手法。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}
