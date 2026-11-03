@@ -610,6 +610,8 @@ entries:
   - ai-coding
   - llm-framework
   - protocol-spec
+  copilotkit_openbot:
+  - ai-coding
   cordiverse_cordis:
   - uncategorized
   corebunch_instatic:
@@ -1229,6 +1231,8 @@ entries:
   - ai-coding
   - devtools
   hunxbyts_ghosttrack:
+  - uncategorized
+  hyprwm_hyprland:
   - uncategorized
   iam-veeramalla_aws-devops-zero-to-hero:
   - education
