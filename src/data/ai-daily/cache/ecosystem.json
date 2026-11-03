@@ -1,39 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-11-02",
+    "last_run": "2026-11-03",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/juliusbrussee/caveman",
-      "canonical_url": "https://github.com/JuliusBrussee/caveman",
-      "event_date": "2026-10-03",
-      "date_seen": "2026-10-03"
-    },
-    {
-      "key": "github.com/google/skills",
-      "canonical_url": "https://github.com/google/skills",
-      "event_date": "2026-10-03",
-      "date_seen": "2026-10-03"
-    },
-    {
-      "key": "github.com/iamcorey/wake",
-      "canonical_url": "https://github.com/iamcorey/wake",
-      "event_date": "2026-10-03",
-      "date_seen": "2026-10-03"
-    },
-    {
-      "key": "github.com/affaan-m/ecc",
-      "canonical_url": "https://github.com/affaan-m/ecc",
-      "event_date": "2026-10-03",
-      "date_seen": "2026-10-03"
-    },
-    {
-      "key": "github.com/chromedevtools/chrome-devtools-mcp",
-      "canonical_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-      "event_date": "2026-10-03",
-      "date_seen": "2026-10-03"
-    },
     {
       "key": "github.com/pbakaus/impeccable",
       "canonical_url": "https://github.com/pbakaus/impeccable",
@@ -1401,6 +1371,60 @@
       "canonical_url": "https://github.com/arjaythedev/twelve-dollar-server-challenge",
       "event_date": "2026-11-02",
       "date_seen": "2026-11-02"
+    },
+    {
+      "key": "github.com/justvugg/colibri",
+      "canonical_url": "https://github.com/JustVugg/colibri",
+      "event_date": "2026-11-02",
+      "date_seen": "2026-11-03"
+    },
+    {
+      "key": "github.com/max-sixty/worktrunk",
+      "canonical_url": "https://github.com/max-sixty/worktrunk",
+      "event_date": "2026-11-02",
+      "date_seen": "2026-11-03"
+    },
+    {
+      "key": "github.com/paperclipai/paperclip",
+      "canonical_url": "https://github.com/paperclipai/paperclip",
+      "event_date": "2026-11-02",
+      "date_seen": "2026-11-03"
+    },
+    {
+      "key": "github.com/karpathy/nanochat",
+      "canonical_url": "https://github.com/karpathy/nanochat",
+      "event_date": "2026-11-02",
+      "date_seen": "2026-11-03"
+    },
+    {
+      "key": "github.com/ggml-org/llama.cpp",
+      "canonical_url": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.8.0",
+      "event_date": "2026-10-28",
+      "date_seen": "2026-11-03"
+    },
+    {
+      "key": "github.com/sgl-project/sglang",
+      "canonical_url": "https://github.com/sgl-project/sglang/releases/tag/v0.5.23",
+      "event_date": "2026-11-02",
+      "date_seen": "2026-11-03"
+    },
+    {
+      "key": "hf:deep-principle/hydrogen-1.0",
+      "canonical_url": "https://huggingface.co/deep-principle/Hydrogen-1.0",
+      "event_date": "2026-10-31",
+      "date_seen": "2026-11-03"
+    },
+    {
+      "key": "hf:rikiyat/qwen3.5-0.8b-weight-space-programming",
+      "canonical_url": "https://huggingface.co/RikiyaT/Qwen3.5-0.8B-weight-space-programming",
+      "event_date": "2026-11-02",
+      "date_seen": "2026-11-03"
+    },
+    {
+      "key": "github.com/rikiyat/lm_understand-logs",
+      "canonical_url": "https://github.com/RikiyaT/lm_understand-logs",
+      "event_date": "2026-11-02",
+      "date_seen": "2026-11-03"
     }
   ]
 }
