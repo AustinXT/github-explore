@@ -1,0 +1,6 @@
+{
+  "title": "GitHub 推荐：1.1 万 Star 的 worktrunk：AI Agent 并行开发的隔离层",
+  "digest": "worktrunk 把 worktree 身份从「路径」换成「分支名」，为并行 agent 而生：hooks、reflink 缓存共享、两层信任审批。10,771 star，可抄冻结计划、分支优先解析、CoW + mtime 保留。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}
