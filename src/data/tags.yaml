@@ -1601,6 +1601,11 @@ entries:
   mattpocock_skills:
   - ai-coding
   - devtools
+  max-sixty_worktrunk:
+  - ai-agent
+  - ai-coding
+  - devtools
+  - workflow-automation
   maziyarpanahi_openmed:
   - llm-inference
   - web-framework

@@ -13,11 +13,11 @@
     "name": "mattpocock/skills",
     "url": "https://github.com/mattpocock/skills",
     "language": "Shell",
-    "stars": 311166,
-    "forks": 26172,
+    "stars": 312899,
+    "forks": 26257,
     "description": "Skills for Real Engineers. Straight from my .agents directory.",
-    "last_seen": "2026-11-03",
-    "trending_days": 48
+    "last_seen": "2026-11-04",
+    "trending_days": 49
   },
   {
     "name": "affaan-m/ECC",
@@ -50,6 +50,16 @@
     "trending_days": 37
   },
   {
+    "name": "thedotmack/claude-mem",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "language": "TypeScript",
+    "stars": 112647,
+    "forks": 9790,
+    "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+    "last_seen": "2026-11-04",
+    "trending_days": 37
+  },
+  {
     "name": "anthropics/claude-code",
     "url": "https://github.com/anthropics/claude-code",
     "language": "TypeScript",
@@ -57,16 +67,6 @@
     "forks": 27129,
     "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
     "last_seen": "2026-10-19",
-    "trending_days": 36
-  },
-  {
-    "name": "thedotmack/claude-mem",
-    "url": "https://github.com/thedotmack/claude-mem",
-    "language": "TypeScript",
-    "stars": 111633,
-    "forks": 9725,
-    "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
-    "last_seen": "2026-11-03",
     "trending_days": 36
   },
   {
@@ -250,6 +250,16 @@
     "trending_days": 22
   },
   {
+    "name": "harry0703/MoneyPrinterTurbo",
+    "url": "https://github.com/harry0703/moneyprinterturbo",
+    "language": "Python",
+    "stars": 138796,
+    "forks": 22152,
+    "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+    "last_seen": "2026-11-04",
+    "trending_days": 22
+  },
+  {
     "name": "milvus-io/milvus",
     "url": "https://github.com/milvus-io/milvus",
     "language": "Go",
@@ -308,16 +318,6 @@
     "description": "Frame profiler",
     "last_seen": "2025-12-04",
     "trending_days": 22
-  },
-  {
-    "name": "harry0703/MoneyPrinterTurbo",
-    "url": "https://github.com/harry0703/moneyprinterturbo",
-    "language": "Python",
-    "stars": 127395,
-    "forks": 19924,
-    "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
-    "last_seen": "2026-09-30",
-    "trending_days": 21
   },
   {
     "name": "pbakaus/impeccable",
@@ -800,6 +800,16 @@
     "trending_days": 12
   },
   {
+    "name": "D4Vinci/Scrapling",
+    "url": "https://github.com/d4vinci/scrapling",
+    "language": "Python",
+    "stars": 96226,
+    "forks": 10085,
+    "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+    "last_seen": "2026-11-04",
+    "trending_days": 12
+  },
+  {
     "name": "Flowseal/zapret-discord-youtube",
     "url": "https://github.com/flowseal/zapret-discord-youtube",
     "language": "Batchfile",
@@ -967,16 +977,6 @@
     "forks": 4680,
     "description": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
     "last_seen": "2026-10-02",
-    "trending_days": 11
-  },
-  {
-    "name": "D4Vinci/Scrapling",
-    "url": "https://github.com/d4vinci/scrapling",
-    "language": "Python",
-    "stars": 94292,
-    "forks": 9900,
-    "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
-    "last_seen": "2026-11-03",
     "trending_days": 11
   },
   {
@@ -1340,6 +1340,16 @@
     "trending_days": 9
   },
   {
+    "name": "garrytan/gstack",
+    "url": "https://github.com/garrytan/gstack",
+    "language": "TypeScript",
+    "stars": 139202,
+    "forks": 20626,
+    "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+    "last_seen": "2026-11-04",
+    "trending_days": 9
+  },
+  {
     "name": "hacksider/Deep-Live-Cam",
     "url": "https://github.com/hacksider/deep-live-cam",
     "language": "Python",
@@ -1630,16 +1640,6 @@
     "trending_days": 8
   },
   {
-    "name": "garrytan/gstack",
-    "url": "https://github.com/garrytan/gstack",
-    "language": "TypeScript",
-    "stars": 135053,
-    "forks": 20085,
-    "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
-    "last_seen": "2026-10-04",
-    "trending_days": 8
-  },
-  {
     "name": "github/copilot-sdk",
     "url": "https://github.com/github/copilot-sdk",
     "language": "Java",
@@ -1647,6 +1647,16 @@
     "forks": 1380,
     "description": "Multi-platform SDK for integrating GitHub Copilot Agent into apps and services",
     "last_seen": "2026-08-01",
+    "trending_days": 8
+  },
+  {
+    "name": "github/spec-kit",
+    "url": "https://github.com/github/spec-kit",
+    "language": "Python",
+    "stars": 147161,
+    "forks": 13208,
+    "description": "💫 Toolkit to help you get started with SDD or any other process!",
+    "last_seen": "2026-11-04",
     "trending_days": 8
   },
   {
@@ -1917,16 +1927,6 @@
     "forks": 45104,
     "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
     "last_seen": "2026-06-18",
-    "trending_days": 7
-  },
-  {
-    "name": "github/spec-kit",
-    "url": "https://github.com/github/spec-kit",
-    "language": "Python",
-    "stars": 135593,
-    "forks": 12190,
-    "description": "💫 Toolkit to help you get started with Spec-Driven Development",
-    "last_seen": "2026-09-11",
     "trending_days": 7
   },
   {
@@ -4310,6 +4310,16 @@
     "trending_days": 4
   },
   {
+    "name": "max-sixty/worktrunk",
+    "url": "https://github.com/max-sixty/worktrunk",
+    "language": "Rust",
+    "stars": 10919,
+    "forks": 407,
+    "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+    "last_seen": "2026-11-04",
+    "trending_days": 4
+  },
+  {
     "name": "maziyarpanahi/openmed",
     "url": "https://github.com/maziyarpanahi/openmed",
     "language": "Python",
@@ -5800,16 +5810,6 @@
     "trending_days": 3
   },
   {
-    "name": "max-sixty/worktrunk",
-    "url": "https://github.com/max-sixty/worktrunk",
-    "language": "Rust",
-    "stars": 10380,
-    "forks": 374,
-    "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
-    "last_seen": "2026-11-03",
-    "trending_days": 3
-  },
-  {
     "name": "megadose/holehe",
     "url": "https://github.com/megadose/holehe",
     "language": "Python",
@@ -6427,6 +6427,16 @@
     "forks": 1272,
     "description": "The most customizable commerce platform built with TypeScript, NestJS and GraphQL.",
     "last_seen": "2025-12-25",
+    "trending_days": 3
+  },
+  {
+    "name": "vercel-labs/agent-desktop",
+    "url": "https://github.com/vercel-labs/agent-desktop",
+    "language": "Rust",
+    "stars": 14637,
+    "forks": 1009,
+    "description": "Computer use CLI for AI agents",
+    "last_seen": "2026-11-04",
     "trending_days": 3
   },
   {
@@ -7467,6 +7477,16 @@
     "forks": 1580,
     "description": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently.",
     "last_seen": "2026-11-02",
+    "trending_days": 2
+  },
+  {
+    "name": "floci-io/floci",
+    "url": "https://github.com/floci-io/floci",
+    "language": "Java",
+    "stars": 29454,
+    "forks": 3263,
+    "description": "Light, fluffy, and always free - The AWS Local Emulator alternative",
+    "last_seen": "2026-11-04",
     "trending_days": 2
   },
   {
@@ -9360,16 +9380,6 @@
     "trending_days": 2
   },
   {
-    "name": "vercel-labs/agent-desktop",
-    "url": "https://github.com/vercel-labs/agent-desktop",
-    "language": "Rust",
-    "stars": 12236,
-    "forks": 845,
-    "description": "Computer use CLI for AI agents",
-    "last_seen": "2026-11-03",
-    "trending_days": 2
-  },
-  {
     "name": "vllm-project/vllm",
     "url": "https://github.com/vllm-project/vllm",
     "language": "Python",
@@ -10760,6 +10770,16 @@
     "trending_days": 1
   },
   {
+    "name": "FareedKhan-dev/kimi-k3-in-c",
+    "url": "https://github.com/fareedkhan-dev/kimi-k3-in-c",
+    "language": "C",
+    "stars": 10140,
+    "forks": 1618,
+    "description": "A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.",
+    "last_seen": "2026-11-04",
+    "trending_days": 1
+  },
+  {
     "name": "farion1231/cc-switch",
     "url": "https://github.com/farion1231/cc-switch",
     "language": "TypeScript",
@@ -10767,16 +10787,6 @@
     "forks": 1271,
     "description": "A cross-platform desktop All-in-One assistant tool for Claude Code, Codex, OpenCode & Gemini CLI.",
     "last_seen": "2026-02-26",
-    "trending_days": 1
-  },
-  {
-    "name": "floci-io/floci",
-    "url": "https://github.com/floci-io/floci",
-    "language": "Java",
-    "stars": 28519,
-    "forks": 3185,
-    "description": "Light, fluffy, and always free - The AWS Local Emulator alternative",
-    "last_seen": "2026-11-03",
     "trending_days": 1
   },
   {
@@ -11510,6 +11520,16 @@
     "trending_days": 1
   },
   {
+    "name": "JiaFeiMiao-K-Cat/DiscImageStudio",
+    "url": "https://github.com/jiafeimiao-k-cat/discimagestudio",
+    "language": "C#",
+    "stars": 6335,
+    "forks": 226,
+    "description": "None",
+    "last_seen": "2026-11-04",
+    "trending_days": 1
+  },
+  {
     "name": "jiji262/douyin-downloader",
     "url": "https://github.com/jiji262/douyin-downloader",
     "language": "Python",
@@ -12030,6 +12050,16 @@
     "trending_days": 1
   },
   {
+    "name": "MichaelCade/90DaysOfDevOps",
+    "url": "https://github.com/michaelcade/90daysofdevops",
+    "language": "Shell",
+    "stars": 30293,
+    "forks": 6788,
+    "description": "This repository started out as a learning in public project for myself and has now become a structured learning map for many in the community. We have 3 years under our belt covering all things DevOps, including Principles, Processes, Tooling and Use Cases surrounding this vast topic.",
+    "last_seen": "2026-11-04",
+    "trending_days": 1
+  },
+  {
     "name": "microsoft/agent-governance-toolkit",
     "url": "https://github.com/microsoft/agent-governance-toolkit",
     "language": "Python",
@@ -12427,6 +12457,16 @@
     "forks": 5834,
     "description": "the full-stack Vue framework",
     "last_seen": "2026-07-11",
+    "trending_days": 1
+  },
+  {
+    "name": "NVIDIA/auto-ontology",
+    "url": "https://github.com/nvidia/auto-ontology",
+    "language": "Python",
+    "stars": 4471,
+    "forks": 370,
+    "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+    "last_seen": "2026-11-04",
     "trending_days": 1
   },
   {
@@ -13050,6 +13090,16 @@
     "trending_days": 1
   },
   {
+    "name": "scenario-labs/skills",
+    "url": "https://github.com/scenario-labs/skills",
+    "language": "Python",
+    "stars": 2285,
+    "forks": 242,
+    "description": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity.",
+    "last_seen": "2026-11-04",
+    "trending_days": 1
+  },
+  {
     "name": "seaweedfs/seaweedfs",
     "url": "https://github.com/seaweedfs/seaweedfs",
     "language": "Go",
@@ -13380,6 +13430,16 @@
     "trending_days": 1
   },
   {
+    "name": "The-PR-Agent/pr-agent",
+    "url": "https://github.com/the-pr-agent/pr-agent",
+    "language": "Python",
+    "stars": 14642,
+    "forks": 2083,
+    "description": "🚀 PR Agent: The Original Open-Source PR Reviewer. This project is not the Qodo free tier.",
+    "last_seen": "2026-11-04",
+    "trending_days": 1
+  },
+  {
     "name": "TheRobotStudio/SO-ARM100",
     "url": "https://github.com/therobotstudio/so-arm100",
     "language": "Unknown",
@@ -13407,6 +13467,16 @@
     "forks": 523,
     "description": "slime is an LLM post-training framework for RL Scaling.",
     "last_seen": "2026-02-13",
+    "trending_days": 1
+  },
+  {
+    "name": "Thysrael/Horizon",
+    "url": "https://github.com/thysrael/horizon",
+    "language": "Python",
+    "stars": 12408,
+    "forks": 1814,
+    "description": "📡 Your own AI-powered news radar. Generates daily briefings in English & Chinese. | 用 AI 构建你专属的新闻雷达",
+    "last_seen": "2026-11-04",
     "trending_days": 1
   },
   {
