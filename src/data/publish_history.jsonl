@@ -399,3 +399,4 @@
 {"recorded_at": "2026-11-02T03:56:42.754337+00:00", "slug": "hyprwm_hyprland", "title": null, "state": "published", "published_at": "2026-11-02", "reason": "自动生成", "ci_run_id": "41382685014"}
 {"recorded_at": "2026-11-02T12:12:12.376812+00:00", "slug": "copilotkit_openbot", "title": null, "state": "published", "published_at": "2026-11-02", "reason": "自动生成", "ci_run_id": "41439723499"}
 {"recorded_at": "2026-11-04T12:04:26.071234+00:00", "slug": "max-sixty_worktrunk", "title": null, "state": "published", "published_at": "2026-11-04", "reason": "自动生成", "ci_run_id": "41823321467"}
+{"recorded_at": "2026-11-05T07:54:16.120960+00:00", "slug": "vercel-labs_agent-desktop", "title": null, "state": "published", "published_at": "2026-11-05", "reason": "自动生成", "ci_run_id": "41987889386"}

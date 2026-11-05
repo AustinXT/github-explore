@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* ====== 微信公众号排版 CSS ====== */
+
+body {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #3e3e3e;
+    background: #fff;
+}
+
+/* 正文段落 */
+p {
+    font-size: 15px !important;
+    line-height: 2 !important;
+    margin: 0 !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+    padding-right: 1.2em !important;
+    padding-left: 1.2em !important;
+    text-align: justify !important;
+}
+p + p {
+    margin-top: 0 !important;
+}
+
+/* 标题 */
+h1 {
+    font-size: 20px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 16px 0 !important;
+    padding: 0 !important;
+}
+h2 {
+    font-size: 18px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 24px 0 !important;
+    padding: 0 !important;
+}
+h3 {
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+    text-align: left !important;
+    margin: 16px 0 16px 0 !important;
+    padding: 0 0 0 1.2em !important;
+}
+h4 {
+    font-size: 15px !important;
+    color: rgb(0, 122, 170) !important;
+    margin: 12px 0 8px 0 !important;
+    padding: 0 !important;
+}
+
+/* 列表 */
+ul,
+ol {
+    padding-left: 2em !important;
+    margin: 1em 0 !important;
+    font-size: 15px !important;
+}
+li {
+    margin: 0.5em 0 !important;
+    line-height: 1.8em !important;
+    font-size: 15px !important;
+    color: #3e3e3e !important;
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    margin: 0 !important;
+    padding-left: 1.2em !important;
+}
+
+/* 引用 */
+blockquote {
+    border-left: 4px solid #888 !important;
+    padding: 8px 16px !important;
+    margin: 1em 0 !important;
+    color: #666 !important;
+    background: #f9f9f9 !important;
+}
+blockquote > p {
+    margin: 0.5em 0 !important;
+    padding: 0 !important;
+}
+blockquote::before,
+blockquote::after {
+    content: none !important;
+}
+
+/* 代码块 */
+pre {
+    font-size: 14px !important;
+    line-height: 1.4em !important;
+    color: #3e3e3e !important;
+    background: #f8f8f8 !important;
+    padding: 12px 16px !important;
+    border-radius: 4px !important;
+    overflow: auto !important;
+    margin: 1em 0 !important;
+}
+
+/* 脚注 */
+.footnotes {
+    font-size: 11px !important;
+    color: #666 !important;
+    line-height: 1.2 !important;
+    margin: 8px 0 0 0 !important;
+    padding: 4px 0 0 0 !important;
+    border-top: 1px solid #eee !important;
+}
+.footnotes p {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #666 !important;
+}
+
+/* 上标 */
+sup {
+    font-size: 0.75em !important;
+    vertical-align: super !important;
+    color: #e51f42 !important;
+    margin: 0 2px !important;
+}
+
+/* 表格 */
+table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+    margin: 1em 0 !important;
+    font-size: 14px !important;
+}
+th, td {
+    border: 1px solid #ddd !important;
+    padding: 8px 12px !important;
+    text-align: left !important;
+    color: #3e3e3e !important;
+    line-height: 1.6 !important;
+}
+th {
+    background: #f5f5f5 !important;
+    font-weight: bold !important;
+}
+
+/* 图片 */
+img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 1em auto !important;
+}
+
+/* 行内代码 */
+code {
+    background: #f4f4f4 !important;
+    color: #c7254e !important;
+    padding: 2px 4px !important;
+    border-radius: 3px !important;
+    font-size: 90% !important;
+}
+
+/* 链接 */
+a {
+    color: rgb(0,122,170) !important;
+    text-decoration: none !important;
+}
+
+/* 强调 */
+strong {
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+}
+
+</style>
+</head>
+<body>
+
+<blockquote>
+<p>GitHub: <a href="https://github.com/vercel-labs/agent-desktop">https://github.com/vercel-labs/agent-desktop</a></p>
+</blockquote>
+<h2>一句话总结</h2>
+<p>给 AI agent 的 computer use 工具层——<strong>不截图、不做像素匹配</strong>，直接读操作系统的无障碍树（macOS AX / Windows UI Automation / Linux AT-SPI）转成带 ref 的 JSON，agent 按 ref 操作、再读一次 UI 验证结果；CLI + C library + MCP 三种形态交付，<strong>内部不塞任何模型</strong>，把 GUI 交互的可靠性问题从模型能力问题里剥离出来。</p>
+<h2>值得关注的理由</h2>
+<ol><li><strong>它把「正确性」写进了契约层，而不是靠提示词祈祷</strong>。项目有一套完整的错误语义体系：证据三态（Known / Absent / Unknown，绝不塌缩成 bool）、ref 必须携带 capture proof 才能解析、投递状态（Delivered / NotDelivered / Uncertain）与重试安全性（Safe / Unsafe / Unknown）分成两个正交轴随错误一起返回。<strong>这是可以直接抄进自己 agent 工具链的工程纪律</strong>，也是本项目最值钱的部分——不是那 60 条命令，而是那套「失败要显式」的语义设计。</li><li><strong>v1.1.0 主动打断自己的 C ABI，只为了不让 agent 点错按钮</strong>。这个版本把 C ABI major 跳到 7，<code>ad_resolve_element_exact</code> 系列函数<strong>永远拒绝</strong>；Windows/Linux 上「多个相同控件之一」从「随便挑一个操作」改成一律 <code>AMBIGUOUS_TARGET</code>。愿意为语义正确性牺牲向后兼容，是可信工程判断的强信号——大多数项目做不到。</li><li><strong>8.5 个月、44 万行 Rust、51 个 tag，且三端深度对等</strong>。<code>crates/core</code> 2,574 次改动 vs macOS 1,342 / Linux 1,081 / Windows 961——不是「macOS 优先、其他凑数」。<code>scripts/check_architecture.py</code> 用<strong>先故意植入违规、再扫描</strong>的方式自测每条架构规则，规则失效会让门禁直接失败而不是静默通过。</li><li><strong>它有一个「不搭便车」的生态位</strong>：模型厂商的 computer use 会内置化，Playwright 式的像素方案覆盖不了原生 app，而它占的是「模型」和「OS」之间的协议层。</li></ol>
+<h2>项目展示</h2>
+<p><img alt="agent-desktop 架构图：调用方 agent → CLI / C 库 → agent-desktop-core（PlatformAdapter trait）→ 平台 crate → OS 原生无障碍 API → 目标应用" src="https://raw.githubusercontent.com/vercel-labs/agent-desktop/main/assets/architecture-light.png"/></p>
+<p><em>七层调用链。硬约束是 core 永不 import 平台 crate，平台 crate 之间也永不互相 import，平台在编译期选定——一个二进制只驱动本机 OS。</em></p>
+<p><img alt="agent-desktop 教程演示" src="https://raw.githubusercontent.com/vercel-labs/agent-desktop/main/assets/Tutorial.gif"/></p>
+<p><em>观察 → 按 ref 动作 → 再观察验证。循环活在调用方的 agent 里，工具本身不做决策。</em></p>
+<p><img alt="agent-desktop 横幅" src="https://raw.githubusercontent.com/vercel-labs/agent-desktop/main/assets/banner.png"/></p>
+<p><em>官方 banner。仓库还提供三个离线演示视频（Codex using agent-desktop / Drag and Drop / Muse using agent-desktop）。</em></p>
+<h2>项目画像</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub</td>
+<td><a href="https://github.com/vercel-labs/agent-desktop">https://github.com/vercel-labs/agent-desktop</a></td>
+</tr>
+<tr>
+<td>Star / Fork</td>
+<td>15,778 / 1,100（fork/star 7%）</td>
+</tr>
+<tr>
+<td>代码行数</td>
+<td>441,208 行（Rust 73.7%、PowerShell 8.2%、JSON 6.7%、Python 4.5%）</td>
+</tr>
+<tr>
+<td>项目年龄</td>
+<td>8.5 个月（2026-02-19 首次提交，2026-11-05 最近推送）</td>
+</tr>
+<tr>
+<td>开发阶段</td>
+<td><strong>密集开发</strong>（近 30 天 79 次 commit，近 90 天 162 次，占全历史 48.4%）</td>
+</tr>
+<tr>
+<td>贡献模式</td>
+<td><strong>单人主导</strong>（22 位贡献者，lahfir 占 92.7%，真人贡献者仅 4 位，bus factor = 1）</td>
+</tr>
+<tr>
+<td>版本节奏</td>
+<td>v1.2.0，51 个 tag / 49 个 Release（平均约每 5 天一个版本）</td>
+</tr>
+<tr>
+<td>热度定位</td>
+<td>大众热门（爆发型增长：四周内连发 v1.0.0 → v1.0.2 → v1.1.0 → v1.2.0）</td>
+</tr>
+<tr>
+<td>质量评级</td>
+<td>代码[A] 文档[A] 测试[A]</td>
+</tr>
+</tbody>
+</table>
+<h2>作者视角：为什么存在这个项目</h2>
+<h3>创始人/作者背景</h3>
+<p><strong>Vercel Labs</strong> 组织账号发布，但底层是两位 Vercel 内部开发者：<strong>Mohamed Lahfir</strong>（@lahfir，个人主页 lahfir.com）与 <strong>Chris Tate</strong>（@ctate）。Chris Tate 此前做出了 45.6k star 的 <code>vercel-labs/agent-browser</code>——一个 Rust 写的浏览器自动化 CLI。</p>
+<p>这层关系是理解整个项目定位的关键：<strong>agent-desktop 不是从零设计的新东西，而是同一套方法论从浏览器向原生桌面的自然平移</strong>。agent-browser 已经验证了「给 agent 用的、CLI 优先、无内置模型」这条路走得通；agent-desktop 把同一套心智模型（ref / 快照 / JSON envelope / 观察-动作-验证循环）搬到 AX/UIA/AT-SPI 三套完全不同的 native API 上。</p>
+<h3>问题判断</h3>
+<p>作者看到的是<strong>一个被忽视的能力空白</strong>：浏览器侧有 Playwright，桌面侧却只有截图。截图路线的代价是实打实的——token 成本随 UI 密度线性上涨、坐标会漂、而且 agent 根本不知道「我点的到底是哪个按钮」。</p>
+<p>更深一层的问题来自 issue #34「Work in parallel with human」：现有 agent 操作桌面时必须抢焦点、动鼠标指针，用户没法边工作边让 agent 跑。这个原始痛点直接塑造了后来 headless 默认 + 彩色 overlay 光标的设计。</p>
+<p><strong>时机为什么是现在</strong>：2026-02 首次提交，到 2026-10 三端齐活仅 8 个月。这段时间恰好是 agent computer use 从「研究玩具」变成「coding agent 标配能力」的窗口期；同时 macOS AX、Windows UIA、Linux AT-SPI 三套 API 都成熟到可以工程化。晚两年，模型厂商会把这层内置；早两年，平台 API 还不够稳定。</p>
+<h3>解法哲学</h3>
+<p>三条贯穿全仓的准则——<strong>失败要显式</strong>、<strong>证据要可辨</strong>、<strong>职责要分离</strong>。</p>
+<p>其中最能体现价值观的是 <strong>evidence 三态</strong>。CONCEPTS.md 里有一句几乎可以当格言的话：</p>
+<blockquote>
+<p>把三态塌成 bool 的谓词，在否定位置上必然 fail open，因为否定会把「我无法判断」悄悄改写成「确定不是」。</p>
+</blockquote>
+<p>这就是为什么 <code>Absent</code>（问过了，没有）和 <code>Unknown</code>（没读出来）必须是两个不同的状态——前者能过完整性门禁，后者不能。这条纪律被落到了类型系统里：<code>LocatorField&lt;T&gt; { Known(T), Absent, Unknown }</code> 是一等类型，<code>crates/core/src/locator/live_locator/match_verdict.rs</code> 里甚至实现了完整的 <strong>Kleene 三值逻辑</strong>（<code>Unknown</code> 在合取下传播、在析取下被吸收、否定保持 <code>Unknown</code>）。</p>
+<p><strong>明确不做的</strong>（相比竞品）：不做截图/像素路线；不做 Web 自动化（明确推给 agent-browser）；不做内置 agent 循环；不做托管 SaaS。<code>key-down</code>/<code>key-up</code>/<code>mouse-down</code>/<code>mouse-up</code> 四个命令在 daemon 落地前<strong>全部 fail closed</strong>——宁可拒绝执行也不上吊子。</p>
+<h3>战略意图</h3>
+<p><strong>不是 Vercel 商业产品的核心</strong>（不服务于 Vercel 平台本身），也不是 open-core 商业模式——Apache-2.0 全量开源，无企业版、无托管版。</p>
+<p>真正的目标是<strong>让 agent 成为一等公民</strong>。仓库自带 <code>AGENTS.md</code>（22KB，面向 AI agent 的仓库契约）、<code>skills/</code> 目录（编译进二进制的 agent 技能，随版本分发）、<code>agent-desktop skills get desktop</code> 命令。<strong>这不是「给 agent 用的工具」，这是「给 agent 用的、同时教 agent 怎么用的工具」</strong>。</p>
+<p>而最反直觉的证据是：<strong>44 万行 Rust 代码的「核心」，不在任何 <code>.rs</code> 文件里。</strong> Top 10 最常修改的文件里 7 个是配置/文档/分发文件——<code>skills/agent-desktop/SKILL.md</code> 改了 33 次、<code>references/commands-system.md</code> 改了 36 次，比 <code>crates/core</code> 里任何单个 <code>.rs</code> 都热。<strong>当你的使用者不是人、而是 LLM agent 时，命令语义的第一公民不是 <code>--help</code> 文本，也不是类型签名，而是那份给 agent 读的 Markdown 契约。</strong> 契约变了，源码不改，agent 的行为就已经变了。</p>
+<h2>核心价值提炼</h2>
+<h3>创新之处</h3>
+<ol><li>
+<strong>Capture Proof：把「观测时的唯一性证明」变成 ref 的前置条件</strong>
+   ref 不只记录「这个元素长什么样」，还记录「在这次完整观测里，这个谓词只匹配了它一个」（role + native_id + stable name + description）。谓词匹配数按字段子集用 <code>OnceLock&lt;HashMap&gt;</code> 缓存，一次扫描服务所有 entry。捕获时不是唯一的元素<strong>在读取应用之前就被拒绝</strong>——因为没有搜索能挑出两个相同元素中的一个。操作时在活体窗口上重新计数：0 匹配 = <code>STALE_REF</code>，≥2 匹配 = <code>AMBIGUOUS_TARGET</code>。
+   <em>新颖度 5/5 | 实用性 4/5 | 可迁移性 4/5</em>
+</li><li>
+<strong>Delivery × Retry 双轴处置语义</strong>
+   把「动作是否送达」和「能否安全重试」拆成两个正交轴，随每个错误一起返回。Windows 侧的做法尤其值得抄：<code>SendInput</code> 的注入事件计数<strong>永不被当作投递证据</strong>——因为该 API 在「投递成功」和「被 UIPI 拦截」两种情况下都返回成功；作者改用 token 完整性级别比较（<code>GetTokenInformation(TokenIntegrityLevel)</code>）加独立重读。
+   <em>新颖度 4/5 | 实用性 5/5 | 可迁移性 5/5</em>
+</li><li>
+<strong>Kleene 三值逻辑用于 GUI 定位求值</strong>
+<code>aggregate_descendants</code> 在子树不完整（<code>subtree_complete == false</code>）时把 <code>NoMatch</code> 提升为 <code>Unknown</code>——「我没看到，但不等于没有」。查询结果自带「是否完备」的证明，而不是靠调用方自己判断遍历是否完整。
+   <em>新颖度 4/5 | 实用性 4/5 | 可迁移性 4/5</em>
+</li><li>
+<strong>从 clap 命令树反射生成 MCP tool schema</strong>
+<code>src/mcp/catalog.rs</code> 调 <code>Cli::command()</code> 遍历叶子命令，参数 schema 由 <code>Arg::get_action()</code> / <code>get_value_parser().type_id()</code> / <code>get_possible_values()</code> / <code>get_default_values()</code> 反射得出；调用时把 JSON arguments 反向重建为 argv 并<strong>以子进程方式运行本二进制</strong>，不重复实现命令逻辑。加一条 CLI 命令，MCP tool list 自动增删。
+   <em>新颖度 3/5 | 实用性 5/5 | 可迁移性 5/5</em>
+</li><li>
+<strong>不确定性向下传播的多源取值</strong>
+<code>crates/core/src/tree/accname.rs</code> 的 <code>resolve_name()</code> 把 7 个名称来源按优先级排列，每个来源带 <code>SlotStatus { Certain, Uncertain, Suppressed }</code>。若高优先级来源读失败，即使低优先级来源有值，结果也是 <code>Unknown</code> 而非回落弱来源。这个函数存在的<strong>唯一</strong>理由（代码注释原文）是防止 macOS adapter 里出现第二份会漂移的 precedence 实现。
+   <em>新颖度 4/5 | 实用性 4/5 | 可迁移性 4/5</em>
+</li><li>
+<strong>自测式架构门禁：规则先植违规再扫描</strong>
+<code>scripts/check_architecture.py</code> 检查六条架构约束（core 不依赖平台 crate、平台 crate 互不依赖、core 不出现 OS 条件代码、crate 顶层布局漂移、能力实现放错层、core 领域目录不得反向依赖 <code>commands/</code>）。<strong>关键设计：脚本扫描前会先故意植入每条规则的违规</strong>，所以「规则失效」会让门禁失败而不是静默通过。白名单只能缩小不能扩大。<code>check-rust-file-size.sh</code> 甚至先探测解释器是否存在（因为在 Windows 开发机上硬编码 python3 曾导致整个检查静默退出、违规照样进 CI）。
+   <em>新颖度 4/5 | 实用性 5/5 | 可迁移性 5/5</em>
+</li><li>
+<strong>引用式证据台账（Finding Ledger）</strong>
+<code>probes/linux/FINDINGS.md</code> 是 919 行的结构化证据台账，每行带稳定 id（<code>L32-39</code>）、探测步骤、适用范围、原始字段值、verdict（<code>CONFIRMS</code> / <code>CONTRADICTS</code> / <code>NEW-EDGE</code> / <code>DEFERRED</code>）、以及「这迫使产品做什么」的 action。<strong>行 id 是项目的引用格式</strong>——shipped 源码可以像引用 CVE 一样引用它。配套 <code>Capture</code>（脱敏归一化后重跑 diff 为空 = 平台未变）、<code>Mandatory Measurement Gate</code>（声明了却没产出 = 失败）。
+   <em>新颖度 5/5 | 实用性 4/5 | 可迁移性 4/5</em>
+</li><li>
+<strong>Web Wrapper 跳过规则（深度预算感知）</strong>
+   Chromium/Electron/WebView 在无障碍树里产生长串匿名容器，这些「透明包装器」消耗<strong>原始深度但不消耗逻辑深度</strong>。不跳过会让同一 app 的可达内容被低估一个数量级。Windows 侧还额外门控在检测到 Chromium 溯源（根窗口类 <code>Chrome_WidgetWin_1</code>），因为同样的「空」判据在原生栈里会误跳过大量匿名容器。
+   <em>新颖度 4/5 | 实用性 4/5 | 可迁移性 3/5</em>
+</li></ol>
+<h3>可复用的模式与技巧</h3>
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>简述</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>证据三态</strong></td>
+<td>每个属性读取携带「问过了没有」vs「没读出来」的区分，<code>Absent</code> 可过完整性门禁、<code>Unknown</code> 不可</td>
+<td>从不受控外部系统读状态的 agent 工具、schema introspection、设备遥测、多源融合</td>
+</tr>
+<tr>
+<td><strong>Delivery × Retry 双轴</strong></td>
+<td>错误同时携带「是否送达」与「能否安全重试」，agent 无需从错误码反推</td>
+<td>任何写外部系统并可能产生副作用的工具：发邮件、支付、改配置、点按钮</td>
+</tr>
+<tr>
+<td><strong>Capture Proof</strong></td>
+<td>存句柄时同时存「这个谓词当时只匹配它一个」的证明，操作前重新计数</td>
+<td>浏览器自动化、远程桌面、乐观锁、任何先观察后操作的两阶段流程</td>
+</tr>
+<tr>
+<td><strong>clap → MCP 反射生成</strong></td>
+<td>从 CLI 定义单源生成 MCP/LSP tool，调用反向重建 argv</td>
+<td>CLI 库的多协议分发</td>
+</tr>
+<tr>
+<td><strong>Kleene 三值逻辑求值器</strong></td>
+<td><code>Unknown</code> 在合取下传播、析取下吸收、否定保持 <code>Unknown</code></td>
+<td>不精确静态分析规则、部分观测下的检索、监控告警判定</td>
+</tr>
+<tr>
+<td><strong>自测式静态门禁</strong></td>
+<td>任何脚本化静态检查规则配套一条能证明其有效的 fixture（先植违规再扫描）</td>
+<td>lint 规则集、架构约束检查、文档漂移检测</td>
+</tr>
+<tr>
+<td><strong>引用式证据台账</strong></td>
+<td>断言带稳定 id 可被源码引用，捕获归一化后重跑可 diff</td>
+<td>平台适配层、兼容性矩阵、行为回归基线</td>
+</tr>
+<tr>
+<td><strong>短临界区 + 临界区内重新验证</strong></td>
+<td>资源租约只覆盖 dispatch，等待期无独占、dispatch 时重新解析</td>
+<td>多进程共享硬件资源（GPU、串口、剪贴板、输入设备）、文件锁、打印队列</td>
+</tr>
+<tr>
+<td><strong>执行 deadline 与解析 deadline 分离</strong></td>
+<td>两条独立预算，一条管「找得到吗」、一条管「做得完吗」</td>
+<td>任何有「定位」和「执行」两阶段的系统</td>
+</tr>
+<tr>
+<td><strong>不确定性向下传播的多源取值</strong></td>
+<td>高优先级来源读失败时结果降级为 Unknown 而非回落弱来源</td>
+<td>配置合并、传感器融合、搜索结果合并</td>
+</tr>
+</tbody>
+</table>
+<h3>关键设计决策</h3>
+<p><strong>① 用证据三态替代布尔表达所有属性读取</strong></p>
+<ul><li>问题：传统 a11y 自动化把「读到了没有」压成 bool，一旦否定这个 bool，「我读不出来」就被静默改写成「确定不是」——在完整性门禁处必然 fail open</li><li>方案：<code>LocatorField&lt;T&gt; { Known(T), Absent, Unknown }</code> 是一等类型，下游必须显式处理三态</li><li>Trade-off：每个字段携带额外状态位，所有消费者都要多写分支；换来的是「失败要显式」在<strong>类型系统层面</strong>被强制执行，而不是靠 code review 自觉</li><li>可迁移性：<strong>高</strong></li></ul>
+<p><strong>② ref 是「快照的快照」，且必须携带 capture proof</strong></p>
+<ul><li>问题：agent 拿到的 <code>@e8</code> 可能在 UI 变化后指向完全不同的元素；裸 ref 无法界定作用域</li><li>方案：ref 强制限定格式 <code>@&lt;snapshot_id&gt;:eN</code>（裸 <code>@e8</code> 直接 <code>INVALID_ARGS</code>）；捕获时记录完整谓词的唯一性；操作时在活体窗口重新计数</li><li>Trade-off：每次动作付一次整窗重读（作者明示这是性能代价，「一次动作付一次整窗读而不是两次」是刻意优化）；换来的是<strong>绝不点错元素</strong>——这是 GUI agent 造成真实破坏（误删文件、误发消息）的唯一根治办法</li><li>可迁移性：<strong>高</strong></li></ul>
+<p><strong>③ macOS 走「元素自身 AX 地址」，Windows/Linux 走「capture proof 计数」的双轨身份解析</strong></p>
+<ul><li>问题：平台能力不对等。macOS AX 元素有稳定内存地址，Windows UIA / Linux AT-SPI 没有等价物</li><li>方案：<code>crates/core/src/refs/ref_identity.rs</code> 定义统一的 <code>has_meaningful_identity()</code>——macOS 用 <code>retained_object</code>（带 <code>axtok1:</code> 前缀的元素令牌，且要求进程/role/identifier 仍匹配），Win/Linux 用字段谓词唯一性。macOS 额外处理了「相同双胞胎各自保有自己的 ref」（地址不同）；Win/Linux 的双胞胎一律 <code>AMBIGUOUS_TARGET</code></li><li>Trade-off：<strong>同一逻辑在两平台有不同失败模式</strong>，agent 的错误处理代码必须同时处理 <code>STALE_REF</code>（macOS 特有）和 <code>AMBIGUOUS_TARGET</code>（Win/Linux 特有）；换来的是不放弃任何一个平台</li><li>可迁移性：<strong>中</strong></li></ul>
+<p><strong>④ 平台在编译期选定，并用 CI 脚本强制架构边界</strong></p>
+<ul><li>问题：多平台 GUI 库最常见的腐化是 core 里长出 <code>#[cfg(target_os)]</code> 分支，Windows 路径只在 CI 跑到一半</li><li>方案：<code>scripts/check_architecture.py</code> 在 pre-commit hook 和 CI 双跑，检查六条约束</li><li>Trade-off：写起来比 <code>#[cfg]</code> 慢，改架构需要走 review；换来的是 core 在三端 CI lane 都真实编译，macOS 上的假设不会在 Linux 上炸</li><li>可迁移性：<strong>高</strong></li></ul>
+<p><strong>⑤ 动作成功必须靠独立重读确认</strong></p>
+<ul><li>问题：原生 API 返回成功不代表 UI 变了。macOS <code>AXValue</code> 写成功、Win <code>SendInput</code> 返回成功、AT-SPI write 返回成功，三者都可能什么都没发生</li><li>方案：<code>DeliveryDisposition</code> 五态 + 独立 <code>RetryDisposition</code>；<code>crates/macos/src/actions/chain/chain_verify.rs</code> 的 <code>bool_write_had_effect</code> / <code>dynamic_write_had_effect</code> 实现「写完必须读回比对」，<strong>缺失读回一律判为「未生效」</strong></li><li>Trade-off：每个动作多一次读往返，时延上升；换来的是 agent 可以安全做「观察→动作→验证」循环，而不是盲目重试造成重复副作用</li><li>可迁移性：<strong>高</strong></li></ul>
+<p><strong>⑥ Action Chain：把一个意图表达为有序策略阶梯</strong></p>
+<ul><li>问题：同一个「点击复选框」在不同平台/不同控件上有多种实现路径（AXPress / UIA Invoke / Value pattern / 坐标注入），选哪条、失败怎么降级需要显式化</li><li>方案：<code>ChainStep</code> 枚举（<code>Action</code> / <code>SetBool</code> / <code>SetDynamic</code> / <code>IncrementToDynamic</code> / <code>FocusThenClearByKeyboard</code> / <code>CustomWithDeadline</code> / <code>CGClick</code>）+ <code>ChainDef { steps, suggestion, continue_after_unverified_delivery }</code>。链在开始时钉住一个执行 deadline（与 Resolver Deadline 分离）；链尾有「部分变更」处置——若超时前值已从 37 改到 80，错误带 <code>delivered_unverified</code> + <code>details.mutated: true</code></li><li>Trade-off：比直接调一个 API 复杂得多；换来的是「逐步逼近目标值」（slider 步进）和「部分变更」这类真实场景的正确表达</li><li>可迁移性：<strong>中</strong></li></ul>
+<p><strong>⑦ Interaction Lease：机器级文件锁 + 进程守卫，但只覆盖 dispatch</strong></p>
+<ul><li>问题：多 agent 并发时合成输入会互相穿插</li><li>方案：<code>crates/core/src/session/interaction_lease.rs</code> 用 <code>/tmp/agent-desktop-&lt;uid&gt;/interaction.lock</code> 的 <code>FileLock</code> + <code>ProcessLeaseGuard</code>，目录做 uid 校验、拒绝 symlink、权限强制 0700。<strong>关键取舍</strong>：租约只覆盖 dispatch 这段极短窗口，不覆盖等待（否则机器上所有 agent-desktop 进程被串行化）。因此等待期解析出的元素是<strong>无独占观察</strong>的，dispatch 时必须在租约内<strong>重新解析</strong>——作者明确称这个二次解析是「correctness boundary，不是冗余工作」</li><li>Trade-off：双重解析的成本换取正确性边界清晰</li><li>可迁移性：<strong>高</strong></li></ul>
+<p><strong>⑧ 用探测语料库代替「相信文档/直觉」</strong></p>
+<ul><li>问题：GUI 平台行为极其难预测，作者称之为「猜测驱动的 adapter」</li><li>方案：见上文创新点 7。<strong>每个平台行为断言都有可追溯的实测出处</strong></li><li>Trade-off：前期投入极大，且 Linux 探针脚本与捕获<strong>故意不入库</strong>（只提交 ledger），他人无法重跑</li><li>可迁移性：<strong>高</strong></li></ul>
+<h2>竞品格局与定位</h2>
+<h3>竞品对比矩阵</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>agent-desktop</th>
+<th>Peekaboo</th>
+<th>trycua/cua</th>
+<th>midscene</th>
+<th>QwenLM/open-computer-use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stars</td>
+<td>15,778</td>
+<td>5,437</td>
+<td>31,771</td>
+<td>15,503</td>
+<td>301</td>
+</tr>
+<tr>
+<td>交互路线</td>
+<td><strong>无障碍树（语义）</strong></td>
+<td>截图 + 视觉模型</td>
+<td>像素 / 沙箱</td>
+<td>视觉驱动</td>
+<td>无障碍树</td>
+</tr>
+<tr>
+<td>平台覆盖</td>
+<td>macOS + Windows + Linux</td>
+<td>仅 macOS</td>
+<td>跨 OS</td>
+<td>跨 OS</td>
+<td>macOS + Windows + Linux</td>
+</tr>
+<tr>
+<td>内置模型</td>
+<td>无（模型中立）</td>
+<td>可选接视觉模型</td>
+<td>完整 agent 栈</td>
+<td>是</td>
+<td>无</td>
+</tr>
+<tr>
+<td>交付形态</td>
+<td>CLI + C ABI + MCP</td>
+<td>CLI + MCP</td>
+<td>SDK / 沙箱</td>
+<td>SDK + 测试套件</td>
+<td>MCP</td>
+</tr>
+<tr>
+<td>对齐式测试</td>
+<td>有（<code>tests/conformance/</code> 跨平台契约矩阵）</td>
+<td>无</td>
+<td>有 benchmark</td>
+<td>有 NL E2E</td>
+<td>无</td>
+</tr>
+<tr>
+<td>截图覆盖不到的 UI</td>
+<td><strong>不支持</strong></td>
+<td>支持</td>
+<td>支持</td>
+<td>支持</td>
+<td>不支持</td>
+</tr>
+<tr>
+<td>可对照的量化基准</td>
+<td><strong>无</strong></td>
+<td>无</td>
+<td>有</td>
+<td>有</td>
+<td>无</td>
+</tr>
+</tbody>
+</table>
+<h3>差异化护城河</h3>
+<ul><li><strong>技术护城河（真实但不完美）</strong>：证据三态 + capture proof + 双轴处置 + 三平台统一词汇表，确实是长期工程沉淀的结果（Linux 平台的 919 行证据台账是数月探索的产出）。但<strong>可被复现</strong>——竞品花同样时间能做出类似东西。</li><li><strong>生态护城河（弱）</strong>：agent-browser 45.6k star 带来的品牌与「同一作者姊妹项目」心智，加上 npm 包、Homebrew 官方 catalog、<code>skills.sh</code> 分发。</li><li><strong>信任护城河（强）</strong>：Apache-2.0 + 文档与代码同步（AGENTS.md 明确写「与代码矛盾的文档是缺陷，在同一个改动里修掉」）+ <code>docs/solutions/</code> 公开失败案例 + CONCEPTS.md 术语表。<strong>这是一个把设计推理过程本身公开的项目</strong>，竞品很少这样做。</li><li><strong>实际最大的护城河（也是最大的风险）：bus factor = 1</strong>。</li></ul>
+<h3>竞争风险</h3>
+<ol><li><strong>最可能被模型厂商自带的 OS 原生 computer use 替代</strong>。OpenAI/Anthropic 若把 a11y tree 直接接入模型端，agent-desktop 的工具层会被内置化。但这也印证它的定位是对的：工具层可被吸收，其价值会以「方法论」而非「代码」的形式留存。</li><li><strong>其次是 cua 类带 benchmark 的栈</strong>。如果 agent-desktop 一直拿不出对照数据，在「选型比较」环节会被认为「只有承诺」——外部评测完全正确地指出这一点：没有与 Playwright / computer-use API / 像素方案的对照基准，没有任务成功率、延迟、UI 覆盖率指标，78–96% 的 token 降幅是作者自报且未经独立复现。</li><li><strong>像素路线在自绘 UI 场景会赢</strong>。canvas、游戏、Electron/Flutter 部分组件、远程桌面——这是 agent-desktop 无法靠自身解决的<strong>结构性盲区</strong>，而官方文档对此只字未提。</li><li><strong>Wayland 是架构层面的天花板</strong>。issue #386 揭示：wlroots 系（Hyprland/Sway/niri）根本没有通用的键盘/窗口控制通道，Wayland 从设计上就禁止应用窥探全局输入。这不是 bug，补不了。</li></ol>
+<h3>生态定位</h3>
+<p>agent-computer-use 栈中的<strong>工具层 / 事实标准候选</strong>，位于「模型」和「OS」之间。</p>
+<p>它的独立价值是<strong>把 GUI 交互的可靠性问题从模型能力问题中剥离出来</strong>——模型不需要理解像素，需要理解 ref、JSON envelope 和 error disposition。这种「协议层」定位（像 Playwright 之于浏览器、Cypress 之于 Web）是可持续的：模型会换、视觉方案会换，但「一个可靠的桌面操作协议」不会轻易被换掉。</p>
+<h2>套利机会分析</h2>
+<ul><li><strong>信息差</strong>：<strong>不高</strong>。15.8k star / 1,100 fork / 49 个 Release，热度已充分反映价值，不是「低关注度高质量」标的。但换个角度——<strong>它的读者不是用户，是想给自己的 agent 加桌面操作能力的开发者</strong>，而这个细分人群的注意力未必都在 star 数上。真正稀缺的是「三端一致的 AX/UIA/AT-SPI 语义抽象」这套实现，外部难以复刻。</li><li><strong>技术借鉴</strong>：<strong>极高</strong>。下面这套东西几乎可以原样搬进任何 agent 工具链：<ul><li>证据三态（<code>Known</code>/<code>Absent</code>/<code>Unknown</code>）——任何从不受控外部系统读状态的地方</li><li>Delivery × Retry 双轴错误语义——任何写外部系统且可能产生副作用的工具</li><li>Capture Proof——任何「先观察后操作」的两阶段流程</li><li>自测式静态门禁（先植违规再扫描）——任何用脚本做架构/lint 检查的仓库</li><li>引用式证据台账——任何依赖不可控外部系统的项目</li><li>clap → MCP schema 反射生成——任何需要把 CLI 暴露成 MCP/HTTP 的项目</li></ul>
+</li><li><strong>生态位</strong>：填补了「Web 自动化」和「纯像素 computer use」之间的空白——原生桌面 app 的语义化操作层。这个位置目前没人占住（最接近的 QwenLM 版只有 301 star，Peekaboo 只做 macOS 且走像素）。</li><li><strong>趋势判断</strong>：<strong>符合技术趋势，且有后发优势</strong>。agent computer use 正在从「研究玩具」变成「coding agent 标配」，工具层需求在涨。后发优势在于——它不用背负第一代方案的兼容包袱（所以才能在 v1.1.0 直接断 C ABI）。但趋势判断有一个反向风险：如果趋势最终倒向「纯视觉」（多模态模型足够强、像素匹配足够好），语义化路线的相对优势会收窄。</li></ul>
+<h2>风险与不足</h2>
+<ol><li><strong>全部卖点都是「承诺」而非「证据」</strong>。这是外部评测最尖锐也最准确的批评：78–96% token 降幅、UI 覆盖率、任务成功率全是作者自报且未经独立复现；<code>benchmarks/locator-resolution/</code> 只测自己新旧两条路径的相对延迟，<strong>不与 Playwright 或像素方案对比</strong>。</li><li><strong>bus factor = 1</strong>。22 位贡献者中 lahfir 占 92.7% 的 commit 量（3084/3326），真人贡献者只有 4 位（Chris Tate 37、Jake Rosoman 14、quolu 11、Railly Hugo 8）。<strong>热度属于组织品牌，项目维护属于一个人</strong>。issue #21「Awesome effort, how can I help keep this alive?」是社区自己的焦虑，而答案是「靠 Vercel 养」——这既是风险（公司路线调整即项目终止），也是信号（有大厂在持续投入，51 个 tag / 49 个 release 的发版纪律绝非个人业余项目能做到）。</li><li><strong>无障碍树覆盖率的失败模式未被系统性讨论</strong>。自绘 canvas、游戏、Electron/Flutter 部分组件、远程桌面、a11y 支持残缺的应用如何处理——官方文档里是空白。这直接决定了它和像素路线的适用边界，但项目没给出边界。</li><li><strong>Wayland 结构性缺口</strong>（issue #386）。架构层面的天花板。</li><li><strong>可靠性上限由 OS 决定，不由自身代码决定</strong>。issue #209（macOS 27 全局窗口清单无法稳定）意味着一次 OS 大版本升级就能打穿整条命令链。当前 HEAD 的提交（<code>perf(macos): read the app process inventory with libproc instead of spawning ps</code>）正是在这条路径上继续加固——但这类风险永远不会消失。</li><li><strong>隐私面没有管控指引</strong>。快照、剪贴板读取、截图、命令输出都可能含桌面隐私内容，README 只有一句警告，<strong>没有脱敏、没有留存策略、没有企业管控指引</strong>。</li><li><strong>版本号双轨的持续摩擦</strong>。release-please 管住了 Rust 侧，但 <code>npm/package.json</code> 的 version 仍要手工同步——这是 <code>Cargo.toml</code>（62 次改动）、<code>CHANGELOG.md</code>（60 次）、<code>npm/package.json</code>（59 次）、<code>.release-please-manifest.json</code>（46 次）四件套合计 227 次改动、占全仓改动频次近 40% 的根因。</li><li><strong>契约与实现的漂移风险</strong>。<code>skills/</code> 里的 Markdown 契约是「第一公民」，但它没有类型系统兜底——契约和实现漂移时没有任何东西会报错。</li><li><strong><code>docs/solutions/</code> 只记失败与纠正，不记成功路径的设计推导</strong>。新读者能看到「哪里错了」，但看不到「为什么最初那样设计」。</li><li><strong>发布节奏激进</strong>。8.5 个月 51 个 tag、平均每 5 天一个版本。changelog 里多条 <code>### ⚠ BREAKING CHANGES</code> 并存。对生产环境使用者来说，升级成本不低。</li></ol>
+<h2>行动建议</h2>
+<ul><li>
+<strong>如果你要用它</strong>：适合的场景是「让 agent 操作原生 app，且你确知目标元素可以被无障碍树定位」——即结构化的表单、设置面板、IDE、终端、Finder 这类。如果你的场景是 canvas、游戏、自绘 UI、远程桌面，<strong>它帮不了你，选像素路线</strong>。接入方式上推荐 <code>agent-desktop mcp</code>（tool schema 从 CLI 定义自动生成，加命令零改动）或直接用 CLI + JSON envelope（任何能跑 shell 的 agent 都能用）。<strong>接入前务必读 <code>docs/json-output.md</code></strong>——那是 JSON 契约的权威文档，envelope 2.6 的迁移说明就在里面。
+</li><li>
+<strong>如果你要学它</strong>（这才是这个项目最大的价值）：
+<ul><li><code>crates/core/src/locator/live_locator/match_verdict.rs</code> — 三值逻辑求值器，只有 30 行，是最值得抄的最小单元</li><li><code>crates/core/src/refs/ref_capture_proof.rs</code> — capture proof 的数据结构与匹配数缓存</li><li><code>crates/core/src/response/error_code.rs</code> + <code>retry_disposition.rs</code> — 封闭错误码枚举 + 双轴处置</li><li><code>crates/core/src/session/interaction_lease.rs</code> — 短临界区 + 临界区内重新验证</li><li><code>src/mcp/catalog.rs</code> — clap → MCP 反射生成</li><li><code>scripts/check_architecture.py</code> — 自测式静态门禁（重点看 <code>self_test()</code> 函数怎么用「先植违规再扫描」证明规则有效）</li><li><code>CONCEPTS.md</code> — 43KB 术语表，是理解整个系统心智模型最快的入口</li><li><code>probes/linux/FINDINGS.md</code> — 引用式证据台账的方法论范例</li><li><code>docs/solutions/</code> — 失败案例库，带 YAML frontmatter 的结构化写法</li></ul>
+</li><li>
+<strong>如果你要 fork 它</strong>：
+<ul><li><strong>最该补的是对照基准</strong>——把 <code>benchmarks/locator-resolution/</code> 扩成与 Playwright / 像素方案的横向对比，产出任务成功率、延迟、token 三条曲线。这是当前最大的信任缺口，且补上就直接消除「只有承诺」的批评。</li><li><strong>补一份无障碍树覆盖率的失败模式文档</strong>——明确列出「哪些 UI 它看不见」（canvas / 游戏 / Electron / 远程桌面），并给出「此时应切像素方案」的指引。诚实划边界比含糊其辞更能建立信任。</li><li><strong>补 Wayland 支持</strong>，或至少在 README 里明确声明「不支持 Wayland/wlroots」并给出检测方式。</li><li><strong>降低 bus factor</strong>：<code>docs/solutions/</code> 和 <code>probes/*/FINDINGS.md</code> 是最容易分出去的知识资产，优先按「一人一块」的粒度切开。</li><li><strong>收敛版本节奏</strong>：51 个 tag / 49 个 release 对生产用户是负担，把 patch 发版频率降下来，把 breaking change 攒到 minor 版本。</li><li>技术债较少（refactor commit 仅 1 次），但<strong>契约漂移</strong>是真实风险——考虑给 <code>skills/*.md</code> 里的命令清单加一个 CI 校验，确保它和 <code>crates/core/src/commands/</code> 的实际命令集一致。</li></ul>
+</li></ul>
+<h3>知识入口</h3>
+<table>
+<thead>
+<tr>
+<th>资源</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DeepWiki</td>
+<td><a href="https://deepwiki.com/vercel-labs/agent-desktop">https://deepwiki.com/vercel-labs/agent-desktop</a> （已收录，最后索引 2026-10-31）</td>
+</tr>
+<tr>
+<td>Zread.ai</td>
+<td>未能确认收录（访问返回 403，JINA reader 被 Cloudflare 拦截）</td>
+</tr>
+<tr>
+<td>官方文档</td>
+<td><a href="https://agent-browser.dev/desktop">https://agent-browser.dev/desktop</a> （含四个交互式架构图：architecture / ref-resolution / redrill-refs / snapshot-loop）</td>
+</tr>
+<tr>
+<td>关联论文</td>
+<td><a href="https://arxiv.org/abs/2607.14443">Tactile: Giving Computer-Using Agents Hands and Feet</a>（无障碍语义→动作接地的工具层，observe-ground-act-verify 循环，Codex 在 macOSWorld 上 Success@100 从 41.1% → 50.0%）；<a href="https://arxiv.org/abs/2610.15765">A Decade in a Day</a>（合成 agent-native 桌面接口，宣称相对原生 SDK 省约 73% token）</td>
+</tr>
+<tr>
+<td>在线 Demo</td>
+<td>无（需本地安装 + 真实 OS 权限）。仓库内 <code>assets/Videos/</code> 有三个离线演示 mp4</td>
+</tr>
+<tr>
+<td>姊妹项目</td>
+<td><a href="https://github.com/vercel-labs/agent-browser">https://github.com/vercel-labs/agent-browser</a> （45.6k star，同作者的浏览器侧对应物，测试门槛最低的等价体验）</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
