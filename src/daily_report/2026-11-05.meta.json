@@ -1,0 +1,6 @@
+{
+  "title": "开源 AI 日报 11.05：NVIDIA 语义层登顶，纯 C 塞进 2.78T 模型",
+  "digest": "NVIDIA 语义本体框架历史首登即登顶，纯 C99 把 2.78 万亿参数 MoE 塞进 8.24GB 单 CPU 内存；榜外 llama.cpp v0.9.0 加 FP8 E4M3 量化，pydantic-ai 同日连发三个安全修复。",
+  "author": "NightVoyager",
+  "theme": "stars,universe,dark"
+}
