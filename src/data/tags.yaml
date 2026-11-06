@@ -2693,6 +2693,11 @@ entries:
   - devtools
   - workflow-automation
   - protocol-spec
+  vercel-labs_agent-desktop:
+  - ai-agent
+  - devtools
+  - workflow-automation
+  - protocol-spec
   vercel-labs_open-agents:
   - ai-agent
   - devtools

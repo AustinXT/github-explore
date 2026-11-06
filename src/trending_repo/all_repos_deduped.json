@@ -13,11 +13,11 @@
     "name": "mattpocock/skills",
     "url": "https://github.com/mattpocock/skills",
     "language": "Shell",
-    "stars": 312899,
-    "forks": 26257,
+    "stars": 314834,
+    "forks": 26374,
     "description": "Skills for Real Engineers. Straight from my .agents directory.",
-    "last_seen": "2026-11-04",
-    "trending_days": 49
+    "last_seen": "2026-11-05",
+    "trending_days": 50
   },
   {
     "name": "affaan-m/ECC",
@@ -350,6 +350,16 @@
     "trending_days": 20
   },
   {
+    "name": "microsoft/VibeVoice",
+    "url": "https://github.com/microsoft/vibevoice",
+    "language": "Python",
+    "stars": 55671,
+    "forks": 6266,
+    "description": "Open-Source Frontier Voice AI",
+    "last_seen": "2026-11-05",
+    "trending_days": 20
+  },
+  {
     "name": "virattt/ai-hedge-fund",
     "url": "https://github.com/virattt/ai-hedge-fund",
     "language": "Python",
@@ -377,16 +387,6 @@
     "forks": 9763,
     "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
     "last_seen": "2026-10-26",
-    "trending_days": 19
-  },
-  {
-    "name": "microsoft/VibeVoice",
-    "url": "https://github.com/microsoft/vibevoice",
-    "language": "Python",
-    "stars": 51079,
-    "forks": 5703,
-    "description": "Open-Source Frontier Voice AI",
-    "last_seen": "2026-07-29",
     "trending_days": 19
   },
   {
@@ -690,6 +690,16 @@
     "trending_days": 13
   },
   {
+    "name": "D4Vinci/Scrapling",
+    "url": "https://github.com/d4vinci/scrapling",
+    "language": "Python",
+    "stars": 97731,
+    "forks": 10243,
+    "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+    "last_seen": "2026-11-05",
+    "trending_days": 13
+  },
+  {
     "name": "HKUDS/CLI-Anything",
     "url": "https://github.com/hkuds/cli-anything",
     "language": "Python",
@@ -797,16 +807,6 @@
     "forks": 2859,
     "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
     "last_seen": "2026-10-25",
-    "trending_days": 12
-  },
-  {
-    "name": "D4Vinci/Scrapling",
-    "url": "https://github.com/d4vinci/scrapling",
-    "language": "Python",
-    "stars": 96226,
-    "forks": 10085,
-    "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
-    "last_seen": "2026-11-04",
     "trending_days": 12
   },
   {
@@ -1130,6 +1130,16 @@
     "trending_days": 10
   },
   {
+    "name": "garrytan/gstack",
+    "url": "https://github.com/garrytan/gstack",
+    "language": "TypeScript",
+    "stars": 139826,
+    "forks": 20681,
+    "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+    "last_seen": "2026-11-05",
+    "trending_days": 10
+  },
+  {
     "name": "HKUDS/Vibe-Trading",
     "url": "https://github.com/hkuds/vibe-trading",
     "language": "Python",
@@ -1337,16 +1347,6 @@
     "forks": 2973,
     "description": "Prompt as Code | GPT Image 2 / 2.5 提示词与案例库，530+ 个案例、20+ 套工业级模板与可复用 Skills，新增 2.5 同提示词对比专区，附完整提示词与生成记录，持续更新。",
     "last_seen": "2026-09-10",
-    "trending_days": 9
-  },
-  {
-    "name": "garrytan/gstack",
-    "url": "https://github.com/garrytan/gstack",
-    "language": "TypeScript",
-    "stars": 139202,
-    "forks": 20626,
-    "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
-    "last_seen": "2026-11-04",
     "trending_days": 9
   },
   {
@@ -1940,6 +1940,16 @@
     "trending_days": 7
   },
   {
+    "name": "google/skills",
+    "url": "https://github.com/google/skills",
+    "language": "Python",
+    "stars": 22263,
+    "forks": 1885,
+    "description": "Agent Skills for Google products and technologies",
+    "last_seen": "2026-11-05",
+    "trending_days": 7
+  },
+  {
     "name": "HandsOnLLM/Hands-On-Large-Language-Models",
     "url": "https://github.com/handsonllm/hands-on-large-language-models",
     "language": "JupyterNotebook",
@@ -2447,16 +2457,6 @@
     "forks": 3037,
     "description": "A modern formatting library",
     "last_seen": "2026-09-05",
-    "trending_days": 6
-  },
-  {
-    "name": "google/skills",
-    "url": "https://github.com/google/skills",
-    "language": "Python",
-    "stars": 20654,
-    "forks": 1717,
-    "description": "Agent Skills for Google products and technologies",
-    "last_seen": "2026-10-02",
     "trending_days": 6
   },
   {
@@ -3207,6 +3207,16 @@
     "forks": 534,
     "description": "Advanced DNS tunneling VPN for censorship bypass, optimized beyond DNSTT and SlipStream with low-overhead ARQ, resolver load balancing, high packet-loss stability and speed.",
     "last_seen": "2026-06-12",
+    "trending_days": 5
+  },
+  {
+    "name": "max-sixty/worktrunk",
+    "url": "https://github.com/max-sixty/worktrunk",
+    "language": "Rust",
+    "stars": 11423,
+    "forks": 431,
+    "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
+    "last_seen": "2026-11-05",
     "trending_days": 5
   },
   {
@@ -4310,16 +4320,6 @@
     "trending_days": 4
   },
   {
-    "name": "max-sixty/worktrunk",
-    "url": "https://github.com/max-sixty/worktrunk",
-    "language": "Rust",
-    "stars": 10919,
-    "forks": 407,
-    "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
-    "last_seen": "2026-11-04",
-    "trending_days": 4
-  },
-  {
     "name": "maziyarpanahi/openmed",
     "url": "https://github.com/maziyarpanahi/openmed",
     "language": "Python",
@@ -4747,6 +4747,16 @@
     "forks": 8346,
     "description": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN",
     "last_seen": "2026-09-01",
+    "trending_days": 4
+  },
+  {
+    "name": "vercel-labs/agent-desktop",
+    "url": "https://github.com/vercel-labs/agent-desktop",
+    "language": "Rust",
+    "stars": 16577,
+    "forks": 1160,
+    "description": "Computer use CLI for AI agents",
+    "last_seen": "2026-11-05",
     "trending_days": 4
   },
   {
@@ -5367,6 +5377,16 @@
     "forks": 9263,
     "description": "The context API to search, scrape, and interact with the web at scale. 🔥",
     "last_seen": "2026-08-10",
+    "trending_days": 3
+  },
+  {
+    "name": "floci-io/floci",
+    "url": "https://github.com/floci-io/floci",
+    "language": "Java",
+    "stars": 30242,
+    "forks": 3322,
+    "description": "Light, fluffy, and always free - The AWS Local Emulator alternative",
+    "last_seen": "2026-11-05",
     "trending_days": 3
   },
   {
@@ -6430,16 +6450,6 @@
     "trending_days": 3
   },
   {
-    "name": "vercel-labs/agent-desktop",
-    "url": "https://github.com/vercel-labs/agent-desktop",
-    "language": "Rust",
-    "stars": 14637,
-    "forks": 1009,
-    "description": "Computer use CLI for AI agents",
-    "last_seen": "2026-11-04",
-    "trending_days": 3
-  },
-  {
     "name": "vercel-labs/open-agents",
     "url": "https://github.com/vercel-labs/open-agents",
     "language": "TypeScript",
@@ -7160,6 +7170,16 @@
     "trending_days": 2
   },
   {
+    "name": "ConardLi/garden-skills",
+    "url": "https://github.com/conardli/garden-skills",
+    "language": "JavaScript",
+    "stars": 14061,
+    "forks": 1642,
+    "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
+    "last_seen": "2026-11-05",
+    "trending_days": 2
+  },
+  {
     "name": "CoplayDev/unity-mcp",
     "url": "https://github.com/coplaydev/unity-mcp",
     "language": "C#",
@@ -7477,16 +7497,6 @@
     "forks": 1580,
     "description": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently.",
     "last_seen": "2026-11-02",
-    "trending_days": 2
-  },
-  {
-    "name": "floci-io/floci",
-    "url": "https://github.com/floci-io/floci",
-    "language": "Java",
-    "stars": 29454,
-    "forks": 3263,
-    "description": "Light, fluffy, and always free - The AWS Local Emulator alternative",
-    "last_seen": "2026-11-04",
     "trending_days": 2
   },
   {
@@ -7897,6 +7907,16 @@
     "forks": 1339,
     "description": "dev tools, env vars, task runner",
     "last_seen": "2026-08-08",
+    "trending_days": 2
+  },
+  {
+    "name": "JiaFeiMiao-K-Cat/DiscImageStudio",
+    "url": "https://github.com/jiafeimiao-k-cat/discimagestudio",
+    "language": "C#",
+    "stars": 7155,
+    "forks": 256,
+    "description": "None",
+    "last_seen": "2026-11-05",
     "trending_days": 2
   },
   {
@@ -8570,6 +8590,16 @@
     "trending_days": 2
   },
   {
+    "name": "NVIDIA/auto-ontology",
+    "url": "https://github.com/nvidia/auto-ontology",
+    "language": "Python",
+    "stars": 6948,
+    "forks": 554,
+    "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+    "last_seen": "2026-11-05",
+    "trending_days": 2
+  },
+  {
     "name": "NVIDIA/cutile-python",
     "url": "https://github.com/nvidia/cutile-python",
     "language": "Python",
@@ -8970,6 +9000,16 @@
     "trending_days": 2
   },
   {
+    "name": "scenario-labs/skills",
+    "url": "https://github.com/scenario-labs/skills",
+    "language": "Python",
+    "stars": 2925,
+    "forks": 263,
+    "description": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity.",
+    "last_seen": "2026-11-05",
+    "trending_days": 2
+  },
+  {
     "name": "seerr-team/seerr",
     "url": "https://github.com/seerr-team/seerr",
     "language": "TypeScript",
@@ -9357,6 +9397,16 @@
     "forks": 210,
     "description": "基于 AI Agent + MCP 工具链 + 渗透 Skill 编排， 配合大语言模型， 自然语言输入 → 自动完成「信息收集 → 漏洞发现 → 漏洞利用 → 报告生成」全流程。",
     "last_seen": "2026-07-01",
+    "trending_days": 2
+  },
+  {
+    "name": "Usagi-org/ai-goofish-monitor",
+    "url": "https://github.com/usagi-org/ai-goofish-monitor",
+    "language": "Python",
+    "stars": 17464,
+    "forks": 2936,
+    "description": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。",
+    "last_seen": "2026-11-05",
     "trending_days": 2
   },
   {
@@ -10307,16 +10357,6 @@
     "forks": 10594,
     "description": "A latent text-to-image diffusion model",
     "last_seen": "2026-02-23",
-    "trending_days": 1
-  },
-  {
-    "name": "ConardLi/garden-skills",
-    "url": "https://github.com/conardli/garden-skills",
-    "language": "CSS",
-    "stars": 11287,
-    "forks": 1409,
-    "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
-    "last_seen": "2026-08-27",
     "trending_days": 1
   },
   {
@@ -11520,16 +11560,6 @@
     "trending_days": 1
   },
   {
-    "name": "JiaFeiMiao-K-Cat/DiscImageStudio",
-    "url": "https://github.com/jiafeimiao-k-cat/discimagestudio",
-    "language": "C#",
-    "stars": 6335,
-    "forks": 226,
-    "description": "None",
-    "last_seen": "2026-11-04",
-    "trending_days": 1
-  },
-  {
     "name": "jiji262/douyin-downloader",
     "url": "https://github.com/jiji262/douyin-downloader",
     "language": "Python",
@@ -11877,6 +11907,16 @@
     "forks": 476,
     "description": "Empower the Web community and invite more to build across platforms.",
     "last_seen": "2025-12-06",
+    "trending_days": 1
+  },
+  {
+    "name": "lz4/lz4",
+    "url": "https://github.com/lz4/lz4",
+    "language": "C",
+    "stars": 12317,
+    "forks": 1631,
+    "description": "Extremely Fast Compression algorithm",
+    "last_seen": "2026-11-05",
     "trending_days": 1
   },
   {
@@ -12457,16 +12497,6 @@
     "forks": 5834,
     "description": "the full-stack Vue framework",
     "last_seen": "2026-07-11",
-    "trending_days": 1
-  },
-  {
-    "name": "NVIDIA/auto-ontology",
-    "url": "https://github.com/nvidia/auto-ontology",
-    "language": "Python",
-    "stars": 4471,
-    "forks": 370,
-    "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
-    "last_seen": "2026-11-04",
     "trending_days": 1
   },
   {
@@ -13090,16 +13120,6 @@
     "trending_days": 1
   },
   {
-    "name": "scenario-labs/skills",
-    "url": "https://github.com/scenario-labs/skills",
-    "language": "Python",
-    "stars": 2285,
-    "forks": 242,
-    "description": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity.",
-    "last_seen": "2026-11-04",
-    "trending_days": 1
-  },
-  {
     "name": "seaweedfs/seaweedfs",
     "url": "https://github.com/seaweedfs/seaweedfs",
     "language": "Go",
@@ -13640,16 +13660,6 @@
     "trending_days": 1
   },
   {
-    "name": "Usagi-org/ai-goofish-monitor",
-    "url": "https://github.com/usagi-org/ai-goofish-monitor",
-    "language": "Python",
-    "stars": 16297,
-    "forks": 2835,
-    "description": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。",
-    "last_seen": "2026-11-03",
-    "trending_days": 1
-  },
-  {
     "name": "vanilla-wiiu/vanilla",
     "url": "https://github.com/vanilla-wiiu/vanilla",
     "language": "C",
@@ -13677,6 +13687,16 @@
     "forks": 1227,
     "description": "Disk encryption with strong security based on TrueCrypt",
     "last_seen": "2026-06-29",
+    "trending_days": 1
+  },
+  {
+    "name": "vercel-labs/agent-browser",
+    "url": "https://github.com/vercel-labs/agent-browser",
+    "language": "Rust",
+    "stars": 45764,
+    "forks": 3141,
+    "description": "Browser automation CLI for AI agents",
+    "last_seen": "2026-11-05",
     "trending_days": 1
   },
   {
