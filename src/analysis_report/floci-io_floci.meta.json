@@ -1,0 +1,6 @@
+{
+  "title": "GitHub推荐：24ms 启动的 Java 模拟器：Floci 接棒 LocalStack",
+  "digest": "Floci 用 Java + Quarkus Native 把 AWS 本地模拟器压到 24ms 启动、13MiB 内存，靠「真实 SDK 打真实实例、零 mock」的 8 套契约测试证明兼容性，接棒归档后的 LocalStack。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}
