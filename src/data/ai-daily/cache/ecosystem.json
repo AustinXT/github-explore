@@ -1,21 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-11-05",
+    "last_run": "2026-11-06",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/omlahore/removemacai",
-      "canonical_url": "https://github.com/omlahore/RemoveMacAI",
-      "event_date": "2026-10-06",
-      "date_seen": "2026-10-06"
-    },
-    {
-      "key": "github.com/caplin/flexlayout",
-      "canonical_url": "https://github.com/caplin/FlexLayout",
-      "event_date": "2026-10-06",
-      "date_seen": "2026-10-06"
-    },
     {
       "key": "github.com/morluto/rea",
       "canonical_url": "https://github.com/morluto/rea",
@@ -1491,6 +1479,54 @@
       "canonical_url": "https://nightvoyager.top/github-explore/reports/lightricks_ltx-2/",
       "event_date": "2026-11-05",
       "date_seen": "2026-11-05"
+    },
+    {
+      "key": "github.com/google/skills",
+      "canonical_url": "https://github.com/google/skills",
+      "event_date": "2026-11-05",
+      "date_seen": "2026-11-06"
+    },
+    {
+      "key": "github.com/vercel-labs/agent-browser",
+      "canonical_url": "https://github.com/vercel-labs/agent-browser",
+      "event_date": "2026-11-05",
+      "date_seen": "2026-11-06"
+    },
+    {
+      "key": "github.com/conardli/garden-skills",
+      "canonical_url": "https://github.com/ConardLi/garden-skills",
+      "event_date": "2026-11-05",
+      "date_seen": "2026-11-06"
+    },
+    {
+      "key": "github.com/microsoft/vibevoice",
+      "canonical_url": "https://github.com/microsoft/VibeVoice",
+      "event_date": "2026-11-05",
+      "date_seen": "2026-11-06"
+    },
+    {
+      "key": "github.com/langchain-ai/langgraph",
+      "canonical_url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.20",
+      "event_date": "2026-11-05",
+      "date_seen": "2026-11-06"
+    },
+    {
+      "key": "github.com/microsoft/semantic-kernel",
+      "canonical_url": "https://github.com/microsoft/semantic-kernel/releases/tag/python-1.47.0",
+      "event_date": "2026-11-05",
+      "date_seen": "2026-11-06"
+    },
+    {
+      "key": "github.com/anthropics/anthropic-sdk-typescript",
+      "canonical_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.6.0",
+      "event_date": "2026-11-05",
+      "date_seen": "2026-11-06"
+    },
+    {
+      "key": "github.com/laion-ai/aesthetic-predictor",
+      "canonical_url": "https://github.com/LAION-AI/aesthetic-predictor",
+      "event_date": "2026-11-05",
+      "date_seen": "2026-11-06"
     }
   ]
 }
