@@ -1,0 +1,6 @@
+{
+  "title": "GitHub推荐：9K stars 的 NVIDIA 语义层：文档和代码打架的三处",
+  "digest": "NVIDIA 把收购的 Illumex 语义层内核开源重写：Postgres 关系表 + UNION ALL 视图做图遍历、用真实数据库反证 SQL、MCP 工具面做语义允许列表。但 README 承诺的「人工认证才可信」代码里没执行。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}
