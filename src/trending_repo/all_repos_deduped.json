@@ -13,11 +13,11 @@
     "name": "mattpocock/skills",
     "url": "https://github.com/mattpocock/skills",
     "language": "Shell",
-    "stars": 314834,
-    "forks": 26374,
+    "stars": 316421,
+    "forks": 26464,
     "description": "Skills for Real Engineers. Straight from my .agents directory.",
-    "last_seen": "2026-11-05",
-    "trending_days": 50
+    "last_seen": "2026-11-06",
+    "trending_days": 51
   },
   {
     "name": "affaan-m/ECC",
@@ -680,6 +680,16 @@
     "trending_days": 14
   },
   {
+    "name": "cloudflare/security-audit-skill",
+    "url": "https://github.com/cloudflare/security-audit-skill",
+    "language": "JavaScript",
+    "stars": 63414,
+    "forks": 4111,
+    "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+    "last_seen": "2026-11-06",
+    "trending_days": 13
+  },
+  {
     "name": "cursor/plugins",
     "url": "https://github.com/cursor/plugins",
     "language": "TypeScript",
@@ -797,16 +807,6 @@
     "forks": 29178,
     "description": "The open source coding agent.",
     "last_seen": "2026-10-20",
-    "trending_days": 12
-  },
-  {
-    "name": "cloudflare/security-audit-skill",
-    "url": "https://github.com/cloudflare/security-audit-skill",
-    "language": "JavaScript",
-    "stars": 46087,
-    "forks": 2859,
-    "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
-    "last_seen": "2026-10-25",
     "trending_days": 12
   },
   {
@@ -1660,6 +1660,16 @@
     "trending_days": 8
   },
   {
+    "name": "google/skills",
+    "url": "https://github.com/google/skills",
+    "language": "Python",
+    "stars": 22737,
+    "forks": 1911,
+    "description": "Agent Skills for Google products and technologies",
+    "last_seen": "2026-11-06",
+    "trending_days": 8
+  },
+  {
     "name": "jellyfin/jellyfin",
     "url": "https://github.com/jellyfin/jellyfin",
     "language": "C#",
@@ -1937,16 +1947,6 @@
     "forks": 10877,
     "description": "GoogleTest - Google Testing and Mocking Framework",
     "last_seen": "2026-08-29",
-    "trending_days": 7
-  },
-  {
-    "name": "google/skills",
-    "url": "https://github.com/google/skills",
-    "language": "Python",
-    "stars": 22263,
-    "forks": 1885,
-    "description": "Agent Skills for Google products and technologies",
-    "last_seen": "2026-11-05",
     "trending_days": 7
   },
   {
@@ -5970,6 +5970,16 @@
     "trending_days": 3
   },
   {
+    "name": "NVIDIA/auto-ontology",
+    "url": "https://github.com/nvidia/auto-ontology",
+    "language": "Python",
+    "stars": 8689,
+    "forks": 700,
+    "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
+    "last_seen": "2026-11-06",
+    "trending_days": 3
+  },
+  {
     "name": "NVIDIA/cosmos",
     "url": "https://github.com/nvidia/cosmos",
     "language": "JupyterNotebook",
@@ -6750,6 +6760,16 @@
     "trending_days": 2
   },
   {
+    "name": "angular/angular",
+    "url": "https://github.com/angular/angular",
+    "language": "TypeScript",
+    "stars": 101221,
+    "forks": 28906,
+    "description": "Deliver web apps with confidence 🚀",
+    "last_seen": "2026-11-06",
+    "trending_days": 2
+  },
+  {
     "name": "ankitects/anki",
     "url": "https://github.com/ankitects/anki",
     "language": "Rust",
@@ -7397,6 +7417,16 @@
     "forks": 390,
     "description": "A native, user-mode, multi-process, graphical debugger.",
     "last_seen": "2026-10-08",
+    "trending_days": 2
+  },
+  {
+    "name": "etcd-io/etcd",
+    "url": "https://github.com/etcd-io/etcd",
+    "language": "Go",
+    "stars": 52536,
+    "forks": 10577,
+    "description": "Distributed reliable key-value store for the most critical data of a distributed system",
+    "last_seen": "2026-11-06",
     "trending_days": 2
   },
   {
@@ -8270,6 +8300,16 @@
     "trending_days": 2
   },
   {
+    "name": "lz4/lz4",
+    "url": "https://github.com/lz4/lz4",
+    "language": "C",
+    "stars": 12601,
+    "forks": 1641,
+    "description": "Extremely Fast Compression algorithm",
+    "last_seen": "2026-11-06",
+    "trending_days": 2
+  },
+  {
     "name": "majd/ipatool",
     "url": "https://github.com/majd/ipatool",
     "language": "Go",
@@ -8430,6 +8470,16 @@
     "trending_days": 2
   },
   {
+    "name": "microsoft/vscode",
+    "url": "https://github.com/microsoft/vscode",
+    "language": "TypeScript",
+    "stars": 194891,
+    "forks": 44411,
+    "description": "Visual Studio Code",
+    "last_seen": "2026-11-06",
+    "trending_days": 2
+  },
+  {
     "name": "mindcraft-bots/mindcraft",
     "url": "https://github.com/mindcraft-bots/mindcraft",
     "language": "JavaScript",
@@ -8477,6 +8527,16 @@
     "forks": 9036,
     "description": "本项目采用 CC BY-NC-SA 协议，禁止任何商业化行为，任何衍生项目必须保留本项目地址并以相同协议开源",
     "last_seen": "2026-09-08",
+    "trending_days": 2
+  },
+  {
+    "name": "mpv-player/mpv",
+    "url": "https://github.com/mpv-player/mpv",
+    "language": "C",
+    "stars": 37817,
+    "forks": 3630,
+    "description": "🎥 Command line media player",
+    "last_seen": "2026-11-06",
     "trending_days": 2
   },
   {
@@ -8587,16 +8647,6 @@
     "forks": 98,
     "description": "None",
     "last_seen": "2026-08-13",
-    "trending_days": 2
-  },
-  {
-    "name": "NVIDIA/auto-ontology",
-    "url": "https://github.com/nvidia/auto-ontology",
-    "language": "Python",
-    "stars": 6948,
-    "forks": 554,
-    "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
-    "last_seen": "2026-11-05",
     "trending_days": 2
   },
   {
@@ -8990,6 +9040,16 @@
     "trending_days": 2
   },
   {
+    "name": "rust-lang/rust",
+    "url": "https://github.com/rust-lang/rust",
+    "language": "Rust",
+    "stars": 121293,
+    "forks": 17357,
+    "description": "Empowering everyone to build reliable and efficient software.",
+    "last_seen": "2026-11-06",
+    "trending_days": 2
+  },
+  {
     "name": "SakanaAI/AI-Scientist-v2",
     "url": "https://github.com/sakanaai/ai-scientist-v2",
     "language": "Python",
@@ -9107,6 +9167,16 @@
     "forks": 44,
     "description": "Compile PHP to Native Binaries",
     "last_seen": "2026-08-29",
+    "trending_days": 2
+  },
+  {
+    "name": "symfony/symfony",
+    "url": "https://github.com/symfony/symfony",
+    "language": "PHP",
+    "stars": 31311,
+    "forks": 9942,
+    "description": "The Symfony PHP framework",
+    "last_seen": "2026-11-06",
     "trending_days": 2
   },
   {
@@ -9940,16 +10010,6 @@
     "trending_days": 1
   },
   {
-    "name": "angular/angular",
-    "url": "https://github.com/angular/angular",
-    "language": "TypeScript",
-    "stars": 100715,
-    "forks": 27384,
-    "description": "Deliver web apps with confidence 🚀",
-    "last_seen": "2026-08-04",
-    "trending_days": 1
-  },
-  {
     "name": "anonfaded/FadCam",
     "url": "https://github.com/anonfaded/fadcam",
     "language": "Java",
@@ -10057,6 +10117,16 @@
     "forks": 7279,
     "description": "Learn System Design concepts and prepare for interviews using free resources.",
     "last_seen": "2026-02-17",
+    "trending_days": 1
+  },
+  {
+    "name": "astral-sh/ruff",
+    "url": "https://github.com/astral-sh/ruff",
+    "language": "Rust",
+    "stars": 50556,
+    "forks": 2597,
+    "description": "An extremely fast Python linter and code formatter, written in Rust.",
+    "last_seen": "2026-11-06",
     "trending_days": 1
   },
   {
@@ -10767,16 +10837,6 @@
     "forks": 393,
     "description": "Stay on top of trending topics on social media and the web with AI",
     "last_seen": "2025-09-26",
-    "trending_days": 1
-  },
-  {
-    "name": "etcd-io/etcd",
-    "url": "https://github.com/etcd-io/etcd",
-    "language": "Go",
-    "stars": 51061,
-    "forks": 10254,
-    "description": "Distributed reliable key-value store for the most critical data of a distributed system",
-    "last_seen": "2025-12-24",
     "trending_days": 1
   },
   {
@@ -11910,16 +11970,6 @@
     "trending_days": 1
   },
   {
-    "name": "lz4/lz4",
-    "url": "https://github.com/lz4/lz4",
-    "language": "C",
-    "stars": 12317,
-    "forks": 1631,
-    "description": "Extremely Fast Compression algorithm",
-    "last_seen": "2026-11-05",
-    "trending_days": 1
-  },
-  {
     "name": "lzhoang2801/OpCore-Simplify",
     "url": "https://github.com/lzhoang2801/opcore-simplify",
     "language": "Python",
@@ -12160,16 +12210,6 @@
     "trending_days": 1
   },
   {
-    "name": "microsoft/vscode",
-    "url": "https://github.com/microsoft/vscode",
-    "language": "TypeScript",
-    "stars": 192992,
-    "forks": 43469,
-    "description": "Visual Studio Code",
-    "last_seen": "2026-09-26",
-    "trending_days": 1
-  },
-  {
     "name": "mihail911/modern-software-dev-assignments",
     "url": "https://github.com/mihail911/modern-software-dev-assignments",
     "language": "Python",
@@ -12297,16 +12337,6 @@
     "forks": 689,
     "description": "Multi-Language Backend Framework that unifies APIs, background jobs, workflows, and AI Agents into a single core primitive with built-in observability and state management.",
     "last_seen": "2025-10-04",
-    "trending_days": 1
-  },
-  {
-    "name": "mpv-player/mpv",
-    "url": "https://github.com/mpv-player/mpv",
-    "language": "C",
-    "stars": 33388,
-    "forks": 3190,
-    "description": "🎥 Command line media player",
-    "last_seen": "2026-01-12",
     "trending_days": 1
   },
   {
@@ -12490,6 +12520,16 @@
     "trending_days": 1
   },
   {
+    "name": "nushell/nushell",
+    "url": "https://github.com/nushell/nushell",
+    "language": "Rust",
+    "stars": 40859,
+    "forks": 2334,
+    "description": "A new type of shell",
+    "last_seen": "2026-11-06",
+    "trending_days": 1
+  },
+  {
     "name": "nuxt/nuxt",
     "url": "https://github.com/nuxt/nuxt",
     "language": "TypeScript",
@@ -12627,6 +12667,16 @@
     "forks": 568,
     "description": "Model-rocketry aerodynamics and trajectory simulation software",
     "last_seen": "2026-03-20",
+    "trending_days": 1
+  },
+  {
+    "name": "openssl/openssl",
+    "url": "https://github.com/openssl/openssl",
+    "language": "C",
+    "stars": 31244,
+    "forks": 11581,
+    "description": "General purpose TLS and crypto library",
+    "last_seen": "2026-11-06",
     "trending_days": 1
   },
   {
@@ -12860,6 +12910,16 @@
     "trending_days": 1
   },
   {
+    "name": "prometheus/prometheus",
+    "url": "https://github.com/prometheus/prometheus",
+    "language": "Go",
+    "stars": 67058,
+    "forks": 10979,
+    "description": "The Prometheus monitoring system and time series database.",
+    "last_seen": "2026-11-06",
+    "trending_days": 1
+  },
+  {
     "name": "psviderski/uncloud",
     "url": "https://github.com/psviderski/uncloud",
     "language": "Go",
@@ -12940,6 +13000,16 @@
     "trending_days": 1
   },
   {
+    "name": "rails/rails",
+    "url": "https://github.com/rails/rails",
+    "language": "Ruby",
+    "stars": 58938,
+    "forks": 23823,
+    "description": "Ruby on Rails",
+    "last_seen": "2026-11-06",
+    "trending_days": 1
+  },
+  {
     "name": "rakyll/hey",
     "url": "https://github.com/rakyll/hey",
     "language": "Go",
@@ -12957,6 +13027,16 @@
     "forks": 14537,
     "description": "Metasploit Framework",
     "last_seen": "2025-09-28",
+    "trending_days": 1
+  },
+  {
+    "name": "react/react",
+    "url": "https://github.com/react/react",
+    "language": "JavaScript",
+    "stars": 252137,
+    "forks": 51800,
+    "description": "The library for web and native user interfaces.",
+    "last_seen": "2026-11-06",
     "trending_days": 1
   },
   {
@@ -13047,16 +13127,6 @@
     "forks": 5562,
     "description": "The Ruby Programming Language",
     "last_seen": "2026-02-14",
-    "trending_days": 1
-  },
-  {
-    "name": "rust-lang/rust",
-    "url": "https://github.com/rust-lang/rust",
-    "language": "Rust",
-    "stars": 119842,
-    "forks": 18673,
-    "description": "Empowering everyone to build reliable and efficient software.",
-    "last_seen": "2026-10-14",
     "trending_days": 1
   },
   {
@@ -13377,16 +13447,6 @@
     "forks": 1014,
     "description": "A good looking terminal emulator which mimics the old cathode display...",
     "last_seen": "2026-09-13",
-    "trending_days": 1
-  },
-  {
-    "name": "symfony/symfony",
-    "url": "https://github.com/symfony/symfony",
-    "language": "PHP",
-    "stars": 30621,
-    "forks": 9713,
-    "description": "The Symfony PHP framework",
-    "last_seen": "2025-10-03",
     "trending_days": 1
   },
   {
@@ -13927,6 +13987,16 @@
     "forks": 1053,
     "description": "FHEVM, a full-stack framework for integrating Fully Homomorphic Encryption (FHE) with blockchain applications",
     "last_seen": "2025-10-06",
+    "trending_days": 1
+  },
+  {
+    "name": "zed-industries/zed",
+    "url": "https://github.com/zed-industries/zed",
+    "language": "Rust",
+    "stars": 93317,
+    "forks": 11476,
+    "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+    "last_seen": "2026-11-06",
     "trending_days": 1
   },
   {
