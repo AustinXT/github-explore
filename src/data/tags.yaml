@@ -1891,6 +1891,11 @@ entries:
   nutlope_llamacoder:
   - model-foundation
   - design-ui
+  nvidia_auto-ontology:
+  - ai-agent
+  - devtools
+  - database
+  - protocol-spec
   nvidia_cosmos:
   - education
   - video-audio
