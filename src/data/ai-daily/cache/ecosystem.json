@@ -1,27 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-11-06",
+    "last_run": "2026-11-07",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/morluto/rea",
-      "canonical_url": "https://github.com/morluto/rea",
-      "event_date": "2026-10-07",
-      "date_seen": "2026-10-07"
-    },
-    {
-      "key": "github.com/deepseek-ai/deepgemm",
-      "canonical_url": "https://github.com/deepseek-ai/DeepGEMM",
-      "event_date": "2026-10-07",
-      "date_seen": "2026-10-07"
-    },
-    {
-      "key": "github.com/cathrynlavery/diagram-design",
-      "canonical_url": "https://github.com/cathrynlavery/diagram-design",
-      "event_date": "2026-10-07",
-      "date_seen": "2026-10-07"
-    },
     {
       "key": "github.com/manaflow-ai/cmux",
       "canonical_url": "https://github.com/manaflow-ai/cmux",
@@ -1527,6 +1509,42 @@
       "canonical_url": "https://github.com/LAION-AI/aesthetic-predictor",
       "event_date": "2026-11-05",
       "date_seen": "2026-11-06"
+    },
+    {
+      "key": "github.com/zed-industries/zed",
+      "canonical_url": "https://github.com/zed-industries/zed",
+      "event_date": "2026-11-06",
+      "date_seen": "2026-11-07"
+    },
+    {
+      "key": "github.com/microsoft/vscode",
+      "canonical_url": "https://github.com/microsoft/vscode",
+      "event_date": "2026-11-06",
+      "date_seen": "2026-11-07"
+    },
+    {
+      "key": "github.com/openai/codex",
+      "canonical_url": "https://github.com/openai/codex/releases/tag/rust-v0.167.0",
+      "event_date": "2026-11-06",
+      "date_seen": "2026-11-07"
+    },
+    {
+      "key": "github.com/infiniflow/ragflow",
+      "canonical_url": "https://github.com/infiniflow/ragflow/releases/tag/v1.0.0",
+      "event_date": "2026-11-06",
+      "date_seen": "2026-11-07"
+    },
+    {
+      "key": "github.com/openclaw/openclaw",
+      "canonical_url": "https://github.com/openclaw/openclaw/releases/tag/v2026.11.1",
+      "event_date": "2026-11-05",
+      "date_seen": "2026-11-07"
+    },
+    {
+      "key": "github.com/microsoft/agent-framework",
+      "canonical_url": "https://github.com/microsoft/agent-framework/releases/tag/dotnet-1.28.0",
+      "event_date": "2026-11-06",
+      "date_seen": "2026-11-07"
     }
   ]
 }
