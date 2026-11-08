@@ -2483,6 +2483,8 @@ entries:
   - ai-agent
   - ai-coding
   - devtools
+  tailwindlabs_tailwindcss:
+  - design-ui
   tanstack_router:
   - devtools
   - web-framework

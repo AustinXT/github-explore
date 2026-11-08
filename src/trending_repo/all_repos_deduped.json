@@ -690,6 +690,16 @@
     "trending_days": 14
   },
   {
+    "name": "anthropics/skills",
+    "url": "https://github.com/anthropics/skills",
+    "language": "Python",
+    "stars": 189334,
+    "forks": 22317,
+    "description": "Public repository for Agent Skills",
+    "last_seen": "2026-11-08",
+    "trending_days": 13
+  },
+  {
     "name": "cursor/plugins",
     "url": "https://github.com/cursor/plugins",
     "language": "TypeScript",
@@ -807,16 +817,6 @@
     "forks": 29178,
     "description": "The open source coding agent.",
     "last_seen": "2026-10-20",
-    "trending_days": 12
-  },
-  {
-    "name": "anthropics/skills",
-    "url": "https://github.com/anthropics/skills",
-    "language": "Python",
-    "stars": 188516,
-    "forks": 22227,
-    "description": "Public repository for Agent Skills",
-    "last_seen": "2026-11-07",
     "trending_days": 12
   },
   {
@@ -2650,6 +2650,16 @@
     "trending_days": 6
   },
   {
+    "name": "milind-soni/OpenMausBot",
+    "url": "https://github.com/milind-soni/openmausbot",
+    "language": "TypeScript",
+    "stars": 17942,
+    "forks": 2506,
+    "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+    "last_seen": "2026-11-08",
+    "trending_days": 6
+  },
+  {
     "name": "mountain-loop/yaak",
     "url": "https://github.com/mountain-loop/yaak",
     "language": "TypeScript",
@@ -2767,6 +2777,16 @@
     "forks": 6525,
     "description": "Bash is all you need - A nano claude code–like 「agent harness」, built from 0 to 1",
     "last_seen": "2026-03-29",
+    "trending_days": 6
+  },
+  {
+    "name": "sherlock-project/sherlock",
+    "url": "https://github.com/sherlock-project/sherlock",
+    "language": "Python",
+    "stars": 102641,
+    "forks": 12076,
+    "description": "Hunt down social media accounts by username across social networks",
+    "last_seen": "2026-11-08",
     "trending_days": 6
   },
   {
@@ -2897,6 +2917,16 @@
     "forks": 1649,
     "description": "Simple, unified interface to multiple Generative AI providers",
     "last_seen": "2026-07-28",
+    "trending_days": 5
+  },
+  {
+    "name": "anthropics/claude-quickstarts",
+    "url": "https://github.com/anthropics/claude-quickstarts",
+    "language": "Python",
+    "stars": 19275,
+    "forks": 3270,
+    "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
+    "last_seen": "2026-11-08",
     "trending_days": 5
   },
   {
@@ -3220,16 +3250,6 @@
     "trending_days": 5
   },
   {
-    "name": "milind-soni/OpenMausBot",
-    "url": "https://github.com/milind-soni/openmausbot",
-    "language": "TypeScript",
-    "stars": 16612,
-    "forks": 2356,
-    "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-    "last_seen": "2026-11-07",
-    "trending_days": 5
-  },
-  {
     "name": "moonshine-ai/moonshine",
     "url": "https://github.com/moonshine-ai/moonshine",
     "language": "C++",
@@ -3427,16 +3447,6 @@
     "forks": 1945,
     "description": "[ECCV 2026 Best Paper Award Candidate] LingBot-Map: Geometric Context Transformer for Streaming 3D Reconstruction",
     "last_seen": "2026-10-09",
-    "trending_days": 5
-  },
-  {
-    "name": "sherlock-project/sherlock",
-    "url": "https://github.com/sherlock-project/sherlock",
-    "language": "Python",
-    "stars": 99926,
-    "forks": 11824,
-    "description": "Hunt down social media accounts by username across social networks",
-    "last_seen": "2026-11-07",
     "trending_days": 5
   },
   {
@@ -3717,16 +3727,6 @@
     "forks": 185,
     "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
     "last_seen": "2026-08-26",
-    "trending_days": 4
-  },
-  {
-    "name": "anthropics/claude-quickstarts",
-    "url": "https://github.com/anthropics/claude-quickstarts",
-    "language": "Python",
-    "stars": 14270,
-    "forks": 2422,
-    "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
-    "last_seen": "2026-02-17",
     "trending_days": 4
   },
   {
@@ -6470,6 +6470,16 @@
     "trending_days": 3
   },
   {
+    "name": "vercel-labs/agent-browser",
+    "url": "https://github.com/vercel-labs/agent-browser",
+    "language": "Rust",
+    "stars": 47393,
+    "forks": 3245,
+    "description": "Browser automation CLI for AI agents",
+    "last_seen": "2026-11-08",
+    "trending_days": 3
+  },
+  {
     "name": "vercel-labs/open-agents",
     "url": "https://github.com/vercel-labs/open-agents",
     "language": "TypeScript",
@@ -7377,6 +7387,16 @@
     "forks": 801,
     "description": "Structured Outputs",
     "last_seen": "2026-07-22",
+    "trending_days": 2
+  },
+  {
+    "name": "dsx-ai-factory/nvke",
+    "url": "https://github.com/dsx-ai-factory/nvke",
+    "language": "Go",
+    "stars": 752,
+    "forks": 107,
+    "description": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal.",
+    "last_seen": "2026-11-08",
     "trending_days": 2
   },
   {
@@ -8400,6 +8420,16 @@
     "trending_days": 2
   },
   {
+    "name": "meta/astryx",
+    "url": "https://github.com/meta/astryx",
+    "language": "TypeScript",
+    "stars": 15785,
+    "forks": 1268,
+    "description": "An open source design system that's fully customizable and agent ready",
+    "last_seen": "2026-11-08",
+    "trending_days": 2
+  },
+  {
     "name": "microsoft/Data-Science-For-Beginners",
     "url": "https://github.com/microsoft/data-science-for-beginners",
     "language": "JupyterNotebook",
@@ -9040,6 +9070,16 @@
     "trending_days": 2
   },
   {
+    "name": "ranxianglei/billion-context",
+    "url": "https://github.com/ranxianglei/billion-context",
+    "language": "TypeScript",
+    "stars": 4982,
+    "forks": 399,
+    "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
+    "last_seen": "2026-11-08",
+    "trending_days": 2
+  },
+  {
     "name": "rlaope/oh-my-hermes",
     "url": "https://github.com/rlaope/oh-my-hermes",
     "language": "Python",
@@ -9517,16 +9557,6 @@
     "forks": 563,
     "description": "Self-hosted AI accounting app. LLM analyzer for receipts, invoices, transactions with custom prompts and categories",
     "last_seen": "2026-03-31",
-    "trending_days": 2
-  },
-  {
-    "name": "vercel-labs/agent-browser",
-    "url": "https://github.com/vercel-labs/agent-browser",
-    "language": "Rust",
-    "stars": 46594,
-    "forks": 3192,
-    "description": "Browser automation CLI for AI agents",
-    "last_seen": "2026-11-07",
     "trending_days": 2
   },
   {
@@ -10770,16 +10800,6 @@
     "trending_days": 1
   },
   {
-    "name": "dsx-ai-factory/nvke",
-    "url": "https://github.com/dsx-ai-factory/nvke",
-    "language": "Go",
-    "stars": 434,
-    "forks": 82,
-    "description": "NVIDIA Kubernetes Engine (NVKE). A management plane for GPU Kubernetes on bare metal.",
-    "last_seen": "2026-11-07",
-    "trending_days": 1
-  },
-  {
     "name": "e2b-dev/awesome-ai-agents",
     "url": "https://github.com/e2b-dev/awesome-ai-agents",
     "language": "Unknown",
@@ -11167,6 +11187,16 @@
     "forks": 5722,
     "description": "Cross-platform, customizable ML solutions for live and streaming media.",
     "last_seen": "2026-01-15",
+    "trending_days": 1
+  },
+  {
+    "name": "google-deepmind/mujoco",
+    "url": "https://github.com/google-deepmind/mujoco",
+    "language": "C++",
+    "stars": 16258,
+    "forks": 1944,
+    "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+    "last_seen": "2026-11-08",
     "trending_days": 1
   },
   {
@@ -12150,16 +12180,6 @@
     "trending_days": 1
   },
   {
-    "name": "meta/astryx",
-    "url": "https://github.com/meta/astryx",
-    "language": "TypeScript",
-    "stars": 14257,
-    "forks": 1174,
-    "description": "An open source design system that's fully customizable and agent ready",
-    "last_seen": "2026-11-07",
-    "trending_days": 1
-  },
-  {
     "name": "metabase/metabase",
     "url": "https://github.com/metabase/metabase",
     "language": "Clojure",
@@ -13067,16 +13087,6 @@
     "forks": 1310,
     "description": "HTTP load generator, ApacheBench (ab) replacement",
     "last_seen": "2026-09-29",
-    "trending_days": 1
-  },
-  {
-    "name": "ranxianglei/billion-context",
-    "url": "https://github.com/ranxianglei/billion-context",
-    "language": "TypeScript",
-    "stars": 4503,
-    "forks": 361,
-    "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
-    "last_seen": "2026-11-07",
     "trending_days": 1
   },
   {
