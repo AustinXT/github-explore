@@ -1,15 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-11-08",
+    "last_run": "2026-11-09",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/microsoft/quicksand",
-      "canonical_url": "https://github.com/microsoft/quicksand",
-      "event_date": "2026-10-09",
-      "date_seen": "2026-10-09"
-    },
     {
       "key": "github.com/berriai/litellm",
       "canonical_url": "https://github.com/BerriAI/litellm",
@@ -1533,6 +1527,48 @@
       "canonical_url": "https://github.com/vercel/ai/releases/tag/ai%407.0.165",
       "event_date": "2026-11-07",
       "date_seen": "2026-11-08"
+    },
+    {
+      "key": "github.com/anthropics/claude-quickstarts",
+      "canonical_url": "https://github.com/anthropics/claude-quickstarts",
+      "event_date": "2026-11-08",
+      "date_seen": "2026-11-09"
+    },
+    {
+      "key": "github.com/google-deepmind/mujoco",
+      "canonical_url": "https://github.com/google-deepmind/mujoco",
+      "event_date": "2026-11-08",
+      "date_seen": "2026-11-09"
+    },
+    {
+      "key": "github.com/ultralytics/ultralytics",
+      "canonical_url": "https://github.com/ultralytics/ultralytics/releases/tag/v8.4.208",
+      "event_date": "2026-11-08",
+      "date_seen": "2026-11-09"
+    },
+    {
+      "key": "github.com/docling-project/docling",
+      "canonical_url": "https://github.com/docling-project/docling/releases/tag/v2.149.0",
+      "event_date": "2026-11-08",
+      "date_seen": "2026-11-09"
+    },
+    {
+      "key": "github.com/emcie-co/parlant",
+      "canonical_url": "https://github.com/emcie-co/parlant/releases/tag/v4.0.4",
+      "event_date": "2026-11-08",
+      "date_seen": "2026-11-09"
+    },
+    {
+      "key": "github.com/vitali87/code-graph-rag",
+      "canonical_url": "https://github.com/vitali87/code-graph-rag/releases/tag/v0.6.0",
+      "event_date": "2026-11-08",
+      "date_seen": "2026-11-09"
+    },
+    {
+      "key": "github.com/kraxen72/genanki-web",
+      "canonical_url": "https://github.com/KraXen72/genanki-web",
+      "event_date": "2026-11-08",
+      "date_seen": "2026-11-09"
     }
   ]
 }
