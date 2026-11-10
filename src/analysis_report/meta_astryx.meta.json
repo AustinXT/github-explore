@@ -1,0 +1,6 @@
+{
+  "title": "GitHub推荐：22K stars：Meta 设计系统给 AI 写 UI 打分",
+  "digest": "Meta 开源内部用了八年的设计系统 Astryx，22K stars。真正值得抄的是把「AI 生成 UI 质量」当回归指标运营：70 个 prompt × 4 套方案对照，零 LLM 静态评分器 + tsc 幻觉检测 + 双模型盲评。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}
