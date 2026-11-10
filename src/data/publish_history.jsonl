@@ -403,3 +403,4 @@
 {"recorded_at": "2026-11-06T02:21:11.647267+00:00", "slug": "floci-io_floci", "title": null, "state": "published", "published_at": "2026-11-06", "reason": "自动生成", "ci_run_id": "42146863403"}
 {"recorded_at": "2026-11-07T01:48:21.869682+00:00", "slug": "nvidia_auto-ontology", "title": null, "state": "published", "published_at": "2026-11-07", "reason": "自动生成", "ci_run_id": "42324035374"}
 {"recorded_at": "2026-11-08T03:44:10.494125+00:00", "slug": "tailwindlabs_tailwindcss", "title": null, "state": "published", "published_at": "2026-11-08", "reason": "自动生成", "ci_run_id": "42442247532"}
+{"recorded_at": "2026-11-10T09:32:07.974828+00:00", "slug": "garrytan_gbrain", "title": null, "state": "published", "published_at": "2026-11-10", "reason": "自动生成", "ci_run_id": "42786604506"}
