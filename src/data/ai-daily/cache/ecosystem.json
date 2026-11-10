@@ -1,21 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-11-09",
+    "last_run": "2026-11-10",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/berriai/litellm",
-      "canonical_url": "https://github.com/BerriAI/litellm",
-      "event_date": "2026-10-10",
-      "date_seen": "2026-10-10"
-    },
-    {
-      "key": "github.com/twostraws/swiftui-agent-skill",
-      "canonical_url": "https://github.com/twostraws/SwiftUI-Agent-Skill",
-      "event_date": "2026-10-10",
-      "date_seen": "2026-10-10"
-    },
     {
       "key": "github.com/mksglu/context-mode",
       "canonical_url": "https://github.com/mksglu/context-mode",
@@ -1569,6 +1557,72 @@
       "canonical_url": "https://github.com/KraXen72/genanki-web",
       "event_date": "2026-11-08",
       "date_seen": "2026-11-09"
+    },
+    {
+      "key": "github.com/garrytan/gbrain",
+      "canonical_url": "https://github.com/garrytan/gbrain",
+      "event_date": "2026-11-10",
+      "date_seen": "2026-11-10"
+    },
+    {
+      "key": "github.com/zhulinsen/daily_stock_analysis",
+      "canonical_url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "event_date": "2026-11-10",
+      "date_seen": "2026-11-10"
+    },
+    {
+      "key": "github.com/homeassistant-ai/ha-mcp",
+      "canonical_url": "https://github.com/homeassistant-ai/ha-mcp",
+      "event_date": "2026-11-10",
+      "date_seen": "2026-11-10"
+    },
+    {
+      "key": "github.com/fission-ai/openspec",
+      "canonical_url": "https://github.com/Fission-AI/OpenSpec",
+      "event_date": "2026-11-10",
+      "date_seen": "2026-11-10"
+    },
+    {
+      "key": "github.com/earendil-works/pi",
+      "canonical_url": "https://github.com/earendil-works/pi",
+      "event_date": "2026-11-10",
+      "date_seen": "2026-11-10"
+    },
+    {
+      "key": "github.com/anthropics/sandbox-runtime",
+      "canonical_url": "https://github.com/anthropics/sandbox-runtime",
+      "event_date": "2026-11-10",
+      "date_seen": "2026-11-10"
+    },
+    {
+      "key": "github.com/volcengine/openviking",
+      "canonical_url": "https://github.com/volcengine/OpenViking",
+      "event_date": "2026-11-10",
+      "date_seen": "2026-11-10"
+    },
+    {
+      "key": "github.com/microsoft/playwright-mcp",
+      "canonical_url": "https://github.com/microsoft/playwright-mcp",
+      "event_date": "2026-11-10",
+      "date_seen": "2026-11-10"
+    },
+    {
+      "key": "github.com/virattt/ai-hedge-fund",
+      "canonical_url": "https://github.com/virattt/ai-hedge-fund",
+      "event_date": "2026-11-10",
+      "date_seen": "2026-11-10"
+    },
+    {
+      "key": "github.com/rohitg00/ai-engineering-from-scratch",
+      "canonical_url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "event_date": "2026-11-10",
+      "date_seen": "2026-11-10"
+    },
+    {
+      "key": "github.com/0sec-labs/0",
+      "canonical_url": "https://github.com/0sec-labs/0",
+      "event_date": "2026-11-10",
+      "date_seen": "2026-11-10"
     }
   ]
 }
