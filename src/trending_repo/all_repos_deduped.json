@@ -140,6 +140,16 @@
     "trending_days": 27
   },
   {
+    "name": "ruvnet/RuView",
+    "url": "https://github.com/ruvnet/ruview",
+    "language": "Rust",
+    "stars": 103381,
+    "forks": 13397,
+    "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+    "last_seen": "2026-11-09",
+    "trending_days": 26
+  },
+  {
     "name": "yeongpin/cursor-free-vip",
     "url": "https://github.com/yeongpin/cursor-free-vip",
     "language": "Python",
@@ -157,16 +167,6 @@
     "forks": 407,
     "description": "An open-source, code-first Go toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control.",
     "last_seen": "2025-12-04",
-    "trending_days": 25
-  },
-  {
-    "name": "ruvnet/RuView",
-    "url": "https://github.com/ruvnet/ruview",
-    "language": "Rust",
-    "stars": 100771,
-    "forks": 13141,
-    "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
-    "last_seen": "2026-10-28",
     "trending_days": 25
   },
   {
@@ -570,6 +570,16 @@
     "trending_days": 14
   },
   {
+    "name": "anthropics/skills",
+    "url": "https://github.com/anthropics/skills",
+    "language": "Python",
+    "stars": 190807,
+    "forks": 22434,
+    "description": "Public repository for Agent Skills",
+    "last_seen": "2026-11-09",
+    "trending_days": 14
+  },
+  {
     "name": "basecamp/omarchy",
     "url": "https://github.com/basecamp/omarchy",
     "language": "Shell",
@@ -688,16 +698,6 @@
     "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
     "last_seen": "2026-08-17",
     "trending_days": 14
-  },
-  {
-    "name": "anthropics/skills",
-    "url": "https://github.com/anthropics/skills",
-    "language": "Python",
-    "stars": 189334,
-    "forks": 22317,
-    "description": "Public repository for Agent Skills",
-    "last_seen": "2026-11-08",
-    "trending_days": 13
   },
   {
     "name": "cursor/plugins",
@@ -1550,6 +1550,16 @@
     "trending_days": 9
   },
   {
+    "name": "ZhuLinsen/daily_stock_analysis",
+    "url": "https://github.com/zhulinsen/daily_stock_analysis",
+    "language": "Python",
+    "stars": 68760,
+    "forks": 56371,
+    "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+    "last_seen": "2026-11-09",
+    "trending_days": 9
+  },
+  {
     "name": "badlogic/pi-mono",
     "url": "https://github.com/badlogic/pi-mono",
     "language": "TypeScript",
@@ -1840,16 +1850,6 @@
     "trending_days": 8
   },
   {
-    "name": "ZhuLinsen/daily_stock_analysis",
-    "url": "https://github.com/zhulinsen/daily_stock_analysis",
-    "language": "Python",
-    "stars": 61897,
-    "forks": 52347,
-    "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-    "last_seen": "2026-08-11",
-    "trending_days": 8
-  },
-  {
     "name": "boykopovar/AnyPS5",
     "url": "https://github.com/boykopovar/anyps5",
     "language": "C++",
@@ -2010,6 +2010,16 @@
     "trending_days": 7
   },
   {
+    "name": "milind-soni/OpenMausBot",
+    "url": "https://github.com/milind-soni/openmausbot",
+    "language": "TypeScript",
+    "stars": 19573,
+    "forks": 2682,
+    "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+    "last_seen": "2026-11-09",
+    "trending_days": 7
+  },
+  {
     "name": "MoonshotAI/kimi-cli",
     "url": "https://github.com/moonshotai/kimi-cli",
     "language": "Python",
@@ -2140,6 +2150,16 @@
     "trending_days": 7
   },
   {
+    "name": "sherlock-project/sherlock",
+    "url": "https://github.com/sherlock-project/sherlock",
+    "language": "Python",
+    "stars": 106830,
+    "forks": 12368,
+    "description": "Hunt down social media accounts by username across social networks",
+    "last_seen": "2026-11-09",
+    "trending_days": 7
+  },
+  {
     "name": "sinelaw/fresh",
     "url": "https://github.com/sinelaw/fresh",
     "language": "Rust",
@@ -2257,6 +2277,16 @@
     "forks": 687,
     "description": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model. A local Wispr Flow alternative. ⭐ helps a ton :) Windows & iOS waitlist open. Linux soon.",
     "last_seen": "2026-08-15",
+    "trending_days": 6
+  },
+  {
+    "name": "anthropics/claude-quickstarts",
+    "url": "https://github.com/anthropics/claude-quickstarts",
+    "language": "Python",
+    "stars": 19963,
+    "forks": 3307,
+    "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
+    "last_seen": "2026-11-09",
     "trending_days": 6
   },
   {
@@ -2650,16 +2680,6 @@
     "trending_days": 6
   },
   {
-    "name": "milind-soni/OpenMausBot",
-    "url": "https://github.com/milind-soni/openmausbot",
-    "language": "TypeScript",
-    "stars": 17942,
-    "forks": 2506,
-    "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-    "last_seen": "2026-11-08",
-    "trending_days": 6
-  },
-  {
     "name": "mountain-loop/yaak",
     "url": "https://github.com/mountain-loop/yaak",
     "language": "TypeScript",
@@ -2777,16 +2797,6 @@
     "forks": 6525,
     "description": "Bash is all you need - A nano claude code–like 「agent harness」, built from 0 to 1",
     "last_seen": "2026-03-29",
-    "trending_days": 6
-  },
-  {
-    "name": "sherlock-project/sherlock",
-    "url": "https://github.com/sherlock-project/sherlock",
-    "language": "Python",
-    "stars": 102641,
-    "forks": 12076,
-    "description": "Hunt down social media accounts by username across social networks",
-    "last_seen": "2026-11-08",
     "trending_days": 6
   },
   {
@@ -2917,16 +2927,6 @@
     "forks": 1649,
     "description": "Simple, unified interface to multiple Generative AI providers",
     "last_seen": "2026-07-28",
-    "trending_days": 5
-  },
-  {
-    "name": "anthropics/claude-quickstarts",
-    "url": "https://github.com/anthropics/claude-quickstarts",
-    "language": "Python",
-    "stars": 19275,
-    "forks": 3270,
-    "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
-    "last_seen": "2026-11-08",
     "trending_days": 5
   },
   {
@@ -4750,6 +4750,16 @@
     "trending_days": 4
   },
   {
+    "name": "vercel-labs/agent-browser",
+    "url": "https://github.com/vercel-labs/agent-browser",
+    "language": "Rust",
+    "stars": 48391,
+    "forks": 3296,
+    "description": "Browser automation CLI for AI agents",
+    "last_seen": "2026-11-09",
+    "trending_days": 4
+  },
+  {
     "name": "vercel-labs/agent-desktop",
     "url": "https://github.com/vercel-labs/agent-desktop",
     "language": "Rust",
@@ -5860,6 +5870,16 @@
     "trending_days": 3
   },
   {
+    "name": "meta/astryx",
+    "url": "https://github.com/meta/astryx",
+    "language": "TypeScript",
+    "stars": 19693,
+    "forks": 1502,
+    "description": "An open source design system that's fully customizable and agent ready",
+    "last_seen": "2026-11-09",
+    "trending_days": 3
+  },
+  {
     "name": "microsoft/agent-framework",
     "url": "https://github.com/microsoft/agent-framework",
     "language": "Python",
@@ -6467,16 +6487,6 @@
     "forks": 1272,
     "description": "The most customizable commerce platform built with TypeScript, NestJS and GraphQL.",
     "last_seen": "2025-12-25",
-    "trending_days": 3
-  },
-  {
-    "name": "vercel-labs/agent-browser",
-    "url": "https://github.com/vercel-labs/agent-browser",
-    "language": "Rust",
-    "stars": 47393,
-    "forks": 3245,
-    "description": "Browser automation CLI for AI agents",
-    "last_seen": "2026-11-08",
     "trending_days": 3
   },
   {
@@ -7710,6 +7720,16 @@
     "trending_days": 2
   },
   {
+    "name": "google-deepmind/mujoco",
+    "url": "https://github.com/google-deepmind/mujoco",
+    "language": "C++",
+    "stars": 16864,
+    "forks": 1987,
+    "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+    "last_seen": "2026-11-09",
+    "trending_days": 2
+  },
+  {
     "name": "google-deepmind/weathernext",
     "url": "https://github.com/google-deepmind/weathernext",
     "language": "Python",
@@ -8417,16 +8437,6 @@
     "forks": 660,
     "description": "Open-Source Memory Engine for LLMs, AI Agents & Multi-Agent Systems",
     "last_seen": "2025-12-04",
-    "trending_days": 2
-  },
-  {
-    "name": "meta/astryx",
-    "url": "https://github.com/meta/astryx",
-    "language": "TypeScript",
-    "stars": 15785,
-    "forks": 1268,
-    "description": "An open source design system that's fully customizable and agent ready",
-    "last_seen": "2026-11-08",
     "trending_days": 2
   },
   {
@@ -11050,6 +11060,16 @@
     "trending_days": 1
   },
   {
+    "name": "garrytan/gbrain",
+    "url": "https://github.com/garrytan/gbrain",
+    "language": "TypeScript",
+    "stars": 32088,
+    "forks": 4760,
+    "description": "Garry's Opinionated OpenClaw/Hermes Agent Brain",
+    "last_seen": "2026-11-09",
+    "trending_days": 1
+  },
+  {
     "name": "Gentleman-Programming/Gentleman.Dots",
     "url": "https://github.com/gentleman-programming/gentleman.dots",
     "language": "Shell",
@@ -11187,16 +11207,6 @@
     "forks": 5722,
     "description": "Cross-platform, customizable ML solutions for live and streaming media.",
     "last_seen": "2026-01-15",
-    "trending_days": 1
-  },
-  {
-    "name": "google-deepmind/mujoco",
-    "url": "https://github.com/google-deepmind/mujoco",
-    "language": "C++",
-    "stars": 16258,
-    "forks": 1944,
-    "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
-    "last_seen": "2026-11-08",
     "trending_days": 1
   },
   {
@@ -11477,6 +11487,16 @@
     "forks": 341,
     "description": "[NeurIPS2025] \"AI-Researcher: Autonomous Scientific Innovation\" -- A production-ready version: https://novix.science/chat",
     "last_seen": "2025-09-24",
+    "trending_days": 1
+  },
+  {
+    "name": "homeassistant-ai/ha-mcp",
+    "url": "https://github.com/homeassistant-ai/ha-mcp",
+    "language": "Python",
+    "stars": 5873,
+    "forks": 287,
+    "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
+    "last_seen": "2026-11-09",
     "trending_days": 1
   },
   {
