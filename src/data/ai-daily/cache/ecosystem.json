@@ -1,15 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-11-10",
+    "last_run": "2026-11-11",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/mksglu/context-mode",
-      "canonical_url": "https://github.com/mksglu/context-mode",
-      "event_date": "2026-10-10",
-      "date_seen": "2026-10-11"
-    },
     {
       "key": "github.com/lyogavin/airllm",
       "canonical_url": "https://github.com/lyogavin/airllm",
@@ -1623,6 +1617,60 @@
       "canonical_url": "https://github.com/0sec-labs/0",
       "event_date": "2026-11-10",
       "date_seen": "2026-11-10"
+    },
+    {
+      "key": "github.com/googlechrome/modern-web-guidance",
+      "canonical_url": "https://github.com/GoogleChrome/modern-web-guidance",
+      "event_date": "2026-11-11",
+      "date_seen": "2026-11-11"
+    },
+    {
+      "key": "github.com/minimax-ai/minimax-h3-image",
+      "canonical_url": "https://github.com/MiniMax-AI/MiniMax-H3-Image",
+      "event_date": "2026-11-11",
+      "date_seen": "2026-11-11"
+    },
+    {
+      "key": "github.com/browser-use/browser-use",
+      "canonical_url": "https://github.com/browser-use/browser-use",
+      "event_date": "2026-11-11",
+      "date_seen": "2026-11-11"
+    },
+    {
+      "key": "github.com/modelcontextprotocol/ext-apps",
+      "canonical_url": "https://github.com/modelcontextprotocol/ext-apps",
+      "event_date": "2026-11-11",
+      "date_seen": "2026-11-11"
+    },
+    {
+      "key": "github.com/mw00/project-maya",
+      "canonical_url": "https://github.com/mw00/project-maya",
+      "event_date": "2026-11-11",
+      "date_seen": "2026-11-11"
+    },
+    {
+      "key": "github.com/nvidia/openshell",
+      "canonical_url": "https://github.com/NVIDIA/OpenShell",
+      "event_date": "2026-11-11",
+      "date_seen": "2026-11-11"
+    },
+    {
+      "key": "github.com/aaif-goose/goose",
+      "canonical_url": "https://github.com/aaif-goose/goose",
+      "event_date": "2026-11-11",
+      "date_seen": "2026-11-11"
+    },
+    {
+      "key": "github.com/wangzan101/mika",
+      "canonical_url": "https://github.com/wangzan101/Mika",
+      "event_date": "2026-11-11",
+      "date_seen": "2026-11-11"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/fission-ai_openspec",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/Fission-AI_OpenSpec/",
+      "event_date": "2026-11-11",
+      "date_seen": "2026-11-11"
     }
   ]
 }
