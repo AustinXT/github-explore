@@ -1,0 +1,6 @@
+{
+  "title": "GitHub推荐：上下文压缩不是删，是能还原的折叠：billion-context 三个月 6778 星",
+  "digest": "billion-context 是跑在 AI 编码 agent 之前的上下文压缩代理：只折已消费的增量、可逆取回、append-only 前缀保住 94% KV 命中。真正稀缺的是它的压缩判断规范。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}
