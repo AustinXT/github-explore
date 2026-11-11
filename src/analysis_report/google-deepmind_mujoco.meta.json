@@ -1,0 +1,6 @@
+{
+  "title": "GitHub推荐：17K star 的 MuJoCo：把接触难题换成凸优化",
+  "digest": "DeepMind 的 MuJoCo 放弃 LCP 接触模型、换成凸优化表述，一步同时拿到解唯一、可微分、逆动力学可解析三件事，已成机器人仿真的物理内核标准。17.5K star 只是旧账，4.0 的 Studio 与可变形体尚未计价。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}

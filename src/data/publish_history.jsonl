@@ -405,3 +405,4 @@
 {"recorded_at": "2026-11-08T03:44:10.494125+00:00", "slug": "tailwindlabs_tailwindcss", "title": null, "state": "published", "published_at": "2026-11-08", "reason": "自动生成", "ci_run_id": "42442247532"}
 {"recorded_at": "2026-11-10T09:32:07.974828+00:00", "slug": "garrytan_gbrain", "title": null, "state": "published", "published_at": "2026-11-10", "reason": "自动生成", "ci_run_id": "42786604506"}
 {"recorded_at": "2026-11-10T17:09:57.202322+00:00", "slug": "meta_astryx", "title": null, "state": "published", "published_at": "2026-11-10", "reason": "自动生成", "ci_run_id": "42857526931"}
+{"recorded_at": "2026-11-11T10:27:52.368441+00:00", "slug": "google-deepmind_mujoco", "title": null, "state": "published", "published_at": "2026-11-11", "reason": "自动生成", "ci_run_id": "42999818237"}
