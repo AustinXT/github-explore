@@ -13,11 +13,11 @@
     "name": "mattpocock/skills",
     "url": "https://github.com/mattpocock/skills",
     "language": "Shell",
-    "stars": 317403,
-    "forks": 26560,
+    "stars": 320686,
+    "forks": 26896,
     "description": "Skills for Real Engineers. Straight from my .agents directory.",
-    "last_seen": "2026-11-07",
-    "trending_days": 52
+    "last_seen": "2026-11-10",
+    "trending_days": 53
   },
   {
     "name": "affaan-m/ECC",
@@ -73,11 +73,11 @@
     "name": "addyosmani/agent-skills",
     "url": "https://github.com/addyosmani/agent-skills",
     "language": "JavaScript",
-    "stars": 103789,
-    "forks": 10855,
+    "stars": 114988,
+    "forks": 12078,
     "description": "Production-grade engineering skills for AI coding agents.",
-    "last_seen": "2026-10-09",
-    "trending_days": 33
+    "last_seen": "2026-11-10",
+    "trending_days": 34
   },
   {
     "name": "iptv-org/iptv",
@@ -520,6 +520,16 @@
     "trending_days": 16
   },
   {
+    "name": "anthropics/skills",
+    "url": "https://github.com/anthropics/skills",
+    "language": "Python",
+    "stars": 192078,
+    "forks": 22618,
+    "description": "Public repository for Agent Skills",
+    "last_seen": "2026-11-10",
+    "trending_days": 15
+  },
+  {
     "name": "aquasecurity/trivy",
     "url": "https://github.com/aquasecurity/trivy",
     "language": "Go",
@@ -567,16 +577,6 @@
     "forks": 3559,
     "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
     "last_seen": "2026-10-23",
-    "trending_days": 14
-  },
-  {
-    "name": "anthropics/skills",
-    "url": "https://github.com/anthropics/skills",
-    "language": "Python",
-    "stars": 190807,
-    "forks": 22434,
-    "description": "Public repository for Agent Skills",
-    "last_seen": "2026-11-09",
     "trending_days": 14
   },
   {
@@ -1800,6 +1800,16 @@
     "trending_days": 8
   },
   {
+    "name": "sherlock-project/sherlock",
+    "url": "https://github.com/sherlock-project/sherlock",
+    "language": "Python",
+    "stars": 108688,
+    "forks": 12641,
+    "description": "Hunt down social media accounts by username across social networks",
+    "last_seen": "2026-11-10",
+    "trending_days": 8
+  },
+  {
     "name": "Skyvern-AI/skyvern",
     "url": "https://github.com/skyvern-ai/skyvern",
     "language": "Python",
@@ -1848,6 +1858,16 @@
     "description": "RAG on Everything with LEANN. Enjoy 97% storage savings while running a fast, accurate, and 100% private RAG application on your personal device.",
     "last_seen": "2026-01-19",
     "trending_days": 8
+  },
+  {
+    "name": "anthropics/claude-quickstarts",
+    "url": "https://github.com/anthropics/claude-quickstarts",
+    "language": "Python",
+    "stars": 20386,
+    "forks": 3459,
+    "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
+    "last_seen": "2026-11-10",
+    "trending_days": 7
   },
   {
     "name": "boykopovar/AnyPS5",
@@ -2150,16 +2170,6 @@
     "trending_days": 7
   },
   {
-    "name": "sherlock-project/sherlock",
-    "url": "https://github.com/sherlock-project/sherlock",
-    "language": "Python",
-    "stars": 106830,
-    "forks": 12368,
-    "description": "Hunt down social media accounts by username across social networks",
-    "last_seen": "2026-11-09",
-    "trending_days": 7
-  },
-  {
     "name": "sinelaw/fresh",
     "url": "https://github.com/sinelaw/fresh",
     "language": "Rust",
@@ -2277,16 +2287,6 @@
     "forks": 687,
     "description": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model. A local Wispr Flow alternative. ⭐ helps a ton :) Windows & iOS waitlist open. Linux soon.",
     "last_seen": "2026-08-15",
-    "trending_days": 6
-  },
-  {
-    "name": "anthropics/claude-quickstarts",
-    "url": "https://github.com/anthropics/claude-quickstarts",
-    "language": "Python",
-    "stars": 19963,
-    "forks": 3307,
-    "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
-    "last_seen": "2026-11-09",
     "trending_days": 6
   },
   {
@@ -3600,6 +3600,16 @@
     "trending_days": 5
   },
   {
+    "name": "vercel-labs/agent-browser",
+    "url": "https://github.com/vercel-labs/agent-browser",
+    "language": "Rust",
+    "stars": 49071,
+    "forks": 3442,
+    "description": "Browser automation CLI for AI agents",
+    "last_seen": "2026-11-10",
+    "trending_days": 5
+  },
+  {
     "name": "vercel/next.js",
     "url": "https://github.com/vercel/next.js",
     "language": "JavaScript",
@@ -4370,6 +4380,16 @@
     "trending_days": 4
   },
   {
+    "name": "meta/astryx",
+    "url": "https://github.com/meta/astryx",
+    "language": "TypeScript",
+    "stars": 22302,
+    "forks": 1785,
+    "description": "An open source design system that's fully customizable and agent ready",
+    "last_seen": "2026-11-10",
+    "trending_days": 4
+  },
+  {
     "name": "microsoft/litebox",
     "url": "https://github.com/microsoft/litebox",
     "language": "Rust",
@@ -4747,16 +4767,6 @@
     "forks": 8346,
     "description": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN",
     "last_seen": "2026-09-01",
-    "trending_days": 4
-  },
-  {
-    "name": "vercel-labs/agent-browser",
-    "url": "https://github.com/vercel-labs/agent-browser",
-    "language": "Rust",
-    "stars": 48391,
-    "forks": 3296,
-    "description": "Browser automation CLI for AI agents",
-    "last_seen": "2026-11-09",
     "trending_days": 4
   },
   {
@@ -5480,6 +5490,16 @@
     "trending_days": 3
   },
   {
+    "name": "google-deepmind/mujoco",
+    "url": "https://github.com/google-deepmind/mujoco",
+    "language": "C++",
+    "stars": 17269,
+    "forks": 2138,
+    "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
+    "last_seen": "2026-11-10",
+    "trending_days": 3
+  },
+  {
     "name": "google/guava",
     "url": "https://github.com/google/guava",
     "language": "Java",
@@ -5870,16 +5890,6 @@
     "trending_days": 3
   },
   {
-    "name": "meta/astryx",
-    "url": "https://github.com/meta/astryx",
-    "language": "TypeScript",
-    "stars": 19693,
-    "forks": 1502,
-    "description": "An open source design system that's fully customizable and agent ready",
-    "last_seen": "2026-11-09",
-    "trending_days": 3
-  },
-  {
     "name": "microsoft/agent-framework",
     "url": "https://github.com/microsoft/agent-framework",
     "language": "Python",
@@ -6187,6 +6197,16 @@
     "forks": 4111,
     "description": "Lean Algorithmic Trading Engine by QuantConnect (Python, C#)",
     "last_seen": "2025-12-30",
+    "trending_days": 3
+  },
+  {
+    "name": "ranxianglei/billion-context",
+    "url": "https://github.com/ranxianglei/billion-context",
+    "language": "TypeScript",
+    "stars": 6160,
+    "forks": 524,
+    "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
+    "last_seen": "2026-11-10",
     "trending_days": 3
   },
   {
@@ -7720,16 +7740,6 @@
     "trending_days": 2
   },
   {
-    "name": "google-deepmind/mujoco",
-    "url": "https://github.com/google-deepmind/mujoco",
-    "language": "C++",
-    "stars": 16864,
-    "forks": 1987,
-    "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
-    "last_seen": "2026-11-09",
-    "trending_days": 2
-  },
-  {
     "name": "google-deepmind/weathernext",
     "url": "https://github.com/google-deepmind/weathernext",
     "language": "Python",
@@ -7877,6 +7887,16 @@
     "forks": 620,
     "description": "Open-source All in One AI agent workspace. Run any agent — Claude Code, Codex — across your tools (100+ integrations + MCP), apps, browser, and files, with shared memory. Built-in models or BYOK.",
     "last_seen": "2026-08-14",
+    "trending_days": 2
+  },
+  {
+    "name": "homeassistant-ai/ha-mcp",
+    "url": "https://github.com/homeassistant-ai/ha-mcp",
+    "language": "Python",
+    "stars": 6493,
+    "forks": 425,
+    "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
+    "last_seen": "2026-11-10",
     "trending_days": 2
   },
   {
@@ -9080,16 +9100,6 @@
     "trending_days": 2
   },
   {
-    "name": "ranxianglei/billion-context",
-    "url": "https://github.com/ranxianglei/billion-context",
-    "language": "TypeScript",
-    "stars": 4982,
-    "forks": 399,
-    "description": "A context-compression plugin for month-long single sessions (billions of tokens) ,small context windows (a 100K context is enough) and token savings (5x fewer tokens) .上下文压缩插件，月级长会话会话， 兼顾小窗口(100k上下文足矣)省token(省5倍token) . billion-context is all you need",
-    "last_seen": "2026-11-08",
-    "trending_days": 2
-  },
-  {
     "name": "rlaope/oh-my-hermes",
     "url": "https://github.com/rlaope/oh-my-hermes",
     "language": "Python",
@@ -9457,6 +9467,16 @@
     "forks": 1156,
     "description": "mini cli search engine for your docs, knowledge bases, meeting notes, whatever. Tracking current sota approaches while being all local",
     "last_seen": "2026-04-07",
+    "trending_days": 2
+  },
+  {
+    "name": "tokio-rs/topcoat",
+    "url": "https://github.com/tokio-rs/topcoat",
+    "language": "Rust",
+    "stars": 6701,
+    "forks": 294,
+    "description": "A batteries-included framework for building web apps",
+    "last_seen": "2026-11-10",
     "trending_days": 2
   },
   {
@@ -11487,16 +11507,6 @@
     "forks": 341,
     "description": "[NeurIPS2025] \"AI-Researcher: Autonomous Scientific Innovation\" -- A production-ready version: https://novix.science/chat",
     "last_seen": "2025-09-24",
-    "trending_days": 1
-  },
-  {
-    "name": "homeassistant-ai/ha-mcp",
-    "url": "https://github.com/homeassistant-ai/ha-mcp",
-    "language": "Python",
-    "stars": 5873,
-    "forks": 287,
-    "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
-    "last_seen": "2026-11-09",
     "trending_days": 1
   },
   {
@@ -13710,16 +13720,6 @@
     "trending_days": 1
   },
   {
-    "name": "tokio-rs/topcoat",
-    "url": "https://github.com/tokio-rs/topcoat",
-    "language": "Rust",
-    "stars": 1311,
-    "forks": 37,
-    "description": "A batteries-included framework for building web apps",
-    "last_seen": "2026-07-20",
-    "trending_days": 1
-  },
-  {
     "name": "ton-blockchain/acton",
     "url": "https://github.com/ton-blockchain/acton",
     "language": "Rust",
@@ -13897,6 +13897,16 @@
     "forks": 897,
     "description": "Open source free capture HTTP(S) traffic software ProxyPin, supporting full platform systems",
     "last_seen": "2025-09-27",
+    "trending_days": 1
+  },
+  {
+    "name": "we-promise/sure",
+    "url": "https://github.com/we-promise/sure",
+    "language": "Ruby",
+    "stars": 11725,
+    "forks": 879,
+    "description": "The personal finance app for everyone (by everyone)",
+    "last_seen": "2026-11-10",
     "trending_days": 1
   },
   {

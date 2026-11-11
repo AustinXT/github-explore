@@ -966,6 +966,11 @@ entries:
   - protocol-spec
   gar-b-age_cooklikehoc:
   - rag-search
+  garrytan_gbrain:
+  - ai-agent
+  - editor-kms
+  - rag-search
+  - database
   garrytan_gstack:
   - ai-agent
   - ai-coding
@@ -1632,6 +1637,8 @@ entries:
   - uncategorized
   meta-llama_llama3:
   - model-foundation
+  meta_astryx:
+  - design-ui
   microsoft_agent-framework:
   - ai-agent
   - ai-coding
