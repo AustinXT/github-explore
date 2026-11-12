@@ -1052,6 +1052,8 @@ entries:
   - llm-inference
   - model-foundation
   - education
+  google-deepmind_mujoco:
+  - uncategorized
   google-gemini_gemini-cli:
   - ai-agent
   - ai-coding
@@ -2193,6 +2195,8 @@ entries:
   qwibitai_nanoclaw:
   - ai-agent
   - security
+  ranxianglei_billion-context:
+  - ai-agent
   raphire_win11debloat:
   - devtools
   rasbt_llms-from-scratch:

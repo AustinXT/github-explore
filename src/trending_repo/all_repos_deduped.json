@@ -73,11 +73,11 @@
     "name": "addyosmani/agent-skills",
     "url": "https://github.com/addyosmani/agent-skills",
     "language": "JavaScript",
-    "stars": 114988,
-    "forks": 12078,
+    "stars": 115765,
+    "forks": 12140,
     "description": "Production-grade engineering skills for AI coding agents.",
-    "last_seen": "2026-11-10",
-    "trending_days": 34
+    "last_seen": "2026-11-11",
+    "trending_days": 35
   },
   {
     "name": "iptv-org/iptv",
@@ -1230,6 +1230,16 @@
     "trending_days": 10
   },
   {
+    "name": "ZhuLinsen/daily_stock_analysis",
+    "url": "https://github.com/zhulinsen/daily_stock_analysis",
+    "language": "Python",
+    "stars": 70042,
+    "forks": 56809,
+    "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
+    "last_seen": "2026-11-11",
+    "trending_days": 10
+  },
+  {
     "name": "alibaba/page-agent",
     "url": "https://github.com/alibaba/page-agent",
     "language": "TypeScript",
@@ -1547,16 +1557,6 @@
     "forks": 4349,
     "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
     "last_seen": "2026-10-14",
-    "trending_days": 9
-  },
-  {
-    "name": "ZhuLinsen/daily_stock_analysis",
-    "url": "https://github.com/zhulinsen/daily_stock_analysis",
-    "language": "Python",
-    "stars": 68760,
-    "forks": 56371,
-    "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-    "last_seen": "2026-11-09",
     "trending_days": 9
   },
   {
@@ -2830,6 +2830,16 @@
     "trending_days": 6
   },
   {
+    "name": "vercel-labs/agent-browser",
+    "url": "https://github.com/vercel-labs/agent-browser",
+    "language": "Rust",
+    "stars": 49756,
+    "forks": 3481,
+    "description": "Browser automation CLI for AI agents",
+    "last_seen": "2026-11-11",
+    "trending_days": 6
+  },
+  {
     "name": "xbtlin/ai-berkshire",
     "url": "https://github.com/xbtlin/ai-berkshire",
     "language": "Python",
@@ -3250,6 +3260,16 @@
     "trending_days": 5
   },
   {
+    "name": "meta/astryx",
+    "url": "https://github.com/meta/astryx",
+    "language": "TypeScript",
+    "stars": 24635,
+    "forks": 1924,
+    "description": "An open source design system that's fully customizable and agent ready",
+    "last_seen": "2026-11-11",
+    "trending_days": 5
+  },
+  {
     "name": "moonshine-ai/moonshine",
     "url": "https://github.com/moonshine-ai/moonshine",
     "language": "C++",
@@ -3597,16 +3617,6 @@
     "forks": 572,
     "description": "🎯 All you need. Nothing you don't. Open source project management that works for you, not against you.",
     "last_seen": "2026-08-04",
-    "trending_days": 5
-  },
-  {
-    "name": "vercel-labs/agent-browser",
-    "url": "https://github.com/vercel-labs/agent-browser",
-    "language": "Rust",
-    "stars": 49071,
-    "forks": 3442,
-    "description": "Browser automation CLI for AI agents",
-    "last_seen": "2026-11-10",
     "trending_days": 5
   },
   {
@@ -4377,16 +4387,6 @@
     "forks": 661,
     "description": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.",
     "last_seen": "2026-09-15",
-    "trending_days": 4
-  },
-  {
-    "name": "meta/astryx",
-    "url": "https://github.com/meta/astryx",
-    "language": "TypeScript",
-    "stars": 22302,
-    "forks": 1785,
-    "description": "An open source design system that's fully customizable and agent ready",
-    "last_seen": "2026-11-10",
     "trending_days": 4
   },
   {
@@ -5597,6 +5597,16 @@
     "forks": 2594,
     "description": "\"AI-Trader: 100% Fully-Automated Agent-Native Trading\"",
     "last_seen": "2026-05-12",
+    "trending_days": 3
+  },
+  {
+    "name": "homeassistant-ai/ha-mcp",
+    "url": "https://github.com/homeassistant-ai/ha-mcp",
+    "language": "Python",
+    "stars": 7166,
+    "forks": 447,
+    "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
+    "last_seen": "2026-11-11",
     "trending_days": 3
   },
   {
@@ -7890,16 +7900,6 @@
     "trending_days": 2
   },
   {
-    "name": "homeassistant-ai/ha-mcp",
-    "url": "https://github.com/homeassistant-ai/ha-mcp",
-    "language": "Python",
-    "stars": 6493,
-    "forks": 425,
-    "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
-    "last_seen": "2026-11-10",
-    "trending_days": 2
-  },
-  {
     "name": "HotCakeX/Harden-Windows-Security",
     "url": "https://github.com/hotcakex/harden-windows-security",
     "language": "C#",
@@ -9640,6 +9640,16 @@
     "trending_days": 2
   },
   {
+    "name": "we-promise/sure",
+    "url": "https://github.com/we-promise/sure",
+    "language": "Ruby",
+    "stars": 12749,
+    "forks": 944,
+    "description": "The personal finance app for everyone (by everyone)",
+    "last_seen": "2026-11-11",
+    "trending_days": 2
+  },
+  {
     "name": "willfaust/Madeira",
     "url": "https://github.com/willfaust/madeira",
     "language": "C",
@@ -11330,6 +11340,16 @@
     "trending_days": 1
   },
   {
+    "name": "GoogleChrome/modern-web-guidance-src",
+    "url": "https://github.com/googlechrome/modern-web-guidance-src",
+    "language": "TypeScript",
+    "stars": 1610,
+    "forks": 134,
+    "description": "None",
+    "last_seen": "2026-11-11",
+    "trending_days": 1
+  },
+  {
     "name": "gorhill/uBlock",
     "url": "https://github.com/gorhill/ublock",
     "language": "JavaScript",
@@ -12740,6 +12760,16 @@
     "trending_days": 1
   },
   {
+    "name": "openai/codex-security",
+    "url": "https://github.com/openai/codex-security",
+    "language": "TypeScript",
+    "stars": 11575,
+    "forks": 920,
+    "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+    "last_seen": "2026-11-11",
+    "trending_days": 1
+  },
+  {
     "name": "opencloud-eu/opencloud",
     "url": "https://github.com/opencloud-eu/opencloud",
     "language": "Go",
@@ -13340,6 +13370,16 @@
     "trending_days": 1
   },
   {
+    "name": "shadcn/improve",
+    "url": "https://github.com/shadcn/improve",
+    "language": "Unknown",
+    "stars": 10671,
+    "forks": 435,
+    "description": "Use your most capable model to audit your codebase and write plans for cheaper models to execute.",
+    "last_seen": "2026-11-11",
+    "trending_days": 1
+  },
+  {
     "name": "shadps4-emu/shadPS4",
     "url": "https://github.com/shadps4-emu/shadps4",
     "language": "C++",
@@ -13620,6 +13660,16 @@
     "trending_days": 1
   },
   {
+    "name": "TheAlgorithms/Java",
+    "url": "https://github.com/thealgorithms/java",
+    "language": "Java",
+    "stars": 66938,
+    "forks": 21497,
+    "description": "All Algorithms implemented in Java",
+    "last_seen": "2026-11-11",
+    "trending_days": 1
+  },
+  {
     "name": "TheRobotStudio/SO-ARM100",
     "url": "https://github.com/therobotstudio/so-arm100",
     "language": "Unknown",
@@ -13897,16 +13947,6 @@
     "forks": 897,
     "description": "Open source free capture HTTP(S) traffic software ProxyPin, supporting full platform systems",
     "last_seen": "2025-09-27",
-    "trending_days": 1
-  },
-  {
-    "name": "we-promise/sure",
-    "url": "https://github.com/we-promise/sure",
-    "language": "Ruby",
-    "stars": 11725,
-    "forks": 879,
-    "description": "The personal finance app for everyone (by everyone)",
-    "last_seen": "2026-11-10",
     "trending_days": 1
   },
   {
