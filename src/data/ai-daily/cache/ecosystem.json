@@ -1,45 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-11-12",
+    "last_run": "2026-11-13",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/open-webui/open-webui",
-      "canonical_url": "https://github.com/open-webui/open-webui",
-      "event_date": "2026-10-13",
-      "date_seen": "2026-10-13"
-    },
-    {
-      "key": "github.com/microsoft/bitnet",
-      "canonical_url": "https://github.com/microsoft/BitNet",
-      "event_date": "2026-10-13",
-      "date_seen": "2026-10-13"
-    },
-    {
-      "key": "github.com/alishahryar1/free-claude-code",
-      "canonical_url": "https://github.com/Alishahryar1/free-claude-code",
-      "event_date": "2026-10-13",
-      "date_seen": "2026-10-13"
-    },
-    {
-      "key": "github.com/obra/superpowers",
-      "canonical_url": "https://github.com/obra/superpowers",
-      "event_date": "2026-10-13",
-      "date_seen": "2026-10-13"
-    },
-    {
-      "key": "github.com/addyosmani/agent-skills",
-      "canonical_url": "https://github.com/addyosmani/agent-skills",
-      "event_date": "2026-10-13",
-      "date_seen": "2026-10-13"
-    },
-    {
-      "key": "github.com/significant-gravitas/autogpt",
-      "canonical_url": "https://github.com/significant-gravitas/autogpt",
-      "event_date": "2026-10-13",
-      "date_seen": "2026-10-13"
-    },
     {
       "key": "github.com/vercel-labs/skills",
       "canonical_url": "https://github.com/vercel-labs/skills",
@@ -1749,6 +1713,60 @@
       "canonical_url": "https://nightvoyager.top/github-explore/reports/nvidia_openshell/",
       "event_date": "2026-11-12",
       "date_seen": "2026-11-12"
+    },
+    {
+      "key": "hf:thinkingmachines/inkling-2-small",
+      "canonical_url": "https://huggingface.co/thinkingmachines/Inkling-2-Small",
+      "event_date": "2026-11-12",
+      "date_seen": "2026-11-13"
+    },
+    {
+      "key": "github.com/ashhart/tensorfold",
+      "canonical_url": "https://github.com/ashhart/TensorFold",
+      "event_date": "2026-11-12",
+      "date_seen": "2026-11-13"
+    },
+    {
+      "key": "github.com/alishahryar1/free-claude-code",
+      "canonical_url": "https://github.com/Alishahryar1/free-claude-code",
+      "event_date": "2026-11-12",
+      "date_seen": "2026-11-13"
+    },
+    {
+      "key": "github.com/runwayml/praxis-1-oss",
+      "canonical_url": "https://github.com/runwayml/praxis-1-oss",
+      "event_date": "2026-11-11",
+      "date_seen": "2026-11-13"
+    },
+    {
+      "key": "github.com/agibottech/life",
+      "canonical_url": "https://github.com/AgibotTech/LIFE",
+      "event_date": "2026-11-11",
+      "date_seen": "2026-11-13"
+    },
+    {
+      "key": "github.com/experientiallabs/experiential",
+      "canonical_url": "https://github.com/experientiallabs/experiential",
+      "event_date": "2026-11-12",
+      "date_seen": "2026-11-13"
+    },
+    {
+      "key": "github.com/gy15901580825/argus",
+      "canonical_url": "https://github.com/gy15901580825/Argus",
+      "event_date": "2026-11-13",
+      "date_seen": "2026-11-13"
+    },
+    {
+      "key": "github.com/ifm-ai/pan2",
+      "canonical_url": "https://github.com/ifm-ai/PAN2",
+      "event_date": "2026-11-10",
+      "date_seen": "2026-11-13"
+    },
+    {
+      "key": "github.com/addyosmani/agent-skills",
+      "canonical_url": "https://github.com/addyosmani/agent-skills",
+      "event_date": "2026-11-12",
+      "date_seen": "2026-11-13"
     }
   ]
 }
