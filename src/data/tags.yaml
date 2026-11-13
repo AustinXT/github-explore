@@ -1193,6 +1193,11 @@ entries:
   - workflow-automation
   home-assistant_home-assistant.io:
   - ai-agent
+  homeassistant-ai_ha-mcp:
+  - ai-agent
+  - devtools
+  - workflow-automation
+  - protocol-spec
   hoppscotch_hoppscotch:
   - devtools
   - protocol-spec

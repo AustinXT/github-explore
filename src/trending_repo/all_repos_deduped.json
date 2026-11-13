@@ -43,11 +43,11 @@
     "name": "nvm-sh/nvm",
     "url": "https://github.com/nvm-sh/nvm",
     "language": "Shell",
-    "stars": 95398,
-    "forks": 10509,
+    "stars": 95977,
+    "forks": 10756,
     "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
-    "last_seen": "2026-10-14",
-    "trending_days": 37
+    "last_seen": "2026-11-12",
+    "trending_days": 38
   },
   {
     "name": "thedotmack/claude-mem",
@@ -60,6 +60,16 @@
     "trending_days": 37
   },
   {
+    "name": "addyosmani/agent-skills",
+    "url": "https://github.com/addyosmani/agent-skills",
+    "language": "JavaScript",
+    "stars": 116547,
+    "forks": 12203,
+    "description": "Production-grade engineering skills for AI coding agents.",
+    "last_seen": "2026-11-12",
+    "trending_days": 36
+  },
+  {
     "name": "anthropics/claude-code",
     "url": "https://github.com/anthropics/claude-code",
     "language": "TypeScript",
@@ -68,16 +78,6 @@
     "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
     "last_seen": "2026-10-19",
     "trending_days": 36
-  },
-  {
-    "name": "addyosmani/agent-skills",
-    "url": "https://github.com/addyosmani/agent-skills",
-    "language": "JavaScript",
-    "stars": 115765,
-    "forks": 12140,
-    "description": "Production-grade engineering skills for AI coding agents.",
-    "last_seen": "2026-11-11",
-    "trending_days": 35
   },
   {
     "name": "iptv-org/iptv",
@@ -700,6 +700,16 @@
     "trending_days": 14
   },
   {
+    "name": "Alishahryar1/free-claude-code",
+    "url": "https://github.com/alishahryar1/free-claude-code",
+    "language": "Python",
+    "stars": 69108,
+    "forks": 10740,
+    "description": "Use Claude Code, Codex, Antigravity, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
+    "last_seen": "2026-11-12",
+    "trending_days": 13
+  },
+  {
     "name": "cursor/plugins",
     "url": "https://github.com/cursor/plugins",
     "language": "TypeScript",
@@ -797,16 +807,6 @@
     "forks": 3256,
     "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
     "last_seen": "2026-10-09",
-    "trending_days": 12
-  },
-  {
-    "name": "Alishahryar1/free-claude-code",
-    "url": "https://github.com/alishahryar1/free-claude-code",
-    "language": "Python",
-    "stars": 58875,
-    "forks": 9292,
-    "description": "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
-    "last_seen": "2026-10-12",
     "trending_days": 12
   },
   {
@@ -2490,6 +2490,16 @@
     "trending_days": 6
   },
   {
+    "name": "ggml-org/llama.cpp",
+    "url": "https://github.com/ggml-org/llama.cpp",
+    "language": "C++",
+    "stars": 134428,
+    "forks": 25491,
+    "description": "LLM inference in C/C++",
+    "last_seen": "2026-11-12",
+    "trending_days": 6
+  },
+  {
     "name": "Graphify-Labs/graphify",
     "url": "https://github.com/graphify-labs/graphify",
     "language": "Python",
@@ -2667,6 +2677,16 @@
     "forks": 15599,
     "description": "🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
     "last_seen": "2026-07-16",
+    "trending_days": 6
+  },
+  {
+    "name": "meta/astryx",
+    "url": "https://github.com/meta/astryx",
+    "language": "TypeScript",
+    "stars": 26294,
+    "forks": 2037,
+    "description": "An open source design system that's fully customizable and agent ready",
+    "last_seen": "2026-11-12",
     "trending_days": 6
   },
   {
@@ -3100,16 +3120,6 @@
     "trending_days": 5
   },
   {
-    "name": "ggml-org/llama.cpp",
-    "url": "https://github.com/ggml-org/llama.cpp",
-    "language": "C++",
-    "stars": 115096,
-    "forks": 19268,
-    "description": "LLM inference in C/C++",
-    "last_seen": "2026-06-07",
-    "trending_days": 5
-  },
-  {
     "name": "github/gh-aw",
     "url": "https://github.com/github/gh-aw",
     "language": "Go",
@@ -3257,16 +3267,6 @@
     "forks": 431,
     "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
     "last_seen": "2026-11-05",
-    "trending_days": 5
-  },
-  {
-    "name": "meta/astryx",
-    "url": "https://github.com/meta/astryx",
-    "language": "TypeScript",
-    "stars": 24635,
-    "forks": 1924,
-    "description": "An open source design system that's fully customizable and agent ready",
-    "last_seen": "2026-11-11",
     "trending_days": 5
   },
   {
@@ -3867,6 +3867,16 @@
     "forks": 606,
     "description": "Incremental engine for long horizon agents 🌟 Star if you like it!",
     "last_seen": "2026-05-05",
+    "trending_days": 4
+  },
+  {
+    "name": "CopilotKit/OpenBot",
+    "url": "https://github.com/copilotkit/openbot",
+    "language": "TypeScript",
+    "stars": 11440,
+    "forks": 1417,
+    "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+    "last_seen": "2026-11-12",
     "trending_days": 4
   },
   {
@@ -5200,16 +5210,6 @@
     "trending_days": 3
   },
   {
-    "name": "CopilotKit/OpenBot",
-    "url": "https://github.com/copilotkit/openbot",
-    "language": "TypeScript",
-    "stars": 9359,
-    "forks": 1173,
-    "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
-    "last_seen": "2026-11-01",
-    "trending_days": 3
-  },
-  {
     "name": "cordiverse/cordis",
     "url": "https://github.com/cordiverse/cordis",
     "language": "TypeScript",
@@ -6010,6 +6010,16 @@
     "trending_days": 3
   },
   {
+    "name": "nodejs/node",
+    "url": "https://github.com/nodejs/node",
+    "language": "JavaScript",
+    "stars": 123553,
+    "forks": 38052,
+    "description": "Node.js JavaScript runtime ✨🐢🚀✨",
+    "last_seen": "2026-11-12",
+    "trending_days": 3
+  },
+  {
     "name": "NVIDIA/auto-ontology",
     "url": "https://github.com/nvidia/auto-ontology",
     "language": "Python",
@@ -6587,6 +6597,16 @@
     "forks": 3350,
     "description": "Warp is an agentic development environment, born out of the terminal.",
     "last_seen": "2026-05-01",
+    "trending_days": 3
+  },
+  {
+    "name": "we-promise/sure",
+    "url": "https://github.com/we-promise/sure",
+    "language": "Ruby",
+    "stars": 13743,
+    "forks": 1018,
+    "description": "The personal finance app for everyone (by everyone)",
+    "last_seen": "2026-11-12",
     "trending_days": 3
   },
   {
@@ -7800,6 +7820,16 @@
     "trending_days": 2
   },
   {
+    "name": "GoogleChrome/modern-web-guidance-src",
+    "url": "https://github.com/googlechrome/modern-web-guidance-src",
+    "language": "TypeScript",
+    "stars": 2616,
+    "forks": 183,
+    "description": "None",
+    "last_seen": "2026-11-12",
+    "trending_days": 2
+  },
+  {
     "name": "GoogleCloudPlatform/agent-starter-pack",
     "url": "https://github.com/googlecloudplatform/agent-starter-pack",
     "language": "Python",
@@ -8660,16 +8690,6 @@
     "trending_days": 2
   },
   {
-    "name": "nodejs/node",
-    "url": "https://github.com/nodejs/node",
-    "language": "JavaScript",
-    "stars": 122675,
-    "forks": 39940,
-    "description": "Node.js JavaScript runtime ✨🐢🚀✨",
-    "last_seen": "2026-10-23",
-    "trending_days": 2
-  },
-  {
     "name": "NomaDamas/k-skill",
     "url": "https://github.com/nomadamas/k-skill",
     "language": "JavaScript",
@@ -8807,6 +8827,16 @@
     "forks": 22630,
     "description": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
     "last_seen": "2026-10-12",
+    "trending_days": 2
+  },
+  {
+    "name": "openai/codex-security",
+    "url": "https://github.com/openai/codex-security",
+    "language": "TypeScript",
+    "stars": 12263,
+    "forks": 971,
+    "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
+    "last_seen": "2026-11-12",
     "trending_days": 2
   },
   {
@@ -9077,6 +9107,16 @@
     "forks": 1414,
     "description": "Agent framework and applications built upon Qwen>=3.0, featuring Function Calling, MCP, Code Interpreter, RAG, Chrome extension, etc.",
     "last_seen": "2026-03-07",
+    "trending_days": 2
+  },
+  {
+    "name": "QwenLM/qwen-code",
+    "url": "https://github.com/qwenlm/qwen-code",
+    "language": "TypeScript",
+    "stars": 29702,
+    "forks": 3389,
+    "description": "An open-source AI coding agent that lives in your terminal.",
+    "last_seen": "2026-11-12",
     "trending_days": 2
   },
   {
@@ -9637,16 +9677,6 @@
     "forks": 1523,
     "description": "Free and open-source macOS menu bar toolkit.",
     "last_seen": "2026-10-31",
-    "trending_days": 2
-  },
-  {
-    "name": "we-promise/sure",
-    "url": "https://github.com/we-promise/sure",
-    "language": "Ruby",
-    "stars": 12749,
-    "forks": 944,
-    "description": "The personal finance app for everyone (by everyone)",
-    "last_seen": "2026-11-11",
     "trending_days": 2
   },
   {
@@ -10217,6 +10247,16 @@
     "forks": 9545,
     "description": "30 days of Python programming challenge is a step-by-step guide to learn the Python programming language in 30 days. This challenge may take more than100 days, follow your own pace. These videos may help too: https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw",
     "last_seen": "2025-09-25",
+    "trending_days": 1
+  },
+  {
+    "name": "ashhart/TensorFold",
+    "url": "https://github.com/ashhart/tensorfold",
+    "language": "Zig",
+    "stars": 1890,
+    "forks": 390,
+    "description": "LLM Inference Engine for Metal, CUDA and Vulkan.",
+    "last_seen": "2026-11-12",
     "trending_days": 1
   },
   {
@@ -11337,16 +11377,6 @@
     "forks": 232,
     "description": "Open source vulnerability DB and triage service.",
     "last_seen": "2025-10-06",
-    "trending_days": 1
-  },
-  {
-    "name": "GoogleChrome/modern-web-guidance-src",
-    "url": "https://github.com/googlechrome/modern-web-guidance-src",
-    "language": "TypeScript",
-    "stars": 1610,
-    "forks": 134,
-    "description": "None",
-    "last_seen": "2026-11-11",
     "trending_days": 1
   },
   {
@@ -12760,16 +12790,6 @@
     "trending_days": 1
   },
   {
-    "name": "openai/codex-security",
-    "url": "https://github.com/openai/codex-security",
-    "language": "TypeScript",
-    "stars": 11575,
-    "forks": 920,
-    "description": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
-    "last_seen": "2026-11-11",
-    "trending_days": 1
-  },
-  {
     "name": "opencloud-eu/opencloud",
     "url": "https://github.com/opencloud-eu/opencloud",
     "language": "Go",
@@ -12980,6 +13000,16 @@
     "trending_days": 1
   },
   {
+    "name": "pookjw/HermesEnabler",
+    "url": "https://github.com/pookjw/hermesenabler",
+    "language": "Objective-C",
+    "stars": 1469,
+    "forks": 138,
+    "description": "Enable Hermès Watch Faces on any Apple Watch devices",
+    "last_seen": "2026-11-12",
+    "trending_days": 1
+  },
+  {
     "name": "pppscn/SmsForwarder",
     "url": "https://github.com/pppscn/smsforwarder",
     "language": "Kotlin",
@@ -13107,16 +13137,6 @@
     "forks": 2967,
     "description": "Quarkus: Supersonic Subatomic Java.",
     "last_seen": "2025-10-02",
-    "trending_days": 1
-  },
-  {
-    "name": "QwenLM/qwen-code",
-    "url": "https://github.com/qwenlm/qwen-code",
-    "language": "TypeScript",
-    "stars": 18619,
-    "forks": 1631,
-    "description": "An open-source AI agent that lives in your terminal.",
-    "last_seen": "2026-02-18",
     "trending_days": 1
   },
   {
