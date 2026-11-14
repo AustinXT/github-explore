@@ -1084,6 +1084,9 @@ entries:
   google_tunix:
   - ai-agent
   - llm-training
+  googlechrome_modern-web-guidance-src:
+  - ai-agent
+  - llm-framework
   googlecloudplatform_generative-ai:
   - ai-agent
   - llm-framework
@@ -1977,6 +1980,10 @@ entries:
   - ai-agent
   - ai-coding
   - devtools
+  openai_codex-security:
+  - ai-agent
+  - ai-coding
+  - security
   openai_openai-agents-python:
   - ai-agent
   - protocol-spec
@@ -2499,6 +2506,8 @@ entries:
   - ai-agent
   - ai-coding
   - devtools
+  tailscale_tailcat:
+  - ai-agent
   tailwindlabs_tailwindcss:
   - design-ui
   tanstack_router:
