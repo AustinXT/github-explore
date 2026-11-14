@@ -1,0 +1,6 @@
+{
+  "title": "开源 AI 日报 11.14：llama.cpp 1.0 与榜首代码评审",
+  "digest": "llama.cpp 与 ggml 同步发布 1.0.0，公共 C API 转入语义化版本承诺；阿里 open-code-review 回榜登顶日榜第 1；Transformers v5.23.0 接入 Inkling2 权重。",
+  "author": "NightVoyager",
+  "theme": "stars,universe,dark"
+}
