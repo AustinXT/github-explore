@@ -2804,6 +2804,10 @@ entries:
   - llm-inference
   - model-foundation
   - devtools
+  we-promise_sure:
+  - ai-agent
+  - devtools
+  - trading-finance
   weapp-vite_weapp-vite:
   - ai-agent
   - devtools
