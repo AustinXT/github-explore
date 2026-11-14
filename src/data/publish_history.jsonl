@@ -410,3 +410,4 @@
 {"recorded_at": "2026-11-12T13:55:36.100115+00:00", "slug": "homeassistant-ai_ha-mcp", "title": null, "state": "pending", "published_at": "2026-11-12", "reason": "待重发", "ci_run_id": "43227364954"}
 {"recorded_at": "2026-11-13T02:44:46.429017+00:00", "slug": "we-promise_sure", "title": null, "state": "pending", "published_at": "2026-11-13", "reason": "待重发", "ci_run_id": "43350986405"}
 {"recorded_at": "2026-11-14T07:29:41.180303+00:00", "slug": "openai_codex-security", "title": null, "state": "pending", "published_at": "2026-11-14", "reason": "待重发", "ci_run_id": "43569848153"}
+{"recorded_at": "2026-11-14T15:08:01.469408+00:00", "slug": "tailscale_tailcat", "title": null, "state": "pending", "published_at": "2026-11-14", "reason": "待重发", "ci_run_id": "43605835571"}

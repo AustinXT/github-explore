@@ -1,0 +1,6 @@
+{
+  "title": "GitHub推荐：9.7K 星的 tailcat——Tailscale 官方把控制面切掉只留数据面",
+  "digest": "Tailscale 官方把数据面从控制面切出来，做成「140 字节地址即能力、零账号零登录」的加密隧道。最值得抄的是能力信封、三重公钥分离、DNS 陌生人探测三个模式——agent 时代的一次性授权范式。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}
