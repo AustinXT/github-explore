@@ -160,6 +160,16 @@
     "trending_days": 26
   },
   {
+    "name": "ChromeDevTools/chrome-devtools-mcp",
+    "url": "https://github.com/chromedevtools/chrome-devtools-mcp",
+    "language": "TypeScript",
+    "stars": 56776,
+    "forks": 4800,
+    "description": "Chrome DevTools for coding agents",
+    "last_seen": "2026-11-15",
+    "trending_days": 25
+  },
+  {
     "name": "google/adk-go",
     "url": "https://github.com/google/adk-go",
     "language": "Go",
@@ -187,16 +197,6 @@
     "forks": 762,
     "description": "A list of open source games.",
     "last_seen": "2025-12-04",
-    "trending_days": 24
-  },
-  {
-    "name": "ChromeDevTools/chrome-devtools-mcp",
-    "url": "https://github.com/chromedevtools/chrome-devtools-mcp",
-    "language": "TypeScript",
-    "stars": 56120,
-    "forks": 4652,
-    "description": "Chrome DevTools for coding agents",
-    "last_seen": "2026-11-14",
     "trending_days": 24
   },
   {
@@ -520,6 +520,16 @@
     "trending_days": 16
   },
   {
+    "name": "alibaba/open-code-review",
+    "url": "https://github.com/alibaba/open-code-review",
+    "language": "Go",
+    "stars": 51865,
+    "forks": 4067,
+    "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+    "last_seen": "2026-11-15",
+    "trending_days": 15
+  },
+  {
     "name": "anthropics/skills",
     "url": "https://github.com/anthropics/skills",
     "language": "Python",
@@ -557,16 +567,6 @@
     "forks": 11277,
     "description": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物",
     "last_seen": "2026-09-14",
-    "trending_days": 14
-  },
-  {
-    "name": "alibaba/open-code-review",
-    "url": "https://github.com/alibaba/open-code-review",
-    "language": "Go",
-    "stars": 51232,
-    "forks": 3821,
-    "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-    "last_seen": "2026-11-14",
     "trending_days": 14
   },
   {
@@ -1130,6 +1130,16 @@
     "trending_days": 10
   },
   {
+    "name": "dream-num/univer",
+    "url": "https://github.com/dream-num/univer",
+    "language": "TypeScript",
+    "stars": 25411,
+    "forks": 2322,
+    "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+    "last_seen": "2026-11-15",
+    "trending_days": 10
+  },
+  {
     "name": "dyad-sh/dyad",
     "url": "https://github.com/dyad-sh/dyad",
     "language": "TypeScript",
@@ -1317,16 +1327,6 @@
     "forks": 3627,
     "description": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary, zero dependencies.",
     "last_seen": "2026-09-23",
-    "trending_days": 9
-  },
-  {
-    "name": "dream-num/univer",
-    "url": "https://github.com/dream-num/univer",
-    "language": "TypeScript",
-    "stars": 24338,
-    "forks": 2107,
-    "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
-    "last_seen": "2026-11-14",
     "trending_days": 9
   },
   {
@@ -3130,6 +3130,16 @@
     "trending_days": 5
   },
   {
+    "name": "GoogleChrome/modern-web-guidance-src",
+    "url": "https://github.com/googlechrome/modern-web-guidance-src",
+    "language": "TypeScript",
+    "stars": 6913,
+    "forks": 561,
+    "description": "Keep your coding agent up to date with the latest web best practices",
+    "last_seen": "2026-11-15",
+    "trending_days": 5
+  },
+  {
     "name": "hashicorp/vault",
     "url": "https://github.com/hashicorp/vault",
     "language": "Go",
@@ -4050,6 +4060,16 @@
     "trending_days": 4
   },
   {
+    "name": "ggml-org/ggml",
+    "url": "https://github.com/ggml-org/ggml",
+    "language": "C++",
+    "stars": 15845,
+    "forks": 1982,
+    "description": "Tensor library for machine learning",
+    "last_seen": "2026-11-15",
+    "trending_days": 4
+  },
+  {
     "name": "gin-gonic/gin",
     "url": "https://github.com/gin-gonic/gin",
     "language": "Go",
@@ -4117,16 +4137,6 @@
     "forks": 543,
     "description": "Google's open agentic orchestration runtime",
     "last_seen": "2026-09-25",
-    "trending_days": 4
-  },
-  {
-    "name": "GoogleChrome/modern-web-guidance-src",
-    "url": "https://github.com/googlechrome/modern-web-guidance-src",
-    "language": "TypeScript",
-    "stars": 5628,
-    "forks": 300,
-    "description": "Keep your coding agent up to date with the latest web best practices",
-    "last_seen": "2026-11-14",
     "trending_days": 4
   },
   {
@@ -5120,6 +5130,16 @@
     "trending_days": 3
   },
   {
+    "name": "backnotprop/plannotator",
+    "url": "https://github.com/backnotprop/plannotator",
+    "language": "TypeScript",
+    "stars": 11700,
+    "forks": 1049,
+    "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+    "last_seen": "2026-11-15",
+    "trending_days": 3
+  },
+  {
     "name": "BeehiveInnovations/zen-mcp-server",
     "url": "https://github.com/beehiveinnovations/zen-mcp-server",
     "language": "Python",
@@ -5490,16 +5510,6 @@
     "trending_days": 3
   },
   {
-    "name": "ggml-org/ggml",
-    "url": "https://github.com/ggml-org/ggml",
-    "language": "C++",
-    "stars": 14007,
-    "forks": 1475,
-    "description": "Tensor library for machine learning",
-    "last_seen": "2026-02-21",
-    "trending_days": 3
-  },
-  {
     "name": "Gitlawb/openclaude",
     "url": "https://github.com/gitlawb/openclaude",
     "language": "TypeScript",
@@ -5527,6 +5537,16 @@
     "forks": 2138,
     "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
     "last_seen": "2026-11-10",
+    "trending_days": 3
+  },
+  {
+    "name": "google-labs-code/stitch-skills",
+    "url": "https://github.com/google-labs-code/stitch-skills",
+    "language": "TypeScript",
+    "stars": 9154,
+    "forks": 1100,
+    "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+    "last_seen": "2026-11-15",
     "trending_days": 3
   },
   {
@@ -6520,6 +6540,16 @@
     "trending_days": 3
   },
   {
+    "name": "tradermonty/claude-trading-skills",
+    "url": "https://github.com/tradermonty/claude-trading-skills",
+    "language": "Python",
+    "stars": 5331,
+    "forks": 1137,
+    "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+    "last_seen": "2026-11-15",
+    "trending_days": 3
+  },
+  {
     "name": "typst/typst",
     "url": "https://github.com/typst/typst",
     "language": "Rust",
@@ -6777,6 +6807,16 @@
     "forks": 781,
     "description": "A minimal GPU design in Verilog to learn how GPUs work from the ground up",
     "last_seen": "2026-01-14",
+    "trending_days": 2
+  },
+  {
+    "name": "ag-ui-protocol/ag-ui",
+    "url": "https://github.com/ag-ui-protocol/ag-ui",
+    "language": "TypeScript",
+    "stars": 17685,
+    "forks": 1790,
+    "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+    "last_seen": "2026-11-15",
     "trending_days": 2
   },
   {
@@ -7057,16 +7097,6 @@
     "forks": 1052,
     "description": "AWS MCP Servers — helping you get the most out of AWS, wherever you use MCP.",
     "last_seen": "2025-11-09",
-    "trending_days": 2
-  },
-  {
-    "name": "backnotprop/plannotator",
-    "url": "https://github.com/backnotprop/plannotator",
-    "language": "TypeScript",
-    "stars": 10863,
-    "forks": 807,
-    "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-    "last_seen": "2026-11-14",
     "trending_days": 2
   },
   {
@@ -7847,16 +7877,6 @@
     "forks": 14787,
     "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
     "last_seen": "2026-10-24",
-    "trending_days": 2
-  },
-  {
-    "name": "google-labs-code/stitch-skills",
-    "url": "https://github.com/google-labs-code/stitch-skills",
-    "language": "TypeScript",
-    "stars": 6897,
-    "forks": 939,
-    "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-    "last_seen": "2026-07-11",
     "trending_days": 2
   },
   {
@@ -9440,6 +9460,16 @@
     "trending_days": 2
   },
   {
+    "name": "Tencent/LoopForge",
+    "url": "https://github.com/tencent/loopforge",
+    "language": "Go",
+    "stars": 1330,
+    "forks": 260,
+    "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
+    "last_seen": "2026-11-15",
+    "trending_days": 2
+  },
+  {
     "name": "Tencent/teamai-cli",
     "url": "https://github.com/tencent/teamai-cli",
     "language": "TypeScript",
@@ -9557,16 +9587,6 @@
     "forks": 1086,
     "description": "Download Udemy and Hotmart courses, YouTube videos, music and books — 1,800+ sites, no terminal. Free open-source desktop app for Windows, macOS and Linux, with a built-in course player, PDF/EPUB reader and music library. Powered by yt-dlp. Your files stay on your computer.",
     "last_seen": "2026-09-15",
-    "trending_days": 2
-  },
-  {
-    "name": "tradermonty/claude-trading-skills",
-    "url": "https://github.com/tradermonty/claude-trading-skills",
-    "language": "Python",
-    "stars": 4587,
-    "forks": 901,
-    "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-    "last_seen": "2026-11-14",
     "trending_days": 2
   },
   {
@@ -9987,16 +10007,6 @@
     "forks": 4133,
     "description": "VIP cheatsheets for Stanford's CS 229 Machine Learning",
     "last_seen": "2025-12-19",
-    "trending_days": 1
-  },
-  {
-    "name": "ag-ui-protocol/ag-ui",
-    "url": "https://github.com/ag-ui-protocol/ag-ui",
-    "language": "TypeScript",
-    "stars": 17248,
-    "forks": 1582,
-    "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
-    "last_seen": "2026-11-14",
     "trending_days": 1
   },
   {
@@ -10957,6 +10967,16 @@
     "forks": 1438,
     "description": "OBLITERATE THE CHAINS THAT BIND YOU",
     "last_seen": "2026-08-22",
+    "trending_days": 1
+  },
+  {
+    "name": "elementalsouls/Claude-BugHunter",
+    "url": "https://github.com/elementalsouls/claude-bughunter",
+    "language": "Python",
+    "stars": 6105,
+    "forks": 938,
+    "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+    "last_seen": "2026-11-15",
     "trending_days": 1
   },
   {
@@ -12760,6 +12780,16 @@
     "trending_days": 1
   },
   {
+    "name": "NVIDIA/SkillEvaluator",
+    "url": "https://github.com/nvidia/skillevaluator",
+    "language": "Python",
+    "stars": 1465,
+    "forks": 197,
+    "description": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+    "last_seen": "2026-11-15",
+    "trending_days": 1
+  },
+  {
     "name": "NVlabs/alpasim",
     "url": "https://github.com/nvlabs/alpasim",
     "language": "Python",
@@ -13697,16 +13727,6 @@
     "forks": 994,
     "description": "None",
     "last_seen": "2026-02-13",
-    "trending_days": 1
-  },
-  {
-    "name": "Tencent/LoopForge",
-    "url": "https://github.com/tencent/loopforge",
-    "language": "Go",
-    "stars": 784,
-    "forks": 119,
-    "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
-    "last_seen": "2026-11-14",
     "trending_days": 1
   },
   {
