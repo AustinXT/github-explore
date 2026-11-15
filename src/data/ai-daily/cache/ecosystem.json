@@ -1,27 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-11-14",
+    "last_run": "2026-11-15",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/k-dense-ai/scientific-agent-skills",
-      "canonical_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
-      "event_date": "2026-10-15",
-      "date_seen": "2026-10-15"
-    },
-    {
-      "key": "github.com/vxcontrol/pentagi",
-      "canonical_url": "https://github.com/vxcontrol/pentagi",
-      "event_date": "2026-10-15",
-      "date_seen": "2026-10-15"
-    },
-    {
-      "key": "github.com/ifixai-ai/ifixai",
-      "canonical_url": "https://github.com/ifixai-ai/iFixAi",
-      "event_date": "2026-10-15",
-      "date_seen": "2026-10-15"
-    },
     {
       "key": "github.com/ruvnet/ruflo",
       "canonical_url": "https://github.com/ruvnet/ruflo",
@@ -1749,6 +1731,42 @@
       "canonical_url": "https://huggingface.co/blog/allenai/xybench",
       "event_date": "2026-11-13",
       "date_seen": "2026-11-14"
+    },
+    {
+      "key": "github.com/ag-ui-protocol/ag-ui",
+      "canonical_url": "https://github.com/ag-ui-protocol/ag-ui",
+      "event_date": "2026-11-14",
+      "date_seen": "2026-11-15"
+    },
+    {
+      "key": "github.com/dream-num/univer",
+      "canonical_url": "https://github.com/dream-num/univer",
+      "event_date": "2026-11-14",
+      "date_seen": "2026-11-15"
+    },
+    {
+      "key": "github.com/juliusbrussee/caveman",
+      "canonical_url": "https://github.com/JuliusBrussee/caveman",
+      "event_date": "2026-11-14",
+      "date_seen": "2026-11-15"
+    },
+    {
+      "key": "github.com/tencent/loopforge",
+      "canonical_url": "https://github.com/Tencent/LoopForge",
+      "event_date": "2026-11-14",
+      "date_seen": "2026-11-15"
+    },
+    {
+      "key": "github.com/berriai/litellm",
+      "canonical_url": "https://github.com/BerriAI/litellm",
+      "event_date": "2026-11-14",
+      "date_seen": "2026-11-15"
+    },
+    {
+      "key": "github.com/lexifina/global-law",
+      "canonical_url": "https://github.com/lexifina/global-law",
+      "event_date": "2026-11-14",
+      "date_seen": "2026-11-15"
     }
   ]
 }
