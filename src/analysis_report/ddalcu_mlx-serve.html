@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ddalcu_mlx-serve</title>
+<style>
+/* ====== 微信公众号排版 CSS ====== */
+
+body {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #3e3e3e;
+    background: #fff;
+}
+
+/* 正文段落 */
+p {
+    font-size: 15px !important;
+    line-height: 2 !important;
+    margin: 0 !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+    padding-right: 1.2em !important;
+    padding-left: 1.2em !important;
+    text-align: justify !important;
+}
+p + p {
+    margin-top: 0 !important;
+}
+
+/* 标题 */
+h1 {
+    font-size: 20px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 16px 0 !important;
+    padding: 0 !important;
+}
+h2 {
+    font-size: 18px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 24px 0 !important;
+    padding: 0 !important;
+}
+h3 {
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+    text-align: left !important;
+    margin: 16px 0 16px 0 !important;
+    padding: 0 0 0 1.2em !important;
+}
+h4 {
+    font-size: 15px !important;
+    color: rgb(0, 122, 170) !important;
+    margin: 12px 0 8px 0 !important;
+    padding: 0 !important;
+}
+
+/* 列表 */
+ul,
+ol {
+    padding-left: 2em !important;
+    margin: 1em 0 !important;
+    font-size: 15px !important;
+}
+li {
+    margin: 0.5em 0 !important;
+    line-height: 1.8em !important;
+    font-size: 15px !important;
+    color: #3e3e3e !important;
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    margin: 0 !important;
+    padding-left: 1.2em !important;
+}
+
+/* 引用 */
+blockquote {
+    border-left: 4px solid #888 !important;
+    padding: 8px 16px !important;
+    margin: 1em 0 !important;
+    color: #666 !important;
+    background: #f9f9f9 !important;
+}
+blockquote > p {
+    margin: 0.5em 0 !important;
+    padding: 0 !important;
+}
+blockquote::before,
+blockquote::after {
+    content: none !important;
+}
+
+/* 代码块 */
+pre {
+    font-size: 14px !important;
+    line-height: 1.4em !important;
+    color: #3e3e3e !important;
+    background: #f8f8f8 !important;
+    padding: 12px 16px !important;
+    border-radius: 4px !important;
+    overflow: auto !important;
+    margin: 1em 0 !important;
+}
+
+/* 脚注 */
+.footnotes {
+    font-size: 11px !important;
+    color: #666 !important;
+    line-height: 1.2 !important;
+    margin: 8px 0 0 0 !important;
+    padding: 4px 0 0 0 !important;
+    border-top: 1px solid #eee !important;
+}
+.footnotes p {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #666 !important;
+}
+
+/* 上标 */
+sup {
+    font-size: 0.75em !important;
+    vertical-align: super !important;
+    color: #e51f42 !important;
+    margin: 0 2px !important;
+}
+/* 表格 */
+table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 1em 0 !important;
+    font-size: 14px !important;
+}
+th, td {
+    border: 1px solid #ddd !important;
+    padding: 8px 12px !important;
+    text-align: left !important;
+    line-height: 1.6 !important;
+}
+th {
+    background: #f5f5f5 !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+}
+td {
+    color: #3e3e3e !important;
+}
+
+/* 图片 */
+img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 1em auto !important;
+    border-radius: 4px !important;
+}
+
+/* 链接 */
+a {
+    color: rgb(0, 122, 170) !important;
+    text-decoration: none !important;
+}
+
+/* 行内代码 */
+code {
+    background: #f4f4f4 !important;
+    color: #c7254e !important;
+    padding: 2px 4px !important;
+    border-radius: 3px !important;
+    font-size: 90% !important;
+}
+pre code {
+    background: transparent !important;
+    color: inherit !important;
+    padding: 0 !important;
+}
+
+/* 加粗 */
+strong {
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+}
+
+/* 分隔线 */
+hr {
+    border: none !important;
+    border-top: 1px solid #ddd !important;
+    margin: 1.5em 0 !important;
+}
+
+</style>
+</head>
+<body>
+
+<blockquote>
+<p>GitHub: <a href="https://github.com/ddalcu/mlx-serve">https://github.com/ddalcu/mlx-serve</a></p>
+</blockquote>
+<h2>一句话总结</h2>
+<p>一个独立开发者用 9 个月、80 万行 Zig 写出的 macOS 原生本地 AI 推理栈，核心创新不是速度，而是<strong>把「我保证了什么」和「我没保证什么」都做成可执行、可审计的公开契约</strong>——60 个模型插件里只有 3 个声明支持投机解码等价、0 个声明支持并发等价，这份诚实的缺陷清单反而成了它在本地 AI 赛道最硬的护城河。</p>
+<h2>值得关注的理由</h2>
+<ol><li><strong>它是目前唯一能「一个环境变量」把 Claude Code 变成全本地的方案</strong>。<code>src/host/api/anthropic.zig</code>（1162 行）+ <code>anthropic_stream.zig</code>（1002 行）是一等公民级实现，而不是兼容层里的顺带支持；Ollama、omlx、vMLX 全都没有 Anthropic Messages API，对 Claude Code 用户是硬伤。</li><li><strong>「精确性契约」把一致性保证做成了接口，而不是文档里的一句话</strong>。投机解码、缓存恢复、并发批处理三条契约写在 <code>src/abi/exactness_test.zig</code> 里，由每个插件<strong>自己声明</strong>能过哪几条，未声明的进公开黑名单。这个「能力声明式契约」的思路可迁移到任何「有多个加速路径但输出必须一致」的系统。</li><li><strong>它是 AI 协作工程的一个真实样本</strong>。80 万行 Zig + 17 万行 Swift + 60 个插件 + 30 位外部贡献者，主作者靠一套分层压缩的 <code>AGENTS.md</code> 契约体系维持日更级发版节奏——<code>AGENTS.md</code> / <code>CLAUDE.md</code> / <code>tests/CLAUDE.md</code> / <code>docs/gotchas/</code> 四个知识载体合计被修改 1209 次，<strong>比源码热点文件还多</strong>。</li></ol>
+<h2>项目展示</h2>
+<img alt="MLX-Serve header" src="https://raw.githubusercontent.com/ddalcu/mlx-serve/main/website/assets/mlx-serve-header.jpg"/><p>
+一个原生 App + 一个本地 Server + 一套兼容 API 的整体定位</p>
+<img alt="MLX-Serve 主应用界面" src="https://mlxserve.com/screenshots/app-main.jpg"/><p>
+聊天窗口、菜单栏面板、已加载模型与媒体生成面板，全部收在原生 App 内（无 Python、无 Electron）</p>
+<img alt="Agent 工具调用可视图" src="https://mlxserve.com/screenshots/agent-tool-calls.png"/><p>
+Agent 执行步骤可见，这是它把服务端拉到「产品层」的证据</p>
+<img alt="Chat, image and Claude Code on one Mac" src="https://raw.githubusercontent.com/ddalcu/mlx-serve/main/website/assets/demo.gif"/><p>
+同一台 Mac 上跑聊天、图像生成与 Claude Code 的演示</p>
+<img alt="Claude Code 终端" src="https://mlxserve.com/screenshots/claude-code-terminal.png"/><p>
+本地跑 coding agent 的实证——改一个 <code>ANTHROPIC_BASE_URL</code> 即可</p>
+<blockquote>
+<p>注：仓库内 4 张性能对比图（<code>perf-vs-engines-*.png</code>、<code>perf-vs-lmstudio-*.png</code>）<strong>未收录</strong>，原因见下文「竞争风险」——均为厂商自测数据，且第三方独立复现得出相反结论。</p>
+</blockquote>
+<h2>项目画像</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub</td>
+<td><a href="https://github.com/ddalcu/mlx-serve">https://github.com/ddalcu/mlx-serve</a></td>
+</tr>
+<tr>
+<td>Star / Fork</td>
+<td>2,476 / 264（fork/star 比 10.7%，Ollama 约 5%，说明 star 带真实部署意图）</td>
+</tr>
+<tr>
+<td>代码行数</td>
+<td>799,729（Zig 61.6%、Swift 18.0%、Shell 4.9%、C++ 4.1%、Python 3.9%、Metal 1.9%），2,911 文件</td>
+</tr>
+<tr>
+<td>项目年龄</td>
+<td>8.9 个月（2026-02-16 首次提交 → 2026-11-16）</td>
+</tr>
+<tr>
+<td>开发阶段</td>
+<td>密集开发（近 30 天 550 次提交，近 90 天 1,110 次，2026 年 10 月单月 654 次）</td>
+</tr>
+<tr>
+<td>贡献模式</td>
+<td>独立开发主导 + 社区协作（GitHub API 记 30 位贡献者，git 身份 98 个；主作者 <code>ddalcu</code> + <code>David Dalcu</code> 双账号合计占 61%）</td>
+</tr>
+<tr>
+<td>热度定位</td>
+<td>中等热度（9 个月 0 → 2,476 star，细分赛道头名，已进 GitHub 趋势榜）</td>
+</tr>
+<tr>
+<td>质量评级</td>
+<td>代码[优秀] 文档[优秀] 测试[充分]</td>
+</tr>
+<tr>
+<td>许可证</td>
+<td>MIT（核心）+ Apache-2.0（vendored 代码），43 KB <code>NOTICE</code> 逐一列出第三方归属；GitHub 因混合许可标为 Other</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>补充：88 个 tag / 85 个 Release，约每 3 天一版，采用日历版本（v26.11.2 = 2026 年 11 月第 2 号构建），另有独立 <code>-pre-release</code> 通道。</p>
+</blockquote>
+<h2>作者视角：为什么存在这个项目</h2>
+<h3>创始人/作者背景</h3>
+<p>David Dalcu（<code>ddalcu</code>），15.4 年 GitHub 老账号，48 个公开仓库，个人开发者，无公司归属，收款方式是 GitHub Sponsors + Buy Me a Coffee。</p>
+<p>他的历史清晰地分成三条线：<strong>Zig 系统编程</strong>（<code>zigui</code> 103★）、<strong>Swift macOS 原生</strong>（<code>itherm</code>、<code>mdocker</code>）、<strong>LLM 推理引擎基准</strong>（<code>llmprobe</code> 56★）。这个组合决定了他是谁——<strong>先做测量工具，再写被测引擎的人</strong>。<code>mlx-serve</code> 仓库里的 <code>tests/bench.sh</code> 跑的是自己的 server，<code>--url</code> 参数跑的是别人起的 server，用的是同一套 llmprobe 协议。作者把自己也放进了被测系统里。</p>
+<p>另一个关键信号：他长期把 <strong>Claude Code 当主力开发工具</strong>。仓库内嵌 <code>.claude/</code>、<code>CLAUDE.md</code>、<code>skills/</code>，以及 <code>/release</code>、<code>/bench</code>、<code>/plugin</code> 三条自定义 slash command。这不是「用 AI 写了个玩具」，而是把 AI agent 深度嵌进了一个 80 万行的工程系统——这一点后面会看到是它能维持发版速度的核心原因。</p>
+<h3>问题判断</h3>
+<p>作者看到的问题不是「LLM 服务功能不够」，而是<strong>没有一个端口能同时满足所有客户端</strong>。</p>
+<p>他拆成三件事：给普通用户的原生 App（DMG 拖进 Applications 就能用）、自动启动的本地 Server、以及一套让现成工具零改动接入的兼容 API。</p>
+<p>时机为什么是现在？三个条件同时成立：</p>
+<ul><li><strong>MLX 成熟了</strong>，且作者自己编译 MLX 源码（0.32.5 pre-release）并实现了 <strong>NAX（Neural Accelerator）kernel</strong>——这是 2026 年才有的条件，2024 年做不了；</li><li><strong>Apple Silicon 的统一内存</strong>让「内存带宽上限即解码上限」这个物理推导成立，他在《Why MLX-Serve is Fast》里明确按带宽算：4-bit 27B 约 15 GB，M4 Max 546 GB/s，读一次约 28 ms，朴素解码上限约 36 tok/s，实测 29 tok/s——<strong>他的性能观是物理约束驱动的，不是跑分驱动的</strong>；</li><li><strong>Qwen3.5/3.6/3.8 的 MTP head</strong> 出现，让投机解码从「要另带一个 draft 模型」变成「模型自带 head」。</li></ul>
+<h3>解法哲学</h3>
+<p><code>AGENTS.md</code> 的原话：<em>「KISS, DRY, YAGNI; simple is not easy: the elegant solution, minimal and fast code, no speculative abstractions or knobs.」</em></p>
+<p>落地成四条硬约束：</p>
+<ul><li><strong>精确性优先于速度</strong>。投机解码必须与串行解码输出等价（用 <code>CommittedArgmax</code> 类型 + 真错误检查来保证，不是靠 assert）；量化必须做 KLD/top-1 打分；<strong>不支持的量化布局按名字拒绝，绝不悄悄变慢</strong>（原文：<em>a layout left out is refused by name, never silently slower</em>）。</li><li><strong>默认即最快</strong>。<code>docs/performance.md</code>：<em>「The defaults are already the fast path.」</em> 每个 speed knob 都被标注为「内存换速度」的取舍，并写清什么时候该翻它。</li><li><strong>拒绝投机性抽象</strong>。<code>--max-concurrent</code> 只做一件事；<code>--timeout</code> 是 stall timeout 不是 wall-clock timeout；env lever 只为「有两个值得比较的分支」的路径而设，且每个都要在 <code>src/env.zig</code> 注册（kind / owner / since）。</li><li><strong>明确不做</strong>。不做 SaaS / 企业版——README 写着 <em>「Nothing is paywalled: it's MIT now and stays MIT.」</em>；不做 Python 生态兼容（构建里 no Python anywhere）；不做 admin surface、不做多租户、不做用户系统。</li></ul>
+<h3>战略图景</h3>
+<p>这是作者的核心产品，不是基础设施，但它同时扮演三种角色：面向终端用户的产品（App + DMG + Homebrew cask + iPhone 客户端 + 官网 + llm-tier-list）、面向开发者的协议服务端、以及他自己 <code>llmprobe</code> 的被测端。</p>
+<p><strong>商业化意图：明确拒绝</strong>。MIT + Apache-2.0（vendored）+ 43 KB 的 <code>NOTICE</code> 逐一列出第三方代码归属。</p>
+<p><strong>开源策略：genuinely open，但「信任」是刻意经营出来的。</strong> 这里有一个值得单独强调的机制——<strong>公开自我证伪</strong>：</p>
+<ul><li>Issue <a href="https://github.com/ddalcu/mlx-serve/issues/366">#366</a>（全项目最活跃，31 条评论）里，作者公开推翻了自己「MoE 占 95.7% 耗时」的结论，修正为 SDPA 36% / MoE GEMM 22% / GDN 8%（MoE 整体约 31%），并写下方法论教训：pip 装的 MLX ≠ 自链接的 libmlx；长 HTTP 测量随 GPU 频率与温度漂移，小差异常是噪声。</li><li><code>docs/known-issues.md</code> 是一份<strong>面向外部审计的缺陷清单</strong>，明写哪些插件不满足哪条精确性契约（20+ 个插件）、哪些已知分歧、哪些仍是 bug。</li></ul>
+<p>一个能公开列出自己 20+ 插件不满足精确性契约的项目，比一个声称「完全一致」的项目更值得信任。<strong>这可能是本项目最持久的护城河。</strong></p>
+<h2>核心价值提炼</h2>
+<h3>创新之处</h3>
+<p>按新颖度 × 实用性排序：</p>
+<p><strong>1. 精确性契约（Exactness Contracts）—— 能力声明式的一致性保证</strong>（新颖度 4/5 · 实用性 5/5 · 可迁移性 5/5）</p>
+<p>三条契约定义在 <code>src/abi/exactness_test.zig</code>，是 <strong>ABI 的一部分</strong>，不是测试用例：
+- <code>exact_drafted</code>：投机解码输出 == <code>Request.no_drafts</code> 的输出
+- <code>exact_resumed</code>：从 RAM 缓存 / SSD 跨重启恢复的输出 == 冷启动输出
+- <code>exact_concurrent</code>：2..8 路并发批处理中每一路 == 它单独跑</p>
+<p>每个插件在 <code>Caps</code>（<code>abi/plugin.zig</code>）里<strong>声明</strong>自己能过哪几条；测试框架只跑声明的，未声明的进公开黑名单。双臂验证（greedy temp=0 + 固定 seed <code>0x5eed</code> 的 seeded sampling）。</p>
+<p>代价是极大的诚实度成本：60 个插件里只有 3 个声明 drafted、2 个声明 resumed、<strong>0 个声明 concurrent</strong>。但换来的洞见是——<strong>「我保证了 X」应该做成可执行的接口，而不是文档里的一句话</strong>。</p>
+<p><strong>2. 内存归属残差（Unattributed Memory Residue）</strong>（新颖度 4/5 · 实用性 4/5 · 可迁移性 5/5）</p>
+<p><code>metrics.zig</code> 同时暴露两个方向的残差：</p>
+<pre><code>mlx_unattributed_bytes = active − (weights_live + (hot_cache − checked_out) + live_kv + parked)
+mlx_overbilled_bytes   = owned − active
+</code></pre>
+<p>后者尤其精妙——共享 buffer 被多份账单重复计费这件「好消息」，因为它<strong>掩盖</strong>了等量的无主内存，必须显式建模出来。多数内存池只报「used」，报不出「used 但没人认领」；这个指标直接把 #1071/#1079 从「玄学 bug」变成可被 Prometheus 采集的 gauge。</p>
+<p><strong>3. Padding-Waste 准入（而不是 Length-Ratio 准入）</strong>（新颖度 4/5 · 实用性 4/5 · 可迁移性 5/5）</p>
+<p>批处理组内每个 slot 的 KV 要 pad 到组内最长。100k 的 slot + 三个 1k 的 slot，在 qwen3_5 上每层要 materialize 约 410 MB、16 层约 6.5 GB，<strong>且没有任何账单承认这笔钱</strong>——它是 per-tick transient，准入估算器看不见。失败模式是<strong>不可捕获的 Metal OOM</strong>。</p>
+<p>方案：<code>batching/verdict.zig</code> 的 <code>batchedKvKeepCount</code> 保留升序长度的一个前缀，使 padded tensor 字节 ≤ <code>MAX_PAD_WASTE</code>(1.5) × 实际需要字节。掉队的<strong>必然是最长的 slot</strong>（它们支配 kv_max），这些 slot 退化为串行但每个仍前进。1.5 这个上限必须 &lt; 2.0，因为「1 token slot 挨着 200k slot」正好 pad 到 2x，是 N=2 的最坏情况。</p>
+<p><strong>4. Workload-Fair LRU（按 cache_key 分组的驱逐）</strong>（新颖度 4/5 · 实用性 4/5 · 可迁移性 5/5）</p>
+<p>一个 agent 对话 + 一个文档批量扫描共用 <code>LoadedModel.prefix_cache</code>，纯 LRU 让扫描每次都把对话踢掉。方案：每个 entry 带一个 <code>cache_key</code>，取自 <code>prompt_cache_key</code>（OpenAI，Codex 会发）→ <code>metadata.user_id</code>（Anthropic，Claude Code 把 session id 嵌在里面）→ system prompt → 0。驱逐时<strong>保留条目数最多的那个 key 组，在组内取 LRU</strong>，组间平局退化为纯 LRU。</p>
+<p>妙处在于它<strong>复用了客户端已经在发、但通常被忽略的字段</strong>。这是多租户 KV cache 公平性问题，普遍存在但很少被正确处理。</p>
+<p><strong>5. Kernel Contract 五道门 + Planted Controls</strong>（新颖度 4/5 · 实用性 4/5 · 可迁移性 4/5）</p>
+<p>手写 Metal/CUDA kernel 是最容易静默出错的地方，而 CI 的 macos-26 runner <strong>没有真 GPU</strong>，kernel 测试会被跳过——作者明说「Green CI does not run a kernel」。于是每个 kernel 要注册一份 contract，跑五道门：</p>
+<ol><li>非有限值的输出分类必须等于 float64 参考</li><li>重复运行 5 次字节相同 + 输入的 64 个守卫字节未被改写 + 输出预置为 NaN（<code>Geometry.poison</code>，未写的元素会显形）</li><li>shape 覆盖（served shapes + 每个 tiled 维度的 at least / tile−step / tile / tile+step / largest）+ 与被替代 op chain 的 bit-equal</li><li>fp32 累加顺序无关性</li><li>每个 shape 的线程数与 threadgroup 字节对 M1..M5</li></ol>
+<p>并埋入<strong>必定失败的 planted control</strong> 来证明测试本身有效。失败处理原则写得极硬：<em>「Never widen a bound or drop a shape to pass.」</em></p>
+<p><strong>6. <code>CommittedArgmax</code> —— 用类型禁止非法提交</strong>（新颖度 4/5 · 实用性 4/5 · 可迁移性 4/5）</p>
+<p>投机验证的 argmax 只能通过 <code>verifyArgmax</code> 构造（它保证 reserved-id mask 被应用），所有 commit 站点只接受 <code>CommittedArgmax</code> 类型，因此裸 <code>mlx_argmax_axis</code> <strong>无法</strong>走到 commit。同时 <code>specDecodeUnsupported</code> 用真错误检查替代 <code>std.debug.assert</code>——因为 assert 在 ReleaseFast 下会被编译掉（issue #97），那会导致「约束请求走到投机步骤，把占位 token 当成真实 commit，静默流出 schema 外的 200 响应」。</p>
+<p><strong>7. 翻译层单点化（Canonical Shape + Translate-In / Reframe-Out）</strong>（新颖度 3/5 · 实用性 5/5 · 可迁移性 5/5）</p>
+<p><code>src/host/api/ollama/translate.zig</code> 明确写着 <strong>「NO duplicated inference pipeline」</strong>：Ollama 请求被翻译成 OpenAI request shape 喂给<strong>已存在的</strong> <code>/v1</code> handler，handler 的 SSE 字节流再被重组成 Ollama NDJSON。OpenAI 是内部规范形状，Ollama 是纯翻译层，Anthropic 反过来是一等公民（因为 Claude Code 是第一优先级用户）。</p>
+<p>这个设计里最容易被忽视但最重要的部分是：<strong>不支持的语义明文记录，而不是静默忽略</strong>（<code>Intentional gaps (documented, not silent)</code>）。</p>
+<p><strong>8. 三层知识分离（Rule / Story / Known-Issue）</strong>（新颖度 4/5 · 实用性 5/5 · 可迁移性 5/5）</p>
+<ul><li><code>AGENTS.md</code> 只放规则，<strong>每条 ≤ 3 行</strong>，门槛是「一个我们真踩到过、别人还会再踩的真 bug 或强 gotcha」；根文件<strong>硬性 &lt; 30 KB</strong></li><li><code>docs/gotchas/</code>（4,119 行战史）每条 = 缺陷 + 成因 + 修复 + 守卫，<strong>≤ 20 行</strong>，「one story per gotcha」</li><li><code>docs/known-issues.md</code> 放公开的未修缺陷</li><li>下钻式分层：<code>src/host/</code>、<code>src/engines/mlx/</code>、<code>src/plugins/&lt;name&gt;/</code> 各有自己的 <code>AGENTS.md</code>，「detail lives one hop away」</li></ul>
+<p>配套两条制度化约束：<strong>「类缺陷配类守卫」</strong>（一次线上故障暴露一个类时，必须同时交付实例回归测试 + 语料/不变量 + 一条规则 + 一篇战史）和<strong>禁止 source-scan 测试</strong>（<em>「they pin text, not behaviour, and pass against their own needles」</em>）。</p>
+<h3>可复用的模式与技巧</h3>
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>简述</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Canonical Shape + Reframe</td>
+<td>N 个外部协议映射到一个内部规范形状，请求翻译进去、响应重新封装出来，<strong>不新增推理路径</strong></td>
+<td>多协议 API 网关、多租户请求整形</td>
+</tr>
+<tr>
+<td>Capability-Declared Contracts</td>
+<td>被测者自己声明它满足哪些一致性契约，框架统一执行，未声明的进公开黑名单</td>
+<td>推理引擎、数据库、CDN、多路径渲染管线</td>
+</tr>
+<tr>
+<td>Owner Attribution Residue</td>
+<td>同时暴露「活跃量 − 认领量」和「认领量 − 活跃量」两个残差</td>
+<td>GPU 内存池、对象存储、连接池</td>
+</tr>
+<tr>
+<td>Padding-Waste Admission</td>
+<td>批处理准入阈值绑在<strong>真正浪费的量</strong>上，掉队者选贡献 max 的那些，保证每个 slot 仍前进</td>
+<td>连续批处理、变长序列并行</td>
+</tr>
+<tr>
+<td>Workload-Fair Grouped LRU</td>
+<td>按客户端提供的 key 分组，驱逐在条目数最多的组内做 LRU</td>
+<td>共享 prefix cache / HTTP cache / CDN</td>
+</tr>
+<tr>
+<td>Size-First ABI Struct</td>
+<td>跨 ABI 的 struct 以 <code>size</code> 开头，指针传递只增长尾部，按值传递按 version 冻结</td>
+<td>任何长期兼容的 C ABI</td>
+</tr>
+<tr>
+<td>Name-Not-Address Identity</td>
+<td>在代码可能被多份编译的架构下，跨单元对象的身份必须来自它携带的值，不是地址</td>
+<td>插件 / 单元隔离架构</td>
+</tr>
+<tr>
+<td>Rule / Story / Known-Issue 三层分离</td>
+<td>规则 ≤3 行 + 战史 ≤20 行 + 公开缺陷清单，根规则文件有硬性体积上限</td>
+<td>长期维护的大仓库，尤其 AI 协作时代</td>
+</tr>
+<tr>
+<td>Class-Bug Gets Class-Guards</td>
+<td>一次线上故障暴露一个「类」时，同时交付实例回归测试 + 语料 + 规则 + 战史</td>
+<td>任何有回归历史的系统</td>
+</tr>
+<tr>
+<td>Planted Controls</td>
+<td>在自研验证框架里埋必定失败的样本，证明测试真的在测</td>
+<td>kernel contract、fuzz、property test</td>
+</tr>
+<tr>
+<td>Refuse-By-Name</td>
+<td>不支持的量化布局、能力、协议版本、ABI 版本一律按名字明确拒绝，绝不降级、绝不静默变慢</td>
+<td>任何能力协商场景</td>
+</tr>
+<tr>
+<td>Bench Methodology as a Skill</td>
+<td>把「比较陷阱」写成可执行清单（热漂移、电源模式、shell word-split、静默走快路径、spec cell 方差），并规定每次引用性能数字必须点名对手引擎</td>
+<td>需要长期可信性能对比的团队</td>
+</tr>
+</tbody>
+</table>
+<h3>关键设计决策</h3>
+<p><strong>① 路由存在性与模型状态解耦</strong></p>
+<p>作者写得很直白：<em>「without this an unknown path on a server with no default model returned 503 'No default model configured' instead of 404 — and a path's existence has nothing to do with model state.」</em></p>
+<p>方案：<code>router.zig</code> 维护一张 <code>ROUTE_PATHS</code> 字面量表，<code>routeExists()</code> 先于 model resolution 运行；每个 dispatch 比较必须过 <code>isRoute</code>，<strong>漏一个路径就编译不过</strong>。
+Trade-off：新增端点要多改一处表。可迁移性：高。</p>
+<p><strong>② 5 个引擎，抽象边界画在「谁拥有 GPU」而不是「谁更快」</strong></p>
+<p><code>abi/engine.zig</code> 的 <code>Threading = enum(u8) { own_thread, host_gpu_thread }</code> 是第一条分界线。MLX 引擎必须跑在 host 的唯一 GPU 线程上（MLX 0.31.2 起 GPU stream 是 thread-local，权重绑定到第一个 <code>useCurrentThreadStream</code> 的线程）；有自己 GPU runtime 的引擎（ds4 / llama / ANE）自带线程，通过 <code>own_thread/book.zig</code> 的「请求簿」（queue order / cancel / status / close）实现同一份契约。</p>
+<p>Trade-off：五个适配器 × 一份 ABI = 五份适配代码。换来：用户手上的 GGUF 无论什么格式都能跑（<code>engine_pick.preferredEngine</code> 按 GGUF header 自动路由，split GGUF 永远给 llama.cpp，因为 ds4 会 <code>exit()</code>）。</p>
+<p><strong>③ 编译单元边界强制架构约束</strong></p>
+<p><code>src/host/AGENTS.md</code> 明确：<strong>「The host reaches the MLX engine only through <code>host/engines/mlx.zig</code>」</strong>——host 里不允许 <code>@import</code> 任何 <code>src/engines/</code> 的东西，引擎对象以不透明 handle 存储且只 null-check。理由是机械的：<em>「Under <code>-Dunits</code> the host unit sees those handles opaque, so a reach-in fails the build.」</em></p>
+<p><strong>用编译边界而不是 code review 来保证架构不腐化。</strong> 配套的 <code>Shared(T, name, init)</code> 解决「每个 unit 编译自己的一份代码副本，<code>pub var</code> 会分裂成多份状态」——host 持有存储，通过导出的 C 函数把地址交给 unit。这条规则的提炼来自一次真实 bug：qwen4 曾把 MTP rollback 捕获写进自己的副本，导致每个请求都失败，于是有了那句 <strong>「A table or function is told apart by a value it carries, never its address」</strong>。</p>
+<p><strong>④ Plugin ABI = extern struct + size-first + 按名字识别</strong></p>
+<p>四层设计：<code>abi/dylib.zig</code> 的 <code>Manifest</code> 只有一个导出符号 <code>mlx_serve_plugin</code>，声明 kind（model/media/quant/engine）、MLX pin、claims、fixture，<strong>版本协商失败按名字拒绝</strong>；<code>abi/host.zig</code> 给插件一张 Host 表（allocator / log / MLX error latch / kernel cache / levers / metrics / 内存上限），其中<strong>塞了一个真正的 <code>std.mem.Allocator</code></strong>，插件因此能用 Zig 标准库而不破坏 host 的记账；struct 以 <code>size</code> 开头做版本兼容；身份靠 <code>table.name</code> 而非地址。</p>
+<p>Trade-off：extern struct 没有 Zig 的类型安全，编译期检查全丢。换来：C / C++ / Rust 都能写插件（<code>include/mlx_serve_plugin.h</code> 是生成的 C 头）。</p>
+<p><strong>⑤ 推理线程是唯一 MLX 调用者（单写者）</strong></p>
+<p>原文：<em>「Inference thread is the SOLE mlx caller (even frees) — media gen posts to <code>gen_queue</code>, never a gpu mutex.」</em> 媒体生成不抢 GPU mutex，而是投递到 <code>gen_queue</code>，在 decode 的 step 之间跑。共享的 Transformer 只持有权重，每个 slot 的状态住在 <code>Slot</code> 自己身上。</p>
+<p>Trade-off：所有 GPU 工作必须排队，不能并行。换来：权重绑定确定 + 无竞态。</p>
+<p><strong>⑥ 依赖选择：Zig + 零第三方依赖</strong></p>
+<p><code>build.zig.zon</code> 的 <code>.dependencies = .{}</code> —— <strong>零第三方依赖</strong>。整个 60 万行 Zig 只有 Zig 标准库 + 3 个 vendored C/C++ 库（jinja.cpp、stb_image、libwebp）+ MLX/llama.cpp/ds4 子模块。</p>
+<p>Zig 的能力被精准地用在三处：<strong>comptime 反射</strong>（ABI extern struct 布局、插件注册表扫描、kernel contract 的 <code>metal.Launch</code> 描述符、MLX C API 的 FFI）、<strong>error union + error set</strong>、<strong>allocator 显式传递</strong>。</p>
+<p>其中最漂亮的一处是<strong>跨编译单元的错误按名字传递</strong>（<code>sdk/util/err_name.zig</code>）：不同单元的 error set 数值不通用，于是用「名字」这个语言无关的媒介解决——<code>req.error_name</code> → <code>loadErrorFromName</code>。<code>anyerror</code> 只出现 174 次，同时有 19 个具名 error set + 125 处 inline <code>error{...}</code>。</p>
+<p>Trade-off：放弃 Rust 的 crate 生态（nlohmann/json 是这么进来的）、放弃 Swift 的并发模型（Swift App 与 Zig Server 是两个进程，走 HTTP 而非共享内存）。</p>
+<p><strong>⑦ SDK 提升规则：「两个插件要就提升到 SDK」</strong></p>
+<p>AGENTS.md 明文：<em>「Code two plugins need belongs in the SDK」</em>——第二个插件想要某个 block 时，把它提升到 <code>sdk/blocks/</code>，<strong>带上两个插件的测试</strong>。刻意的一模型改动可以复制进插件，但必须标 <code>//! copied_from: &lt;sdk path&gt;</code>——<strong>是一笔待还的债</strong>。</p>
+<h2>竞品格局与定位</h2>
+<h3>竞品对比矩阵</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>mlx-serve</th>
+<th>LM Studio</th>
+<th>Ollama</th>
+<th>llama.cpp server</th>
+<th>omlx / vMLX</th>
+<th>mlx-lm serve（Apple 官方）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anthropic Messages API</td>
+<td>✅ 一等公民（2164 行独立实现）</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>原生 MLX 路径</td>
+<td>✅ 自建 MLX 0.32.5 + NAX kernel</td>
+<td>✅</td>
+<td>❌ 仅 GGUF</td>
+<td>❌ 仅 GGUF</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>连续批处理</td>
+<td>✅ <code>--max-concurrent</code></td>
+<td>✅</td>
+<td>❌</td>
+<td>✅ <code>--parallel</code></td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>持久 KV 缓存</td>
+<td>✅ RAM + SSD 两级 + 跨重启</td>
+<td>❌</td>
+<td>❌ 重启丢缓存</td>
+<td>手动 snapshot</td>
+<td>✅ omlx 跨重启</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>统一媒体生成（图像/视频/音乐/TTS/3D）</td>
+<td>✅ 同 registry / 同内存预算</td>
+<td>弱</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>原生 App</td>
+<td>✅ Swift 167,738 行</td>
+<td>✅ Electron GUI</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌ / omlx 有面板</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>开放 Plugin ABI</td>
+<td>✅ 4 张 extern 表 + C 头 + kit</td>
+<td>❌ 闭源</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌ 闭源</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>运行时依赖</td>
+<td>零第三方依赖 · 无 Python</td>
+<td>Electron</td>
+<td>Python 起家</td>
+<td>C++</td>
+<td>Swift/其他</td>
+<td><strong>需 Python</strong></td>
+</tr>
+<tr>
+<td>第三方独立基准</td>
+<td>llamaperf：<strong>慢 38%</strong>，持续负载后 <strong>-42.1%</strong></td>
+<td>llamaperf 更快且更稳</td>
+<td>—</td>
+<td>—</td>
+<td>omlx 自有 checkpoint 上 mlx-serve 仅 +1.6%</td>
+<td>—</td>
+</tr>
+<tr>
+<td>社区规模</td>
+<td>中（2,476★，30 位贡献者）</td>
+<td>大</td>
+<td>碾压级</td>
+<td>碾压级</td>
+<td>小</td>
+<td>官方生态</td>
+</tr>
+</tbody>
+</table>
+<h3>差异化护城河</h3>
+<ul><li><strong>技术护城河（中等偏强）：</strong>不是单个算法，而是<strong>测量 + 精确性 + 内存纪律</strong>三件套的<strong>制度</strong>组合。单个能力（投机解码、连续批处理、MLX 权重）竞品都能抄；但「公开自我证伪的测量学」+「精确性契约与公开未满足清单」+「内存归属残差仪表」这套制度很难抄——因为它要求作者<strong>持续公开自己的失败</strong>。</li><li><strong>信任护城河（强）：</strong>在本地 AI 这个充满「厂商自测」营销数字的领域，<strong>可被审计的诚实是稀缺资源</strong>。</li><li><strong>生态护城河（弱到中等）：</strong>60 个插件 + plugin kit + C 头文件 + <code>CommunityServe/plugins</code> 社区仓库是真实资产，但<strong>尚未形成网络效应</strong>——第三方评测明确说「生态远小于 Ollama」。</li><li><strong>分发护城河（中等）：</strong>Homebrew cask + DMG + iPhone App + 官网 llm-tier-list + 30 位贡献者。</li></ul>
+<h3>竞争风险</h3>
+<p><strong>1. 最可能的替代者：LM Studio（如果它加上 Anthropic API）</strong>
+它有 GUI 成熟度、社区体量，以及<strong>持续负载稳定性</strong>——llamaperf 实测 M3 Max / 4-bit / 128K 条件下 LM Studio 96.4 tok/s vs mlx-serve 59.6 tok/s（<strong>慢 38%</strong>），持续负载 8 分 4 秒后 mlx-serve <strong>再降 42.1%</strong>（59.6 → 34.5），LM Studio 基本持平。作者的对冲是 App + 媒体生成 + plugin ABI——LM Studio 不做媒体生成，也没有 plugin ABI。</p>
+<p><strong>2. 第二风险：Ollama 补上 <code>/v1/messages</code></strong>
+Ollama 有生态和模型目录，一旦补上 Anthropic API，它的分发优势会碾压 mlx-serve。</p>
+<p><strong>3. 第三风险：Apple 官方成熟</strong>
+如果 <code>mlx-lm serve</code> 官方版做到连续批处理和持久 KV，mlx-serve 的「官方基线之上」定位就失效了。作者的对冲是<strong>不等官方</strong>——这正是 2026 年 2 月起日更发版、1,428 次提交的原因。</p>
+<p><strong>4. 最隐蔽的风险：持续负载退化</strong></p>
+<p>llamaperf 的 -42.1% 如果被普遍复现，mlx-serve 在「生产级本地服务」这个维度上会被直接判死刑。<strong>而代码层面看，这个风险是真实存在的</strong>：<a href="https://github.com/ddalcu/mlx-serve/issues/1079">#1079</a> 的棘轮（30 小时内常驻地板从 99 GiB 爬到 157 GiB）与 <a href="https://github.com/ddalcu/mlx-serve/issues/1071">#1071</a> 的无主内存，都是长时间运行的内存泄漏形态。</p>
+<p><strong>关于作者自测与第三方基准矛盾的方法论诊断</strong></p>
+<p>作者自己把答案写在 <code>/bench</code> skill 里了。llamaperf 与作者自测的差异至少有六个可验证来源，其中<strong>四个作者自己写了</strong>：</p>
+<ol><li><strong>模型包不同</strong>——作者自标 caveat。llamaperf 测的 mlx-serve 用 <code>ddalcu/Qwen3.8-27B-MLX-Serve-4bit</code>，LM Studio 用 <code>Swift-1.5-Qwen3.8-27B-Splash</code>。作者的核心主张恰恰是「MLX 权重路径比 GGUF 快 1.5–2×」，若测的不是同一种权重，比较的根本不是同一个东西。而作者自测的 <code>docs/performance.md</code> 明确写「All four engines load the identical MLX weight files」。</li><li><strong>持续负载下的一次性编译与热漂移</strong>——作者写明必须 <code>--warmup-full</code>，否则「a build's first pass on a model carries its one-time Metal kernel compiles」；且 GPU 温度上升会让 MLX 降频，这对 M3 Max（无 NAX 加速的机型）尤其致命。</li><li><strong>投机解码是否开启</strong>——作者测「每个 cell 都是 mlx-serve 在它最快配置」且强制 <code>--mtp</code>；作者自己在 skill 里写明「35B-A3B reads 157 without and 191 with」，<strong>+22% 的差距仅来自 MTP 开关</strong>。</li><li><strong><code>--max-concurrent</code></strong>——作者默认 1（串行最优单请求延迟），开不开连续批处理测的是两个配置。</li></ol>
+<p><strong>结论</strong>：作者自测<strong>方法论上更强</strong>（同一权重文件、同一 llmprobe 协议、显式 warmup、显式记录启用的 spec mode、强制点名对手引擎），但<strong>样本量小</strong>；llamaperf <strong>方法论更弱但结论独立</strong>。两者不矛盾，最可能的真相是「作者的最快配置 vs llamaperf 的默认配置」加上持续负载下的热降频。<strong>但这不能豁免 #1079 的棘轮缺陷</strong>——即使性能差距源于测量条件，一个 30 小时棘轮到 157 GiB 的内存账本仍然是真实缺陷。</p>
+<h3>生态定位</h3>
+<ul><li>在 <strong>Apple Silicon 本地推理</strong>这条赛道上，它是<strong>最完整的产品化实现：</strong>唯一同时具备「原生 App + 统一媒体生成 + 开放 plugin ABI + Anthropic API」的项目。</li><li>在 <strong>OpenAI/Anthropic 兼容协议</strong>这个协议层上，它扮演<strong>「高性能本地后端」</strong>——一个能替换 OpenAI/Ollama 端点、但更好用的本地实现。</li><li>在<strong>测量学</strong>上，它在做一件<strong>社区级的事：</strong><code>llmprobe</code> + <code>bench.sh</code> + <code>benchmarks.md</code> + <code>/bench</code> skill 的陷阱清单，实际上是在为「本地 LLM 性能比较」建立一套社区标准。如果被广泛采纳，mlx-serve 的位置就不只是「一个服务」，而是<strong>「裁判」</strong>。</li><li>在 <strong>AI agent 基础设施</strong>上，它占住了一个<strong>未验证区：</strong>一篇第三方横评批评全赛道「为聊天优化而非为多轮 agent 优化」时<strong>完全没提 mlx-serve</strong>。它有 <code>launch claude/codex/opencode</code>、agent budget、sandbox、workload-fair 缓存——<strong>结构上它是最适合 agent 工作负载的本地服务，但没有任何第三方基准验证过这一点</strong>。这是它最可能的差异化突破点，也是最需要第三方复现的地方。</li></ul>
+<h2>套利机会分析</h2>
+<ul><li><strong>信息差：</strong><strong>有，但已过窗口期</strong>。fork/star 比 10.7%（Ollama 约 5%）说明 star 带真实部署意图；264 个 fork 里含大量外部 plugin 作者，生态黏性比 star 数体现得更强。但 9 个月做到 2,476 star、占据 MLX 原生服务端细分赛道头名，估值已被市场发现，不属于「低关注度洼地」。</li><li><strong>技术借鉴：</strong><strong>极高</strong>。精确性契约、内存归属残差、Padding-Waste 准入、Workload-Fair LRU、size-first ABI、三层知识分离——这六套模式<strong>与 MLX 无关</strong>，任何做推理服务、GPU 内存管理、多租户缓存、长周期 AI 协作开发的团队都能直接搬走。尤其是三层知识分离 + 「类缺陷配类守卫」，是本项目最值得直接照搬的成果。</li><li><strong>生态位：</strong>填的是<strong>「本地推理服务的协议兼容层 + 产品化外壳」</strong>这个空白——上游有 mlx-lm（参考实现，无产品）和 llama.cpp（引擎，无 App），下游有 LM Studio（产品，无协议开放性和媒体生成），mlx-serve 卡在中间。</li><li><strong>趋势判断：</strong><strong>后发优势明确</strong>。Apple Silicon 统一内存 + MLX 成熟 + MTP head 出现，三件事在 2026 年同时到位，才让「原生 MLX + 完整产品栈」成为可能。作者早 2 年做不了，早 2 年做也会像 vMLX 那样停在服务端。风险是<strong>高度押注 Apple</strong>——macOS 26.2+ 与 Apple Silicon 是硬门槛，Linux/Windows + NVIDIA 只是「每个 release 附带」的次要路径。</li></ul>
+<h2>风险与不足</h2>
+<ol><li><strong>持续负载稳定性未被验证，且代码层有对应证据</strong>。#1079 的 30 小时棘轮（99 → 157 GiB）与 #1071 的无主内存都以「not reproduced」关闭，根因未定位；作者的处理是「先加观测再定位」，但<strong>观测≠修复</strong>。这是评估其生产可用性时最该盯的地方。</li><li><strong>厂商性能数字不可单独引用</strong>。官网宣称对 LM Studio 0.4.15 有 81% geomean 提升（第三方复现为 48%），第三方反向测量则是 -38%。任何单点性能数字都必须先统一模型包再引用——<strong>包括本文引用的所有数字</strong>。</li><li><strong>精确性覆盖度很低</strong>。60 个插件里 0 个声明并发等价。也就是说在多路并发下，输出的数值一致性<strong>目前没有插件敢担保</strong>。</li><li><strong>refactor ≈ 0 的技术债</strong>。1,428 次提交里 feature : fix ≈ 1 : 2.2，refactor 几乎为零。80 万行体量下，这通常意味着<strong>结构债务在累积</strong>。</li><li><strong>平台绑定极深</strong>。macOS 26.2+ / Apple Silicon 是硬门槛；Linux/Windows + NVIDIA 支持虽在 CI 里，但只是次要路径。</li><li><strong>成熟度风险</strong>。第三方评测直接定性为「一个非常年轻的、几乎每日发版的项目，长期稳定性尚未确立」；GitHub 因混合许可（MIT + Apache-2.0 + NOTICE 三件套）标为 Other，会吓到企业用户。</li><li><strong>agent 工作负载未经第三方验证</strong>。最可能成为差异化的维度，恰恰是完全没有独立数据的维度。</li></ol>
+<h2>行动建议</h2>
+<ul><li><strong>如果你要用它：</strong></li><li><strong>适合：</strong>有 Apple Silicon Mac（macOS 26.2+）、要跑 Claude Code / Codex 等 coding agent 且要求数据完全不出机、要在一个进程里同时做 LLM + 图像/视频/音乐生成、用 MLX 原生权重（非 GGUF）。</li><li><strong>不适合：</strong>跨平台生产部署、多租户 SaaS、依赖并发数值一致性保证、要求「装上就稳定跑一周不涨内存」。</li><li><strong>选型对比：</strong>和 Ollama 比——只跑 chat 且不需要 Anthropic API，选 Ollama（生态碾压）；要在本地跑 Claude Code，选 mlx-serve，和 LM Studio 比——要 GUI 和成熟社区选 LM Studio，要协议开放性 + 媒体生成 + 插件选 mlx-serve。</li><li>
+<p><strong>部署建议：</strong>开启 <code>--warmup-full</code> 测性能（避免一次性 Metal 编译污染数据）；引用任何性能数字前统一模型包；长时间运行务必监控 <code>mlx_unattributed_bytes</code> 这个指标。</p>
+</li><li>
+<p><strong>如果你要学它</strong>（按性价比排序）：
+  1. <code>AGENTS.md</code> + <code>src/host/AGENTS.md</code> + <code>docs/gotchas/</code> — <strong>AI 协作工程的第一手范本</strong>，看「规则 ≤3 行 / 战史 ≤20 行 / 缺陷公开」的分离结构，以及「类缺陷配类守卫」的制度。
+  2. <code>src/abi/exactness_test.zig</code> + <code>src/abi/plugin.zig</code> — <strong>能力声明式契约</strong>的完整实现（capability token + 公开黑名单 + planted controls）。
+  3. <code>src/host/http/server.zig</code> — 一端口四协议的适配层，看 canonical shape + translate-in / reframe-out 的落地。
+  4. <code>src/host/gpu_thread/scheduler.zig</code> + <code>src/host/budget.zig</code> + <code>src/host/metrics.zig</code> — 内存仲裁、准入、驱逐三者的账本一致性，以及归属残差指标。
+  5. <code>src/engines/mlx/spec/verify.zig</code> — <code>CommittedArgmax</code> 类型化 capability token，以及「assert 在 ReleaseFast 下消失」这个通用陷阱的正解。
+  6. <code>src/host/batching/verdict.zig</code> — Padding-Waste 准入。
+  7. <code>src/sdk/testing/kernel_contract/</code> — GPU kernel 的五道门 + planted control。</p>
+</li><li>
+<p><strong>如果你要 fork 它：</strong></p>
+</li><li><strong>最值得先修的：</strong><code>reviseHotCacheBudgets</code> 的 <code>grow_only</code> 单向棘轮（#1079 的根因位置之一）——这是唯一一个「30 小时涨 58 GiB」的确定性缺陷。</li><li><strong>最值得加的：</strong>并发精确性契约的覆盖率——0 个插件声明 <code>exact_concurrent</code>，补齐这里等于直接打开并发场景。</li><li><strong>最值得拆的：</strong><code>src/plugins/</code> 60 个插件占 33% 的目录改动，是最大的维护成本；如果只跑 LLM，媒体生成插件（图像/视频/音乐/TTS/3D）是一个天然可裁剪的边界。</li><li><strong>最值得抄的：</strong><code>scripts/lint.py --strict</code> + <code>scripts/unit_globals.py</code> + <code>scripts/unit_closure.py</code> 这一套自研 lint 工具链——它把架构约束从「靠 review」变成「靠脚本」。</li></ul>
+<h3>知识入口</h3>
+<table>
+<thead>
+<tr>
+<th>资源</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DeepWiki</td>
+<td>未确认收录（两次探测均 HTTP 429 限流，非 404，需人工在浏览器复核）</td>
+</tr>
+<tr>
+<td>Zread.ai</td>
+<td>未确认收录（HTTP 403 反爬拦截，非明确「未收录」信号）</td>
+</tr>
+<tr>
+<td>官方文档站</td>
+<td><a href="https://mlxserve.com/">https://mlxserve.com/</a> ｜ 仓库内 <code>docs/</code> 30+ 篇、<code>website/</code> Docusaurus 站</td>
+</tr>
+<tr>
+<td>关联论文</td>
+<td>无（项目无 arXiv 论文；技术细节发布在 Hugging Face 模型卡、GitHub PR #911 与 release notes）</td>
+</tr>
+<tr>
+<td>在线 Demo</td>
+<td>无（定位即本地运行）。等价物：官网 <code>llm-tier-list/</code>（按机器内存选模型）、官网 <code>/benchmarks/</code> 与仓库 <code>benchmarks.md</code>（逐 release 逐机器的 tok/s 表）、App Store 的 MLX Chat iOS 版、作者的 <a href="https://github.com/ddalcu/llmprobe">llmprobe</a>（可对任意引擎做一致性测试的独立工具）</td>
+</tr>
+<tr>
+<td>架构文章</td>
+<td>《Why MLX-Serve is Fast》（带宽上限推导 + 提速四路径）、《Ship Score》（Ship Score = 1000 × 完成度 ÷ (√平均GiB × 分钟 × 百万token)）</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
