@@ -1,39 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-11-15",
+    "last_run": "2026-11-16",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/ruvnet/ruflo",
-      "canonical_url": "https://github.com/ruvnet/ruflo",
-      "event_date": "2026-10-16",
-      "date_seen": "2026-10-16"
-    },
-    {
-      "key": "github.com/lightseekorg/tokenspeed",
-      "canonical_url": "https://github.com/lightseekorg/tokenspeed",
-      "event_date": "2026-10-16",
-      "date_seen": "2026-10-16"
-    },
-    {
-      "key": "github.com/xerj-org/xerj",
-      "canonical_url": "https://github.com/xerj-org/xerj",
-      "event_date": "2026-10-16",
-      "date_seen": "2026-10-16"
-    },
-    {
-      "key": "github.com/anthropics/claude-code",
-      "canonical_url": "https://github.com/anthropics/claude-code",
-      "event_date": "2026-10-16",
-      "date_seen": "2026-10-16"
-    },
-    {
-      "key": "github.com/nousresearch/hermes-agent",
-      "canonical_url": "https://github.com/NousResearch/hermes-agent",
-      "event_date": "2026-10-16",
-      "date_seen": "2026-10-16"
-    },
     {
       "key": "github.com/madslorentzen/ai-job-search",
       "canonical_url": "https://github.com/MadsLorentzen/ai-job-search",
@@ -1767,6 +1737,84 @@
       "canonical_url": "https://github.com/lexifina/global-law",
       "event_date": "2026-11-14",
       "date_seen": "2026-11-15"
+    },
+    {
+      "key": "github.com/elementalsouls/claude-bughunter",
+      "canonical_url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "event_date": "2026-11-16",
+      "date_seen": "2026-11-16"
+    },
+    {
+      "key": "github.com/nvidia/skillevaluator",
+      "canonical_url": "https://github.com/NVIDIA/SkillEvaluator",
+      "event_date": "2026-11-16",
+      "date_seen": "2026-11-16"
+    },
+    {
+      "key": "github.com/ggml-org/ggml",
+      "canonical_url": "https://github.com/ggml-org/ggml",
+      "event_date": "2026-11-16",
+      "date_seen": "2026-11-16"
+    },
+    {
+      "key": "github.com/meta/zstd",
+      "canonical_url": "https://github.com/meta/zstd",
+      "event_date": "2026-11-16",
+      "date_seen": "2026-11-16"
+    },
+    {
+      "key": "github.com/ddalcu/mlx-serve",
+      "canonical_url": "https://github.com/ddalcu/mlx-serve",
+      "event_date": "2026-11-16",
+      "date_seen": "2026-11-16"
+    },
+    {
+      "key": "github.com/anthropics/claude-code",
+      "canonical_url": "https://github.com/anthropics/claude-code",
+      "event_date": "2026-11-16",
+      "date_seen": "2026-11-16"
+    },
+    {
+      "key": "github.com/google-labs-code/stitch-skills",
+      "canonical_url": "https://github.com/google-labs-code/stitch-skills",
+      "event_date": "2026-11-16",
+      "date_seen": "2026-11-16"
+    },
+    {
+      "key": "github.com/obra/superpowers",
+      "canonical_url": "https://github.com/obra/superpowers",
+      "event_date": "2026-11-16",
+      "date_seen": "2026-11-16"
+    },
+    {
+      "key": "github.com/nousresearch/hermes-agent",
+      "canonical_url": "https://github.com/NousResearch/hermes-agent",
+      "event_date": "2026-11-16",
+      "date_seen": "2026-11-16"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/ggml-org_ggml",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/ggml-org_ggml/",
+      "event_date": "2026-11-16",
+      "date_seen": "2026-11-16"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/openai_codex",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/openai_codex/",
+      "event_date": "2026-11-16",
+      "date_seen": "2026-11-16"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/ggml-org_llama.cpp",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/ggml-org_llama.cpp/",
+      "event_date": "2026-11-16",
+      "date_seen": "2026-11-16"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/tensorflow_tensorflow",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/tensorflow_tensorflow/",
+      "event_date": "2026-11-16",
+      "date_seen": "2026-11-16"
     }
   ]
 }
