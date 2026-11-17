@@ -340,6 +340,8 @@ entries:
   - ai-agent
   - ai-coding
   - devtools
+  backnotprop_plannotator:
+  - ai-agent
   badlogic_pi-mono:
   - ai-agent
   - ai-coding
@@ -684,6 +686,9 @@ entries:
   dayuanjiang_next-ai-draw-io:
   - ai-agent
   - protocol-spec
+  ddalcu_mlx-serve:
+  - ai-coding
+  - llm-inference
   dearva_everywhere:
   - uncategorized
   debpalash_voicestudio:

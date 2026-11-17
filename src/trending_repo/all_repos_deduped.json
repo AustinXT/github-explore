@@ -140,6 +140,16 @@
     "trending_days": 27
   },
   {
+    "name": "ChromeDevTools/chrome-devtools-mcp",
+    "url": "https://github.com/chromedevtools/chrome-devtools-mcp",
+    "language": "TypeScript",
+    "stars": 57621,
+    "forks": 4846,
+    "description": "Chrome DevTools for coding agents",
+    "last_seen": "2026-11-16",
+    "trending_days": 26
+  },
+  {
     "name": "ruvnet/RuView",
     "url": "https://github.com/ruvnet/ruview",
     "language": "Rust",
@@ -158,16 +168,6 @@
     "description": "[Support 0.49.x]（Reset Cursor AI MachineID & Bypass Higher Token Limit） Cursor Ai ，自动重置机器ID ， 免费升级使用Pro功能: You've reached your trial request limit. / Too many free trial accounts used on this machine. Please upgrade to pro. We have this limit in place to prevent abuse. Please let us know if you believe this is a mistake.",
     "last_seen": "2025-12-04",
     "trending_days": 26
-  },
-  {
-    "name": "ChromeDevTools/chrome-devtools-mcp",
-    "url": "https://github.com/chromedevtools/chrome-devtools-mcp",
-    "language": "TypeScript",
-    "stars": 56776,
-    "forks": 4800,
-    "description": "Chrome DevTools for coding agents",
-    "last_seen": "2026-11-15",
-    "trending_days": 25
   },
   {
     "name": "google/adk-go",
@@ -360,6 +360,16 @@
     "trending_days": 20
   },
   {
+    "name": "mvanhorn/last30days-skill",
+    "url": "https://github.com/mvanhorn/last30days-skill",
+    "language": "Python",
+    "stars": 68043,
+    "forks": 6028,
+    "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+    "last_seen": "2026-11-16",
+    "trending_days": 20
+  },
+  {
     "name": "virattt/ai-hedge-fund",
     "url": "https://github.com/virattt/ai-hedge-fund",
     "language": "Python",
@@ -387,16 +397,6 @@
     "forks": 9763,
     "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
     "last_seen": "2026-10-26",
-    "trending_days": 19
-  },
-  {
-    "name": "mvanhorn/last30days-skill",
-    "url": "https://github.com/mvanhorn/last30days-skill",
-    "language": "Python",
-    "stars": 60372,
-    "forks": 5289,
-    "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-    "last_seen": "2026-08-30",
     "trending_days": 19
   },
   {
@@ -460,6 +460,16 @@
     "trending_days": 17
   },
   {
+    "name": "alibaba/open-code-review",
+    "url": "https://github.com/alibaba/open-code-review",
+    "language": "Go",
+    "stars": 52871,
+    "forks": 4290,
+    "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+    "last_seen": "2026-11-16",
+    "trending_days": 16
+  },
+  {
     "name": "asgeirtj/system_prompts_leaks",
     "url": "https://github.com/asgeirtj/system_prompts_leaks",
     "language": "JavaScript",
@@ -518,16 +528,6 @@
     "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
     "last_seen": "2026-07-29",
     "trending_days": 16
-  },
-  {
-    "name": "alibaba/open-code-review",
-    "url": "https://github.com/alibaba/open-code-review",
-    "language": "Go",
-    "stars": 51865,
-    "forks": 4067,
-    "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-    "last_seen": "2026-11-15",
-    "trending_days": 15
   },
   {
     "name": "anthropics/skills",
@@ -990,6 +990,16 @@
     "trending_days": 11
   },
   {
+    "name": "dream-num/univer",
+    "url": "https://github.com/dream-num/univer",
+    "language": "TypeScript",
+    "stars": 27706,
+    "forks": 2522,
+    "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+    "last_seen": "2026-11-16",
+    "trending_days": 11
+  },
+  {
     "name": "forrestchang/andrej-karpathy-skills",
     "url": "https://github.com/forrestchang/andrej-karpathy-skills",
     "language": "Unknown",
@@ -1127,16 +1137,6 @@
     "forks": 10779,
     "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
     "last_seen": "2026-10-13",
-    "trending_days": 10
-  },
-  {
-    "name": "dream-num/univer",
-    "url": "https://github.com/dream-num/univer",
-    "language": "TypeScript",
-    "stars": 25411,
-    "forks": 2322,
-    "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
-    "last_seen": "2026-11-15",
     "trending_days": 10
   },
   {
@@ -3810,6 +3810,16 @@
     "trending_days": 4
   },
   {
+    "name": "backnotprop/plannotator",
+    "url": "https://github.com/backnotprop/plannotator",
+    "language": "TypeScript",
+    "stars": 12464,
+    "forks": 1223,
+    "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+    "last_seen": "2026-11-16",
+    "trending_days": 4
+  },
+  {
     "name": "bannedbook/fanqiang",
     "url": "https://github.com/bannedbook/fanqiang",
     "language": "Kotlin",
@@ -4127,6 +4137,16 @@
     "forks": 1762,
     "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
     "last_seen": "2026-06-27",
+    "trending_days": 4
+  },
+  {
+    "name": "google-labs-code/stitch-skills",
+    "url": "https://github.com/google-labs-code/stitch-skills",
+    "language": "TypeScript",
+    "stars": 9689,
+    "forks": 1239,
+    "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+    "last_seen": "2026-11-16",
     "trending_days": 4
   },
   {
@@ -4800,6 +4820,16 @@
     "trending_days": 4
   },
   {
+    "name": "tradermonty/claude-trading-skills",
+    "url": "https://github.com/tradermonty/claude-trading-skills",
+    "language": "Python",
+    "stars": 6219,
+    "forks": 1322,
+    "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+    "last_seen": "2026-11-16",
+    "trending_days": 4
+  },
+  {
     "name": "trimstray/the-book-of-secret-knowledge",
     "url": "https://github.com/trimstray/the-book-of-secret-knowledge",
     "language": "Unknown",
@@ -4937,6 +4967,16 @@
     "forks": 174,
     "description": "Get Spotify tracks in true FLAC from Tidal, Qobuz & Amazon Music — no account required.",
     "last_seen": "2026-01-17",
+    "trending_days": 3
+  },
+  {
+    "name": "ag-ui-protocol/ag-ui",
+    "url": "https://github.com/ag-ui-protocol/ag-ui",
+    "language": "TypeScript",
+    "stars": 18832,
+    "forks": 1959,
+    "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+    "last_seen": "2026-11-16",
     "trending_days": 3
   },
   {
@@ -5127,16 +5167,6 @@
     "forks": 290,
     "description": "Curated list of the best free apps for PC and mobile",
     "last_seen": "2026-05-27",
-    "trending_days": 3
-  },
-  {
-    "name": "backnotprop/plannotator",
-    "url": "https://github.com/backnotprop/plannotator",
-    "language": "TypeScript",
-    "stars": 11700,
-    "forks": 1049,
-    "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-    "last_seen": "2026-11-15",
     "trending_days": 3
   },
   {
@@ -5537,16 +5567,6 @@
     "forks": 2138,
     "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
     "last_seen": "2026-11-10",
-    "trending_days": 3
-  },
-  {
-    "name": "google-labs-code/stitch-skills",
-    "url": "https://github.com/google-labs-code/stitch-skills",
-    "language": "TypeScript",
-    "stars": 9154,
-    "forks": 1100,
-    "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-    "last_seen": "2026-11-15",
     "trending_days": 3
   },
   {
@@ -6540,16 +6560,6 @@
     "trending_days": 3
   },
   {
-    "name": "tradermonty/claude-trading-skills",
-    "url": "https://github.com/tradermonty/claude-trading-skills",
-    "language": "Python",
-    "stars": 5331,
-    "forks": 1137,
-    "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-    "last_seen": "2026-11-15",
-    "trending_days": 3
-  },
-  {
     "name": "typst/typst",
     "url": "https://github.com/typst/typst",
     "language": "Rust",
@@ -6807,16 +6817,6 @@
     "forks": 781,
     "description": "A minimal GPU design in Verilog to learn how GPUs work from the ground up",
     "last_seen": "2026-01-14",
-    "trending_days": 2
-  },
-  {
-    "name": "ag-ui-protocol/ag-ui",
-    "url": "https://github.com/ag-ui-protocol/ag-ui",
-    "language": "TypeScript",
-    "stars": 17685,
-    "forks": 1790,
-    "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
-    "last_seen": "2026-11-15",
     "trending_days": 2
   },
   {
@@ -7587,6 +7587,16 @@
     "forks": 2551,
     "description": "Create Reddit Videos with just✨ one command ✨",
     "last_seen": "2026-04-08",
+    "trending_days": 2
+  },
+  {
+    "name": "elementalsouls/Claude-BugHunter",
+    "url": "https://github.com/elementalsouls/claude-bughunter",
+    "language": "Python",
+    "stars": 7297,
+    "forks": 1132,
+    "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+    "last_seen": "2026-11-16",
     "trending_days": 2
   },
   {
@@ -8837,6 +8847,16 @@
     "forks": 49,
     "description": "cuTile is a programming model for writing parallel kernels for NVIDIA GPUs",
     "last_seen": "2025-12-09",
+    "trending_days": 2
+  },
+  {
+    "name": "NVIDIA/SkillEvaluator",
+    "url": "https://github.com/nvidia/skillevaluator",
+    "language": "Python",
+    "stars": 2547,
+    "forks": 350,
+    "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+    "last_seen": "2026-11-16",
     "trending_days": 2
   },
   {
@@ -10780,6 +10800,16 @@
     "trending_days": 1
   },
   {
+    "name": "DeanChensj/jiangshan-map",
+    "url": "https://github.com/deanchensj/jiangshan-map",
+    "language": "JavaScript",
+    "stars": 6651,
+    "forks": 782,
+    "description": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes",
+    "last_seen": "2026-11-16",
+    "trending_days": 1
+  },
+  {
     "name": "DebugSwift/DebugSwift",
     "url": "https://github.com/debugswift/debugswift",
     "language": "Swift",
@@ -10967,16 +10997,6 @@
     "forks": 1438,
     "description": "OBLITERATE THE CHAINS THAT BIND YOU",
     "last_seen": "2026-08-22",
-    "trending_days": 1
-  },
-  {
-    "name": "elementalsouls/Claude-BugHunter",
-    "url": "https://github.com/elementalsouls/claude-bughunter",
-    "language": "Python",
-    "stars": 6105,
-    "forks": 938,
-    "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
-    "last_seen": "2026-11-15",
     "trending_days": 1
   },
   {
@@ -11230,6 +11250,16 @@
     "trending_days": 1
   },
   {
+    "name": "getarcaneapp/arcane",
+    "url": "https://github.com/getarcaneapp/arcane",
+    "language": "Go",
+    "stars": 8631,
+    "forks": 401,
+    "description": "Modern Docker Management, Designed for Everyone",
+    "last_seen": "2026-11-16",
+    "trending_days": 1
+  },
+  {
     "name": "ghostty-org/ghostty",
     "url": "https://github.com/ghostty-org/ghostty",
     "language": "Zig",
@@ -11367,6 +11397,16 @@
     "forks": 2114,
     "description": "Examples and guides for using the Gemini API",
     "last_seen": "2025-09-26",
+    "trending_days": 1
+  },
+  {
+    "name": "google-research/paper-orchestra",
+    "url": "https://github.com/google-research/paper-orchestra",
+    "language": "Python",
+    "stars": 1365,
+    "forks": 232,
+    "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+    "last_seen": "2026-11-16",
     "trending_days": 1
   },
   {
@@ -11937,6 +11977,16 @@
     "forks": 441,
     "description": "🕵️‍♂️ (2-in-1) Email & Username OSINT suite for deep data extraction just from a single Email/Username. Analyzes 465+ actively maintained scan vectors (175+ email / 290+ username) for security research, investigations, and digital footprinting.",
     "last_seen": "2026-08-31",
+    "trending_days": 1
+  },
+  {
+    "name": "kajisho5/ffmpeg-skill",
+    "url": "https://github.com/kajisho5/ffmpeg-skill",
+    "language": "Python",
+    "stars": 6546,
+    "forks": 595,
+    "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
+    "last_seen": "2026-11-16",
     "trending_days": 1
   },
   {
@@ -12777,16 +12827,6 @@
     "forks": 3624,
     "description": "Ongoing research training transformer models at scale",
     "last_seen": "2026-02-25",
-    "trending_days": 1
-  },
-  {
-    "name": "NVIDIA/SkillEvaluator",
-    "url": "https://github.com/nvidia/skillevaluator",
-    "language": "Python",
-    "stars": 1465,
-    "forks": 197,
-    "description": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
-    "last_seen": "2026-11-15",
     "trending_days": 1
   },
   {
@@ -13677,6 +13717,16 @@
     "forks": 299,
     "description": "Open-source inference server and production cluster for all the models your agent needs.",
     "last_seen": "2026-09-02",
+    "trending_days": 1
+  },
+  {
+    "name": "sveltejs/svelte",
+    "url": "https://github.com/sveltejs/svelte",
+    "language": "JavaScript",
+    "stars": 88913,
+    "forks": 6083,
+    "description": "web development for the rest of us",
+    "last_seen": "2026-11-16",
     "trending_days": 1
   },
   {
