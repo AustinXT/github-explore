@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub 推荐：4,724 行代码凭什么拿到 9,942 星：Google Stitch 技能包的提示词工程</title>
+<style>
+/* ====== 微信公众号排版 CSS ====== */
+
+body {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #3e3e3e;
+    background: #fff;
+}
+
+/* 正文段落 */
+p {
+    font-size: 15px !important;
+    line-height: 2 !important;
+    margin: 0 !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+    padding-right: 1.2em !important;
+    padding-left: 1.2em !important;
+    text-align: justify !important;
+}
+p + p {
+    margin-top: 0 !important;
+}
+
+/* 标题 */
+h1 {
+    font-size: 20px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 16px 0 !important;
+    padding: 0 !important;
+}
+h2 {
+    font-size: 18px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 24px 0 !important;
+    padding: 0 !important;
+}
+h3 {
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+    text-align: left !important;
+    margin: 16px 0 16px 0 !important;
+    padding: 0 0 0 1.2em !important;
+}
+h4 {
+    font-size: 15px !important;
+    color: rgb(0, 122, 170) !important;
+    margin: 12px 0 8px 0 !important;
+    padding: 0 !important;
+}
+
+/* 列表 */
+ul,
+ol {
+    padding-left: 2em !important;
+    margin: 1em 0 !important;
+    font-size: 15px !important;
+}
+li {
+    margin: 0.5em 0 !important;
+    line-height: 1.8em !important;
+    font-size: 15px !important;
+    color: #3e3e3e !important;
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    margin: 0 !important;
+    padding-left: 1.2em !important;
+}
+
+/* 引用 */
+blockquote {
+    border-left: 4px solid #888 !important;
+    padding: 8px 16px !important;
+    margin: 1em 0 !important;
+    color: #666 !important;
+    background: #f9f9f9 !important;
+}
+blockquote > p {
+    margin: 0.5em 0 !important;
+    padding: 0 !important;
+}
+blockquote::before,
+blockquote::after {
+    content: none !important;
+}
+
+/* 代码块 */
+pre {
+    font-size: 14px !important;
+    line-height: 1.4em !important;
+    color: #3e3e3e !important;
+    background: #f8f8f8 !important;
+    padding: 12px 16px !important;
+    border-radius: 4px !important;
+    overflow: auto !important;
+    margin: 1em 0 !important;
+}
+
+/* 脚注 */
+.footnotes {
+    font-size: 11px !important;
+    color: #666 !important;
+    line-height: 1.2 !important;
+    margin: 8px 0 0 0 !important;
+    padding: 4px 0 0 0 !important;
+    border-top: 1px solid #eee !important;
+}
+.footnotes p {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #666 !important;
+}
+
+/* 上标 */
+sup {
+    font-size: 0.75em !important;
+    vertical-align: super !important;
+    color: #e51f42 !important;
+    margin: 0 2px !important;
+}
+
+/* 表格 */
+table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 1em 0 !important;
+    font-size: 14px !important;
+}
+th, td {
+    border: 1px solid #ddd !important;
+    padding: 8px 12px !important;
+    text-align: left !important;
+    line-height: 1.6 !important;
+}
+th {
+    background: #f5f5f5 !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+}
+td {
+    color: #3e3e3e !important;
+}
+
+/* 图片 */
+img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 1em auto !important;
+    border-radius: 4px !important;
+}
+
+/* 链接 */
+a {
+    color: rgb(0, 122, 170) !important;
+    text-decoration: none !important;
+}
+
+/* 行内代码 */
+code {
+    background: #f4f4f4 !important;
+    color: #c7254e !important;
+    padding: 2px 4px !important;
+    border-radius: 3px !important;
+    font-size: 90% !important;
+}
+pre code {
+    background: transparent !important;
+    color: inherit !important;
+    padding: 0 !important;
+}
+
+/* 加粗 */
+strong {
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+}
+
+/* 分隔线 */
+hr {
+    border: none !important;
+    border-top: 1px solid #ddd !important;
+    margin: 1.5em 0 !important;
+}
+</style>
+</head>
+<body>
+
+<blockquote>
+<p>GitHub: <a href="https://github.com/google-labs-code/stitch-skills">https://github.com/google-labs-code/stitch-skills</a></p>
+</blockquote>
+<h2>一句话总结</h2>
+<p>Google 官方把 Stitch 这个 AI 设计画布的能力封装成 16 个 Agent Skill，用<strong>「可执行断言 + 门禁判据 + 接力棒协议」</strong>把散文式提示词改造成可判定的工作流，是目前最完整的一份 Google 官方 Agent Skill 写作范式样本。</p>
+<h2>值得关注的理由</h2>
+<ol><li><strong>提示词工程被当产品做了：</strong>全仓 4,724 行代码，注释 5,292 行，16 个 SKILL.md 独占 3,243 行 Markdown。真正的资产不是代码，是「怎么把风格规则写成 Agent 能执行的断言」——这套分层法（能自动判定的写脚本 / 半自动的写清单 / 剩下的才写散文）可以原样搬走。</li><li><strong>4,724 行代码换来 9,942 星 + 1,299 fork + 47.8 万次安装：</strong>skills.sh 上 18 个技能累计安装 477.8K，安装量与 star 比约 48:1，说明真实使用深度远超 star 数暗示的水平。这类「提示词即产品」的仓库在中文社区还很少被拆解。</li><li><strong>它是一个反常的商业姿态样本：</strong>Google 把 proprietary 的 Stitch 后端开放给了 Claude Code / Cursor / Codex 三个竞争对手的 Agent——v0、Anima、Galileo、Builder.io 都没这么做。读懂为什么，比学会用它的价值更大。</li></ol>
+<h2>项目展示</h2>
+<p><img alt="Stitch 官方 Hero 视觉" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Stitch_Keyword_Hero_Visual.width-200.format-webp.webp"/></p>
+<p>Stitch 官方 hero 视觉，本仓库所有技能都围绕这个画布的能力展开（图片来源：blog.google 官方博客）</p>
+<p><img alt="AI-native 无限画布界面" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/ainativecanvas.width-1200.format-webp.webp"/></p>
+<p>Stitch 的 AI-native 无限画布：<code>generate-design</code> 技能里四种 flow（text / image / edit / variants）对应的就是画布上的四种操作</p>
+<p><img alt="DESIGN.md 格式示例" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Inline_image_-2.width-1200.format-webp.webp"/></p>
+<p>DESIGN.md 是本仓库 skills 的产物格式，也是整个组织矩阵里最值钱的那块地基</p>
+<blockquote>
+<p>README 本身 0 张图片 0 个视频，仓库内也没有任何截图。上面的素材全部来自 Google 官方博客的静态资源桶（已逐一验证可访问）。</p>
+</blockquote>
+<h2>项目画像</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub</td>
+<td><a href="https://github.com/google-labs-code/stitch-skills">https://github.com/google-labs-code/stitch-skills</a></td>
+</tr>
+<tr>
+<td>Star / Fork</td>
+<td>9,942 / 1,299（fork/star 13%，高粘性的「被改造型」社区）</td>
+</tr>
+<tr>
+<td>许可证</td>
+<td>Apache License 2.0（但 README 明确「非官方支持的 Google 产品」，不适用 Google OSS 漏洞赏金计划）</td>
+</tr>
+<tr>
+<td>代码行数</td>
+<td>4,724（TypeScript 53.4% / TSX 20.2% / JSON 15.1% / Python 5.0% / Shell 3.3% / JavaScript 3.1%），另有 8,018 行 Markdown</td>
+</tr>
+<tr>
+<td>项目年龄</td>
+<td>10 个月（2026-01-16 首次提交）</td>
+</tr>
+<tr>
+<td>开发阶段</td>
+<td>低维护（2026-08-17 后零提交，距今 92 天；近 30/90 天均 0 commit）</td>
+</tr>
+<tr>
+<td>贡献模式</td>
+<td>Google 内部工程师 + 社区协作（19 位提交者，主作者 jilinxia 占 46.6%）</td>
+</tr>
+<tr>
+<td>热度定位</td>
+<td>大众热门（star 维度已是头部，安装量维度 477.8K 远超 star 隐含价值）</td>
+</tr>
+<tr>
+<td>质量评级</td>
+<td>代码[良好] 文档[优秀] 测试[无]（但有 CI 对 gold-standard 示例做断言）</td>
+</tr>
+</tbody>
+</table>
+<h2>作者视角：为什么存在这个项目</h2>
+<h3>创始人/作者背景</h3>
+<p>作者是 <strong>Google Labs Code</strong> 这个实验性开源组织（不是 Google 官方支持的产品，不适用 Google OSS 漏洞赏金计划）。组织的仓库矩阵就是一条完整的「Agent 时代工具链」：<code>design.md</code>（28,915 star，DESIGN.md 格式规范）→ <code>stitch-skills</code>（本仓库，工作流层）→ <code>stitch-sdk</code>（1,856 star，可编程层，11 月仍在推送）→ <code>stax</code>。另有 jules-sdk / jules-skills / jules-awesome-list 构成 Jules 代理线。</p>
+<p>个人贡献者里两个名字最能说明问题：<strong>David East</strong>（前 Firebase DevRel 负责人，Google 内部 MCP / Agent Skills 方向布道者，提交 13 次）与 <strong>Dion Almaer</strong>（前 Google Engineering Director、Mozilla Labs Bespin 作者、Pragmatic Ajax 合著者，提交 5 次）。这两个人在仓库里留下的痕迹非常直白——README 主打「follow the Agent Skills open standard」，<code>.agents/plugins/marketplace.json</code> 用 OpenAI/Codex 的 marketplace schema，<code>.codex-plugin/plugin.json</code> 用 Codex 的 plugin schema，<code>plugin.json</code> 用通用 schema：<strong>三份 manifest 服务三种宿主的分发格式</strong>。叙事主体是「开放标准 + 跨厂商兼容」，而不是 Gemini 独占。</p>
+<h3>问题判断</h3>
+<p>Google 看到的缺口不在「AI 会不会画 UI」，而在<strong>设计意图没有 agent-readable 的载体</strong>。</p>
+<p>当时的业界做法是把风格指南粘进 prompt。但唯一有研究数据支持的结论恰恰相反——「给 agent 现成组件」优于「把 style guide 粘进 prompt」。所以 Google 把 <code>DESIGN.md</code> 从 Stitch 的内部特性升格成了独立仓库（4 月开源，28.9K star），让它成为跨工具规范；本仓库则是这份规范的<strong>生产者与套用器</strong>：<code>manage-design-system</code> 管项目级 token、<code>extract-design-md</code> 从源码反向抽取、<code>taste-design</code> 提供一套预设品味、<code>design-md</code> 做项目分析。</p>
+<p>时机也在这里：Stitch 本身在 2026-03-18 官方博客宣布 MCP + SDK + skills 三件套，2026-05-20 I/O 上线实时设计代理与多人协同。skills 是这套分发里唯一能让<strong>编码 Agent</strong>（而不是设计师）直接驱动设计工作流的那一环。</p>
+<h3>解法哲学</h3>
+<p>仓库自称 <strong>「Executable enforcers」</strong>（可执行执法者），这是整套方法论的题眼。风格规则不能只是散文，因为模型会无视散文。三层证据链：</p>
+<ul><li><code>resources/style-guide.json</code> —— 从当前项目 HTML <code>&lt;head&gt;</code> 反解出的 token 快照</li><li><code>scripts/validate.js</code> —— SWC AST 遍历断言：组件有 <code>[Name]Props</code> 接口、<code>className</code> 里没有硬编码 hex</li><li><code>resources/architecture-checklist.md</code> —— 散文规则里无法自动判定的部分（monolithic 文件、逻辑未抽 hook、数据未解耦），退化为人工核对清单</li></ul>
+<p>作者<strong>明确不做什么</strong>：不做生成模型（仓库 0 行模型代码，全部能力走 Stitch MCP server）；不做 UI 按钮（官方称之为「vibe design」——从意图而非线框起步，把 AI 当交互式回音板，所有技能都被设计成 Agent 可调用的模块）；不做全托管（脚本要在用户机器上、由 Agent 通过 Bash 现场执行）。</p>
+<h3>战略意图</h3>
+<p>组织矩阵是一条完整链路：<code>design.md</code>（格式规范）→ <code>stitch-skills</code>（工作流层）→ <code>stitch-sdk</code>（可编程层）→ <code>stax</code>。本仓库自 2026-08-17 停更，而同组织的 design.md（11-06）、stitch-sdk（11-05）、stax（11-13）都还在推送——<strong>这不是组织收缩，是这一条线被降级</strong>。它被定位为 v1.0 的稳定快照，结构冻结、生态继续演进。</p>
+<p>真正的战略意图藏在「把 Stitch 后端开放给竞品 Agent」这个反常姿态里：<strong>Google 想要的是 Agent Skills 成为事实标准，而成为标准的唯一办法是让竞争对手的 Agent 也用它。</strong> 本仓库是标准之争的棋子，不是产品护城河。</p>
+<h2>核心价值提炼</h2>
+<h3>创新之处</h3>
+<ol><li>
+<p><strong>把散文式提示词降级为三段证据链</strong>（新颖度 4/5 | 实用性 5/5 | 可迁移性 5/5）<br/>
+   不是把提示词写得更长，而是<strong>把它换成可判定形式：</strong>token 快照 → AST 断言 → 人工清单。配 Phase GATE 强制「必须先更新 token 快照才能进入下一阶段」。任何「Agent 生成代码需要质量约束」的场景都能直接抄。</p>
+</li><li>
+<p><strong>Baton 文件：跨 Agent 迭代的状态传递协议</strong>（新颖度 4/5 | 实用性 4/5 | 可迁移性 5/5）<br/>
+<code>.stitch/next-prompt.md</code> 是个带 YAML frontmatter（<code>page: &lt;name&gt;</code>）+ 正文的文件，正文强制包含 <strong>DESIGN SYSTEM (REQUIRED)</strong> 块（从 DESIGN.md Section 6 复制）和编号页面结构。每次迭代读 baton → 查 SITE.md（sitemap 防重复 + roadmap 选题）→ 生成 → 集成 → 更新 SITE.md 的 <code>[x]</code> 标记 → 写下一个 baton。最后一步被标为 <strong>Critical</strong>。这是「文件即状态机」，可用于任何需要跨会话续跑的多步工作流。</p>
+</li><li>
+<p><strong>Puppeteer 快照的「脏数据手术」</strong>（新颖度 3/5 | 实用性 5/5 | 可迁移性 4/5）<br/>
+<code>snapshot.ts</code> 是全仓最长的脚本（1,470 行），真正难的都不是教科书内容：<strong>CSSOM 物化</strong>（Vite dev 模式与 CSS-in-JS 注入的样式在 <code>&lt;style&gt;</code> 的 textContent 里根本拿不到，必须遍历 <code>document.styleSheets</code> 重新序列化）、六家框架的 dev overlay 清除（vite-error-overlay / nextjs-portal / webpack-dev-server / parcel / v-inspector / VeloUI）、同源 iframe 原生内联并提升 <code>data-theme</code> 等 html 属性、esbuild 产物的 <code>__name</code> helper mock、<strong>全高度截图不是 <code>fullPage: true</code> 而是扫描所有滚动容器找最大 <code>scrollHeight</code></strong> 再把 <code>vh</code>/<code>h-screen</code> 高度锁死为 <code>auto</code>。</p>
+</li><li>
+<p><strong>SSRF + TOCTOU + 重定向循环三重防护</strong>（新颖度 3/5 | 实用性 4/5 | 可迁移性 4/5）<br/>
+<code>extract_inline_html.ts</code> 要从用户 HTML 里抓 URL 发起请求，于是拦截 127/8、10/8、172.16/12、192.168/16、169.254/16 与非 http 协议，限制 5 次重定向，失败降级为 1×1 透明 GIF。<code>post_process.ts</code> 用同一个 fd 做 open/fstat/read/write 消除 TOCTOU。<strong>处理用户输入的工具做到这个程度，成本并不高。</strong></p>
+</li><li>
+<p><strong><code>upload_to_stitch.py</code> 的「绕过模型输出上限」论证 + 零依赖约束</strong>（新颖度 3/5 | 实用性 5/5 | 可迁移性 5/5）<br/>
+   文件头用具体数字论证必要性：53KB PNG 的 base64 约 71K 字符，而 MCP 工具参数属于模型输出，受 ~16K token 上限截断——所以文件上传必须走脚本绕过模型。技术上只用 Python 标准库（<code>urllib.request</code> + <code>base64</code> + <code>argparse</code>），<code>certifi</code> 是可选降级。<strong>深层理由是部署约束：</strong>脚本要在用户机器上由 Agent 通过 Bash 现场执行，可能是个只装了 Python 的干净沙箱。判据值得抄：<strong>必经路径的脚本零依赖</strong>。</p>
+</li><li>
+<p><strong>AST 断言替代正则规则</strong>（新颖度 3/5 | 实用性 5/5 | 可迁移性 5/5）<br/>
+<code>validate.js</code> 用 SWC（Rust 实现，比 @babel/parser 快且无重运行时依赖）解析 AST，手写 <code>walk()</code> 找 <code>TsInterfaceDeclaration</code>（id 以 <code>Props</code> 结尾）与 <code>className</code> 中的 hex 色值（<code>/#[0-9A-Fa-f]{3,8}\b/</code>）。commit <code>9a6ea47</code> 修过一次性能坑：原实现会递归进每个节点附带的 <code>span</code> 元数据（<code>{start,end,ctxt}</code>），访问对象数是 AST 节点数的 2–4 倍，修复后降到 25–46%。</p>
+</li><li>
+<p><strong><code>taste-design</code> 把「品味」编码化为四条 dial + 25 条禁令</strong>（新颖度 4/5 | 实用性 3/5 | 可迁移性 3/5）<br/>
+   Creativity / Density / Variance / Motion Intent 四条 1–10 数值轴，各配语义刻度（「1–3 = Art Gallery Airy, 4–7 = Daily App Balanced, 8–10 = Cockpit Dense」），默认 9/5/8/6。禁令部分包含非常具体的工程细节：premium 场景禁用 <code>Inter</code>、通用 serif 禁用、用 <code>min-h-[100dvh]</code> 而非 <code>h-screen</code>（iOS Safari 地址栏跳变）、只用 <code>transform</code>/<code>opacity</code> 动画、禁 <code>calc(33% - 1rem)</code> 这类 flexbox 百分比 hack。其中一条把「反 AI 味」从审美扩展到了诚信层面——<strong>禁止编造指标数据</strong>，要求用 <code>[metric]</code> 占位符。</p>
+</li><li>
+<p><strong>框架差异隔离到 <code>references/</code>，主技能退化为路由器</strong>（新颖度 3/5 | 实用性 4/5 | 可迁移性 5/5）<br/>
+<code>extract-design-md</code> 要支持 React/Vue/Svelte/Angular/纯 CSS 五种栈。正文只放一张「Signal File → Framework」探测表，然后说「Consult the appropriate reference」，5 份 <code>references/*.md</code> 各 101–161 行。主技能<strong>从「知识百科」变成「框架无关的路由器」</strong>。</p>
+</li></ol>
+<h3>可复用的模式与技巧</h3>
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>说明</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>三段式规则降级</td>
+<td>能自动判定的写脚本 → 半自动的写清单 → 剩下的才写散文</td>
+<td>Agent 质量约束体系设计</td>
+</tr>
+<tr>
+<td>Phase GATE 门禁</td>
+<td>每阶段开头用引用块声明唯一判据，措辞是 AND 连接的可观测事件</td>
+<td>多阶段 Agent 工作流</td>
+</tr>
+<tr>
+<td>Anti-patterns 负面清单</td>
+<td>每阶段配一份 ❌ 清单，堵住「看起来跳过了」的路径</td>
+<td>阻止 Agent 静默降级行为</td>
+</tr>
+<tr>
+<td>必经脚本零依赖</td>
+<td>关键路径只用标准库，可选路径才引重依赖</td>
+<td>下发到用户机器执行的工具</td>
+</tr>
+<tr>
+<td>Baton 文件协议</td>
+<td>YAML frontmatter + 强制内容块的 markdown 做跨迭代交接</td>
+<td>长任务续跑、批量迁移</td>
+</tr>
+<tr>
+<td>Gold Standard 双用示例</td>
+<td>同一份 examples 既作 few-shot 素材，又作 CI 回归基准</td>
+<td>生成类 skill</td>
+</tr>
+<tr>
+<td>AST 断言替代正则</td>
+<td>用 SWC/Babel AST 检查代码风格约束</td>
+<td>代码生成类 skill</td>
+</tr>
+<tr>
+<td>编排者技能</td>
+<td>薄技能只做「委派 + 相对路径引用」，不重复实现子能力</td>
+<td>组合式 skill</td>
+</tr>
+<tr>
+<td>单一事实源 + 冲突禁令</td>
+<td>指定唯一 token 权威源，显式禁止别处重复</td>
+<td>设计系统 / 主题管理</td>
+</tr>
+<tr>
+<td>能力探测式降级</td>
+<td><code>list_tools</code> 探测可选 MCP，缺失则跳过，不硬依赖</td>
+<td>可选增强能力</td>
+</tr>
+<tr>
+<td>溯源标记</td>
+<td>上传时打 <code>generated-by</code>，让服务端能区分资产来源</td>
+<td>多来源资产的服务端治理</td>
+</tr>
+</tbody>
+</table>
+<h3>关键设计决策</h3>
+<p><strong>决策 1：用 <code>.stitch/</code> 目录做跨技能的共享状态协议</strong></p>
+<ul><li>问题：四个技能要共享设计系统，<code>stitch-loop</code> 要跨迭代保存状态</li><li>方案：固定目录约定 <code>.stitch/{DESIGN.md, SITE.md, next-prompt.md, metadata.json, designs/}</code>，每文件配一份 schema 文档</li><li>Trade-off：与用户项目文件混在同一工作区，可能误提交；无版本化 / schema 校验器（<code>baton-schema.md</code> 里的校验规则只是手工 checklist 不是脚本）</li><li>可迁移性：高</li></ul>
+<p><strong>决策 2：<code>code-to-design</code> 用「编排者」模式而非自己实现</strong></p>
+<ul><li>问题：extract-static-html → extract-design-md → upload-to-stitch 三步有先后依赖，重实现必然重复</li><li>方案：正文只有 78 行，核心是一句「This skill orchestrates three other skills in sequence」，每步说「Delegate to the X skill... Read <a href="../X/SKILL.md">skills/X/SKILL.md</a>」，跨技能引用用相对路径链接保证目录整体移动后仍有效</li><li>Trade-off：依赖多个技能同时安装（README 明确警告 inter-dependencies）；某个子技能改路径会打断编排</li><li>可迁移性：高</li></ul>
+<p><strong>决策 3：<code>generate-design</code> 强制「生成提示词中禁止包含颜色 / 字体 token」</strong></p>
+<ul><li>问题：prompt 里既说「蓝色按钮」又说「主色 #0EA5E9」，Stitch 会用 prompt 的颜色覆盖项目级 design system，导致同项目内颜色漂移</li><li>方案：技能正文用 <code>&gt; [!CAUTION]</code> 显式警告——<strong>生成提示词里不要放 hex / 字体名 / 色板 / 圆角值</strong>，这些由 manage-design-system 在项目级施加，重复即冲突；但 <strong>edit 流程允许 hex</strong>（精确微调需要）。同时把「检查项目是否已有 design system」作为流水线第一步</li><li>Trade-off：Agent 需要跨技能理解「生成」与「编辑」在 token 语义上不同，这个区分靠自然语言而非类型系统保证</li><li>可迁移性：高</li></ul>
+<p><strong>决策 4：<code>name</code> 字段用 <code>stitch::</code> 命名空间，且与目录名不一致</strong></p>
+<ul><li>问题：<code>stitch::generate-design</code> 的 name 与目录 <code>generate-design</code> 不匹配</li><li>方案：命名空间用于冲突规避（避免与用户自写同名 skill 或其他插件的 <code>generate-design</code> 撞名）。但代价被转嫁给用户——OpenCode 要求 skill <code>name</code> 必须是小写 kebab-case 且与目录名严格匹配，README 只好写明「Skills that use <code>stitch::…</code> names need the <code>name</code> field and folder renamed before OpenCode will load them」。16 个 skill 里 9 个用了 <code>stitch::</code> 前缀，另外 7 个（remotion / shadcn-ui / react-vite-dashboard / design-md / enhance-prompt / site-md / stitch-loop）没加——<strong>命名规则本身不一致，且没有文档解释</strong></li><li>Trade-off：命名冲突风险 vs 分发器兼容性。仓库的答案是「在 README 里写清楚，让用户自己改」</li><li>可迁移性：高（<strong>作为反面教材</strong>）——跨宿主分发时，标识符格式必须由最严格的宿主定义，不能由作者按需命名</li></ul>
+<p><strong>决策 5：三份 plugin manifest 服务三种宿主</strong></p>
+<ul><li>问题：Codex 用 <code>.codex-plugin/plugin.json</code>（需要 <code>skills: 「./skills/」</code> 和 <code>interface</code> 展示字段），Claude Code / Cursor 用 <code>npx plugins</code> 读 <code>plugin.json</code>，Codex marketplace 用 <code>.agents/plugins/marketplace.json</code></li><li>方案：三份文件并存，<code>plugin.json</code> 与 <code>.codex-plugin/plugin.json</code> 内容基本重复，后者多了 <code>interface</code>（displayName / defaultPrompt 数组 / brandColor / capabilities）；<code>marketplace.json</code> 声明三个 plugin 的 local path 与 <code>policy.installation: AVAILABLE</code></li><li>Trade-off：三处手工同步（改 description 要改两个文件），无生成脚本。skills.sh 上已出现 README 未收录的 <code>site-md</code> 技能，说明线上版本已漂移</li><li>可迁移性：中（思路通用，字段名是各家私有格式）</li></ul>
+<p><strong>决策 6：<code>extract-static-html</code> 三段式拆分</strong></p>
+<ul><li>问题：「把一个网页变成自包含 HTML」有三种输入形态（JSX 源码 / 活着的 dev server / 已构建产物），失败模式完全不同（JSX 解析失败 / dev overlay 污染 / CSS 图片外链），<strong>塞进一个脚本会变成 if-else 泥球</strong></li><li>方案：<code>extract_inline_html.ts</code>（离线，Babel AST 解析 JSX → 渲染 HTML，找 <code>export default</code> 的 return，失败则回退到「最大 JSX 树的 return」）→ <code>snapshot.ts</code>（在线，Puppeteer 抓全渲染 DOM + 脏数据手术）→ <code>post_process.ts</code>（只处理本地相对路径的图片，远端已在快照阶段内联）</li><li>Trade-off：三份脚本间有代码重复（<code>extractCssUrls</code> 在三处各抄了一遍）——因为技能目录要能独立分发，不能跨目录 import</li><li>可迁移性：中（思路通用，代码不会直接复用）</li></ul>
+<h2>竞品格局与定位</h2>
+<h3>竞品对比矩阵</h3>
+<p>先回答一个关键判断：<strong>本仓库的真正竞品不是「另一个把设计转代码的 Agent Skill」，而是 Stitch 这个产品本身的其他入口 + Figma 生态的 MCP 路线。</strong> 理由：仓库内 0 行生成模型代码，全部能力通过 Stitch MCP server 获取，本质是「Stitch 的官方 Agent 端分发层」。</p>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>stitch-skills</th>
+<th>Figma MCP（官方）</th>
+<th>Figma-Context-MCP</th>
+<th>superdesign-skill</th>
+<th>stitch-sdk（同组织）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Star / 体量</td>
+<td>9,942</td>
+<td>官方 MCP 非独立仓库（指南仓库 ~2.2K）</td>
+<td>16,228</td>
+<td>1,020</td>
+<td>1,856</td>
+</tr>
+<tr>
+<td>数据源</td>
+<td>Stitch AI 画布</td>
+<td>Figma（团队 system of record）</td>
+<td>Figma（只读布局）</td>
+<td>无（纯提示词技巧）</td>
+<td>Stitch API</td>
+</tr>
+<tr>
+<td>方向</td>
+<td>双向（code↔design）</td>
+<td>双向</td>
+<td>只读</td>
+<td>单向</td>
+<td>双向</td>
+</tr>
+<tr>
+<td>设计契约</td>
+<td>DESIGN.md（git 可 diff 的文本）</td>
+<td>Figma 变量（云端不可版本化）</td>
+<td>无</td>
+<td>风格 skill</td>
+<td>DESIGN.md</td>
+</tr>
+<tr>
+<td>质量验证</td>
+<td>validate.js AST 断言 + 清单</td>
+<td>Code Connect 确定性映射</td>
+<td>无</td>
+<td>无</td>
+<td>单元测试</td>
+</tr>
+<tr>
+<td>分发</td>
+<td>Codex/Claude Code/Cursor + Antigravity/OpenCode 手工装</td>
+<td>Figma 客户端白名单</td>
+<td>多客户端</td>
+<td>手工拷贝</td>
+<td>npm</td>
+</tr>
+<tr>
+<td>成本</td>
+<td>Stitch MCP + API key</td>
+<td>读取按 seat 计费且限速</td>
+<td>免费</td>
+<td>免费</td>
+<td>Stitch API</td>
+</tr>
+<tr>
+<td>活跃度</td>
+<td>2026-08 停更（92 天）</td>
+<td>持续</td>
+<td>持续</td>
+<td>原仓已停更</td>
+<td>2026-11 仍推送</td>
+</tr>
+</tbody>
+</table>
+<h3>差异化护城河</h3>
+<p><strong>很薄。</strong> 真正的护城河在 Stitch 产品本身和 <code>design.md</code> 规范，不在这个仓库。仓库自身几乎没有代码壁垒——所有能力通过 Stitch MCP 获取，<strong>16 个 SKILL.md 是纯提示词资产，任何人读一周就能复刻一套</strong>。它真正的护城河是三样非技术资产：<strong>官方背书、分发位（占据 Agent 里的设计工作流入口）、以及与 design.md / stitch-sdk 的组织级协同</strong>。</p>
+<h3>竞争风险</h3>
+<ol><li><strong>官方文档与实际分发器不一致：</strong>README 教用户跑 <code>npx plugins add --target antigravity</code>，而 <code>@vercel-labs/plugins</code> 的硬编码 target 只有 claude-code / cursor / codex——用户直接撞上 <code>Unknown target: antigravity</code>（#76）。同类还有 #53、#70、#63。这直接消耗信任。</li><li><strong>底层 MCP 资源鉴权</strong>（#94）：Stitch MCP 返回的 <code>htmlCode.downloadUrl</code> 指向 <code>contribution.usercontent.google.com</code>，带 API key 的 MCP 客户端没有 cookie，302 跳登录页。更糟的是 <code>curl -f</code> 只看状态码，<strong>会静默把登录页 HTML 当成设计稿存下来</strong>。社区建议改用内联 <code>htmlCode.content</code> 或新增 <code>get_screen_code</code> 工具。<strong>编排层的脆弱性完全继承自底层 API 的资源鉴权设计，技能越依赖下载链接越危险。</strong></li><li><strong>停更 90 天而生态仍在演进：</strong>skills.sh 上已出现 README 未收录的 <code>site-md</code>，线上版本正在脱离本仓库。官方随时可能弃用或把能力并入 SDK。</li><li><strong>提示词效果无任何公开评测：</strong>477.8K 安装量没有转化为一份 benchmark。</li></ol>
+<h3>生态定位</h3>
+<p>组织矩阵里的<strong>「工作流原语层」</strong>——MCP 之上的编排层，介于 <code>design.md</code>（格式规范）与 <code>stitch-sdk</code>（编程接口）之间。它的价值主张不是技术独占，而是<strong>跨厂商标准兼容性</strong>：Google 用它把 Stitch 推向 Claude Code / Cursor / Codex，反过来把 Agent Skills 推向事实标准。<strong>它是标准之争的棋子，不是产品护城河。</strong></p>
+<h2>套利机会分析</h2>
+<ul><li><strong>信息差：</strong>star 维度它已是头部（9.9K），但「4,724 行代码 / 47.8 万次安装 / 16 个技能怎么组织」这件事在中文互联网几乎没人拆过。更值钱的发现是：<code>design.md</code>（28.9K star）才是流量入口，stitch-skills 是它的落地执行层——但 28.9K 的声量远高于 9.9K，说明<strong>规范层比执行层更值钱</strong>这个判断很少被说清。</li><li><strong>技术借鉴：</strong>最该抄的三件事——① 风格规则的三段证据链（脚本 → 清单 → 散文）；② Phase GATE 用 AND 连接的可观测事件写判据，配 ❌ Anti-patterns 堵住静默跳过；③ baton 文件协议做跨会话续跑。第四件也值得抄：必经路径脚本零依赖。</li><li><strong>生态位：</strong>它填补的是「MCP 之上的有状态编排」这一层。Agent Skills 标准由 Anthropic 主导、Skill 作为「有状态的编排原语」这一定义，目前最有规模的参考实现就在这里。</li><li><strong>趋势判断：</strong>Agent Skills 开放标准正在成形（agentskills.io），Google 用官方身份推动它，这个仓库是标准的活体样本。但增长故事在 2026-08 已经断档，<strong>赌「标准红利」而不是赌「这个仓库继续更新」</strong>才是正确姿势。</li></ul>
+<h2>风险与不足</h2>
+<ol><li><strong>架构性风险：技能层没有状态所有权</strong>。#94 那类问题（签名 URL 需要 cookie、302 到登录页）不是 bug 而是把底层 API 的鉴权模型暴露在了最外层。技能越依赖下载链接越危险，而当前 16 个技能里相当一部分（react-components、react-native、stitch-loop……）的唯一数据通路就是这些下载链接。</li><li><strong>「标准」与「分发器」之间没有契约</strong>。#66 里维护者的回复是「等 PR 合并先用 <code>#refactor</code> 分支」——<strong>修复方式是把用户分流到 git ref，而不是修发布流程</strong>。加上 #76/#53/#70/#63，README 承诺的 6 个 Agent 兼容矩阵里有一半（Antigravity、OpenCode）实际需要手工拷贝目录。</li><li><strong>命名规则自身不一致</strong>。16 个 skill 里 9 个用 <code>stitch::</code> 前缀、7 个不用，且没有一个 skill 用裸 kebab-case 全名。OpenCode 加载不了带命名空间的那批，作者的解法是让用户自己改。</li><li><strong>质量防护形同虚设的边缘：</strong>CI 名字叫 <code>validate-skills.yml</code>，但它<strong>不校验任何结构</strong>——不检查 frontmatter 字段合法性、不检查 name 是否 kebab-case、<strong>不检查 <code>stitch::</code> 命名空间与目录名是否一致</strong>（而这正是 #66 的根因）。workflow 实际内容只是 <code>npm ci</code> + 跑一遍 <code>validate.js</code> 断言 gold-standard 示例。test 类 commit = 0。</li><li><strong>「官方」身份的代价：</strong>README 明确写「This is not an officially supported Google product. This project is not eligible for the Google Open Source Software Vulnerability Rewards Program.」加上「使用需把源码与素材上传 Google 服务器」的 MCP 架构，使用者承担的是<strong>无 SLA、无 VRP、无兼容性承诺</strong>的三无风险。</li><li><strong>美学主观性：</strong><code>taste-design</code> 编码的是特定审美偏好（编辑风、非对称、大留白），对「企业后台、密集数据表」场景是错的。它自己也承认口味单一——禁令只能消除模式，不能创造个性。</li><li><strong>代码重复：</strong><code>extractCssUrls</code> 在三处逐字重复，因为技能目录要能独立分发、不能跨目录 import。这是「技能可独立安装」这个好设计的必然代价。</li></ol>
+<h2>行动建议</h2>
+<ul><li><strong>如果你要用它：</strong>值得装，但它更像「架构参考实现」而非「生产工具」。装法上直接用 <code>npx plugins add google-labs-code/stitch-skills --target claude-code</code> 装整包，别选装（README 明确警告 inter-dependencies，跨技能是相对路径链接，装漏一个就断链）。<strong>务必先确认 Stitch MCP 能通</strong>，然后优先只读三个文件：<code>plugins/stitch-build/skills/react-components/SKILL.md</code>（Phase GATE + Anti-patterns 的范式样板）、<code>plugins/stitch-design/skills/extract-design-md/</code>（references 隔离法）、<code>plugins/stitch-utilities/skills/stitch-loop/resources/baton-schema.md</code>（接力棒协议）。<strong>不要</strong>把它当成「让 AI 生成高保真 UI」的银弹——外部评论已经指出 vendor 发布的公开设计技能都没有评测数据，本仓库同样如此。</li><li><strong>如果你要学它：</strong>重点看四样东西。① <code>plugins/stitch-build/skills/react-components/scripts/validate.js</code> —— AST 断言怎么写，以及 <code>9a6ea47</code> 那次 span 元数据性能修复。② <code>plugins/stitch-design/skills/extract-static-html/scripts/snapshot.ts</code> —— CSSOM 物化与 dev overlay 清单，1,470 行里全是从真实世界踩出来的细节。③ <code>plugins/stitch-design/skills/upload-to-stitch/scripts/upload_to_stitch.py</code> 的文件头 —— 「MCP 工具参数是模型输出所以有 16K token 上限」这个根因分析。④ <code>plugins/stitch-utilities/skills/taste-design/resources/DESIGN.md</code> 的禁令清单 —— 25 条「NEVER DO」的具体程度，是判断一份提示词写得够不够细的标尺。</li><li><strong>如果你要 fork 它：</strong>三处最值得下手。① <strong>补一条真正的结构校验 CI</strong> —— 校验 frontmatter 字段合法性、<code>name</code> 与目录名一致性、相对路径链接可达性（这三个都能静态判定，脚本能写）；这是最直接堵住 #66 那类 issue 的办法。② <strong>把 <code>stitch::</code> 命名空间全量统一成 kebab-case</strong>，或反过来全量去掉——半吊子状态是 OpenCode 不兼容的直接原因。③ <strong>三份 manifest 改由脚本生成</strong>，消除手工同步漂移。再加一条：给 SKILL.md 引入 eval（哪怕是最小集），把 47.8K 安装量变成可引用的效果数据。</li></ul>
+<h3>知识入口</h3>
+<table>
+<thead>
+<tr>
+<th>资源</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DeepWiki</td>
+<td>未能确认（deepwiki.com/google-labs-code/stitch-skills 持续返回 HTTP 429，被反爬拦截，无法区分未收录与已收录）</td>
+</tr>
+<tr>
+<td>Zread.ai</td>
+<td><a href="https://zread.ai/google-labs-code/stitch-skills">https://zread.ai/google-labs-code/stitch-skills</a></td>
+</tr>
+<tr>
+<td>skills.sh（第三方收录）</td>
+<td><a href="https://www.skills.sh/google-labs-code/stitch-skills">https://www.skills.sh/google-labs-code/stitch-skills</a> —— 18 个 skill，477.8K 总安装量，是最硬的第三方使用量指标</td>
+</tr>
+<tr>
+<td>关联论文</td>
+<td>无（<code>site:arxiv.org</code> 未找到任何以 stitch-skills 或 Agent Skills 标准为对象的论文；arXiv 上名为 STITCH 的论文均为同名不同项目）</td>
+</tr>
+<tr>
+<td>在线 Demo</td>
+<td>无独立 Demo 站点；Stitch 产品本体可在线试用（<a href="https://stitch.withgoogle.com/">https://stitch.withgoogle.com/</a>）</td>
+</tr>
+<tr>
+<td>官方文档</td>
+<td><a href="https://stitch.withgoogle.com/docs/mcp/setup">https://stitch.withgoogle.com/docs/mcp/setup</a>（MCP 配置，技能全部依赖它）</td>
+</tr>
+<tr>
+<td>组织姊妹仓库</td>
+<td><code>design.md</code>（28,915★，DESIGN.md 规范）· <code>stitch-sdk</code>（1,856★，官方 Node SDK，1.0，11 月仍推送）</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
