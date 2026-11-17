@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub 推荐：6840 星、35 万行：Claude 交易技能包为何不给你下单</title>
+<style>
+/* ====== 微信公众号排版 CSS ====== */
+
+body {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #3e3e3e;
+    background: #fff;
+}
+
+/* 正文段落 */
+p {
+    font-size: 15px !important;
+    line-height: 2 !important;
+    margin: 0 !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+    padding-right: 1.2em !important;
+    padding-left: 1.2em !important;
+    text-align: justify !important;
+}
+p + p {
+    margin-top: 0 !important;
+}
+
+/* 标题 */
+h1 {
+    font-size: 20px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 16px 0 !important;
+    padding: 0 !important;
+}
+h2 {
+    font-size: 18px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 24px 0 !important;
+    padding: 0 !important;
+}
+h3 {
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+    text-align: left !important;
+    margin: 16px 0 16px 0 !important;
+    padding: 0 0 0 1.2em !important;
+}
+h4 {
+    font-size: 15px !important;
+    color: rgb(0, 122, 170) !important;
+    margin: 12px 0 8px 0 !important;
+    padding: 0 !important;
+}
+
+/* 列表 */
+ul,
+ol {
+    padding-left: 2em !important;
+    margin: 1em 0 !important;
+    font-size: 15px !important;
+}
+li {
+    margin: 0.5em 0 !important;
+    line-height: 1.8em !important;
+    font-size: 15px !important;
+    color: #3e3e3e !important;
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    margin: 0 !important;
+    padding-left: 1.2em !important;
+}
+
+/* 引用 */
+blockquote {
+    border-left: 4px solid #888 !important;
+    padding: 8px 16px !important;
+    margin: 1em 0 !important;
+    color: #666 !important;
+    background: #f9f9f9 !important;
+}
+blockquote > p {
+    margin: 0.5em 0 !important;
+    padding: 0 !important;
+}
+blockquote::before,
+blockquote::after {
+    content: none !important;
+}
+
+/* 代码块 */
+pre {
+    font-size: 14px !important;
+    line-height: 1.4em !important;
+    color: #3e3e3e !important;
+    background: #f8f8f8 !important;
+    padding: 12px 16px !important;
+    border-radius: 4px !important;
+    overflow: auto !important;
+    margin: 1em 0 !important;
+}
+
+/* 脚注 */
+.footnotes {
+    font-size: 11px !important;
+    color: #666 !important;
+    line-height: 1.2 !important;
+    margin: 8px 0 0 0 !important;
+    padding: 4px 0 0 0 !important;
+    border-top: 1px solid #eee !important;
+}
+.footnotes p {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #666 !important;
+}
+
+/* 上标 */
+sup {
+    font-size: 0.75em !important;
+    vertical-align: super !important;
+    color: #e51f42 !important;
+    margin: 0 2px !important;
+}
+
+/* 表格 */
+table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 1em 0 !important;
+    font-size: 14px !important;
+}
+th, td {
+    border: 1px solid #ddd !important;
+    padding: 8px 12px !important;
+    text-align: left !important;
+    line-height: 1.6 !important;
+}
+th {
+    background: #f5f5f5 !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+}
+td {
+    color: #3e3e3e !important;
+}
+
+/* 图片 */
+img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 1em auto !important;
+    border-radius: 4px !important;
+}
+
+/* 链接 */
+a {
+    color: rgb(0, 122, 170) !important;
+    text-decoration: none !important;
+}
+
+/* 行内代码 */
+code {
+    background: #f4f4f4 !important;
+    color: #c7254e !important;
+    padding: 2px 4px !important;
+    border-radius: 3px !important;
+    font-size: 90% !important;
+}
+pre code {
+    background: transparent !important;
+    color: inherit !important;
+    padding: 0 !important;
+}
+
+/* 加粗 */
+strong {
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+}
+
+/* 分隔线 */
+hr {
+    border: none !important;
+    border-top: 1px solid #ddd !important;
+    margin: 1.5em 0 !important;
+}
+</style>
+</head>
+<body>
+
+<blockquote>
+<p>GitHub: <a href="https://github.com/tradermonty/claude-trading-skills">https://github.com/tradermonty/claude-trading-skills</a></p>
+</blockquote>
+<h2>一句话总结</h2>
+<p>一个把「个人交易决策流程」拆成 74 个可安装 Agent Skill 的 Claude Code 技能包，它真正的差异化不是选股算法，而是给 AI 生成的金融结论加了一套「不可静默出错」的工程保证——代价是 62.5% 的提交都花在修 bug 上。</p>
+<h2>值得关注的理由</h2>
+<ol><li><strong>AI 时代第一个「领域知识工程化」的大规模样本</strong>：35 万行 Python、13 个月、1098 次提交、529 个测试文件——这个产能人工不可能实现。仓库里有 567 条 commit 署名 Claude 模型（Opus 4.6/4.7/4.8、Opus 5.5、Fable 5）。它真正在回答的问题是：<strong>当代码由 LLM 批量生成时，如何让这些代码配得上信任</strong>。</li><li><strong>把分布式系统的契约测试搬进了金融数据管道</strong>：provider 响应契约 + 每周 live canary + 自动开漂移 issue，专门防「HTTP 200 但字段被静默改名」这类 silent failure；再往前一步，<code>evaluation_coverage</code> 契约把「评估了 0 个」和「评估了 500 个全不通过」区分开——这套东西在金融之外的场景同样通用。</li><li><strong>最反直觉的产品决策：明确不给你下单</strong>。<code>portfolio-manager</code> 只调只读 Alpaca，<code>breakout-trade-planner</code> 只产出订单模板不下单，<code>exposure-coach</code> 只输出 allow/restrict/cash-priority 而非买卖指令。主动放弃执行层这个「最赚钱」的位，换来一条极清晰的安全边界。</li><li><strong>一个诚实到刺眼的样本</strong>：#655 披露缺失 OHLC 在 9 个 skill 的 107 处被静默填 0、<strong>会翻转交易信号</strong>；而 <code>drawdown-circuit-breaker</code> 和 <code>pre-trade-discipline-gate</code> 这两个风险闸门本身至今仍是 beta。这是少见的、能同时看到「工程诚意」和「工程负债」的公开案例。</li></ol>
+<h2>项目展示</h2>
+<p><img alt="Navigator recommendation for a 15-minute daily market check" src="https://raw.githubusercontent.com/tradermonty/claude-trading-skills/main/docs/assets/previews/navigator-recommendation.svg"/></p>
+<p>Navigator 入口决策图 —— 回答「今天该看哪几个 skill」，是整个技能包的门面</p>
+<p><img alt="Market Posture Summary" src="https://raw.githubusercontent.com/tradermonty/claude-trading-skills/main/docs/assets/previews/market-posture.svg"/></p>
+<p>Market Posture 输出结构 —— 多输入汇总成风险姿态（36% 敞口上限 / REDUCE_ONLY / LOW 置信度），注意输出的是「姿态」而非指令</p>
+<p><img alt="Weekly Performance Digest" src="https://raw.githubusercontent.com/tradermonty/claude-trading-skills/main/docs/assets/previews/weekly-digest.svg"/></p>
+<p>Weekly Performance Digest —— 复盘闭环产物，把已平仓交易、胜率、实现盈亏结构化</p>
+<blockquote>
+<p>⚠️ README 明确声明这三张图使用 <strong>fictional data</strong>（虚构数据），是示意图而非实盘截图或交易指令。</p>
+</blockquote>
+<h2>项目画像</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub</td>
+<td><a href="https://github.com/tradermonty/claude-trading-skills">https://github.com/tradermonty/claude-trading-skills</a></td>
+</tr>
+<tr>
+<td>Star / Fork</td>
+<td>6,840 / 1,404（fork/star ≈ 20.5%，远超正常开源的 3-8%）</td>
+</tr>
+<tr>
+<td>代码行数</td>
+<td>354,724 行 / 2,300 文件（Python 84.0%、JSON 12.7%、YAML 3.1%）；740 个 md、146,863 行文档；529 个 test_*.py</td>
+</tr>
+<tr>
+<td>项目年龄</td>
+<td>13 个月（2025-10-19 首次提交 → 2026-11-17 仍在推送）</td>
+</tr>
+<tr>
+<td>开发阶段</td>
+<td>密集开发（近 90 天 378 commits，2026-11 单月 167 为历史最高）</td>
+</tr>
+<tr>
+<td>贡献模式</td>
+<td>小团队 + 社区协作（40 位贡献者；takusaotome 473 &gt; owner 280，但活跃期几乎不重叠的接力式结构）</td>
+</tr>
+<tr>
+<td>热度定位</td>
+<td>大众热门 + 爆发期（4 天净增 2,799 star，+69%；已登 GitHub Trending 日榜前三）</td>
+</tr>
+<tr>
+<td>质量评级</td>
+<td>代码[优秀] 文档[优秀] 测试[充分]</td>
+</tr>
+<tr>
+<td>发布状态</td>
+<td>⚠️ 无 git tag、无 GitHub Release，CHANGELOG 只有 <code>[Unreleased]</code> 一节，pyproject 版本固定 0.1.0</td>
+</tr>
+</tbody>
+</table>
+<h2>作者视角：为什么存在这个项目</h2>
+<h3>创始人/作者背景</h3>
+<p>作者 GitHub ID 是 <code>tradermonty</code>，但 profile <strong>完全空白</strong>——无姓名、无 bio、无公司、无位置、无博客。账号 2025-03-30 注册（1.6 年），267 followers，15 个公开仓库，本仓以 6,840 star 断层第一，最近推送时间与其他仓库基本同步，说明日常投入几乎全在这里。</p>
+<p>但作者并非独自完成。提交历史里 <code>takusaotome</code> 提交 473 次，<strong>超过 owner 的 280 次</strong>，且使用企业邮箱 <code>takusaotome@fujisoft.com</code>（Fujisoft，日本 IT 公司）。他的早期提交直接是方法论设计——「Update US Market Bubble Detector to v2.1 - Fix confirmation bias」「Revise Bubble Detector skill to v2.0 with mandatory quantitative data collection」——<strong>核心技能的方法论底色来自这位日方工程师，而非作者本人</strong>。到 2026-09 他几乎完全淡出，owner 接管并在 2026-11 单月提交 134 次。</p>
+<p>据此推断：作者是<strong>日本市场的个人交易者/量化爱好者</strong>（作者邮箱 <code>monty.traderesearch@gmail.com</code> 含「trader research」；README.ja.md 47KB 与 docs/ja 480 次改动量说明日语用户群是真实重心，而非随手翻译）。更准确的定位是「优秀的产品化组织者」，而不是「交易大师」——他的方法论来自外部宗师（Minervini 的 VCP、O'Neil 的 CANSLIM/FTD、Shapiro 的逆势三步、Kanchi 股息五步、Minsky/Kindleberger 泡沫框架），他的贡献是把这些体系工程化。</p>
+<h3>问题判断</h3>
+<p>作者看到的问题不是「AI 预测不准」，而是两层：</p>
+<p><strong>表层</strong>：兼职交易者做决策时同时被信息过载、情绪失控、缺乏可复盘记录三件事夹击。所以本仓的核心循环是 <code>Plan → Trade → Record → Review → Improve</code>，而不是 <code>Ask → Signal → Trade</code>——作者自称「a Claude Skills-based trading process OS」（决策流程 OS，不是信号源）。</p>
+<p><strong>深层（也是本项目真正的价值所在）</strong>：作者把「<strong>AI 生成的 skill 是否配得上信任</strong>」当成工程问题而不是提示词问题来解。Issue #293（production skill 有可执行脚本却无测试 → CI 必须失败）、#297（Common Trading Data Contract）、#298（质量看板）、#332（provider 契约测试 + live canary）、#507（冒烟测试「skip 不等于 pass」）这一整批带 <code>external-review-2026-08</code> 标签的 issue，是外部审计催生的整改项——<strong>这一批 issue 的存在本身，就是本项目区别于所有竞品的分水岭</strong>。</p>
+<p>时机上，项目卡在两个窗口交汇处：Claude Code / Agent Skills 生态成型（<code>SKILL.md</code> 成为可分发的提示词单元），以及<strong>模型编程能力跨过可用阈值</strong>（567 条 commit 署名 Claude 模型）。<strong>这个实验只有当模型能写出 3500 行不出错、且能被 CI 逐行 gate 时才成立</strong>。</p>
+<h3>解法哲学</h3>
+<p>作者的价值观可以用「明确不做什么」来概括：</p>
+<ul><li><strong>不下单</strong>：<code>portfolio-manager</code> 只调只读 Alpaca，<code>breakout-trade-planner</code> 只产出 Alpaca 兼容订单模板</li><li><strong>不给信号、不承诺收益</strong>：README 顶部免责声明 + 每个 SKILL.md 的 <code>when_not_to_run</code></li><li><strong>不做剥头皮、不做实盘执行</strong>（后者正是竞品 qmt-trading-skill 的定位）</li><li><strong>空头侧主动暂缓</strong>：PROJECT_VISION §10 把 short-side 列为 deferred（issue #715 跟踪），尽管仓内已有 <code>parabolic-short-trade-planner</code>、<code>options-strategy-advisor</code></li></ul>
+<p>核心是 <strong>fail-closed</strong>：数据缺失时输出 <code>REVIEW_REQUIRED</code> / <code>PARTIAL</code> / <code>HALTED</code> / <code>journal_only</code>，而不是编造一个看起来合理的数字。在金融语境里这是生死线——<code>drawdown-circuit-breaker</code> 的规则是「状态不完整 → PARTIAL + HALTED」，宁可全停也不猜。</p>
+<p>开源策略是 genuinely open：MIT、无付费墙代码、无遥测。<strong>变现路径在本仓之外</strong>——围绕它有 10 个兄弟仓（<code>claude-market-agents</code>、<code>hermes-trading-research-agent-work-package</code>、<code>finviz-mcp-server</code>、<code>uptrend-dashboard</code> 等）。本仓是品牌入口和产品矩阵的根节点，不是产品本身。</p>
+<h3>战略意图</h3>
+<p>PROJECT_VISION §10 把战略转向写得非常直白：<strong>「From a skill collection to a Trading OS for solo traders」</strong>。§11 给出七层架构（Skills → Skill Inventory/API Matrix(SSoT) → Skillsets → Workflows → Navigator → User Entry Points → Learning Loop），目标是让「不熟悉 GitHub 和工具配置的用户也能一步步用上价值」。</p>
+<p>作者同时划了一条清醒的边界：<strong>「与其急于扩大社区，不如优先保持这个工具对作者自己的实用性」</strong>。这解释了为什么 74 个 skill 的宽度是「覆盖已验证的交易体系」而非「功能清单堆砌」——每个 skill 背后都有一个有名字的方法论。</p>
+<blockquote>
+<p>官方文档洞察（<a href="https://tradermonty.github.io/claude-trading-skills/">https://tradermonty.github.io/claude-trading-skills/</a>，已成功抓取）：价值主张是「Empower Solo Traders and Growing Together」；目标用户是兼职波段交易者、想加强风控的成长股投资者、股息长线投资者三类；核心仓 = 长线/ETF/股息，卫星仓 = 纪律化波段。官网无独立 blog，但 developer / planning 文档本身就是架构决策记录（Common Trading Data Contract、Provider Response Contracts、Release & Compatibility Policy、Maintenance Runbook、Strategy Research Bias Checklist）。</p>
+</blockquote>
+<h2>核心价值提炼</h2>
+<h3>创新之处</h3>
+<ol><li><strong><code>evaluation_coverage</code> 契约：把「0 结果」拆成「不可评估 / 部分评估 / 完整评估」</strong>（新颖度 4/5 | 实用性 5/5 | 可迁移性 5/5）<br/>版本化 schema 要求选股/回测类 skill 声明 <code>universe_size</code> / <code>evaluated</code> / <code>not_evaluated</code> / 逐终态理由计数 / 三态 verdict。校验器强制 <code>evaluated + not_evaluated == universe_size</code>、理由计数之和等于 <code>not_evaluated</code>、verdict 必须由计数推导（不能手填）。<strong>缺证据的成员永远不算作 negative decision</strong>。下游 Exposure Coach 通过 <code>evaluation_input_usable()</code> 排除声明为 partial / not_evaluable 的上游报告。<br/><em>适用场景</em>：任何「跑一个筛选器/检索器，输出 N 条结果」的系统。零结果时用户无法区分「没有」和「查不了」——AI 搜索、RAG、代码扫描、招聘筛选都通用。</li><li><strong>Provider 响应契约 + live canary + 漂移 issue 持久化</strong>（新颖度 4/5 | 实用性 5/5 | 可迁移性 5/5）<br/><code>config/provider-contracts/&lt;provider&gt;/&lt;endpoint&gt;.v&lt;N&gt;.json</code> 记录真实响应 shape（<code>required_fields</code> 含 types/nullable/finite、<code>optional_fields</code>、<code>legacy_aliases</code>、<code>known_gaps</code>、<code>non_empty</code>、<code>owners</code> 必须是真实存在的 skill、<code>fixture</code> 脱敏真实行）。<code>scripts/provider_contracts.py</code> 是纯 stdlib 实现，含 FATAL/DEPRECATION 双严重度与 <code>RowValidation.summarized()</code>（同 code 聚合计数，避免 3 万行 CSV 刷屏）。<code>check</code> 离线跑（CI），<code>canary</code> 每周 live 探测，<code>notify_provider_drift.py</code> 把 fatal drift 写成 bot-authored 的 assigned tracking issue。<br/>docstring 里直接写明防的是什么：<strong>「the provider returns HTTP 200 with a response that silently dropped/renamed a field a consumer reads, and nothing catches it until a downstream report goes quietly empty」</strong>。<br/><em>适用场景</em>：依赖免费/低价第三方 API 的任何项目。</li><li><strong><code>read_price</code> / <code>find_bar_gaps</code>：把「缺失 = 0」这一 bug 类变成架构级禁令</strong>（新颖度 3/5 | 实用性 5/5 | 可迁移性 5/5）<br/>100 行纯 stdlib helper，定义「有效价格」= 真数字（非 bool）、有限、（默认）&gt; 0（volume 允许 0），缺失一律返回 <code>None</code>。配套 AST lint 禁止 <code>bar.get("close", 0)</code> 和 <code>bar.get("close") or 0</code> 两种形态，allowlist 的 count 必须与实际 finding 数<strong>严格相等</strong>（多了少了都不行），只能缩小不能扩大。#655 记录了这个问题在 9 个 skill 的 107 处会<strong>翻转交易信号</strong>。</li><li><strong>「源中央 + 生成 vendored + 漂移门」的一体化分发方案</strong>（新颖度 3/5 | 实用性 5/5 | 可迁移性 5/5）<br/>74 个 skill 要能单独打包成 <code>.skill</code> 上传 Claude Web App（不能依赖仓库其他文件），但共享逻辑不能复制 74 份各自漂移。方案：<code>scripts/fmp_client/core_template.py.tmpl</code> + <code>registry.py</code> 渲染出 24 个 skill 的 <code>fmp_client.py</code>，模板用自研的 <code># @@IF &lt;flag&gt;</code> / <code># @@ELSE</code> / <code># @@ENDIF</code> 条件编译；market_calendar、price_bars 同理生成到 7 个 / 多个 consumer。每个生成器都有 <code>--check</code> 漂移门 + pre-commit hook + CI step，还额外扫描「野生副本」。issue #115 记录的 9 份 fmp_client.py、2500 行漂移由此被机制性消除。</li><li><strong>Workflow replay + golden tree：多步流水线的字节级回归</strong>（新颖度 4/5 | 实用性 5/5 | 可迁移性 4/5）<br/>14 个 workflow × 2 变体（<code>required-only</code> / <code>full-path</code>），<code>replay.yaml</code> 冻结 <code>fixed_timestamp</code> + fictional 输入，执行后逐字节比对生成树与 golden 树，区分「unexpected generated file」/「missing generated file」/「content drift」。CI job 名叫「Workflow replay (Coverage 14/14)」。单元测试只能证明函数对，这个证明「改了 skill B 之后用户拿到的报告还是不是原来那个」。</li><li><strong>Navigator 的「双环境字节级一致」契约</strong>（新颖度 4/5 | 实用性 4/5 | 可迁移性 5/5）<br/><code>recommend.py</code> 的元数据解析顺序是 repo-root SSoT（Claude Code）→ bundled <code>metadata_snapshot.json</code>（Claude Web App）。快照由 <code>build_snapshot.py</code> 用<strong>同一组 <code>normalize_*</code> 函数</strong>从 SSoT 生成，因此两条路径输出字节相同，该不变量由 golden 测试守护。</li><li><strong>「豁免只能缩小」的 ratchet 化 lint 机制</strong>（新颖度 4/5 | 实用性 4/5 | 可迁移性 5/5）<br/>所有 allowlist（CLI 错误约定、price-bar 零默认、security exceptions、coverage waiver）都要求每条带 reason（+ issue + <code>expires_on</code>），<strong>count 与实际 finding 严格相等</strong>，不再匹配则判定 stale 并失败，<strong>过期即 fail closed</strong>。这是把 GitHub issue 当技术债数据库的完整实现——开源项目里极罕见。</li><li><strong>「零静默绿灯」的 canary 三态设计</strong>（新颖度 4/5 | 实用性 4/5 | 可迁移性 4/5）<br/><code>fmp-contract-canary.yml</code> 显式区分 <code>configured</code>（探测，drift report-only）/ <code>disabled</code>（显式 opt-out）/ <code>not configured</code>（secret 未配且没 opt-out → <strong>preflight 直接失败，红跑</strong>，以触发 GitHub 定时任务失败通知）。「没配 key」不能既不跑也不报警——这是很多项目忽略的语义空洞。</li><li><strong>Git 索引级私人路径守卫</strong>（新颖度 4/5 | 实用性 4/5 | 可迁移性 5/5）<br/><code>check_private_data_paths.py</code> 读的是 <strong>Git 索引</strong>（<code>git ls-files --stage</code>）而非工作区，所以 <code>git add -f</code> 也躲不过；白名单只有两个空 <code>.gitkeep</code>；<code>.env*</code> / <code>.mcp.json</code> 单独归类为 credentials 违规；索引不可读时 fail closed。处理个人数据、凭据、客户数据的仓库都该学这个。</li><li><strong>「先写报告再失败」的 CI 失败模式</strong>（新颖度 3/5 | 实用性 4/5 | 可迁移性 4/5）<br/>coverage 聚合步骤先输出 <code>per-skill-coverage.json</code> / <code>.md</code>，<strong>然后</strong>才对地板违规返回失败——保证 CI 红了仍然留下可行动的证据。</li><li><strong>三态 CLI 退出码约定</strong>（新颖度 3/5 | 实用性 4/5 | 可迁移性 5/5）<br/>AST lint 强制：错误信息走 stderr；缺依赖必须 exit 2 并给出该 skill 的 <code>requirements.txt</code> 路径（从脚本位置解析，任何 cwd 下都可用）；网络调用必须有 <code>timeout=</code>。自动化脚本因此能可靠区分「环境没配好」和「结论是不通过」。</li><li><strong>姿态而非指令的输出契约</strong>（新颖度 3/5 | 实用性 4/5 | 可迁移性 4/5）<br/><code>exposure-coach</code> 只输出 <code>exposure_decision</code> ∈ {allow, restrict, cash-priority}；<code>contrarian-setup-gate</code> 用 fail-closed 优先级状态机合成三个上游报告为 <code>setup_status</code>（READY_FOR_PLAN / WATCHING_PRICE / CROWDED / REJECTED / INSUFFICIENT_EVIDENCE），且明确「早一步的确定性结论不会被后一步的问题软化」；<code>pre-trade-discipline-gate</code> 输出 GO / REVIEW_REQUIRED / NO_GO / NO_ACTIONABLE_ORDERS。</li></ol>
+<h3>可复用的模式与技巧</h3>
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>说明</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单一真相源 + 哨兵标记 + <code>--check</code> 漂移门</td>
+<td><code>skills-index.yaml</code> 是 SSoT，README 主动让位并明文写「如果本文档与索引不一致，以索引为准」；生成块用 <code>&lt;!-- name:xxx:start --&gt;</code> 哨兵包住</td>
+<td>同一份元数据要在多处呈现（README / 文档站 / API 矩阵 / 多语言同步）</td>
+</tr>
+<tr>
+<td>双 ownership 的生成文档</td>
+<td><code>generated: true</code> 归生成器（可覆写、可漂移检查），缺标记归人手写（生成器拒绝覆写，<code>--force</code> 是 CI 禁止的逃生门）</td>
+<td>半自动文档站的混合维护</td>
+</tr>
+<tr>
+<td>契约 → 离线 check → live canary → 漂移 issue 四段式</td>
+<td>第三方 API 集成的标准防 silent failure 流程</td>
+<td>外部数据源集成</td>
+</tr>
+<tr>
+<td>AST lint + 只缩小的 allowlist</td>
+<td>用静态分析禁止特定代码形态，用带 count 的豁免清单管理存量</td>
+<td>大规模代码库的 API 迁移</td>
+</tr>
+<tr>
+<td>评估覆盖率契约（0 结果 ≠ 不可评估）</td>
+<td><code>evaluation_coverage</code> 三态 + 逐成员终态理由</td>
+<td>筛选器 / 检索 / 扫描类系统</td>
+</tr>
+<tr>
+<td>数据溯源块（provenance）</td>
+<td>强制声明 <code>adjusted</code> / <code>point_in_time</code> / <code>survivorship_free</code> / <code>corporate_actions_handled</code>——正好对应回测污染的四个经典来源</td>
+<td>回测、财报分析、数据管道</td>
+</tr>
+<tr>
+<td>源码中央 + vendored 生成 + 漂移门</td>
+<td>模板 + registry + 条件编译 → 生成到 consumer + <code>--check</code> 门 + 野生副本扫描</td>
+<td>monorepo 里要出「可独立分发子包」</td>
+</tr>
+<tr>
+<td>冻结时间的 golden tree 回归</td>
+<td>固定时间戳 + fictional 输入 + 逐字节比对</td>
+<td>多步 agent 流水线</td>
+</tr>
+<tr>
+<td>姿态输出契约（posture ≠ directive）</td>
+<td>决策辅助系统必须区分「建议」和「指令」</td>
+<td>任何给建议的系统</td>
+</tr>
+<tr>
+<td>三态退出码约定（0 结论 / 1 业务失败 / 2 环境缺失）</td>
+<td>让调用方能区分环境问题与业务结论</td>
+<td>脚本化 CLI 集合</td>
+</tr>
+<tr>
+<td>Git 索引级隐私守卫</td>
+<td>查索引而非查文件，<code>git add -f</code> 逃不掉</td>
+<td>含个人数据/凭据的仓库</td>
+</tr>
+<tr>
+<td>ratchet 式覆盖地板 + 必过期豁免</td>
+<td>按风险分档设覆盖门槛（普通 70% / 核心风险类 85%），豁免必须带 issue + 过期日，过期 fail closed</td>
+<td>遗留代码库质量治理</td>
+</tr>
+<tr>
+<td>确定性打分 → 阈值触发 LLM → 复评 → 回滚 → 只开 PR</td>
+<td><code>run_skill_improvement_loop.py</code>：0-100 确定性打分，低于 90 才调 <code>claude -p</code> 改，改完重新打分，<strong>没提升就回滚</strong>，只开 PR 等人审</td>
+<td>规则/提示词/技能库的自维护</td>
+</tr>
+<tr>
+<td>依赖注入式元数据双路径</td>
+<td>仓库 SSoT + 内嵌快照，共用同一组 normalize 函数，保证两种分发形态字节一致</td>
+<td>多形态分发的同一逻辑</td>
+</tr>
+</tbody>
+</table>
+<h3>关键设计决策</h3>
+<p><strong>1. 让 README 主动让位于 <code>skills-index.yaml</code></strong></p>
+<ul><li>问题：74 个 skill 的元数据若散在 SKILL.md frontmatter、README、文档站、Navigator 快照四处，必然漂移</li><li>方案：<code>skills-index.yaml</code> 是唯一权威索引；README catalog、CLAUDE.md API 矩阵、文档站 skill 页、Navigator 快照全部由 <code>scripts/generate_*.py</code> 生成；每个生成器都有 <code>--check</code> 模式，对应 pre-commit hook + CI step</li><li>Trade-off：牺牲 README 的手写自由度（改描述必须先改 index 再跑生成器），换来单一真相源 + 机械可验证</li><li>可迁移性：<strong>高</strong></li></ul>
+<p><strong>2. Workflow manifest 作为「可执行流程的一等公民」</strong></p>
+<ul><li>问题：skill 只是一块能力，用户真正需要的是「先做什么、什么条件下才能做下一步、产出什么、下游拿什么」；这逻辑只写在 SKILL.md 里就无法校验、replay、生成文档</li><li>方案：<code>workflows/*.yaml</code> 是版本化 schema（<code>schema_version: 1</code>），声明 <code>required_skills</code> / <code>steps[]</code>（每步 <code>skill</code> + <code>produces</code> + <code>consumes</code> + <code>decision_gate</code> + <code>decision_question</code>）/ <code>artifacts[]</code>（含 <code>downstream_hints</code>）/ <code>manual_review</code> / <code>when_not_to_run</code>（中英双语）；<code>validate_skills_index.py --strict-workflows</code> 校验 artifact 交接一致性、required_skills 覆盖、决策门必须有问题、deprecated skill 不得出现在 required_skills</li><li>Trade-off：引入一层 YAML 间接（<code>workflows/README.md</code> 专门教怎么读），换来流程本身成为可校验、可生成文档、可 replay 的对象</li><li>可迁移性：<strong>高</strong></li></ul>
+<p><strong>3. Fail-closed 的三层语义，且写成可执行契约</strong></p>
+<ul><li>问题：金融场景里「数据缺失时给个默认答案」和「数据缺失时停下来问人」的价值差是数量级的</li><li>方案：<code>data_provenance</code>（11 个必填字段 + ISO-8601 带时区时间戳 + bool 严格类型）→ <code>evaluation_coverage</code>（三态 + 逐成员终态理由）→ PRICE-bar 零默认禁令（AST lint + 只能缩小的 allowlist）</li><li>Trade-off：严格性带来大量「正常路径也要写防御代码」的噪音，也让报告在数据不全时看起来「什么都没发生」；换来永不静默出错</li><li>可迁移性：<strong>高</strong></li></ul>
+<p><strong>4. 按风险分档的覆盖门槛，而不是统一门槛</strong></p>
+<ul><li>问题：35 万行代码 + 74 个 skill，覆盖率极易变成形式</li><li>方案：<code>config/ci-test-policy.yaml</code> 定义 aggregate 75%、per-skill 默认 70%、核心风险类（<code>position-sizer</code> / <code>futures-position-sizer</code> / <code>trader-memory-core</code> / <code>drawdown-circuit-breaker</code>）85%；豁免必须带 <code>expires_on</code> + <code>issue</code> + <code>reason</code>，过期 fail closed；<code>allowed_failures</code> 当前为空且要求目标为 0；<strong>测试存在性本身是 gate</strong>——有可执行脚本的 skill 必须有 <code>test_*.py</code>，无脚本的 production skill 必须声明 <code>knowledge_only: true</code>（与非测试脚本冲突时报 IDX014）</li><li>Trade-off：多数 skill 只有 70% 地板，深度不够；换来关键路径覆盖远高于平均</li><li>可迁移性：<strong>高</strong></li></ul>
+<p><strong>5. <code>CLAUDE.md</code>（1013 行）作为「AI 工程师的项目规约」</strong></p>
+<ul><li>问题：这个仓库大量内容是给 AI agent 读的（Claude Code 每次进 repo 都读 CLAUDE.md），传统 README 承载不了「怎么加一个新 skill 的完整 6 步 + pre-commit 强制点 + 文档 ownership 规则」</li><li>方案：覆盖架构分层、渐进式加载规则、<strong>script vs reference 分工</strong>（「Scripts handle I/O; references handle knowledge」）、加 skill 的 6 步流程、TDD-first 规约、production verification 的 8 轴定义、API Key 管理三列表</li><li>Trade-off：与 README/文档站有重叠，靠哨兵标记 + drift gate 防分叉；换来 AI 协作的高吞吐</li><li>可迁移性：<strong>高</strong></li></ul>
+<p><strong>6. 双语（EN/JA）作为一等公民，且 JA 不得回退到 EN</strong></p>
+<ul><li>问题：目标用户含日语人群，但双语文档极易变成机翻 + 漂移</li><li>方案：<code>docs/{en,ja}/</code> 完全平行，<code>generate_workflow_docs.py</code> 要求 JA 必须有完整 <code>*_ja</code> 文案，不得回退到 EN（否则报 WF014）；README.md / README.ja.md、PROJECT_VISION.md / .ja.md 并列；Issue/PR 模板全双语</li><li>Trade-off：每个文档改动写两遍（成本翻倍），换来日语用户的完整可用性</li><li>可迁移性：<strong>高</strong></li></ul>
+<p><strong>7. launchd 自改进闭环 + 三重闸门</strong></p>
+<ul><li>问题：74 个 skill 的质量不可能全靠人工维护，且「哪个 skill 最弱」机器可以判断</li><li>方案：4 个 macOS launchd plist 驱动 <code>run_skill_improvement_loop.py</code> / <code>run_skill_generation_pipeline.py</code>：round-robin 选一个 skill → 确定性打分（0-100）→ 低于 90 才调 <code>claude -p</code> 改 → 改完重新打分，<strong>没提升就回滚</strong> → 提交并开 PR 等人审。weekly 模式从 session log 挖 skill 想法（<code>skill-idea-miner</code>，因隐私敏感，只发脱敏摘要不发原始日志）</li><li>Trade-off：依赖 macOS launchd（非 Linux 友好）；自动改代码天然有风险，所以设「分数门槛 + 回滚 + 只开 PR 不直接推 main」三重闸门</li><li>可迁移性：<strong>中</strong>（模式可迁移，平台耦合降低通用性）</li></ul>
+<h2>套利机会分析</h2>
+<ul><li><strong>信息差</strong>：项目本身<strong>已无信息差</strong>——6,840 star、4 天涨 69%、已登 Trending 日榜前三、DeepWiki 已收录。真正的信息差在于<strong>读法</strong>：大众读到的印象是「又一个 AI 炒股工具」，而它实际是「用 35 万行代码演示如何给 LLM 生成的金融知识加质量保证」。这个误读本身就是套利空间。</li><li><strong>技术借鉴</strong>：本仓对技术社区的价值大于对交易者的价值。可直接搬走的四件套：① 契约 → check → canary → 漂移 issue 的外部 API 防 silent failure 流程；② <code>evaluation_coverage</code> 的「0 结果 ≠ 不可评估」；③ AST lint + 只缩小的 allowlist ratchet；④ 源码中央 + vendored 生成 + 漂移门。</li><li><strong>生态位</strong>：它不在「数据源」也不在「信号源」也不在「执行层」，而是位于原始数据与用户决策之间的<strong>流程编排 + 风险闸门 + 可复盘记录 + 质量证据</strong>层。<strong>AI 时代让 LLM 输出可信金融结论的第一个大规模工程化样本</strong>。</li><li><strong>趋势判断</strong>：符合两个明确趋势——Agent Skills 生态成型（skill-packages 已被 skills.sh 收录 74 条、累计约 233K 安装）、以及「AI 生成代码需要质量工程」这个正在成为共识的议题。宽度迟早被追平，质量护城河短期难破。但当前 star 增长与「AI 荐股」舆论争议话题同期（2026-11-14 中国券商 AI 荐股被骂上新闻的同一天，该项目登热榜），<strong>存在情绪反转风险</strong>：热度回落时的真实留存率才是关键。</li></ul>
+<h2>竞品格局与定位</h2>
+<h3>竞品对比矩阵</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>claude-trading-skills</th>
+<th>day-trader-skill</th>
+<th>AlphaGBM/skills</th>
+<th>staskh/trading_skills</th>
+<th>qmt-trading-skill</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stars</td>
+<td>6,840</td>
+<td>~6,900</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Skill 数</td>
+<td>74（+6 skillset + 14 workflow）</td>
+<td>单一 skill 集合</td>
+<td>29</td>
+<td>25</td>
+<td>22</td>
+</tr>
+<tr>
+<td>市场</td>
+<td>美股（ETF/股息/成长股）</td>
+<td>美股日内</td>
+<td>美股实时</td>
+<td>美股期权</td>
+<td>A 股实盘</td>
+</tr>
+<tr>
+<td>数据源</td>
+<td>FMP 32 个 / FINVIZ Elite 4 个，另有 32 个 skill 可离线跑</td>
+<td>免费 Yahoo + SEC + House Clerk</td>
+<td>实时行情集成</td>
+<td>Massive + IBKR</td>
+<td>本地 QMT 券商终端</td>
+</tr>
+<tr>
+<td>自动下单</td>
+<td>❌ 明确拒绝，只出订单模板</td>
+<td>✅ 含纸面交易</td>
+<td>❌</td>
+<td>✅ 某止损 skill 显式 flag 后可下单</td>
+<td>✅ 实盘闭环</td>
+</tr>
+<tr>
+<td>风险闸门</td>
+<td>✅ 三个独立 skill（熔断/纪律门/敞口姿态），核心风险类 85% 覆盖</td>
+<td>内嵌在主流程</td>
+<td>部分</td>
+<td>弱（仅期权/扫描维度）</td>
+<td>未见系统化闸门</td>
+</tr>
+<tr>
+<td>数据可靠性工程</td>
+<td>✅ provider 契约 + live canary + provenance + evaluation_coverage</td>
+<td>❌</td>
+<td>❌</td>
+<td>部分 provider 契约</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>端到端回归</td>
+<td>✅ 14 workflow × 2 变体字节级 golden replay</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>语言</td>
+<td>Python</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>文档</td>
+<td>740 md / 14.7 万行 / EN+JA 平行</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><code>agiprolabs/claude-trading-skills</code> 与本仓<strong>同名但无关</strong>——是加密/DeFi/预测市场方向（67 skills），搜索时常被误配。</p>
+</blockquote>
+<h3>差异化护城河</h3>
+<ul><li><strong>技术护城河（中等强度，非独占）</strong>：provider 契约 + provenance + evaluation_coverage + fail-closed 三件套构成的「数据可信度工程栈」，需要长期积累（#293 → #800 的演化史不是短期能抄的）。但<strong>每一件的技术门槛都不高，别人可以照抄</strong>。</li><li><strong>生态护城河（强）</strong>：SSoT 驱动的元数据一致性 + 74 skill 覆盖面 + 14 workflow 操作化 + 6 skillset 目的分组 + Navigator 路由。这是「宽度 + 可维护性」的组合——竞品要么窄（22/25/29），要么宽但无治理。10 个兄弟仓矩阵进一步放大入口优势。</li><li><strong>信任护城河（最强，也最脆弱）</strong>：<strong>「AI 生成的 skill 是否配得上信任」被当工程问题解</strong>——这是本仓真正的差异化叙事。但它同时是当前最大的负债：#655（107 处 OHLC 静默填 0，会翻转信号）、#800（market cap 解析小 100 万倍）、#332（契约测试尚无 live canary 门禁）都说明<strong>质量保证体系是后建的，正在追赶规模扩张</strong>。更刺眼的是——<strong>风险闸门本身（drawdown breaker、pre-trade discipline gate）至今仍是 beta</strong>，被审视的项目自己最该先审的部分还没毕业。</li></ul>
+<h3>竞争风险</h3>
+<ul><li><strong>最可能被替代的不是本仓，而是「本仓的某个子集」</strong>。最危险的是 <code>staskh/trading_skills</code> 这类：25 skill、更聚焦、接真实券商。若用户从「决策纪律」转向「执行效率」，迁移成本虽高但收益路径清晰。</li><li><code>Jakeschincariol/day-trader-skill</code> 是 star 量级上的直接威胁（6,900 vs 6,840），社区更大，上手成本更低。</li><li><strong>自身风险</strong>：74 skill + 14 workflow 的复杂度正在逼近单人维护上限（近 200 commit 中 fix 125 / feature 21 ≈ 6:1，且 fix 集中在数据正确性）。若质量债务继续累积，「宽度」会从优势变负担——本仓自己在 #502（拆 3 个超大文件）、#501（拆 9 个过长的 SKILL.md）里已经承认这点。</li><li><strong>合规风险</strong>：美国 SEC 对「自动化投资建议」的界定若收紧，「不给买卖建议」这条护城河价值会上升，但合规成本也会增加。</li></ul>
+<h3>生态定位</h3>
+<p>位于「原始数据（Yahoo / FMP / SEC / CSV）」与「用户实际决策」之间，提供<strong>流程编排 + 风险闸门 + 可复盘记录 + 质量证据</strong>。它不是数据源，不是信号源，不是执行层。它的独特位置是：<strong>AI agent 时代「让 LLM 输出可信金融结论」的第一个大规模工程化样本</strong>。因此它有两类受众——想改善个人交易纪律的用户，以及<strong>想学「如何给 AI 生成的领域知识加质量保证」的工程师</strong>；后者才是本仓对技术社区的最大价值。</p>
+<h2>风险与不足</h2>
+<ol><li><strong>fix : feature ≈ 6 : 1</strong>（近 200 commit 中 125 vs 21）。功能广度已经饱和，项目当前最大的风险不是「功能不够」，而是「已有功能是否可靠」。</li><li><strong>#655 尚未修复</strong>：缺失 OHLC 在 9 个 skill 的 107 处静默填 0，会翻转交易信号——「fail-closed」承诺在数据入口层被打破。<strong>这是评估「能不能真用」的第一优先级验证点</strong>。</li><li><strong>风险闸门自身仍是 beta</strong>：<code>vcp-screener</code> 是 production，但 drawdown breaker 和 pre-trade discipline gate 是 beta。用户容易默认「风控已经到位」。</li><li><strong>无法 pin 版本</strong>：<code>git tag</code> 为空、Release 为 0、CHANGELOG 只有 <code>[Unreleased]</code> 一节、pyproject 固定 0.1.0。README 却引导下载「latest GitHub Release」的 <code>.skill</code> + <code>SHA256SUMS</code>——<strong>文档与实际发布状态不一致</strong>。对 74 个 skill、162 个依赖、且依赖 FMP/FINVIZ 服务端行为的项目，这是真实的可用性风险。</li><li><strong>「production」标签与「已验证」之间的落差</strong>：<code>skills-index.yaml</code> 中大量技能的 <code>verification</code> 八轴仍是 <code>not_verified</code>，质量看板却显示 62 production。这是本仓最诚实的一处债务披露，也说明标签体系尚未统一。</li><li><strong>权限面与隐私敞口</strong>（外部评测指出）：读持仓未必需要交易权限，但把 live key 接到 MCP server 后未来/意外的订单逻辑就具备执行能力，仓库不强制最小权限；<code>skill-idea-miner</code> 挖掘 Claude Code session 日志，而日志里可能含持仓、余额等敏感信息——「读什么、存到哪」未完全澄清。</li><li><strong>策略有效性未经独立验证</strong>：GitCode 那篇方法论精读指出，「回测平台层面的污染（插值、低流动性处理、数据对齐错位）是任何外部 grader 都检测不到的失败模式」——作者自己也承认「discretionary traders may not apply」。</li><li><strong>数据源脆弱</strong>：<code>theme-detector</code> 在 FINVIZ Elite CSV 解析上反复翻车（market cap 小 100 万倍、千分位解析为 0、截断 CSV、BOM 字符），是全仓最常出血的伤口；FMP 按 plan 限速、免费 Basic key 对 screener 端点直接拒答。</li><li><strong>复杂度天花板</strong>：74 skill + 15 workflow + 30+ 生成器 + 20+ pre-commit hook，作者本人是单人维护主体（近 30 天 151 commit 对 takusaotome 的 1 commit），bus factor 偏低；<code>ruff max-complexity = 128</code> 实质上等于关闭复杂度检查。</li><li><strong>热度结构风险</strong>：4 天 +69% 的增长与「AI 荐股」舆论争议同期，fork/star 高达 20.5%（大量 fork 是拿去本地化改造，而非收藏）。这既是真实使用意愿强的信号，也是「热度可逆」的信号。</li></ol>
+<h2>行动建议</h2>
+<h3>如果你要用它</h3>
+<ul><li><strong>适合</strong>：美股长线/ETF/股息投资者、有纪律的波段交易者；愿意为 FMP 免费档（多数选股 skill 需要）或 FINVIZ Elite 付费（4 个 skill）买单；<strong>愿意先读方法论再跑工具</strong>的人。</li><li><strong>不适合</strong>：想要自动下单的、想做日内剥头皮的、需要 A 股/台股本地化数据的（国内评测实测发现台股改造时「指数在高位但仅 55% 个股站上 200 日均线」的背离，本仓是美股数据中心）。</li><li><strong>上手路径</strong>：先走 README 里的<strong>无 API key 起步路径</strong>（5 个 skill，纯 CSV / 截图 / 本地文件）→ 再用 Navigator（~10 问）定位你的 skillset → 最后才接付费数据源。<strong>注意 32 个 skill 标为 offline，核心风险路径零外部数据源可跑</strong>。</li><li><strong>先自检三件事</strong>：① 拉一下 #655 的修复状态（107 处静默填 0 会翻转信号）；② 确认你要用的风险闸门 skill 是否还在 beta；③ 由于无 Release，用 git commit SHA 锁定版本，别用 main 分支。</li><li><strong>对比选择</strong>：想要执行层和更低上手成本 → day-trader-skill；想要实时行情和机会发现 → AlphaGBM/skills；想要期权深度和真实 IBKR 执行 → staskh/trading_skills；需要 A 股实盘 → qmt-trading-skill。<strong>本仓的独占位是「决策纪律 + 质量证据」，不是数据也不是执行。</strong></li></ul>
+<h3>如果你要学它</h3>
+<p>按这个顺序读，<strong>五个文件就能抓住它的方法论骨架</strong>：</p>
+<ol><li><strong><code>PROJECT_VISION.md</code></strong>（31.8KB / 17 章）—— 战略转向、七层架构、fail-closed 哲学的原始陈述。§4（核心循环）、§10（从 skill collection 到 Trading OS）、§11（分层架构）必读</li><li><strong><code>skills-index.yaml</code></strong>（76KB）—— SSoT 的实际结构，理解 schema 设计</li><li><strong><code>CLAUDE.md</code></strong>（1013 行）—— 「AI 工程师的项目规约」怎么写：script vs reference 分工、加 skill 的 6 步、production verification 八轴</li><li><strong><code>scripts/provider_contracts.py</code> + <code>config/provider-contracts/</code></strong> —— 四段式防 silent failure 的完整实现，这是全仓最值得抄的一段代码</li><li><strong><code>scripts/price_bars/price_bars.py</code> + <code>scripts/check_price_bar_defaults.py</code></strong> —— AST lint + 只缩小的 allowlist，一个 100 行 helper 挡住 107 处 bug 类</li><li>补充：<code>scripts/workflow_replay_pkg/</code>（冻结时间的字节级 golden 回归）、<code>scripts/validate_skills_index.py</code>（三层严格校验）、<code>config/ci-test-policy.yaml</code>（风险分档覆盖门槛）</li></ol>
+<h3>如果你要 fork 它</h3>
+<ul><li><strong>必做</strong>：不要 fork 后继续在 <code>main</code> 上开发——本仓无 tag，靠 SHA 锁定版本；fork 后立即建立自己的版本策略（哪怕只是 tag 每个 merge）</li><li><strong>值得改的方向</strong>（作者自己列在 issue 里的）：#502 拆 3 个超大文件、#501 拆 9 个过长的 SKILL.md；#332 给 provider 契约加 live canary 门禁；#297 落地 Common Trading Data Contract；#655 补齐 107 处静默填 0；#800 修 theme-detector 的数值解析</li><li><strong>最省力的改进</strong>：把 <code>ruff max-complexity = 128</code> 调到有约束力的数值（作者注释说会随债务减少下调，但当前等于关闭）</li><li><strong>最有价值的改进</strong>：把风险闸门 skill（drawdown breaker、pre-trade discipline gate）从 beta 推到 production —— 这是整个信任叙事的关键缺口</li><li><strong>注意隐私红线</strong>：本仓有 <code>check_private_data_paths.py</code> 索引级守卫 + <code>.secrets.baseline</code>。fork 后若要放自己的持仓/券商数据，<strong>先读 <code>docs/en/privacy.md</code></strong>，别把 <code>state/</code> 目录里的东西 commit 进去</li></ul>
+<h3>知识入口</h3>
+<table>
+<thead>
+<tr>
+<th>资源</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DeepWiki</td>
+<td><a href="https://deepwiki.com/tradermonty/claude-trading-skills">deepwiki.com/tradermonty/claude-trading-skills</a>（已收录，含单个 skill 的子页）</td>
+</tr>
+<tr>
+<td>Zread.ai</td>
+<td>未收录（返回 403）</td>
+</tr>
+<tr>
+<td>关联论文</td>
+<td>无（个人 GitHub 项目，非学术产出）</td>
+</tr>
+<tr>
+<td>在线 Demo</td>
+<td>无独立 playground。替代路径：官网 <a href="https://tradermonty.github.io/claude-trading-skills/">docs/assets/previews/*.svg</a> 的虚构数据示例输出、<code>examples/workflows/*/sample-run/</code> 的机器可读产物、作者衍生的 Hermes 发行版 <a href="https://tradermonty.github.io/hermes-trading-research-agent-work-package">hermes-trading-research-agent-work-package</a></td>
+</tr>
+<tr>
+<td>官方站点</td>
+<td><a href="https://tradermonty.github.io/claude-trading-skills/">https://tradermonty.github.io/claude-trading-skills/</a></td>
+</tr>
+<tr>
+<td>外部深度评测</td>
+<td><a href="https://blog.mushroom.cv/blog/claude-trading-skills-tradermonty-stock-workflow-toolkit">2833 星的 Claude 交易技能包：74 个 Skill 覆盖选股到复盘，但它明确说自己不下单</a> · <a href="https://blog.gitcode.com/18d671e0f724ec8573adb73446b8a605.html">Backtest Expert 方法论精读</a></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
