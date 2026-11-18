@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_run": "2026-11-17",
+    "last_run": "2026-11-18",
     "window_days": 30
   },
   "entries": [
@@ -1815,6 +1815,48 @@
       "canonical_url": "https://nightvoyager.top/github-explore/reports/google_adk-go/",
       "event_date": "2026-11-17",
       "date_seen": "2026-11-17"
+    },
+    {
+      "key": "github.com/jingyaogong/minimind",
+      "canonical_url": "https://github.com/jingyaogong/minimind",
+      "event_date": "2026-11-17",
+      "date_seen": "2026-11-18"
+    },
+    {
+      "key": "github.com/thedotmack/claude-mem",
+      "canonical_url": "https://github.com/thedotmack/claude-mem/releases/tag/v16.0.0",
+      "event_date": "2026-11-18",
+      "date_seen": "2026-11-18"
+    },
+    {
+      "key": "github.com/withcoral/coral",
+      "canonical_url": "https://github.com/withcoral/coral",
+      "event_date": "2026-11-18",
+      "date_seen": "2026-11-18"
+    },
+    {
+      "key": "github.com/abhigyanpatwari/gitnexus",
+      "canonical_url": "https://github.com/abhigyanpatwari/GitNexus/releases/tag/v1.6.13-rc.240",
+      "event_date": "2026-11-17",
+      "date_seen": "2026-11-18"
+    },
+    {
+      "key": "github.com/ruvnet/ruflo",
+      "canonical_url": "https://github.com/ruvnet/ruflo/releases/tag/v3.77.2",
+      "event_date": "2026-11-17",
+      "date_seen": "2026-11-18"
+    },
+    {
+      "key": "github.com/vaibhaav-tiwari/deepseek-v3-jax",
+      "canonical_url": "https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax",
+      "event_date": "2026-11-14",
+      "date_seen": "2026-11-18"
+    },
+    {
+      "key": "github.com/didi/helixharness",
+      "canonical_url": "https://github.com/didi/helixharness",
+      "event_date": "2026-11-18",
+      "date_seen": "2026-11-18"
     }
   ]
 }
