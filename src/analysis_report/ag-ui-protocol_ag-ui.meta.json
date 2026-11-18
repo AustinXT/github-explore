@@ -1,0 +1,6 @@
+{
+  "title": "GitHub 推荐：20K star 的 AG-UI：Agent 事件协议，为什么从 schema 生成",
+  "digest": "AG-UI 把「agent↔用户」这层空缺的通信协议标准化成一份 JSON Schema，schema-first 生成 TS/Python/.NET 三套 SDK，把多语言实现的静默漂移变成构建失败。最值得抄的是跨 SDK 对账表。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}
