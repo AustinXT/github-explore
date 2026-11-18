@@ -417,3 +417,4 @@
 {"recorded_at": "2026-11-17T14:21:02.130965+00:00", "slug": "google-labs-code_stitch-skills", "title": null, "state": "published", "published_at": "2026-11-17", "reason": "自动生成", "ci_run_id": "44098036110"}
 {"recorded_at": "2026-11-17T22:13:07.308317+00:00", "slug": "tradermonty_claude-trading-skills", "title": null, "state": "published", "published_at": "2026-11-17", "reason": "自动生成", "ci_run_id": "44185749545"}
 {"recorded_at": "2026-11-18T13:07:55.092230+00:00", "slug": "ag-ui-protocol_ag-ui", "title": null, "state": "published", "published_at": "2026-11-18", "reason": "自动生成", "ci_run_id": "44304845777"}
+{"recorded_at": "2026-11-18T21:15:33.760268+00:00", "slug": "elementalsouls_claude-bughunter", "title": null, "state": "published", "published_at": "2026-11-18", "reason": "自动生成", "ci_run_id": "44396639880"}
