@@ -3,11 +3,11 @@
     "name": "obra/superpowers",
     "url": "https://github.com/obra/superpowers",
     "language": "Shell",
-    "stars": 309840,
-    "forks": 27559,
+    "stars": 319199,
+    "forks": 28462,
     "description": "An agentic skills framework & software development methodology that works.",
-    "last_seen": "2026-10-31",
-    "trending_days": 99
+    "last_seen": "2026-11-17",
+    "trending_days": 100
   },
   {
     "name": "mattpocock/skills",
@@ -23,11 +23,11 @@
     "name": "affaan-m/ECC",
     "url": "https://github.com/affaan-m/ecc",
     "language": "JavaScript",
-    "stars": 290549,
-    "forks": 43040,
+    "stars": 305322,
+    "forks": 44959,
     "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-    "last_seen": "2026-10-27",
-    "trending_days": 39
+    "last_seen": "2026-11-17",
+    "trending_days": 40
   },
   {
     "name": "TapXWorld/ChinaTextbook",
@@ -320,6 +320,16 @@
     "trending_days": 22
   },
   {
+    "name": "mvanhorn/last30days-skill",
+    "url": "https://github.com/mvanhorn/last30days-skill",
+    "language": "Python",
+    "stars": 68874,
+    "forks": 6138,
+    "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+    "last_seen": "2026-11-17",
+    "trending_days": 21
+  },
+  {
     "name": "pbakaus/impeccable",
     "url": "https://github.com/pbakaus/impeccable",
     "language": "Rust",
@@ -357,16 +367,6 @@
     "forks": 6266,
     "description": "Open-Source Frontier Voice AI",
     "last_seen": "2026-11-05",
-    "trending_days": 20
-  },
-  {
-    "name": "mvanhorn/last30days-skill",
-    "url": "https://github.com/mvanhorn/last30days-skill",
-    "language": "Python",
-    "stars": 68043,
-    "forks": 6028,
-    "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-    "last_seen": "2026-11-16",
     "trending_days": 20
   },
   {
@@ -450,6 +450,16 @@
     "trending_days": 18
   },
   {
+    "name": "alibaba/open-code-review",
+    "url": "https://github.com/alibaba/open-code-review",
+    "language": "Go",
+    "stars": 53610,
+    "forks": 4422,
+    "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+    "last_seen": "2026-11-17",
+    "trending_days": 17
+  },
+  {
     "name": "bytedance/deer-flow",
     "url": "https://github.com/bytedance/deer-flow",
     "language": "Python",
@@ -458,16 +468,6 @@
     "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
     "last_seen": "2026-09-07",
     "trending_days": 17
-  },
-  {
-    "name": "alibaba/open-code-review",
-    "url": "https://github.com/alibaba/open-code-review",
-    "language": "Go",
-    "stars": 52871,
-    "forks": 4290,
-    "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-    "last_seen": "2026-11-16",
-    "trending_days": 16
   },
   {
     "name": "asgeirtj/system_prompts_leaks",
@@ -620,6 +620,16 @@
     "trending_days": 14
   },
   {
+    "name": "cursor/plugins",
+    "url": "https://github.com/cursor/plugins",
+    "language": "TypeScript",
+    "stars": 16842,
+    "forks": 1826,
+    "description": "Cursor plugin specification and official plugins",
+    "last_seen": "2026-11-17",
+    "trending_days": 14
+  },
+  {
     "name": "harvard-edge/cs249r_book",
     "url": "https://github.com/harvard-edge/cs249r_book",
     "language": "Python",
@@ -720,16 +730,6 @@
     "trending_days": 13
   },
   {
-    "name": "cursor/plugins",
-    "url": "https://github.com/cursor/plugins",
-    "language": "TypeScript",
-    "stars": 12558,
-    "forks": 1230,
-    "description": "Cursor plugin specification and official plugins",
-    "last_seen": "2026-10-18",
-    "trending_days": 13
-  },
-  {
     "name": "D4Vinci/Scrapling",
     "url": "https://github.com/d4vinci/scrapling",
     "language": "Python",
@@ -827,6 +827,16 @@
     "forks": 29178,
     "description": "The open source coding agent.",
     "last_seen": "2026-10-20",
+    "trending_days": 12
+  },
+  {
+    "name": "dream-num/univer",
+    "url": "https://github.com/dream-num/univer",
+    "language": "TypeScript",
+    "stars": 28815,
+    "forks": 2615,
+    "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+    "last_seen": "2026-11-17",
     "trending_days": 12
   },
   {
@@ -987,16 +997,6 @@
     "forks": 5771,
     "description": "📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程",
     "last_seen": "2026-05-12",
-    "trending_days": 11
-  },
-  {
-    "name": "dream-num/univer",
-    "url": "https://github.com/dream-num/univer",
-    "language": "TypeScript",
-    "stars": 27706,
-    "forks": 2522,
-    "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
-    "last_seen": "2026-11-16",
     "trending_days": 11
   },
   {
@@ -1390,6 +1390,16 @@
     "trending_days": 9
   },
   {
+    "name": "jingyaogong/minimind",
+    "url": "https://github.com/jingyaogong/minimind",
+    "language": "Python",
+    "stars": 65843,
+    "forks": 8645,
+    "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
+    "last_seen": "2026-11-17",
+    "trending_days": 9
+  },
+  {
     "name": "jwasham/coding-interview-university",
     "url": "https://github.com/jwasham/coding-interview-university",
     "language": "Unknown",
@@ -1687,16 +1697,6 @@
     "forks": 5160,
     "description": "The Free Software Media System - Server Backend & API",
     "last_seen": "2026-07-23",
-    "trending_days": 8
-  },
-  {
-    "name": "jingyaogong/minimind",
-    "url": "https://github.com/jingyaogong/minimind",
-    "language": "Python",
-    "stars": 56855,
-    "forks": 7403,
-    "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
-    "last_seen": "2026-09-01",
     "trending_days": 8
   },
   {
@@ -2990,6 +2990,16 @@
     "trending_days": 5
   },
   {
+    "name": "backnotprop/plannotator",
+    "url": "https://github.com/backnotprop/plannotator",
+    "language": "TypeScript",
+    "stars": 12996,
+    "forks": 1308,
+    "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+    "last_seen": "2026-11-17",
+    "trending_days": 5
+  },
+  {
     "name": "blader/humanizer",
     "url": "https://github.com/blader/humanizer",
     "language": "Python",
@@ -3127,6 +3137,16 @@
     "forks": 182,
     "description": "GitHub Agentic Workflows",
     "last_seen": "2026-02-15",
+    "trending_days": 5
+  },
+  {
+    "name": "google-labs-code/stitch-skills",
+    "url": "https://github.com/google-labs-code/stitch-skills",
+    "language": "TypeScript",
+    "stars": 10028,
+    "forks": 1322,
+    "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+    "last_seen": "2026-11-17",
     "trending_days": 5
   },
   {
@@ -3720,6 +3740,16 @@
     "trending_days": 4
   },
   {
+    "name": "ag-ui-protocol/ag-ui",
+    "url": "https://github.com/ag-ui-protocol/ag-ui",
+    "language": "TypeScript",
+    "stars": 19912,
+    "forks": 2062,
+    "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+    "last_seen": "2026-11-17",
+    "trending_days": 4
+  },
+  {
     "name": "agent-substrate/substrate",
     "url": "https://github.com/agent-substrate/substrate",
     "language": "Go",
@@ -3807,16 +3837,6 @@
     "forks": 30326,
     "description": "Stable Diffusion web UI",
     "last_seen": "2026-05-11",
-    "trending_days": 4
-  },
-  {
-    "name": "backnotprop/plannotator",
-    "url": "https://github.com/backnotprop/plannotator",
-    "language": "TypeScript",
-    "stars": 12464,
-    "forks": 1223,
-    "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-    "last_seen": "2026-11-16",
     "trending_days": 4
   },
   {
@@ -4137,16 +4157,6 @@
     "forks": 1762,
     "description": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.",
     "last_seen": "2026-06-27",
-    "trending_days": 4
-  },
-  {
-    "name": "google-labs-code/stitch-skills",
-    "url": "https://github.com/google-labs-code/stitch-skills",
-    "language": "TypeScript",
-    "stars": 9689,
-    "forks": 1239,
-    "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-    "last_seen": "2026-11-16",
     "trending_days": 4
   },
   {
@@ -4970,16 +4980,6 @@
     "trending_days": 3
   },
   {
-    "name": "ag-ui-protocol/ag-ui",
-    "url": "https://github.com/ag-ui-protocol/ag-ui",
-    "language": "TypeScript",
-    "stars": 18832,
-    "forks": 1959,
-    "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
-    "last_seen": "2026-11-16",
-    "trending_days": 3
-  },
-  {
     "name": "agalwood/Motrix",
     "url": "https://github.com/agalwood/motrix",
     "language": "TypeScript",
@@ -5437,6 +5437,16 @@
     "forks": 858,
     "description": "Eigent: The Open Source Cowork Desktop to Unlock Your Exceptional Productivity.",
     "last_seen": "2026-01-17",
+    "trending_days": 3
+  },
+  {
+    "name": "elementalsouls/Claude-BugHunter",
+    "url": "https://github.com/elementalsouls/claude-bughunter",
+    "language": "Python",
+    "stars": 8896,
+    "forks": 1330,
+    "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+    "last_seen": "2026-11-17",
     "trending_days": 3
   },
   {
@@ -6487,6 +6497,16 @@
     "forks": 2517,
     "description": "Telegram-iOS",
     "last_seen": "2026-04-06",
+    "trending_days": 3
+  },
+  {
+    "name": "Tencent/LoopForge",
+    "url": "https://github.com/tencent/loopforge",
+    "language": "Go",
+    "stars": 3016,
+    "forks": 430,
+    "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
+    "last_seen": "2026-11-17",
     "trending_days": 3
   },
   {
@@ -7590,16 +7610,6 @@
     "trending_days": 2
   },
   {
-    "name": "elementalsouls/Claude-BugHunter",
-    "url": "https://github.com/elementalsouls/claude-bughunter",
-    "language": "Python",
-    "stars": 7297,
-    "forks": 1132,
-    "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
-    "last_seen": "2026-11-16",
-    "trending_days": 2
-  },
-  {
     "name": "envoyproxy/envoy",
     "url": "https://github.com/envoyproxy/envoy",
     "language": "C++",
@@ -7830,6 +7840,16 @@
     "trending_days": 2
   },
   {
+    "name": "getarcaneapp/arcane",
+    "url": "https://github.com/getarcaneapp/arcane",
+    "language": "Go",
+    "stars": 9224,
+    "forks": 505,
+    "description": "Modern Docker Management, Designed for Everyone",
+    "last_seen": "2026-11-17",
+    "trending_days": 2
+  },
+  {
     "name": "GetStream/Vision-Agents",
     "url": "https://github.com/getstream/vision-agents",
     "language": "Python",
@@ -7887,6 +7907,16 @@
     "forks": 14787,
     "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
     "last_seen": "2026-10-24",
+    "trending_days": 2
+  },
+  {
+    "name": "google-research/paper-orchestra",
+    "url": "https://github.com/google-research/paper-orchestra",
+    "language": "Python",
+    "stars": 2779,
+    "forks": 390,
+    "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+    "last_seen": "2026-11-17",
     "trending_days": 2
   },
   {
@@ -9370,6 +9400,16 @@
     "trending_days": 2
   },
   {
+    "name": "sveltejs/svelte",
+    "url": "https://github.com/sveltejs/svelte",
+    "language": "JavaScript",
+    "stars": 89541,
+    "forks": 6256,
+    "description": "web development for the rest of us",
+    "last_seen": "2026-11-17",
+    "trending_days": 2
+  },
+  {
     "name": "swoole/typephp",
     "url": "https://github.com/swoole/typephp",
     "language": "PHP",
@@ -9477,16 +9517,6 @@
     "forks": 353,
     "description": "Let AI agents use your real, logged-in browser without interrupting your work. CLI + extension for browser automation across any shell-capable AI agent.",
     "last_seen": "2026-09-18",
-    "trending_days": 2
-  },
-  {
-    "name": "Tencent/LoopForge",
-    "url": "https://github.com/tencent/loopforge",
-    "language": "Go",
-    "stars": 1330,
-    "forks": 260,
-    "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
-    "last_seen": "2026-11-15",
     "trending_days": 2
   },
   {
@@ -11250,16 +11280,6 @@
     "trending_days": 1
   },
   {
-    "name": "getarcaneapp/arcane",
-    "url": "https://github.com/getarcaneapp/arcane",
-    "language": "Go",
-    "stars": 8631,
-    "forks": 401,
-    "description": "Modern Docker Management, Designed for Everyone",
-    "last_seen": "2026-11-16",
-    "trending_days": 1
-  },
-  {
     "name": "ghostty-org/ghostty",
     "url": "https://github.com/ghostty-org/ghostty",
     "language": "Zig",
@@ -11397,16 +11417,6 @@
     "forks": 2114,
     "description": "Examples and guides for using the Gemini API",
     "last_seen": "2025-09-26",
-    "trending_days": 1
-  },
-  {
-    "name": "google-research/paper-orchestra",
-    "url": "https://github.com/google-research/paper-orchestra",
-    "language": "Python",
-    "stars": 1365,
-    "forks": 232,
-    "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
-    "last_seen": "2026-11-16",
     "trending_days": 1
   },
   {
@@ -13717,16 +13727,6 @@
     "forks": 299,
     "description": "Open-source inference server and production cluster for all the models your agent needs.",
     "last_seen": "2026-09-02",
-    "trending_days": 1
-  },
-  {
-    "name": "sveltejs/svelte",
-    "url": "https://github.com/sveltejs/svelte",
-    "language": "JavaScript",
-    "stars": 88913,
-    "forks": 6083,
-    "description": "web development for the rest of us",
-    "last_seen": "2026-11-16",
     "trending_days": 1
   },
   {

@@ -1066,6 +1066,11 @@ entries:
   google-labs-code_design.md:
   - ai-agent
   - design-ui
+  google-labs-code_stitch-skills:
+  - ai-agent
+  - ai-coding
+  - devtools
+  - protocol-spec
   google-research_timesfm:
   - uncategorized
   google_adk-go:
@@ -2641,6 +2646,11 @@ entries:
   - education
   - trading-finance
   - security
+  tradermonty_claude-trading-skills:
+  - ai-agent
+  - ai-coding
+  - data-pipeline
+  - trading-finance
   traefik_traefik:
   - ai-agent
   - workflow-automation
