@@ -1,0 +1,6 @@
+{
+  "title": "GitHub推荐：Solid 2.0：删掉 7 个 API 才守住 7.6KB",
+  "digest": "Solid 2.0 把响应式内核、Rust 编译器、诊断系统全部重做一遍：异步内建进同一张响应式图，并主动删掉 7 个核心 API。还用 CI 棘轮把 core 运行时体积冻结在 7.56 KB brotli，只许降不许升。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}
