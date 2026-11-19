@@ -3,11 +3,11 @@
     "name": "obra/superpowers",
     "url": "https://github.com/obra/superpowers",
     "language": "Shell",
-    "stars": 319199,
-    "forks": 28462,
+    "stars": 319908,
+    "forks": 28540,
     "description": "An agentic skills framework & software development methodology that works.",
-    "last_seen": "2026-11-17",
-    "trending_days": 100
+    "last_seen": "2026-11-18",
+    "trending_days": 101
   },
   {
     "name": "mattpocock/skills",
@@ -23,11 +23,21 @@
     "name": "affaan-m/ECC",
     "url": "https://github.com/affaan-m/ecc",
     "language": "JavaScript",
-    "stars": 305322,
-    "forks": 44959,
+    "stars": 306348,
+    "forks": 45099,
     "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-    "last_seen": "2026-11-17",
-    "trending_days": 40
+    "last_seen": "2026-11-18",
+    "trending_days": 41
+  },
+  {
+    "name": "nvm-sh/nvm",
+    "url": "https://github.com/nvm-sh/nvm",
+    "language": "Shell",
+    "stars": 96135,
+    "forks": 10780,
+    "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
+    "last_seen": "2026-11-18",
+    "trending_days": 39
   },
   {
     "name": "TapXWorld/ChinaTextbook",
@@ -38,16 +48,6 @@
     "description": "所有小初高、大学PDF教材。",
     "last_seen": "2026-08-06",
     "trending_days": 39
-  },
-  {
-    "name": "nvm-sh/nvm",
-    "url": "https://github.com/nvm-sh/nvm",
-    "language": "Shell",
-    "stars": 95977,
-    "forks": 10756,
-    "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
-    "last_seen": "2026-11-12",
-    "trending_days": 38
   },
   {
     "name": "thedotmack/claude-mem",
@@ -280,6 +280,16 @@
     "trending_days": 22
   },
   {
+    "name": "mvanhorn/last30days-skill",
+    "url": "https://github.com/mvanhorn/last30days-skill",
+    "language": "Python",
+    "stars": 69848,
+    "forks": 6235,
+    "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+    "last_seen": "2026-11-18",
+    "trending_days": 22
+  },
+  {
     "name": "playcanvas/engine",
     "url": "https://github.com/playcanvas/engine",
     "language": "JavaScript",
@@ -318,16 +328,6 @@
     "description": "Frame profiler",
     "last_seen": "2025-12-04",
     "trending_days": 22
-  },
-  {
-    "name": "mvanhorn/last30days-skill",
-    "url": "https://github.com/mvanhorn/last30days-skill",
-    "language": "Python",
-    "stars": 68874,
-    "forks": 6138,
-    "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-    "last_seen": "2026-11-17",
-    "trending_days": 21
   },
   {
     "name": "pbakaus/impeccable",
@@ -550,6 +550,16 @@
     "trending_days": 15
   },
   {
+    "name": "cursor/plugins",
+    "url": "https://github.com/cursor/plugins",
+    "language": "TypeScript",
+    "stars": 17135,
+    "forks": 1890,
+    "description": "Cursor plugin specification and official plugins",
+    "last_seen": "2026-11-18",
+    "trending_days": 15
+  },
+  {
     "name": "666ghj/BettaFish",
     "url": "https://github.com/666ghj/bettafish",
     "language": "Python",
@@ -620,16 +630,6 @@
     "trending_days": 14
   },
   {
-    "name": "cursor/plugins",
-    "url": "https://github.com/cursor/plugins",
-    "language": "TypeScript",
-    "stars": 16842,
-    "forks": 1826,
-    "description": "Cursor plugin specification and official plugins",
-    "last_seen": "2026-11-17",
-    "trending_days": 14
-  },
-  {
     "name": "harvard-edge/cs249r_book",
     "url": "https://github.com/harvard-edge/cs249r_book",
     "language": "Python",
@@ -637,6 +637,16 @@
     "forks": 3178,
     "description": "Machine Learning Systems",
     "last_seen": "2026-07-05",
+    "trending_days": 14
+  },
+  {
+    "name": "HKUDS/CLI-Anything",
+    "url": "https://github.com/hkuds/cli-anything",
+    "language": "Python",
+    "stars": 59569,
+    "forks": 5409,
+    "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+    "last_seen": "2026-11-18",
     "trending_days": 14
   },
   {
@@ -737,16 +747,6 @@
     "forks": 10243,
     "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
     "last_seen": "2026-11-05",
-    "trending_days": 13
-  },
-  {
-    "name": "HKUDS/CLI-Anything",
-    "url": "https://github.com/hkuds/cli-anything",
-    "language": "Python",
-    "stars": 55062,
-    "forks": 4974,
-    "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-    "last_seen": "2026-10-19",
     "trending_days": 13
   },
   {
@@ -2500,6 +2500,16 @@
     "trending_days": 6
   },
   {
+    "name": "google-labs-code/stitch-skills",
+    "url": "https://github.com/google-labs-code/stitch-skills",
+    "language": "TypeScript",
+    "stars": 10358,
+    "forks": 1363,
+    "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+    "last_seen": "2026-11-18",
+    "trending_days": 6
+  },
+  {
     "name": "Graphify-Labs/graphify",
     "url": "https://github.com/graphify-labs/graphify",
     "language": "Python",
@@ -3137,16 +3147,6 @@
     "forks": 182,
     "description": "GitHub Agentic Workflows",
     "last_seen": "2026-02-15",
-    "trending_days": 5
-  },
-  {
-    "name": "google-labs-code/stitch-skills",
-    "url": "https://github.com/google-labs-code/stitch-skills",
-    "language": "TypeScript",
-    "stars": 10028,
-    "forks": 1322,
-    "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-    "last_seen": "2026-11-17",
     "trending_days": 5
   },
   {
@@ -4027,6 +4027,16 @@
     "forks": 14212,
     "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
     "last_seen": "2026-10-03",
+    "trending_days": 4
+  },
+  {
+    "name": "elementalsouls/Claude-BugHunter",
+    "url": "https://github.com/elementalsouls/claude-bughunter",
+    "language": "Python",
+    "stars": 11072,
+    "forks": 1496,
+    "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+    "last_seen": "2026-11-18",
     "trending_days": 4
   },
   {
@@ -5440,16 +5450,6 @@
     "trending_days": 3
   },
   {
-    "name": "elementalsouls/Claude-BugHunter",
-    "url": "https://github.com/elementalsouls/claude-bughunter",
-    "language": "Python",
-    "stars": 8896,
-    "forks": 1330,
-    "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
-    "last_seen": "2026-11-17",
-    "trending_days": 3
-  },
-  {
     "name": "evershopcommerce/evershop",
     "url": "https://github.com/evershopcommerce/evershop",
     "language": "TypeScript",
@@ -5540,6 +5540,16 @@
     "trending_days": 3
   },
   {
+    "name": "getarcaneapp/arcane",
+    "url": "https://github.com/getarcaneapp/arcane",
+    "language": "Go",
+    "stars": 9728,
+    "forks": 556,
+    "description": "Modern Docker Management, Designed for Everyone",
+    "last_seen": "2026-11-18",
+    "trending_days": 3
+  },
+  {
     "name": "getsentry/sentry",
     "url": "https://github.com/getsentry/sentry",
     "language": "Python",
@@ -5577,6 +5587,16 @@
     "forks": 2138,
     "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
     "last_seen": "2026-11-10",
+    "trending_days": 3
+  },
+  {
+    "name": "google-research/paper-orchestra",
+    "url": "https://github.com/google-research/paper-orchestra",
+    "language": "Python",
+    "stars": 4099,
+    "forks": 513,
+    "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+    "last_seen": "2026-11-18",
     "trending_days": 3
   },
   {
@@ -6130,6 +6150,16 @@
     "trending_days": 3
   },
   {
+    "name": "NVIDIA/SkillEvaluator",
+    "url": "https://github.com/nvidia/skillevaluator",
+    "language": "Python",
+    "stars": 3622,
+    "forks": 507,
+    "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
+    "last_seen": "2026-11-18",
+    "trending_days": 3
+  },
+  {
     "name": "Open-LLM-VTuber/Open-LLM-VTuber",
     "url": "https://github.com/open-llm-vtuber/open-llm-vtuber",
     "language": "Python",
@@ -6457,6 +6487,16 @@
     "forks": 254,
     "description": "OpenRouter for agent tools. Join community here: https://discord.gg/6mQYYfFMAn",
     "last_seen": "2026-09-24",
+    "trending_days": 3
+  },
+  {
+    "name": "sveltejs/svelte",
+    "url": "https://github.com/sveltejs/svelte",
+    "language": "JavaScript",
+    "stars": 89714,
+    "forks": 6215,
+    "description": "web development for the rest of us",
+    "last_seen": "2026-11-18",
     "trending_days": 3
   },
   {
@@ -7480,6 +7520,16 @@
     "trending_days": 2
   },
   {
+    "name": "DeanChensj/jiangshan-map",
+    "url": "https://github.com/deanchensj/jiangshan-map",
+    "language": "JavaScript",
+    "stars": 7893,
+    "forks": 966,
+    "description": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes",
+    "last_seen": "2026-11-18",
+    "trending_days": 2
+  },
+  {
     "name": "deepfakes/faceswap",
     "url": "https://github.com/deepfakes/faceswap",
     "language": "Python",
@@ -7840,16 +7890,6 @@
     "trending_days": 2
   },
   {
-    "name": "getarcaneapp/arcane",
-    "url": "https://github.com/getarcaneapp/arcane",
-    "language": "Go",
-    "stars": 9224,
-    "forks": 505,
-    "description": "Modern Docker Management, Designed for Everyone",
-    "last_seen": "2026-11-17",
-    "trending_days": 2
-  },
-  {
     "name": "GetStream/Vision-Agents",
     "url": "https://github.com/getstream/vision-agents",
     "language": "Python",
@@ -7907,16 +7947,6 @@
     "forks": 14787,
     "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
     "last_seen": "2026-10-24",
-    "trending_days": 2
-  },
-  {
-    "name": "google-research/paper-orchestra",
-    "url": "https://github.com/google-research/paper-orchestra",
-    "language": "Python",
-    "stars": 2779,
-    "forks": 390,
-    "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
-    "last_seen": "2026-11-17",
     "trending_days": 2
   },
   {
@@ -8790,6 +8820,16 @@
     "trending_days": 2
   },
   {
+    "name": "n8n-io/n8n",
+    "url": "https://github.com/n8n-io/n8n",
+    "language": "TypeScript",
+    "stars": 210977,
+    "forks": 61560,
+    "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+    "last_seen": "2026-11-18",
+    "trending_days": 2
+  },
+  {
     "name": "nab138/iloader",
     "url": "https://github.com/nab138/iloader",
     "language": "TypeScript",
@@ -8877,16 +8917,6 @@
     "forks": 49,
     "description": "cuTile is a programming model for writing parallel kernels for NVIDIA GPUs",
     "last_seen": "2025-12-09",
-    "trending_days": 2
-  },
-  {
-    "name": "NVIDIA/SkillEvaluator",
-    "url": "https://github.com/nvidia/skillevaluator",
-    "language": "Python",
-    "stars": 2547,
-    "forks": 350,
-    "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
-    "last_seen": "2026-11-16",
     "trending_days": 2
   },
   {
@@ -9190,6 +9220,16 @@
     "trending_days": 2
   },
   {
+    "name": "punkpeye/awesome-mcp-servers",
+    "url": "https://github.com/punkpeye/awesome-mcp-servers",
+    "language": "Unknown",
+    "stars": 97972,
+    "forks": 20330,
+    "description": "A collection of MCP servers.",
+    "last_seen": "2026-11-18",
+    "trending_days": 2
+  },
+  {
     "name": "puppeteer/puppeteer",
     "url": "https://github.com/puppeteer/puppeteer",
     "language": "TypeScript",
@@ -9397,16 +9437,6 @@
     "forks": 434,
     "description": "A collaborative note taking, wiki and documentation platform that scales. Built with Django and React.",
     "last_seen": "2025-11-02",
-    "trending_days": 2
-  },
-  {
-    "name": "sveltejs/svelte",
-    "url": "https://github.com/sveltejs/svelte",
-    "language": "JavaScript",
-    "stars": 89541,
-    "forks": 6256,
-    "description": "web development for the rest of us",
-    "last_seen": "2026-11-17",
     "trending_days": 2
   },
   {
@@ -10320,6 +10350,16 @@
     "trending_days": 1
   },
   {
+    "name": "appwrite/appwrite",
+    "url": "https://github.com/appwrite/appwrite",
+    "language": "TypeScript",
+    "stars": 58182,
+    "forks": 5888,
+    "description": "The open-source cloud for agents & devs. Including Auth, Databases, Storage, Functions, Messaging, Hosting, Realtime, WAF and more",
+    "last_seen": "2026-11-18",
+    "trending_days": 1
+  },
+  {
     "name": "argoproj/argo-cd",
     "url": "https://github.com/argoproj/argo-cd",
     "language": "Go",
@@ -10367,6 +10407,16 @@
     "forks": 7279,
     "description": "Learn System Design concepts and prepare for interviews using free resources.",
     "last_seen": "2026-02-17",
+    "trending_days": 1
+  },
+  {
+    "name": "astral-sh/uv",
+    "url": "https://github.com/astral-sh/uv",
+    "language": "Rust",
+    "stars": 92181,
+    "forks": 3921,
+    "description": "An extremely fast Python package and project manager, written in Rust.",
+    "last_seen": "2026-11-18",
     "trending_days": 1
   },
   {
@@ -10827,16 +10877,6 @@
     "forks": 20110,
     "description": "A flexible enhancer for YouTube on iOS",
     "last_seen": "2026-04-21",
-    "trending_days": 1
-  },
-  {
-    "name": "DeanChensj/jiangshan-map",
-    "url": "https://github.com/deanchensj/jiangshan-map",
-    "language": "JavaScript",
-    "stars": 6651,
-    "forks": 782,
-    "description": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes",
-    "last_seen": "2026-11-16",
     "trending_days": 1
   },
   {
@@ -11930,6 +11970,16 @@
     "trending_days": 1
   },
   {
+    "name": "jquery/jquery",
+    "url": "https://github.com/jquery/jquery",
+    "language": "JavaScript",
+    "stars": 59993,
+    "forks": 20715,
+    "description": "jQuery JavaScript Library",
+    "last_seen": "2026-11-18",
+    "trending_days": 1
+  },
+  {
     "name": "jrouwe/JoltPhysics",
     "url": "https://github.com/jrouwe/joltphysics",
     "language": "C++",
@@ -12660,16 +12710,6 @@
     "trending_days": 1
   },
   {
-    "name": "n8n-io/n8n",
-    "url": "https://github.com/n8n-io/n8n",
-    "language": "TypeScript",
-    "stars": 204900,
-    "forks": 60733,
-    "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-    "last_seen": "2026-09-17",
-    "trending_days": 1
-  },
-  {
     "name": "nanobrowser/nanobrowser",
     "url": "https://github.com/nanobrowser/nanobrowser",
     "language": "TypeScript",
@@ -12980,6 +13020,16 @@
     "trending_days": 1
   },
   {
+    "name": "openvinotoolkit/openvino",
+    "url": "https://github.com/openvinotoolkit/openvino",
+    "language": "C++",
+    "stars": 11285,
+    "forks": 3599,
+    "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+    "last_seen": "2026-11-18",
+    "trending_days": 1
+  },
+  {
     "name": "OpenWhispr/openwhispr",
     "url": "https://github.com/openwhispr/openwhispr",
     "language": "JavaScript",
@@ -13217,16 +13267,6 @@
     "forks": 94,
     "description": "A lightweight tool for deploying and managing containerised applications across a network of Docker hosts. Bridging the gap between Docker and Kubernetes ✨",
     "last_seen": "2025-12-06",
-    "trending_days": 1
-  },
-  {
-    "name": "punkpeye/awesome-mcp-servers",
-    "url": "https://github.com/punkpeye/awesome-mcp-servers",
-    "language": "Unknown",
-    "stars": 93173,
-    "forks": 15282,
-    "description": "A collection of MCP servers.",
-    "last_seen": "2026-08-30",
     "trending_days": 1
   },
   {
@@ -13657,6 +13697,16 @@
     "forks": 1239,
     "description": "A股自动选股系统 — 多种技术形态自动扫描，收盘后自动运行并推送飞书",
     "last_seen": "2026-09-02",
+    "trending_days": 1
+  },
+  {
+    "name": "solidjs/solid",
+    "url": "https://github.com/solidjs/solid",
+    "language": "TypeScript",
+    "stars": 36508,
+    "forks": 1178,
+    "description": "A declarative, efficient, and flexible JavaScript library for building user interfaces.",
+    "last_seen": "2026-11-18",
     "trending_days": 1
   },
   {

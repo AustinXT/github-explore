@@ -65,6 +65,10 @@ entries:
   afkarxyz_spotiflac:
   - devtools
   - video-audio
+  ag-ui-protocol_ag-ui:
+  - ai-agent
+  - devtools
+  - protocol-spec
   agalwood_motrix:
   - ai-agent
   - devtools
@@ -831,6 +835,10 @@ entries:
   - ai-agent
   - llm-framework
   - rag-search
+  elementalsouls_claude-bughunter:
+  - ai-agent
+  - ai-coding
+  - security
   eleutherai_lm-evaluation-harness:
   - uncategorized
   emcie-co_parlant:
