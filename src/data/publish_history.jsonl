@@ -420,3 +420,4 @@
 {"recorded_at": "2026-11-18T21:15:33.760268+00:00", "slug": "elementalsouls_claude-bughunter", "title": null, "state": "published", "published_at": "2026-11-18", "reason": "自动生成", "ci_run_id": "44396639880"}
 {"recorded_at": "2026-11-19T02:40:54.290497+00:00", "slug": "jquery_jquery", "title": null, "state": "published", "published_at": "2026-11-19", "reason": "自动生成", "ci_run_id": "44443213113"}
 {"recorded_at": "2026-11-19T11:12:20.939092+00:00", "slug": "solidjs_solid", "title": null, "state": "published", "published_at": "2026-11-19", "reason": "自动生成", "ci_run_id": "44509934631"}
+{"recorded_at": "2026-11-19T19:33:44.434891+00:00", "slug": "sveltejs_svelte", "title": null, "state": "published", "published_at": "2026-11-19", "reason": "自动生成", "ci_run_id": "44596328293"}

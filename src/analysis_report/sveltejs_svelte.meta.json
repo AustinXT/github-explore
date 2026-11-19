@@ -1,0 +1,6 @@
+{
+  "title": "GitHub推荐：Svelte 89k star：十年两次推翻自己，把运行时请回来",
+  "digest": "Svelte 十年两次推翻自己：从「编译期消灭运行时」退回到「编译期 + 运行时信号图」，再把一次更新重写成可并发的 Batch 视图模型。零运行时依赖靠 CI 断言守住；最值钱的资产是一份逐条记录理由与代价的决策日志。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}
