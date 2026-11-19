@@ -1,0 +1,6 @@
+{
+  "title": "GitHub推荐：6 万 star 的 jQuery：20 年老库如何用减法重写",
+  "digest": "jQuery 4.x 正在用「只删不加」完成最后一次自我重写：移除 13 个废弃 API、砍掉自研选择器引擎 Sizzle、把 AMD 源码换成 ES Module，并把「维护存量代码」做成一门付费生意——一份罕见的遗留库瘦身工程案例。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}
