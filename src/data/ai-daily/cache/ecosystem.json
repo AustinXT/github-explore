@@ -1,45 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-11-18",
+    "last_run": "2026-11-19",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/cursor/plugins",
-      "canonical_url": "https://github.com/cursor/plugins",
-      "event_date": "2026-10-19",
-      "date_seen": "2026-10-19"
-    },
-    {
-      "key": "github.com/debpalash/voicestudio",
-      "canonical_url": "https://github.com/debpalash/VoiceStudio",
-      "event_date": "2026-10-19",
-      "date_seen": "2026-10-19"
-    },
-    {
-      "key": "github.com/android/skills",
-      "canonical_url": "https://github.com/android/skills",
-      "event_date": "2026-10-19",
-      "date_seen": "2026-10-19"
-    },
-    {
-      "key": "github.com/mlabonne/llm-course",
-      "canonical_url": "https://github.com/mlabonne/llm-course",
-      "event_date": "2026-10-19",
-      "date_seen": "2026-10-19"
-    },
-    {
-      "key": "github.com/kruk2/jasna",
-      "canonical_url": "https://github.com/Kruk2/jasna",
-      "event_date": "2026-10-19",
-      "date_seen": "2026-10-19"
-    },
-    {
-      "key": "github.com/mattpocock/skills",
-      "canonical_url": "https://github.com/mattpocock/skills",
-      "event_date": "2026-10-19",
-      "date_seen": "2026-10-19"
-    },
     {
       "key": "github.com/headroomlabs-ai/headroom",
       "canonical_url": "https://github.com/headroomlabs-ai/headroom",
@@ -1857,6 +1821,60 @@
       "canonical_url": "https://github.com/didi/helixharness",
       "event_date": "2026-11-18",
       "date_seen": "2026-11-18"
+    },
+    {
+      "key": "github.com/tencent-hunyuan/hy4-flash",
+      "canonical_url": "https://github.com/Tencent-Hunyuan/Hy4-flash",
+      "event_date": "2026-11-18",
+      "date_seen": "2026-11-19"
+    },
+    {
+      "key": "github.com/hkuds/cli-anything",
+      "canonical_url": "https://github.com/HKUDS/CLI-Anything",
+      "event_date": "2026-11-18",
+      "date_seen": "2026-11-19"
+    },
+    {
+      "key": "github.com/appwrite/appwrite",
+      "canonical_url": "https://github.com/appwrite/appwrite",
+      "event_date": "2026-11-18",
+      "date_seen": "2026-11-19"
+    },
+    {
+      "key": "github.com/openvinotoolkit/openvino",
+      "canonical_url": "https://github.com/openvinotoolkit/openvino",
+      "event_date": "2026-11-18",
+      "date_seen": "2026-11-19"
+    },
+    {
+      "key": "github.com/mastra-ai/mastra",
+      "canonical_url": "https://github.com/mastra-ai/mastra",
+      "event_date": "2026-11-18",
+      "date_seen": "2026-11-19"
+    },
+    {
+      "key": "github.com/punkpeye/awesome-mcp-servers",
+      "canonical_url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "event_date": "2026-11-18",
+      "date_seen": "2026-11-19"
+    },
+    {
+      "key": "github.com/omnigent-ai/omnigent",
+      "canonical_url": "https://github.com/omnigent-ai/omnigent",
+      "event_date": "2026-11-19",
+      "date_seen": "2026-11-19"
+    },
+    {
+      "key": "github.com/ml-explore/mlx-lm",
+      "canonical_url": "https://github.com/ml-explore/mlx-lm",
+      "event_date": "2026-11-18",
+      "date_seen": "2026-11-19"
+    },
+    {
+      "key": "github.com/mattpocock/skills",
+      "canonical_url": "https://github.com/mattpocock/skills",
+      "event_date": "2026-11-18",
+      "date_seen": "2026-11-19"
     }
   ]
 }
