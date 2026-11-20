@@ -1,27 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-11-19",
+    "last_run": "2026-11-20",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/headroomlabs-ai/headroom",
-      "canonical_url": "https://github.com/headroomlabs-ai/headroom",
-      "event_date": "2026-10-20",
-      "date_seen": "2026-10-20"
-    },
-    {
-      "key": "github.com/nethiafin/wine",
-      "canonical_url": "https://github.com/nethiafin/wine",
-      "event_date": "2026-10-20",
-      "date_seen": "2026-10-20"
-    },
-    {
-      "key": "github.com/benjaminsehl/omarcast",
-      "canonical_url": "https://github.com/benjaminsehl/omarcast",
-      "event_date": "2026-10-20",
-      "date_seen": "2026-10-20"
-    },
     {
       "key": "github.com/graphify-labs/graphify",
       "canonical_url": "https://github.com/Graphify-Labs/graphify",
@@ -1875,6 +1857,66 @@
       "canonical_url": "https://github.com/mattpocock/skills",
       "event_date": "2026-11-18",
       "date_seen": "2026-11-19"
+    },
+    {
+      "key": "github.com/firecrawl/firecrawl",
+      "canonical_url": "https://github.com/firecrawl/firecrawl",
+      "event_date": "2026-11-19",
+      "date_seen": "2026-11-20"
+    },
+    {
+      "key": "github.com/simplexai-labs/linger",
+      "canonical_url": "https://github.com/simplexai-labs/linger",
+      "event_date": "2026-11-19",
+      "date_seen": "2026-11-20"
+    },
+    {
+      "key": "github.com/cathrynlavery/diagram-design",
+      "canonical_url": "https://github.com/cathrynlavery/diagram-design",
+      "event_date": "2026-11-19",
+      "date_seen": "2026-11-20"
+    },
+    {
+      "key": "github.com/tracer-cloud/opensre",
+      "canonical_url": "https://github.com/Tracer-Cloud/opensre",
+      "event_date": "2026-11-19",
+      "date_seen": "2026-11-20"
+    },
+    {
+      "key": "github.com/bookwjitchieni1986/blender-ai-mcp-addon",
+      "canonical_url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
+      "event_date": "2026-11-19",
+      "date_seen": "2026-11-20"
+    },
+    {
+      "key": "github.com/mjmirza/app-store-compliance",
+      "canonical_url": "https://github.com/mjmirza/app-store-compliance",
+      "event_date": "2026-11-19",
+      "date_seen": "2026-11-20"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/rasbt_llms-from-scratch",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/rasbt_llms-from-scratch/",
+      "event_date": "2026-11-20",
+      "date_seen": "2026-11-20"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/microsoft_markitdown",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/microsoft_markitdown/",
+      "event_date": "2026-11-20",
+      "date_seen": "2026-11-20"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/microsoft_ai-agents-for-beginners",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/microsoft_ai-agents-for-beginners/",
+      "event_date": "2026-11-20",
+      "date_seen": "2026-11-20"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/anomalyco_opencode",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/anomalyco_opencode/",
+      "event_date": "2026-11-20",
+      "date_seen": "2026-11-20"
     }
   ]
 }
