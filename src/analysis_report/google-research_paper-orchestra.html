@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* ====== 微信公众号排版 CSS ====== */
+
+body {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #3e3e3e;
+    background: #fff;
+}
+
+/* 正文段落 */
+p {
+    font-size: 15px !important;
+    line-height: 2 !important;
+    margin: 0 !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+    padding-right: 1.2em !important;
+    padding-left: 1.2em !important;
+    text-align: justify !important;
+}
+p + p {
+    margin-top: 0 !important;
+}
+
+/* 标题 */
+h1 {
+    font-size: 20px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 16px 0 !important;
+    padding: 0 !important;
+}
+h2 {
+    font-size: 18px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 24px 0 !important;
+    padding: 0 !important;
+}
+h3 {
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+    text-align: left !important;
+    margin: 16px 0 16px 0 !important;
+    padding: 0 0 0 1.2em !important;
+}
+h4 {
+    font-size: 15px !important;
+    color: rgb(0, 122, 170) !important;
+    margin: 12px 0 8px 0 !important;
+    padding: 0 !important;
+}
+
+/* 列表 */
+ul,
+ol {
+    padding-left: 2em !important;
+    margin: 1em 0 !important;
+    font-size: 15px !important;
+}
+li {
+    margin: 0.5em 0 !important;
+    line-height: 1.8em !important;
+    font-size: 15px !important;
+    color: #3e3e3e !important;
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    margin: 0 !important;
+    padding-left: 1.2em !important;
+}
+
+/* 引用 */
+blockquote {
+    border-left: 4px solid #888 !important;
+    padding: 8px 16px !important;
+    margin: 1em 0 !important;
+    color: #666 !important;
+    background: #f9f9f9 !important;
+}
+blockquote > p {
+    margin: 0.5em 0 !important;
+    padding: 0 !important;
+}
+blockquote::before,
+blockquote::after {
+    content: none !important;
+}
+
+/* 代码块 */
+pre {
+    font-size: 14px !important;
+    line-height: 1.4em !important;
+    color: #3e3e3e !important;
+    background: #f8f8f8 !important;
+    padding: 12px 16px !important;
+    border-radius: 4px !important;
+    overflow: auto !important;
+    margin: 1em 0 !important;
+}
+
+/* 脚注 */
+.footnotes {
+    font-size: 11px !important;
+    color: #666 !important;
+    line-height: 1.2 !important;
+    margin: 8px 0 0 0 !important;
+    padding: 4px 0 0 0 !important;
+    border-top: 1px solid #eee !important;
+}
+.footnotes p {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #666 !important;
+}
+
+/* 上标 */
+sup {
+    font-size: 0.75em !important;
+    vertical-align: super !important;
+    color: #e51f42 !important;
+    margin: 0 2px !important;
+}
+table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: 1em 0 !important;
+    font-size: 14px !important;
+}
+th, td {
+    border: 1px solid #ddd !important;
+    padding: 8px 12px !important;
+    text-align: left !important;
+    line-height: 1.6 !important;
+}
+th {
+    background: #f5f5f5 !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+}
+td {
+    color: #3e3e3e !important;
+}
+
+img {
+    max-width: 100% !important;
+    display: block !important;
+    margin: 1em auto !important;
+}
+
+a {
+    color: rgb(0, 122, 170) !important;
+    text-decoration: none !important;
+}
+</style>
+</head>
+<body>
+
+<blockquote>
+<p>GitHub: <a href="https://github.com/google-research/paper-orchestra">https://github.com/google-research/paper-orchestra</a></p>
+</blockquote>
+<h2>一句话总结</h2>
+<p>Google Cloud AI Research 开源的「实验素材 → 可投稿 LaTeX 稿」五 agent 流水线：用<strong>分层检索任务图 + Semantic Scholar 引用校验 + 模拟同行评审自迭代</strong>，把 idea summary 和实验日志直接变成符合 CVPR/ICLR 模板的投稿稿——架构与方法论值得抄，但 50–68% 胜率是作者自报、benchmark 至今未开源，<strong>产出质量仍需人类背书</strong>。</p>
+<h2>值得关注的理由</h2>
+<ol><li><strong>切进了一个近乎无人占据的垂直切口：</strong>市面上的 AI 论文工具要么做「全自动科研」（AI Scientist 系列，从选题到跑实验全包），要么做「已有初稿的润色」（Jenni、Paperpal），要么做「深度调研成文」（STORM，3.2 万 star）。<strong>「我已经有数据和实验记录了，帮我变成一份能投的稿子」</strong>这一段，Google 用组织账号 + 论文 + 5,215 star 抢先占住了心智。</li><li><strong>三个具体设计可以直接抄进自己的项目：</strong>outline agent 不写正文而是产出<strong>可枚举的检索任务图</strong>；SxS 评测跑<strong>双向位置交换</strong>去偏；内容精修用<strong>多轴增益/降级复合判据</strong>而非单一分数阈值——这三件事跟 LLM 厂商无关，任何多 agent 系统都能用。</li><li><strong>热度与工程成熟度的裂口本身就是最好的观察窗口：</strong>3 天涨 2,734 star（Trending 日榜最高第 9 名），但仓库只有 <strong>8 个 commit、0 个 tag、0 个 release、35 个未合并 PR、0 个测试</strong>，论文承诺发布的 PaperWritingBench 数据集至今没放出来。<strong>它是一份「论文热度红利」的活标本</strong>——读代码能直接看到当红项目是怎么在工程上欠债的。</li></ol>
+<h2>项目展示</h2>
+<p><img alt="PaperOrchestra 框架总览：Outline → Literature Review → Section Writing → Content Refinement → Plotting 五 agent 流水线" src="https://yiwen-song.github.io/paper_orchestra/figures/overview.png"/></p><p>
+五 agent 流水线总览。各 agent 通过文件系统上的 JSON 中间产物解耦，agent 之间零 Python 依赖</p>
+<p><img alt="人类评审对比：PaperOrchestra vs Single Agent vs AI Scientist-v2" src="https://yiwen-song.github.io/paper_orchestra/figures/human_eval_bar.png"/></p><p>
+人类评审打分。注意这两个数字的落差：文献综述质量的 50–68 分绝对胜率，远高于整体稿件质量的 14–38 分</p>
+<p><img alt="CVPR 2025 模板 + 自动生成图表的成稿示例" src="https://yiwen-song.github.io/paper_orchestra/figures/cvpr_ours_ploton.jpg"/></p><p>
+双栏 CVPR 模板下的成稿输出（plot on = 开启绘图 agent）</p>
+<p><img alt="ICLR 2025 模板 + 自动生成图表的成稿示例" src="https://yiwen-song.github.io/paper_orchestra/figures/iclr_ours_ploton.jpg"/></p><p>
+单栏 ICLR 模板下的成稿输出。同一套流水线通过模板目录适配两种排版惯例</p>
+<p><img alt="CVPR 2025 基准数据集统计（PaperWritingBench）" src="https://yiwen-song.github.io/paper_orchestra/figures/cvpr2025_stats.png"/></p><p>
+PaperWritingBench 的数据构成：从 200 篇已录用论文逆向工程出 Sparse/Dense Idea Summary 与 Experimental Log 三种输入形态</p>
+<h2>项目画像</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub</td>
+<td><a href="https://github.com/google-research/paper-orchestra">https://github.com/google-research/paper-orchestra</a></td>
+</tr>
+<tr>
+<td>Star / Fork</td>
+<td>5,215 / 650（star:fork ≈ 8:1）</td>
+</tr>
+<tr>
+<td>代码行数</td>
+<td>9,791 行（Python 75.8%、TeX 24.0%、Shell/JSON 各 0.1%）；注释 1,613 行，注释占比 16.5%</td>
+</tr>
+<tr>
+<td>项目年龄</td>
+<td>6.4 个月（首次提交 2026-05-07，仓库创建 2026-05-01）</td>
+</tr>
+<tr>
+<td>开发阶段</td>
+<td>低维护（总 commit 仅 8 个；2026-05 之后近 6 个月空窗，2026-11-15 突然合并 6 个社区 PR）</td>
+</tr>
+<tr>
+<td>贡献模式</td>
+<td>单人主导 + 社区协作（正式贡献者 3 人，Top 作者占 62.5%；另有 35 个 open PR 来自约 15 位外部开发者）</td>
+</tr>
+<tr>
+<td>热度定位</td>
+<td>大众热门（2026-11-16/17/18 连续三日上榜 Trending 日榜第 12/15/9 名，三天 +2,734 star）</td>
+</tr>
+<tr>
+<td>质量评级</td>
+<td>代码[一般] 文档[不足] 测试[无]</td>
+</tr>
+<tr>
+<td>许可证</td>
+<td>Apache-2.0</td>
+</tr>
+</tbody>
+</table>
+<h2>作者视角：为什么存在这个项目</h2>
+<h3>创始人/作者背景</h3>
+<p>仓库挂在 Google Cloud AI Research 官方组织账号 <code>google-research</code> 下（19,127 粉丝、371 个公开仓库），论文署名 Yiwen Song、Yale Song、Tomas Pfister、Jinsung Yoon 四人，后两位是 Google Cloud AI Research 的知名负责人。但有两条信号值得注意：</p>
+<ul><li><strong>README 首行即声明「This is not an officially supported Google product」</strong>——这是研究团队的个人开源实验，不是产品线。</li><li><strong>该组织 371 个公开仓库中，本仓库不在近期活跃 top10 名单内</strong>（该位置被 <code>mseb</code>、<code>opengrm</code>、<code>perch-hoplite</code>、<code>kauldron</code> 等占据）。</li></ul>
+<p>作者 Yiwen Song 的同门系列工作有 ScienceAgent、MedGemini，都是「agentic 科学发现」方向。也就是说，<strong>「让 AI 写论文」在这个团队内部不是孤立的写作工具，而是科学发现流水线的下游一环</strong>——这个定位决定了项目的一切取舍。</p>
+<h3>问题判断</h3>
+<p>作者的差异化洞察非常锐利：<strong>他不是从「怎么让 AI 写论文」出发，而是从「既有论文写作 AI 全都做错了同一件事」出发的。</strong></p>
+<p>论文对现有 autonomous writer（AI Scientist 系列、AutoSurvey2、LiRA）的批评集中在两点：</p>
+<ol><li><strong>它们全都强绑定自己的实验循环</strong>。选题 → 写码 → 跑实验 → 作图 → 写稿是一条闭环。用户如果<strong>已经有跑好的实验数据</strong>，这套系统的前半段就完全作废，只剩一个残废的写作器。</li><li><strong>它们的文献综述退化成关键词搜索，非常浅</strong>——而文献综述恰恰是一篇论文最不可替代的部分。</li></ol>
+<p>时机为什么是现在（三个条件同时成熟，缺一不可）：</p>
+<ol><li><strong>长上下文 + 强推理模型</strong>已经能一次吞下「idea + 实验日志 + 会议规范 + 引用摘要」并吐出数千 token 的合规 LaTeX；</li><li><strong>Google Search grounding + Semantic Scholar API</strong> 组合可用——前者给候选广度，后者给权威元数据，两者拼起来才可能做出「有依据的引用」；</li><li><strong>VLM 能读 PDF 截图</strong>——这直接催生了本项目最有意思的两个设计：模拟同行评审（读编译后的 PDF）和版式审查（读 2×2 网格截图）。</li></ol>
+<h3>解法哲学</h3>
+<p><strong>「把写作过程策略性地解耦到专职 agent 上」</strong>，五条原则贯穿全项目：</p>
+<ul><li><strong>引用必须有 API 依据：</strong>所有引用必须过 Semantic Scholar 存在性校验，且 bibtex key 只能从校验通过的集合里取。</li><li><strong>图表要成体系生成：</strong>不仅生成，还要求按 <code>figures/info.json</code> 的清单成体系产出（图注、编号、引用位置一致）。</li><li><strong>格式要 venue-aware：</strong>不是塞一段规范文本，而是「LaTeX 模板 + guidelines.md」双重注入。</li><li><strong>迭代靠模拟同行评审驱动：</strong>AgentReview 扮演审稿人，refinement agent 改稿，只接受分数提升的修订。</li><li><strong>辅助式（assistive）而非自主式：</strong>作者反复强调「人类仍需为准确性、原创性和有效性负责」。</li></ul>
+<p>明确不做的四件事：<strong>不跑实验</strong>（<code>--use_plotting</code> 只画图）、<strong>不提出新贡献</strong>、<strong>不做 human-in-the-loop</strong>（作者自陈的局限）、<strong>不做产品化版本管理</strong>（0 tag / 0 release）。</p>
+<p>其中最值得学的一个防御性设计是 <code>UNIVERSAL_NO_LEAKAGE_PROMPT</code>：它被拼接到<strong>全部四个写作类 agent</strong> 的 system prompt 末尾，要求模型「假装对该主题零先验知识，只能用本次会话的素材」，禁止复述任何已发表论文、禁止推断作者身份与机构。</p>
+<p><strong>这个设计的动机很值得琢磨</strong>：既然系统会自动去搜文献，就必须防止模型在正文里偷偷调用训练数据里的记忆——否则引用会与检索到的真实文献对不上，双盲评审下直接暴露。<code>pdf_utils.has_blacklist_words</code> 甚至专门过滤 "corresponding author"。</p>
+<p>反直觉的一点是：<strong>检索型 agent（literature review）也必须隔离</strong>，因为它做的是「找文献并据其写作」而非「凭记忆写文献」。</p>
+<h3>战略意图</h3>
+<p><strong>位置</strong>：Google Cloud AI Research 的研究原型 / 论文产出工具，不是产品。三个证据——README 首行的免责声明、0 tag / 0 release / 8 个 commit（其中 3 个是 2026-11 的社区 PR 合并，作者本人 2026-05-17 之后再无功能提交）、<strong>论文承诺发布的 PaperWritingBench 数据集至今未发布</strong>（README 原文「will be released separately at a later date」，而 <code>datasets/</code> 已在 <code>.gitignore</code> 里）。</p>
+<p><strong>商业化意图</strong>：无。没有任何 open-core 分层、没有付费墙、没有企业版。更像学术影响力投资 + 生态占位。</p>
+<p><strong>开源策略</strong>：genuinely open（Apache-2.0 + 完整 CLA，含 Google LLC 版权头），但<strong>成熟度是「论文附件级」而非「产品级」</strong>。后续维护实际由外部贡献者撑着——git log 可见 2026-11-15 的三个 commit 全是社区 PR 合并，作者本人零参与。</p>
+<p><strong>一处值得警惕的依赖外置</strong>：<code>utils/paper_banana_utils.py</code> 的 <code>PB_DIR = os.path.join(cur_dir, "../../PaperBanana")</code>——绘图链路的 few-shot 参考集与 style guide 全部来自<strong>外部同级仓库</strong>，既未 vendored 也不在 requirements.txt 里。<strong>这意味着 <code>--use_plotting true</code> 路径在干净 clone 上开箱即用是不可能的。</strong></p>
+<h2>核心价值提炼</h2>
+<h3>创新之处</h3>
+<p>按「新颖度 × 实用性」排序：</p>
+<ol><li>
+<p><strong>outline agent 不写正文，而是产出「检索任务图」</strong>（新颖度 4/5，实用性 5/5，可迁移性 4/5）
+    这是全项目最值得抄的一块。它把「写文献综述」这个模糊任务变成了<strong>可枚举、可并行、可验收</strong>的检索任务集：</p>
+<ul><li>Introduction 宏观方向</li><li>Related Work 各方法簇的 <code>limitation_hypothesis</code> + <code>limitation_search_queries</code> + <code>bridge_to_our_method</code></li><li>各 section 的 <code>citation_hints</code>，明确要求穷举每一个 dataset / optimizer / metric / 基础架构，<strong>连 AdamW、ImageNet、CLIP 这种「显而易见」的也要写</strong></li></ul>
+<p>并且有一条 <code>Prevent Citation Overlap</code> 指令，显式要求 Introduction（宏观上下文）与 Related Work（微技术基线）检索<strong>不同层级的文献</strong>——这是很多 AI 写作系统的通病。</p>
+</li><li>
+<p><strong>「编译后的 PDF」作为 agent 之间的信息通道</strong>（新颖度 4/5，实用性 4/5，可迁移性 4/5）
+    Refinement agent 接收<strong>编译好的 PDF 原生字节</strong>（<code>types.Part.from_bytes(data=pdf_bytes, mime_type="application/pdf")</code>），评审者同样读 PDF，版式审查读 PDF 的 2×2 网格截图。
+    深层价值在于：<strong>让 agent 面对与人类相同的输入</strong>，而不是更简单的代理表示（LaTeX 源码）。凡是「渲染结果 ≠ 源文本」的场景都适用——文档审阅、幻灯片审阅、报表审阅。</p>
+</li><li>
+<p><strong>SxS 评测的双向位置交换去偏</strong>（新颖度 2/5，实用性 5/5，可迁移性 5/5）
+    每对论文<strong>跑两遍</strong>——（A,B） 和 （B,A）——再交换结果归一，<code>total_score ∈ {-2..2}</code> 映射为 5 分制与 3 分制。prompt 里明确写「The ordering of the papers is arbitrary and does not indicate quality. Do not base your decision solely on length or verbosity.」
+    新颖度低是因为这是 LLM-as-judge 的已知最佳实践，但<strong>这是代码里方法论最正确的一块</strong>，可以直接抄。</p>
+</li><li>
+<p><strong>多轴增益/降级的复合接受判据</strong>（新颖度 3/5，实用性 4/5，可迁移性 5/5）
+    见下方设计决策 6。用 7 个子轴的 <code>total_gain</code> vs <code>total_drop</code> 与 <code>Overall</code> 分构成二维接受矩阵，配编译门禁 + 版本回滚 + worklog 审计。适用于任何<strong>评分器本身有噪声</strong>的迭代优化场景。</p>
+</li><li>
+<p><strong>引用 F1 的「P0/P1 优先级」评测</strong>（新颖度 4/5，实用性 4/5，可迁移性 3/5）
+    不只算引用集合 F1，还用 LLM 把每条引用分成 P0（基线/数据集/核心方法/关键指标）与 P1（背景文献），再分别算 <code>p0_recall</code> / <code>p1_recall</code>——<strong>「漏引一篇基线」比「漏引一篇背景文献」严重得多</strong>。</p>
+</li><li>
+<p><strong>反通胀锚定的文献综述评分 rubric</strong>（新颖度 3/5，实用性 4/5，可迁移性 4/5）
+    硬编码「默认期望分 45–70」「&gt;85 需全轴强证据」「&gt;90 近乎不可能」「任一轴 &lt;50 则总分难超 75」「纯描述性综述则 Critical Analysis ≤60」「无显式对比则 Positioning ≤60」，并以 <code>avg_citation_count</code>（默认 58，人类录用论文平均引用数）作相对基线锚定。
+    方法论要点：<strong>先给「默认分」和「上界封顶规则」，比只给评分刻度更能抑制模型讨好倾向。</strong></p>
+</li><li>
+<p><strong>「素材 → 可投稿稿」的解耦式多 agent 流水线</strong>（新颖度 3/5，实用性 4/5，可迁移性 4/5）
+    与 AI Scientist 系列的「端到端闭环」形成<strong>正交切分</strong>。任何「上游产出已有、下游需要规范化文档」的场景都适用——实验记录转报告、故障日志转复盘、需求转设计文档。</p>
+</li></ol>
+<h3>可复用的模式与技巧</h3>
+<p>按可迁移性从高到低：</p>
+<ol><li><strong>文件系统即消息总线</strong> —— agent 之间用固定路径的 JSON 中间产物解耦，而非 Python 对象/接口继承。代价是失去类型安全与可观测性，换来每个 agent 可独立单测、独立换模型、可被外部脚本直接消费。</li><li><strong>并行发现 + 串行验证</strong> —— 广度用便宜快的通道并行拉（Google Search，<code>ThreadPoolExecutor(10)</code>），精度用慢而准的通道串行校（S2 API，每查询前 <code>time.sleep(1.0)</code> 硬限流）。几乎所有「LLM 生成候选 + 权威 API 校验」类系统的通用范式。</li><li><strong>白名单 key + 覆盖率下限</strong> —— <code>citation_map.json</code> 只收录通过 S2 校验的论文，prompt 强制「MUST use the exact keys」，并把引用数量变成显式覆盖率指标（收集篇数 × 0.9）。</li><li><strong>渲染结果作为审阅输入</strong> —— 把不可见维度（排版）转成可见模态（截图）再交给 VLM 判断，用编译成功做门禁。</li><li><strong>多轴增益-降级复合接受判据</strong> —— 见上。</li><li><strong>SxS 位置交换去偏</strong> —— 见上。</li><li><strong>编译成功即门禁</strong> —— 所有代码/文档生成流水线的通用收口条件。</li><li><strong>懒加载 + 线程安全单例的凭据客户端</strong> —— <code>get_genai_client()</code> / <code>get_openai_client()</code> 已正确实现「懒加载 + 线程安全单例 + 只在实际用到该 provider 时才要求 key」（commit 60e333a 就是修这个）。<strong>反面教材则是同一仓库里 import 时无条件 print 密钥的两处。</strong></li><li><strong>全局约束契约注入</strong> —— <code>UNIVERSAL_NO_LEAKAGE_PROMPT</code> 拼接到所有写作 agent 的 system prompt 末尾。</li><li><strong>确定性 key 生成 + 冲突后缀</strong> —— bibtex key 由首作者姓 + 年份 + 标题前两个有意义的词确定性生成，冲突追加 a/b/c。</li><li><strong>长时批任务断点续跑</strong> —— <code>ProcessPoolExecutor(4)</code> + 每篇完成即写 JSON 日志，重启时跳过已成功且文件仍存在的条目。</li><li><strong>模板目录 = 一个 venue 适配包</strong> —— 新增会议 = 新增一个目录（含 <code>template.tex</code> + <code>guidelines.md</code> + <code>.sty</code>/<code>.bst</code>），成本极低。</li></ol>
+<h3>关键设计决策</h3>
+<p><strong>决策 1：用文件系统上的 JSON 中间产物解耦 agent，而非 Python 对象/接口继承</strong></p>
+<ul><li>问题：五个 agent 需要交换结构复杂的数据（outline 含三棵嵌套树，citation_map 是 key→元数据字典），内存对象传递会让任何一处 schema 变动连锁破坏其他四个。</li><li>方案：每个 agent <code>run()</code> 落到固定路径的 JSON，下游只认文件不认上游实现。<code>outline.json</code> 被 literature agent 读完再写回 <code>outline_v1.json</code>，pipeline 层负责覆盖回去。</li><li>Trade-off：牺牲类型安全（无 schema 校验，<code>json.load</code> 失败时 <code>SectionWritingAgent</code> 静默返回 <code>{}</code>）与可观测性（无法统一追踪调用链），换来每个 agent 可独立单测、可独立换模型。</li><li>可迁移性：<strong>高</strong>。</li></ul>
+<p><strong>决策 2：<code>--use_plotting</code> 走两条完全独立的 pipeline 实现，只有 plotting 版本真正并行</strong></p>
+<ul><li>问题：绘图需要 outline（前置），文献综述也需要 outline，但两者互不依赖——理论上可以并发。</li><li>方案：<code>paper_writer_with_plotting.py</code> 用 <code>ThreadPoolExecutor(max_workers=2)</code> 同时跑 literature 与 plotting agent，并记录 <code>time_breakdown.json</code>；无绘图版本 <code>paper_writer.py</code> 是纯串行四步。</li><li>Trade-off：<strong>两份实现漂移</strong>，约 60% 重复代码，batch 部分几乎逐行相同。已实证的后果：<code>paper_writer.py</code> <strong>从不写 <code>figures/info.json</code></strong>（只 <code>shutil.copytree</code> 复制图片），而 <code>SectionWritingAgent</code> 只从 <code>info.json</code> 读图注，文件缺失时 <code>_format_figures_context</code> 返回字符串 <code>"No figures provided."</code> ——<strong>正文讨论图、图根本不存在，而流程报成功、PDF 正常产出</strong>。前端 <code>frontend/app.py</code> 还有同源第二重 bug：用户上传的图注只写进 <code>st.session_state</code>，落盘时只复制图片二进制，caption 从不写入 <code>info.json</code>。</li><li>可迁移性：<strong>中</strong>（并行化思路值得学，双实现是反面教材——应当用 <code>if use_plotting:</code> 分支在同一函数内做条件）。</li></ul>
+<p><strong>决策 3：LLM 后端用「模型名字符串嗅探」做运行时分发，而非注册表/策略模式</strong></p>
+<ul><li>问题：README 承诺可用 OpenAI 模型，但 Gemini 的 <code>google_search</code> grounding 工具只有 Gemini 有。</li><li>方案：<code>utils/llm_backend_utils.py</code> 提供三个统一入口，内部用 <code>"gpt" in model_name.lower() or "o1" in ... or "o3" in ...</code> 判断；OpenAI 分支把 <code>system_instruction</code> 摘出来当 <code>system_prompt</code>、<strong>丢弃 <code>temperature</code></strong>。</li><li>Trade-off：<strong>分发层本身干净，但三个 agent（<code>outline_agent.py</code>、<code>literature_review_agent.py</code>、<code>content_refinement_agent.py</code>）直接 import <code>utils.gemini_utils</code>，绕过分发层直连 Gemini</strong>。因此 <code>--writer_model_name gpt-5</code> 在 outline 阶段会把 <code>gpt-5</code> 原样传给 Gemini API 而失败——只有 <code>section_writing_agent.py</code> 正确用了分发层。<strong>「多模型可插拔」只在一个 agent 上成立。</strong> 字符串嗅探本身也脆弱：<code>gemini-3.1-pro-preview</code> 若含 "o1"/"o3" 子串会误判。</li><li>可迁移性：<strong>中</strong>。分发层的形状值得抄，嗅探式路由不该抄——正解是 <code>ModelSpec</code> 注册表 + 能力声明（<code>supports_grounding</code> / <code>supports_images</code> / <code>supports_pdf</code>），让不支持的能力在<strong>调用点</strong>而非<strong>字符串</strong>处失败。</li></ul>
+<p><strong>决策 4：文献 agent 采用「Google Search 并行发现 + Semantic Scholar 串行富化」的两段式管道</strong></p>
+<ul><li>问题：要找到高质量文献，必须既<strong>广</strong>（发现足够多）又<strong>准</strong>（元数据权威、真实存在）。Google Search grounding 擅长前者且快，S2 API 提供权威元数据但严格限流。</li><li>方案：Phase 1a 从 outline 派生三类检索任务并发跑 Google Search（探索型 temperature 0.4 / 定向型 0.1）；Phase 1b 候选串行过 S2，用 <code>thefuzz.fuzz.ratio</code> 做标题模糊匹配、<strong>阈值 &gt;70 才接受</strong>、year 命中额外 +10 分；<code>registry</code> 用 <code>threading.Lock</code> 保护，归一化 <code>re.sub(r"[^a-z0-9]", "", title.lower())</code> 去重。</li><li>Trade-off：牺牲 S2 阶段吞吐（串行 + 1s 硬 sleep，~60–70 次 LLM 调用 / 39.6 分钟的耗时主要在这里），换来「引用必须真实存在且元数据权威」这一底线。</li><li>可迁移性：<strong>高</strong>。</li></ul>
+<p><strong>决策 5：内容精修用「模拟同行评审 + 只接受分数提升的修订」，接受判据是复合的</strong></p>
+<ul><li>方案：编译初稿 PDF → <code>_get_peer_review()</code> 跑 AgentReview → 把 PDF 原生 part + 评审反馈 + 实验日志（Data Truth）+ citation_map（Reference Truth）+ 当前 LaTeX 一起喂给 refinement agent → 生成新 LaTeX → 编译 → 再评审 → 四条分支决定接受/回滚：<ul><li><code>new.Overall &gt; old.Overall</code> → 接受并继续</li><li><code>new.Overall &lt; old.Overall</code> → 回滚并终止</li><li>Overall 相同但子轴（7 轴，排除 Overall/Confidence）总增益 ≥ 总降级 → 接受并继续</li><li>Overall 相同但子轴降级 &gt; 增益 → 回滚并终止</li><li>编译失败 → 丢弃半成品，保留上一版</li><li>每次迭代落 <code>content_refinement_worklog.json</code>（含 <code>scores_before</code> / <code>scores_after</code> / <code>deltas</code> / <code>total_gain</code> / <code>total_drop</code> / <code>outcome</code>）</li></ul>
+</li><li>Trade-off：比单纯看 Overall 分聪明（避免 Overall 不动但内部质量提升的修订被误杀），但<strong>根子上的问题没解决：</strong>评审者（AgentReview）和被评审者（refinement agent）<strong>用的是同一个模型</strong>（默认都是 <code>gemini-3.1-pro-preview</code>），且评审 prompt 用的是「Best Case 评审者（Knowledgeable + Responsible + Benign）」——<strong>这是最宽容的 persona</strong>。第三方判断「工具是真的，评审问题没解决」是准确的。</li><li>可迁移性：<strong>中高</strong>。「多轴增益/降级双阈值 + 编译门禁 + 失败回滚」这套循环骨架非常通用；但「评审者与生成者同模型同人格」是必须避免的反模式——<strong>换模型做评审，或用对抗 persona（代码里已有 <code>is_benign=False</code> 分支但从未被调用）</strong>。</li><li>另注：<code>perform_review_agentreview</code> 默认 <code>num_review_ensemble=3</code>，<strong>真的跑 3 次独立评审再由 meta-reviewer（area chair prompt）聚合</strong>，各轴取均值。这是代码里最扎实的一块工程。</li></ul>
+<p><strong>决策 6：版式审查独立成一个「只许改排版、不许改内容」的 VLM 回路</strong></p>
+<ul><li>方案：独立 formatting loop（当前 <code>max_formatting_loops = 1</code>）：<code>pdf_to_grid_images</code> 把 PDF 每 4 页拼成 2×2 网格 PNG → VLM 按 <code>guidelines.md</code> 逐图逐表输出 <code>{detected_issue, suggested_fix}</code> → 有 issue 才唤起一个只准做排版调整的 LLM（「You MUST NOT change any content, text, claims, data, or citations」）→ 编译成功才接受。</li><li>Trade-off：把「内容正确性」和「版式正确性」在 agent 职责层面切开，是很干净的职责分离。但只跑 1 轮，且 4 页拼一张图会<strong>降低单页分辨率</strong>——对「图是否溢出版心」这种细粒度判断是隐患。</li><li>可迁移性：<strong>高</strong>。</li></ul>
+<p><strong>决策 7：绘图链路复用外部 PaperBanana 的 few-shot 检索 + 批评-修订回路</strong></p>
+<ul><li>方案：<code>retrieve_few_shot_examples</code> 从 <code>PaperBananaBench/{plot,diagram}/ref.json</code> 候选池（diagram 限 200 条）由 LLM 挑 Top-10 → <code>predict_figure_content</code> → <code>style_figure_content</code> → <code>generate_figure_visuals</code>；<strong>plot 走「LLM 生成 matplotlib 代码 → <code>exec()</code> 本地执行 → 300dpi JPEG base64」</strong>，diagram 走原生图像生成模型（12 种 <code>aspect_ratio</code> 白名单）；<code>critique_and_revise_figure</code> 最多 3 轮，critic 看图给建议，「No changes needed.」则提前退出；外层用 <code>ThreadPoolExecutor(max_workers=5)</code> 并行处理所有图。</li><li>Trade-off：<code>exec()</code> 执行 LLM 生成的 matplotlib 代码是<strong>任意代码执行</strong>——虽 <code>plt.switch_backend("Agg")</code> + 独立 globals 限制了大部分风险，仍是明确攻击面。另一个硬伤是 <code>PB_DIR</code> 外部依赖未 vendored。</li><li>可迁移性：<strong>中</strong>。「LLM 生成代码 → 本地沙箱执行 → 出图」的 plot 路线值得抄——<strong>它保证图的数值准确</strong>，这是图像生成模型给不了的。</li></ul>
+<p><strong>决策 8：venue-aware 靠「LaTeX 模板 + guidelines.md 双重注入」</strong></p>
+<ul><li>方案：每个 venue 一个目录，含 <code>template.tex</code> + <code>guidelines.md</code> + <code>.sty</code>/<code>.bst</code> + <code>references.bib</code>。guidelines.md 原样喂给 outline / section writing / content refinement 三个 agent 以及 VLM 版式审查（prompt 明确「Do not create rules based on your own assumptions if not explicitly supported by the guidelines」）。</li><li>Trade-off：扩展新会议成本极低，但<strong>规范知识是自然语言而非结构化约束</strong>——模型可能忽略或误读条目，且无法被程序校验（例如「八页限制」无人验证）。</li><li>可迁移性：<strong>高</strong>。</li></ul>
+<h2>竞品格局与定位</h2>
+<h3>竞品对比矩阵</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>PaperOrchestra</th>
+<th>AI-Scientist-v2</th>
+<th>STORM</th>
+<th>通用写作工具（Jenni 等）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stars</td>
+<td>5,215</td>
+<td>7,534（v1 15,026）</td>
+<td>31,912</td>
+<td>N/A（SaaS）</td>
+</tr>
+<tr>
+<td>核心定位</td>
+<td>素材 → 可投稿 LaTeX 稿</td>
+<td>全自动科研闭环（选题→跑实验→写稿）</td>
+<td>话题 → 带引用的知识策展长文</td>
+<td>已有初稿 → 润色/合规检查</td>
+</tr>
+<tr>
+<td>是否要求实验数据</td>
+<td><strong>必须已有</strong>（明确与实验流水线解耦）</td>
+<td>否，自带实验循环</td>
+<td>否</td>
+<td>否</td>
+</tr>
+<tr>
+<td>输出形态</td>
+<td>可编译 LaTeX 稿 + 表格 + 图表 + 会议模板</td>
+<td>LaTeX 稿（demo 级）</td>
+<td>Wiki 式长文</td>
+<td>改写后的段落</td>
+</tr>
+<tr>
+<td>引用可靠性</td>
+<td>S2 存在性校验 + 白名单 key + 覆盖率下限（<strong>无 claim 级语义校验</strong>）</td>
+<td>常把已有概念误标为新颖</td>
+<td><strong>逐句级溯源 + 可点击来源（最成熟）</strong></td>
+<td>无文献检索验证</td>
+</tr>
+<tr>
+<td>引用密度</td>
+<td>45.7–48.0</td>
+<td>9–14</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>免费可用性</td>
+<td><strong>默认模型付费专属；Gemini 3+ search grounding 0 RPD → 免费用户第一步就 429</strong></td>
+<td>需自备 GPU</td>
+<td>需自备 API key</td>
+<td>有免费层</td>
+</tr>
+<tr>
+<td>开源许可</td>
+<td><strong>Apache-2.0</strong></td>
+<td>非标准许可，商用受限</td>
+<td>Apache-2.0</td>
+<td>闭源 SaaS</td>
+</tr>
+<tr>
+<td>部署成本</td>
+<td>conda + LaTeX（pdflatex+bibtex）+ 4 个环境变量</td>
+<td>Linux + NVIDIA GPU + Docker</td>
+<td>Python + API key</td>
+<td><strong>零配置 SaaS</strong></td>
+</tr>
+<tr>
+<td>模型后端可插拔</td>
+<td>名不副实（3/5 agent 硬编码 Gemini）</td>
+<td>主要绑定自家模型</td>
+<td>支持多种</td>
+<td>平台绑定</td>
+</tr>
+<tr>
+<td>人类在环</td>
+<td>无（作者自陈）</td>
+<td>无</td>
+<td>支持视角引导</td>
+<td>支持人工校对</td>
+</tr>
+<tr>
+<td>真实评审验证</td>
+<td><strong>零篇通过真实双盲评审</strong></td>
+<td>唯一通过真实双盲（ICLR 2025 ICBINB workshop，评分 6/7/6）</td>
+<td>不适用</td>
+<td>不适用</td>
+</tr>
+</tbody>
+</table>
+<h3>差异化护城河</h3>
+<ol><li><strong>场景独占：</strong>「从实验素材到可投稿 LaTeX 全文」这个垂直切口几乎无竞品。最接近的 STORM 不产 LaTeX，最接近的 AI-Scientist-v2 强绑实验循环，通用写作工具不做生成。</li><li><strong>文献综述的真实长板</strong>（不是整体写作）：有第三方评测文章专门点出作者自报数字里的落差——文献综述质量的 50–68 分绝对胜率<strong>远高于</strong>整体质量的 14–38 分，引用密度 45.7–48.0 vs baseline 9–14 是数量级差异。根因是「分层检索任务图 + 双层通道 + S2 存在性校验 + 强制覆盖率下限」这套组合——<strong>这是全项目最值得抄的一块</strong>。</li><li><strong>venue 适配包：</strong>新增会议 = 新增一个目录，成本极低。</li><li><strong>可解耦性：</strong>能作为更大科学发现流水线的下游组件独立存在，与 AI-Scientist-v2 是串联而非互斥关系。</li></ol>
+<h3>竞争风险</h3>
+<ol><li><strong>评测不可复现（最高风险）：</strong>PaperWritingBench 承诺发布但至今未发布，<code>datasets/</code> 在 <code>.gitignore</code> 里。全部量化主张（50–68% 胜率、+19%/+22% 接收率、45.7–48.0 引用数）<strong>目前无法被第三方验证</strong>。加上 benchmark 输入是从已录用论文逆向工程而来 → 存在<strong>记忆性污染</strong>风险，且天然无法回答「能否独立提出新贡献」。<strong>这是整个项目科学可信度的单点故障。</strong></li><li><strong>自我评审的循环论证：</strong>评审者与被评审者同模型，且用 AgentReview 最宽容的 persona。refinement 的 79–81% 胜率与 +19%/+22% 接收率都是<strong>模型自评</strong>，天然带乐观偏差。</li><li><strong>免费额度即悬崖：</strong>Gemini 3+ search grounding 0 RPD → 免费用户第一步就 429，参考文献列表为空。</li><li><strong>后端可插拔性名不副实：</strong>三个 agent 硬编码 Gemini，<code>--writer_model_name gpt-5</code> 直接崩。</li><li><strong>绘图链路依赖外部仓库：</strong>PaperBananaBench 未 vendored，干净 clone 上 <code>--use_plotting true</code> 跑不通。</li><li><strong>静默失败：</strong>非绘图路径缺失 <code>figures/info.json</code> → 图注丢失、正文讨论不存在的图，而流程报成功。<strong>这类 bug 比崩溃更危险</strong>——它污染的是用户对输出的信任。</li><li><strong>密钥泄漏到日志：</strong><code>utils/scholar_utils.py:28</code> 与 <code>autoraters/citation_f1.py:41</code> 在 <strong>import 时无条件 print 完整 S2 key</strong>，而 <code>paper_writing_cli.sh</code> 把 stdout 重定向到磁盘日志文件。</li><li><strong>生态替代品起量：</strong><code>Boom5426/Nature-Paper-Skills</code>（686）、<code>damonwan1/AutoScholarLoop</code>（539）、<code>KalarisLabs/research-agent-skills</code>（173）等「Agent Skills 化」项目，<strong>不自己实现流水线，而是把 PaperOrchestra 之类的系统包成 Claude Code / Cursor 可挂载的 skill</strong>，并自行补上 anti-leakage、claim-evidence 数值溯源等确定性门禁——<strong>既是下游消费者，也在侵蚀中间层的存在价值</strong>。</li></ol>
+<h3>生态定位</h3>
+<p><strong>不是红海，但正面战场只有一个。</strong>「素材 → 可投稿稿」这个垂直切口 Google 抢先占住了心智；AI Scientist 系列占「全自动科研」（更宽但更浅），STORM 占「深度调研成文」（更成熟但不做投稿稿）。真正的竞争发生在<strong>免费额度、模型后端绑定、引用可靠性</strong>三个维度——而这三个恰好是 PaperOrchestra 当前最脆弱的地方。</p>
+<p>准确的定位是<strong>「研究团队的写作基础设施原语」</strong>，而非「产品」。最佳使用姿态是：<strong>把它当一条可编排的流水线看待，优先抄「分层检索任务图」「双向 SxS 评测」「多轴接受判据」这三个具体设计，而不是整体采用。</strong></p>
+<p>对读者的实用结论：<strong>代码值得读，结论别全信。</strong> 这份代码在「如何把 LLM 多 agent 组织成有质量门禁的文档生产管线」上提供了真实可用的范式；但其量化结论建立在<strong>未公开的 benchmark + 同模型自评</strong>之上，应作为「设计参考」而非「效果证据」采纳。</p>
+<h2>套利机会分析</h2>
+<ul><li><strong>信息差：</strong><strong>高</strong>。它不是被低估的潜力股，而是<strong>刚被推平的当红标的</strong>——3 天 +2,734 star、Trending 日榜最高第 9 名，传播红利几乎吃完了。但「热度 &gt;&gt; 工程完成度」这个背离，恰恰创造了两个方向的认知差：一是<strong>大多数人只看到 arXiv 和那张漂亮的 pipeline 图</strong>，不会去翻 <code>paper_writer.py</code> 里那个把图注丢掉的 <code>copytree</code>；二是<strong>论文数字的引用者远多于 benchmark 的复现者</strong>，而 benchmark 根本没发布。</li><li><strong>技术借鉴：</strong><strong>高，且可立即行动</strong>。至少四样可以直接搬走——① outline 产检索任务图（换成任何「需要检索有结构、覆盖有保证」的场景）；② 双向 SxS 位置交换（任何 pairwise LLM 评测）；③ 多轴增益/降级复合接受判据 + 编译门禁 + worklog 审计（任何 LLM 迭代优化循环）；④ 渲染结果作为审阅输入（任何排版/视觉质量审查）。</li><li><strong>生态位：</strong>它填的是「<strong>有数据、没初稿</strong>」这条缝——既不是通用写作工具（它们不生成），也不是全自动科研（它们强绑实验）。这条缝此前只有人工写手和「让 ChatGPT 照着实验日志写」这类土办法。</li><li><strong>趋势判断：</strong><strong>上升但已进入平台期</strong>。11-16 到 11-18 日榜 12 → 15 → 9，11-19 之后增速回落到约 +550/天。后发优势在两点：一是它把「AI 写论文」的心智锚定在 Google 名下，后来者要解释「为什么不直接用 PaperOrchestra」；二是它已经把「五 agent + 模拟评审 + 引用校验」这套范式写进了社区的预期里。<strong>但它的护城河建立在 Google 生态（Gemini grounding）之上</strong>——一旦有更好的免费检索方案或更通用的多模型框架出现，「切进一个垂直场景」这件事本身不构成壁垒。</li></ul>
+<h2>风险与不足</h2>
+<ul><li><strong>数据缺失：</strong>论文承诺的 PaperWritingBench 数据集至今未发布，<code>datasets/</code> 在 <code>.gitignore</code> 里。<strong>所有 50–68% 胜率、+19%/+22% 接收率、45.7–48.0 引用数均为作者自报，当前不可复现、不可验证。</strong></li><li><strong>自评偏差未被处理：</strong>AgentReview 用的是与生成器相同的模型，且采用最宽容的 Best Case persona。代码里 <code>is_benign=False</code> 的对抗 persona 分支<strong>已备好但从未被调用</strong>——这是个明显的未完成项。</li><li><strong>引用只验存在性，不验支撑性：</strong>S2 只回答「这篇论文存在吗」，不回答「这篇论文真的支持这句话吗」。第三方实测明确指出这一点，<strong>每条引用仍需人工核对语境</strong>。</li><li><strong>架构耦合导致五 agent 只有一条腿：</strong>文献检索硬绑 Gemini Google Search grounding，三个 agent 绕过分发层直连 Gemini。README 宣称的「Gemini 或 OpenAI 二选一」在多数环节不成立。</li><li><strong>静默失败路径：</strong>非绘图路径缺失 <code>figures/info.json</code> → 流水线报成功、PDF 正常产出，但正文在讨论图而图根本存在；前端还有同源第二重 bug。<strong>这是本项目最危险的缺陷类型</strong>。</li><li><strong>密钥卫生缺失：</strong>两处在 import 时（不在任何 debug 分支内）无条件 print 完整 S2 key，且 CLI 把 stdout 重定向到磁盘日志 → 密钥随日志落盘。S2 key 免费获取，但「API key 即身份」的教育成本被普遍低估。</li><li><strong>并行度与免费额度互斥：</strong>batch 场景是 <code>ProcessPoolExecutor(4)</code> 嵌套 <code>ThreadPoolExecutor(10)</code>，<strong>理论并发 40 路 Google Search</strong>——这大概率就是论文里免费额度 429 的直接来源。</li><li><strong>任意代码执行面：</strong>绘图链路 <code>exec()</code> 执行 LLM 生成的 matplotlib 代码。</li><li><strong>零测试、零 CI、零文档债：</strong>0 个测试文件、0 个 workflow、0 个 CHANGELOG、567 行 markdown 且主要是 README 与模板 guidelines，<strong>没有架构文档、没有设计决策记录</strong>——读者必须读代码才能理解流水线。改任何 agent 的 prompt 或输出 schema 都无网可守。</li><li><strong>依赖未锁定：</strong><code>requirements.txt</code> 全部是无版本约束的裸包名，无 lock 文件；且 <code>PaperBanana</code> 这个真正的运行时依赖根本不在依赖清单里。</li><li><strong>维护缺位：</strong>8 个 commit 里作者本人只写了 5 个，最近一次功能提交是 2026-05-17。35 个 open PR 里有 14 个来自同一位贡献者（rudycelekli），社区已经把「35 个 open PR、0 个被合并」当成项目可用的前提。</li></ul>
+<h2>行动建议</h2>
+<ul><li><strong>如果你要用它：</strong><ul><li><strong>适合：</strong>手上有 idea 和实验结果、但没有初稿的 AI 研究者；需要批量把实验记录转成 preprint 稿的课题组；想搭自动化科学写作工作流的工程师。</li><li><strong>不适合：</strong>润色已有稿件（用 Jenni 更划算）、跑实验、或不经评审直接投稿。</li><li><strong>上手前先做三件事：</strong>① 把默认模型从付费专属的 <code>gemini-3.1-pro-preview</code> 换成 Flash 变体并接受质量下降；② 确认 LaTeX（<code>pdflatex</code> + <code>bibtex</code>）可用，这是硬依赖不是可选项；③ <strong>默认走 <code>--use_plotting</code> 路径</strong>，否则图注会被静默丢弃。</li><li><strong>务必人工核对每条引用</strong>——S2 只验证存在性，不验证支撑性。</li><li><strong>心理预期：</strong>产出应被当作「你能据以辩护的起点，而不是能盲投的成稿」。这是目前最平衡的第三方实测结论。</li></ul>
+</li><li><strong>如果你要学它</strong>（按价值排序）：<ol><li><code>methods/prompts/outline_agent.py</code> — 检索任务图的生成逻辑，<strong>最值得抄的一块</strong></li><li><code>methods/agents/content_refinement_agent.py</code> — 多轴复合接受判据 + 编译门禁 + 版本回滚 + worklog</li><li><code>methods/agents/literature_review_agent.py</code> — 并行发现 + 串行验证的两段式管道</li><li><code>autoraters/sxs_paper_quality.py</code> — 双向位置交换去偏</li><li><code>autoraters/lit_review_quality.py</code> — 反通胀 rubric 锚定</li><li><code>utils/llm_backend_utils.py</code> — 多 provider 统一入口的形状（照抄签名，别抄字符串嗅探）</li><li><code>methods/agents/plotting_agent.py</code> + <code>utils/paper_banana_utils.py</code> — 「LLM 生成代码 → 本地执行 → 出图」的数值准确路线</li><li><code>utils/prompts.py</code> 里的 <code>UNIVERSAL_NO_LEAKAGE_PROMPT</code> — 全局约束契约注入</li></ol>
+</li><li><strong>如果你要 fork 它</strong>（按性价比排序）：<ol><li><strong>先修三个 P0：</strong>删除两处 import 期的密钥 print（改为 <code>bool(key)</code>）；在 <code>paper_writer.py</code> 里补写 <code>figures/info.json</code>；把 <code>PaperBanana</code> 目录 vendored 进来或加进依赖清单。<strong>这三个都是几十行的改动，能直接消除最危险的三类问题。</strong></li><li><strong>把三个硬编码 Gemini 的 agent 切到分发层</strong>，并把字符串嗅探换成 <code>ModelSpec</code> 注册表 + 能力声明，让不支持 grounding 的模型在调用点就失败而不是在 outline 阶段崩。</li><li><strong>启用 <code>is_benign=False</code> 的对抗评审 persona</strong>，或者换一个模型做 reviewer——这是把「自评」变成「互评」的最短路径，也是提升可信度性价比最高的一步。</li><li><strong>补一个 claim 级引用校验器：</strong>用 LLM 判断「这条引用是否真的支持这句话」，把引用从「存在性白名单」升级到「论断级溯源」——这正是 STORM 强于它的地方，也是引用质量天花板的正解。</li><li><strong>合并 <code>paper_writer.py</code> 与 <code>paper_writer_with_plotting.py</code> 两份 pipeline</strong>，用单一函数内的条件分支，消除重复代码与漂移。</li><li><strong>补三样基础设施：</strong>pytest 冒烟测试（每个 agent 至少一个 fixture 驱动的单测）、GitHub Actions（至少跑 lint + pytest）、<code>docs/architecture.md</code>（把五 agent 的数据流画出来）。</li><li><strong>顺手把 batch 并发收敛：</strong>把 <code>ProcessPoolExecutor(4)</code> × <code>ThreadPoolExecutor(10)</code> 的 40 路并发降下来，或加一个全局 semaphore，否则免费额度永远撞墙。</li></ol>
+</li></ul>
+<h3>知识入口</h3>
+<table>
+<thead>
+<tr>
+<th>资源</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DeepWiki</td>
+<td>未能验证（<code>https://deepwiki.com/google-research/paper-orchestra</code> 返回 HTTP 429，无法区分「未收录」与「反爬拦截」）</td>
+</tr>
+<tr>
+<td>Zread.ai</td>
+<td>未能验证（<code>https://zread.ai/google-research/paper-orchestra</code> 返回 HTTP 403，同上）</td>
+</tr>
+<tr>
+<td>关联论文</td>
+<td><a href="https://arxiv.org/abs/2604.05018">PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing</a>（arXiv:2604.05018，2026-04-06，cs.AI / cs.LG / cs.MA，作者 Yiwen Song、Yale Song、Tomas Pfister、Jinsung Yoon，Google Cloud AI Research；DOI 10.48550/arXiv.2604.05018；发表于 Third Conference on Language Modeling 2026）</td>
+</tr>
+<tr>
+<td>评测数据集</td>
+<td><a href="https://huggingface.co/datasets/yiwen-song/PaperWritingBench">HuggingFace <code>yiwen-song/PaperWritingBench</code></a>（已验证可达；<strong>论文承诺发布但主仓库 <code>datasets/</code> 仍未放出</strong>）</td>
+</tr>
+<tr>
+<td>项目主页</td>
+<td><a href="https://yiwen-song.github.io/paper_orchestra/">yiwen-song.github.io/paper_orchestra</a> ｜ 短链 <a href="https://goo.gle/49bMNgQ">goo.gle/49bMNgQ</a></td>
+</tr>
+<tr>
+<td>在线 Demo</td>
+<td>无托管 Demo，仅本地 Streamlit（<code>streamlit run frontend/app.py</code>，仓库自带 <code>frontend/examples/cvpr_example.json</code> 示例）</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
