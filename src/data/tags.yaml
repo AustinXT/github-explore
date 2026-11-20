@@ -1400,6 +1400,8 @@ entries:
   - llm-inference
   - llm-training
   - model-foundation
+  jquery_jquery:
+  - web-framework
   juliangarnier_anime:
   - uncategorized
   juliusbrussee_caveman:
@@ -2444,6 +2446,8 @@ entries:
   - database
   snailsploit_claude-red:
   - uncategorized
+  solidjs_solid:
+  - web-framework
   sonofmagic_weapp-tailwindcss:
   - ai-agent
   - design-ui
@@ -2515,6 +2519,8 @@ entries:
   - rag-search
   - video-audio
   - media-generation
+  sveltejs_svelte:
+  - web-framework
   swc-project_swc:
   - web-framework
   swisskyrepo_payloadsallthethings:
