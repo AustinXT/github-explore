@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* ====== 微信公众号排版 CSS ====== */
+
+body {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #3e3e3e;
+    background: #fff;
+}
+
+/* 正文段落 */
+p {
+    font-size: 15px !important;
+    line-height: 2 !important;
+    margin: 0 !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+    padding-right: 1.2em !important;
+    padding-left: 1.2em !important;
+    text-align: justify !important;
+}
+p + p {
+    margin-top: 0 !important;
+}
+
+/* 标题 */
+h1 {
+    font-size: 20px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 16px 0 !important;
+    padding: 0 !important;
+}
+h2 {
+    font-size: 18px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 24px 0 !important;
+    padding: 0 !important;
+}
+h3 {
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+    text-align: left !important;
+    margin: 16px 0 16px 0 !important;
+    padding: 0 0 0 1.2em !important;
+}
+h4 {
+    font-size: 15px !important;
+    color: rgb(0, 122, 170) !important;
+    margin: 12px 0 8px 0 !important;
+    padding: 0 !important;
+}
+
+/* 列表 */
+ul,
+ol {
+    padding-left: 2em !important;
+    margin: 1em 0 !important;
+    font-size: 15px !important;
+}
+li {
+    margin: 0.5em 0 !important;
+    line-height: 1.8em !important;
+    font-size: 15px !important;
+    color: #3e3e3e !important;
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    margin: 0 !important;
+    padding-left: 1.2em !important;
+}
+
+/* 引用 */
+blockquote {
+    border-left: 4px solid #888 !important;
+    padding: 8px 16px !important;
+    margin: 1em 0 !important;
+    color: #666 !important;
+    background: #f9f9f9 !important;
+}
+blockquote > p {
+    margin: 0.5em 0 !important;
+    padding: 0 !important;
+}
+blockquote::before,
+blockquote::after {
+    content: none !important;
+}
+
+/* 代码块 */
+pre {
+    font-size: 14px !important;
+    line-height: 1.4em !important;
+    color: #3e3e3e !important;
+    background: #f8f8f8 !important;
+    padding: 12px 16px !important;
+    border-radius: 4px !important;
+    overflow: auto !important;
+    margin: 1em 0 !important;
+}
+
+/* 脚注 */
+.footnotes {
+    font-size: 11px !important;
+    color: #666 !important;
+    line-height: 1.2 !important;
+    margin: 8px 0 0 0 !important;
+    padding: 4px 0 0 0 !important;
+    border-top: 1px solid #eee !important;
+}
+.footnotes p {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #666 !important;
+}
+
+/* 上标 */
+sup {
+    font-size: 0.75em !important;
+    vertical-align: super !important;
+    color: #e51f42 !important;
+    margin: 0 2px !important;
+}
+/* 行内代码 / 强调 / 链接 */
+code { background: #f4f4f4 !important; color: #c7254e !important; padding: 2px 4px !important;
+    border-radius: 3px !important; font-size: 90% !important; }
+pre code { background: transparent !important; color: inherit !important; padding: 0 !important; }
+strong { font-weight: bold !important; color: #3e3e3e !important; }
+a { color: rgb(0,122,170) !important; text-decoration: none !important; }
+
+/* 图片 */
+img { max-width: 100% !important; height: auto !important; display: block !important;
+    margin: 1em auto !important; border-radius: 4px !important; }
+
+/* 表格 */
+table { border-collapse: collapse !important; width: 100% !important; margin: 1em 0 !important;
+    font-size: 14px !important; }
+th, td { border: 1px solid #ddd !important; padding: 6px 10px !important; text-align: left !important; }
+th { background: #f4f4f4 !important; font-weight: bold !important; }
+hr { border: none !important; border-top: 1px solid #ddd !important; margin: 1.5em 0 !important; }
+</style>
+</head>
+<body>
+
+<blockquote>
+<p>GitHub: <a href="https://github.com/zhouxiaoka/autoclip">https://github.com/zhouxiaoka/autoclip</a></p>
+</blockquote>
+<h2>一句话总结</h2>
+<p>AutoClip 是一个 MIT 许可的本地优先 AI 视频切片工具，把「一个链接 → 视频 + 封面 + 发布文案 + ZIP 发布包」做成一条可被 Agent 直接调用的产线；它真正稀缺的不是剪辑能力，而是把 LLM 应用的<strong>失败归因</strong>做成了一套可审计的工程体系。</p>
+<h2>值得关注的理由</h2>
+<ol><li><strong>把「失败」当成一等公民来工程化</strong>。多数 AI 项目用 <code>except Exception as e: logger.error(e)</code> 兜底，失败无法聚合、成功率无法计算、用户看不到下一步。AutoClip 做了完整的四件套：归因快照（<code>backend/core/failure_attribution.py</code>）、埋点契约（<code>event_catalog.json</code>）、用户句子（<code>failure_messages.json</code> 41 条）、单一序列化器（<code>failure_codes.py</code>）。<strong>这套形态可以原样搬到任何 LLM 应用，是本仓库最高的迁移价值。</strong></li><li><strong>同一运行时四端暴露（Desktop / CLI / MCP / Docker），Agent 无需浏览器自动化就能出片</strong>。<code>skills/autoclip/SKILL.md</code> 甚至是一份教 Agent 怎么正确使用自己产品的操作手册（明确要求「终态 <code>unknown</code> 不要说成已完成」「不要发明 id」）——这在开源项目里几乎没人做。</li><li><strong>用 158 条短视频实证主动否决了一条增长叙事</strong>。作者的数据结论是「包装不是杠杆」（GQ 同模板一条 282 万播放、一条 6,261），于是把工程投入从「模板内卷」压回「选片 + 排版几何精确性」，并把旧版 <code>title_art</code> 冻结不改。<strong>大多数项目不敢用数据否决自己的增长叙事。</strong></li></ol>
+<h2>项目展示</h2>
+<p><img alt="AutoClip 竖版成片示例" src="https://raw.githubusercontent.com/zhouxiaoka/autoclip/main/docs/images/demos/gates-ezra-01.jpg"/></p>
+<p>竖版（9:16）成片 —— 顶部是自动生成的标题卡（主标 + 蓝色强调），底部是烧录字幕与进度条；对应抖音 / 小红书 / TikTok / Reels / Shorts</p>
+<p><img alt="AutoClip 满屏播客式竖版成片" src="https://raw.githubusercontent.com/zhouxiaoka/autoclip/main/docs/images/demos/garfield-poehler-01.jpg"/></p>
+<p>满屏播客式版式（full-screen podcast）—— 与访谈式双轨排版，对应两人同框的访谈素材</p>
+<p><img alt="AutoClip 横版成片示例" src="https://raw.githubusercontent.com/zhouxiaoka/autoclip/main/docs/images/demos/altman-uses-ai-01.jpg"/></p>
+<p>横版（16:9）成片 —— 同一流水线按目标平台切换画幅，对应 YouTube / B 站</p>
+<p><img alt="AutoClip 横版成片示例二" src="https://raw.githubusercontent.com/zhouxiaoka/autoclip/main/docs/images/demos/luyu-tongliya-01.jpg"/></p>
+<p>横版成片 —— 封面标题与正文版式分离，由 <code>title_art</code> 系列的排版引擎生成</p>
+<p><a href="https://zhouxiaoka.github.io/autoclip_intro/assets/video/autoclip-promo-en-1080p.mp4">AutoClip 30 秒英文产品演示</a> —— 官网 promo</p>
+<blockquote>
+<p>完整成片可播放：<a href="https://pub-3fb92949b9c2480b89feec5ec03f3540.r2.dev/cases/gates-ezra/01.mp4">Bill Gates / Ezra Klein 对谈</a> ｜ <a href="https://pub-3fb92949b9c2480b89feec5ec03f3540.r2.dev/cases/garfield-poehler/01.mp4">Andrew Garfield × Amy Poehler</a> ｜ <a href="https://pub-3fb92949b9c2480b89feec5ec03f3540.r2.dev/cases/luyu-tongliya/01.mp4">佟丽娅 × 鲁豫</a> ｜ <a href="https://pub-3fb92949b9c2480b89feec5ec03f3540.r2.dev/cases/altman-uses-ai/01.mp4">Sam Altman 谈 AI</a></p>
+</blockquote>
+<h2>项目画像</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub</td>
+<td><a href="https://github.com/zhouxiaoka/autoclip">https://github.com/zhouxiaoka/autoclip</a></td>
+</tr>
+<tr>
+<td>Star / Fork</td>
+<td>12,650 / 2,056（fork/star = 16.3%，异常高，说明大量用户是「clone 下来自己改」而非收藏）</td>
+</tr>
+<tr>
+<td>代码行数</td>
+<td>211,155 行（Python 64.4%、JSON 18.4%、TSX 5.6%、TypeScript 5.5%、CSS 2.0%、Rust 1.0%）；1,401 个文件</td>
+</tr>
+<tr>
+<td>项目年龄</td>
+<td>15.6 个月（仓库创建 2025-07-08，首次提交 2025-08-03）</td>
+</tr>
+<tr>
+<td>开发阶段</td>
+<td>密集开发，但节奏极不均匀：2025-09~2026-05 连续 7 个月零提交，2026-10 单月 1,015 次提交（占全历史 78%）；main 最后提交停在 2026-11-03，1.5.9 RC 主要在 12 条远程分支上开发</td>
+</tr>
+<tr>
+<td>贡献模式</td>
+<td>独立开发者 + AI 协作。GitHub 口径主作者占 79.8%，git author 名口径 37.8%（作者本人用了 3 个 git identity），Cursor Agent 约 19–20%（296 次提交）</td>
+</tr>
+<tr>
+<td>热度定位</td>
+<td>大众热门。star 走势是爆发型（前身 <code>autoclip_mvp</code> 停在 1,271 star，一年内涨约 10 倍），热度峰值已过</td>
+</tr>
+<tr>
+<td>质量评级</td>
+<td>代码[良好] 文档[优秀] 测试[充分] 规范[不足]</td>
+</tr>
+</tbody>
+</table>
+<h2>作者视角：为什么存在这个项目</h2>
+<h3>创始人/作者背景</h3>
+<p>Kris K（周小舟 / zhouxiaoka），上海，独立开发者，账号 2021 年注册、bio 写着「I know nothing about code」。10 个公开仓库中 6 个是 fork，原创且有规模的只有 <code>autoclip</code>（前身 <code>autoclip_mvp</code>，1,271 star）与官网 <code>autoclip_intro</code>（2 star）。</p>
+<p>这个作者画像有个明显特征：<strong>产品品味、商业判断力、审美能力都强于工程深度</strong>。<code>DESIGN.md</code> 是一份专业级的 design system（色彩、字体阶、间距阶、动效，还带 Decisions Log）；<code>docs/</code> 下 120+ 篇文档；发版验收做成了绑 SHA 与包哈希的证据契约；8 语 README + 8 语 UI；PostHog + Sentry 实接。代价是核心算法深度依赖外部模型能力，以及 20% 的代码由 AI agent 提交。</p>
+<p>作者自述「个人开发者 + AI」「原则：买 &gt; 造」「别贪」——他把自己定位成一个<strong>用 AI 当一等工程力量编排的产品经理型作者</strong>，而不是传统意义上的工程师。</p>
+<h3>问题判断</h3>
+<p>作者看到的问题有两层，缺一不可：</p>
+<p><strong>第一层：包装不是杠杆。</strong> <code>docs/research/2026-10-what-drives-views/</code> 里他对 158 条短视频做了定量研究，结论是：</p>
+<blockquote>
+<p>「GQ 用同一套模板，一条 2,823,259 播放，一条 6,261；HasanAbi 同模板 4 条，差 8–12 倍。切镜率、推近、花字、贴纸、音效、调色、模板，高播和低播都在用。所以 AutoClip 会把力气放在<strong>选片和入点/金句识别</strong>上，包装只当作<strong>质量底线加品牌审美</strong>，不当作增长杠杆。」</p>
+</blockquote>
+<p>更有价值的是这份文档的<strong>方法论</strong>——作者专门写了六条「证据卫生」规则来避免自己骗自己（同号对照、帖龄 ≥12h、点赞率过滤、做法 ≠ 效果）。</p>
+<p><strong>第二层：成本结构是错的。</strong> 商业 SaaS（OpusClip / Klap，$14–29/月）的模型是「上传素材到我的云 + 按分钟计费」，导致 ① 原素材必须上传（版权 / 带宽 / 隐私）；② 计费与出片价值脱钩（40 分钟访谈的转写成本可能只几分之一美分，用户付的却是上传 40 分钟的分钟费）；③ 4K 长视频、多人对话、方言 ASR 这些难例在云端是成本灾难，于是商业产品只做「能过的素材」。</p>
+<p>所以 AutoClip 的解法是：<strong>唯一值得上云的是 LLM 语义调用，视频处理永远留本地</strong>。实测数据支撑了这个定位——Jensen 1h43m 原片出 10 条，耗时 7.5 分钟、文字模型费用 ¥0.09；TIM×罗永浩 2h52m 出 10 条，29.5 分钟、¥0.20。</p>
+<p><strong>时机</strong>：作者 2025-09 到 2026-05 连续 7 个月零提交，这不是懈怠，是<strong>在观察验证</strong>——他用这段时间做了市场调研和 158 条样本研究，等确认了「选片而非包装」才动手。</p>
+<h3>解法哲学</h3>
+<ul><li><strong>产品侧：克制专业 / Calm Premium</strong>。DESIGN.md 明确「安静、精确、留白多、几乎全单色，只用一个克制的蓝做强调」，官网复用同一套 <code>--ac-*</code> token，连官网都不放旧版截图而是搭了一个「产品窗框」。</li><li><strong>研究侧：选对瞬间，而不是堆特效</strong>。这是 2026-10 的方向校准，意义在于<strong>主动否决了一条增长叙事</strong>。</li><li><strong>工程侧：把 AI agent 写进发版验收契约</strong>。不是「用 AI 写代码」，而是「用 AI 当一等工程力量编排」，且把验收证据做成机器可校验的契约（打 tag 必须带注解 trailer <code>Internal-Acceptance-Run: &lt;id&gt;</code>，且恰好一个）——agent 可以在 CI 里跑验收并填 manifest，但<strong>不能自己打 tag</strong>。</li><li><strong>社区侧：刻意不建 Quackback / Featurebase</strong>。社区反馈靠 GitHub issue 直接流回代码。</li></ul>
+<h3>战略意图</h3>
+<p>项目有明确的战略转向，且<strong>战略在代码里被显式标注了时效性</strong>——这是很少见的工程纪律：</p>
+<ul><li><code>ROADMAP.md</code> 顶部横幅：「2026-09-21 更新：近期执行入口为 PRODUCT_PLAN_2026_Q4.md……下文保留为历史长期方案」</li><li><code>docs/PRODUCT_PLAN_2026_Q4.md</code> 开篇：「本文是产品执行规划，<strong>未实现模型接入、生成实际样片或创建投放</strong>。资源仍按每周 5–10 小时估算。」</li></ul>
+<p>实际的战略转向是：<strong>从「个人创作者切片工具」转向「游戏买量（UA）创意生产」</strong>。作者的理由很实在——他自己的账号没有数据，只能靠「能看懂玩法、有尝试欲望的素材」这个更高价值的目标重新定义产品；同时多模态（接入豆包 Seed）与创意编排（「钩子—挑战—行动—反馈—收尾」结构 + Golden Case 库）是新场景的必要能力。</p>
+<p>商业化路径（Supabase / LiteLLM / PostHog / Sentry / Stripe → credits 计量的 LLM 代理）存在但被自己标为「历史方案」，credits 商业化「在重复需求验证后重新评估」。当前是<strong>纯本地 + MIT 开源</strong>，无 open-core 收费墙。</p>
+<h2>核心价值提炼</h2>
+<h3>创新之处</h3>
+<ol><li>
+<p><strong>失败归因快照：在异常链还完整的地方拍一次「证」，之后全程携带</strong>（新颖度 4/5 | 实用性 5/5 | 可迁移性 5/5）
+   不是「捕获异常时记录一下」，而是在离 provider 调用最近的那一层构造一次不可变的 <code>FailureAttribution</code>（frozen dataclass），快照跟着 dict / 线程 / 状态写入 / 事件一路传下去，<strong>永不重新判定</strong>。两条最有价值的不变量：<code>local</code> 归因<strong>永不携带</strong> <code>http_status</code> / <code>upstream_error_type</code>（在 <code>__post_init__</code> 用 ValueError 强制，<code>failure_attribution.py:344</code>），从类型层面杜绝「本地磁盘满了却上报成 503」；以及只走显式 <code>__cause__</code> 链、<strong>绝不走 <code>__context__</code></strong>（<code>failure_attribution.py:225</code>），因为 <code>__context__</code> 会把「处理旧 503 时发生的新错误」错误串起来。</p>
+</li><li>
+<p><strong>回执式 Attempt 模型：用「盖章」而不是「推断」定义归属</strong>（新颖度 4/5 | 实用性 5/5 | 可迁移性 4/5）
+   一次业务尝试 = 一张 <code>AttemptReceipt</code>，与业务状态<strong>在同一次原子写里落盘</strong>。顺序靠单调 <code>sequence</code> 而非时间戳（重启不改血缘）；终态只写一次；重试请求会被 <strong>join</strong> 到已有的 open attempt 而不是新建。最漂亮的一条是 <code>round_outputs()</code>（<code>attempts.py:398</code>）定义的唯一作用域规则：<strong>没有盖章就计入 0，而不是按推断归属</strong>。</p>
+</li><li>
+<p><strong>分级归因 + 双口径成功率：把「成功率」从营销数字变成可审计的工程指标</strong>（新颖度 5/5 | 实用性 4/5 | 可迁移性 4/5）
+   <code>event_catalog.json</code> 的 <code>attribution.success_rate_v4</code> 定义三层归因：<code>user_hard</code>（key 失效、额度不足）从两个分母都剔除；<code>user_x</code>（素材太短、无法解析）只从产品分母剔除；<code>product</code>（<code>whisper_not_installed</code>、<code>bad_endpoint</code>）两个口径都算失败。然后有<strong>整体口径</strong>与<strong>产品口径</strong>两个分母，且 <code>docs/analytics/success_rate.sql</code> 与 JSON 口径<strong>必须一致</strong>（contract test 强制）。SQL 里还处理了「流程」定义：沿 <code>retry_of</code> 回溯到重试链根（最多 4 跳），并单独统计 <code>unknown_flows</code>——<strong>无法证明哪次是最后一次的流程不进分子分母</strong>。</p>
+</li><li>
+<p><strong>HTML 模板的「确定性渲染契约」</strong>（新颖度 4/5 | 实用性 4/5 | 可迁移性 4/5）
+   模板页面必须在<strong>加载期</strong>通过机器校验：无 <code>@keyframes</code>、无 <code>animation:</code>、无 <code>Date.now</code> / <code>performance.now</code>；必须暴露 <code>window.setData</code> / <code>renderFrame</code> / <code>occupiedRects</code> 三个 hook；Pydantic 契约 <code>extra='forbid'</code>，画布强制 1080×1920 偶数像素。<strong>不合法模板在 import 时就 raise，永远不进入候选集</strong>（<code>registry.py:22</code>）。<code>occupiedRects</code> 尤其巧——模板主动回报「我占了画面哪里」，排版引擎据此避让，让非工程师写模板时不必手算坐标。</p>
+</li><li>
+<p><strong>同一运行时四端暴露 + MCP 原生</strong>（新颖度 3/5 | 实用性 5/5 | 可迁移性 4/5）
+   不是「写一个 CLI 再写一个 MCP 再包个 GUI」，而是<strong>一条链路四端复用：</strong><code>local_runner.py</code>「不起 FastAPI、不起 Celery，在当前进程里把一条视频跑完整条流水线」；<code>quick_output_runner.py</code>「CLI and MCP access to the same Studio production pipeline as the desktop application」，共用数据目录和 SQLite，CLI 出的项目在桌面首页直接可见；MCP server 提供 12+ 工具，采用<strong>异步 job + 轮询</strong>而非阻塞几十分钟的同步调用。</p>
+</li><li>
+<p><strong>ContextVar 墙钟预算的三态控制：pause / suspend / 动态 read timeout</strong>（新颖度 4/5 | 实用性 5/5 | 可迁移性 5/5）
+   <code>job_budget.py</code> 不是简单的 <code>timeout</code>。<code>pause_clip_job_budget()</code> <strong>冻结</strong>计时（本地 Whisper、ffmpeg、模型下载是 CPU 工作，不该消耗 provider 预算）；<code>suspend_clip_job_budget()</code> <strong>完全摘掉</strong>预算（用于「记录失败的那次写入」本身——<code>store.change</code> 会因为超预算而 stop，必须先摘掉预算才能写下去）；<code>clip_job_read_timeout(default)</code> <strong>动态缩短</strong>下一次 read 超时为剩余预算。再加上 <code>promote_if_budget_spent()</code> 把预算耗尽后落地的传输超时<strong>升格</strong>为预算超时，不再触发新一轮重试。</p>
+</li><li>
+<p><strong>以研究结论反向约束产品优先级</strong>（新颖度 3/5 | 实用性 4/5 | 可迁移性 4/5）
+   158 条实证不是营销素材，而是<strong>直接否定了产品路线</strong>。落地在代码里：<code>title_art_v2 → v3 → v6</code> 的迭代方向从「更炫的特效」转向「<strong>排版几何精确性</strong>」——v6 用 shaped glyph mask（<code>ImageFilter.MaxFilter</code> 做 embolden、AFFINE transform 做斜切）而不是「重复阴影模拟粗体」；且 <code>title_art_v6.py</code> 头部写明「v1–v5 remain reproducible」，<strong>旧版本冻结不改</strong>。</p>
+</li><li>
+<p><strong>应用级自动 telemetry：让子类作者物理上无法忘记埋点</strong>（新颖度 3/5 | 实用性 4/5 | 可迁移性 5/5）
+   <code>LLMProvider.__init_subclass__</code> 自动给每个子类的 <code>call()</code> 包一层 <code>observe_provider_call</code>（<code>llm_providers.py:56</code>）。这是把「治理」从「纪律」变成「机制」。</p>
+</li></ol>
+<h3>可复用的模式与技巧</h3>
+<ol><li><strong>在异常链完整处拍快照，之后永不重判</strong> —— 适用场景：任何多层封装的 LLM 应用、任何需要「失败率可归因」的产品</li><li><strong>回执与业务状态同一次原子写落盘，归属靠盖章不靠推断</strong> —— 适用场景：长链路 + 用户可重试的 AI 工作流</li><li><strong>每次调用拍一份路由快照，候选模型放 ContextVar 不放全局</strong> —— 适用场景：设置可热重载、多 provider 并发路由</li><li><strong>双线程池分离 CPU 密集与 I/O 密集</strong>（渲染池 1 worker + 通用池 2 worker） —— 适用场景：任何本地媒体 / 文档批处理桌面工具</li><li><strong>把「没有结果」定义为失败</strong>（<code>PipelineFailure</code> 明确禁止吞掉异常跑成 <code>Completed · 0 切片</code>） —— 适用场景：任何多步 AI 流水线</li><li><strong>用本轮观测而非猜测做失败分类</strong>（<code>timeline_failure_from_report()</code> 读本轮 report，并明确告知用户「降低评分阈值不会改变时长限制」） —— 适用场景：任何要给用户「下一步该点什么」的系统</li><li><strong>提示词 = 静态基线 + 动态素材画像后缀</strong>（<code>profile.prompt_hint()</code> 覆盖写死的量纲参数） —— 适用场景：凡是「提示词里写死了某个量纲」的场景</li><li><strong>质检做成影子模式</strong>（出片完成后才调度、低优先级子进程、12s 硬上限、默认不阻塞导出） —— 适用场景：任何想在不拖慢主流程的前提下积累质量数据的系统</li><li><strong>不可逆状态守卫</strong>（<code>cancelled</code> 与 <code>completed</code> 互不覆盖） —— 适用场景：所有「长任务 + 可取消」系统的必备守卫</li><li><strong>原子写 + 引用账本</strong>（tmp → fsync → 写账本 → replace → fsync 目录 → 只有目录 fsync 成功才 commit） —— 适用场景：本地优先的状态存储</li></ol>
+<h3>关键设计决策</h3>
+<ol><li>
+<p><strong>发版 = 机器可校验的「证据契约」，而不是 CI 绿灯</strong>（可迁移性：中高）</p>
+<ul><li>问题：CI 全绿 ≠ 安装包能用。2026-10 的 1.5.x 流程里 Windows 真机验收一直缺位，导致多次「发布后才发现问题」</li><li>方案：三重锁——构建必须来自 untagged branch；内部验收产出 manifest（version / commit / 资产哈希表 / blockers / platforms / regressions / approval 时间序）；打 tag 必须带<strong>恰好一个</strong> <code>Internal-Acceptance-Run: &lt;id&gt;</code> 注解 trailer 且必须是注解 tag</li><li>Trade-off：发版显著变重（每次发布跑两轮 workflow + 人工填 manifest + 人工审批），换来发布物与源码 SHA 强绑定、验收证据可审计</li><li>模式本身（用注解 trailer 把发布绑定到不可变证据）非常通用，但实现重度依赖 GitHub Actions，迁移需重写</li></ul>
+</li><li>
+<p><strong>LLM 多后端 = 运行时路由 + 快照冻结，而非编译期绑定</strong>（可迁移性：高）</p>
+<ul><li>问题：支持 Qwen / OpenAI 兼容 / Gemini / DeepSeek / 豆包 / Kimi / GLM / Grok / Ollama / LM Studio，还要在模型下线时自动替补</li><li>方案：三层独立抽象——Provider 层 <code>LLMProvider(ABC)</code> + Factory 注册表；Manager 层 <code>LLMManager</code> 按 mtime 热重载 + 调用前拍路由快照；降级层 <code>bind_request_model()</code> 的候选态是 ContextVar（明确「Does not write settings」），<code>order_candidates()</code> 按 sponsor → popular → other 固定排序且<strong>不探测延迟</strong>（避免每次探活消耗配额）；找回层在 <code>MODEL_NOT_FOUND</code> 时替补一次并记住</li><li>Trade-off：四套机制（快照 / ContextVar / 候选态 / 记忆）比编译期绑定复杂得多，换来「改设置立即生效」+「模型下线不中断生产」</li></ul>
+</li><li>
+<p><strong>双线程池分离：把「CPU 密集」和「模型密集」分开调度</strong>（可迁移性：高）</p>
+<ul><li>问题：ffmpeg 编码会把 CPU 吃满，与「下一个导入项目的筛选 / 分析」共用线程池会让用户看到「上一条还在渲染，新导入的也卡住」</li><li>方案：<code>jobs.py:21</code> 通用池 2 worker + <code>jobs.py:44</code> 渲染池 1 worker（串行，避免多个 ffmpeg 互抢 CPU 反而更慢）</li><li>Trade-off：牺牲渲染吞吐（本可以并行渲多条），换来导入—筛选—分析这条交互链路永不被渲染阻塞。对单机桌面工具，交互延迟 &gt; 批处理吞吐是正确取舍</li></ul>
+</li><li>
+<p><strong>HTML 模板的确定性渲染契约</strong>（可迁移性：高）</p>
+<ul><li>问题：包装模板若依赖浏览器渲染，就无法保证可复现（同样输入产出不同画面），也无法在无头环境跑</li><li>方案：见创新点 4，加载期机器校验 + <code>occupiedRects</code> 回报占位</li><li>Trade-off：模板作者被严格约束（不能做时间轴动画），换来同输入同输出——可缓存、可 diff、可回归</li></ul>
+</li><li>
+<p><strong>失败时的状态机「不可逆」保护</strong>（可迁移性：高）</p>
+<ul><li>方案：<code>jobs.py:196</code> 显式守卫——<code>cancelled</code> 不会被 <code>completed</code> 覆盖，反之亦然；<code>attempts.settle()</code> 的 docstring 是「Write the terminal once」，<code>store.settle_attempt()</code> 是「The only attempt-terminal writer. A second call does not rewrite a terminal.」</li></ul>
+</li></ol>
+<h2>竞品格局与定位</h2>
+<h3>竞品对比矩阵</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>AutoClip</th>
+<th>openshorts</th>
+<th>FunClip</th>
+<th>autocut</th>
+<th>supoclip</th>
+<th>OpusClip 等商业 SaaS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Star</td>
+<td>12,650</td>
+<td>9,602</td>
+<td>6,615</td>
+<td>7,845</td>
+<td>3,956</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>License</td>
+<td>MIT</td>
+<td>MIT</td>
+<td>MIT</td>
+<td>Apache-2.0</td>
+<td>AGPL-3.0</td>
+<td>闭源</td>
+</tr>
+<tr>
+<td>部署形态</td>
+<td>本地优先（Desktop/CLI/MCP/Docker）</td>
+<td>Docker 自托管</td>
+<td>库 + 自建</td>
+<td>本地脚本</td>
+<td>Web + 官方托管版</td>
+<td>全托管云</td>
+</tr>
+<tr>
+<td>Agent 接入</td>
+<td><strong>原生 MCP + Agent Skill</strong></td>
+<td>无</td>
+<td>无</td>
+<td>无</td>
+<td>无</td>
+<td>无</td>
+</tr>
+<tr>
+<td>交付物</td>
+<td>视频+封面+文案+ZIP 发布包</td>
+<td>短片</td>
+<td>剪辑能力集合</td>
+<td>带时间戳的片段</td>
+<td>短片</td>
+<td>短片+素材库</td>
+</tr>
+<tr>
+<td>中文平台原生</td>
+<td><strong>是</strong>（抖音/小红书/B 站 画幅+发布文案）</td>
+<td>部分</td>
+<td>是</td>
+<td>否</td>
+<td>否</td>
+<td>否</td>
+</tr>
+<tr>
+<td>本地 ASR</td>
+<td>v1.5.0 起 SenseVoiceSmall（Windows 约 5.8 GB）</td>
+<td>—</td>
+<td><strong>FunASR（工业级）</strong></td>
+<td>—</td>
+<td>—</td>
+<td>云端</td>
+</tr>
+<tr>
+<td>成品度</td>
+<td>约 70% 可发布度</td>
+<td>较高</td>
+<td>低（库）</td>
+<td>高（极简）</td>
+<td>较高</td>
+<td><strong>最高</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>差异化护城河</h3>
+<ol><li><strong>MCP 原生</strong> —— 唯一一个把「Agent 出片」做成一等公民的开源项目。<code>skills/autoclip/SKILL.md</code> 专门教 Agent 怎么用，这是竞品完全没碰的维度</li><li><strong>失败归因体系</strong> —— 三层归因 + 双口径成功率 + SQL/JSON 契约测试。这<strong>是一套可被别人抄走、但需要长期数据积累和口径争论才能抄走的能力</strong></li><li><strong>本地渲染 + 中文平台原生</strong> —— 成本与合规的结构性优势（¥0.09/10 条 vs 按分钟计费）</li><li><strong>「包装是底线」的克制</strong> —— 研究层结论直接约束了工程投入，避免了所有人都走的模板内卷路线</li></ol>
+<h3>竞争风险</h3>
+<ul><li><strong>最可能被替代者：openshorts</strong>。同为 MIT、同为「贴链接出片」心智模型、star 更少但 Docker 路径是主推且验证过的（AutoClip 的 Docker 路径「从 2025-09 起就没能跑通过一次完整处理」，issue #88 的 7 个问题全部核验属实，v1.2.1 才修）。如果 openshorts 补上 MCP 与桌面端，AutoClip 在开源阵营的领先会被抹平</li><li><strong>supoclip 的商业闭环已跑通</strong>（托管付费版 ~$9.99/月），而 AutoClip 的 credits 方案仍停留在被自己标注为「历史方案」的 ROADMAP 阶段</li><li><strong>中文 ASR 是明确落后项：</strong>FunClip 基于 FunASR 是工业级，AutoClip 到 v1.5.0（PR #244）才补上 SenseVoiceSmall，且 Windows 实装约 5.8 GB、需预留 8 GB</li><li><strong>单机工具的天花板：</strong>21 万行代码 + 单人主导的维护负担重，提交节奏是「静默 7 个月 → 爆发 1,015 commits（占全历史 78%）」，可持续性存疑</li><li><strong>社区治理失焦：</strong>issue #40 被 stale bot 自动关闭；刻意不建 Quackback / Featurebase</li></ul>
+<h3>生态定位</h3>
+<p><strong>「本地优先 + Agent 原生的视频发布产线」</strong> —— 不是 OpusClip 的开源平替（那是 supoclip 的定位），也不是 FunClip 的 ASR 库。</p>
+<p>它其实在做一个更大的事：<strong>当 Agent 成为内容生产的主要劳动力时，Agent 需要的是「可被调用的产线」而不是「可被浏览的网页」</strong>。AutoClip 的 MCP + Skill 组合是这个命题的第一个具体答案。</p>
+<p>生态上还有两个可见的下游信号：MCP Bundle（<code>io.github.zhouxiaoka/autoclip-mcp</code>，已登记 MCP Registry / Smithery）、以及社区衍生后继项目 <strong>OpenClip</strong>（issue #40 明确「受 AutoClip 启发」）——而 OpenClip 自认「希望尽可能轻量化好维护」，正是对本体过重的反向印证。</p>
+<h2>套利机会分析</h2>
+<ul><li><strong>信息差：</strong>star 数与工程成熟度<strong>错配</strong>，这是双向的。Issue #59「这么多 Star 是咋刷出来的，数不清的错误」是社区公开质疑，作者回应「问题大多来自 Docker 路径此前跑不通，v1.2.1 已修」——与 HANDOFF.md 的自述完全互证。所以「star 数」不能作为质量信号，但<strong>反过来也意味着：用这个项目的人比 star 数显示的多得多</strong>（fork/star = 16.3%）。真正被低估的是它的<strong>失败归因体系与发版证据契约</strong>——这两块在 GitHub 上完全看不出来，只有读完代码才知道有多稀缺</li><li><strong>技术借鉴：</strong><code>failure_attribution.py</code> + <code>event_catalog.json</code> + <code>failure_messages.json</code> 三件套可直接搬到任何 LLM 应用；<code>AttemptReceipt</code> 的盖章式归属模型适用于所有长链路可重试工作流；ContextVar 预算三态、双线程池分离、不可逆状态守卫、原子写+引用账本、模板确定性渲染契约，都是通用模式</li><li><strong>生态位：</strong>填补「给 Agent 驱动的、可自托管的视频内容流水线」这一空白。竞品要么是库（FunClip）、要么是极简工具（autocut）、要么是 SaaS（OpusClip），<strong>没有一家把「Agent 可调用的本地产线」当核心卖点</strong></li><li><strong>趋势判断：</strong>热度峰值已过（2026-10 是全历史峰值月，2026-11 至今仅 8 次提交，main 停在 11-03），发版节奏从周版压到日版又在回落，战略正从创作者切片转向游戏买量 UA。<strong>短期看是价值主张漂移期，长期看 MCP 原生 + 本地优先是明确的后发优势方向</strong>——随着 Agent 编排视频生产的需求上升，这条路的复利会起来</li></ul>
+<h2>风险与不足</h2>
+<ol><li><strong>star 数与工程成熟度严重错配</strong>（#59）。12,650 star 对应的是「期待值错配」而非用户。早期 Docker 路径完全跑不通是大量「用不了」issue 的根源，这个债到 v1.2.1 才还，声誉损失已经发生</li><li><strong>战略摇摆导致价值主张漂移</strong>。2026-09 从「创作者切片」转向「游戏买量 UA」，对既有用户价值主张变了；Q4 计划文档自己承认「未实现模型接入、生成实际样片或创建投放」，且「当前工作区早于公开 v1.3 且有未提交改动」——文档承认执行状态滞后</li><li><strong>工程债明确未偿还</strong>。全历史 <code>fix:refactor = 517:7</code>；重构以「新建文件」形式发生（<code>title_art_v2/_v3/_v6</code> 逐字重复大量换行缩放逻辑、<code>error_middleware_v2</code> 并存、<code>celery_simple_fixed.py</code> 与 <code>celery_app.py</code> 并存），代价是 1,401 个文件的碎片化与 <code>jobs.py</code> 2,417 行</li><li><strong>规范债：</strong>Ruff 在 CI 里只是 advisory（<code>continue-on-error: true</code>），无 Black / isort / Prettier。CONTRIBUTING.md 明说「项目没有统一配置 Black、isort 或 Prettier，不要为无关修改重新格式化整个仓库」——这与 <code>fix:refactor = 517:7</code> 的历史一致</li><li><strong>跨平台成熟度不足：</strong>macOS 有完整记录，<strong>Windows 真机验收始终缺位</strong>（HANDOFF 明确写「Windows 真机安装 / 导入 / 保存仍待验收」）。Windows 专属代码散落在 <code>windows_asyncio.py</code>、<code>windows_job.rs</code>、<code>parent_watch.py</code> 等多处</li><li><strong>不适用于所有人：</strong>21 万行代码对独立开发者过重（issue #40 的衍生项目自认「希望轻量化好维护」就是反向印证）；想学「最小可用视频剪辑内核」的人应该去看 autocut（几十行、Apache-2.0、任何人都能读完）</li><li><strong>外部依赖风险：</strong>README 推荐的 Docker 路径整年未跑通；官网深链已有一批失效（<code>llms.txt</code>、<code>blog/what-drives-views/</code>、<code>cases/</code>、<code>guides/</code> 在仓库中不存在）；独立分析还指出长 4K 输入的 PCM / 解码帧可耗尽磁盘触发 Rust panic、暗光多人场景人脸跟踪跳目标致裁剪抖动（&gt;2 人需用 <code>--layout original</code>）——<strong>这两条 README 完全未提</strong></li><li><strong>AI 提交噪音：</strong>296 次 <code>Cursor Agent</code> 提交（19%）混入 main，历史 commit 标题带审查编号；另有作者本人的 3 个 git identity 造成贡献统计失真</li></ol>
+<h2>行动建议</h2>
+<ul><li><strong>如果你要用它：</strong><ul><li>适合：中国创作者（抖音 / 小红书 / B 站）、游戏买量素材生产、需要批量出片的播客与课程团队，以及<strong>已经在用 Cursor / Claude Code 编排工作流的开发者</strong></li><li>建议：优先用 CLI 或 MCP 而非桌面端（跳过 Tauri 与前端那一层）；先把 SenseVoice（v1.5.0 随 PR #244 加入）装好，否则中文 ASR 是明确短板；Windows 用户需预留 8 GB 磁盘</li><li>对比选型：要「快速出一堆短片」选 openshorts；要「中文 ASR 质量」选 FunClip；要「极简可读的教学素材」选 autocut；要「团队协作 + 素材库」用商业 SaaS；只有当你需要<strong>Agent 直接调用 + 本地素材不出本机 + 中文平台适配</strong>这三条同时成立时，AutoClip 才是不可替代的</li><li>成本预期：Jensen 1h43m 出 10 条，7.5 分钟、文字模型 ¥0.09。本地 ffmpeg 渲染才是时间成本的大头</li></ul>
+</li><li><strong>如果你要学它：</strong>重点看这 6 个位置<ul><li><code>backend/core/failure_attribution.py</code>（578 行）—— 归因快照的完整形态，含两条最有价值的不变量</li><li><code>backend/services/studio/attempts.py</code>（443 行）—— 回执模型 + <code>round_outputs()</code> 的唯一作用域规则</li><li><code>backend/core/job_budget.py</code> —— ContextVar 预算的 pause / suspend / 动态 timeout 三态</li><li><code>backend/services/studio/templates/registry.py</code> —— 确定性渲染契约的机器校验实现</li><li><code>backend/pipeline/failures.py</code> —— 「空结果必须让流水线失败」的语义 + <code>timeline_failure_from_report()</code></li><li><code>backend/core/llm_providers.py:56</code> + <code>backend/core/llm_manager.py</code> —— Provider/Manager/降级三层拆分与路由快照</li><li>补充读物：<code>HANDOFF.md</code>（35 KB 代码地图 + 踩坑清单）、<code>DESIGN.md</code>（完整 design system + Decisions Log）、<code>docs/research/2026-10-what-drives-views/</code>（158 条实证研究）</li></ul>
+</li><li><strong>如果你要 fork 它：</strong>优先改进方向依次是——① 拆分 <code>jobs.py</code>（2,417 行承担下载/检测/渲染/封面/发布/重试过多职责）② 合并 <code>title_art</code> v2/v3/v6 的重复换行缩放逻辑，改成共享基类 ③ 把 Ruff 从 advisory 改为阻断，并引入 Black / isort 收敛风格债 ④ 补 Windows 真机验收并写进 <code>RELEASE_CHECKLIST</code> ⑤ 把 SenseVoice 做成开箱即用（而非 5.8 GB 按需装）⑥ 补一个「最小可跑示例项目」</li></ul>
+<h3>知识入口</h3>
+<table>
+<thead>
+<tr>
+<th>资源</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DeepWiki</td>
+<td><a href="https://deepwiki.com/zhouxiaoka/autoclip">deepwiki.com/zhouxiaoka/autoclip</a>（已收录，准确描述了完整六步流水线与全技术栈）</td>
+</tr>
+<tr>
+<td>Zread.ai</td>
+<td>未收录或反爬不可达（HTTP 504 / 403，非明确「未收录」）</td>
+</tr>
+<tr>
+<td>关联论文</td>
+<td>无。arXiv 上的 AutoClip 是另外两篇无关工作（2007.14469 音频源分离梯度裁剪、2309.16414 VLM 零样本分类器调优）；本项目研究产出是自媒体长文而非论文</td>
+</tr>
+<tr>
+<td>在线 Demo</td>
+<td>无托管 Demo。官方可看：官网 30 秒英文 promo + R2 CDN 上 16 条真实成片</td>
+</tr>
+<tr>
+<td>官方站</td>
+<td><a href="https://zhouxiaoka.github.io/autoclip_intro/">zhouxiaoka.github.io/autoclip_intro</a></td>
+</tr>
+<tr>
+<td>MCP Bundle</td>
+<td><code>io.github.zhouxiaoka/autoclip-mcp</code>（PyPI <code>autoclip-mcp</code>，已登记 MCP Registry / Smithery）</td>
+</tr>
+<tr>
+<td>外部深度分析</td>
+<td><a href="https://musen-ai.com/en/article/zhouxiaoka-autoclip">Link-to-Clips Automation: Architectural Deep Dive into AutoClip's Local-First Pipeline</a>（定位为「边缘渲染 + 薄云语义」的不对称方案，并指出磁盘耗尽与人脸跟踪抖动两个 README 未提的风险）｜ <a href="https://swarm.beetlix.com/reviews/autoclip-review-2026">AutoClip Review 2026</a>（3.9/5，定位「高速量一稿工具而非完整编辑器」，明确声明未实机测试）</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
