@@ -991,6 +991,9 @@ entries:
   geeeekexplorer_nano-vllm:
   - llm-inference
   - model-foundation
+  getarcaneapp_arcane:
+  - database
+  - protocol-spec
   getezy_ezy:
   - devtools
   getsentry_sentry:
@@ -1079,6 +1082,9 @@ entries:
   - ai-coding
   - devtools
   - protocol-spec
+  google-research_paper-orchestra:
+  - ai-agent
+  - data-pipeline
   google-research_timesfm:
   - uncategorized
   google_adk-go:
@@ -1949,6 +1955,9 @@ entries:
   - model-foundation
   - video-audio
   - media-generation
+  nvidia_skillevaluator:
+  - ai-agent
+  - llm-framework
   nvidia_skillspector:
   - ai-agent
   - ai-coding
@@ -2555,6 +2564,11 @@ entries:
   - security
   telegrammessenger_telegram-ios:
   - uncategorized
+  tencent_loopforge:
+  - ai-agent
+  - ai-coding
+  - devtools
+  - database
   tencent_weknora:
   - llm-framework
   - workflow-automation
