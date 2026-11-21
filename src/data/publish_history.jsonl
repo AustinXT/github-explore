@@ -425,3 +425,4 @@
 {"recorded_at": "2026-11-20T09:43:43.944053+00:00", "slug": "google-research_paper-orchestra", "title": null, "state": "published", "published_at": "2026-11-20", "reason": "自动生成", "ci_run_id": "44710439906"}
 {"recorded_at": "2026-11-20T18:26:57.567746+00:00", "slug": "nvidia_skillevaluator", "title": null, "state": "published", "published_at": "2026-11-20", "reason": "自动生成", "ci_run_id": "44789785489"}
 {"recorded_at": "2026-11-21T00:42:03.878518+00:00", "slug": "tencent_loopforge", "title": null, "state": "published", "published_at": "2026-11-21", "reason": "自动生成", "ci_run_id": "44844119344"}
+{"recorded_at": "2026-11-21T08:09:57.200515+00:00", "slug": "tracer-cloud_opensre", "title": null, "state": "published", "published_at": "2026-11-21", "reason": "自动生成", "ci_run_id": "44882111286"}

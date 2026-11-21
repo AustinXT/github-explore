@@ -1,0 +1,6 @@
+{
+  "title": "GitHub推荐：13.7K stars 的 AI SRE：OpenSRE 把 CI 红了变成一个待审 PR",
+  "digest": "OpenSRE 是自托管 AI SRE CLI agent：读失败的 CI run，用 git 历史语义而非 LLM 判定「CI 坏了还是代码坏了」，把修复推成待审 PR；它还想做「基础设施事故响应领域的 SWE-bench」。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}

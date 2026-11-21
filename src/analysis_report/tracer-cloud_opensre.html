@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* ====== 微信公众号排版 CSS ====== */
+
+body {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #3e3e3e;
+    background: #fff;
+}
+
+/* 正文段落 */
+p {
+    font-size: 15px !important;
+    line-height: 2 !important;
+    margin: 0 !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+    padding-right: 1.2em !important;
+    padding-left: 1.2em !important;
+    text-align: justify !important;
+}
+p + p {
+    margin-top: 0 !important;
+}
+
+/* 标题 */
+h1 {
+    font-size: 20px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 16px 0 !important;
+    padding: 0 !important;
+}
+h2 {
+    font-size: 18px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 24px 0 !important;
+    padding: 0 !important;
+}
+h3 {
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+    text-align: left !important;
+    margin: 16px 0 16px 0 !important;
+    padding: 0 0 0 1.2em !important;
+}
+h4 {
+    font-size: 15px !important;
+    color: rgb(0, 122, 170) !important;
+    margin: 12px 0 8px 0 !important;
+    padding: 0 !important;
+}
+
+/* 列表 */
+ul,
+ol {
+    padding-left: 2em !important;
+    margin: 1em 0 !important;
+    font-size: 15px !important;
+}
+li {
+    margin: 0.5em 0 !important;
+    line-height: 1.8em !important;
+    font-size: 15px !important;
+    color: #3e3e3e !important;
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    margin: 0 !important;
+    padding-left: 1.2em !important;
+}
+
+/* 引用 */
+blockquote {
+    border-left: 4px solid #888 !important;
+    padding: 8px 16px !important;
+    margin: 1em 0 !important;
+    color: #666 !important;
+    background: #f9f9f9 !important;
+}
+blockquote > p {
+    margin: 0.5em 0 !important;
+    padding: 0 !important;
+}
+blockquote::before,
+blockquote::after {
+    content: none !important;
+}
+
+/* 代码块 */
+pre {
+    font-size: 14px !important;
+    line-height: 1.4em !important;
+    color: #3e3e3e !important;
+    background: #f8f8f8 !important;
+    padding: 12px 16px !important;
+    border-radius: 4px !important;
+    overflow: auto !important;
+    margin: 1em 0 !important;
+}
+
+/* 脚注 */
+.footnotes {
+    font-size: 11px !important;
+    color: #666 !important;
+    line-height: 1.2 !important;
+    margin: 8px 0 0 0 !important;
+    padding: 4px 0 0 0 !important;
+    border-top: 1px solid #eee !important;
+}
+.footnotes p {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #666 !important;
+}
+
+/* 上标 */
+sup {
+    font-size: 0.75em !important;
+    vertical-align: super !important;
+    color: #e51f42 !important;
+    margin: 0 2px !important;
+}
+
+/* 行内代码 / 强调 / 链接 */
+code { background: #f4f4f4 !important; color: #c7254e !important; padding: 2px 4px !important;
+    border-radius: 3px !important; font-size: 90% !important; }
+pre code { background: transparent !important; color: inherit !important; padding: 0 !important; }
+strong { font-weight: bold !important; color: #3e3e3e !important; }
+a { color: rgb(0,122,170) !important; text-decoration: none !important; }
+
+/* 图片 */
+img { max-width: 100% !important; height: auto !important; display: block !important;
+    margin: 1em auto !important; border-radius: 4px !important; }
+
+/* 表格 */
+table { border-collapse: collapse !important; width: 100% !important; margin: 1em 0 !important;
+    font-size: 14px !important; }
+th, td { border: 1px solid #ddd !important; padding: 6px 10px !important; text-align: left !important; }
+th { background: #f4f4f4 !important; font-weight: bold !important; }
+
+hr { border: none !important; border-top: 1px solid #ddd !important; margin: 1.5em 0 !important; }
+</style>
+</head>
+<body>
+
+<blockquote>
+<p>GitHub: <a href="https://github.com/tracer-cloud/opensre">https://github.com/tracer-cloud/opensre</a></p>
+</blockquote>
+<h2>一句话总结</h2>
+<p>OpenSRE 是一个自托管的 AI SRE CLI agent——它读失败的 CI run、用确定性规则而非 LLM 猜测区分「CI 坏了」和「代码坏了」、然后把修复推成一个待审的 PR（实际改代码由 Claude Code / Codex / Cursor 这类编码 agent 执行），而不是重跑一次掩盖症状。</p>
+<h2>值得关注的理由</h2>
+<ol><li>
+<p><strong>它做的是别人没做的那个垂直。</strong> 2026 年的 AI SRE agent 赛道已经很挤：HolmesGPT、Aurora、K8sGPT、Keep、Robusta、商业侧的 incident.io AI / Datadog Bits AI 都能做「告警来了，帮我查为什么」。但它们全都在处理「代码已经在跑、然后坏了」的场景。OpenSRE 处理的是「代码还没跑起来」——CI 红了，读日志、定位、改代码、推 PR。这个缺口看起来只是场景平移，实际上证据源、动作集、交付物全都不同：前者产出诊断结论，后者产出一个可合并的 diff。修代码这一步它不自己实现，而是把 Claude Code / Codex / Cursor / Pi 当作可插拔后端调用——「手」角色被明确禁止 commit/push，分支与 PR 机制留在调用方手里。</p>
+</li><li>
+<p><strong>它把评测环境当成产品主线在建。</strong> Issue #2074 的标题就是「Benchmark opensre+LLM vs LLM-alone」，89 条评论里维护者把 8 个社区 benchmark 资源映射进框架（CloudOpsBench 论文与 HF 数据集已集成，OpenSRE-bench leaderboard 提案被提升为第二适配器，RCAEval / OpenRCA 排队中），并自比 SWE-bench：「SWE-bench 展示了 agent 在真实任务+清晰反馈下进步最快。流水线故障比本地代码任务更慢、更噪、更难复现，所以我们用同样的标准要求自己。」这个赛道目前还没有第二个项目在做这件事。</p>
+</li><li>
+<p><strong>它自己就是自己的第一个用户。</strong> git log 里有一条提交 <code>3345ad5b5</code> 的正文是 OpenSRE 修自己的 CI——修了 8 个可复现的失败，根因是 mock 流缺少 <code>finish_reason</code> 被 CI 锁定的 LiteLLM 1.109.1 拒绝，提交信息署名 <code>Co-authored-by: OpenSRE Agent &lt;opensreagent@opensre.com&gt;</code>。仓库里还带了一个可运行的合成故障床：<code>integrations/github/tools/ci_repair_demo/seed.py</code> 会程序化创建一个私有 repo，main 上 <code>calculator.py</code> 是 <code>return a + b</code>（通过），分支 <code>demo/failing-ci</code> 改成 <code>return a - b</code>（失败），配真实 GitHub Actions workflow，并用 AGENTS.md 把修复范围精确限定为「只改 calculator.py，不许改测试或 workflow」——所以修复是否成功是可判定的。</p>
+</li></ol>
+<h2>项目展示</h2>
+<p><img alt="OpenSRE 官网首屏" src="https://opensre.com/images/home/opensre-hero.webp"/>
+<em>官网首屏。定位是一句话：CI 告诉你坏了，但不告诉你为什么坏、怎么修。</em></p>
+<p><img alt="How OpenSRE Works 六层管道架构图" src="https://opensre.com/images/home/how-it-works-opensre.svg"/>
+<em>六层管道：失败接入 → 上下文装配 → 归因分类 → agent 循环调查 → 置信度门控 → 可交付修复报告。</em></p>
+<p><img alt="CI 成本度量面板" src="https://opensre.com/images/home/ci-costing-fr-2.webp"/>
+<em>竞品都不做的一张图：把「CI 可靠性」直接换算成钱——失败率、因不可靠 CI 浪费的开发者工时、main 分支保持红色的时长。</em></p>
+<p><img alt="Who fixes the build 所有权框架" src="https://opensre.com/images/home/who-fixes-the-build.webp"/>
+<em>官方最有意思的一张叙事图：应用团队、平台 DevOps、服务 owner 各负责哪类失败。</em></p>
+<p><img alt="OpenSRE CLI 欢迎界面" src="https://raw.githubusercontent.com/tracer-cloud/opensre/main/docs/images/opensre-welcome.png"/>
+<em>CLI 入口。交互式 REPL 要求已登录账号 + TTY，headless 场景走 <code>opensre ask "&lt;question&gt;"</code>。</em></p>
+<h2>项目画像</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub</td>
+<td><a href="https://github.com/tracer-cloud/opensre">https://github.com/tracer-cloud/opensre</a></td>
+</tr>
+<tr>
+<td>Star / Fork</td>
+<td>13,722 / 1,931（fork 率 14%，说明是真实下载试用而非纯收藏）</td>
+</tr>
+<tr>
+<td>许可证</td>
+<td>Apache-2.0</td>
+</tr>
+<tr>
+<td>代码行数</td>
+<td>522,581 行 Python（Python 98.2%），3,979 个文件</td>
+</tr>
+<tr>
+<td>项目年龄</td>
+<td>10.3 个月（2026-01-13 创建）</td>
+</tr>
+<tr>
+<td>开发阶段</td>
+<td>密集开发（近 90 天 976 次提交，近 30 天 136 次，2026-11-21 当天仍有提交）</td>
+</tr>
+<tr>
+<td>贡献模式</td>
+<td>社区驱动 + 商业团队主导（396 名贡献者，主作者占比仅 10.5%）</td>
+</tr>
+<tr>
+<td>热度定位</td>
+<td>大众热门且仍处上升通道（2026-01 建仓不足 1 万 star，11-02 已 12,660，11-21 达 13,722）</td>
+</tr>
+<tr>
+<td>质量评级</td>
+<td>代码<strong>优秀</strong> 文档<strong>优秀</strong> 测试<strong>充分</strong>（测试行数 ≈ 生产代码行数）</td>
+</tr>
+</tbody>
+</table>
+<h2>作者视角：为什么存在这个项目</h2>
+<h3>创始人/作者背景</h3>
+<p>背后是 <strong>Tracer Cloud</strong>——一家做 SRE 编排平台的商业公司，核心产品是把可观测性、基础设施、告警接进聊天里。OpenSRE 的 GitHub 简介是「the world's first open source AI SRE」，账号创建仅 1.8 年、8 个公开仓库，其中 opensre 是绝对主导（第二名 <code>tracer-client</code> 只有 18 star，投入权重差 760 倍）。</p>
+<p>Top 贡献者 <code>davincios</code>（Vincent Hus）和 <code>YauhenBichel</code> 同时是公司员工和 issue 署名者。最能说明作者性格的一次披露是 Issue #344——创始人亲自开 issue 招募 maintainer，条件是「每周 dev call（周四 17:00 UK time）+ 评估委员会 2 票通过 + $300–500/月 symbolic sponsorship」，并在正文里把项目自述为「an open reinforcement learning environment for agentic infrastructure incident response」。注意用词：RL 环境，不是工具。</p>
+<h3>问题判断</h3>
+<p>作者的出发点是 dogfooding，而且是硬狗。三个关键洞察：</p>
+<p><strong>第一，CI 失败有三种成因，而现有工具不区分。</strong> 代码错、CI 基础设施错、所有权不明——不区分开就知道该找谁修。这条判断在代码里被做成了确定性算法：<code>integrations/github/tools/ci_analytics/metrics.py</code> 的 <code>classify_failures</code> 按 (workflow, head_repo, branch, PR) 分组、按完成时间排序，然后判定——同一个 commit 上失败后又在同一个 commit 上通过 = <strong>RELIABILITY</strong>（CI 造成的）；在新 commit 上才通过 = <strong>SOURCE</strong>（代码造成的）；一直没通过 = <strong>UNRESOLVED</strong>。这直接对应官网「谁该修这个 build」的所有权框架。</p>
+<p><strong>第二，失败的归属不该由 LLM 猜。</strong> 交给模型分类会不可复现、无法审计。所以作者用 git 历史语义做判定，延迟计算还要减去该 workflow 的正常时长（<code>normal_minutes</code>），避免把「正常跑 8 分钟」算成「浪费了 8 分钟」。这是全项目最值得抄的一段代码。</p>
+<p><strong>第三，时机是 SWE-bench 范式的迁移。</strong> README 明确写：「SWE-bench 展示了 agent 在真实任务+清晰反馈下进步最快。流水线故障比本地代码任务更慢、更噪、更难复现，所以我们用同样的标准要求自己。」技术前提是 Codex / Claude Code 这类编码 agent 在 2025–2026 成熟到足以承担「修 CI」这项工作。</p>
+<h3>解法哲学</h3>
+<p>设计哲学被压缩成一句话：<strong>「Fix when sure. Ask when not.」</strong>（有把握就修，没把握就问）。展开是四条：</p>
+<ul><li><strong>修因而非重跑</strong>（Fix the cause, not just the rerun）——与竞品最锋利的分界</li><li><strong>证据链驱动</strong>——结论必须挂证据，不允许猜；<code>core/state/turn_evidence.py</code> 保留结构化证据（用户消息、每批工具调用及其结果、最终回复）而不只是转录文本</li><li><strong>局部可逆</strong>——标识符 masking 后再出网、本地还原</li><li><strong>人在环内</strong>——推 PR 而非自动合并</li></ul>
+<p>更值得注意的是几条<strong>被写进代码规约的</strong>选择：</p>
+<p><strong>「LLM 是唯一的工具选择器」。</strong> <code>docs/interactive-shell-action-policy.md</code>（2026-06-18）完整记录了一次决策反转——原来有 regex / 关键词映射做意图路由，后来全部移除。原因是「启发式规则和 LLM 竞争，导致误分类，是优先级漂移的反复来源」。这条被提升到 AGENTS.md 的全仓库强制条款：<strong>自然语言意图属于 action agent，没有 regex / keyword / fuzzy 路由或确定性旁路</strong>。唯一的例外是用户逐字输入的 <code>/slash</code> 命令。这份文档本身就是一份极有价值的「反模式档案」——记录了作者踩过什么坑以及为什么掉头。</p>
+<p><strong>「技能是自然语言，不是脚本」。</strong> <code>core/agent_harness/prompts/skills/AGENTS.md</code> 写着：「一个需要超过几个 helper 的技能是在描述一个工具，不是技能」「没有决策留在脚本里」「把脚本串起来让工作流无需模型推理就跑完，那不是技能，那是戴着技能卡的工具」。判据是一句可操作的检验：「每个脚本能不能删掉而那一步仍能用一句话描述？」</p>
+<p><strong>「人类的文件人类拥有」。</strong> <code>SKILL.md</code> 和 <code>core/agent_harness/prompts/opensre_system_prompt.md</code> 是绝对禁改的——agent 只能提建议、引用当前文本和拟议文本，唯一例外是用户逐字给出「当前文本 → 替换文本」。这条很少见：大多数 agent 项目里，agent 的提示词是可以被自己的工具改写的。</p>
+<p><strong>「拒绝自欺的确定性」。</strong> AGENTS.md 写「永远不要用恒假条件开关或跳过测试来掩盖失败」。</p>
+<h3>战略意图</h3>
+<p><strong>开源自带的不是全部。</strong> Apache-2.0 内核之外有闭源商业侧：OpenSRE Cloud 托管网关、<code>app.opensre.com</code> 账号体系（Clerk 认证）、Fargate 网关。开源版是引流漏斗——README 首屏引导 <code>opensre</code> 登录即激活托管模型，<code>core/llm/factory.py:resolve_llm_route()</code> 里有一条 <code>account_route is not None</code> 分支直接把路由强制到 OpenAI，即登录用户默认走托管模型。这是 open-core，不是 genuinely open。</p>
+<p><strong>技能是热更新的 SaaS 层。</strong> <code>infrastructure/skills_registry/</code> 实现了一套签名发布 / 拉取 / 回滚系统：ECDSA P-256 签名验证、公钥在 <code>config/constants/skills.py</code>、<code>opensre skills push</code> / <code>rollback</code>、每 5 分钟后台拉取、ETag/304 协商、版本门控（不改 <code>metadata.version</code> 就不发布）。<strong>把「提示词工程」做成可版本化、可签名、可回滚的制品</strong>——这在开源项目里极罕见。</p>
+<p><strong>但主线有一个明确的战略摇摆。</strong> CI/CD 修复是核心产品（README 首屏、CI 徽章、demo 菜单第一项），事故调查是遗留能力。<code>pyproject.toml</code> 的 description 至今仍写着「Open-source SRE agent for automated incident investigation and root cause analysis. Automatically analyzes alerts from Slack, Grafana, Datadog」，与 README 的「CI/CD reliability agent」分裂——外部评测者把这条列为主要批评之一，代码可证。</p>
+<p>反过来，团队也主动砍掉过泛化野心。Issue #1506 提议做一个「监控本机上其他 AI agent 的 fleet dashboard」（把 Claude Code / Cursor / Aider / Codex CLI 当微服务，套 golden signals / SLO / 事故响应，支持 <code>/agents trace&lt;pid&gt;</code> tail stdout、<code>/agents kill &lt;pid&gt;</code>），最终标记 <strong>not planned</strong>。这说明当前优先级是 CI/CD 可靠性 + 评测环境，不是「agent 运维 agent」。</p>
+<h2>核心价值提炼</h2>
+<h3>创新之处</h3>
+<p><strong>1. 技能即签名制品：自然语言工作流进入软件供应链</strong>（新颖度 5/5 | 实用性 4/5 | 可迁移性 4/5）</p>
+<p>技能卡被当作版本化制品管理：ECDSA P-256 签名、版本门控、原子发布、ETag 协商、后台拉取、一键回滚、<strong>per-turn 快照绑定</strong>（<code>SkillCatalogSnapshot</code> 构建一次后不再读文件，新 release 下一回合才生效，绝不 mid-turn 切换）、「release 整体接受或整体拒绝」。</p>
+<p>版本号规则也踩过坑并写下来了：minor 是<strong>计数器不是小数</strong>（「2.9 → 2.10」而不是「2.10 = 2.1」）；MAJOR 只在破坏外部契约时动（改名、移除入口菜单问题、移除被持久化 schedule 依赖的步骤）。</p>
+<p>适用场景：任何把提示词 / 工作流当作运行时可加载制品分发的系统。</p>
+<p><strong>2. CI-caused vs code-caused 的纯确定性归因</strong>（新颖度 4/5 | 实用性 5/5 | 可迁移性 5/5）</p>
+<p>不用 LLM，用 git 历史语义判定责任方。配套的「谁该修这个 build」模型给出三类默认响应人（应用团队 / 平台 DevOps / 服务 owner），以及一句被反复引用的论断：<strong>「30 秒内找不到 build owner，说明这是组织所有权问题而非 CI 工具问题」</strong>。</p>
+<p>适用场景：任何需要区分「环境问题 vs 代码问题」的自动化流水线。</p>
+<p><strong>3. 共享回合内核 + 「默认值即 transport 路径」的防漂移设计</strong>（新颖度 4/5 | 实用性 5/5 | 可迁移性 5/5）</p>
+<p><code>infrastructure/turn_host/turn_runner.py</code>（311 行）是交互式 REPL、Slack、Discord、Telegram、Buzz 五个入口跑 agent 回合的唯一实现。妙处在参数默认值：<code>console</code> / <code>confirm_fn</code> / <code>is_tty</code> 等全部默认成 transport 路径的值，因此「省略全部关键字 = transport 路径」在类型层面成立，两条入口不可能漂移。配套 <code>SessionAgentPool</code> 保证一个逻辑 session 一个 agent，<code>session_execution_lock</code> 是可重入租约。</p>
+<p>适用场景：多通道 agent（CLI / REPL / Slack / Teams / Web）需要行为一致时。</p>
+<p><strong>4. 可逆标识符 masking 的工程细节</strong>（新颖度 3/5 | 实用性 5/5 | 可迁移性 5/5）</p>
+<p><code>infrastructure/safety/masking/</code> 三件套（policy / rules / detectors），占位符统一为 <code>&lt;KIND_N&gt;</code>，同一标识符在同一 session 内映射稳定。细节做得相当细：</p>
+<ul><li><code>_derive_counters</code> 先扫全表取每 kind 的<strong>最大</strong>索引再统一 +1——注释明确说「循环内 +1 会在乱序时多计」（<code>&lt;NS_2&gt;, &lt;NS_0&gt;</code> 会得到 4 而非 3）</li><li><code>unmask</code> 用单次左到右扫描 + <code>&lt;[^&lt;&gt;]+&gt;</code> 边界，因此 <code>&lt;NAMESPACE_10&gt;</code> 不会被 <code>&lt;NAMESPACE_1&gt;</code> 部分改写；<strong>替换文本不二次扫描</strong></li><li><code>_canonical_label</code> 清洗用户自定义 label 里的括号和空格，维持「单层括号」不变量</li><li>policy 每次运行重建，不做模块级单例，因此 env 改动下次生效</li></ul>
+<p>与 guardrail 的分工是清晰的二元设计：<strong>guardrail 是单向硬阻断</strong>（信用卡、API key → <code>[REDACTED]</code>，不可逆），<strong>masking 是双向可逆</strong>（基础设施标识符，在具体 call site 选择性 opt-in）。</p>
+<p><strong>5. 观察指纹式停滞检测</strong>（新颖度 4/5 | 实用性 5/5 | 可迁移性 5/5）</p>
+<p><code>core/agent/react_loop.py</code> 的 <code>_observation_fingerprint</code> 对 (工具名, public 输入, is_error 布尔, 成功结果内容) 做 sha256。<strong>故意不哈希错误文本</strong>——因为「provider 会给每次错误装饰新的 request id 或时间戳」，哈希错误内容就永远不重复，检测就失效了。另有独立计数器专治「工具发现反复找到相同能力」的空转。</p>
+<p>触发上限时不硬停，而是给模型一个安全交接提示词：「基于已有工作和工具结果给出简明最终交接……<strong>不要声称任务已完成</strong>，不要请求或描述另一个工具调用。」</p>
+<p><strong>6. AST 静态描述符索引 + 运行时插件注册双轨工具目录</strong>（新颖度 4/5 | 实用性 4/5 | 可迁移性 4/5）</p>
+<p>125 个集成目录、888 个 .py，全量 import 一次要 ~1.5 秒。<code>tools/registry_index.py</code> 用 <strong><code>ast</code> 模块</strong>读工具元数据而不 import 执行器，按 surface 懒加载；运行时注册扩展点线程安全幂等；PyInstaller frozen build 把索引烘进 bundle。</p>
+<p><strong>7. <code>defer_loading</code> + <code>tool_reference</code> 保住 prompt cache 前缀</strong>（新颖度 4/5 | 实用性 4/5 | 可迁移性 3/5）</p>
+<p>Anthropic 缓存的是 <code>tools → system → messages</code> 前缀，中途往 <code>tools</code> 里加一个工具，后面全部重新计价。<code>core/llm/transports/sdk/anthropic_deferred_tools.py</code> 用 <code>tool_reference</code> 让搜索揭示的工具延后加载，且在搜索前后 <code>tools</code> 读起来完全一致。4.5+ 模型才支持，400 报错自动降级为全量前置加载并永久停止 deferring。</p>
+<h3>可复用的模式与技巧</h3>
+<p>以下每一条都可以直接搬走：</p>
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>要点</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.importlinter</code> 分层契约 + 显式豁免台账</td>
+<td>5 条 contract 把架构边界变成 CI 强制的不变量，技术债边逐条列出并标注工单号</td>
+<td>任何多包 Python 项目</td>
+</tr>
+<tr>
+<td>默认参数即「最常用路径」的防漂移设计</td>
+<td>两个入口共享实现，可选参数默认值 = 最常见调用形态</td>
+<td>多入口库 / 多 transport agent</td>
+</tr>
+<tr>
+<td>Port/Protocol 端口 + 组合根注册表</td>
+<td>领域内核只认 Protocol，能力包各自注册，宿主在唯一位置 <code>CAPABILITY_REGISTRARS</code> 装配</td>
+<td>插件化 agent / 依赖倒置框架</td>
+</tr>
+<tr>
+<td>「技能=签名制品」供应链</td>
+<td>签名 + 版本门控 + 原子发布 + ETag + 回滚 + per-turn 快照</td>
+<td>运行时加载自然语言制品的系统</td>
+</tr>
+<tr>
+<td>确定性归因替代 LLM 分类</td>
+<td>用平台语义（git 历史、运行记录）而非模型判断判定责任方</td>
+<td>CI 修复 / 告警分级 / 故障归属</td>
+</tr>
+<tr>
+<td>证据加权置信度 + 结构化 verdict</td>
+<td>加权平均出置信度标签（每项带 rationale），闭环判定用 JSON Schema enum 而非文本抓取</td>
+<td>需要「够确定才动手」的 agent</td>
+</tr>
+<tr>
+<td>可逆 masking + 单向 guardrail 二元模型</td>
+<td>硬阻断不可逆内容，可逆处理基础设施标识符</td>
+<td>连外部模型的自托管 agent</td>
+</tr>
+<tr>
+<td>观察指纹停滞检测</td>
+<td>对失败结果只哈希错误布尔值，以对抗 provider 的装饰性差异</td>
+<td>任何工具循环 agent</td>
+</tr>
+<tr>
+<td>工具交换对为单位的上下文驱逐</td>
+<td>成对驱逐避免孤儿 tool_use；用 provider 自报数修正字符估算但夹住修正系数在 [0.25, 1.5]</td>
+<td>长上下文工具 agent</td>
+</tr>
+<tr>
+<td>AST 静态描述符索引 + 运行时插件注册</td>
+<td>免 import 拿元数据，按 surface 懒加载</td>
+<td>大量 vendor 集成的 CLI</td>
+</tr>
+<tr>
+<td>中间件式入站编排上移</td>
+<td>「两个 transport 都要的 → 上移到 middleware 层」，用 independence contract 强制</td>
+<td>多 chat 通道网关</td>
+</tr>
+<tr>
+<td>类型化失败种类 + 双套文案</td>
+<td>内部记全细节，外部只给「什么阻塞了 + 怎么修 + 下一步」</td>
+<td>集成密集的工具型 agent</td>
+</tr>
+<tr>
+<td>合成故障床（作用域精确限定的 fixture）</td>
+<td>程序化创建带真实 CI workflow 的失败场景，限定可改文件使修复可判定</td>
+<td>agent 修 bug 的评测</td>
+</tr>
+<tr>
+<td>「人类拥有文件」的机器可执行规约</td>
+<td>agent 只能提建议并引用当前+拟议文本，唯一例外是逐字 find-and-replace</td>
+<td>AI 参与开发的仓库</td>
+</tr>
+<tr>
+<td>能力探测（存在 ≠ 可用）</td>
+<td>探测工具是否真的能跑（<code>print(1+1)</code> 得 2 才算 Python 可用），而不是只查 PATH</td>
+<td>agent 工具暴露前的预检</td>
+</tr>
+<tr>
+<td>词表化命名规约 + 反模式清单</td>
+<td>一词一义 + 模块命名模板 <code>{domain}_{role}.py</code> + 禁用包名前缀的类型命名</td>
+<td>大型 Python 仓库的 onboarding</td>
+</tr>
+</tbody>
+</table>
+<h3>关键设计决策</h3>
+<p><strong>决策 1：置信度不靠 LLM 自评，靠结构化 verdict + 客观证据</strong></p>
+<ul><li><strong>问题：</strong>「Fix when sure. Ask when not.」怎么落地？让模型说「我有 80% 把握」是最不可靠的做法。</li><li><strong>方案：</strong>分三层。闭环目标判定用 Pydantic <code>Literal["GOAL_REACHED","NOT_REACHED"]</code>（JSON Schema enum），失败返回 <code>None</code> 而不是猜；相关性置信度用加权证据——<code>core/domain/correlation/confidence.py</code> 的 <code>build_weighted_confidence</code> 对每个 <code>EvidenceContribution(source, score, weight, rationale)</code> 加权平均，阈值 0.75 / 0.4 分 high/medium/low，权重全部是确定性纯函数（时间窗 0.45、拓扑 0.30、周期性 0.10、特性/工作流 0.15，和为 1.0）；执行层面靠能力探测（只有真能用的工具才暴露）+ 四档自主度 <code>/auto off|low|med|high</code>。</li><li><strong>Trade-off：</strong>阈值是拍出来的经验值，没有公开评测支撑（正是 Issue #2074 暴露的问题）；换来<strong>可审计、可解释</strong>。</li><li><strong>可迁移性：</strong><strong>高</strong>。</li></ul>
+<p><strong>决策 2：CI 归因用 git 历史判定，零 LLM</strong></p>
+<ul><li><strong>问题：</strong>「修因而非重跑」需要先分清是谁的错。</li><li><strong>方案：</strong>见上文创新点 2。</li><li><strong>Trade-off：</strong>只能分类「已修复的失败」，正在发生的失败只有 UNRESOLVED 一档。</li><li><strong>可迁移性：</strong><strong>高</strong>。</li></ul>
+<p><strong>决策 3：多 LLM provider 用「统一路由决策 + 双传输层」归一</strong></p>
+<ul><li><strong>问题：</strong>Anthropic / OpenAI / Codex / Ollama / Gemini / OpenRouter / NVIDIA NIM / Bedrock / Azure OpenAI，加上 10 个 CLI 型 provider（claude-code / codex / cursor / copilot / gemini-cli / kimi / grok / opencode / pi / antigravity），每个的流式格式、工具调用格式、schema 方言都不同。</li><li><strong>方案：</strong><code>core/llm/factory.py:resolve_llm_route()</code> 把 (settings, provider, cli_provider_registration, use_litellm) 解析成冻结的 <code>LLMRoute</code> dataclass，<strong>所有角色（agent / reasoning / classification / toolcall）共用</strong>——原文说这是为了「so an Azure/LiteLLM routing fix cannot drift between the tool-calling agent and the reasoning/classification/toolcall clients」。<code>LLMRole</code> 是「需要哪种能力」而非「用哪家」，加一个 provider 是表里加一行而不是改四个 dispatcher。传输层二选一（原生 SDK / LiteLLM）。schema 归一用结构化 Protocol 而非 import 具体类型，注释解释了原因：「把它放进 <code>core.llm</code> 会造成 <code>core.tool</code> 的包循环，而它什么也没买到：每个 provider client 最终都把参数放宽成 <code>list[Any]</code>」。</li><li><strong>Trade-off：</strong>抽象层吃掉了 provider 的独特能力（比如 Gemini 的 <code>thought_signature</code> 需要在 <code>raw_content</code> 里保留原始 dict）；换来<strong>加 provider 成本 = 一行表</strong>。</li><li><strong>可迁移性：</strong><strong>高</strong>。</li></ul>
+<p><strong>决策 4：把「另一个编码 agent」当成可插拔后端，且拆成「脑」「手」两个正交角色</strong></p>
+<ul><li><strong>问题：</strong>要修代码就得有编码能力——要么自己实现，要么用现成的。</li><li><strong>方案：</strong><code>integrations/coding_agent/</code> 有 <code>claude_code_backend</code> / <code>codex_backend</code> / <code>cursor_backend</code> / <code>pi_backend</code> / <code>native_backend</code>。每个跑同一个二进制的<strong>「手」角色</strong>（<code>-p</code> print mode + <code>--permission-mode acceptEdits</code> + 显式 tool allowlist <code>Bash,Edit,Write,Read,Glob,Grep</code>）；<code>integrations/llm_cli/</code> 里同一个二进制的<strong>「脑」角色</strong>（prompt in, text out）。安全设计很讲究：<code>build_guarded_task_prompt</code> 构造的提示词<strong>禁止 commit/push</strong>——「branch/commit/PR 机制留在调用方手里」；内置 agent 只在修复 checkout 里跑，带 <code>CI=true</code> 且<strong>剥离 OpenSRE / provider 密钥</strong>的环境。</li><li><strong>Trade-off：</strong>依赖外部 CLI 二进制的存在与登录状态；换来不重复实现编码能力，且能复用用户已有的 Claude Code / Codex 订阅（<code>CODING_AGENT=auto</code> 自动挑第一个就绪的）。</li><li><strong>可迁移性：</strong><strong>中高</strong>。</li></ul>
+<p><strong>决策 5：上下文预算以「工具交换对」为单位驱逐，且用 provider 自报数自校准</strong></p>
+<ul><li><strong>问题：</strong>200k 窗口的工具调用循环，工具输出能把窗口吃光。</li><li><strong>方案：</strong><code>core/context_budget.py</code>。驱逐以（assistant tool_use + 对应 tool_result）为单位，不是按单条消息——拆开会让 provider 拿到孤儿 tool_use 而报错。区分三类消息：<code>_opensre_seed</code>（钉住，永不驱逐）、<code>_opensre_duplicate_result</code>（重复结果，可先驱逐）、<code>_opensre_evicted</code>（已替换成驱逐桩，不再二次处理）。token 估算初始按字符算「故意偏高的 0.50 token/char」，每次调用后用 provider 自己报的数修正，但修正系数夹在 <code>[0.25, 1.5]</code>、ceiling 拉伸不超过 3.0 倍——注释写着「不要把请求裁到真实窗口的一半」。溢出重试时预算降到被拒请求估计值的 0.6 倍。</li><li><strong>Trade-off：</strong>字符估算不精确；换来溢出重试 + 渐进裁剪 + 不发孤儿块三件事同时成立。</li><li><strong>可迁移性：</strong><strong>高</strong>。</li></ul>
+<p><strong>决策 6：<code>.importlinter</code> 把架构边界变成 CI 强制的不变量</strong></p>
+<ul><li><strong>问题：</strong>52 万行 Python、2446 个非测试文件、7 个平级包；「core 不 import surfaces」靠人自觉必然漂移。</li><li><strong>方案：</strong>五层栈——<code>surfaces/</code> + <code>gateway/</code>（宿主）→ <code>tools/</code> + <code>integrations/</code>（能力）→ <code>core/</code> + <code>infrastructure/</code>（运行时）→ <code>config/</code>（底座，只被读）。唯一的双向对是 <code>core ⟷ infrastructure</code>，原因是「分成两层反而禁止这条边，所以它们同层互为兄弟」。<code>.importlinter</code> 里 5 条 contract 覆盖全量跨包关系（含 <code>type = layers</code> / <code>forbidden</code> / <code>independence</code> 三种），并<strong>显式列出 15 条「T-4 技术债」豁免边</strong>——豁免是被追踪的，不是沉默的破例。<code>.github/ci/check_direct_imports.py</code> 补齐「直接边」这一层。</li><li><strong>Trade-off：</strong>豁免列表本身是负担（新增边要改配置才能过 CI）；换来<strong>分层真的不会塌</strong>——一次涉及 12 万行的目录重构没有引入循环依赖。</li><li><strong>可迁移性：</strong><strong>高</strong>。</li></ul>
+<p><strong>决策 7：失败分类用「类型化失败种类 + 面向用户的下一步建议」</strong></p>
+<ul><li><strong>问题：</strong>集成失败时给用户吐栈回溯毫无帮助。</li><li><strong>方案：</strong><code>integrations/github/tools/ci_analytics/failure.py</code> 定义 <code>GitHubFailureKind</code>（RATE_LIMITED / UNAUTHORIZED / NOT_FOUND / TLS_UNTRUSTED / UNREACHABLE / SERVER_ERROR / INVALID_RESPONSE），每种配一句<strong>给模型看</strong>的 <code>_NEXT_STEP</code>（「不要在额度恢复前重跑分析，告诉用户什么时候恢复并提出届时再跑」）。给用户的是另一条 <code>analysis_failure_line</code>——「一行说清什么阻塞了读取、怎么修，<strong>绝不暴露异常细节</strong>」。</li><li><strong>设计原则</strong>（AGENTS.md）：「在外部 HTTP/chat 响应边界脱敏，不在共享调用点脱敏。」</li><li><strong>可迁移性：</strong><strong>高</strong>。</li></ul>
+<h2>竞品格局与定位</h2>
+<h3>竞品对比矩阵</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>OpenSRE</th>
+<th>HolmesGPT</th>
+<th>Aurora</th>
+<th>keep</th>
+<th>商业 AI SRE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Star</td>
+<td>13,722</td>
+<td>3,949</td>
+<td>未公开</td>
+<td>12,543</td>
+<td>不适用</td>
+</tr>
+<tr>
+<td>主场景</td>
+<td><strong>CI 红了 → 修 → 推 PR</strong></td>
+<td>生产事故调查</td>
+<td>调查 + 复盘 + 审批门控修复 PR</td>
+<td>告警中枢 / AIOps</td>
+<td>平台内自动分诊</td>
+</tr>
+<tr>
+<td>交付物</td>
+<td>可合并的 diff</td>
+<td>诊断结论</td>
+<td>修复 PR</td>
+<td>告警工单</td>
+<td>摘要 / 建议</td>
+</tr>
+<tr>
+<td>准确率实测</td>
+<td><strong>无独立评测</strong></td>
+<td>31/38</td>
+<td>34/38（自评）</td>
+<td>—</td>
+<td>有生产数据</td>
+</tr>
+<tr>
+<td>速度实测</td>
+<td>—</td>
+<td>中位 45s（最快）</td>
+<td>中位 154s</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>自托管 + 自带模型</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>✅</td>
+<td>❌ 厂商锁定</td>
+</tr>
+<tr>
+<td>账号门控</td>
+<td>⚠️ 交互 REPL 强制登录 + TTY</td>
+<td>❌</td>
+<td>❌</td>
+<td>✅ 需注册</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>评测环境</td>
+<td>✅ <strong>在做</strong>（CloudOpsBench 已集成）</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>License</td>
+<td>Apache-2.0</td>
+<td>Apache-2.0</td>
+<td>—</td>
+<td>Apache-2.0</td>
+<td>商业闭源</td>
+</tr>
+</tbody>
+</table>
+<h3>差异化护城河</h3>
+<p><strong>技术护城河（中等偏强，非独占）</strong>：「CI 修复语义 + 确定性归因 + 评测环境」三件套。确定性归因不是谁都能快速抄——它需要吃透 GitHub Actions 的运行语义（<code>find_outages</code> 的注释就暴露了这一点：「GitHub 在最新 commit 有失败检查时把分支显示为红色，所以 outage 跟随 commit 而非 per-workflow 时间线：一个之后再也不运行的 workflow（路径过滤、改名、删除）不能在后续 commit 全绿后还让分支保持红色」）。评测环境是最有可能变成真正护城河的部分——SWE-bench 之所以有护城河，是因为它定义了一个可比的标准。</p>
+<p><strong>工程护城河（强，但只对内）</strong>：2446 个非测试 .py、13249 个测试、5 条 import 契约、CodeQL、per-PR p90 90s SLO、三阶段 CI、原子发布 + 签名技能。<strong>这个工程质量在开源同类里罕见</strong>——HolmesGPT 的规模小一个数量级。问题是它现在只保护自己，不构成对外部的壁垒。</p>
+<p><strong>信任护城河（弱）</strong>：自托管 + 数据主权是真实的差异化主张，但在「没有独立评测数据」的前提下说服力打折。</p>
+<p><strong>生态护城河（弱）</strong>：125 个集成目录是覆盖度优势，但外部评测明确指出「覆盖度不等于深度」；且 10 个月仍未形成稳固的外部 maintainer 层。</p>
+<h3>竞争风险</h3>
+<p><strong>最大风险是评测缺席。</strong> HolmesGPT 和 Aurora 的实测数据都在对手手里，OpenSRE 一个都没有——外部对比评测（arvokas.io 收录 Aurora / HolmesGPT / K8sGPT / AURA / kagent / OpenSRE 六个 Apache-2.0 项目）<strong>直接跳过了 OpenSRE</strong>。这是唯一一个能单枪匹马改变竞争格局的缺口，而作者在 Issue #2074 里已经诚实记录了自己造 benchmark 比造 agent 更难：legacy adapter 把 AWS backend 挂在 <code>sources["aws"]</code> 而工具读 <code>sources["eks"]</code>，导致 State Snapshot 工具从未被调用、process metrics 全 0；旧 scorer 的 exact-match 太严，agent 正确诊断出 <code>incorrect_image_reference</code> 却得 0 分。<strong>这两个 bug 本身就是「benchmark 比 agent 难造」的证据。</strong></p>
+<p><strong>可复现性风险。</strong> 安装器永远拉 <code>main</code> 最新构建，同一套安装命令在不同时间装出不同 agent；交互 REPL 强制要求「已登录账号 + TTY」，排除无人值守自动化和多数 CI 环境；Python API 无法从安装的二进制使用，必须 source checkout + 本地构建——「CLI 产品」与「可嵌入框架」两条线尚未收敛成一个干净的打包架构。任何严肃的第三方评测或企业落地都会先撞上这堵墙。</p>
+<p><strong>自主度默认值的信任风险。</strong> alpha 阶段 <code>/auto high</code> 是默认值（全部放行），且明确「intentionally no shell-command safety policy」。这对「数据主权」叙事是反讽——你控了数据，但没控 agent 动作。讽刺的是 Aurora 在审批门控上做得更好（<code>DEFAULT_AUTO_LEVEL = AutoLevel.HIGH</code> vs Aurora 内建审批门控）。唯一被无条件追问的工具是 <code>execute_python_code</code>（<code>ASK_AT_EVERY_AUTO_LEVEL_TOOL_NAMES</code>），理由是「生成的代码可能被不可信日志或告警内容操纵」。</p>
+<p><strong>上游依赖风险。</strong> <code>anthropic&gt;=0.77.1</code>、<code>litellm&gt;=1.106.2,&lt;1.110.0</code>、<code>openai&gt;=2.0.0</code> 全是大版本浮动，而 <code>defer_loading</code> 这类 beta 特性依赖 provider 版本——本仓库那条 <code>3345ad5b5</code> 提交就是 LiteLLM 1.109.1 拒绝了 mock stream 的 <code>finish_reason</code> 缺失，OpenSRE 修的是自己的 CI。</p>
+<h3>生态定位</h3>
+<p><strong>「AI SRE 的 SWE-bench」是唯一有想象力的定位</strong>——不做更好的通用事故调查（打不过 HolmesGPT 的社区和实测），而是做<strong>基础设施事故响应领域的标准评测基座</strong>。如果 OpenSRE-bench 真的立起来，位置就从「另一个 agent」变成「这个领域的度量衡制定者」。</p>
+<p>但目前是「基建先行、内容后补」：BenchmarkAdapter ABC 设计成 metric-agnostic，先把评测架子搭起来，再逐个把外部基准套进来。风险是架子搭好了没人往里灌数据。</p>
+<h2>套利机会分析</h2>
+<ul><li><strong>信息差：</strong>不是「低 star 高质量」那类经典信息差——13.7k star 已经是充分发现的状态。<strong>真正的信息差在评测环境这条副线：</strong>社区关注度几乎全在 CLI 产品上，而 CloudOpsRE-bench / CloudOpsBench 适配 + 「AI SRE 的 SWE-bench」这条叙事还没被市场定价。想找「能抄的」人应该去看 <code>infrastructure/skills_registry/</code>（签名发布的自然语言制品）、<code>core/context_budget.py</code>（工具交换对驱逐）、<code>react_loop.py</code>（观察指纹停滞检测）——这三个是<strong>任何工具型 agent 都能立刻搬走</strong>的。</li><li><strong>技术借鉴：</strong><code>ci_analytics/metrics.py</code> 的确定性归因、<code>importlinter</code> 分层契约 + 豁免台账、<code>docs/NAMING.md</code> 的词表化命名规约、<code>docs/interactive-shell-action-policy.md</code> 的决策反转记录——这四样今天就能用。<code>TurnRunner</code> 的「默认值即最常用路径」防漂移设计适合任何多入口 agent。</li><li><strong>生态位：</strong>填补了「SRE agent 只做诊断、不做修复」和「CI 修复工具没有评测」两个空白。有点讽刺的是，同赛道竞品（HolmesGPT / Aurora）反而有更硬的评测数据——OpenSRE 想做度量衡制定者，但自己还没被度量。</li><li><strong>趋势判断：</strong>仍在增长（11-02 到 11-21 涨了 1062 star），且发布节奏没减速（近 30 天 136 次提交、当天仍有提交）。后发优势有两条：一是编码 agent 成熟让它现在才做得成；二是 CI/CD 修复这个垂直没人认真做，有先占窗口。<strong>但后发劣势同样明确：</strong>所有实测数据都在竞品手里。</li></ul>
+<h2>风险与不足</h2>
+<ol><li><strong>产品面欠账：</strong>README 说 CI/CD reliability，<code>pyproject.toml</code> 的 description 说 incident investigation from Slack/Grafana/Datadog——定位分裂，代码可证。</li><li><strong>评测缺席：</strong>如上，唯一能单枪匹马改变格局的缺口。</li><li><strong>不可复现：</strong>main channel 滚动二进制 + 强制账号 + TTY + Python API 必须 source checkout。</li><li><strong>自主度过高：</strong>alpha 默认全放行、无 shell 安全策略。</li><li><strong>集成深度未知：</strong>「60+ 集成」是覆盖度不是深度——建议接入前逐个跑 <code>opensre integrations verify</code>。</li><li><strong>维护层不稳：</strong>13.7k star、10 个月，仍靠公司雇员轮值 + 现金悬赏招募 maintainer。</li><li><strong>缺 CHANGELOG 与 examples：</strong>用 GitHub Releases 代替 CHANGELOG；无 <code>examples/</code> 目录（替代物是 <code>docs/</code> 下的 .mdx 指南 + <code>ci_repair_demo/</code> 这个可运行的合成故障 demo）。</li><li><strong>上游版本脆弱：</strong>大版本浮动依赖 + provider beta 特性耦合。</li></ol>
+<h2>行动建议</h2>
+<ul><li><strong>如果你要用它：</strong>先跑 <code>opensre integrations verify</code> 逐个验证你要用的集成，别信「60+ 集成」的覆盖率数字。确认你有至少一个可用的 coding agent（Claude Code / Codex / Cursor / Pi 任一）——没有的话它修不了代码。<strong>必须用 <code>opensre ask "&lt;question&gt;"</code> headless 模式而不是交互 REPL</strong>，除非你的环境确实有 TTY。安全上，把 <code>/auto</code> 从默认的 <code>high</code> 降到 <code>med</code> 或 <code>low</code>，尤其在第一次跑的时候。把这个 alpha 当成「值得试用的原型」而不是「能进生产的工具」——作者自己都还没被独立 benchmark 跑过。</li><li><strong>如果你要学它：</strong>按这个顺序读，每个都是可独立迁移的：</li><li><code>integrations/github/tools/ci_analytics/metrics.py</code> — 确定性归因（最值得抄）</li><li><code>infrastructure/turn_host/turn_runner.py</code> — 唯一回合内核 + 防漂移默认值</li><li><code>infrastructure/safety/masking/rules.py</code> — 可逆 masking 的边界处理</li><li><code>core/agent/react_loop.py</code> — 观察指纹停滞检测</li><li><code>core/context_budget.py</code> — 工具交换对驱逐 + token 估算校准</li><li><code>core/agent_harness/prompts/skills/AGENTS.md</code> — 技能卡契约（信息密度极高）</li><li><code>docs/interactive-shell-action-policy.md</code> — 决策反转记录（反模式档案）</li><li><code>docs/NAMING.md</code> — 命名词表与反模式</li><li><code>.importlinter</code> — 分层契约与 15 条技术债豁免</li><li><code>integrations/github/tools/ci_repair_demo/seed.py</code> — 合成故障床</li><li><strong>如果你要 fork 它：</strong>先补上它最缺的两样——<strong>一份可信的独立评测</strong>（把 CloudOpsBench 适配器跑通、修掉 <code>sources["aws"]</code> vs <code>sources["eks"]</code> 那个 bug、放宽 scorer 的 exact-match），以及<strong>一条收敛的定位</strong>（把 <code>pyproject.toml</code> 的 description、README、仓库 topics 全部对齐到 CI/CD reliability，砍掉遗留的事故调查叙事）。这两件做完，fork 的价值会远高于直接贡献。另外把安装器改成固定版本（配 <code>uv.lock</code> 或 PyPI 发布），并给交互 REPL 提供无账号的本地路径——这是所有第三方评测的入场券。</li></ul>
+<h3>知识入口</h3>
+<table>
+<thead>
+<tr>
+<th>资源</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DeepWiki</td>
+<td>未收录（<code>https://deepwiki.com/tracer-cloud/opensre</code> 持续返回 429/无内容）</td>
+</tr>
+<tr>
+<td>Zread.ai</td>
+<td>未收录（<code>https://zread.ai/tracer-cloud/opensre</code> 返回 HTTP 403）</td>
+</tr>
+<tr>
+<td>关联论文</td>
+<td>OpenSRE 本身无 arXiv 论文；方法论锚点为 <a href="https://arxiv.org/abs/2310.06770">SWE-bench (arXiv:2310.06770)</a>，已集成 <a href="https://arxiv.org/abs/2603.00468">CloudOpsBench (arXiv:2603.00468)</a> 及其 HF 数据集 <code>tracer-cloud/cloud-ops-bench-dataset</code>，参考 <a href="https://github.com/microsoft/OpenRCA">OpenRCA (ICLR'25)</a> 与 RCAEval (FSE'26)</td>
+</tr>
+<tr>
+<td>在线 Demo</td>
+<td>无公开在线 Playground。可本地跑 <code>opensre setup --dev</code> 起本地 web app（<a href="http://localhost:3000">http://localhost:3000</a>），或跑合成故障 demo <code>integrations/github/tools/ci_repair_demo/</code></td>
+</tr>
+<tr>
+<td>官网</td>
+<td><a href="https://opensre.com">https://opensre.com</a></td>
+</tr>
+<tr>
+<td>关键 Issue</td>
+<td><a href="https://github.com/Tracer-Cloud/opensre/issues/2074">#2074 Benchmark（CloudOpsBench）</a> · <a href="https://github.com/Tracer-Cloud/opensre/issues/344">#344 招募 maintainer</a> · <a href="https://github.com/Tracer-Cloud/opensre/issues/1506">#1506 本机 agent 监控（已砍）</a></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
