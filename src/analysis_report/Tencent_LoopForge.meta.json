@@ -1,0 +1,6 @@
+{
+  "title": "GitHub推荐：5273 star 的腾讯 LoopForge：10 种编码 CLI 的审批流水线",
+  "digest": "腾讯把内部用了数年的 AI 编码 Agent 编排平台 LoopForge 整体开源：不训模型、不自带 Agent，而是把十种编码 CLI 装进一张可编辑的 SOP 图——脚本节点与 Agent 节点平级，关键决策停在人工闸门，全程可审计。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}
