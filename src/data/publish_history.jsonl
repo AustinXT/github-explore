@@ -427,3 +427,4 @@
 {"recorded_at": "2026-11-21T00:42:03.878518+00:00", "slug": "tencent_loopforge", "title": null, "state": "published", "published_at": "2026-11-21", "reason": "自动生成", "ci_run_id": "44844119344"}
 {"recorded_at": "2026-11-21T08:09:57.200515+00:00", "slug": "tracer-cloud_opensre", "title": null, "state": "published", "published_at": "2026-11-21", "reason": "自动生成", "ci_run_id": "44882111286"}
 {"recorded_at": "2026-11-21T16:04:43.845543+00:00", "slug": "zhouxiaoka_autoclip", "title": null, "state": "published", "published_at": "2026-11-21", "reason": "自动生成", "ci_run_id": "44920920922"}
+{"recorded_at": "2026-11-21T21:39:34.060894+00:00", "slug": "openvinotoolkit_openvino", "title": null, "state": "published", "published_at": "2026-11-21", "reason": "自动生成", "ci_run_id": "44950861488"}

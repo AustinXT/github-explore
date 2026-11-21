@@ -1,0 +1,6 @@
+{
+  "title": "GitHub推荐：11,912 star 的 OpenVINO：动态 LLM 怎么塞进 NPU",
+  "digest": "Intel 官方推理栈 OpenVINO 靠 NPUW 翻身：把动态形状 LLM 拆成 Prefill/Generate 两个静态子图，再按 prompt 长度编译 KV 变体阶梯——llama.cpp、TensorRT 做不到的护城河。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}

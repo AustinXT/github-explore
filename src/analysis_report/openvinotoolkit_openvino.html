@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* ====== 微信公众号排版 CSS ====== */
+
+body {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #3e3e3e;
+    background: #fff;
+}
+
+/* 正文段落 */
+p {
+    font-size: 15px !important;
+    line-height: 2 !important;
+    margin: 0 !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+    padding-right: 1.2em !important;
+    padding-left: 1.2em !important;
+    text-align: justify !important;
+}
+p + p {
+    margin-top: 0 !important;
+}
+
+/* 标题 */
+h1 {
+    font-size: 20px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 16px 0 !important;
+    padding: 0 !important;
+}
+h2 {
+    font-size: 18px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 24px 0 !important;
+    padding: 0 !important;
+}
+h3 {
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+    text-align: left !important;
+    margin: 16px 0 16px 0 !important;
+    padding: 0 0 0 1.2em !important;
+}
+h4 {
+    font-size: 15px !important;
+    color: rgb(0, 122, 170) !important;
+    margin: 12px 0 8px 0 !important;
+    padding: 0 !important;
+}
+
+/* 列表 */
+ul,
+ol {
+    padding-left: 2em !important;
+    margin: 1em 0 !important;
+    font-size: 15px !important;
+}
+li {
+    margin: 0.5em 0 !important;
+    line-height: 1.8em !important;
+    font-size: 15px !important;
+    color: #3e3e3e !important;
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    margin: 0 !important;
+    padding-left: 1.2em !important;
+}
+
+/* 引用 */
+blockquote {
+    border-left: 4px solid #888 !important;
+    padding: 8px 16px !important;
+    margin: 1em 0 !important;
+    color: #666 !important;
+    background: #f9f9f9 !important;
+}
+blockquote > p {
+    margin: 0.5em 0 !important;
+    padding: 0 !important;
+}
+blockquote::before,
+blockquote::after {
+    content: none !important;
+}
+
+/* 代码块 */
+pre {
+    font-size: 14px !important;
+    line-height: 1.4em !important;
+    color: #3e3e3e !important;
+    background: #f8f8f8 !important;
+    padding: 12px 16px !important;
+    border-radius: 4px !important;
+    overflow: auto !important;
+    margin: 1em 0 !important;
+}
+
+/* 脚注 */
+.footnotes {
+    font-size: 11px !important;
+    color: #666 !important;
+    line-height: 1.2 !important;
+    margin: 8px 0 0 0 !important;
+    padding: 4px 0 0 0 !important;
+    border-top: 1px solid #eee !important;
+}
+.footnotes p {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #666 !important;
+}
+
+/* 上标 */
+sup {
+    font-size: 0.75em !important;
+    vertical-align: super !important;
+    color: #e51f42 !important;
+    margin: 0 2px !important;
+}
+
+/* 行内代码 / 强调 / 链接 */
+code { background: #f4f4f4 !important; color: #c7254e !important; padding: 2px 4px !important;
+    border-radius: 3px !important; font-size: 90% !important; }
+pre code { background: transparent !important; color: inherit !important; padding: 0 !important; }
+strong { font-weight: bold !important; color: #3e3e3e !important; }
+a { color: rgb(0,122,170) !important; text-decoration: none !important; }
+
+/* 图片 */
+img { max-width: 100% !important; height: auto !important; display: block !important;
+    margin: 1em auto !important; border-radius: 4px !important; }
+
+/* 表格 */
+table { border-collapse: collapse !important; width: 100% !important; margin: 1em 0 !important;
+    font-size: 14px !important; }
+th, td { border: 1px solid #ddd !important; padding: 6px 10px !important; text-align: left !important; }
+th { background: #f4f4f4 !important; font-weight: bold !important; }
+
+hr { border: none !important; border-top: 1px solid #ddd !important; margin: 1.5em 0 !important; }
+</style>
+</head>
+<body>
+
+<blockquote>
+<p>GitHub: <a href="https://github.com/openvinotoolkit/openvino">https://github.com/openvinotoolkit/openvino</a></p>
+</blockquote>
+<h2>一句话总结</h2>
+<p>Intel 官方的通用 AI 推理运行时，用一套版本化 IR 把「训练框架里的模型」变成「跨 CPU/GPU/NPU 可部署的产物」；真正让它在 2026 年重新变得值钱的，是 NPUW —— 一套把动态形状 LLM 拆成 Prefill/Generate 两个静态子图、再按 prompt 长度编译 KV 容量变体阶梯的软硬件协同方案，这是 llama.cpp、TensorRT、ONNX Runtime 都做不到的那一块。</p>
+<h2>值得关注的理由</h2>
+<ol><li><strong>14 个月来首次登上 Trending，且还在加速：</strong>本仓库自建的 Trending 归档（2025-09-22 ~ 2026-11-20，11,502 条记录、1,440 个不同仓库）显示，OpenVINO 在 <strong>2026-11-18 才第一次</strong>出现在 Trending 榜上，此后连续三天在榜（排名 #14 → #8 → #8），48 小时 star 从 11,285 涨到 11,737（+452）。而月度榜排名仍是 #97——它才刚刚回来。11,912 star 这个数字是「重新起跑前的存量」，不是增长曲线的终点。</li><li><strong>NPUW 是一道结构性护城河：</strong>Intel NPU 的 blob 形状是固定的、<strong>完全不支持动态形状</strong>，而 LLM 的输入形状天然动态。OpenVINO 的解法不是「等硬件支持」，而是<strong>在 IR 层把动态拆成静态</strong>——同一份权重编译出 Prefill（seq_len=1024）和 Generate（seq_len=1）两个独立子模型，再按 prompt 长度编译 1K/2K/4K/8K 的 KV 容量变体阶梯，运行时选择、必要时中途升级并零拷贝迁移 KV。llama.cpp 没有 NPU 路径，TensorRT 直接拒绝动态形状，ONNX Runtime 虽有动态 shape engine 但没有 NPU 上跑 LLM 的能力。</li><li><strong>仓库里藏着一套「用 AI agent 半自动化造算子」的完整流水线：</strong><code>.github/agents-prototype/</code> 用 13 个 agent 定义（2,665 行）+ 9 个 skill 目录（30+ step 文件）+ 确定性 fallback 脚本，把「加一个 PyTorch 算子要动前端规则/core op spec/CPU kernel/GPU kernel/NPU 变体/测试六个技术栈」这件人力最难规模化的知识型工作，变成了可编排的流水线。这不是 demo——它直指 issue #29696 暴露的真实 op-parity 债务。</li></ol>
+<h2>项目展示</h2>
+<p><img alt="OpenVINO 全景架构图" src="https://raw.githubusercontent.com/openvinotoolkit/openvino/master/docs/articles_en/assets/images/openvino-overview-diagram.jpg"/><br/>
+IR 为中心的分层结构：前端归约到统一 IR，插件从 IR 编译出各硬件 blob</p>
+<p><img alt="GenAI 架构图" src="https://raw.githubusercontent.com/openvinotoolkit/openvino/master/docs/articles_en/assets/images/genai_main_diagram.svg"/><br/>
+GenAI 层的推理流水线，与下层编译时优化解耦</p>
+<p><img alt="开发流程图" src="https://raw.githubusercontent.com/openvinotoolkit/openvino/master/docs/articles_en/assets/images/DEVELOPMENT_FLOW_V3_crunch.svg"/><br/>
+从模型接入到算子落地的开发流程——这张图解释了 issue #29696 为什么会反复发生</p>
+<p><img alt="低精度转换流水线" src="https://raw.githubusercontent.com/openvinotoolkit/openvino/master/docs/articles_en/assets/images/low_precision_transformation_pipeline.svg"/><br/>
+LPT 的 markup 打标 → transformation 变换两阶段量化管线</p>
+<p><img alt="Physical AI" src="https://raw.githubusercontent.com/openvinotoolkit/openvino/master/docs/articles_en/physical-ai/assets/physicalai.svg"/><br/>
+2026.3 起新增的机器人 VLA 方向，是 OpenVINO 开辟的新战场</p>
+<h2>项目画像</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub</td>
+<td><a href="https://github.com/openvinotoolkit/openvino">https://github.com/openvinotoolkit/openvino</a></td>
+</tr>
+<tr>
+<td>Star / Fork / Watcher</td>
+<td>11,912 / 3,650 / 193（open issues 412，open PRs 780）</td>
+</tr>
+<tr>
+<td>代码行数</td>
+<td>2,412,968（C++ 65.9% + C++ Header 10.4%、Python 6.6%、JSON 5.7%、CMake 1.3%；16,588 文件）</td>
+</tr>
+<tr>
+<td>项目年龄</td>
+<td>97.3 个月（2018-10-15 首次提交，至今）</td>
+</tr>
+<tr>
+<td>开发阶段</td>
+<td>密集开发（近 30 天 425 commits、近 90 天 1,131、近 365 天 3,471）</td>
+</tr>
+<tr>
+<td>贡献模式</td>
+<td>Intel 官方组织 + 社区协作（915 名贡献者，Top 1 仅占 4.6%，Top 10 中含 2 个 bot）</td>
+</tr>
+<tr>
+<td>热度定位</td>
+<td>大众热门 · 近期二次加速（14 个月来首次 Trending，48h +452 star）</td>
+</tr>
+<tr>
+<td>版本</td>
+<td>2026.4.1（日期版本 YYYY.M.P，90 tag / 65 Release）</td>
+</tr>
+<tr>
+<td>License</td>
+<td>Apache-2.0（纯开源，无 open-core 附加条款）</td>
+</tr>
+<tr>
+<td>质量评级</td>
+<td>代码[优秀] 文档[优秀] 测试[充分] CI[完善]</td>
+</tr>
+</tbody>
+</table>
+<h2>作者视角：为什么存在这个项目</h2>
+<h3>创始人/作者背景</h3>
+<p>OpenVINO 不是个人项目，是 <strong>Intel 官方开源组织</strong>（<code>openvinotoolkit</code>，7.2 年账号，1,932 粉丝，47 个公开仓库）。它的前身是 Intel 的 CVSDK / MKL-DNN 血统：OV1 时代（2018-10 至 2020-03）几乎是休眠状态，<strong>2019 全年只有 11 个 commit</strong>——那时它还叫 OpenVINO Toolkit，只是个「Intel CPU 上的 OpenCV DNN 加速器」。</p>
+<p>真正让它活过来的是 <strong>2020-04 的 OV1→OV2 重写</strong>：单月 commit 从 20 跳到 142，2020-05 达到 346，此后稳定在 200~470/月。这次重写把 OV1 的「一个巨大的 CPU 推理器」切成「独立 IR + 插件化后端」，<strong>一次性付清了架构债</strong>——今天 <code>src/core/src</code> 的改动量在热点目录里垫底（1,485 次，排在第 10），<code>refactor</code> 类 commit 只占 0.5%，<code>Fix:Feature ≈ 1.9:1</code>。这是一个已定型、仍在持续加固的工业产品，不是还在快速改头的实验。</p>
+<p>团队形态从数据上一目了然：915 名贡献者，Top 1（Ilya Lavrenov，1,287 commits）只占 4.6%，Top 10 里有两个 bot（dependabot 665、github-actions 655）。<strong>真人核心贡献者分布平坦</strong>——Ilya Churaev（OV 编译器主设计者）、Maxim Vafin、Sebastian Golebiewski、Roman Kazantsev、Karol Błaszczyk、Pawel Raasz、Vladimir Paramuzov 各自数百次提交，没有单点依赖。周末提交占比仅 3.4%、深夜 11.4%，是典型企业团队作息。</p>
+<h3>问题判断</h3>
+<p><strong>作者看到的不是「缺一个算子」，而是「算子覆盖率永远追不上」。</strong></p>
+<p>issue #29696（<code>aten::fractional_max_pool2d</code>，69 条评论）把完整模式暴露了出来：开发者提 issue → 维护者评估「这个算子可能无法分解」→ 长期无人认领 → 重开 → 再分配。这是一条<strong>组织化的 op-parity 债务</strong>，不是 bug。</p>
+<p>于是问题被重新定义为：「如果加一个 PyTorch 算子到 OpenVINO 的成本是 3 人周（前端转换规则 + core op spec + CPU kernel + GPU kernel + NPU 变体 + 测试 + opset 文档），那么 AI 辅助能不能把这个成本降到 1 天？」</p>
+<p><strong>时机选择的三个拐点：</strong></p>
+<ol><li><strong>2020-04 的 OV2 重写</strong> —— 留下 <code>src/plugins/template/</code> 这个「活的扩展点」（1,317 次改动），说明「加新硬件后端」是真实且持续的需求，不是一次性设计。</li><li><strong>2023 起的 LLM 转型</strong> —— 从「CV 推理器」变成「LLM 运行时」，催生了 NPUW。NPU 不支持动态形状这条硬件约束，逼出了 Prefill/Generate 静态子图这个核心设计。</li><li><strong>2025-26 的 NPU / Physical AI 转向</strong> —— 2026 年 10 月 commit 重回 403，NPUW 目录 83 个文件，<code>src/frontends/gguf/</code> 单独以 1,265 次改动入榜（主动切入 llama.cpp 生态的权重格式），新增机器人 VLA 运行时文档。</li></ol>
+<p><strong>2026 年最新的一层信号</strong>：Intel 把 agentic workflow 引进了自身 CI。<code>.github/workflows/ci-doctor*.md</code> 用 GitHub 的 <code>gh-aw</code> 框架让 agent 自动分析失败的 pipeline 并给修复建议；<code>agents-prototype/</code> 则用 agent 补算子。issue #38425 里反复出现 <code>agent_failure</code> / <code>detector_execution_failure</code>，说明这套自动化自身还不稳——但方向明确：<strong>用一个 agent 去修 CI，用另一个 agent 去补算子</strong>。</p>
+<h3>解法哲学</h3>
+<p><strong>明确选择了什么：</strong></p>
+<ol><li><strong>「开放 IR + 多后端插件」而非「单一硬件极致优化」</strong>。核心是 <code>ov::Model</code>——一个可序列化、有 opset 版本、有 schema 的中间表示。8 个前端（ONNX/PyTorch/TF/TFLite/Paddle/JAX/GGUF/IR）全部归约到它，8 个后端（CPU/GPU/NPU/template/hetero/auto/auto_batch/proxy）全部从它出发。</li><li><strong>「编译时优化、运行时极简」</strong>。layout 重排、算子融合、常量折叠、量化、16B 对齐全在 <code>compile_model()</code> 里做完；运行时只做「喂数据 → 拿结果」。这是 OpenVINO 与 ONNX Runtime 最本质的分野。</li><li><strong>「开放的插件契约」</strong>。<code>iplugin.hpp</code> 只有 12 个纯虚方法，而 <code>src/plugins/template/</code> 是一个<strong>可编译可运行的官方插件模板</strong>——plugin / compiled_model / sync_infer_request / async_infer_request / remote_context / variable_state / HSM blob 读写 handler 全套骨架都在。</li></ol>
+<p><strong>明确不做什么</strong>：不做训练（仓库里没有任何 autograd、optimizer、backward pass）；不做动态图 JIT 运行时（IR 是完全静态声明式的）；不做私有二进制格式垄断（IR 是人可读的 XML + BIN，可 diff、可版本化）。</p>
+<p><strong>代价是真实的</strong>：TensorRT 的 GPU 峰值性能约为 OpenVINO 的 7 倍（7,500 vs 1,100 FPS），且原生支持 INT4。这个差距来自「为单一硬件写极致 kernel」，通用性必然稀释每个后端的极致程度。OpenVINO 的应对不是硬追 GPU 峰值，而是<strong>把 NPU 变成一等公民</strong>——当 NPU 成为 AI PC 的默认推理设备时，「NPU 独占 + NPUW 独占 LLM 支持」这个组合是 TensorRT 结构上无法复制的。</p>
+<h3>战略意图</h3>
+<p><strong>在 Intel 更大图景中的位置：</strong></p>
+<pre><code>Intel AI Stack
+├── openvino.genai        ← 何时推理（pipeline、采样器、chat template）
+├── openvino              ← 怎么推理（IR、编译、后端）  ← 本仓库
+│   └── npu_compiler      ← 硬件执行什么（MLIR lowering 到 NPU）
+├── openvino.model_server ← 服务化
+├── NNCF                  ← 训练后压缩
+└── physicalai            ← 机器人运行时（2026.3 新增）
+</code></pre>
+<p>Intel 的算盘很清楚：<strong>AI PC 换机周期（2024-2026）+ NPU 从「可选加速器」变成「必选部件」+ Gaudi 数据中心</strong>。开源推理栈是硬件出货的配套软件——这是 OpenVINO 存在的根本商业逻辑。</p>
+<p><strong>开源策略是 genuinely open，不是 open-core。</strong> 纯 Apache-2.0，无 BSL、无 use-restriction；代码完整公开；<strong>NPUW 最有价值的部分全开源</strong>（83 个文件、2,364 行的核心编译逻辑）——这在硬件厂商里相当罕见，通常 NPU 专属推理优化会藏起来，因为它绑定硬件。OpenVINO 把 NPUW 全开源，等于用「NPU 上也能跑开源 LLM」反向推动 NPU 出货。唯一的「闭源」是真正的 NPU 编译器 <code>npu_compiler</code>，那是独立仓库。</p>
+<p>Apache-2.0 对 Intel 而言不是「友好」，而是<strong>必要</strong>——企业 IT 采购需要无 copyleft、无专利授权风险、可商用修改。这是这个规模的工业软件能进企业采购清单的前提。</p>
+<h2>核心价值提炼</h2>
+<h3>创新之处</h3>
+<p>按新颖度 × 实用性排序：</p>
+<ol><li>
+<p><strong>NPUW 的 Prefill/Generate 双静态图 + KV Cache 变体金字塔</strong><br/>
+   把动态形状 LLM 拆成两个静态子模型共享 KV cache，并按 prompt 长度编译 1K/2K/4K/8K 多个 KV 容量变体，运行时选择、必要时中途升级并零拷贝迁移 KV。核心代码在 <code>src/plugins/intel_npu/src/plugin/npuw/llm_compiled_model.cpp</code>（2,364 行）的 <code>create_generate_model_variants</code>：变体按 <code>base_size</code> 翻倍增长，解码中当前变体满了就 <code>try_switch_to_larger_variant()</code> 升级并重绑 KV tensor。<br/>
+   新颖度 4/5 · 实用性 5/5 · 可迁移性 4/5 —— 思想可迁移到任何固定形状加速器，但具体实现（按输入名猜语义、BNSD 布局转换）耦合太深。</p>
+</li><li>
+<p><strong>KV Cache 策略的「生命周期钩子契约」</strong><br/>
+<code>LLMKVCacheStrategy</code> 用 10 个虚方法定义完整生命周期（initialize / reset / prefill_begin / prefill_done / generate_init / generate_done / variant_switch / rerotate / continue_prefill）。<strong>接口注释直接写明失败语义</strong>——<code>rerotate_longrope_keys</code> 约定「all or nothing」，<code>continue_prefill</code> 约定「验证阶段无副作用、验证失败后 cache 原样；越过验证后失败则状态未定义，调用方必须 reset + 完整 prefill」。两阶段失败语义写进接口契约，这在 C++ 推理引擎里很罕见。<br/>
+   新颖度 4/5 · 实用性 5/5 · 可迁移性 5/5。</p>
+</li><li>
+<p><strong>用 AI Agent 编排半自动化造算子</strong>（OpenVINO 特有）<br/>
+   13 个 agent 定义 + 30+ skill step 文件 + 确定性 fallback 脚本 + 集中 PR 所有权 + 双闸门验证 + 迭代熔断，构成一条「报错 → 分类 → 并行实现 → 验证 → 开 PR」的完整流水线。详见下方可复用模式。<br/>
+   新颖度 5/5 · 实用性 4/5 · 可迁移性 5/5。</p>
+</li><li>
+<p><strong>拓扑序重写引擎带来的「免费级联折叠」</strong><br/>
+<code>GraphRewrite</code> 按拓扑序遍历 + 节点 ID 单调，使得前面 pass 的成果自动让后面的 pass 触发：<code>m1</code> 把 <code>Abs2(Constant1)</code> 折叠成常量 → <code>m2</code> 把 <code>Neg3(Constant1)</code> 折叠 → <code>m3</code> 走到 <code>Add4</code> 时发现两者已是常量，<code>Add4</code> 自动也能折叠。同时约束「只能替换拓扑序靠前的节点」，保证不漏处理新产生的节点。<br/>
+   新颖度 3/5 · 实用性 4/5 · 可迁移性 5/5。</p>
+</li><li>
+<p><strong>ONNX 前端的「版本区间注册」翻译表</strong><br/>
+<code>{domain: {op_type: {version: {func}}}}</code> 四层结构 + <code>OPSET_RANGE/SINCE/IN</code> 宏。<code>ONNX_OP("Abs", OPSET_RANGE(1, 5), ai_onnx::opset_1::abs)</code> 与 <code>ONNX_OP("Abs", OPSET_SINCE(13), ai_onnx::opset_1::abs)</code> —— <strong>opset 1-5 和 13+ 复用同一个实现体</strong>，新版本只写差异，让 ONNX opset 的历史演进几乎零成本。<br/>
+   新颖度 3/5 · 实用性 5/5 · 可迁移性 5/5。</p>
+</li><li>
+<p><strong>「能力声明 + 贪心切分 + 回滚」的 HETERO 异构编排</strong><br/>
+   插件声明支持的 op 类型（affinity），HETERO 贪心合并相邻节点，检测到间接自引用就回滚最后一个节点并加入 rejected 列表。README 用 11 步 mermaid 推演完整算法。<br/>
+   新颖度 3/5 · 实用性 4/5 · 可迁移性 4/5。</p>
+</li><li>
+<p><strong>LPT 的「markup 打标 + transformation 变换」两阶段量化</strong><br/>
+   markup pass 只打标记决定「哪个节点将以什么精度被量化」（不改图），transformation pass 再把标记变成实际的 FakeQuantize/Convert 节点。决策与实现解耦，markup 结果可被 NNCF 等外部工具复用。源码 60+ 文件，含测试共 295 个。<br/>
+   新颖度 3/5 · 实用性 4/5 · 可迁移性 4/5。</p>
+</li></ol>
+<h3>可复用的模式与技巧</h3>
+<p>按可直接迁移价值排序：</p>
+<ol><li><strong>Agent 流水线四件套</strong> —— <code>agents/*.agent.md</code>（角色 + 输入输出契约 + 约束）+ <code>skills/&lt;name&gt;/stepN-*.md</code>（可复用步骤）+ <code>pipeline_state.json</code>（跨 agent 共享记忆）+ 确定性 fallback 脚本。适用场景：任何多 agent 协作系统。</li><li><strong>路由信号带置信度 + 低置信度退回确定性脚本</strong> —— LLM 分类结果附 <code>confidence: high|medium|low</code>，low 时走 <code>classify_component.py</code> 的 <code>error_class → component</code> 映射表。<strong>知道什么时候不该信自己</strong>，是 agent 系统可靠性的关键。</li><li><strong>集中 PR 所有权 + 子 agent 只出 patch</strong> —— 所有子 agent 带 <code>pr_mode: delegated_to_orchestrator</code>，禁止自己开 PR；只有编排器在最后一阶段开一个集中 draft PR（含分支命名、已有 PR 去重、fork 创建的 helper）。适用场景：并行 agent 改同一仓库。</li><li><strong>迭代上限 + 「有进展就不熔断」</strong> —— <code>invocation_count &gt;= 5</code> <strong>且</strong>尚无任何 patch 才提前退出；一旦有 patch 就允许跑完。注释里说明 5 故意比完整流程的 7 次调用宽松，只在「完全没进展」时熔断。</li><li><strong>双闸门验证</strong> —— Phase 5 build+ctest+推理 sanity，Phase 6 E2E 转换 + 数值检查（新架构清单：FP16/BF16 精度、共享 KV cache、IR 正确性、测试覆盖）。任一失败 → 带着编译错误重新派发给负责的 agent，不开 PR。</li><li><strong>诚实的 non-blocking 标注</strong> —— 明确标出「NPU is always non-blocking (agent currently non-functional)」，编排器里三处强调。<strong>渐进式引入 agent 的团队最需要这个：</strong>标明哪些还不行，比假装都能用更可靠。</li><li><strong>生命周期钩子契约（Lifecycle Hook Contract）</strong> —— 抽象基类用一组虚方法定义组件完整生命周期，接口注释写明调用顺序与失败语义。适用场景：复杂状态机、多策略实现、跨阶段数据交接的子系统，尤其适合 C++ 这类没有编译期约束的语言。</li><li><strong>拓扑序 + 级联重写引擎</strong> —— 按拓扑序遍历 + 「只能替换靠前节点」的约束 → 前面 pass 的成果自动级联；需要多次融合时提供显式 <code>register_new_node</code> 逃生口。</li><li><strong>版本区间注册表（Version-Range Registry）</strong> —— 翻译函数按 <code>{domain: {op: {version_range: fn}}}</code> 注册，同语义跨版本复用实现体。</li><li><strong>插件化的元插件（Meta-plugin over Plugins）</strong> —— 把「设备调度 / 异构切分 / 自动批处理」实现成和普通插件同契约的插件，复用同一套加载与协商机制。</li><li><strong>两阶段决策-执行分离（Markup → Transformation）</strong> —— 先打标后变形，标记可被外部工具消费。</li><li><strong>IR 层的「编译期约束反向传播」</strong> —— 把 NPU 的整数/静态形状约束在 IR 变换层解决（<code>ReshapeToStatic</code>、<code>convert_kvcache_to_precision</code>、<code>fold_scalar_dq</code>、<code>broadcast_u2_zero_point</code>），而不是等编译失败才报错。</li><li><strong>切片的零拷贝视图 + 显式 layout 转换</strong> —— KV cache 交接用 <code>make_tensor_slice</code> 做零拷贝视图，只有 prefill↔generate 的布局差异（BNSD vs BSHD）才做显式 <code>copy_tensor_by_dim</code>。</li><li><strong>「API 契约即文档」的 C++ 接口注释风格</strong> —— <code>kv_cache_block_manager.hpp</code> 里 <code>release(keep_warm_count)</code> 的注释直接给出性能推理：「NPU 重新分配会增加新会话首个 prefill chunk 的延迟，保留 ceil(prompt_len/block_size) 个热 block 可避免该延迟」。</li><li><strong>结构化调试 skill</strong> —— <code>.agents/skills/ov-debug-matcher-pass/</code> 专门解决「MatcherPass 不触发、pattern 不匹配、callback 不执行」这个图优化框架最常见的调试困境。</li><li><strong>命名启发式 + 断言兜底的模型适配层</strong> —— NPUW 通过 <code>input_name.find("input_ids")</code> 等判断输入语义，对不确定情况用 <code>NPUW_ASSERT</code> 而不是静默降级。</li></ol>
+<h3>关键设计决策</h3>
+<p><strong>决策 1：IR 是不可变的、opset 版本化的、有 schema 的</strong></p>
+<ul><li><strong>问题：</strong>8 个前端、几十种框架版本、4 种真实硬件，要交换同一个东西。</li><li><strong>方案：</strong><code>ov::Node</code> 是图的原子；每个 op 按 opset 版本分 namespace（<code>ov::op::v1::Relu</code> 与 <code>ov::op::v16::Relu</code> 是<strong>不同的 C++ 类型</strong>，IR 里共存），这是 OpenVINO 能同时支持老 ONNX opset 1 和新 opset 20 的原因。变换<strong>永远不改原节点：</strong><code>clone_with_new_inputs()</code> 是纯虚函数，所有 op 必须实现，变换造新节点换输入后 <code>replace_node()</code>。序列化是 XML（结构/属性/opset 版本）+ BIN（权重）。</li><li><strong>Trade-off：</strong>牺牲编译期内存（每次变换都 clone 节点，issue #13601「Model compilation takes too much memory in cpp」57 条评论是长期痛点）；换来变换是纯函数式的、可组合可测试可并行，IR 是稳定的交换格式。</li><li><strong>可迁移性：</strong><strong>高</strong>。「不可变 IR + clone 变换 + 版本化注册表」是编译器（MLIR/LLVM）和推理引擎（TVM、IREE）的通用范式。</li></ul>
+<p><strong>决策 2：Pass Manager 是「有序 pass 列表 + 拓扑序重写引擎」两段式</strong></p>
+<ul><li><strong>问题：</strong>一次编译要跑几百个变换，它们有依赖顺序，一个变换的结果会影响另一个能否触发。</li><li><strong>方案：</strong><code>ov::pass::Manager</code> 持有<strong>有序</strong> pass 列表逐个执行，并只在某个 pass 真的改了图时才启用下一轮的 IR 结构校验（避免 O(N) 校验打爆编译时间）；模型是动态形状时自动跳过依赖静态形状的 pass。<code>ov::pass::GraphRewrite</code> 按拓扑序（args before users）遍历，对每个节点依次尝试已注册的 MatcherPass。模式匹配 DSL 提供 <code>wrap_type&lt;T&gt;</code> / <code>any_output&lt;T&gt;</code> / <code>label</code> / <code>optional</code> / <code>any_of</code> / <code>or</code> / <code>block</code> 配合 <code>has_class&lt;T&gt;()</code> / <code>shape_matches("1,3,224,224")</code> / <code>attrs_match()</code> 等 predicate。</li><li><strong>Trade-off：</strong>DSL 写错时是<strong>静默不匹配</strong>（不报错），调试困难——这正是 OpenVINO 专门写了 <code>ov-debug-matcher-pass</code> skill 的原因；换来融合 pass 可独立开发、独立测试、独立开关（PassConfig 的 enable/disable + callback）。</li><li><strong>可迁移性：</strong><strong>高</strong>。</li></ul>
+<p><strong>决策 3：NPUW 把动态形状 LLM 拆成两个静态子模型</strong>（本报告技术含量最高的部分）</p>
+<ul><li><strong>问题：</strong>NPU 的 blob 形状固定，<strong>完全不支持动态形状</strong>；而 LLM 的 prompt 长度、生成长度、KV cache 长度天然动态。</li><li><strong>方案：</strong>同一份权重编译出两个独立子模型——Prefill（<code>input_size = m_prefill_chunk_size</code>，默认 1024，批量处理 prompt 产出 KV cache）和 Generate（<code>input_size = 1</code>，单 token 解码，复用 prefill 的 KV）。切分由 <code>ov::npuw::ReshapeToStatic</code> 在 IR 层完成。KV cache 交接由 <code>LLMKVCacheStrategy</code> 抽象出两个实现：连续 buffer（chunk 边界 copy）和<strong>固定大小 block 池 + 零拷贝 prefill</strong>（<code>KVCacheBlockManager</code> 按 block 分配设备 tensor，<code>release(keep_warm_count)</code> 保留热 block 避免新会话首个 prefill 的分配延迟）。此外还有 chunked prefill、前缀缓存（<code>m_block_hash</code> + <code>m_parent_block_hash</code> 哈希链）、SWA 环形布局、GQA/MoE/LoRA/Eagle3/speculative decoding 各自的专门 pass。</li><li><strong>Trade-off：</strong>牺牲内存（每个变体是一份独立编译产物，四个变体四份 blob）、代码复杂度（两个核心文件 2,364 + 2,278 行）、正确性风险（prefill/generate 的 KV 布局不同，每次交接都要转置；<code>duplicate_shared_kv_concat</code> 这个 pass 的存在本身就是证据——GQA 模型共享 ReadValue/Assign 状态时权重折叠会重复应用导致 state 损坏，npu agent 里专门写了一段「NPUW Idempotency Guard」）、以及耦合到具体模型（<code>input_name.find("input_ids")</code> 这类启发式判断，Deepstack、PLE、Eagle3、Gemma3 token_type_ids、Qwen3-VL position_ids 各有特例）；换来 NPU 上真的能跑 LLM，且因为拆成两个静态图，NPU 编译器可以对 prefill（compute-bound，多 token GEMM 走 DPU 的 DPAS）和 generate（memory-bound，需读整个 KV cache）做不同优化。</li><li><strong>可迁移性：</strong><strong>中</strong>。</li></ul>
+<p><strong>决策 4：Snippets 走运行时 JIT kernel 生成，而非 AOT</strong></p>
+<ul><li><strong>问题：</strong>绝大多数算子是 memory-bound（计算带宽增长快于内存带宽），优化点在于「每次 load 尽可能多复用」，需要针对具体 ISA（AVX2/AVX-512/AMX）生成不同机器码。</li><li><strong>方案：</strong><code>src/common/snippets/</code>（174 cpp + 169 hpp）用 <code>MemoryAccess</code> 基类统一抽象 load/store，用 <code>PortDescriptor{count, offset, stride, index}</code> 描述访问模式；<code>lowered/pass/solve_buffer_memory.cpp</code> 解决 vertical fusion 后的 buffer 内存求解——这是融合的核心难点（融合改变了 buffer 的生命周期和复用关系）。设计指南开篇就把「计算带宽增长快于内存带宽 ⇒ 多数算子 memory-bound ⇒ 要做 vertical fusion 提高每次 load 的数据复用」讲清楚了。</li><li><strong>Trade-off：</strong>JIT 有首次编译延迟、生成代码调试困难、无法静态分析寄存器压力；换来<strong>同一份 IR 在不同 CPU 上得到不同的最优 kernel</strong>——AOT 方案（TVM 预编译 wheel、TensorRT 引擎）要么放弃 ISA 特化，要么维护多套预编译产物。</li><li><strong>可迁移性：</strong><strong>中</strong>（思想通用，但完整的 buffer solver + emitter 体系工程量巨大）。</li></ul>
+<p><strong>决策 5：后端是可插拔的「插件」契约，元插件复用同一契约</strong></p>
+<ul><li><strong>问题：</strong>Intel 有 CPU/iGPU/独显/NPU 四种硬件，还有第三方和企业自研加速器。</li><li><strong>方案：</strong><code>iplugin.hpp</code> 只有 12 个纯虚方法；插件通过 <code>plugin.xml</code> 声明式注册、运行时动态加载；特性协商用 <code>ov::Any</code>（类型擦除容器，能装任何 property 并直接暴露到 Python）。<strong>hetero / auto / auto_batch / proxy 全是「用插件契约实现的元插件」</strong>——正交设计。</li><li><strong>Trade-off：</strong>插件边界本身有成本（跨 so 边界的 <code>Any</code> 装箱、虚函数调用、无法内联），Intel CPU/GPU/NPU 三个性能敏感插件内部确实大量绕开插件接口直接调内部 API；换来加新硬件后端<strong>不需要碰 core 任何一行代码</strong>。</li><li><strong>可迁移性：</strong><strong>高</strong>。</li></ul>
+<h2>竞品格局与定位</h2>
+<h3>竞品对比矩阵</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>OpenVINO</th>
+<th>TensorRT</th>
+<th>ONNX Runtime</th>
+<th>ncnn</th>
+<th>llama.cpp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Star</td>
+<td>11,912</td>
+<td>13,476</td>
+<td>~22,300（主仓已下线）</td>
+<td>24,084</td>
+<td>~136,000</td>
+</tr>
+<tr>
+<td>硬件覆盖</td>
+<td>CPU(x86/ARM)+iGPU+独显+<strong>NPU</strong></td>
+<td>仅 NVIDIA GPU</td>
+<td>CPU/CUDA/ROCm/… EP 制</td>
+<td>移动 ARM 为主</td>
+<td>CPU 为主，CUDA/Metal/Vulkan 为社区分支</td>
+</tr>
+<tr>
+<td>动态形状</td>
+<td>CPU 完全 / GPU 部分 / NPU 靠 NPUW 拆分</td>
+<td>需为每 shape 多 engine</td>
+<td>运行时解释执行，原生支持</td>
+<td>有限</td>
+<td>原生支持</td>
+</tr>
+<tr>
+<td>LLM 能力</td>
+<td><strong>NPUW + GenAI 全栈</strong></td>
+<td>TensorRT-LLM</td>
+<td>弱</td>
+<td>几乎无</td>
+<td>极强（量化矩阵最全）</td>
+</tr>
+<tr>
+<td>IR 形态</td>
+<td>XML（可 diff）+ BIN，opset 版本化</td>
+<td>私有二进制</td>
+<td>ONNX 图</td>
+<td>自定义 layer/param</td>
+<td>GGUF</td>
+</tr>
+<tr>
+<td>生产部署</td>
+<td>blob 导入导出、异构调度、auto_batch、model_server</td>
+<td>需自建服务层</td>
+<td>轻量</td>
+<td>轻量</td>
+<td>server 模式简洁</td>
+</tr>
+<tr>
+<td>许可</td>
+<td>Apache-2.0</td>
+<td>NVIDIA 专有</td>
+<td>MIT</td>
+<td>BSD</td>
+<td>MIT</td>
+</tr>
+<tr>
+<td>机器人/VLA</td>
+<td><strong>有</strong>（Physical AI，2026.3 起）</td>
+<td>无</td>
+<td>无</td>
+<td>无</td>
+<td>无</td>
+</tr>
+</tbody>
+</table>
+<h3>差异化护城河</h3>
+<ol><li><strong>NPUW 是结构性护城河，不是功能护城河</strong>。llama.cpp、TensorRT、ORT 在固定形状 NPU 上都做不了 LLM——要么不支持 NPU，要么不支持动态形状。Intel 自己掌握 NPU 硬件设计 + npu_compiler + NPUW 三件套，<strong>这是别人复制不了的</strong>。</li><li><strong>Intel 全线硬件 + IR + 插件契约的组合</strong>。CPU（AVX-512/AMX/oneDNN）、iGPU（OpenCL/Vulkan）、NPU 三条产品线共享同一 IR——「一次编写随处部署」是真实实现，不是口号。</li><li><strong>Apache-2.0 的 genuinely open + Intel 官方背书</strong>。企业采购需要的「可商用、可审计、可修改、有厂商支持」四件事，OpenVINO 是少数全部满足的。</li><li><strong>Physical AI / 机器人运行时开辟的新战场</strong>——连 llama.cpp 都还没入场。</li><li><strong>Agent 化造算子是工程效率护城河：</strong>op-parity 债务是所有竞品的共同痛点，谁先还清谁就有更多模型可跑。</li></ol>
+<h3>竞争风险</h3>
+<ol><li><strong>GPU 性能 7 倍差距是最大风险</strong>。如果 LLM 部署的主战场从 NPU/AI PC 转向数据中心 GPU，OpenVINO 会从「Intel 硬件的默认选择」变成「边缘设备的专用工具」。</li><li><strong>ONNX Runtime 主仓从 GitHub 下线</strong>（2026-11-17，本报告已独立复核：<code>gh api</code> 返回 404、HTTP 404、微软组织仓库列表与搜索中均已消失；同期至少 7 个微软仓库一同下线；PyPI 1.32.0、NuGet/Maven 与文档站仍可访问）。短期对 OpenVINO 构成利好——ORT 的 OpenVINO EP 集成路径面临失效，而 OpenVINO 本体由 Intel 官方维护不受影响。<strong>但信号不好：</strong>说明大厂可能收缩推理运行时投入，整个品类的市场预期都可能下调。</li><li><strong>llama.cpp 的生态虹吸</strong>。本地 LLM 圈的默认选择是 llama.cpp，OpenVINO 的 GGUF 前端是「防守性跟进」而非引领——43+ op 覆盖度 vs llama.cpp 的完整 ggml op 集有差距。</li><li><strong>Agent 流水线的不稳定性</strong>。issue #38425 里反复 <code>agent_failure</code>；<code>agents-prototype/</code> 只有 7 次提交、名字里就写着 prototype、还明确标注 NPU agent non-functional。如果不能稳定产生高质量 PR，它就只是「看起来在用 AI」。</li><li><strong>NPUW 的代码复杂度债</strong>。两个 2,000+ 行的核心文件 + 30+ 个 <code>npuw_transformations/</code> + 基于输入名的启发式判断，每接一个新模型家族都在加特例。Phase 2 的「Fix:Feature ≈ 1.9:1」健康度可能正被侵蚀。</li><li><strong>单一厂商绑定</strong>。OpenVINO 的路线节奏跟随 Intel 硬件节奏，Intel AI PC 出货不及预期时，OpenVINO 的最大差异化场景（NPU）会同步缩水。</li></ol>
+<h3>生态定位</h3>
+<blockquote>
+<p><strong>OpenVINO 是「Intel 硬件的官方推理操作系统」，不是「最好的推理引擎」。</strong></p>
+</blockquote>
+<p>它的竞争维度不是「谁的单卡吞吐最高」，而是「谁能让一个团队在 Intel 的异构机队上，用一套代码、一套 IR、一套部署流程，管好从 CV 到 LLM 到机器人策略的所有模型」。TensorRT 在「单卡 NVIDIA 吞吐」这一维上赢；llama.cpp 在「单机跑 LLM」这一维上赢；ONNX Runtime 在「快速原型」这一维上赢。OpenVINO 赢在<strong>跨代际、跨硬件、跨模型类型、跨部署形态的工业治理</strong>。</p>
+<p>2026.3 起它把自己包装成四合一（Base + GenAI + Physical AI + Model Server），这个叙事把 OpenVINO 从「一个 runtime」升级为「Intel AI 的入口层」——不再和 TensorRT 比推理速度，而是成为 Intel 侧 AI 部署的默认控制面。</p>
+<p><strong>生态上游</strong>：被 🤗 Optimum Intel、ONNX Runtime 的 OpenVINO EP、vLLM 的 OpenVINO backend、LangChain/LlamaIndex/LLMWare、PyTorch <code>torch.compile()</code>、ExecuTorch、Keras 3、KServe/Triton/OVMS 集成。</p>
+<h2>套利机会分析</h2>
+<ul><li><strong>信息差：</strong><strong>最明确的一处</strong>。11,912 star 这个数字仍停留在「CV 时代老牌推理引擎」的公众认知上，但项目已转型为「Intel NPU 上的 LLM 端侧运行时」+「机器人 VLA 栈」。同赛道的 llama.cpp 已有约 136K star。本报告用本仓库自建的 Trending 归档独立验证了一个信号：<strong>在 14 个月、11,502 条记录、1,440 个不同仓库的数据里，OpenVINO 是 2026-11-18 才首次上榜</strong>，且 48 小时 +452 star、排名 #14→#8→#8、月度榜仍是 #97——它才刚刚回到牌桌。「新叙事 / 旧 star 锚」的认知差是真实存在的。</li><li><strong>技术借鉴：</strong>IR + pass 管线的设计（不可变 IR、opset 版本化注册表、拓扑序级联重写、版本区间翻译表、markup→transformation 两阶段量化）是任何「多前端多后端」系统都能直接抄的；<code>.github/agents-prototype/</code> 的 agent 编排约定（状态文件即记忆、置信度路由、集中 PR 所有权、双闸门、迭代熔断、诚实 non-blocking 标注）是任何多 agent 协作系统都能抄的。</li><li><strong>生态位：</strong><strong>「Intel NPU 上跑 LLM 且能进企业采购清单」这个格子，目前只有 OpenVINO 占着</strong>。llama.cpp 没有 NPU、没有工业部署形态；TensorRT 没有非 NVIDIA 硬件；ORT 没有 NPU 上跑 LLM 的能力，而且它的主仓刚刚从 GitHub 消失。</li><li><strong>趋势判断：</strong>符合趋势。NPU 从「可选加速器」变 AI PC 必选部件是硬件侧的既定趋势；LLM 端侧化让 NPU 从「只能跑 CV」变成「能跑生成式模型」；2026.4 已落地 speculative decoding → NPU、MoE 双路径、chunked prefill、prefix/sliding-window KV cache、LoRA、Eagle3、GGUF 前端；下半年新增跨 AI PC 集群的分布式 LLM 推理（论文 arXiv 2608.19147 把 70B 分片到 4 台 Lunar Lake，双节点 1.79× 吞吐）。<strong>后发优势明显：</strong>OpenVINO 是在「LLM 已成为主流负载」这个前提下重新设计 NPU 路径的，而 TensorRT/ORT 的 NPU 支持都是从 CV 时代继承来的。</li></ul>
+<h2>风险与不足</h2>
+<ol><li><strong>GPU 性能不是它的战场</strong>。TensorRT 7 倍的 GPU 优势意味着，如果你的部署目标是数据中心 GPU，OpenVINO 没有理由被选中。把 OpenVINO 当「通用 TensorRT 替代品」是最常见的误判。</li><li><strong>NPUW 的复杂度债正在累积</strong>。2,364 + 2,278 行的核心文件、30+ 个专用变换 pass、基于输入名的启发式判断（Deepstack、PLE、Eagle3、Gemma3 token_type_ids、Qwen3-VL position_ids 各有特例）。每接一个新模型家族都在加 if-else，这是典型的长尾技术债。</li><li><strong>agent 流水线仍处 prototype 阶段</strong>。目录名就叫 <code>agents-prototype</code>，只有 7 次提交（集中在 2026-05 ~ 2026-10），NPU agent 被明确标注 non-functional，CI doctor 自己在 issue 里反复报 <code>agent_failure</code>。<strong>它现在更像一个正确方向的架构示范，而不是一条已经在生产跑通的流水线。</strong></li><li><strong>编译期内存开销是长期痛点</strong>。IR 变换的 clone 语义导致编译大模型吃内存，issue #13601 开了很多年仍反复出现。</li><li><strong>编译期心智负担</strong>。ONNX Runtime 的 <code>InferenceSession</code> 五行代码就能跑；OpenVINO 要理解 <code>read_model → compile_model → infer</code> 的编译期概念、<code>AnyMap</code> 配置、以及「编译产物与源模型的版本对应」这套模型资产管理理念。从 ORT 迁移过来的人常低估这一层。</li><li><strong>上手门槛与分发体积</strong>。Python wheel 数百 MB，ncnn 只有几 MB；移动端和轻量边缘场景不是它的目标。</li><li><strong>无根级 CHANGELOG</strong>。changelog 只存在于 <code>cmake/developer_package/packaging/{debian,rpm}/</code>，release notes 散在 <code>docs/articles_en/about-openvino/release-notes-openvino/</code>。对 8 年、65 个 Release 的项目来说这是文档治理上的明显缺口。</li><li><strong>单一厂商绑定的周期性风险</strong>。它的价值主张高度依赖 Intel NPU 的出货量。Intel AI PC 换机周期一旦放缓，OpenVINO 最大的差异化场景会同步缩水。</li><li><strong>依赖 ORT 生态的悬空风险</strong>。ONNX Runtime 主仓消失后，作为其 OpenVINO EP 的上游被依赖方已断链——短期利好 OpenVINO，但也意味着「依赖链断裂」这个先例已经发生。</li></ol>
+<h2>行动建议</h2>
+<ul><li>
+<p><strong>如果你要用它：</strong></p>
+<ul><li><strong>选它：</strong>部署目标包含 <strong>Intel NPU</strong>（AI PC / 边缘设备 / 机器人）；需要 CPU+iGPU+NPU 混合调度；需要模型资产化（blob 可导入导出、可缓存、可版本化、可进制品库）；企业采购需要 Apache-2.0 无 copyleft；做机器人 VLA。</li><li><strong>别选它：</strong>只有 NVIDIA GPU（用 TensorRT / TensorRT-LLM）；只是要快速验证一个 ONNX 模型（用 ONNX Runtime，<code>ov.convert_model()</code> 也行但没必要绕）；单机跑 7B 追求极致轻量（用 llama.cpp——它的量化矩阵和内存占用都赢）；手机 App 内嵌一个 CV 模型（用 ncnn）。</li><li><strong>上手顺序：</strong>先 <code>core.compile_model(model, "AUTO")</code> 拿到默认体验 → 再按需开 LPT 量化 → 部署前把 <code>compile_model</code> 的产物缓存成 blob，别在每次启动时重编译（issue #13601 的内存问题主要来自这里）→ 涉及 LLM 就直接上 <code>openvino.genai</code> 而不要自己拼 <code>ov::LLMPipeline</code>。</li><li><strong>迁移成本：</strong>从 ONNX Runtime 迁入<strong>低</strong>（<code>core.read_model(onnx_path)</code> 即可，主要成本是重新校准精度）；从 TensorRT 迁入<strong>很高</strong>（要重写 TensorRT-LLM pipeline、自定义 plugin 换 <code>IPlugin</code>、精度配置全部重做）。</li></ul>
+</li><li>
+<p><strong>如果你要学它：</strong></p>
+<ul><li><strong>必读：</strong><code>src/core/include/openvino/core/node.hpp</code> + <code>src/core/src/pass/graph_rewrite.cpp</code>（IR 不可变 + 拓扑序级联重写，这是全项目最值得抄的部分）</li><li><strong>必读：</strong><code>src/plugins/intel_npu/src/plugin/npuw/llm_kvcache_strategy.hpp</code>（生命周期钩子契约 + 两阶段失败语义，写 C++ 状态机必看）</li><li><strong>必读：</strong><code>src/plugins/intel_npu/src/plugin/npuw/llm_compiled_model.cpp:739</code> 的 <code>create_generate_model_variants</code>（变体阶梯的实现）</li><li><strong>必读：</strong><code>.github/agents-prototype/enable-operator.agent.md</code>（647 行，一份写得极好的 agent 编排规格书）</li><li><strong>参考：</strong><code>src/plugins/template/</code>（官方插件模板——要加新硬件后端就照着抄）、<code>src/common/snippets/docs/snippets_design_guide.md</code>（kernel codegen 设计）、<code>src/plugins/hetero/README.md</code>（异构切分算法的完整推演）</li><li><strong>可直接抄的四件套：</strong><code>agents/*.agent.md</code> + <code>skills/&lt;name&gt;/stepN-*.md</code> + <code>pipeline_state.json</code> + 确定性 fallback 脚本；配合「置信度路由」「子 agent 不许开 PR」「迭代上限 + 有进展就不熔断」「双闸门验证」「诚实标注 non-blocking」五条纪律。</li></ul>
+</li><li>
+<p><strong>如果你要 fork 它：</strong></p>
+<ul><li><strong>最现实的 fork 动机是加一个硬件后端</strong>，那就用 <code>src/plugins/template/</code>，不要动 core。</li><li><strong>想做非 Intel 硬件的 LLM 运行时：</strong>NPUW 的核心思想（动态形状 → 静态子图 + 运行时状态交接 + 容量阶梯变体）值得移植，但要重写的是那套按输入名猜语义的适配层。</li><li><strong>想清理 NPUW 复杂度债：</strong>把「输入名启发式」换成显式的模型能力声明（每个模型家族注册自己的输入语义与布局转换），这是最有价值也最难的一块重构。</li><li><strong>想让 agent 流水线真的能用：</strong>优先补 NPU agent（它被明确标为 non-functional），并把 CI doctor 的 <code>agent_failure</code> 率压下去；同时把 <code>agents-prototype</code> 改名——叫 prototype 的东西很难让人认真对待。</li><li><strong>注意 license：</strong>Apache-2.0 保留声明，Intel 商标（OpenVINO™、Intel 徽标）不可复用。</li></ul>
+</li></ul>
+<h3>知识入口</h3>
+<table>
+<thead>
+<tr>
+<th>资源</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DeepWiki</td>
+<td><a href="https://deepwiki.com/openvinotoolkit/openvino">https://deepwiki.com/openvinotoolkit/openvino</a> （已收录，含 NPUW Compiled Model and Partitioning 分册）</td>
+</tr>
+<tr>
+<td>Zread.ai</td>
+<td><a href="https://zread.ai/openvinotoolkit/openvino">https://zread.ai/openvinotoolkit/openvino</a> （已收录）</td>
+</tr>
+<tr>
+<td>关联论文</td>
+<td><a href="https://arxiv.org/abs/2608.19147">Pre-Compiled Pipeline Shards for Distributed LLM Inference on Intel AI PC Fleets</a>（70B 分片到 4 台 Lunar Lake，双节点 1.79× 吞吐）<br/><a href="https://arxiv.org/abs/2002.08679">NNCF: Neural Network Compression Framework</a><br/><a href="https://link.springer.com/10.1007/978-3-031-80457-1_6">RISC-V CPUs within OpenVINO</a></td>
+</tr>
+<tr>
+<td>在线 Demo</td>
+<td>无官方托管浏览器 playground。替代路径：<a href="https://docs.openvino.ai/2024/notebooks/object-detection-with-output.html">Live Object Detection</a> · <a href="https://docs.openvino.ai/2024/notebooks/pose-estimation-with-output.html">Live Human Pose Estimation</a> · <a href="https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/model-hub.html">Intel Model Hub</a></td>
+</tr>
+<tr>
+<td>官方文档</td>
+<td><a href="https://docs.openvino.ai">https://docs.openvino.ai</a> （2026.3 起为 Base + GenAI + Physical AI + Model Server 四合一工具箱）</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<p><em>分析数据采集于 2026-11-21；代码统计基于 master 分支 HEAD <code>6ed280ed68</code>。中间产物见 <code>tmp/repo-facts-openvino.json</code>、<code>tmp/openvino-phase-{1,2,3}-analysis.md</code>。</em></p>
+</body>
+</html>
