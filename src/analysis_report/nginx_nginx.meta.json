@@ -1,0 +1,6 @@
+{
+  "title": "GitHub推荐：Star 不到 Caddy 一半：24 年的 nginx 凭什么还没过时",
+  "digest": "Star 不到 Caddy 一半，24 年架构却几乎没变：一个二进制同时当静态服务、反向代理、缓存、L4 网关和邮件代理。值得抄的是阶段引擎、请求级内存池、伪连接适配；而一次发版修 10 个 CVE，是坚持用 C 的账单。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}
