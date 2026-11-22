@@ -2078,6 +2078,13 @@ entries:
   - model-foundation
   - devtools
   - protocol-spec
+  openvinotoolkit_openvino:
+  - ai-agent
+  - llm-inference
+  - llm-training
+  - model-foundation
+  - workflow-automation
+  - iot-hardware
   ottermind_chat2db:
   - ai-agent
   - llm-framework
@@ -2667,6 +2674,10 @@ entries:
   - database
   tqdm_tqdm:
   - uncategorized
+  tracer-cloud_opensre:
+  - ai-agent
+  - ai-coding
+  - devtools
   tractorjuice_arc-kit:
   - ai-agent
   - ai-coding
@@ -2949,6 +2960,12 @@ entries:
   - devtools
   - protocol-spec
   - security
+  zhouxiaoka_autoclip:
+  - ai-agent
+  - devtools
+  - workflow-automation
+  - video-audio
+  - protocol-spec
   zhulinsen_daily_stock_analysis:
   - devtools
   zie619_n8n-workflows:
