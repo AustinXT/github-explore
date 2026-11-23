@@ -1,99 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-11-21",
+    "last_run": "2026-11-23",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
-      "canonical_url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
-      "event_date": "2026-10-21",
-      "date_seen": "2026-10-22"
-    },
-    {
-      "key": "hf:recursivesi/flint",
-      "canonical_url": "https://huggingface.co/RecursiveSI/flint",
-      "event_date": "2026-10-21",
-      "date_seen": "2026-10-22"
-    },
-    {
-      "key": "github.com/ollama/ollama",
-      "canonical_url": "https://github.com/ollama/ollama/releases/tag/v0.40.8",
-      "event_date": "2026-10-21",
-      "date_seen": "2026-10-22"
-    },
-    {
-      "key": "github.com/anthropics/anthropic-sdk-python",
-      "canonical_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.0.0",
-      "event_date": "2026-10-21",
-      "date_seen": "2026-10-22"
-    },
-    {
-      "key": "github.com/bogzx/bg3-agent-harness",
-      "canonical_url": "https://github.com/Bogzx/bg3-agent-harness",
-      "event_date": "2026-10-21",
-      "date_seen": "2026-10-22"
-    },
-    {
-      "key": "github.com/openresponses/openresponses",
-      "canonical_url": "https://github.com/openresponses/openresponses",
-      "event_date": "2026-10-22",
-      "date_seen": "2026-10-23"
-    },
-    {
-      "key": "github.com/openenv/openenv",
-      "canonical_url": "https://github.com/openenv/OpenEnv",
-      "event_date": "2026-10-22",
-      "date_seen": "2026-10-23"
-    },
-    {
-      "key": "github.com/opensandbox-group/opensandbox",
-      "canonical_url": "https://github.com/opensandbox-group/OpenSandbox",
-      "event_date": "2026-10-22",
-      "date_seen": "2026-10-23"
-    },
-    {
-      "key": "github.com/luongnv89/claude-howto",
-      "canonical_url": "https://github.com/luongnv89/claude-howto",
-      "event_date": "2026-10-22",
-      "date_seen": "2026-10-23"
-    },
-    {
-      "key": "github.com/ephemeral-ai-lab/layerfs",
-      "canonical_url": "https://github.com/Ephemeral-AI-Lab/layerfs",
-      "event_date": "2026-10-22",
-      "date_seen": "2026-10-23"
-    },
-    {
-      "key": "github.com/pgrundev/pgx",
-      "canonical_url": "https://github.com/pgrundev/pgx",
-      "event_date": "2026-10-22",
-      "date_seen": "2026-10-23"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/agentskills_agentskills",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/agentskills_agentskills/",
-      "event_date": "2026-10-23",
-      "date_seen": "2026-10-23"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/anthropic-experimental_sandbox-runtime",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/anthropic-experimental_sandbox-runtime/",
-      "event_date": "2026-10-23",
-      "date_seen": "2026-10-23"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/agent-substrate_substrate",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/agent-substrate_substrate/",
-      "event_date": "2026-10-23",
-      "date_seen": "2026-10-23"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/apache_maka",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/apache_maka/",
-      "event_date": "2026-10-23",
-      "date_seen": "2026-10-23"
-    },
     {
       "key": "github.com/openbmb/voxcpm",
       "canonical_url": "https://github.com/OpenBMB/VoxCPM",
@@ -1899,6 +1809,54 @@
       "canonical_url": "https://nightvoyager.top/github-explore/reports/mudler_localai/",
       "event_date": "2026-11-21",
       "date_seen": "2026-11-21"
+    },
+    {
+      "key": "hf:xingchen-agi/xing4.1-preview",
+      "canonical_url": "https://huggingface.co/XingChen-AGI/Xing4.1-Preview",
+      "event_date": "2026-11-22",
+      "date_seen": "2026-11-23"
+    },
+    {
+      "key": "github.com/huggingface/transformers",
+      "canonical_url": "https://github.com/huggingface/transformers",
+      "event_date": "2026-11-21",
+      "date_seen": "2026-11-23"
+    },
+    {
+      "key": "github.com/deepseek-ai/deepseek-harness",
+      "canonical_url": "https://github.com/deepseek-ai/deepseek-harness",
+      "event_date": "2026-11-22",
+      "date_seen": "2026-11-23"
+    },
+    {
+      "key": "github.com/cline/cline",
+      "canonical_url": "https://github.com/cline/cline",
+      "event_date": "2026-11-21",
+      "date_seen": "2026-11-23"
+    },
+    {
+      "key": "github.com/shinmegamiboson/lookatmyquant",
+      "canonical_url": "https://github.com/ShinMegamiBoson/lookatmyquant",
+      "event_date": "2026-11-22",
+      "date_seen": "2026-11-23"
+    },
+    {
+      "key": "github.com/muruhq/muru",
+      "canonical_url": "https://github.com/muruhq/muru",
+      "event_date": "2026-11-21",
+      "date_seen": "2026-11-23"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/significant-gravitas_autogpt",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/significant-gravitas_autogpt",
+      "event_date": "2026-11-23",
+      "date_seen": "2026-11-23"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/openclaw_openclaw",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/openclaw_openclaw",
+      "event_date": "2026-11-23",
+      "date_seen": "2026-11-23"
     }
   ]
 }
