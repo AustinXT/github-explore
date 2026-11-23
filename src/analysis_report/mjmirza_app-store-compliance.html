@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* ====== 微信公众号排版 CSS ====== */
+
+body {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #3e3e3e;
+    background: #fff;
+}
+
+/* 正文段落 */
+p {
+    font-size: 15px !important;
+    line-height: 2 !important;
+    margin: 0 !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+    padding-right: 1.2em !important;
+    padding-left: 1.2em !important;
+    text-align: justify !important;
+}
+p + p {
+    margin-top: 0 !important;
+}
+
+/* 标题 */
+h1 {
+    font-size: 20px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 16px 0 !important;
+    padding: 0 !important;
+}
+h2 {
+    font-size: 18px !important;
+    color: #e51f42 !important;
+    text-align: center !important;
+    margin: 24px 0 24px 0 !important;
+    padding: 0 !important;
+}
+h3 {
+    font-size: 15px !important;
+    font-weight: bold !important;
+    color: #3e3e3e !important;
+    text-align: left !important;
+    margin: 16px 0 16px 0 !important;
+    padding: 0 0 0 1.2em !important;
+}
+h4 {
+    font-size: 15px !important;
+    color: rgb(0, 122, 170) !important;
+    margin: 12px 0 8px 0 !important;
+    padding: 0 !important;
+}
+
+/* 列表 */
+ul,
+ol {
+    padding-left: 2em !important;
+    margin: 1em 0 !important;
+    font-size: 15px !important;
+}
+li {
+    margin: 0.5em 0 !important;
+    line-height: 1.8em !important;
+    font-size: 15px !important;
+    color: #3e3e3e !important;
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    margin: 0 !important;
+    padding-left: 1.2em !important;
+}
+
+/* 引用 */
+blockquote {
+    border-left: 4px solid #888 !important;
+    padding: 8px 16px !important;
+    margin: 1em 0 !important;
+    color: #666 !important;
+    background: #f9f9f9 !important;
+}
+blockquote > p {
+    margin: 0.5em 0 !important;
+    padding: 0 !important;
+}
+blockquote::before,
+blockquote::after {
+    content: none !important;
+}
+
+/* 代码块 */
+pre {
+    font-size: 14px !important;
+    line-height: 1.4em !important;
+    color: #3e3e3e !important;
+    background: #f8f8f8 !important;
+    padding: 12px 16px !important;
+    border-radius: 4px !important;
+    overflow: auto !important;
+    margin: 1em 0 !important;
+}
+
+/* 脚注 */
+.footnotes {
+    font-size: 11px !important;
+    color: #666 !important;
+    line-height: 1.2 !important;
+    margin: 8px 0 0 0 !important;
+    padding: 4px 0 0 0 !important;
+    border-top: 1px solid #eee !important;
+}
+.footnotes p {
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #666 !important;
+}
+
+/* 上标 */
+sup {
+    font-size: 0.75em !important;
+    vertical-align: super !important;
+    color: #e51f42 !important;
+    margin: 0 2px !important;
+}
+/* 行内代码 / 强调 / 链接 */
+code { background: #f4f4f4 !important; color: #c7254e !important; padding: 2px 4px !important;
+    border-radius: 3px !important; font-size: 90% !important; }
+pre code { background: transparent !important; color: inherit !important; padding: 0 !important; }
+strong { font-weight: bold !important; color: #3e3e3e !important; }
+a { color: rgb(0,122,170) !important; text-decoration: none !important; }
+
+/* 图片 */
+img { max-width: 100% !important; height: auto !important; display: block !important;
+    margin: 1em auto !important; border-radius: 4px !important; }
+
+/* 表格 */
+table { border-collapse: collapse !important; width: 100% !important; margin: 1em 0 !important;
+    font-size: 14px !important; }
+th, td { border: 1px solid #ddd !important; padding: 6px 10px !important; text-align: left !important; }
+th { background: #f4f4f4 !important; font-weight: bold !important; }
+
+hr { border: none !important; border-top: 1px solid #ddd !important; margin: 1.5em 0 !important; }
+</style>
+</head>
+<body>
+<blockquote>
+<p>GitHub: <a href="https://github.com/mjmirza/app-store-compliance">https://github.com/mjmirza/app-store-compliance</a></p>
+</blockquote>
+<h2>一句话总结</h2>
+<p>一个把 App Store 与 Google Play 拒审原因沉淀成可核验规则库、并在 AI 编码工具的提交前 hook 里强制执行的合规闸门——真正的资产不是 124 条规则，而是<strong>让规则不会腐烂的核验基础设施</strong>。</p>
+<h2>值得关注的理由</h2>
+<ol><li><strong>在正确的时间切入了正确的缝隙：</strong>Apple 一年审 777 万应用、拒 193 万（近 1/4），而 AI 让「一天做一个 App」成为常态——造 App 的速度涨了 60%，审核标准却没松口。能力曲线跌破了合规曲线，两条曲线之间的缺口就是这个项目。</li><li><strong>它卖的是「可核验」，不是「规则多」：</strong>112 条全球法规截止日期每条都带 <code>source_url</code> + <code>verified_on</code>，超过 180 天自动告警；还实现了针对 Apple soft-404（未知 article id 也返回 HTTP 200）的字节级指纹检测——编造的引用在这个项目里过不了关。第三方审计抽 17 条核对官方，11 条相符、5 条有出入，但没有一条编造。</li><li><strong>零依赖 + 13 个 AI 工具 hook 分发：</strong>只用 Python 标准库 + Bash 内建，<code>git clone</code> 就能跑；一条命令接入 Claude Code / Cursor / Copilot / Gemini 等 13 个工具的提交前检查——把合规从「上线前检查清单」变成「每次 commit 都挡一次」。</li></ol>
+<h2>项目展示</h2>
+<p style="text-align:center;"><img alt="Reddit 讨论：跑完一次性检查并修复后，首次提交即获批" src="https://raw.githubusercontent.com/mjmirza/app-store-compliance/main/assets/first-try-approval.png"/></p><p>
+真实用户的反馈——跑完检查并修复后首次提交即通过。注意这类截图同时是「误报即特性」立场的实证：能被用户忍受的噪音才叫 guard。</p>
+<p style="text-align:center;"><img alt="社区聊天：Aura Text to Speech Reader 通过审核后以德语致谢" src="https://raw.githubusercontent.com/mjmirza/app-store-compliance/main/assets/app-store-approval-thanks.png"/></p><p>
+一个德语市场应用的通过反馈，作者本身就在德国，这解释了项目对欧盟法规的深度。</p>
+<p style="text-align:center;"><img alt="Apple 平台标识" src="https://raw.githubusercontent.com/mjmirza/app-store-compliance/main/assets/apple.png"/></p><p style="text-align:center;"><img alt="Google Play 平台标识" src="https://raw.githubusercontent.com/mjmirza/app-store-compliance/main/assets/android.png"/></p><p>
+
+双平台同时覆盖——这是它与三个只做 iOS 的同类 Skill 最直接的分界。</p>
+<h2>项目画像</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub</td>
+<td><a href="https://github.com/mjmirza/app-store-compliance">https://github.com/mjmirza/app-store-compliance</a></td>
+</tr>
+<tr>
+<td>许可证</td>
+<td>OpenRoots Agent License 2.3（SPDX <code>LicenseRef-OpenRoots-ORA-2.3</code>，非 OSI 许可；GitHub 因不识别自定义 SPDX 显示「Other / No license listed」）</td>
+</tr>
+<tr>
+<td>Star / Fork</td>
+<td>4,553 / 290（Watcher 13）</td>
+</tr>
+<tr>
+<td>代码行数</td>
+<td>25,901（Python 45.6%、Shell 33.8%、JSON 20.5%）</td>
+</tr>
+<tr>
+<td>项目年龄</td>
+<td>5.6 个月（2026-06-06 至今）</td>
+</tr>
+<tr>
+<td>开发阶段</td>
+<td>稳定维护（近 30 天 25 commit，近 90 天 56 commit）</td>
+</tr>
+<tr>
+<td>贡献模式</td>
+<td>独立开发者主导（5 位贡献者，主作者占 82.2% 的 commit）</td>
+</tr>
+<tr>
+<td>热度定位</td>
+<td>大众热门（2026-11-19 至 11-22 连续 4 天 GitHub Trending 日榜 #12，star 1709→3832，当前 4553）</td>
+</tr>
+<tr>
+<td>质量评级</td>
+<td>代码[良好] 文档[优秀] 测试[良好]</td>
+</tr>
+</tbody>
+</table>
+<h2>作者视角：为什么存在这个项目</h2>
+<h3>创始人/作者背景</h3>
+<p>Mirza Iqbal（@mjmirza），9 年 GitHub 账号、119 个公开仓库，住德国法兰克福。他同时维护 6 个德国本地税务/政务 MCP server 和一批 n8n 工作流——这是一个做「本地自动化集成」的独立开发者，不是大厂员工，也不是纯内容创作者。</p>
+<p>这个背景直接塑造了项目的指纹：如果只做一份「通用美式 checklist」，不会有 112 条覆盖 33 个辖区的法规截止日期（其中欧盟占 22 条）。合规审计的证据链思维——主张 → 来源 → 核验日期 → 原文引用——是从德国/欧盟的合规实务里搬过来的。</p>
+<p>最耐人寻味的一处矛盾：CI 里跑 <code>no-ai-attribution.yml</code>，用正则拒绝任何带 AI 作者或归因的 commit。一个给 AI 编程工具生产守门人的项目，自己禁止 AI 出现在 git 历史里。作者的解释是知识库必须是「真人实践沉淀」——<strong>工具可以帮你查，但不能帮你编规则</strong>。</p>
+<p>投入权重上，119 个仓库里这是唯一破千星的，且在他最近 push 的仓库中排第 1。</p>
+<h3>问题判断</h3>
+<p>时机判断极准，作者自己的表述很锋利：「AI 让人一天能做出一个 App，但商店没为洪水放松规则，反而收紧了。」数据侧：Apple 一年审 777 万应用、拒 193 万（近 1/4），2026 Q1 双商店发布量同比 +60%。</p>
+<p>问题的另一半是「规则会过期，而且过期比没有更危险」。5 个可比竞品里 3 个已停更——停更不是因为规则难写，是因为<strong>核验成本高</strong>：每条规则都得找到一手来源、读、确认、记日期。作者的判断是这个成本可以被工程化，于是把核验做成了数据结构里的必填字段 + CI 闸门，而不是一次性的写作负担。</p>
+<h3>解法哲学</h3>
+<p>Unix 哲学优先：<strong>零运行时依赖</strong>（Python 标准库 + Bash 内建 + grep/sed/awk），<code>git clone</code> 后 <code>bash</code> 就能跑。核心取舍是<strong>保守而非完备</strong>。</p>
+<p>明确「不做什么」的部分：</p>
+<ul><li>不假装能判 Guideline 4.3（安全与隐私）——原话是 Treat any tool that claims it can with suspicion</li><li>不假装扫描结果是批准——README 首句就写 It does not guarantee approval</li><li>不读二进制产物、不做运行时证明、不生成 Data Safety CSV——在 <code>docs/COMPETITIVE-GAP-ANALYSIS.md</code> 里被记为 the larger work left for later releases</li></ul>
+<p>最反直觉的一条是<strong>宁可误报不可漏报</strong>。Issue #834 里 haptics 规则因 WCAG / EN 301 549 并不强制而误报，作者不但没删规则，还把它降级成 advisory、扩展 SwiftUI 语法、补回归用例，并在文档里明写这个检查不计算对比度、不检查焦点顺序。对一个「误报会烦人」的工具来说，这是罕见的克制。</p>
+<h3>战略图景</h3>
+<p><strong>基础设施/护栏，不是产品</strong>。作者自己在 <code>COMPETITIVE-GAP-ANALYSIS.md</code> 里承认竞争是「采纳」而非能力差距：What remains is not a capability gap, it is adoption. The most popular repository has the stars.</p>
+<p>许可策略值得单独说：OpenRoots Agent License 2.3 不是 OSI 许可，但也不是常见的 open-core。它是<strong>规模豁免型</strong>——年营收 2000 万美元以下免费且无条件（个人、非营利、学校、政府任何规模都免费），超出部分按 0.5% 收权利金、每年上限 25 万美元，AI 训练需单独购买许可。因为「本版本不因时间流逝转换为其他许可」写得极硬，大企业法务会先在这一关卡住。</p>
+<h2>核心价值提炼</h2>
+<h3>创新之处</h3>
+<p>按「新颖度 × 实用性 × 可迁移性」排序：</p>
+<ol><li>
+<p><strong>Soft-404 内容指纹检测</strong>（新颖 4 / 实用 5 / 迁移 5）
+   Apple 的 news 页面对任何未知 article id 都返回 HTTP 200 且内容字节完全相同——意味着<strong>一个编造的 URL 能通过任何朴素的链接检查器</strong>，这直接击穿了「引用可验证」的前提。解法在 <code>scripts/verify-citations.py:30-34, 200-215</code>：为每个会泛化 fallback 的 host 取一个<strong>故意无效的 control URL</strong>，算 SHA-256 指纹（先剥掉 <code>?\d{8,}</code> 这种 cache-buster——Apple 的 news 索引会在 asset URL 上轮换数字后缀，不剥掉会让同一个索引看起来像两个页面），然后每个被引 URL 取指纹，<strong>与 control 相同即判定 FABRICATED</strong>。局限也诚实：只对已知会 soft-404 的 host 生效（目前 2 个）。</p>
+</li><li>
+<p><strong>把「不确定」显式编码进数据 schema</strong>（4 / 4 / 4）
+   Issue #659 定下的规矩：无精确日期就保留当月 1 号作为 placeholder + 保留原文措辞；读到二手来源必须写 <code>source_note</code>；抓不到一手来源就列进 Unverified 而不是猜一个。这让「规则库的一部分过期了」成为可表达的状态，而不是靠沉默掩盖。</p>
+</li><li>
+<p><strong>分级 fail-closed / fail-open，而不是全局一个策略</strong>（4 / 5 / 5）
+   这是整个项目最关键也最容易做错的架构决策，分级依据是「<strong>信息丢失的风险</strong>」而不是「方便」：</p>
+<ul><li>信息可能藏在没读到的文件里 → <strong>fail closed</strong>。<code>.app-review-readiness.json</code> 存在但读不了（非法 JSON / 重复 key / 超 8 MiB / 读超时 / python3 不存在）→ 一律 critical 阻断，理由统一写成 <code>so a fail inside it cannot be seen</code>（<code>guard.sh:1734, 1823, 1847, 1854, 1861, 1870, 1876, 1893</code>）</li><li>信息确定不存在 → <strong>fail open（仅 hook 模式）</strong>。找不到 iOS/Android 项目时 hook 模式 exit 0 放行，但<strong>必须打印 <code>NOT CHECKED.</code></strong>；手动模式 exit 1</li><li>扫描中途失败 → 结果未知，<strong>绝不是 CLEAR</strong>（<code>guard.sh:2091-2096</code>）。<code>SCAN_ERROR</code> 非空时输出 <code>NOT CHECKED.</code> 而非 <code>CLEAR.</code></li><li>逃生阀是一等公民：<code>APP_STORE_GUARD_OK=1</code>（有 critical 也放行但写日志）、<code>APP_STORE_GUARD_BLOCK_UNCHECKED=1</code>（把 fail-open 翻成 fail-closed，CI 用）</li></ul>
+</li><li>
+<p><strong>输出完整性契约 + 显式「不信任」verdict</strong>（3 / 5 / 5）
+   <code>scripts/fleet-sweep.py:110-131</code> 做六项交叉校验：guard 没跑完 / 退出码不在 （0,2） / Summary 行数 ≠ 1 / Coverage 行数 ≠ 1 / <strong>Summary 计数 ≠ 从 findings 行解析出的计数</strong> / <strong>退出码与 critical 计数矛盾</strong>。任一命中 → 该 app 判 <code>NOT_CHECKED</code>，<strong>永远不是 ready</strong>。测试里用一个假 guard（<code>cat report.txt; exit $(cat exit.txt)</code>）来验证契约本身。</p>
+</li><li>
+<p><strong>五级来源信任层级 + 「文本只能降级不能升级」</strong>（4 / 4 / 4）
+   P1 官方机构 / P2 通讯社 / P3 学术 / P4 行业博客 / P5 社交媒体与 AI 摘要；P4/P5 必须被同主题的 P1 源逐条佐证才能进 PR。分类器用 <strong>host 域名边界匹配</strong>（<code>host == d or host.endswith("." + d)</code>，防 <code>notftc.gov</code> 冒充）。最关键的一条规则在 <code>scripts/monitor-regulatory.py:565-660</code>：正文里出现「政府」「欧盟」<strong>不能</strong>把一个博客升到 P1——信任只能被文本降低，不能被抬高。</p>
+</li><li>
+<p><strong>一个 hook 脚本自适配 13 种协议</strong>（4 / 4 / 4）
+   13 个 AI 工具的 hook 协议各不相同。做法是反过来的：让所有工具把 payload 喂给同一个 bash 脚本，让脚本自己认。三级解析器（<code>jq</code> → <code>python3</code> → 纯 awk/grep/sed 正则）每级都用 <code>tool_ok()</code> 验证「存在<strong>且能跑</strong>」而不是「存在」。非 shell 工具（Read/Edit/Write）直接静默返回——这是关键的误报控制。三级都失败时<strong>保持沉默而不是瞎猜</strong>。README 还明确列出了<strong>没接线的工具</strong>（Kiro、Cline、Amp、Goose、Crush、Roo Code、Continue、Aider、Copilot for Xcode），每个都给出手工接线片段而不是假装支持。</p>
+</li><li>
+<p><strong>带 revision 的 attestation 模型</strong>（5 / 4 / 3）
+   <code>data/ruling-register.json</code>（14 条）把「扫描看不见的法律要求」建模成可引用需求：<code>standing</code>（in_force / in_force_later / store_policy / proposed——<strong>proposed 不阻塞</strong>）、<code>proof</code>（mixed / owner_attested）、<code>proof_items[]</code>、以及每条 source 带 <code>url</code> + <code>checked_on</code> + <strong><code>quote</code> 原文逐字引用</strong> + <code>supports[]</code>——引文必须同时覆盖义务与生效日期，否则不予采信。规则一改版，<code>revision</code> 递增，旧 attestation 立即失效。</p>
+</li><li>
+<p><strong><code>grep -q</code> + <code>pipefail</code> 陷阱的系统性规避</strong>（新颖 2 / 实用 5 / 迁移 5）
+   <code>grep -q</code> 命中后立即退出关闭管道，仍在写的生产者收到 SIGPIPE（141），<code>pipefail</code> 把整条管道判为非零——<strong>一个匹配变成一次未命中</strong>。项目用 <code>grep_q()</code>（<code>guard.sh:8</code>）排空全部输入替代，CHANGELOG 记录它曾在 CI runner 上静默漏检而本地不复现，并用 2 万行尾部输入做了回归。</p>
+</li><li>
+<p><strong>双缓冲（触发 vs 语义实现）</strong>（3 / 4 / 3）
+   <code>.code</code> 是全部原始内容（用于触发词匹配），<code>.impl</code> 是<strong>剥离注释和配置文本后的源码</strong>（用于「你必须实现了这个功能」类规则）。注释写得很清楚：a <code>.strings</code>, plist or json mention never proves an implementation——plist 里出现一个符号名不算你实现了它。缓冲末尾写哨兵行，只有哨兵确实落到文件末尾才置 <code>CODE_OK=1</code>，用来防御「缓冲写了一半」这个静默失败。</p>
+</li></ol>
+<h3>可复用的模式与技巧</h3>
+<p>以下模式与 App Store 完全无关，任何「规则会变」的场景都能直接搬走：</p>
+<ol><li><strong>control-id 指纹验证</strong> — 用一个故意无效的对照 URL 算内容指纹，比对即判定编造。适用：任何有 generic fallback 页面的站点（云厂商文档站、政府门户、API 文档）</li><li><strong>host-only 可信度分类 + 文本只降不升</strong> — 适用：任何让 LLM 写规则/文档的流水线</li><li><strong>schema 承载不确定性</strong> — 把「未核实 / 待生效 / 已被合并」建模成字段而不是沉默。适用：知识库、依赖清单、许可证追踪</li><li><strong>分级 fail-open / fail-closed</strong> — 按信息丢失风险决定闸门方向。适用：任何 linter / gate / policy engine</li><li><strong>输出完整性契约</strong> — 下游对上游输出做六项交叉校验，任一不符判 <code>NOT_CHECKED</code>。适用：机器消费人类产出的一切场景</li><li><strong>单次豁免 + 到期强制复审</strong> — waiver 不是永久豁免，是带到期日的债；SARIF 导出保留 <code>suppressions[].justification</code> 作为完整审计轨迹</li><li><strong>带 revision 的签到模型</strong> — 规则改版自动作废旧签到。适用：政策引擎、合规声明、审计证据</li><li><strong>哨兵行作完成标志</strong> — 用「缓冲末尾的标记行」判断写入是否完整，防御静默截断</li><li><strong>生成物投影 + CI 漂移检测</strong> — 生成后 <code>git diff --quiet</code>，不一致就 fail 并打印 diff</li><li><strong>双方向错误率指标</strong> — eval 把 false pass 和 false block 分开统计（<code>evals/gold-cases.json</code> 32 个黄金场景 + <code>eval-scorecard.py</code>）。gate 类工具里漏放比误挡危险得多，但多数测试只报一个准确率</li><li><strong>三级降级 + 解析不了就沉默</strong> — 适配层要能降级，更要能在完全陌生输入时<strong>不猜</strong></li><li><strong>显式登记已知空白</strong> — 把「我们查不了二进制 / 做不了运行时证明」写进文档，而不是让人误以为覆盖了</li></ol>
+<h3>关键设计决策</h3>
+<p><strong>决策 1：把「可验证性」而非「规则数量」当作核心资产</strong></p>
+<ul><li>问题：规则库必然过期。竞品里 3/5 停更——停更不是因为规则难写，是因为核验成本高（每条规则都得找到一手来源、读、确认、记日期）</li><li>方案：把核验成本从「写规则时的一次性负担」变成「数据结构里的必填字段 + CI 闸门」。每条 deadline 必填 <code>source_url</code> + <code>verified_on</code>；<code>validate.py:validate_provenance()</code> 在缺失时报 ERROR、超过 180 天报 WARNING；guard 每次运行打印规则包年龄与新鲜度（<code>Rule pack. v2.5.1. Its 109 dated sources were verified between ... (newest 0 days ago)</code>），全部超过 60 天就打 <code>Rule pack STALE</code>。实测 <code>data/regulatory-deadlines.json</code> 的 112 条<strong>无一条</strong>缺这两个字段</li><li>Trade-off：写一条规则的成本从 10 分钟涨到 40 分钟。<strong>护城河就在这个成本差里</strong>——抄规则容易，抄 112 条带核验日期的 deadline 没法抄</li><li>可迁移性：<strong>高</strong></li></ul>
+<p><strong>决策 2：单一写入口 + 生成物投影</strong></p>
+<ul><li>问题：124 条 pattern、113 条 recipe、112 条 deadline 要同时出现在 JSON、<code>docs/</code>、<code>references/</code> 三处，手工同步必然漂移</li><li>方案：<code>data/</code> 是唯一 SoR；<code>references/</code> 全部由 <code>scripts/generate-references.py</code> 生成；CI 跑一次生成然后 <code>git diff --quiet -- references/</code>，不一致就 fail 并打印 diff。<code>scripts/validate.py</code>（278 行）做交叉一致性：recipe 必须有对应的 pattern id（否则是「永远不会浮现」的死条目），pattern 有 signals 但没 recipe 则 warning</li><li>Trade-off：生成物进 Git，仓库体积换构建简单性</li><li>可迁移性：<strong>高</strong></li></ul>
+<blockquote>
+<p>值得单独一说的是这个项目与传统「文档即代码」项目的反转：<strong>JSON 有 schema 校验器，文档没有</strong>。常规项目是文档随代码走，这里是数据随 schema 走。</p>
+</blockquote>
+<p><strong>决策 3：明确的不做什么，被写进文档而不是被省略</strong></p>
+<p>作者在 <code>docs/COMPETITIVE-GAP-ANALYSIS.md</code> 里逐条列明「我们还差什么」：构建产物级检查（IPA/AAB、16KB ELF、ZIP 对齐）、运行时证明（账号删除、恢复购买）、Data Safety CSV 生成器。这是竞争分析文档，也是产品路线图——把空白登记为待办，而不是让人误以为覆盖了。</p>
+<h2>竞品格局与定位</h2>
+<h3>竞品对比矩阵</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>app-store-compliance</th>
+<th>RevylAI/greenlight</th>
+<th>app-store-preflight-skills</th>
+<th>app-store-review-skill (safaiyeh)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Star</td>
+<td>4,553</td>
+<td>2,489</td>
+<td>1,431</td>
+<td>467</td>
+</tr>
+<tr>
+<td>形态</td>
+<td>规则库 + 可执行 guard + hook</td>
+<td>Go 单二进制扫描器</td>
+<td>Agent Skill（纯 prompt）</td>
+<td>Agent Skill（按 guideline 切分）</td>
+</tr>
+<tr>
+<td>平台覆盖</td>
+<td>iOS + Android + 33 辖区法规</td>
+<td>iOS/Android 二进制</td>
+<td>iOS（含 macOS）</td>
+<td>iOS</td>
+</tr>
+<tr>
+<td>可核验性</td>
+<td>每条带 source_url + verified_on + 陈旧告警</td>
+<td>无</td>
+<td>无</td>
+<td>无</td>
+</tr>
+<tr>
+<td>构建产物级检查</td>
+<td>无</td>
+<td><strong>有</strong>（IPA/AAB、16KB ELF、ZIP 对齐）</td>
+<td>无</td>
+<td>无</td>
+</tr>
+<tr>
+<td>测试</td>
+<td>3,522 行 guard 测试 + 32 黄金场景</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>分发</td>
+<td>13 个 AI 工具 hook + CI</td>
+<td>CI</td>
+<td>Claude Skill</td>
+<td>Claude Skill</td>
+</tr>
+<tr>
+<td>维护状态</td>
+<td>11 月 25 commit</td>
+<td>2026-08-05 停更</td>
+<td>2026-10 停更</td>
+<td>2026-10 停更</td>
+</tr>
+<tr>
+<td>许可</td>
+<td>ORA 2.3（规模豁免）</td>
+<td>未核实</td>
+<td>MIT</td>
+<td>未核实</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>修正一处数据陷阱：仓库事实采集脚本按 <code>topic=android + language=Shell</code> 搜出的「竞品候选」全是噪声（termux-packages、PipePipe、opengapps 等），已全部剔除。上表为人工核实后的真实对位。</p>
+</blockquote>
+<h3>差异化护城河</h3>
+<p><strong>信任护城河最强，工程护城河中等，生态护城河弱。</strong></p>
+<p>抄规则容易，抄 112 条带核验日期的 deadline 做不到——这是最难被绕过的部分。第三方独立审计（<a href="https://www.yutuo-tech.com/blog/app-store-rejection-playbook-vs-official-guidelines">yutuo-tech</a>）从 123 条里抽 17 条核对官方，结果是 11 相符 / 5 有出入 / 1 排名无依据，而那 5 条出入<strong>全部指向「比官方更严」或引用位置不准，没有一条指向编造规则</strong>。这比任何自述都更能说明规则库的诚实度。</p>
+<p>工程上：soft-404 检测、五级信任层级、完整性契约、分级 fail-open/closed——都不算复杂，但都是「想清楚了才写得出」的类型。</p>
+<p>生态是短板：只有 GitHub 一个分发渠道，13 个 hook 适配虽好但随时可被复制。</p>
+<h3>竞争风险</h3>
+<p><strong>最大的风险不是被某个竞品替代，而是被「通用 agent 直接读原始指南」替代。</strong> 如果底层模型足够强、上下文足够长，一个会读 Apple 官方指南的通用 agent 就能做 80% 的事。</p>
+<p>作者押的是另一个命题：<strong>知识会过期，而不是知识难获取</strong>。规则获取容易，但「这条规则现在还成立吗、原文到底怎么说的」才是真问题——核验基础设施不会贬值。</p>
+<p>次要风险：<code>RevylAI/greenlight</code> 在二进制级检查上是真领先，如果它把法规库和 hook 接上，形态会更完整。以及维护分叉信号——已经出现 <code>takumi913/app-store-compliance</code>（0 star）这样的 fork。</p>
+<h3>生态定位</h3>
+<p>不是 checklist，是<strong>「合规领域的开放规则库 + 参考实现 + 守卫工具链」</strong>三合一。在 agent 生态里，它扮演的是「提交前那道 CI 闸门」的角色——当 AI 编码工具让产出速度提升一个数量级时，审核速度没变，于是需要一个自动化闸门把「必然发生的退审」拦在提交之前。</p>
+<p>一个值得注意的判断：<strong>「规则数 ≠ 退件原因数」</strong>。第三方审计发现 124 条里有 6 条是网站 Cookie 规则、10 条是无障碍提醒（后者作者自承不会因此被退稿），另有 4 条委外关键项（4.2.6、5.1.1(ix)、4.8 豁免、3.1.2(c)）未被收录。同一份审计的核心观点是：「协助送审」和「保证通过审核」必须分开写——这个区分在本项目的 README 里也做到了。</p>
+<h2>套利机会分析</h2>
+<ul><li><strong>信息差：</strong><strong>已充分定价，不是套利标的</strong>。2026-11-19 至 11-22 连续 4 天 GitHub Trending 日榜 #12，star 从 1,709 涨到 3,832，当前 4,553；4 天 +2,844 star。同时热度的维护是兑现的——同窗口发布了 v2.5.0 + v2.5.1，25 次提交。Fork 率 6.4%（290/4,553）远高于文档型项目常见的 1–2%，说明用户真的 clone 下来改造。但真正残留的认知差是「<strong>124 条 ≠ 124 种退件原因</strong>」——这个认知本身有传播价值。</li><li><strong>技术借鉴：</strong><strong>这是本项目最实在的价值</strong>。soft-404 指纹验证、分级 fail-open/fail-closed、输出完整性契约、带 revision 的 attestation——这四个模式跟 App Store 一点关系都没有，可以直接搬进任何「规则会变」的系统：安全基线扫描、云厂商策略校验、内部编码规范、许可证合规清单、依赖版本策略。</li><li><strong>生态位：</strong>填的是「规则库会腐烂」这个空缺。不是没人写规则库，是没人解决规则库的保鲜问题。</li><li><strong>趋势判断：</strong>符合两条趋势——AI 编码让 App 产出量暴涨，监管合规要求在同步收紧（112 条 deadline 里最近 6,748 天逾期天数这个数字说明监管在加速）。这个项目<strong>没有</strong>后发优势（它是先行者），但它的增长曲线说明这个需求真实存在。</li></ul>
+<h2>风险与不足</h2>
+<ol><li><strong>8,745 行 Shell 没有静态检查进 CI</strong>——项目自己写了 shellcheck disable 注释，却没把 shellcheck 接进 CI。这是最明显的缺口，也是最容易补的。</li><li><strong>Windows 是二等公民</strong>——Issue #2330 / #2332 / #2333 三个 Windows bug 全是外部贡献者报的；作者自承 CI 只跑 Linux，Windows 路径是模拟测试而非原生 runner。其中 #2330 的 locale 读取失败导致「静默全清」（fail open，最危险的失败模式）。</li><li><strong>124 条规则的准确性没有自动化回归</strong>——外部审计抽 17 条就发现 5 条有出入。目前只靠人工 review + 偶发的外部审计，规则内容本身没有 CI 级断言。</li><li><strong><code>counterSignals</code> 只被 <code>release-audit.py</code> 消费，guard.sh 未实现</strong>——57/124 条 pattern 定义了反向信号，主路径仍会误报。数据已备好，只差消费端。</li><li><strong>构建产物级检查缺失</strong>——与 greenlight、devsemih 的真实差距，不是暂时落后。「你的 IPA 真的对齐了吗」是纯静态扫描永远答不了的问题。</li><li><strong>ORA 2.3 对大企业是采用摩擦</strong>——2000 万美元营收以上要付 0.5% 权利金；再加上 GitHub 因不识别自定义 SPDX 显示「No license listed」，双重要求企业法务先解决许可问题。对比竞品 app-store-preflight-skills 是 MIT。</li><li><strong>5.6 个月 0 次 refactor commit</strong>——<code>guard.sh</code> 已 2,115 行单体 Bash，<code>monitor-*.py</code> 家族 6 个文件结构高度相似，<code>json_unescape</code> 与三层 <code>payload_command</code> 解析器就是技术债累积的证据。测试也从未作为独立议题排期（test 类型 commit 数为 0，测试永远捆在 feature commit 里）。</li><li><strong>宣传严谨度落后于内容严谨度</strong>——规则数宣传跨版本不一致（117 / 123 / 124 三个数）；「124 条规则」被读成「124 种退件原因」；LICENSE 是自定义 SPDX 但 GitHub 显示 Other。这是一个以严谨为卖点的项目在自己宣传口径上留下的破绽。</li><li><strong>单人维护风险</strong>——4,553 star、13 个 hook 接入点、112 条需持续核验的 deadline，全压在一个人周末 61.4% 的业余时间上。社区协作质量异常高（4 位外部贡献者全是实质 bug 修复、CHANGELOG 逐条署名、issue 标签体系成熟），但规模仍是 1 个人。</li></ol>
+<h2>行动建议</h2>
+<h3>如果你要用它</h3>
+<ul><li><strong>在 CI 里用手动模式（exit 1），不要只挂 hook。</strong> hook 模式在找不到项目时会 fail open 放行——这是刻意的取舍，但 CI 场景应该翻成 fail-closed（<code>APP_STORE_GUARD_BLOCK_UNCHECKED=1</code>）。</li><li><strong>先按平台和严重度筛，别被 124 条吓退。</strong> 数据是 apple 62 / google 43 / both 13 / web 6，critical 38 / high 65 / medium 21。真正拦死人的集中在 Guideline 2.x / 3.x / 4.x 与 Data Safety，网站 Cookie 和无障碍提醒那 16 条基本不会导致退稿。</li><li><strong>企业场景先过法务。</strong> ORA 2.3 在 2000 万美元营收以上有 0.5% 权利金（年上限 25 万美元），AI 训练另购许可。</li><li><strong>只想要「跑一遍看看会怎样」：</strong>竞品 <code>app-store-preflight-skills</code> 是 MIT、更轻、默认拉真实 ASC metadata，是更安全的起点。</li><li><strong>需要二进制级检查</strong>（IPA/AAB、16KB ELF、ZIP 对齐）：叠加 <code>greenlight</code>，不要指望本项目——这是一个已知且明确的空白。</li><li><strong>Windows 用户：</strong>先在容器里跑一遍（第三方评测也是这么建议的），别直接放进主开发流程。</li></ul>
+<h3>如果你要学它</h3>
+<p>优先读这几个文件：</p>
+<ul><li><code>scripts/verify-citations.py:30-34, 200-215</code> — soft-404 指纹检测，一个下午就能抄走</li><li><code>agent-os/hooks/app-store-compliance-guard.sh:1734, 1823, 1847-1893</code> — 分级 fail-closed 的判定与理由文案</li><li><code>agent-os/hooks/app-store-compliance-guard.sh:53-95</code> — 三级 payload 解析器 + <code>tool_ok()</code> 的「存在且能跑」验证</li><li><code>agent-os/hooks/app-store-compliance-guard.sh:495-528</code> — 双缓冲 + 注释剥离的 awk 状态机 + 哨兵行</li><li><code>agent-os/hooks/app-store-compliance-guard.sh:8, 555-561</code> — <code>grep_q()</code> 与 <code>pipefail</code> 陷阱的注释解释</li><li><code>scripts/fleet-sweep.py:110-131</code> — 输出完整性契约的六项交叉校验</li><li><code>scripts/monitor-regulatory.py:565-660</code> — 五级来源信任层级与「文本只降不升」</li><li><code>data/regulatory-deadlines.json</code> — 不确定性进 schema 的样板（<code>source_note</code> / <code>absorbed_into</code> / <code>revision</code>）</li><li><code>evals/gold-cases.json</code> + <code>evals/eval-scorecard.py</code> — 双方向错误率指标</li><li><code>docs/WHAT-THE-SCAN-PROVES.md</code> 第 7 节 — 三种退出码含义的表格写法</li></ul>
+<h3>如果你要 fork 它</h3>
+<p>按性价比排序：</p>
+<ol><li><strong>把 shellcheck 接进 CI</strong>——作者都写好 disable 注释了，接一下就能用，是投入产出比最高的一步</li><li><strong>加 Windows 原生 runner matrix</strong>——作者自己承认这是最大测试缺口，接三个外部贡献者报的 bug</li><li><strong>在 guard.sh 里实现 <code>counterSignals</code></strong>——57/124 条 pattern 的反向信号已经在数据里了，只差消费端，能立刻压掉一批误报</li><li><strong>补构建产物级检查</strong>——这是竞品占着的位置，也是本项目最明确的能力缺口</li><li><strong>给 124 条规则加准确性回归断言</strong>——抽一批高争议规则，把官方原文固化进测试</li><li><strong>注意许可继承：</strong>ORA 2.3 对 fork 出的衍生作品适用什么条款，作者没有明确说明——这一步必须先读 <code>https://openroots.org/licenses/ora/2.3/legalcode.txt</code>，别靠 README 摘要判断。</li></ol>
+<h3>知识入口</h3>
+<table>
+<thead>
+<tr>
+<th>资源</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DeepWiki</td>
+<td><a href="https://deepwiki.com/mjmirza/app-store-compliance">deepwiki.com/mjmirza/app-store-compliance</a>（已收录）</td>
+</tr>
+<tr>
+<td>Zread.ai</td>
+<td>未能确认（403 + Cloudflare 拦截，实为访问受限而非未收录）</td>
+</tr>
+<tr>
+<td>关联论文</td>
+<td>无（本项目无论文产出）。相关领域背景研究可参考：<a href="https://arxiv.org/abs/2204.03556">Goodbye Tracking?</a>（FAccT '22）、<a href="https://www.alphaxiv.org/abs/2306.17063v1">Honesty is the Best Policy</a>（515,920 个应用，97±30% 的「Data Not Collected」标签与政策矛盾）</td>
+</tr>
+<tr>
+<td>在线 Demo</td>
+<td>无官方 playground（作者刻意排斥在线托管）。第三方同类：<a href="https://npmjs.com/package/@async-atharv/ipaship">ipaShip</a>、<a href="http://obelisk.club/?lang=zh">Obelisk Club</a>、<a href="https://vot.li/">VOTLI</a></td>
+</tr>
+<tr>
+<td>官方文档站</td>
+<td>GitHub Pages（仓库内 <code>docs/</code> + <code>llms.txt</code> + <code>sitemap</code>）</td>
+</tr>
+<tr>
+<td>独立评测参考</td>
+<td><a href="https://www.yutuo-tech.com/blog/app-store-rejection-playbook-vs-official-guidelines">yutuo-tech 繁体审计</a>（最有价值，17 条抽样核对）、<a href="https://earlysignal.news/s/mjmirza/app-store-compliance">Early Signal</a>（中立视角，指出许可显示矛盾与单人维护风险）</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
