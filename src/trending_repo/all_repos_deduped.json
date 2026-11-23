@@ -3,11 +3,11 @@
     "name": "obra/superpowers",
     "url": "https://github.com/obra/superpowers",
     "language": "Shell",
-    "stars": 323534,
-    "forks": 28702,
+    "stars": 324014,
+    "forks": 28748,
     "description": "An agentic skills framework & software development methodology that works.",
-    "last_seen": "2026-11-21",
-    "trending_days": 104
+    "last_seen": "2026-11-22",
+    "trending_days": 105
   },
   {
     "name": "mattpocock/skills",
@@ -150,6 +150,16 @@
     "trending_days": 26
   },
   {
+    "name": "mvanhorn/last30days-skill",
+    "url": "https://github.com/mvanhorn/last30days-skill",
+    "language": "Python",
+    "stars": 72576,
+    "forks": 6419,
+    "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+    "last_seen": "2026-11-22",
+    "trending_days": 26
+  },
+  {
     "name": "ruvnet/RuView",
     "url": "https://github.com/ruvnet/ruview",
     "language": "Rust",
@@ -177,16 +187,6 @@
     "forks": 407,
     "description": "An open-source, code-first Go toolkit for building, evaluating, and deploying sophisticated AI agents with flexibility and control.",
     "last_seen": "2025-12-04",
-    "trending_days": 25
-  },
-  {
-    "name": "mvanhorn/last30days-skill",
-    "url": "https://github.com/mvanhorn/last30days-skill",
-    "language": "Python",
-    "stars": 71850,
-    "forks": 6369,
-    "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-    "last_seen": "2026-11-21",
     "trending_days": 25
   },
   {
@@ -260,6 +260,16 @@
     "trending_days": 22
   },
   {
+    "name": "cathrynlavery/diagram-design",
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "language": "HTML",
+    "stars": 70190,
+    "forks": 4711,
+    "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+    "last_seen": "2026-11-22",
+    "trending_days": 22
+  },
+  {
     "name": "harry0703/MoneyPrinterTurbo",
     "url": "https://github.com/harry0703/moneyprinterturbo",
     "language": "Python",
@@ -330,16 +340,6 @@
     "trending_days": 22
   },
   {
-    "name": "cathrynlavery/diagram-design",
-    "url": "https://github.com/cathrynlavery/diagram-design",
-    "language": "HTML",
-    "stars": 69693,
-    "forks": 4678,
-    "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-    "last_seen": "2026-11-21",
-    "trending_days": 21
-  },
-  {
     "name": "pbakaus/impeccable",
     "url": "https://github.com/pbakaus/impeccable",
     "language": "Rust",
@@ -400,6 +400,16 @@
     "trending_days": 19
   },
   {
+    "name": "cursor/plugins",
+    "url": "https://github.com/cursor/plugins",
+    "language": "TypeScript",
+    "stars": 18369,
+    "forks": 1996,
+    "description": "Cursor plugin specification and official plugins",
+    "last_seen": "2026-11-22",
+    "trending_days": 19
+  },
+  {
     "name": "debpalash/VoiceStudio",
     "url": "https://github.com/debpalash/voicestudio",
     "language": "Python",
@@ -440,16 +450,6 @@
     "trending_days": 18
   },
   {
-    "name": "cursor/plugins",
-    "url": "https://github.com/cursor/plugins",
-    "language": "TypeScript",
-    "stars": 18042,
-    "forks": 1968,
-    "description": "Cursor plugin specification and official plugins",
-    "last_seen": "2026-11-21",
-    "trending_days": 18
-  },
-  {
     "name": "DietrichGebert/ponytail",
     "url": "https://github.com/dietrichgebert/ponytail",
     "language": "JavaScript",
@@ -457,6 +457,16 @@
     "forks": 9410,
     "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
     "last_seen": "2026-10-22",
+    "trending_days": 18
+  },
+  {
+    "name": "HKUDS/CLI-Anything",
+    "url": "https://github.com/hkuds/cli-anything",
+    "language": "Python",
+    "stars": 62631,
+    "forks": 5681,
+    "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+    "last_seen": "2026-11-22",
     "trending_days": 18
   },
   {
@@ -477,16 +487,6 @@
     "forks": 11286,
     "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
     "last_seen": "2026-09-07",
-    "trending_days": 17
-  },
-  {
-    "name": "HKUDS/CLI-Anything",
-    "url": "https://github.com/hkuds/cli-anything",
-    "language": "Python",
-    "stars": 61918,
-    "forks": 5606,
-    "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-    "last_seen": "2026-11-21",
     "trending_days": 17
   },
   {
@@ -760,6 +760,16 @@
     "trending_days": 13
   },
   {
+    "name": "jingyaogong/minimind",
+    "url": "https://github.com/jingyaogong/minimind",
+    "language": "Python",
+    "stars": 68549,
+    "forks": 8968,
+    "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+    "last_seen": "2026-11-22",
+    "trending_days": 13
+  },
+  {
     "name": "JuliusBrussee/caveman",
     "url": "https://github.com/juliusbrussee/caveman",
     "language": "Go",
@@ -847,16 +857,6 @@
     "forks": 2537,
     "description": "None",
     "last_seen": "2026-09-12",
-    "trending_days": 12
-  },
-  {
-    "name": "jingyaogong/minimind",
-    "url": "https://github.com/jingyaogong/minimind",
-    "language": "Python",
-    "stars": 68066,
-    "forks": 8899,
-    "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
-    "last_seen": "2026-11-21",
     "trending_days": 12
   },
   {
@@ -1170,6 +1170,16 @@
     "trending_days": 10
   },
   {
+    "name": "google-labs-code/stitch-skills",
+    "url": "https://github.com/google-labs-code/stitch-skills",
+    "language": "TypeScript",
+    "stars": 11832,
+    "forks": 1471,
+    "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+    "last_seen": "2026-11-22",
+    "trending_days": 10
+  },
+  {
     "name": "HKUDS/Vibe-Trading",
     "url": "https://github.com/hkuds/vibe-trading",
     "language": "Python",
@@ -1380,16 +1390,6 @@
     "trending_days": 9
   },
   {
-    "name": "google-labs-code/stitch-skills",
-    "url": "https://github.com/google-labs-code/stitch-skills",
-    "language": "TypeScript",
-    "stars": 11320,
-    "forks": 1428,
-    "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-    "last_seen": "2026-11-21",
-    "trending_days": 9
-  },
-  {
     "name": "google/skills",
     "url": "https://github.com/google/skills",
     "language": "Python",
@@ -1580,6 +1580,16 @@
     "trending_days": 9
   },
   {
+    "name": "toeverything/AFFiNE",
+    "url": "https://github.com/toeverything/affine",
+    "language": "TypeScript",
+    "stars": 76692,
+    "forks": 5611,
+    "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
+    "last_seen": "2026-11-22",
+    "trending_days": 9
+  },
+  {
     "name": "vxcontrol/pentagi",
     "url": "https://github.com/vxcontrol/pentagi",
     "language": "Go",
@@ -1667,6 +1677,16 @@
     "forks": 4579,
     "description": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
     "last_seen": "2026-11-03",
+    "trending_days": 8
+  },
+  {
+    "name": "elementalsouls/Claude-BugHunter",
+    "url": "https://github.com/elementalsouls/claude-bughunter",
+    "language": "Python",
+    "stars": 17361,
+    "forks": 1937,
+    "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+    "last_seen": "2026-11-22",
     "trending_days": 8
   },
   {
@@ -1850,16 +1870,6 @@
     "trending_days": 8
   },
   {
-    "name": "toeverything/AFFiNE",
-    "url": "https://github.com/toeverything/affine",
-    "language": "TypeScript",
-    "stars": 76148,
-    "forks": 5591,
-    "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
-    "last_seen": "2026-11-21",
-    "trending_days": 8
-  },
-  {
     "name": "vectorize-io/hindsight",
     "url": "https://github.com/vectorize-io/hindsight",
     "language": "Python",
@@ -1950,16 +1960,6 @@
     "trending_days": 7
   },
   {
-    "name": "elementalsouls/Claude-BugHunter",
-    "url": "https://github.com/elementalsouls/claude-bughunter",
-    "language": "Python",
-    "stars": 15603,
-    "forks": 1797,
-    "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
-    "last_seen": "2026-11-21",
-    "trending_days": 7
-  },
-  {
     "name": "Fincept-Corporation/FinceptTerminal",
     "url": "https://github.com/fincept-corporation/finceptterminal",
     "language": "Python",
@@ -1967,6 +1967,16 @@
     "forks": 3266,
     "description": "FinceptTerminal is a modern finance application offering advanced market analytics, investment research, and economic data tools, designed for interactive exploration and data-driven decision-making in a user-friendly environment.",
     "last_seen": "2026-05-25",
+    "trending_days": 7
+  },
+  {
+    "name": "firecrawl/firecrawl",
+    "url": "https://github.com/firecrawl/firecrawl",
+    "language": "TypeScript",
+    "stars": 206819,
+    "forks": 10809,
+    "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
+    "last_seen": "2026-11-22",
     "trending_days": 7
   },
   {
@@ -2497,16 +2507,6 @@
     "forks": 2518,
     "description": "Run your own AI cluster at home with everyday devices 📱💻 🖥️⌚",
     "last_seen": "2025-12-23",
-    "trending_days": 6
-  },
-  {
-    "name": "firecrawl/firecrawl",
-    "url": "https://github.com/firecrawl/firecrawl",
-    "language": "TypeScript",
-    "stars": 205946,
-    "forks": 10769,
-    "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
-    "last_seen": "2026-11-21",
     "trending_days": 6
   },
   {
@@ -3420,6 +3420,16 @@
     "trending_days": 5
   },
   {
+    "name": "openvinotoolkit/openvino",
+    "url": "https://github.com/openvinotoolkit/openvino",
+    "language": "C++",
+    "stars": 12055,
+    "forks": 3656,
+    "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+    "last_seen": "2026-11-22",
+    "trending_days": 5
+  },
+  {
     "name": "ourongxing/newsnow",
     "url": "https://github.com/ourongxing/newsnow",
     "language": "TypeScript",
@@ -3660,6 +3670,16 @@
     "trending_days": 5
   },
   {
+    "name": "Tracer-Cloud/opensre",
+    "url": "https://github.com/tracer-cloud/opensre",
+    "language": "Python",
+    "stars": 14312,
+    "forks": 1959,
+    "description": "The open-source agent for CI/CD reliability.",
+    "last_seen": "2026-11-22",
+    "trending_days": 5
+  },
+  {
     "name": "tt-a1i/archify",
     "url": "https://github.com/tt-a1i/archify",
     "language": "JavaScript",
@@ -3727,6 +3747,16 @@
     "forks": 357,
     "description": "Experimental menu for GTA 5: Enhanced",
     "last_seen": "2026-07-16",
+    "trending_days": 5
+  },
+  {
+    "name": "zhouxiaoka/autoclip",
+    "url": "https://github.com/zhouxiaoka/autoclip",
+    "language": "Python",
+    "stars": 13327,
+    "forks": 2115,
+    "description": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+    "last_seen": "2026-11-22",
     "trending_days": 5
   },
   {
@@ -4510,6 +4540,16 @@
     "trending_days": 4
   },
   {
+    "name": "mjmirza/app-store-compliance",
+    "url": "https://github.com/mjmirza/app-store-compliance",
+    "language": "Shell",
+    "stars": 3832,
+    "forks": 232,
+    "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 124 documented rejection patterns and fixes, privacy manifest and Data safety checks, 112 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+    "last_seen": "2026-11-22",
+    "trending_days": 4
+  },
+  {
     "name": "MODSetter/SurfSense",
     "url": "https://github.com/modsetter/surfsense",
     "language": "Python",
@@ -4600,6 +4640,16 @@
     "trending_days": 4
   },
   {
+    "name": "nginx/nginx",
+    "url": "https://github.com/nginx/nginx",
+    "language": "C",
+    "stars": 32851,
+    "forks": 8381,
+    "description": "The official NGINX Open Source repository.",
+    "last_seen": "2026-11-22",
+    "trending_days": 4
+  },
+  {
     "name": "nightly-labs/openbot",
     "url": "https://github.com/nightly-labs/openbot",
     "language": "TypeScript",
@@ -4637,16 +4687,6 @@
     "forks": 2747,
     "description": "The most popular open source electronic health records and medical practice management solution.",
     "last_seen": "2026-02-24",
-    "trending_days": 4
-  },
-  {
-    "name": "openvinotoolkit/openvino",
-    "url": "https://github.com/openvinotoolkit/openvino",
-    "language": "C++",
-    "stars": 11891,
-    "forks": 3648,
-    "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
-    "last_seen": "2026-11-21",
     "trending_days": 4
   },
   {
@@ -4860,16 +4900,6 @@
     "trending_days": 4
   },
   {
-    "name": "Tracer-Cloud/opensre",
-    "url": "https://github.com/tracer-cloud/opensre",
-    "language": "Python",
-    "stars": 13881,
-    "forks": 1941,
-    "description": "The open-source agent for CI/CD reliability.",
-    "last_seen": "2026-11-21",
-    "trending_days": 4
-  },
-  {
     "name": "tradermonty/claude-trading-skills",
     "url": "https://github.com/tradermonty/claude-trading-skills",
     "language": "Python",
@@ -4940,6 +4970,16 @@
     "trending_days": 4
   },
   {
+    "name": "XiaoYouChR/Ghost-Downloader-3",
+    "url": "https://github.com/xiaoyouchr/ghost-downloader-3",
+    "language": "Python",
+    "stars": 14982,
+    "forks": 901,
+    "description": "The only downloader you need. 下载器的集大成者。",
+    "last_seen": "2026-11-22",
+    "trending_days": 4
+  },
+  {
     "name": "yorukot/superfile",
     "url": "https://github.com/yorukot/superfile",
     "language": "Go",
@@ -4967,16 +5007,6 @@
     "forks": 2020,
     "description": "Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diarization, and Ollama summarization built on Rust. 100% local processing. no cloud required. Meetily (Meetly Ai - https://meetily.ai) is the #1 Self-hosted, Open-source Ai meeting note taker for macOS & Windows.",
     "last_seen": "2026-07-07",
-    "trending_days": 4
-  },
-  {
-    "name": "zhouxiaoka/autoclip",
-    "url": "https://github.com/zhouxiaoka/autoclip",
-    "language": "Python",
-    "stars": 12711,
-    "forks": 2064,
-    "description": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
-    "last_seen": "2026-11-21",
     "trending_days": 4
   },
   {
@@ -6090,16 +6120,6 @@
     "trending_days": 3
   },
   {
-    "name": "mjmirza/app-store-compliance",
-    "url": "https://github.com/mjmirza/app-store-compliance",
-    "language": "Shell",
-    "stars": 3230,
-    "forks": 202,
-    "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks, 95 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
-    "last_seen": "2026-11-21",
-    "trending_days": 3
-  },
-  {
     "name": "modelcontextprotocol/ext-apps",
     "url": "https://github.com/modelcontextprotocol/ext-apps",
     "language": "TypeScript",
@@ -6117,16 +6137,6 @@
     "forks": 3061,
     "description": "The Modular Platform (includes MAX & Mojo)",
     "last_seen": "2026-08-22",
-    "trending_days": 3
-  },
-  {
-    "name": "nginx/nginx",
-    "url": "https://github.com/nginx/nginx",
-    "language": "C",
-    "stars": 32692,
-    "forks": 8373,
-    "description": "The official NGINX Open Source repository.",
-    "last_seen": "2026-11-21",
     "trending_days": 3
   },
   {
@@ -6827,16 +6837,6 @@
     "forks": 411,
     "description": "结合LightRAG 知识库的知识图谱智能体平台。 An agent platform that integrates a LightRAG knowledge base and knowledge graphs. Build with LangChain v1 + Vue + FastAPI, support DeepAgents、MinerU PDF、Neo4j 、MCP.",
     "last_seen": "2025-12-27",
-    "trending_days": 3
-  },
-  {
-    "name": "XiaoYouChR/Ghost-Downloader-3",
-    "url": "https://github.com/xiaoyouchr/ghost-downloader-3",
-    "language": "Python",
-    "stars": 14293,
-    "forks": 867,
-    "description": "The only downloader you need. 下载器的集大成者。",
-    "last_seen": "2026-11-21",
     "trending_days": 3
   },
   {

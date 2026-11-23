@@ -1899,6 +1899,10 @@ entries:
   nextcloud_server:
   - llm-framework
   - protocol-spec
+  nginx_nginx:
+  - ai-agent
+  - protocol-spec
+  - security
   nicbarker_clay:
   - uncategorized
   nightly-labs_openbot:
@@ -2908,6 +2912,9 @@ entries:
   - ai-agent
   - llm-framework
   - workflow-automation
+  xiaoyouchr_ghost-downloader-3:
+  - ai-coding
+  - protocol-spec
   xpipe-io_xpipe:
   - ai-agent
   - devtools
