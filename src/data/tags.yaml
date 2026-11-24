@@ -1767,6 +1767,8 @@ entries:
   mistralai_mistral-finetune:
   - llm-training
   - model-foundation
+  mjmirza_app-store-compliance:
+  - uncategorized
   mksglu_context-mode:
   - ai-agent
   - ai-coding
