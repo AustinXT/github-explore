@@ -1,81 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-11-23",
+    "last_run": "2026-11-24",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/openbmb/voxcpm",
-      "canonical_url": "https://github.com/OpenBMB/VoxCPM",
-      "event_date": "2026-10-24",
-      "date_seen": "2026-10-24"
-    },
-    {
-      "key": "github.com/snailsploit/claude-red",
-      "canonical_url": "https://github.com/SnailSploit/Claude-Red",
-      "event_date": "2026-10-24",
-      "date_seen": "2026-10-24"
-    },
-    {
-      "key": "github.com/startluxlabs/startlux-prism",
-      "canonical_url": "https://github.com/StartLuxLabs/StartLux-Prism",
-      "event_date": "2026-10-24",
-      "date_seen": "2026-10-24"
-    },
-    {
-      "key": "github.com/tencent-hunyuan/hy-nomas",
-      "canonical_url": "https://github.com/Tencent-Hunyuan/Hy-Nomas",
-      "event_date": "2026-10-24",
-      "date_seen": "2026-10-24"
-    },
-    {
-      "key": "hf:tencent/hy-nomas",
-      "canonical_url": "https://huggingface.co/tencent/Hy-Nomas",
-      "event_date": "2026-10-24",
-      "date_seen": "2026-10-24"
-    },
-    {
-      "key": "github.com/huggingface/carbon",
-      "canonical_url": "https://github.com/huggingface/carbon",
-      "event_date": "2026-10-24",
-      "date_seen": "2026-10-24"
-    },
-    {
-      "key": "hf:huggingfacebio/carbon-x",
-      "canonical_url": "https://huggingface.co/HuggingFaceBio/Carbon-X",
-      "event_date": "2026-10-24",
-      "date_seen": "2026-10-24"
-    },
-    {
-      "key": "github.com/obsidianmd/pele",
-      "canonical_url": "https://github.com/obsidianmd/pele",
-      "event_date": "2026-10-24",
-      "date_seen": "2026-10-24"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/nvidia_skillspector",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/nvidia_skillspector",
-      "event_date": "2026-10-24",
-      "date_seen": "2026-10-24"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/mukul975_anthropic-cybersecurity-skills",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/mukul975_anthropic-cybersecurity-skills",
-      "event_date": "2026-10-24",
-      "date_seen": "2026-10-24"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/nvidia_cosmos",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/nvidia_cosmos",
-      "event_date": "2026-10-24",
-      "date_seen": "2026-10-24"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/modular_modular",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/modular_modular",
-      "event_date": "2026-10-24",
-      "date_seen": "2026-10-24"
-    },
     {
       "key": "github.com/aws/agent-toolkit-for-aws",
       "canonical_url": "https://github.com/aws/agent-toolkit-for-aws",
@@ -1857,6 +1785,48 @@
       "canonical_url": "https://nightvoyager.top/github-explore/reports/openclaw_openclaw",
       "event_date": "2026-11-23",
       "date_seen": "2026-11-23"
+    },
+    {
+      "key": "hf:baidu/ernie-5.5-flash-preview",
+      "canonical_url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview",
+      "event_date": "2026-11-23",
+      "date_seen": "2026-11-24"
+    },
+    {
+      "key": "hf:inclusionai/ling-3.2-air",
+      "canonical_url": "https://huggingface.co/inclusionAI/Ling-3.2-air",
+      "event_date": "2026-11-23",
+      "date_seen": "2026-11-24"
+    },
+    {
+      "key": "hf:tencent/omnievie-4b",
+      "canonical_url": "https://huggingface.co/tencent/OmniEVIE-4B",
+      "event_date": "2026-11-24",
+      "date_seen": "2026-11-24"
+    },
+    {
+      "key": "github.com/unslothai/unsloth",
+      "canonical_url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.923-beta",
+      "event_date": "2026-11-23",
+      "date_seen": "2026-11-24"
+    },
+    {
+      "key": "github.com/hkuds/nanobot",
+      "canonical_url": "https://github.com/HKUDS/nanobot",
+      "event_date": "2026-11-24",
+      "date_seen": "2026-11-24"
+    },
+    {
+      "key": "github.com/aden-hive/hive",
+      "canonical_url": "https://github.com/aden-hive/hive",
+      "event_date": "2026-11-24",
+      "date_seen": "2026-11-24"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/automatic1111_stable-diffusion-webui",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/automatic1111_stable-diffusion-webui",
+      "event_date": "2026-11-24",
+      "date_seen": "2026-11-24"
     }
   ]
 }
