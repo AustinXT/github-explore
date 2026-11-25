@@ -1,141 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-11-24",
+    "last_run": "2026-11-25",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/aws/agent-toolkit-for-aws",
-      "canonical_url": "https://github.com/aws/agent-toolkit-for-aws",
-      "event_date": "2026-10-24",
-      "date_seen": "2026-10-25"
-    },
-    {
-      "key": "github.com/nutlope/hallmark",
-      "canonical_url": "https://github.com/Nutlope/hallmark",
-      "event_date": "2026-10-24",
-      "date_seen": "2026-10-25"
-    },
-    {
-      "key": "github.com/google-gemini/gemini-cli",
-      "canonical_url": "https://github.com/google-gemini/gemini-cli",
-      "event_date": "2026-10-24",
-      "date_seen": "2026-10-25"
-    },
-    {
-      "key": "github.com/makecindy/cindy",
-      "canonical_url": "https://github.com/makecindy/cindy",
-      "event_date": "2026-10-24",
-      "date_seen": "2026-10-25"
-    },
-    {
-      "key": "github.com/internrobotics/internw0",
-      "canonical_url": "https://github.com/InternRobotics/InternW0",
-      "event_date": "2026-10-23",
-      "date_seen": "2026-10-25"
-    },
-    {
-      "key": "github.com/theorem-labs/oss-verify-proofs",
-      "canonical_url": "https://github.com/theorem-labs/oss-verify-proofs",
-      "event_date": "2026-10-22",
-      "date_seen": "2026-10-25"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/pbakaus_impeccable",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/pbakaus_impeccable/",
-      "event_date": "2026-10-25",
-      "date_seen": "2026-10-25"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/modelcontextprotocol_servers",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/modelcontextprotocol_servers/",
-      "event_date": "2026-10-25",
-      "date_seen": "2026-10-25"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/huggingface_skills",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/huggingface_skills/",
-      "event_date": "2026-10-25",
-      "date_seen": "2026-10-25"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/vercel-labs_agent-browser",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/vercel-labs_agent-browser/",
-      "event_date": "2026-10-25",
-      "date_seen": "2026-10-25"
-    },
-    {
-      "key": "github.com/pollen-robotics/microduck",
-      "canonical_url": "https://github.com/pollen-robotics/microduck",
-      "event_date": "2026-10-25",
-      "date_seen": "2026-10-25"
-    },
-    {
-      "key": "github.com/tauricresearch/tradingagents",
-      "canonical_url": "https://github.com/TauricResearch/TradingAgents",
-      "event_date": "2026-10-25",
-      "date_seen": "2026-10-25"
-    },
-    {
-      "key": "github.com/renhuai123/ziwei-doushu",
-      "canonical_url": "https://github.com/Renhuai123/ziwei-doushu",
-      "event_date": "2026-10-25",
-      "date_seen": "2026-10-25"
-    },
-    {
-      "key": "github.com/jetbrains/thinkrail",
-      "canonical_url": "https://github.com/JetBrains/thinkrail",
-      "event_date": "2026-10-25",
-      "date_seen": "2026-10-25"
-    },
-    {
-      "key": "github.com/coollabsio/coolify",
-      "canonical_url": "https://github.com/coollabsio/coolify",
-      "event_date": "2026-10-25",
-      "date_seen": "2026-10-25"
-    },
-    {
-      "key": "github.com/agricidaniel/claude-seo",
-      "canonical_url": "https://github.com/AgriciDaniel/claude-seo",
-      "event_date": "2026-10-25",
-      "date_seen": "2026-10-25"
-    },
-    {
-      "key": "github.com/shiyu-coder/kronos",
-      "canonical_url": "https://github.com/shiyu-coder/kronos",
-      "event_date": "2026-10-16",
-      "date_seen": "2026-10-25"
-    },
-    {
-      "key": "hf:nanbeige/nanbeige4.3-33b",
-      "canonical_url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B",
-      "event_date": "2026-10-24",
-      "date_seen": "2026-10-25"
-    },
-    {
-      "key": "github.com/zhangshuibai/molten",
-      "canonical_url": "https://github.com/zhangshuibai/molten",
-      "event_date": "2026-10-25",
-      "date_seen": "2026-10-25"
-    },
-    {
-      "key": "github.com/codician-team/diffinery",
-      "canonical_url": "https://github.com/codician-team/diffinery",
-      "event_date": "2026-10-25",
-      "date_seen": "2026-10-25"
-    },
-    {
-      "key": "github.com/now-join-us/cue-agent",
-      "canonical_url": "https://github.com/Now-Join-Us/cue-agent",
-      "event_date": "2026-10-25",
-      "date_seen": "2026-10-25"
-    },
-    {
-      "key": "github.com/ersingvn/ludra",
-      "canonical_url": "https://github.com/ersingvn/ludra",
-      "event_date": "2026-10-24",
-      "date_seen": "2026-10-25"
-    },
     {
       "key": "github.com/nvidia/skillspector",
       "canonical_url": "https://github.com/NVIDIA/SkillSpector",
@@ -1827,6 +1695,36 @@
       "canonical_url": "https://nightvoyager.top/github-explore/reports/automatic1111_stable-diffusion-webui",
       "event_date": "2026-11-24",
       "date_seen": "2026-11-24"
+    },
+    {
+      "key": "hf:prism-ml/ternary-bonsai-2.5-27b-gguf",
+      "canonical_url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
+      "event_date": "2026-11-24",
+      "date_seen": "2026-11-25"
+    },
+    {
+      "key": "github.com/microsoft/deepspeed",
+      "canonical_url": "https://github.com/microsoft/DeepSpeed/releases/tag/v0.20.1",
+      "event_date": "2026-11-24",
+      "date_seen": "2026-11-25"
+    },
+    {
+      "key": "github.com/ollama/ollama",
+      "canonical_url": "https://github.com/ollama/ollama/releases/tag/v0.40.18",
+      "event_date": "2026-11-24",
+      "date_seen": "2026-11-25"
+    },
+    {
+      "key": "github.com/lukasalthoff/scinet",
+      "canonical_url": "https://github.com/lukasalthoff/scinet",
+      "event_date": "2026-11-25",
+      "date_seen": "2026-11-25"
+    },
+    {
+      "key": "github.com/shiyu-coder/kronos",
+      "canonical_url": "https://github.com/shiyu-coder/kronos",
+      "event_date": "2026-11-03",
+      "date_seen": "2026-11-25"
     }
   ]
 }
