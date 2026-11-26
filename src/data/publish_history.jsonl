@@ -431,3 +431,4 @@
 {"recorded_at": "2026-11-22T09:26:12.240993+00:00", "slug": "nginx_nginx", "title": null, "state": "published", "published_at": "2026-11-22", "reason": "自动生成", "ci_run_id": "45005519913"}
 {"recorded_at": "2026-11-22T17:54:20.424838+00:00", "slug": "xiaoyouchr_ghost-downloader-3", "title": null, "state": "published", "published_at": "2026-11-22", "reason": "自动生成", "ci_run_id": "45049662121"}
 {"recorded_at": "2026-11-23T14:14:05.435717+00:00", "slug": "mjmirza_app-store-compliance", "title": null, "state": "published", "published_at": "2026-11-23", "reason": "自动生成", "ci_run_id": "45187970367"}
+{"recorded_at": "2026-11-26T16:30:04.040447+00:00", "slug": "jdx_mise", "title": null, "state": "published", "published_at": "2026-11-26", "reason": "自动生成", "ci_run_id": "45856073686"}
