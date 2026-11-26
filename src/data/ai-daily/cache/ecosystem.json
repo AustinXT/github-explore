@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_run": "2026-11-25",
+    "last_run": "2026-11-26",
     "window_days": 30
   },
   "entries": [
@@ -1725,6 +1725,42 @@
       "canonical_url": "https://github.com/shiyu-coder/kronos",
       "event_date": "2026-11-03",
       "date_seen": "2026-11-25"
+    },
+    {
+      "key": "github.com/huggingface/trl",
+      "canonical_url": "https://github.com/huggingface/trl/releases/tag/v1.19.0",
+      "event_date": "2026-11-25",
+      "date_seen": "2026-11-26"
+    },
+    {
+      "key": "github.com/open-webui/open-webui",
+      "canonical_url": "https://github.com/open-webui/open-webui/releases/tag/v0.13.5",
+      "event_date": "2026-11-25",
+      "date_seen": "2026-11-26"
+    },
+    {
+      "key": "github.com/jdx/mise",
+      "canonical_url": "https://github.com/jdx/mise",
+      "event_date": "2026-11-25",
+      "date_seen": "2026-11-26"
+    },
+    {
+      "key": "github.com/lexmount/moli",
+      "canonical_url": "https://github.com/lexmount/moli",
+      "event_date": "2026-11-25",
+      "date_seen": "2026-11-26"
+    },
+    {
+      "key": "github.com/christopherowen/spark-ds41f",
+      "canonical_url": "https://github.com/christopherowen/spark-ds41f",
+      "event_date": "2026-11-25",
+      "date_seen": "2026-11-26"
+    },
+    {
+      "key": "github.com/msuiche/weightless",
+      "canonical_url": "https://github.com/msuiche/weightless",
+      "event_date": "2026-11-25",
+      "date_seen": "2026-11-26"
     }
   ]
 }
