@@ -3,11 +3,11 @@
     "name": "obra/superpowers",
     "url": "https://github.com/obra/superpowers",
     "language": "Shell",
-    "stars": 325705,
-    "forks": 28897,
+    "stars": 326507,
+    "forks": 28969,
     "description": "An agentic skills framework & software development methodology that works.",
-    "last_seen": "2026-11-24",
-    "trending_days": 107
+    "last_seen": "2026-11-25",
+    "trending_days": 108
   },
   {
     "name": "mattpocock/skills",
@@ -113,11 +113,11 @@
     "name": "mvanhorn/last30days-skill",
     "url": "https://github.com/mvanhorn/last30days-skill",
     "language": "Python",
-    "stars": 74108,
-    "forks": 6535,
+    "stars": 75003,
+    "forks": 6608,
     "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-    "last_seen": "2026-11-24",
-    "trending_days": 28
+    "last_seen": "2026-11-25",
+    "trending_days": 29
   },
   {
     "name": "shiyu-coder/Kronos",
@@ -180,6 +180,16 @@
     "trending_days": 26
   },
   {
+    "name": "cathrynlavery/diagram-design",
+    "url": "https://github.com/cathrynlavery/diagram-design",
+    "language": "HTML",
+    "stars": 72892,
+    "forks": 4849,
+    "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+    "last_seen": "2026-11-25",
+    "trending_days": 25
+  },
+  {
     "name": "google/adk-go",
     "url": "https://github.com/google/adk-go",
     "language": "Go",
@@ -207,16 +217,6 @@
     "forks": 762,
     "description": "A list of open source games.",
     "last_seen": "2025-12-04",
-    "trending_days": 24
-  },
-  {
-    "name": "cathrynlavery/diagram-design",
-    "url": "https://github.com/cathrynlavery/diagram-design",
-    "language": "HTML",
-    "stars": 71894,
-    "forks": 4797,
-    "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-    "last_seen": "2026-11-24",
     "trending_days": 24
   },
   {
@@ -267,6 +267,16 @@
     "forks": 4511,
     "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
     "last_seen": "2026-10-18",
+    "trending_days": 22
+  },
+  {
+    "name": "cursor/plugins",
+    "url": "https://github.com/cursor/plugins",
+    "language": "TypeScript",
+    "stars": 19499,
+    "forks": 2103,
+    "description": "Cursor plugin specification and official plugins",
+    "last_seen": "2026-11-25",
     "trending_days": 22
   },
   {
@@ -340,13 +350,13 @@
     "trending_days": 22
   },
   {
-    "name": "cursor/plugins",
-    "url": "https://github.com/cursor/plugins",
-    "language": "TypeScript",
-    "stars": 19148,
-    "forks": 2070,
-    "description": "Cursor plugin specification and official plugins",
-    "last_seen": "2026-11-24",
+    "name": "HKUDS/CLI-Anything",
+    "url": "https://github.com/hkuds/cli-anything",
+    "language": "Python",
+    "stars": 65580,
+    "forks": 5960,
+    "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+    "last_seen": "2026-11-25",
     "trending_days": 21
   },
   {
@@ -377,16 +387,6 @@
     "forks": 626,
     "description": "Open-Source Memory Engine for LLMs, AI Agents & Multi-Agent Systems",
     "last_seen": "2025-12-02",
-    "trending_days": 20
-  },
-  {
-    "name": "HKUDS/CLI-Anything",
-    "url": "https://github.com/hkuds/cli-anything",
-    "language": "Python",
-    "stars": 64639,
-    "forks": 5890,
-    "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-    "last_seen": "2026-11-24",
     "trending_days": 20
   },
   {
@@ -520,6 +520,16 @@
     "trending_days": 16
   },
   {
+    "name": "jingyaogong/minimind",
+    "url": "https://github.com/jingyaogong/minimind",
+    "language": "Python",
+    "stars": 70881,
+    "forks": 9212,
+    "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+    "last_seen": "2026-11-25",
+    "trending_days": 16
+  },
+  {
     "name": "K-Dense-AI/scientific-agent-skills",
     "url": "https://github.com/k-dense-ai/scientific-agent-skills",
     "language": "Python",
@@ -567,16 +577,6 @@
     "forks": 449,
     "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more",
     "last_seen": "2026-06-06",
-    "trending_days": 15
-  },
-  {
-    "name": "jingyaogong/minimind",
-    "url": "https://github.com/jingyaogong/minimind",
-    "language": "Python",
-    "stars": 70115,
-    "forks": 9126,
-    "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
-    "last_seen": "2026-11-24",
     "trending_days": 15
   },
   {
@@ -760,6 +760,16 @@
     "trending_days": 13
   },
   {
+    "name": "google-labs-code/stitch-skills",
+    "url": "https://github.com/google-labs-code/stitch-skills",
+    "language": "TypeScript",
+    "stars": 12931,
+    "forks": 1535,
+    "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+    "last_seen": "2026-11-25",
+    "trending_days": 13
+  },
+  {
     "name": "HKUDS/DeepTutor",
     "url": "https://github.com/hkuds/deeptutor",
     "language": "Python",
@@ -857,16 +867,6 @@
     "forks": 2537,
     "description": "None",
     "last_seen": "2026-09-12",
-    "trending_days": 12
-  },
-  {
-    "name": "google-labs-code/stitch-skills",
-    "url": "https://github.com/google-labs-code/stitch-skills",
-    "language": "TypeScript",
-    "stars": 12599,
-    "forks": 1523,
-    "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-    "last_seen": "2026-11-24",
     "trending_days": 12
   },
   {
@@ -970,6 +970,16 @@
     "trending_days": 12
   },
   {
+    "name": "toeverything/AFFiNE",
+    "url": "https://github.com/toeverything/affine",
+    "language": "TypeScript",
+    "stars": 78403,
+    "forks": 5717,
+    "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
+    "last_seen": "2026-11-25",
+    "trending_days": 12
+  },
+  {
     "name": "VectifyAI/PageIndex",
     "url": "https://github.com/vectifyai/pageindex",
     "language": "Python",
@@ -1017,6 +1027,16 @@
     "forks": 5771,
     "description": "📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程",
     "last_seen": "2026-05-12",
+    "trending_days": 11
+  },
+  {
+    "name": "elementalsouls/Claude-BugHunter",
+    "url": "https://github.com/elementalsouls/claude-bughunter",
+    "language": "Python",
+    "stars": 22778,
+    "forks": 2338,
+    "description": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+    "last_seen": "2026-11-25",
     "trending_days": 11
   },
   {
@@ -1110,16 +1130,6 @@
     "trending_days": 11
   },
   {
-    "name": "toeverything/AFFiNE",
-    "url": "https://github.com/toeverything/affine",
-    "language": "TypeScript",
-    "stars": 77914,
-    "forks": 5697,
-    "description": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source, customizable and ready to use.",
-    "last_seen": "2026-11-24",
-    "trending_days": 11
-  },
-  {
     "name": "x1xhlol/system-prompts-and-models-of-ai-tools",
     "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
     "language": "Unknown",
@@ -1180,13 +1190,13 @@
     "trending_days": 10
   },
   {
-    "name": "elementalsouls/Claude-BugHunter",
-    "url": "https://github.com/elementalsouls/claude-bughunter",
-    "language": "Python",
-    "stars": 21274,
-    "forks": 2221,
-    "description": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
-    "last_seen": "2026-11-24",
+    "name": "firecrawl/firecrawl",
+    "url": "https://github.com/firecrawl/firecrawl",
+    "language": "TypeScript",
+    "stars": 209896,
+    "forks": 10977,
+    "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
+    "last_seen": "2026-11-25",
     "trending_days": 10
   },
   {
@@ -1397,16 +1407,6 @@
     "forks": 1944,
     "description": "Official Compound Engineering plugin for Claude Code, Codex, Cursor, and more",
     "last_seen": "2026-08-04",
-    "trending_days": 9
-  },
-  {
-    "name": "firecrawl/firecrawl",
-    "url": "https://github.com/firecrawl/firecrawl",
-    "language": "TypeScript",
-    "stars": 208808,
-    "forks": 10910,
-    "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
-    "last_seen": "2026-11-24",
     "trending_days": 9
   },
   {
@@ -1810,6 +1810,16 @@
     "trending_days": 8
   },
   {
+    "name": "openvinotoolkit/openvino",
+    "url": "https://github.com/openvinotoolkit/openvino",
+    "language": "C++",
+    "stars": 12625,
+    "forks": 3709,
+    "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+    "last_seen": "2026-11-25",
+    "trending_days": 8
+  },
+  {
     "name": "penpot/penpot",
     "url": "https://github.com/penpot/penpot",
     "language": "Clojure",
@@ -1880,6 +1890,16 @@
     "trending_days": 8
   },
   {
+    "name": "Tracer-Cloud/opensre",
+    "url": "https://github.com/tracer-cloud/opensre",
+    "language": "Python",
+    "stars": 15475,
+    "forks": 2027,
+    "description": "The open-source agent for CI/CD reliability.",
+    "last_seen": "2026-11-25",
+    "trending_days": 8
+  },
+  {
     "name": "vectorize-io/hindsight",
     "url": "https://github.com/vectorize-io/hindsight",
     "language": "Python",
@@ -1897,6 +1917,16 @@
     "forks": 798,
     "description": "RAG on Everything with LEANN. Enjoy 97% storage savings while running a fast, accurate, and 100% private RAG application on your personal device.",
     "last_seen": "2026-01-19",
+    "trending_days": 8
+  },
+  {
+    "name": "zhouxiaoka/autoclip",
+    "url": "https://github.com/zhouxiaoka/autoclip",
+    "language": "Python",
+    "stars": 16083,
+    "forks": 2322,
+    "description": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+    "last_seen": "2026-11-25",
     "trending_days": 8
   },
   {
@@ -2090,6 +2120,16 @@
     "trending_days": 7
   },
   {
+    "name": "mjmirza/app-store-compliance",
+    "url": "https://github.com/mjmirza/app-store-compliance",
+    "language": "Shell",
+    "stars": 6404,
+    "forks": 411,
+    "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 124 documented rejection patterns and fixes, privacy manifest and Data safety checks, 114 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
+    "last_seen": "2026-11-25",
+    "trending_days": 7
+  },
+  {
     "name": "MoonshotAI/kimi-cli",
     "url": "https://github.com/moonshotai/kimi-cli",
     "language": "Python",
@@ -2130,6 +2170,16 @@
     "trending_days": 7
   },
   {
+    "name": "nginx/nginx",
+    "url": "https://github.com/nginx/nginx",
+    "language": "C",
+    "stars": 33339,
+    "forks": 8405,
+    "description": "The official NGINX Open Source repository.",
+    "last_seen": "2026-11-25",
+    "trending_days": 7
+  },
+  {
     "name": "openai/openai-agents-python",
     "url": "https://github.com/openai/openai-agents-python",
     "language": "Python",
@@ -2137,16 +2187,6 @@
     "forks": 3670,
     "description": "A lightweight, powerful framework for multi-agent workflows",
     "last_seen": "2026-04-20",
-    "trending_days": 7
-  },
-  {
-    "name": "openvinotoolkit/openvino",
-    "url": "https://github.com/openvinotoolkit/openvino",
-    "language": "C++",
-    "stars": 12433,
-    "forks": 3692,
-    "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
-    "last_seen": "2026-11-24",
     "trending_days": 7
   },
   {
@@ -2270,16 +2310,6 @@
     "trending_days": 7
   },
   {
-    "name": "Tracer-Cloud/opensre",
-    "url": "https://github.com/tracer-cloud/opensre",
-    "language": "Python",
-    "stars": 15138,
-    "forks": 2007,
-    "description": "The open-source agent for CI/CD reliability.",
-    "last_seen": "2026-11-24",
-    "trending_days": 7
-  },
-  {
     "name": "twitter/the-algorithm",
     "url": "https://github.com/twitter/the-algorithm",
     "language": "Scala",
@@ -2320,6 +2350,16 @@
     "trending_days": 7
   },
   {
+    "name": "XiaoYouChR/Ghost-Downloader-3",
+    "url": "https://github.com/xiaoyouchr/ghost-downloader-3",
+    "language": "Python",
+    "stars": 18139,
+    "forks": 1081,
+    "description": "The only downloader you need. 下载器的集大成者。",
+    "last_seen": "2026-11-25",
+    "trending_days": 7
+  },
+  {
     "name": "yt-dlp/yt-dlp",
     "url": "https://github.com/yt-dlp/yt-dlp",
     "language": "Python",
@@ -2337,16 +2377,6 @@
     "forks": 5257,
     "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
     "last_seen": "2026-09-26",
-    "trending_days": 7
-  },
-  {
-    "name": "zhouxiaoka/autoclip",
-    "url": "https://github.com/zhouxiaoka/autoclip",
-    "language": "Python",
-    "stars": 15259,
-    "forks": 2261,
-    "description": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
-    "last_seen": "2026-11-24",
     "trending_days": 7
   },
   {
@@ -2770,16 +2800,6 @@
     "trending_days": 6
   },
   {
-    "name": "mjmirza/app-store-compliance",
-    "url": "https://github.com/mjmirza/app-store-compliance",
-    "language": "Shell",
-    "stars": 5767,
-    "forks": 374,
-    "description": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 124 documented rejection patterns and fixes, privacy manifest and Data safety checks, 112 tracked deadlines (EU AI Act, DSA, COPPA, age laws), and a skill for AI coding agents.",
-    "last_seen": "2026-11-24",
-    "trending_days": 6
-  },
-  {
     "name": "mountain-loop/yaak",
     "url": "https://github.com/mountain-loop/yaak",
     "language": "TypeScript",
@@ -2797,16 +2817,6 @@
     "forks": 279,
     "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
     "last_seen": "2026-10-02",
-    "trending_days": 6
-  },
-  {
-    "name": "nginx/nginx",
-    "url": "https://github.com/nginx/nginx",
-    "language": "C",
-    "stars": 33190,
-    "forks": 8393,
-    "description": "The official NGINX Open Source repository.",
-    "last_seen": "2026-11-24",
     "trending_days": 6
   },
   {
@@ -2957,16 +2967,6 @@
     "forks": 935,
     "description": "AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.",
     "last_seen": "2026-06-30",
-    "trending_days": 6
-  },
-  {
-    "name": "XiaoYouChR/Ghost-Downloader-3",
-    "url": "https://github.com/xiaoyouchr/ghost-downloader-3",
-    "language": "Python",
-    "stars": 17227,
-    "forks": 1045,
-    "description": "The only downloader you need. 下载器的集大成者。",
-    "last_seen": "2026-11-24",
     "trending_days": 6
   },
   {
