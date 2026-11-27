@@ -1379,6 +1379,8 @@ entries:
   jcodesmore_ai-website-cloner-template:
   - ai-agent
   - web-framework
+  jdx_mise:
+  - ai-agent
   jekyll_jekyll:
   - database
   jellyfin_jellyfin:
