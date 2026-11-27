@@ -1,123 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-11-26",
+    "last_run": "2026-11-27",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/nvidia/skillspector",
-      "canonical_url": "https://github.com/NVIDIA/SkillSpector",
-      "event_date": "2026-10-26",
-      "date_seen": "2026-10-27"
-    },
-    {
-      "key": "github.com/nightly-labs/openbot",
-      "canonical_url": "https://github.com/nightly-labs/openbot",
-      "event_date": "2026-10-26",
-      "date_seen": "2026-10-27"
-    },
-    {
-      "key": "github.com/panniantong/agent-reach",
-      "canonical_url": "https://github.com/Panniantong/Agent-Reach",
-      "event_date": "2026-10-26",
-      "date_seen": "2026-10-27"
-    },
-    {
-      "key": "github.com/gitroomhq/postiz-app",
-      "canonical_url": "https://github.com/gitroomhq/postiz-app",
-      "event_date": "2026-10-26",
-      "date_seen": "2026-10-27"
-    },
-    {
-      "key": "github.com/alchaincyf/huashu-design",
-      "canonical_url": "https://github.com/alchaincyf/huashu-design",
-      "event_date": "2026-10-26",
-      "date_seen": "2026-10-27"
-    },
-    {
-      "key": "github.com/multica-ai/andrej-karpathy-skills",
-      "canonical_url": "https://github.com/multica-ai/andrej-karpathy-skills",
-      "event_date": "2026-10-26",
-      "date_seen": "2026-10-27"
-    },
-    {
-      "key": "github.com/martinkeith700/ruyijs",
-      "canonical_url": "https://github.com/martinkeith700/ruyiJS",
-      "event_date": "2026-10-26",
-      "date_seen": "2026-10-27"
-    },
-    {
-      "key": "github.com/pinecone-io/pg_pinecone",
-      "canonical_url": "https://github.com/pinecone-io/pg_pinecone",
-      "event_date": "2026-10-26",
-      "date_seen": "2026-10-27"
-    },
-    {
-      "key": "github.com/yaojingang/geoinflow",
-      "canonical_url": "https://github.com/yaojingang/GEOInflow",
-      "event_date": "2026-10-26",
-      "date_seen": "2026-10-27"
-    },
-    {
-      "key": "github.com/smhanov/agentloop",
-      "canonical_url": "https://github.com/smhanov/agentloop",
-      "event_date": "2026-10-25",
-      "date_seen": "2026-10-27"
-    },
-    {
-      "key": "github.com/google/adk-go",
-      "canonical_url": "https://github.com/google/adk-go",
-      "event_date": "2026-10-27",
-      "date_seen": "2026-10-27"
-    },
-    {
-      "key": "github.com/microsoft/call-center-ai",
-      "canonical_url": "https://github.com/microsoft/call-center-ai",
-      "event_date": "2026-10-27",
-      "date_seen": "2026-10-27"
-    },
-    {
-      "key": "github.com/volcengine/verl",
-      "canonical_url": "https://github.com/volcengine/verl",
-      "event_date": "2026-10-27",
-      "date_seen": "2026-10-27"
-    },
-    {
-      "key": "github.com/milvus-io/milvus",
-      "canonical_url": "https://github.com/milvus-io/milvus",
-      "event_date": "2026-10-27",
-      "date_seen": "2026-10-27"
-    },
-    {
-      "key": "github.com/sansan0/trendradar",
-      "canonical_url": "https://github.com/sansan0/TrendRadar",
-      "event_date": "2026-10-27",
-      "date_seen": "2026-10-27"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/composiohq_awesome-claude-skills",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/composiohq_awesome-claude-skills/",
-      "event_date": "2026-10-27",
-      "date_seen": "2026-10-27"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/github_spec-kit",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/github_spec-kit/",
-      "event_date": "2026-10-27",
-      "date_seen": "2026-10-27"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/browser-use_browser-use",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/browser-use_browser-use/",
-      "event_date": "2026-10-27",
-      "date_seen": "2026-10-27"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/anthropics_skills",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/anthropics_skills/",
-      "event_date": "2026-10-27",
-      "date_seen": "2026-10-27"
-    },
     {
       "key": "github.com/hkuds/deeptutor",
       "canonical_url": "https://github.com/HKUDS/DeepTutor",
@@ -1761,6 +1647,54 @@
       "canonical_url": "https://github.com/msuiche/weightless",
       "event_date": "2026-11-25",
       "date_seen": "2026-11-26"
+    },
+    {
+      "key": "github.com/jundot/omlx",
+      "canonical_url": "https://github.com/jundot/omlx",
+      "event_date": "2026-11-26",
+      "date_seen": "2026-11-27"
+    },
+    {
+      "key": "github.com/anomalyco/opencode",
+      "canonical_url": "https://github.com/anomalyco/opencode",
+      "event_date": "2026-11-26",
+      "date_seen": "2026-11-27"
+    },
+    {
+      "key": "github.com/zhouxiaoka/autoclip",
+      "canonical_url": "https://github.com/zhouxiaoka/autoclip",
+      "event_date": "2026-11-26",
+      "date_seen": "2026-11-27"
+    },
+    {
+      "key": "github.com/significant-gravitas/autogpt",
+      "canonical_url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "event_date": "2026-11-26",
+      "date_seen": "2026-11-27"
+    },
+    {
+      "key": "github.com/solidjs/solid",
+      "canonical_url": "https://github.com/solidjs/solid",
+      "event_date": "2026-11-26",
+      "date_seen": "2026-11-27"
+    },
+    {
+      "key": "github.com/longbridge/nsh",
+      "canonical_url": "https://github.com/longbridge/nsh",
+      "event_date": "2026-11-26",
+      "date_seen": "2026-11-27"
+    },
+    {
+      "key": "github.com/huacnlee/cargo",
+      "canonical_url": "https://github.com/huacnlee/cargo",
+      "event_date": "2026-11-26",
+      "date_seen": "2026-11-27"
+    },
+    {
+      "key": "https://nightvoyager.top/github-explore/reports/browser-use_browser-use",
+      "canonical_url": "https://nightvoyager.top/github-explore/reports/browser-use_browser-use/",
+      "event_date": "2026-11-26",
+      "date_seen": "2026-11-27"
     }
   ]
 }
