@@ -432,3 +432,4 @@
 {"recorded_at": "2026-11-22T17:54:20.424838+00:00", "slug": "xiaoyouchr_ghost-downloader-3", "title": null, "state": "published", "published_at": "2026-11-22", "reason": "自动生成", "ci_run_id": "45049662121"}
 {"recorded_at": "2026-11-23T14:14:05.435717+00:00", "slug": "mjmirza_app-store-compliance", "title": null, "state": "published", "published_at": "2026-11-23", "reason": "自动生成", "ci_run_id": "45187970367"}
 {"recorded_at": "2026-11-26T16:30:04.040447+00:00", "slug": "jdx_mise", "title": null, "state": "published", "published_at": "2026-11-26", "reason": "自动生成", "ci_run_id": "45856073686"}
+{"recorded_at": "2026-11-28T11:33:44.534676+00:00", "slug": "ashhart_tensorfold", "title": null, "state": "published", "published_at": "2026-11-28", "reason": "自动生成", "ci_run_id": "46138256956"}

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { max-width: 680px; margin: 0 auto; padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #3e3e3e; background: #fff; }
+p { font-size: 15px !important; line-height: 2 !important; margin: 0 !important;
+    padding: 0.5em 1.2em !important; text-align: justify !important; }
+p + p { margin-top: 0 !important; }
+h2 { font-size: 18px !important; color: #e51f42 !important; text-align: center !important;
+    margin: 24px 0 !important; padding: 0 !important; }
+h3 { font-size: 15px !important; font-weight: bold !important; color: #3e3e3e !important;
+    text-align: left !important; margin: 16px 0 !important; padding: 0 0 0 1.2em !important; }
+h4 { font-size: 15px !important; color: rgb(0,122,170) !important; margin: 12px 0 8px 0 !important; }
+ul, ol { padding-left: 2em !important; margin: 1em 0 !important; font-size: 15px !important; }
+li { margin: 0.5em 0 !important; line-height: 1.8em !important; font-size: 15px !important;
+    color: #3e3e3e !important; }
+ul ul, ul ol, ol ul, ol ol { margin: 0 !important; padding-left: 1.2em !important; }
+blockquote { border-left: 4px solid #888 !important; padding: 8px 16px !important;
+    margin: 1em 0 !important; color: #666 !important; background: #f9f9f9 !important; }
+blockquote > p { margin: 0.5em 0 !important; padding: 0 !important; }
+pre { font-size: 14px !important; line-height: 1.4em !important; color: #3e3e3e !important;
+    background: #f8f8f8 !important; padding: 12px 16px !important; border-radius: 4px !important;
+    overflow: auto !important; margin: 1em 0 !important; }
+code { background: #f4f4f4 !important; color: #c7254e !important; padding: 2px 4px !important;
+    border-radius: 3px !important; font-size: 90% !important; }
+pre code { background: transparent !important; color: inherit !important; padding: 0 !important; }
+strong { font-weight: bold !important; color: #3e3e3e !important; }
+a { color: rgb(0,122,170) !important; text-decoration: none !important; }
+img { max-width: 100% !important; height: auto !important; display: block !important;
+    margin: 1em auto !important; border-radius: 4px !important; }
+table { border-collapse: collapse !important; width: 100% !important; margin: 1em 0 !important;
+    font-size: 14px !important; }
+th, td { border: 1px solid #ddd !important; padding: 6px 10px !important; text-align: left !important; }
+th { background: #f4f4f4 !important; font-weight: bold !important; }
+hr { border: none !important; border-top: 1px solid #ddd !important; margin: 1.5em 0 !important; }
+</style>
+</head>
+<body>
+
+
+<blockquote>
+<p>GitHub: <a href="https://github.com/ashhart/TensorFold">https://github.com/ashhart/TensorFold</a></p>
+</blockquote>
+<h2>一句话总结</h2>
+<p>TensorFold 是一个用 Zig 从零写起的本地大模型推理运行时，它真正的差异化不是「跑得比 llama.cpp 快」，而是把「换内核、换后端、开推测解码之后，输出 token 必须一个不差地保持相同」做成了<strong>可被第三方复核的工程机制</strong>——kernel 契约的 5 道验证门、带 SHA 指纹的实验收据、以及一份任何 CI 机器都能跑的等价性不变式台账。</p>
+<h2>值得关注的理由</h2>
+<ol><li><strong>精确性被提升为不变式，而非测试目标：</strong>每个 GPU kernel 必须通过 5 道门（float64 参考无容差比对、重复与别名、形状与 tile 边界、fp32 精确和、芯片 launch limits），且<strong>每道门都埋了一个故意做坏的对照样本</strong>——对照样本没报红，这次验证结果就作废。这是本项目最值得抄的机制，竞品完全没有。</li><li><strong>「先算上限再动手」的性能工程方法论：</strong>低于 3% 收益门槛的优化根本不许写代码，建完不达标的记进 <code>failed</code> 台账。文档里甚至给了完整算例（GDN scan 上限 &lt;1.5%，直接不建）。把「花两周优化了个 2% 的 kernel」这类浪费变成制度性禁止。</li><li><strong>一份带 commit SHA、原始日志与机器码指纹的性能证据链：</strong><code>docs/receipts/</code> 下 54 个实验收据目录，配合 A-B-B-A 测量法、丢弃 throttle 轮次、每个测量单元记录 token hash——这是「性能声明可被第三方按同一方法复现或反驳」的完整基础设施，267 万行代码里它的改动量与最核心的 CUDA 内核相当。</li><li><strong>一个罕见的 AI-native 人机协同样本：</strong>日均 234 个 commit 在人类主导项目里物理上不可能，它靠作者自建的 ATC（Agent Traffic Control）协议协调 200 多位贡献者与编码 agent，把「贡献条件」写成 agent 可执行的清单。人定义契约与验收 oracle，agent 批量执行实现——这套人机分工本身就是一个值得单独研究的范式。</li></ol>
+<h2>项目展示</h2>
+<p><img alt="TensorFold 主视觉" src="https://raw.githubusercontent.com/ashhart/TensorFold/main/assets/tensorfold-hero.png"/></p>
+<blockquote>
+<p>官网主视觉：一句「Run open models on the GPUs you own」把定位钉死在「自有硬件 + 本地优先」上。</p>
+</blockquote>
+<p><img alt="TensorFold 性能主张" src="https://raw.githubusercontent.com/ashhart/TensorFold/main/assets/tensorfold-hero-speeds.png"/></p>
+<blockquote>
+<p>性能主张图。注意项目自己反复强调这些数字「not a like-for-like comparison」——每个数字都绑定具体模型、设置与机器。</p>
+</blockquote>
+<p><img alt="TensorFold CUDA 后端" src="https://raw.githubusercontent.com/ashhart/TensorFold/main/assets/tensorfold-cuda-banner.png"/></p>
+<blockquote>
+<p>CUDA 后端横幅：NVIDIA 不是「顺带支持」，而是与 Metal 并列的一等公民（Metal 内核 437 个文件 / CUDA 365 / HIP 71 / Vulkan 26 / XPU 31）。</p>
+</blockquote>
+<p><img alt="Starlight 运维控制台" src="https://tensorfold.dev/assets/starlight/operations.png"/></p>
+<blockquote>
+<p>企业层 Starlight（已拆仓为 <code>ashhart/tf-starlight</code>）：身份、模型访问控制、用量核算，是开源运行时之上的商业化承载层。</p>
+</blockquote>
+<p><img alt="Mac app 模型库" src="https://tensorfold.dev/assets/guide/06-model-library.png"/></p>
+<blockquote>
+<p>桌面端（Electron）的模型库界面——引擎是 Zig，外围产品是 TypeScript，这种「重内核 + 轻外壳」的分层决定了 267 万行里各语言的真实占比。</p>
+</blockquote>
+<h2>项目画像</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>数据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub</td>
+<td><a href="https://github.com/ashhart/TensorFold">https://github.com/ashhart/TensorFold</a></td>
+</tr>
+<tr>
+<td>Star / Fork</td>
+<td>2,511 / 569</td>
+</tr>
+<tr>
+<td>代码行数</td>
+<td>2,677,743 行（Zig 46.8%, JSON 38.9%, TypeScript 7.7%, Python 3.3%）</td>
+</tr>
+<tr>
+<td>项目年龄</td>
+<td>2.9 个月（仓库创建 2026-06-19，git 历史首提 2026-09-30）</td>
+</tr>
+<tr>
+<td>开发阶段</td>
+<td>密集开发（日均 234 commit，近 30 天 7,572 个）</td>
+</tr>
+<tr>
+<td>贡献模式</td>
+<td>AI-native 人机协同（205 位贡献者，主作者占 54.5%，修正身份分裂后约 70%）</td>
+</tr>
+<tr>
+<td>热度定位</td>
+<td>中等热度（细分赛道绝对头部，GitHub Trending 日榜最高 #7）</td>
+</tr>
+<tr>
+<td>许可证</td>
+<td>Apache-2.0</td>
+</tr>
+<tr>
+<td>质量评级</td>
+<td>代码[优秀] 文档[优秀] 测试[充分]</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>数据采集时间：2026-11-28。语言占比为 tokei 按有效代码行统计，与 GitHub 按字节统计的 Zig 69.6% / TypeScript 16.2% 有差异——后者把 100 万行 JSON 基线与翻译包也计入了。Open Issues 200，Open PRs 386（PR 积压是当前最大瓶颈）。</p>
+</blockquote>
+<h2>作者视角：为什么存在这个项目</h2>
+<h3>创始人/作者背景</h3>
+<p>作者 ID <code>ashhart</code>（本名 Ash），英国 TensorFold Labs LTD（公司号 17557896）唯一董事，同时以「独立 AI 系统架构师」自述，bio 写着 <em>"Independent AI systems architect building local-first AI tools and governed inference infrastructure"</em>。GitHub 账号 6.2 年，395 粉丝，39 个公开仓库——其中本项目的 star 是第二名的 22 倍，且 push 时间戳与全部仓库同为今天，是绝对主战场。</p>
+<p>值得注意的是这个仓库的<strong>规模与作者身份严重不匹配</strong>：2.9 个月、267 万行有效代码、12,626 个 commit、72 个 release、平均每 1.2 天一版、日均 234 个 commit。人类开发者在这种速率下不可能完成。仓库里的 <code>AGENTS.md</code> 揭穿了答案：作者自建了 <strong>ATC（Agent Traffic Control）</strong> 协议来协调「贡献者和编码 agent」。这是一个<strong>人机双轨</strong>的仓库——人定义架构边界、契约与验收 oracle，编码 agent 批量执行实现工作。这解释了那些高度程式化的 commit message（「tokens unchanged」「the SASS is unchanged」）、平均单次 commit 只改 4.7 个文件的窄粒度，以及前缀是模型家族名（<code>qwen27</code> / <code>glm</code> / <code>inkling2</code> / <code>flashnext</code> / <code>drama3</code>）而非动词的非常规提交规范。</p>
+<p>一个耐人寻味的外部信号：<strong>Kevin Gilbertson（PyTorch/CUDA 生态的核心人物）位列 Top 10 贡献者</strong>，贡献 183 个 commit。</p>
+<h3>问题判断</h3>
+<p>作者看到的是一个别人没认真看的问题：<strong>现有推理引擎的 kernel 全部是为「平均更快」设计的，因此没有任何一个能证明「换了内核、换了后端、开了推测解码之后，输出 token 与朴素解码完全一致」。</strong></p>
+<p>这个缺口平时不痛——MoE 路由、split-K 归约、fp16 累加、tile 边界处的容差内偏差，在短序列上表现正常，在长序列上会悄悄放大成不同 token。而它会以「偶发不同」而非「报错」的形式出现，极难在测试里发现。</p>
+<p>更具体的触发场景是<strong>企业私有化部署</strong>：客户要的不是 benchmark 分数更高，而是敢把生成结果写进业务系统、能对外承诺「同一请求在任意后端上给同一个答案」。作者把「精确性」定位成一等公民，验收条件是 token hash 相等而非 tok/s——这只有从企业客户视角倒推才能得到。</p>
+<p><strong>时机为什么是现在？</strong> 三个窗口同时打开：</p>
+<ol><li><strong>模型家族爆炸：</strong>2026 年的开源模型已达 42 个家族（<code>zig/src/families/</code> 下 2,729 个文件、649,494 行，占全部 Zig 代码的 60%+），任何单一 Python 栈都追不上接新模型的节奏——而「接新模型」正是这个仓库 70% 的 commit 内容。</li><li><strong>硬件到位：</strong>Apple M5 tensor unit 与 CUDA 13.0 的 FP4/FP8 decode 路径刚落地，<code>docs/known-issues.md</code> 里专门记着「M5 tensor unit 把 fp32 操作数截断到 10 位尾数」这类还没测过的边界。</li><li><strong>Agent 编程成熟：</strong>到 2026 年才有底气让 200 多位贡献者配合 agent 一起写 267 万行还保持结构不腐化。</li></ol>
+<h3>解法哲学</h3>
+<p>作者的选择组合在开源推理引擎里几乎找不到第二份：</p>
+<ul><li><strong>精确性 &gt; 吞吐便利：</strong>写死「A draft is accepted only when it equals the same engine's plain token」「the same token ids and the same logits bits」，并在 <code>CONTRIBUTING.md</code> 里加了一句狠话——<em>"An FP64 reference or an error bound does not make a different result acceptable, and lower-precision formats are not accepted, </em><em>even opt-in</em><em>"</em>。连用户主动要求降精度都不行。</li><li><strong>先算上限再动手：</strong>任何优化先算理论收益上限（带宽地板模型、fusion 暴露的读写量），<strong>低于服务端 3% 门槛的直接不建</strong>，建完不达标的记 <code>failed</code> 留在台账里。文档明确写道：<em>"A result just below a minimum is still below it; a skip or unavailable device is not a pass"</em>。</li><li><strong>机械化的结构约束：</strong>项目自定 <strong>600 行单文件硬上限</strong>、单行注释 ≤120 列、禁止直接调用 <code>getenv</code>（必须走 <code>platform/environment.zig</code>），并用 <code>tools/zig/lean_check.py</code> 在 CI 强制执行。验收条件不是「退出码 0」而是「<strong>新增问题数为 0</strong>」（当前 8,825 个文件 / 93 个历史遗留问题，全部继承、零新增）。</li><li><strong>诚实基准：</strong>每个数字绑定具体 checkpoint revision、种子、温度、预热次数、SM 时钟与温度状态，并主动声明「not a like-for-like comparison」。</li><li><strong>明确不做的事：</strong>不做 Python 运行时依赖、不做有损精度换速度、不做高并发 serving 竞品定位、<strong>不抄别人的代码</strong>（连把自家 helper 挪进共享头文件都要先比对 SASS 确认机器码不变）。</li></ul>
+<h3>战略意图</h3>
+<p>三层结构，商业化意图清晰：</p>
+<ol><li><strong>TensorFold</strong>（本仓库，Apache-2.0 全开源）—— 自持推理运行时</li><li><strong>Starlight</strong>（已拆仓为 <code>ashhart/tf-starlight</code>）—— 企业控制面：身份、模型访问控制、用量核算</li><li><strong>Living Weights</strong>（1.1.1 tree，仍待资格认证）—— 权重内学习</li></ol>
+<p>作者自己的动作印证了这个图景：集群控制面被主动拆出主干（<code>starlight/internal</code> 目录 988 次改动后迁出），公司实体注册，官网有 <code>/brief</code> 企业页，有 ko-fi 通道。<strong>开源策略是 genuinely open 而非 open-core</strong>——运行时全部功能开源，收费点在上面的治理层。这是很清晰的「开源引擎 + 商业控制面」SaaS 打法。</p>
+<h2>核心价值提炼</h2>
+<h3>创新之处</h3>
+<p>按新颖度 × 实用性排序：</p>
+<ol><li>
+<p><strong>Kernel Contract：5 道门 + planted control + 公开的 known findings</strong> — 新颖度 5/5 | 实用性 4/5 | 可迁移性 5/5
+   <code>zig/src/core/contract/gates.zig:26</code> 定义了一套跨 Metal/CUDA/HIP 的验证 harness：①非有限值分类与 float64 参考<strong>无容差</strong>相等 ②重复与别名（5 次字节相同、guard bytes 完好、无未声明重叠）③形状（每个 served shape + tile 边界五点；<strong>替换型 kernel 必须与被替换者逐字节相等</strong>）④fp32 精确和（harness 先在 CPU 用 fp16/bf16 重放并要求至少偏差 100 倍）⑤芯片 launch limits（M1–M5 / sm_80/86/89/120/121 / gfx1030/1100/1151/1201 / XPU GRF mode）。<strong>每道门都埋了一个故意做坏的对照样本</strong>——对照样本没报红，这次验证结果就作废（"a run where a control passes proves nothing"）。已发布 kernel 的门禁失败写成 <code>known</code> 条目<strong>必须继续复现</strong>，修复后条目不删则 run 反而失败。<code>docs/kernel-contract.md:204</code> 公开了 20 多条具体到 kernel 的 NaN 传播差异。</p>
+</li><li>
+<p><strong>推测解码的位级等价不变式 + 无 GPU 可跑的 Conformance Ledger</strong> — 新颖度 5/5 | 实用性 4/5 | 可迁移性 3/5
+   常规 speculative decoding 只保证「接受的 token 来自 target 分布」，接受路径与 target 解码逐位相等是<strong>目标而非保证</strong>。TensorFold 把它变成了保证：<code>zig/src/core/lanes/drafted.zig:102</code> 的 <code>Drafted</code> 是一个装饰器，把 target <code>Backend</code> 包一层，三处接缝（prefill→absorb、draft→hold、verify→host token 回灌），target backend 零侵入；CUDA 侧 <code>cuda_draft_precision.zig</code> 用 <code>Role = {prompt, live, proposal}</code> + <code>prompt_cutoff = 16</code> 写死 draft 的算术路径。<code>docs/conformance-ledger.md</code> 把不变式编成 C1–C5（fresh=resumed / tree=chain=plain / reproducible / stops / ties &amp; non-finite），每组列出具体测试名与它钉住了什么——<strong>并且无需 GPU 即可运行</strong>（<code>fake.zig</code> 里每个 token 是整个已喂历史的函数）。这是本项目唯一「别人没做」的楔子。</p>
+</li><li>
+<p><strong>实验收据目录 + 机器可索引的证据分级与陈旧判定</strong> — 新颖度 4/5 | 实用性 5/5 | 可迁移性 5/5
+   <code>docs/receipts/</code> 下 54 个目录，每个是一次实验的完整凭据。抽样 <code>flashnext-cuda-sampled-heads/</code>：一份五段式人写报告（<strong>Qualified scope</strong> 精确到 Zig 0.17.0 / nvcc 13.3 / <code>nvcr.io/nvidia/pytorch:26.07-py3</code> 镜像 / DGX Spark GB10 sm_121 / 驱动 580.178.04 / checkpoint <code>@b9ce18a6</code> / <code>TENSORFOLD_MEMORY_RESERVE_GIB=9</code>；<strong>Correctness</strong> 列出 parity 18 shape 全 PASS 原文、<code>lean_check.py: 428 problems, the same 428 as 1.1.8 (inherited; none added)</code>、64 cell 的 <code>--alone</code>/<code>--serial</code> 结果 <strong>0 unequal, 0 failed, 0 unmeasured</strong>；<strong>Speed</strong> 用 A-B-B-A 排位、baseline/PR 各跑两次、12 行 tok/s 表；<strong>Memory</strong>），外加 <code>commit.txt</code>、parity 命令完整 stdout、4 份 bench 完整 JSON，其他目录含原始 server log + <code>SHA256SUMS</code> + 可重放启动脚本。<code>tools/evidence_index.py</code> 把它编成 JSON，每条证据打四档 grade 并<strong>用 git 算 staleness</strong>，failed 状态从源文措辞保守读取、<strong>从不推断</strong>。</p>
+</li><li>
+<p><strong>「Bound before building」方法论 + 允许失败的优化台账</strong> — 新颖度 4/5 | 实用性 5/5 | 可迁移性 5/5
+   <code>docs/optimizing.md</code> 给的是一整套可执行规则：先算收益上限并在<strong>服务端</strong>设门槛 → one-knob test 后才给限制命名 → per-kernel audit → <strong>ncu 只在合成单 kernel 上跑，绝不在持有模型的进程上跑</strong>（GB10 统一内存下 ncu replay 会 OOM 挂机）→ split-K 部分和固定顺序合并、sum 上不用 atomics → <strong>对每个没打算改的 kernel 也要逐函数比对 SASS</strong>（"Moving a helper into a shared header can change SASS; check, don't reason about it"）→ A-B-B-A、drop page cache、记 SM clock/温度/throttle、<strong>丢掉 throttle 轮次</strong>、绝不混比 capped 与 uncapped、md5 每个 binary、每张速度表带 token hash。<code>docs/optimization-ledger.md</code>（848 行）是家族 × 优化项的状态表，格子里明写 <code>failed [#2014]</code>。</p>
+</li><li>
+<p><strong>跨后端 CUDA primitive 单一来源 + 内容指纹 allowlist + 机器码级 reason</strong> — 新颖度 5/5 | 实用性 3/5 | 可迁移性 4/5
+   <code>tools/zig/cuda_common_check.py</code> + <code>cuda_common_allowlist.json</code> 禁止在 <code>common/</code> 外复制 <code>warp_sum</code>/<code>block_sum</code>/<code>pack8</code>/<code>unpack8</code>/<code>fp4pair</code>/<code>fp8pair</code> 或内联 <code>cp.async</code>/<code>ldmatrix</code>/<code>mma.sync</code>。已有的一律进 allowlist，<strong>指纹不含行号</strong>（源码注释：「Line numbers are evidence, not the allowlist identity」），每条必须写 reason 且 reason 一律到机器码级（如「no shared fenced form exists; keep the original until a replacement has identical SASS」）。</p>
+</li><li>
+<p><strong>多语言内核经同一「契约 + records + 冻结上游字节」接缝跨 5 后端复用</strong> — 新颖度 4/5 | 实用性 4/5 | 可迁移性 4/5
+   <code>contract.Spec</code> 描述 float64 参考 / served envelope / 累加器与最长 rounding 链 / NaN 规则 / in-place 许可 / 替换型 kernel 的 <code>replaced</code> 字节基准；launch records 按后端分存（<code>registry.zig</code> + <code>hip_records.zig</code> + <code>xpu_records.zig</code> + <code>metal_pair_records.zig</code>），<strong>CUDA records 进一步按 nvcc 版本分套</strong>（因为「nvcc allocates registers differently from one release to the next」）。替换型 kernel 把被替换者的<strong>冻结字节</strong>留在仓库里当基准（<code>zig/kernels/xpu/contract_attn_upstream.cl</code>）。</p>
+</li><li>
+<p><strong>Lean 规则：600 行硬上限 + 禁直接 getenv + 「新增问题为 0」的验收</strong> — 新颖度 3/5 | 实用性 5/5 | 可迁移性 5/5
+   <code>zig/src</code> 603,254 行里超过 600 行的只有 3 个文件（其中一个是 24,457 行的 tokenizer 数据表）。commit message 里反复出现 <code>qwen27: split contract registration past main's 600-line cap</code>。<strong>这是「小文件 + 契约化 + 生成式拆分」架构的量化证据</strong>，也是并行 agent 开发不退化的关键基础设施。</p>
+</li><li>
+<p><strong>Prompt 复用 = radix 前缀树（支持分支）+ 分层 tier + lease/promise + 跨进程 imprint</strong> — 新颖度 3/5 | 实用性 5/5 | 可迁移性 5/5
+   <code>prompt_radix.zig</code> 用前缀树组织已解码行并支持分支（同前缀不同续写）；<code>kv_pool.zig</code> 的 lease + promise 让请求先承诺页；<code>kv_tier.zig</code> 管 RAM↔磁盘分层；<code>prompt_imprint.zig</code> 支持跨进程复用；<code>cache_salt_key.zig</code> 做客户端隔离。而且<strong>公开自己的失败：</strong>Kolibri-1 在 CUDA 上整页存储致共享前缀不被复用，GB10 冷 2K chat prompt 反而慢 10%（0.87 vs 0.79 s）。</p>
+</li><li>
+<p><strong>AI-native 协作协议化</strong> — 新颖度 4/5 | 实用性 4/5 | 可迁移性 4/5
+   ATC 把 issue 切成 9 个 area（<code>.github/atc.json</code>，稳定 areaIds，<code>maxClaimsPerUser: 25</code>），claim → pulse（5 分钟心跳）→ land 生命周期；<code>atc overlap</code> 用 <code>git merge-tree</code> 实测冲突，<strong>PR 前必跑</strong>；<code>docs/recipes/SKILL.md</code> 把贡献条件写成 agent 可执行清单。<code>AGENTS.md</code> 诚实写明公开 check-in 的代价（comment ID 可反查账号、站点看得到 IP），并要求 agent 先向人类说明每步动作并取得明确同意。</p>
+</li></ol>
+<h3>可复用的模式与技巧</h3>
+<ol><li><strong>Bound before building：</strong>先写「完美实现的收益上限」与门槛，低于门槛不建；建完不达记 failed — 适用：所有性能优化项目</li><li><strong>Gate + planted control：</strong>每条断言配一个故意做坏的反例，绿了即作废本次运行 — 适用：任何断言型测试体系</li><li><strong>Contract + records + frozen upstream：</strong>跨实现共用行为契约，替换型实现以被替换者的冻结字节为基准 — 适用：多后端 / 多实现项目</li><li><strong>实验收据目录：</strong>commit SHA + 原始日志 + 完整工具 JSON + 人写报告，机器索引并算陈旧度 — 适用：性能敏感且需对外声明数字的开源项目</li><li><strong>A-B-B-A + 双跑 + 每 cell token hash + 丢 throttle 轮次</strong> — 适用：所有 benchmark</li><li><strong>共享 primitive 单一来源 + 内容指纹 allowlist + 强制机器码级 reason</strong> — 适用：大量手写 SIMD/GPU 代码的团队</li><li><strong>600 行硬上限 + 单行注释 ≤120 列 + 禁直接 getenv + 「新增问题为 0」验收</strong> — 适用：任何希望「让 agent 持续写代码而不退化」的仓库</li><li><strong>装饰器式 drafter：</strong><code>Drafted</code> 包在 target backend 外，三处接缝，target 零侵入 — 适用：任何「外挂加速器」设计</li><li><strong>无 GPU 的不变式回归：</strong>用「每 token 是整个历史的函数」的假 target，让语义不变式在 CI 的 CPU 阶段可测 — 适用：所有 GPU 推理项目</li><li><strong>已知缺陷作为一等公民公开</strong>（逐条写「谁在什么机器、什么 checkpoint、多慢、哪个 PR 修」）— 适用：用户信任建设</li><li><strong>证据分级 + git 陈旧判定</strong>（failed 从原文保守读、从不推断）— 适用：长期维护的开源项目</li><li><strong>区域化 claim + <code>git merge-tree</code> 冲突预检</strong> — 适用：多 agent / 多贡献者并行开发</li></ol>
+<h3>关键设计决策</h3>
+<p><strong>决策 1：把精确性从测试目标升级为不变式，用 kernel contract 的 5 道门强制</strong></p>
+<ul><li>问题：传统 kernel 单测是「输出 vs 参考值，在某容差内」，不足以保证推理正确——MoE 路由、split-K 归约、fp16 累加、tile 边界的容差内偏差会在长序列上放大成不同 token。</li><li>方案：见「创新之处」第 1 条。</li><li>Trade-off：每个 kernel 要写 float64 参考 + 4 个 control + 5 后端 records，开发速度被严重拖慢；换来「换 kernel 不用重新证明整个模型正确」的可审计基线。</li><li>可迁移性：<strong>高</strong></li></ul>
+<p><strong>决策 2：推测解码拆成 Propose → Verify → Commit，且验证阶段必须与朴素解码逐 token 相等</strong></p>
+<ul><li>问题：draft 与 target 有任何数值差异就会偏离，且表现为「偶发不同」而非「错误」，极难在测试里发现。</li><li>方案：<code>Drafter.VTable</code>（taps / facts / open / absorb / hold / held / tree / chances）+ <code>Drafted</code> 装饰器 + <code>Role = {prompt, live, proposal}</code> 精度隔离。</li><li>Trade-off：接受率天然低于概率命中实现（drafter 必须读 target taps 而非自算），换来「开不开 draft 都给出同一个回复」这一可被第三方验证的性质。</li><li>可迁移性：<strong>中</strong>（范式通用，「0-ULP 等价」需要 float64 参考体系与多后端 kernel 能力）</li></ul>
+<p><strong>决策 3：LaneHost 单一调度核心——一个线程拥有 core 并 step rounds</strong></p>
+<ul><li>问题：多后端（Metal/CUDA/HIP/Vulkan/XPU）并发语义必须完全一致，且「每个并发回复 == 单独跑」要可测。</li><li>方案：<code>zig/src/core/lane_host.zig</code>（548 行本体 + 50+ 个侧模块）持 <code>core: *lanes.Engine</code>，起<strong>一个</strong> engine 线程（16 MiB 栈）；HTTP 线程只提交（foreground 插到所有 background 之前，同级按到达序）。分层队列 <code>queued → admitted → filling（最老先）→ finals</code>；<code>takeJob</code> 前先问 <code>admit.pick</code>（有 lane 空位吗）与 <code>ledger.promise</code>（<strong>字节预算：</strong>放不下就留在队列，<strong>不取走</strong>）。另有 <code>--decode-share</code>、<code>TENSORFOLD_PREFILL_ORDER=srpt</code>（剩余工作少的先做）、<code>lone</code> 单流独占驱动、<code>priority_age_ns</code>、OS 内存压力 503、<code>TF_LANE_TRACE</code>（<strong>trace 在锁前写</strong>，「a trace line never holds the host's mutex」）。<code>bench_concurrent.py --alone --serial</code> 把「并发 == 单独跑」自动化。</li><li>Trade-off：单 engine 线程是吞吐上限——这正是「8 并发总吞吐低于 vLLM」的结构性原因之一；换来所有后端家族共享同一套并发语义。</li><li>可迁移性：<strong>中</strong></li></ul>
+<p><strong>决策 4：600 行硬上限 + 一个模块一件事 + 脚本在 CI 强制</strong></p>
+<ul><li>问题：267 万行、205 位贡献者、日均 234 个 commit（多为 agent 写的），怎么防止一切长成巨型文件。</li><li>方案：<code>tools/zig/lean_check.py</code> 检查行数 ≤600、注释单行 ≤120 列、禁止直接 getenv。验收条件是「新增问题数为 0」。</li><li>Trade-off：400+ 个小文件降低「一眼看全貌」能力，换来任意时刻只需理解 600 行——并行 agent 开发下的关键取舍。</li><li>可迁移性：<strong>高</strong></li></ul>
+<p><strong>决策 5：多后端横向切分——core 放共享机制，families 只放模型算子，kernels 多语言经同一注册表绑定</strong></p>
+<ul><li>方案：职责划界写在 <code>docs/recipes/SKILL.md</code> 的 Ownership 表（「A new family does not add another scheduler beside the engine」）。同一模型要在 5 条后端路径分别落地，这是 CUDA 相关文件集体高排的根本原因。</li><li>Trade-off：注册表是最大单点复杂度来源且新后端要新写 records；换来「一个 kernel 家族注册一次就同时在 3 后端获得证明」。</li><li>可迁移性：<strong>中高</strong></li></ul>
+<h2>竞品格局与定位</h2>
+<h3>竞品对比矩阵</h3>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>TensorFold</th>
+<th>llama.cpp</th>
+<th>Ollama</th>
+<th>vLLM</th>
+<th>MLX / mlx-lm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>定位</td>
+<td>自持硬件上可证明精确的推理运行时</td>
+<td>事实标准的通用本地推理引擎</td>
+<td>llama.cpp 的产品化封装</td>
+<td>生产级高吞吐 serving 平台</td>
+<td>Apple 统一内存数组框架 + LLM 层</td>
+</tr>
+<tr>
+<td>Stars</td>
+<td>2,511</td>
+<td>136,487</td>
+<td>188,366</td>
+<td>97,744</td>
+<td>7,782</td>
+</tr>
+<tr>
+<td>语言/栈</td>
+<td>Zig，单二进制零 Python 依赖</td>
+<td>C/C++</td>
+<td>Go + wrapper</td>
+<td>Python</td>
+<td>Python + Metal</td>
+</tr>
+<tr>
+<td>Metal / CUDA</td>
+<td>两者均一等公民</td>
+<td>覆盖广但非一等</td>
+<td>依赖底层</td>
+<td>无原生 Metal</td>
+<td>仅 Apple，无 CUDA 侧</td>
+</tr>
+<tr>
+<td>推测解码</td>
+<td><strong>位级等价（drafted == plain，可验证）</strong></td>
+<td>概率命中</td>
+<td>不保证</td>
+<td>概率命中</td>
+<td>不保证</td>
+</tr>
+<tr>
+<td>高并发吞吐</td>
+<td>弱（8 并发实测低于 vLLM）</td>
+<td>弱，无 continuous batching</td>
+<td>弱，继承底层</td>
+<td><strong>最强</strong>（PagedAttention + continuous batching + prefix cache）</td>
+<td>中</td>
+</tr>
+<tr>
+<td>量化格式</td>
+<td>自家 TFQ3/NVFP4/EXL3 + MLX 系</td>
+<td><strong>GGUF + 全量化生态最成熟</strong></td>
+<td>跟随 llama.cpp</td>
+<td>AWQ/GPTQ/FP8 等</td>
+<td>MLX 量化，与 GGUF 不互通</td>
+</tr>
+<tr>
+<td>上手成本</td>
+<td>高（需显式 <code>--context</code> / <code>--no-thinking</code>）</td>
+<td>中</td>
+<td><strong>最低</strong>（<code>ollama run</code> 一条命令）</td>
+<td>高</td>
+<td>中</td>
+</tr>
+<tr>
+<td>社区规模</td>
+<td>205 贡献者</td>
+<td>数量级领先 3 个</td>
+<td>数量级领先 3 个</td>
+<td>数量级领先 2 个</td>
+<td>中</td>
+</tr>
+</tbody>
+</table>
+<h3>差异化护城河</h3>
+<p><strong>技术护城河为主</strong>，而且是竞品完全没有的资产：</p>
+<ul><li>「精确性可证明」需要的不是性能调优，而是 <strong>float64 参考体系 + 多后端 kernel 能力 + 严格 CI 门禁 + 大量编译器级别的踩坑经验</strong>（比如「把 helper 挪进共享头文件会改变 SASS」这种知识，只能靠 SASS 比对积累）。这是最难快速复制的部分。</li><li><code>docs/receipts/</code> 54 个目录的证据链、<code>docs/optimization-ledger.md</code> 848 行的失败台账、<code>docs/conformance-ledger.md</code> 的不变式清单——这些是<strong>时间积累</strong>，不是工程能力积累。</li></ul>
+<p><strong>生态护城河很弱</strong>：社区规模比 llama.cpp 小 3 个数量级；生态位强但依赖关系单向——MiaAI-Lab 的 15 个 TensorFold 配方仓库（累计约 2,191★）、Comfy-Org/ComfyUI 的官方 PR #17653、NVIDIA Inception 成员、HuggingFace 官方主页，都是<strong>TensorFold 被依赖</strong>而非互相依赖。</p>
+<p><strong>信任护城河中等</strong>：Apache-2.0 全开源、公开全部已知缺陷与失败收据、发版带 sha256 + ed25519 签名 + <code>SHA256SUMS</code>、Dockerfile 在签名不符时直接中止。</p>
+<h3>竞争风险</h3>
+<ol><li><strong>vLLM / SGLang 在高并发方向</strong>——这是已被实测确认的短板（同一评测里 8 并发总吞吐反低于 vLLM）。作者没否认，把它写进 <code>docs/known-issues.md</code>（「<code>--parallel 2</code> 比 <code>--parallel 1</code> 更慢」，M5 Ultra 47s vs 40s）。</li><li><strong>llama.cpp 若认真补齐 Metal + CUDA 双一等公民与新量化格式跟进</strong>，TensorFold 的「无 Python」优势会大幅缩水——llama.cpp 本来就没有 Python 依赖，届时只剩精确性一条护城河。</li><li><strong>单人生态的 bus factor 是结构性风险</strong>。外部评论 <a href="https://ai.satyajit.si/articles/tensorfold-strata-engines">TensorFold and Strata</a> 把它和另一款单人造引擎 Strata 并排拆到内存总线层面，明确指出这是结构性问题而非提交量能掩盖的问题。作者占 54.5%（修正 git 身份分裂后约 70%）提交；不过 Starlight 拆仓、205 位贡献者、Kevin Gilbertson 参与，说明作者自己也在对冲——但对冲的是<strong>商业层</strong>，引擎层仍然是单点。</li><li><strong>工具调用路径的可靠性存疑：</strong>有 fleet 运营者报告 0.3.6.3 版在 4 次长推理中 3 次「编造未执行过的工具结果」（0.3.4 版为 0/4）。这是单点报告、非系统结论，不构成定论，但正好落在「快但不稳」的风险象限里。</li><li><strong>PR 积压 386 个：</strong>作者本人 + agent 直推主干的通道很快，但社区 PR 的审核吞吐跟不上 386 的存量。</li></ol>
+<h3>生态定位</h3>
+<p>「<strong>本地优先、可证明正确的自持推理运行时</strong>」。它不与 vLLM 争生产 serving 平台，不与 Ollama 争消费级产品，而是占住「工程师要把自有 GPU 变成可信系统」这一格——特别是那些不敢把 LLM 输出直接写进业务系统的团队。商业化放在上一层（Starlight：身份、模型访问控制、用量核算），这是一条清晰的「开源引擎 + 商业控制面」路径。</p>
+<h2>套利机会分析</h2>
+<ul><li><strong>信息差：</strong><strong>star 层面已经不低估</strong>（Trending 日榜 #7 说明关注度已到位），但<strong>机制层面被严重低估</strong>。绝大多数人看到的是「又一个 Zig 写的 llama.cpp」，没人会去翻 <code>docs/kernel-contract.md</code> 里那 5 道带 planted control 的门、54 个实验收据目录、以及一份「不需要 GPU 就能跑」的不变式台账。这套「把精确性做成机制」的完整样板，在中文技术圈目前几乎无人系统拆解过。</li><li><strong>技术借鉴：</strong><strong>这是本项目最直接的产出价值</strong>。kernel contract 的 5 道门 + planted control、实验收据目录 + 证据分级与 git 陈旧判定、「Bound before building」+ failed 台账、600 行上限 + 「新增问题为 0」验收、装饰器式 drafter、无 GPU 的语义不变式回归——<strong>这六套机制几乎可以原样搬进任何写 GPU kernel、SIMD、量化算子或数值推理的项目</strong>，不需要 Zig、不需要 GPU，方法论层面完全语言无关。</li><li><strong>生态位：</strong>填补的是「推理引擎的正确性证明」这一空白。市面上讲推理引擎的项目都在卷吞吐、卷量化格式、卷易用性，几乎没人认真处理「换 kernel 之后输出还一样吗」这个问题——而这恰好是企业私有化部署真正卡住的地方。</li><li><strong>趋势判断：</strong>符合两个明确趋势——<strong>本地优先 / 私有化推理</strong>（对云端依赖的回避），以及 <strong>AI-native 软件工程</strong>（人定契约、agent 批量执行的协作范式）。后者的信号尤其强：205 位贡献者配合 agent 写 267 万行仍保持结构不腐化，这套协作协议本身可能比推理引擎更有长期价值。</li><li><strong>后发优势：</strong>作为 2026 年才起步的项目，它不必背 llama.cpp 十年积累的兼容包袱——v1.0.0 直接把 Python 引擎整体移除重来（<code>394d566cb</code>「the Python engine leaves this tree」），一次 breaking change 换来纯净的 Zig 骨架。而它现在正处在「模型家族还没饱和、agent 编程还没定型」的窗口里。</li></ul>
+<h2>风险与不足</h2>
+<ol><li><strong>生态规模差 3 个数量级</strong>。2,511 star 对 llama.cpp 的 136,487，对 vLLM 的 97,744。依赖生态（GGUF 格式、模型适配速度、社区 issue 响应）在短期内无法用性能弥补。</li><li><strong>高并发是结构性短板</strong>，且不是调优能解决的——单 engine 线程的设计就决定了这一点。定位必须诚实地限定在「单流 / 少用户」场景。</li><li><strong>bus factor = 1</strong>（引擎层）。205 位贡献者、383→386 个积压 PR、Kevin Gilbertson 参与是真实信号，但引擎核心仍是单点。外部评论明确把这一点列为结构性风险。</li><li><strong>版本号几乎无语义：</strong>72 个 release / 2.9 个月 = 平均每 1.2 天一版，<code>v1.0.0-beta.7</code> 与 <code>v1.0.12</code> 并存，beta 线从未清理。对于要长期依赖的用户，这是很实际的可维护性问题。</li><li><strong>Conventional Commits 基本失效</strong>（73% other，前缀是模型家族名），历史检索与自动化 changelog 生成都受损。</li><li><strong>内部实现过快的回头风险：</strong>3 个月内两次架构手术（v1.0.0 移除 Python 引擎、Starlight 拆仓），月内 commit 曲线呈「手术→休整→加速」三段式。对于刚把它接进生产的用户，这种节奏本身就是风险。</li><li><strong>工具调用路径的可靠性</strong>已被单点报告质疑（0.3.6.3 版 4 次长推理中 3 次编造工具结果）。若属实，这会直接击穿「敢写进业务系统」的卖点。</li><li><strong>性能数字多为自报</strong>。跨引擎对比常非权重对齐（TensorFold 4-bit pack 4.26 GB/token vs oMLX 5-bit 5.34 GB），作者自己也标注「not a like-for-like comparison」——但读者仍需自行判断。</li><li><strong>上手成本明显高于 Ollama：</strong><code>tensorfold pull REPO@revision</code> + <code>serve</code> + 显式 <code>--context</code> / <code>--no-thinking</code>，对只想「跑起来试试」的用户是劝退的。</li></ol>
+<h2>行动建议</h2>
+<h3>如果你要用它</h3>
+<ul><li><strong>适合：</strong>自有 Apple Silicon（Apple 生态最成熟，M3/M4/M5 覆盖最全）或 NVIDIA 新架构（GB10/Blackwell、sm_120/121）；单机或极少用户；<strong>输出必须可复现</strong>的场景（企业私有化、内容生成流水线、需要审计的 agent 系统）；不接受 Python 依赖的部署环境。</li><li><strong>不适合：</strong>多租户高并发 serving（vLLM 仍是正解）、Windows/Linux 桌面用户的「一条命令跑起来」体验（用 Ollama）、需要 GGUF 全量化生态兼容、需要跟进最新模型格式的速度。</li><li><strong>上手路径：</strong>先读 <code>docs/known-issues.md</code>（作者自己列的全部限制，比任何评测都准）→ 再读 <code>docs/kernel-contract.md</code> 理解它的质量承诺 → 用 <code>tensorfold.dev/benchmarks</code> 的社区上传榜对照你自己的机器（<strong>该榜需要提交实测 receipt，不是厂商刷的</strong>）。</li><li><strong>验证承诺的做法：</strong>别信 README 的 tok/s，信 <code>docs/receipts/</code>。挑一个和你硬件相同的目录看它怎么记 scope、怎么用 A-B-B-A、怎么标 failed；再自己跑一次同款测量对一遍。</li></ul>
+<h3>如果你要学它</h3>
+<p>按这个顺序读，方法论密度从高到低：</p>
+<ol><li><strong><code>docs/optimizing.md</code></strong> — 「Bound before building」的完整方法论与 worked example（为什么 GDN scan 上限 &lt;1.5% 就不建）。这是全项目最值得抄的一篇。</li><li><strong><code>docs/kernel-contract.md</code></strong> — 5 道门的定义、planted control 的用法、known findings 的公开机制。</li><li><strong><code>docs/conformance-ledger.md</code> + <code>zig/src/core/lanes/drafted.zig</code></strong> — 位级等价不变式怎么在无 GPU 环境里被验证。</li><li><strong><code>docs/receipts/flashnext-cuda-sampled-heads/</code></strong>（任选一两个目录）— 一份性能证据长什么样。</li><li><strong><code>tools/zig/lean_check.py</code></strong> — 600 行上限如何被机械化强制，以及「新增问题为 0」的验收语义。</li><li><strong><code>tools/zig/cuda_common_check.py</code> + <code>cuda_common_allowlist.json</code></strong> — 共享 helper 的指纹与机器码级 reason 制度。</li><li><strong><code>docs/recipes/SKILL.md</code> + <code>AGENTS.md</code></strong> — AI-native 协作协议，以及作者如何把贡献条件写成 agent 可执行清单。</li><li><strong><code>docs/optimization-ledger.md</code></strong> — 848 行的状态表，看「失败的优化」是怎么被留档的。</li></ol>
+<h3>如果你要 fork 它</h3>
+<ul><li><strong>可改进方向：</strong>① <strong>高并发</strong>是最明确的价值洼地——把 LaneHost 的单 engine 线程改成 N worker + continuous batching，直接对齐 vLLM；② <strong>版本策略：</strong>清理 beta 线、拉长发布周期、恢复语义化版本的信息量；③ <strong>提交规范：</strong>恢复 Conventional Commits 或引入 <code>scope(model_family)</code> 前缀约定，让历史可检索；④ <strong>量化格式互通：</strong>补 GGUF 读取能直接接住 llama.cpp 的生态；⑤ <strong>上游合并的 build 支持：</strong>作者已从上游迁入不少代码，<code>docs/</code> 里的 Attribution 段落值得逐条核对，避免 GPL 传染。</li></ul>
+<h3>知识入口</h3>
+<table>
+<thead>
+<tr>
+<th>资源</th>
+<th>链接</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DeepWiki</td>
+<td><a href="https://deepwiki.com/ashhart/TensorFold">deepwiki.com/ashhart/TensorFold</a>（已收录，索引于 2026-11-05 / commit <code>2cf0bb</code>，比 HEAD 落后约 3 周；含 Core Runtime Engine、Server &amp; API、Living Weights、Hardware Backends、Distributed Execution、Kernel Contract 等完整架构）</td>
+</tr>
+<tr>
+<td>Zread.ai</td>
+<td>未收录（直连与 JINA reader 均 403）</td>
+</tr>
+<tr>
+<td>关联论文</td>
+<td>无 arXiv 论文。项目的「论文」是 <code>docs/</code> 下的 56 篇设计文档 + 54 个目录的实验收据，每个 release 附实测性能记录</td>
+</tr>
+<tr>
+<td>在线 Demo</td>
+<td>无官方托管 Demo（本机推理项目）。替代：社区 benchmark 上传榜 <a href="https://tensorfold.dev/benchmarks">tensorfold.dev/benchmarks</a>（无需登录，列 Model / Hardware / Tokens·s / First text ms / Contributor / Receipt）· <code>tensorfold chat MODEL</code> 本地一条命令起服务 · Comfy-Org/ComfyUI PR #17653 将提供图形化入口</td>
+</tr>
+<tr>
+<td>官方站点</td>
+<td><a href="https://tensorfold.dev">tensorfold.dev</a>（含企业页 /brief、Starlight 控制台截图、benchmarks 榜）</td>
+</tr>
+<tr>
+<td>上游生态</td>
+<td><a href="https://github.com/MiaAI-Lab">MiaAI-Lab</a>（15 个 TensorFold 配方仓库，累计约 2,191★）· <a href="https://github.com/Comfy-Org/ComfyUI">Comfy-Org/ComfyUI</a> PR #17653 · <a href="https://github.com/ashhart/tf-starlight">ashhart/tf-starlight</a>（企业层）· <a href="https://github.com/ashhart/ATC">ashhart/ATC</a>（协作协议）</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>

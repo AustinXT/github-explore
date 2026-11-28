@@ -1,0 +1,6 @@
+{
+  "title": "GitHub推荐：3 个月 2.5k star：Zig 写的 TensorFold 推测解码一字不差",
+  "digest": "3 个月 2.5k star：TensorFold 用 Zig 写本地推理运行时，差异化不是比 llama.cpp 快，而是把「换内核、换后端、开推测解码后输出 token 一个不差」做成可复核机制：5 道契约门 + 54 份实验收据。",
+  "author": "NVoyager",
+  "theme": "stars,universe,dark"
+}
