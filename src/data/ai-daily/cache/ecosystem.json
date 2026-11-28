@@ -1,147 +1,9 @@
 {
   "meta": {
-    "last_run": "2026-11-27",
+    "last_run": "2026-11-28",
     "window_days": 30
   },
   "entries": [
-    {
-      "key": "github.com/hkuds/deeptutor",
-      "canonical_url": "https://github.com/HKUDS/DeepTutor",
-      "event_date": "2026-10-27",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "github.com/togg53192-cmd/jailbreaks",
-      "canonical_url": "https://github.com/togg53192-cmd/jailbreaks",
-      "event_date": "2026-10-27",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "github.com/brass-lang/brass",
-      "canonical_url": "https://github.com/brass-lang/brass",
-      "event_date": "2026-10-27",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "github.com/channelcooperstart/capri-ai",
-      "canonical_url": "https://github.com/ChannelCooperStart/capri-ai",
-      "event_date": "2026-10-27",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "github.com/ericcc0321/soulgent",
-      "canonical_url": "https://github.com/Ericcc0321/soulgent",
-      "event_date": "2026-10-27",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "github.com/onurozcan/omux",
-      "canonical_url": "https://github.com/onurozcan/omux",
-      "event_date": "2026-10-27",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "github.com/r44vc0rp/query",
-      "canonical_url": "https://github.com/R44VC0RP/query",
-      "event_date": "2026-10-27",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "github.com/anthropics/claude-plugins-official",
-      "canonical_url": "https://github.com/anthropics/claude-plugins-official",
-      "event_date": "2026-10-28",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/obra_superpowers",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/obra_superpowers/",
-      "event_date": "2026-10-28",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/mattpocock_skills",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/mattpocock_skills/",
-      "event_date": "2026-10-28",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/affaan-m_ecc",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/affaan-m_ecc/",
-      "event_date": "2026-10-28",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/anthropics_claude-code",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/anthropics_claude-code/",
-      "event_date": "2026-10-28",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/addyosmani_agent-skills",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/addyosmani_agent-skills/",
-      "event_date": "2026-10-28",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/msitarzewski_agency-agents",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/msitarzewski_agency-agents/",
-      "event_date": "2026-10-28",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/thedotmack_claude-mem",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/thedotmack_claude-mem/",
-      "event_date": "2026-10-28",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/shiyu-coder_kronos",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/shiyu-coder_kronos/",
-      "event_date": "2026-10-28",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/anthropics_claude-plugins-official",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/anthropics_claude-plugins-official/",
-      "event_date": "2026-10-28",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/nousresearch_hermes-agent",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/nousresearch_hermes-agent/",
-      "event_date": "2026-10-28",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/shubhamsaboo_awesome-llm-apps",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/shubhamsaboo_awesome-llm-apps/",
-      "event_date": "2026-10-28",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/hkuds_lightrag",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/hkuds_lightrag/",
-      "event_date": "2026-10-28",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/chromedevtools_chrome-devtools-mcp",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/chromedevtools_chrome-devtools-mcp/",
-      "event_date": "2026-10-28",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/sst_opencode",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/sst_opencode/",
-      "event_date": "2026-10-28",
-      "date_seen": "2026-10-28"
-    },
-    {
-      "key": "https://nightvoyager.top/github-explore/reports/garrytan_gstack",
-      "canonical_url": "https://nightvoyager.top/github-explore/reports/garrytan_gstack/",
-      "event_date": "2026-10-28",
-      "date_seen": "2026-10-28"
-    },
     {
       "key": "github.com/elayadesign/ai-design-skills",
       "canonical_url": "https://github.com/elayadesign/ai-design-skills",
@@ -1695,6 +1557,162 @@
       "canonical_url": "https://nightvoyager.top/github-explore/reports/browser-use_browser-use/",
       "event_date": "2026-11-26",
       "date_seen": "2026-11-27"
+    },
+    {
+      "key": "github.com/strands-agents/harness-sdk",
+      "canonical_url": "https://github.com/strands-agents/harness-sdk",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/trycua/cua",
+      "canonical_url": "https://github.com/trycua/cua",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/posthog/posthog",
+      "canonical_url": "https://github.com/posthog/posthog",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/effect-ts/effect",
+      "canonical_url": "https://github.com/effect-ts/effect",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/miaai-lab/deepseek-v4.1-flash-1017-2x-dgx-sparks",
+      "canonical_url": "https://github.com/MiaAI-Lab/DeepSeek-v4.1-Flash-1017-2x-DGX-Sparks",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/miaai-lab/qwen3.8-flash-next-single-dgx-spark-tensorfold",
+      "canonical_url": "https://github.com/MiaAI-Lab/Qwen3.8-Flash-Next-Single-DGX-Spark-TensorFold",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/miaai-lab/glm-5.3-flash-dgx-sparks-1104",
+      "canonical_url": "https://github.com/MiaAI-Lab/GLM-5.3-Flash-DGX-Sparks-1104",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/miaai-lab/inkling-2-mini-dgx-spark-tensorfold",
+      "canonical_url": "https://github.com/MiaAI-Lab/Inkling-2-Mini-DGX-Spark-TensorFold",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/miaai-lab/glm-5.3-derisked-cyber-dgx-sparks-tensorfold",
+      "canonical_url": "https://github.com/MiaAI-Lab/GLM-5.3-DERISKED-Cyber-DGX-Sparks-TensorFold",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/keys-wasserman/imagination-studio-by-keys-wasserman",
+      "canonical_url": "https://github.com/Keys-Wasserman/Imagination-Studio-by-keys-Wasserman",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/sybil-solutions/inference-optimisation-skill",
+      "canonical_url": "https://github.com/sybil-solutions/inference-optimisation-skill",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/ashhart/cortheon",
+      "canonical_url": "https://github.com/ashhart/Cortheon",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/picom-code/pico-dgx-ds4",
+      "canonical_url": "https://github.com/Picom-code/pico-dgx-ds4",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/sakanaai/ai-scientist-v3",
+      "canonical_url": "https://github.com/SakanaAI/AI-Scientist-v3",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/ace-step/ace-step-1.5",
+      "canonical_url": "https://github.com/ace-step/ACE-Step-1.5",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/heartmula/heartlib",
+      "canonical_url": "https://github.com/HeartMuLa/heartlib",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/actual-computer/toks",
+      "canonical_url": "https://github.com/actual-computer/toks",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/anomalyco/psychoscript",
+      "canonical_url": "https://github.com/anomalyco/psychoscript",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/robbyant/lingbot-map-v2",
+      "canonical_url": "https://github.com/Robbyant/lingbot-map-v2",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/n8n-io/nod",
+      "canonical_url": "https://github.com/n8n-io/nod",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/alibaba/spring-ai-alibaba",
+      "canonical_url": "https://github.com/alibaba/spring-ai-alibaba",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/oomol-lab/open-connector",
+      "canonical_url": "https://github.com/oomol-lab/open-connector",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "github.com/braintrustdata/autoevals",
+      "canonical_url": "https://github.com/braintrustdata/autoevals",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "hf:genspi/motubrain2.0-base",
+      "canonical_url": "https://huggingface.co/GensPI/Motubrain2.0-Base",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "hf:ista-daslab/inkling-2-mini-gsq-rco-gguf",
+      "canonical_url": "https://huggingface.co/ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
+    },
+    {
+      "key": "hf:inclusionai/ming-image-0.2-design",
+      "canonical_url": "https://huggingface.co/inclusionAI/Ming-Image-0.2-Design",
+      "event_date": "2026-11-27",
+      "date_seen": "2026-11-28"
     }
   ]
 }
